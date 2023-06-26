@@ -1,0 +1,8 @@
+1. Open link in edit mode (ctrl-click on link)
+2. toggle eddit/preview (ctrl-e)
+3. Search (ctrl-shift-f)
+4. Back (ctrl-opt-leftArrow)
+5. Forward (ctrl-opt-rightArrow)
+6. Open Quick Switcher (ctrl-o)
+7. New note (ctrl-n)
+8. Open note in new window (ctrl-click on note)
