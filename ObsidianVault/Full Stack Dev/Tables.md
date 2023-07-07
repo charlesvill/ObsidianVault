@@ -1,3 +1,6 @@
+reference: https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced#active_learning_adding_table_structure
+
+
 #### Design Flow
 - Tables are populated by rows, this needs to be taken in consideration when placing information in specific columns
 #### Syntax
@@ -21,7 +24,7 @@
 
 <tr>
 
-	<th>Age</td>
+	<th>Age</tddd an exclamation mark ( ! ) in front of an Internal link. You can embed files in any of the Accepted file for>
 	
 	<td>16</td>
 	
@@ -67,4 +70,23 @@
 #### Headers, footers, body table tags
 - useful for styling but does not add anything visual or accessibility for screen readers on its own. 
 	- theader, tbody, and tfoot must wrap the part of the table that is the header. 
-	
+
+#### Scope Attribute
+- used to denote a header for either a column or a row as a group that is to be read together in the same context for the purpose of screen readers. 
+- added to the `<th>` element example: 
+
+ ``` html 
+	  <thead>
+  <tr>
+    <th scope="col">Purchase</th>
+    <th scope="col">Location</th>
+    <th scope="col">Date</th>
+    <th scope="col">Evaluation</th>
+    <th scope="col">Cost (€)</th>
+  </tr>
+</thead>
+
+```
+- there are also `colgroup`, and `rowgroup` attributes instead that could be used for a header that spans over multiple columns but defined the header columns below it (eg. a clothes colgroup that defines the three shoes, hats, shirts header columns right below it)
+- You can also use `id` and `headers` attributes but look into the article above as a reference.[[Tables]]. 
+- 
