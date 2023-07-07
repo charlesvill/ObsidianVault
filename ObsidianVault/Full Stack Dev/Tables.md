@@ -91,5 +91,6 @@ reference: https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced#a
 - there are also `colgroup`, and `rowgroup` attributes instead that could be used for a header that spans over multiple columns but defined the header columns below it (eg. a clothes colgroup that defines the three shoes, hats, shirts header columns right below it)
 	- note: the individual row or columns below the group are marked with `<th scope="col/row">` 
 - You can also use `id` and `headers` attributes but look into the article above as a reference.[[Tables]]. 
+
 ##### Blank spaces
 - use the `&nbsp;` as the content of the cell to leave a blank space and you can use `colspan` and `rowspan` to expand the blank cells.
