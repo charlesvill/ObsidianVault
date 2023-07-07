@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Full Stack Dev/Emmet Abbreviations.md",
+                "file": "Full Stack Dev/Tables.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "emmet",
+                "query": "table",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Full Stack Dev/Emmet Abbreviations.md",
+                "file": "Full Stack Dev/Tables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Full Stack Dev/Emmet Abbreviations.md",
+                "file": "Full Stack Dev/Tables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,12 +125,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Full Stack Dev/Emmet Abbreviations.md"
+                "file": "Full Stack Dev/Tables.md"
               }
+            }
+          },
+          {
+            "id": "d16af15ced396b2d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -147,15 +154,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fa461f4962388883",
+  "active": "3ceb5e5fbbf282c5",
   "lastOpenFiles": [
+    "Full Stack Dev/Tables.md",
+    "2023-06-23.md",
+    "Full Stack Dev/Emmet Abbreviations.md",
     "SVG.md",
     "TOPICS TO LEARN.md",
     "Dev Organizer.canvas",
     "The 6 most Important keys to Typing in Markdown.md",
     "The 8 Most important Hotkeys.md",
-    "2023-06-23.md",
-    "Full Stack Dev/Emmet Abbreviations.md",
     "Untitled 1.md",
     "Untitled.md",
     "Full Stack Dev/CSS reference Notes.md",
