@@ -66,9 +66,3 @@
 
 #### Headers, footers, body table tags
 - useful for styling but does not add anything visual or accessibility for screen readers on its own. 
-- #### testing 
-- asdfasf 
-- Testing testing from bill-bo-baggins
-- Testing 2 from bill-bo-baggins
-- Testing from general-Iroh
-- 
