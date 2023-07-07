@@ -1,0 +1,165 @@
+{
+  "main": {
+    "id": "ea19fcf75d7660de",
+    "type": "split",
+    "children": [
+      {
+        "id": "ea71a6f492306fe4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3925a343991aae47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ObsidianVault/Full Stack Dev/Tables.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d44b422f99284fd6",
+    "type": "split",
+    "children": [
+      {
+        "id": "884651bebc97af5e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4efd7a73c8c94ae",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "accc0b748e8e4ede",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0f30e962dd9d8f94",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "6e7da0dca78fdfe3",
+    "type": "split",
+    "children": [
+      {
+        "id": "29c3fda44525d6c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4c3815c21d069e7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ObsidianVault/Full Stack Dev/Tables.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1a5b0c34a0d1d5f4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ObsidianVault/Full Stack Dev/Tables.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0e7f4b6971c684c6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "afb5a6cf9c006c9b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ObsidianVault/Full Stack Dev/Tables.md"
+              }
+            }
+          },
+          {
+            "id": "2415d5480bb06e11",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 263.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3925a343991aae47",
+  "lastOpenFiles": [
+    "Pasted image 20230627125830.png",
+    "ObsidianVault/Full Stack Dev/Tables.md",
+    "Pasted image 20230627115812.png",
+    "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md"
+  ]
+}
