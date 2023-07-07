@@ -67,4 +67,4 @@
 #### Headers, footers, body table tags
 - useful for styling but does not add anything visual or accessibility for screen readers on its own. 
 	- theader, tbody, and tfoot must wrap the part of the table that is the header. 
-	- 
+	
