@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "table",
+                "query": "tag:#concept",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -138,11 +139,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 206.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -154,7 +156,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d16af15ced396b2d",
+  "active": "21f81481eb92bfdb",
   "lastOpenFiles": [
     "Full Stack Dev/Tables.md",
     "2023-06-23.md",
