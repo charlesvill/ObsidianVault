@@ -1,5 +1,5 @@
 - [ ] Get Gud at understanding APIs
-- [ ] Understand Bash commands grep and || arguments
+- [ ] Understand Bash commands grep and || arguments/operators
 - [ ] Http requests and how packets work
 - [ ] npm init and other comands, how to use npm in general and debugging with npm 
 - [ ] debugging with vscode
