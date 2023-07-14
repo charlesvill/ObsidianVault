@@ -145,3 +145,16 @@ There are times when you want to select elements that are either the first child
 - There are also user-action psuedo classes such as `:hover` , and `:focus` that are when a specific state is ocurring. 
 
 ##### Psuedo elements
+There may be instances where things need to be selected that perhaps are not their own element, but with psuedo elements, it behaves like it were a distinct element. **notice how a psuedo element marked with a double :: colon.
+ - *need to select the first line of a paragraph* `p::first-line` 
+	 - this gives you the flexibility to resize a page or element and wont have to worry about the font scaling affecting the first line being selected. This takes care of it all and behaves as if there were magically an html element wrapping the first line. 
+##### Combining Psuedo-classes and psuedo-elements
+```css
+article p:first-child::first-line {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+```
+##### Before and after psuedo elements
+the `::before` & `::after` selectors  can be used to add content into for example a `<p>` element by combining with the css property `content: "";` which will add the string written between the quotes. *note: most often used to add symbols, arrows emojis instead of actual text bc it's not always accessible by screen readers. *
