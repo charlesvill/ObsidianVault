@@ -84,3 +84,59 @@ h1 {
 
 
 ## Advanced CSS Selectors
+
+Previously we've seen css selectors like chaining `.parent #child` combinators. we can be more specific with child and sibling combinators
+	*ex html:*
+```html
+
+<main class="parent">
+  <div class="child group1">
+    <div class="grand-child group1"></div>
+  </div>
+  <div class="child group2">
+    <div class="grand-child group2"></div>
+  </div>
+  <div class="child group3">
+    <div class="grand-child group3"></div>
+  </div>
+</main>
+
+```
+
+1. `>` - the child selector
+	```css
+/* This rule will only select divs with a class of child */
+main > div {
+  /* Our cool CSS */
+}
+/* This rule will only select divs with a class of child */
+main > div {
+  /* Our cool CSS */
+}
+
+```
+
+2. `+` - the adjacent sibling
+	- it seems the way this works is the + bumps to the adjacent below it or around it hence why these examples will select the group1 plus how many div are added
+```css
+/* This rule will only select the div with the class child group2 */
+.group1 + div {
+  /* Our cool CSS */
+}
+
+/* This rule will only select the div with the class child group3 */
+.group1 + div + div {
+  /* More cool CSS */
+}
+```
+
+4. `~`  - the general sibling combinator
+	 - This one will select siblins in the same indentation level
+```css
+/* This rule will select all of .group1's siblings - in this case the 2nd and 3rd .child divs */
+.group1 ~ div {
+  /* Our cool CSS */
+}
+```
+
+##### Psuedo Selectors
