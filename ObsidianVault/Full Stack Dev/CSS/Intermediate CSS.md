@@ -28,3 +28,57 @@
 
 ## More Text Styles
 
+##### Nice System Font Stack
+- The purpose of this string of code is to access the installed fonts on the system and will generally produce nuetral font style:
+	```css
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+```
+
+
+##### How to include different Fonts
+1. **Online font libraries**
+	1. font libraries like google fonts, Font Library or adobe fonts
+		1. select font
+		2. copy snippet from website 
+		3. link in html ex 
+		4. or you could also use an `@import` tag that can be dropped at the top of a css sheet
+		```html 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+```
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+```
+
+2. **Downloaded fonts**
+	- You can also download them and import them into your project and link the file with the `@font-face` tag on css ex: 
+	```css
+@font-face {
+  font-family: my-cool-font;
+  src: url(../fonts/the-font-file.woff);
+}
+
+h1 {
+  font-family: my-cool-font, sans-serif;
+}
+```
+
+##### Letter-spacing & Line Height
+- you can use `letter-spacing: .5em;` to bring together or space out fonts that might aesthetically benefit from tweaking. 
+- the `line-height: 1.5` does similar for adjusting relative to normal spacing\
+
+##### Text-transform and text Overflow
+- allows you to capitalize element's text value. you can do all uppercase, capitalize or all lowercase with the attribute `text-transform: lowercase;` 
+- for Text overflow, visit this page, likely will need to each time https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/
+
+## Plethora of CSS Properties
+- there are hundreds of properties though 90% of the time only a much smaller pool of them are used. Here are some of the properties that have not be talked with as much detail: a
+	1. *Background* (dont freak on the syntax) https://developer.mozilla.org/en-US/docs/Web/CSS/background
+		1. check out this other CSS tricks resource https://css-tricks.com/almanac/properties/b/background/
+	2. *Box Shadow* best used sparingly and lighter, more subtle https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+	3. *Overflow* when your content doesnt fit on a line or space, you can use scroll bars or the like to style user access to extra lines https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+	4. 
