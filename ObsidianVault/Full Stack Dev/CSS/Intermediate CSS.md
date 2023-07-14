@@ -140,3 +140,8 @@ main > div {
 ```
 
 ##### Psuedo Selectors
+There are times when you want to select elements that are either the first child or last child and sometimes when the elements are being hovered over or clicked. 
+- `:last-child` , `:first-child` pared with a selector `p:first-child` will always select the first child that is a p. Benefit being that if you rearrange the content later it will always select the first child so not as many drastic changes have to be made
+- There are also user-action psuedo classes such as `:hover` , and `:focus` that are when a specific state is ocurring. 
+
+##### Psuedo elements
