@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ea71a6f492306fe4",
+        "id": "b8a4c13f6bc65085",
         "type": "tabs",
         "children": [
           {
-            "id": "3925a343991aae47",
+            "id": "e5c35bb8bd93ab33",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -156,10 +156,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3925a343991aae47",
+  "active": "e5c35bb8bd93ab33",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
+    "Pasted image 20230707124826.png",
     "ObsidianVault/Full Stack Dev/Tables.md",
+    "Pasted image 20230707124341.png",
+    "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
     "Pasted image 20230627125830.png",
     "Pasted image 20230627115812.png"
   ]
