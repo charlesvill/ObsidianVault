@@ -81,4 +81,6 @@ h1 {
 		1. check out this other CSS tricks resource https://css-tricks.com/almanac/properties/b/background/
 	2. *Box Shadow* best used sparingly and lighter, more subtle https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 	3. *Overflow* when your content doesnt fit on a line or space, you can use scroll bars or the like to style user access to extra lines https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
-	4. 
+
+
+## Advanced CSS Selectors
