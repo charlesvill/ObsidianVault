@@ -234,3 +234,31 @@ the `::before` & `::after` selectors  can be used to add content into for exampl
   */
 }
 ```
+
+## Positioning 
+
+#### Static vs Relative Positioning
+ - *static* is the default positioning behavior all elements will have entering the page
+ - *Static* means just following the standard document flow and populating the elements in the order they're placed in the DOM
+ - *Relative* behaves the same as Static on the page but allows you to use properties like left, bottom, etc. to shift over it's positioning relative to how it would be if it were standard static. 
+	 - ex: 
+	```css
+	.child-one{
+	position: relative;
+	left: 10px;
+	}
+```
+- **Note on relative Pos** - not normally used with directional property but more so placed on the parent of an element that you wish to place absolutely. This is because of that relative positioning that will place it relative to where it would be in the static flow and the absolute inside of it will correspond to the relative positioning. otherwise the absolute would not respect any containers or other elements.
+
+#### Absolute Positioning
+- removes itself from document flow and allows you to position at exact point on the screen without moving any other elements
+- useful with using the directional properties 
+#### Fixed Positioning
+- similar to absolute in that it remves itself from the document flow but it positions itself relative to the viewport, not any parents or root documents 
+- Big take away is that it will fix it's position regardless of where you scroll to on the page. 
+- takes in directional properties like the others
+#### Sticky position
+- a combination of relative positioning and fixed positioning into one, While it's in view its relative positioning that is bound to it's parent positioning if it's relative or absolute, however when you scroll past it, it wil behave as a fixed position and stay in the position determined by the direction propery given
+	- ex: `top: 10px` means it'll stay 10 pixels from the top of the view port as you continue to scroll down.
+	- *important to note it's normal until it reaches the offset that was set* 
+- Resource page on positioning https://developer.mozilla.org/en-US/docs/Web/CSS/position
