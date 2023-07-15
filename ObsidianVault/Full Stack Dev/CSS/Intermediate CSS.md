@@ -1,6 +1,7 @@
 ## Default Styles
 - Different browsers add basic CSS to elements parsed on the web. Often devlopers will reset these CSS values to have consistent results regardless of the browser. 
 
+
 ## CSS Units
 
 ##### Absolute units vs relative units
@@ -26,6 +27,7 @@
 - here is a video on knowing what units to be using for different contexts https://www.youtube.com/watch?v=N5wpD9Ov_To&ab_channel=KevinPowell
 
 
+
 ## More Text Styles
 
 ##### Nice System Font Stack
@@ -44,7 +46,7 @@ body {
 		2. copy snippet from website 
 		3. link in html ex 
 		4. or you could also use an `@import` tag that can be dropped at the top of a css sheet
-		```html 
+```html 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -67,6 +69,7 @@ h1 {
 }
 ```
 
+
 ##### Letter-spacing & Line Height
 - you can use `letter-spacing: .5em;` to bring together or space out fonts that might aesthetically benefit from tweaking. 
 - the `line-height: 1.5` does similar for adjusting relative to normal spacing\
@@ -75,12 +78,14 @@ h1 {
 - allows you to capitalize element's text value. you can do all uppercase, capitalize or all lowercase with the attribute `text-transform: lowercase;` 
 - for Text overflow, visit this page, likely will need to each time https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/
 
+
 ## Plethora of CSS Properties
 - there are hundreds of properties though 90% of the time only a much smaller pool of them are used. Here are some of the properties that have not be talked with as much detail: a
 	1. *Background* (dont freak on the syntax) https://developer.mozilla.org/en-US/docs/Web/CSS/background
 		1. check out this other CSS tricks resource https://css-tricks.com/almanac/properties/b/background/
 	2. *Box Shadow* best used sparingly and lighter, more subtle https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 	3. *Overflow* when your content doesnt fit on a line or space, you can use scroll bars or the like to style user access to extra lines https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+
 
 
 ## Advanced CSS Selectors
@@ -139,15 +144,39 @@ main > div {
 }
 ```
 
-##### Psuedo Selectors
+##### Psuedo  class selectors
 There are times when you want to select elements that are either the first child or last child and sometimes when the elements are being hovered over or clicked. 
+
+**Structural class selectors**
+select elements based on their position within the DOM
+- `:root` very top level of the document, no parents. generally equivalent to html element
+	- typically where the document wide css rules will go
 - `:last-child` , `:first-child` pared with a selector `p:first-child` will always select the first child that is a p. Benefit being that if you rearrange the content later it will always select the first child so not as many drastic changes have to be made
+- `:empty` match elements with no children at all
 - There are also user-action psuedo classes such as `:hover` , and `:focus` that are when a specific state is ocurring. 
+- *should be noted that psuedo class have the same specificity as regular classes*
+**Dynamic psuedo class selectors
+- use `:nth-child` followed by (n) that you want to select to be really specific if there are alot of children or have specific way to select
+	- ex: 
+	```css
+ .myList:nth-child(5) {/* Selects the 5th element with class myList */}
+
+  .myList:nth-child(3n) { /* Selects every 3rd element with class myList */}
+
+  .myList:nth-child(3n + 3) { /* Selects every 3rd element with class myList, beginning with the 3rd */}
+
+  .myList:nth-child(even) {/* Selects every even element with class myList */}
+```
+
+
 
 ##### Psuedo elements
 There may be instances where things need to be selected that perhaps are not their own element, but with psuedo elements, it behaves like it were a distinct element. **notice how a psuedo element marked with a double :: colon.
  - *need to select the first line of a paragraph* `p::first-line` 
 	 - this gives you the flexibility to resize a page or element and wont have to worry about the font scaling affecting the first line being selected. This takes care of it all and behaves as if there were magically an html element wrapping the first line. 
+	 - `::selection` allows you to change the highlighting when user clicks on the page
+	 - `::marker` allows you customize the syling of the `<li>` elements bullets or numbers
+	 
 ##### Combining Psuedo-classes and psuedo-elements
 ```css
 article p:first-child::first-line {
@@ -157,7 +186,49 @@ article p:first-child::first-line {
 
 ```
 ##### Before and after psuedo elements
-the `::before` & `::after` selectors  can be used to add content into for example a `<p>` element by combining with the css property `content: "";` which will add the string written between the quotes. *note: most often used to add symbols, arrows emojis instead of actual text bc it's not always accessible by screen readers. *
+the `::before` & `::after` selectors  can be used to add content into for example a `<p>` element by combining with the css property `content: "";` which will add the string written between the quotes. *note: most often used to add symbols, arrows emojis instead of actual text bc it's not always accessible by screen readers. 
 - this has been used to insert empty string and add block dimensions and color to add shapes and images along with text
+**more on psuedo element properties** https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
 
-**more on this https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements
+
+**more on psuedo selectors and elements** https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements
+
+
+##### Attribute Selectors
+`src='picture.jpg'` or `href="www..."` all examples of attributes that need more flexible system of targeting them 
+	- same specificity as classes and psuedo classes
+- There are three ways to target a specific attribute: 
+	1. `[attribute]` - ex `[src]{...}` this will target any element that has the src attribute
+	2. `selector[attribute]` - ex `img[src]{...}` this will target img elements with src attribute
+	3. `[attribute="value"]` - to get really specific match with a specific attribute
+- We can also use general selectors that match part of attribute values with aspecific syntax that is similar to regular expressions though not too familar with them [[Regular expressions]]
+	- `[attribute^="value"]` `^=` - matchs strings from the start
+	- `$=` matches strings from the end
+	- `*=` is a wildcard selector that will match any where in the string
+- more on attribute selectors https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+- ex
+	```css
+[class^='aus'] {
+  /* Classes are attributes too!
+    This will target any class that begins with 'aus':
+    class='austria'
+    class='australia'
+  */
+}
+
+[src$='.jpg'] {
+  /* This will target any src attribute that ends in '.jpg':
+  src='puppy.jpg'
+  src='kitten.jpg'
+  */
+}
+
+[for*='ill'] {
+  /* This will target any for attribute that has 'ill' anywhere inside it:
+  for="bill"
+  for="jill"
+  for="silly"
+  for="ill"
+  */
+}
+```
