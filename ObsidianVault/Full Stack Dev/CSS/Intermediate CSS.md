@@ -123,6 +123,7 @@ main > div {
 
 2. `+` - the adjacent sibling
 	- it seems the way this works is the + bumps to the adjacent below it or around it hence why these examples will select the group1 plus how many div are added
+	- the last +div will be the one that is being selected
 ```css
 /* This rule will only select the div with the class child group2 */
 .group1 + div {
@@ -152,6 +153,7 @@ select elements based on their position within the DOM
 - `:root` very top level of the document, no parents. generally equivalent to html element
 	- typically where the document wide css rules will go
 - `:last-child` , `:first-child` pared with a selector `p:first-child` will always select the first child that is a p. Benefit being that if you rearrange the content later it will always select the first child so not as many drastic changes have to be made
+	- *note: you can also count back or forward from last or first ex `div:last-child(3)`* 
 - `:empty` match elements with no children at all
 - There are also user-action psuedo classes such as `:hover` , and `:focus` that are when a specific state is ocurring. 
 - *should be noted that psuedo class have the same specificity as regular classes*
