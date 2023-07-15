@@ -262,3 +262,5 @@ the `::before` & `::after` selectors  can be used to add content into for exampl
 	- ex: `top: 10px` means it'll stay 10 pixels from the top of the view port as you continue to scroll down.
 	- *important to note it's normal until it reaches the offset that was set* 
 - Resource page on positioning https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+## CSS Functions
