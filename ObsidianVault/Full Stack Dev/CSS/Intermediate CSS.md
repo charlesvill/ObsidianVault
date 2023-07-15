@@ -158,3 +158,6 @@ article p:first-child::first-line {
 ```
 ##### Before and after psuedo elements
 the `::before` & `::after` selectors  can be used to add content into for example a `<p>` element by combining with the css property `content: "";` which will add the string written between the quotes. *note: most often used to add symbols, arrows emojis instead of actual text bc it's not always accessible by screen readers. *
+- this has been used to insert empty string and add block dimensions and color to add shapes and images along with text
+
+**more on this https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements
