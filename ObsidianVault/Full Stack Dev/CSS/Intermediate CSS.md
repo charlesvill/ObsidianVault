@@ -264,4 +264,6 @@ the `::before` & `::after` selectors  can be used to add content into for exampl
 - Resource page on positioning https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
 ## CSS Functions
+#### calc()
+- Used for handling alot of nesting of different units when specific quanties needed that need to be changed dynamically. 
 - 
