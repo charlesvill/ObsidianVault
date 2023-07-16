@@ -266,4 +266,8 @@ the `::before` & `::after` selectors  can be used to add content into for exampl
 ## CSS Functions
 #### calc()
 - Used for handling alot of nesting of different units when specific quanties needed that need to be changed dynamically. 
-- 
+
+#### min() & max()
+- min() is a css function that helps to define a boundary for the maximum size/value
+- min() takes two parameters `min(150px, 100%)` where the first value is the size maximum it will take if there is enough space. the second argument says if there is not enough space, it will take up 100% of the parent width or the property that this is being used on. 
+- max()
