@@ -139,11 +139,11 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 316.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -156,10 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54269f92ddd799eb",
+  "active": "afb5a6cf9c006c9b",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
+    "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/TOPICS TO LEARN.md",
     "Untitled.canvas",
     "ObsidianVault/The 8 Most important Hotkeys.md",

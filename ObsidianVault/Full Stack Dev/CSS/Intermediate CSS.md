@@ -14,17 +14,17 @@
 - both are referring to a font size, could be other things, ***prefer rem over em. 
 - em is the font size of the element or the element's parent it's multiplied to the font size so 4px font with 4 em equals (4px * 4em == 16px )
 - rem is the same except that it uses the root elemtent so it doesn't get changed if parents change or contexts change. better consistency. 
-- refer to this article on when to use each one https://codyloyd.com/2021/css-units/
-- refer to this article on all available units https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+- refer to this article on when to use each one https://codyloyd.com/2021/css-units/ [[CSS reference Notes]]
+- refer to this article on all available units https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units [[CSS reference Notes]]
 
 ##### percentages
 - when a percentage is used it  will be relative to some other property, like the parent value. *ex using 30% as width will take 30% of the parent container and font size will be 30% of the parent font.* 
 
 ##### Viewports
 - vh or vw represent a relative percentage value to the availble viewport space. 
-- more information on the various relative properties with respect to sizing things found here https://css-tricks.com/fun-viewport-units/ this also talks about respecting aspect-ratio. should come back to this
+- more information on the various relative properties with respect to sizing things found here https://css-tricks.com/fun-viewport-units/ this also talks about respecting aspect-ratio. should come back to this [[CSS reference Notes]]
 ##### Choosing the right Units
-- here is a video on knowing what units to be using for different contexts https://www.youtube.com/watch?v=N5wpD9Ov_To&ab_channel=KevinPowell
+- here is a video on knowing what units to be using for different contexts https://www.youtube.com/watch?v=N5wpD9Ov_To&ab_channel=KevinPowell [[CSS reference Notes]]
 
 
 
@@ -76,7 +76,7 @@ h1 {
 
 ##### Text-transform and text Overflow
 - allows you to capitalize element's text value. you can do all uppercase, capitalize or all lowercase with the attribute `text-transform: lowercase;` 
-- for Text overflow, visit this page, likely will need to each time https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/
+- for Text overflow, visit this page, likely will need to each time https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/ [[CSS reference Notes]]
 
 
 ## Plethora of CSS Properties
@@ -207,7 +207,7 @@ the `::before` & `::after` selectors  can be used to add content into for exampl
 	- `[attribute^="value"]` `^=` - matchs strings from the start
 	- `$=` matches strings from the end
 	- `*=` is a wildcard selector that will match any where in the string
-- more on attribute selectors https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+- more on attribute selectors https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors [[CSS reference Notes]]
 - ex
 	```css
 [class^='aus'] {
@@ -266,8 +266,21 @@ the `::before` & `::after` selectors  can be used to add content into for exampl
 ## CSS Functions
 #### calc()
 - Used for handling alot of nesting of different units when specific quanties needed that need to be changed dynamically. 
+- *do not need it inside of min(), max(), or clamp()*
 
 #### min() & max()
-- min() is a css function that helps to define a boundary for the maximum size/value
+- min() is a css function that helps to define a boundary for the maximum size/value. 
+- in it essence, it calculates the arugments passed and determines which of the (up to three) arguments is the smallest and picks that one as the size
 - min() takes two parameters `min(150px, 100%)` where the first value is the size maximum it will take if there is enough space. the second argument says if there is not enough space, it will take up 100% of the parent width or the property that this is being used on. 
-- max()
+- max() does the same but the opposite, determines which of the passed values is the biggest one and picks that one as the value. 
+- Because of the way it interacts as the parent container can dynamically change, it could appear as if the max was really setting a minimum size among values passed through. 
+#### clamp()
+- clamp uses three parameters that are a minimum , an ideal, and a maximum. 
+- what of the three is used depends on how the parent container is being sized as screen available spaced is changed. 
+	- If bigger than the ideal, switch to maximum.
+	- smaller than maximum, it'll stay in ideal until parent container gets too small to fit  the ideal and switches to the minimum. 
+- clamp() can also be used to create dynamic and fluid sized fonts. bitchin'
+**NOTE: for these three functions you do not need to include calc() inside. already baked into it**
+
+More on these three CSS functions found here: https://web.dev/min-max-clamp/ [[CSS reference Notes]]
+Practical applications of each of these: https://moderncss.dev/practical-uses-of-css-math-functions-calc-clamp-min-max/ [[CSS reference Notes]]
