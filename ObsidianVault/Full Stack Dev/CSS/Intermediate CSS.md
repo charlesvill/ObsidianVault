@@ -265,6 +265,7 @@ the `::before` & `::after` selectors  can be used to add content into for exampl
 
 ## CSS Functions
 #### calc()
+
 - Used for handling alot of nesting of different units when specific quanties needed that need to be changed dynamically. 
 - *do not need it inside of min(), max(), or clamp()*
 
@@ -284,3 +285,7 @@ the `::before` & `::after` selectors  can be used to add content into for exampl
 
 More on these three CSS functions found here: https://web.dev/min-max-clamp/ [[CSS reference Notes]]
 Practical applications of each of these: https://moderncss.dev/practical-uses-of-css-math-functions-calc-clamp-min-max/ [[CSS reference Notes]]
+
+## CSS Variables and Custom Properties
+allows us to define a color value for example and use it throughout larger projects and not have to be as verbose for each instance of the color and can change the value of that color from the single variable as opposed to changing each instance of the color.
+
