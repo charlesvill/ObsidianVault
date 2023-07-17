@@ -303,4 +303,10 @@ color: var(--undeclared-again, var(--color-text, yellow));
 #### Scope of Custom Properties
 - scope of where you can access custom properties work similar to block scope in JS. 
 	- if you want a custom property to be accessible throughout the whole document, you'll need to use the `:root` selector instead of `html` selector as the former has higher specificity.
-- 
+
+##### Inheritance of custom properties
+- if a parent container has a selector that gives them a custom property, it's children will inherit the same value unless the children have their own custom property assigned to them via a selector.
+
+##### Making themes with Scope and :root
+- because of the rules of scope you could create two separate selectors for class light and dark that use the same property names but different values for light and dark themes respectively. Then, using something  like a media query could change the class on the root element and the respective properties will feel the values to the instances of the property found throughout the document that color the background, the text, divisions, etc.
+- see custom properties TOP lesson for more information and syntax: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-custom-properties
