@@ -319,4 +319,7 @@ color: var(--undeclared-again, var(--color-text, yellow));
 - something very useful about frameworks is it can standardize the conventions for class naming and IDs which could help with working on teams and avoid subjectivity and "personal flair" from individual develepors allowing for a more uniform consistent styling.
 - **Preprocessors** are utilties that can be installed that involve a language used to speed the flow of writing CSS. Often times it will take a specialized style sheet that utilizes the custom language and then it will process it into a regular css sheet and/or merge with an existing style sheet for compatibility. Helps with expediting syntax, repetitive things, features that css does not all have on its own such as a nesting structure similar to how html nests. 
 	- popular preprocessors include SASS and LESS
-- 
+	- SASS has the largest user base of developers
+- Typically the sentiment in the community is that preprocessors help projects scale as they get more complicated with more style sheets and they are easier to maintain once it's been deployed.
+- another sentiment is that stying deeply nested html elemeents are easier to read with preprocessor syntax
+- Overall, it is important to consider who will be working on your project and what the development cycle is going to look like (who will maintain, if you might need to undo the preprocessor/framework) and debugging could be over all more difficult with preprocessors.
