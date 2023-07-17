@@ -289,3 +289,18 @@ Practical applications of each of these: https://moderncss.dev/practical-uses-of
 ## CSS Variables and Custom Properties
 allows us to define a color value for example and use it throughout larger projects and not have to be as verbose for each instance of the color and can change the value of that color from the single variable as opposed to changing each instance of the color.
 
+- Declaring a variable would be similar to any other language except for: 
+	- `--variable-name: red;` needs to be initalized by two dashes
+	- Uses Kebab case
+	- Case sensitive
+- when accessing variable throughout your project, you need to use the `var()` function with the variable name inside of it.
+	- *var function accepts two parameters, the second being a fallback property incase the first one is not valid or hasn't been initialized yet. you can also refer to another custom property that itself has another fallback property and so on and so forth*
+		- ex:
+		- as seen here, the fallback is a var with it's own fallback of yellow
+		```css
+color: var(--undeclared-again, var(--color-text, yellow));
+```
+#### Scope of Custom Properties
+- scope of where you can access custom properties work similar to block scope in JS. 
+	- if you want a custom property to be accessible throughout the whole document, you'll need to use the `:root` selector instead of `html` selector as the former has higher specificity.
+- 
