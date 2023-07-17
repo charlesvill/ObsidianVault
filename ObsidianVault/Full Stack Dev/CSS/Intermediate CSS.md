@@ -310,3 +310,5 @@ color: var(--undeclared-again, var(--color-text, yellow));
 ##### Making themes with Scope and :root
 - because of the rules of scope you could create two separate selectors for class light and dark that use the same property names but different values for light and dark themes respectively. Then, using something  like a media query could change the class on the root element and the respective properties will feel the values to the instances of the property found throughout the document that color the background, the text, divisions, etc.
 - see custom properties TOP lesson for more information and syntax: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-custom-properties
+
+## Frameworks and Preprocessors
