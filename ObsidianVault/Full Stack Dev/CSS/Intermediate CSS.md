@@ -312,3 +312,11 @@ color: var(--undeclared-again, var(--color-text, yellow));
 - see custom properties TOP lesson for more information and syntax: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-custom-properties
 
 ## Frameworks and Preprocessors
+
+- Frameworks are sets of premade css stylesheets that utlize quick ways of populating much of the common parts of a typical page such as footers, navbars, split views, etc. 
+	- popular frameworks include Bootstrap and tailwinds css
+- Essential to know the foundations however for debugging and tweaking the framework baseline as at times they can be very generic and patterns will arise in websites that point towards a specific framework and hurts creativity. 
+- something very useful about frameworks is it can standardize the conventions for class naming and IDs which could help with working on teams and avoid subjectivity and "personal flair" from individual develepors allowing for a more uniform consistent styling.
+- **Preprocessors** are utilties that can be installed that involve a language used to speed the flow of writing CSS. Often times it will take a specialized style sheet that utilizes the custom language and then it will process it into a regular css sheet and/or merge with an existing style sheet for compatibility. Helps with expediting syntax, repetitive things, features that css does not all have on its own such as a nesting structure similar to how html nests. 
+	- popular preprocessors include SASS and LESS
+- 
