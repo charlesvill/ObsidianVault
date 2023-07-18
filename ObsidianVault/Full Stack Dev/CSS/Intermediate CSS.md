@@ -353,6 +353,7 @@ here are some of the most important ones:
 	- Necessary to have the type attribute to define a single line text input
 	- the `name` attribute is specific to naming the variable that will store this data in server side.
 	- in order to have default text in the field, use the `value` attribute with text wrapped in "" quotes.
+	- can be resized with the size and maxlength attribute to limit the size of the box and the number of characters allowed
 - email input
 	- one line with basic validation to make sure valid email strucuture is being entred
 - password input
@@ -361,18 +362,53 @@ here are some of the most important ones:
 	- technically not an input element but useful for inputting reviews or longer collections of text
 	- different from text input in that it's not a void element, it needs an opening and closing tag in contrast to some of the other input elements. 
 	- for the purposes of having default text in the field, you need to put it in between the opening and closing tags as html content. again, in contrast to text input
+- File picker
+	- allows you to select one or more files to send to server. you can control file types or constrains using the attribute `accept` and allow multiple files with `multiple` attribute
 ##### Selection Elements
+anything involving a list that goes together should be nestedinside of a fieldset with accompanying legend providing description of the list
+*typically, the legend handles the description of the entire list and the labels are the description for individual list items* 
 - Select Dropdown
 - Radio Buttons
 	- should be nested inside of a fieldset element, has to do with accessability and screen readers
 	- Should be using labels bc it allows the label to be clickable as means to selecting the box the label corresponds to
+	- syntax:
+	```
+<fieldset>
+  <legend>What is your favorite meal?</legend>
+  <ul>
+    <li>
+      <label for="soup">Soup</label>
+      <input type="radio" id="soup" name="meal" value="soup" checked />
+    </li>
+    <li>
+      <label for="curry">Curry</label>
+      <input type="radio" id="curry" name="meal" value="curry" />
+    </li>
+    <li>
+      <label for="pizza">Pizza</label>
+      <input type="radio" id="pizza" name="meal" value="pizza" />
+    </li>
+  </ul>
+</fieldset>
+
 - checkboxes
 	- should use labels for the same reason above
+- *checkboxes and radios with checked attribute will match with psuedo class :default even if they are no longer checked by user. any that are currently checked will match with the :checked psuedo-class* 
 ##### Buttons
 Buttons all use the `button` element tag but are defined by the type attribute that define it as one of the following three: 
 - Submit buttons
 - Reset Buttons
 - Generic button
+- You can also make a button by using the input element tag and then type use submit, reset, generic. however, those are void elements and do allow HTML in their content whereas `button` elements do.
+- image button
+	- behave like a submit button but render like an img
+	- use `input` element with img as the `type` 
+	- when you submit, you send not the value, but the coordinates of where you clicked on the image relative to its local coordinates
+	- more on this here:https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls#image_button
+	Ex: <input type="image" alt="Click me!" src="my-img.png" width="80" height="30" />
+		
+	
+
 
 ##### Organizing Form Elements
 - when staging forms on webpages, often logical sectionining is needed to chunk longer forms such as surveys to prevent users from getting overwhelmed. 
