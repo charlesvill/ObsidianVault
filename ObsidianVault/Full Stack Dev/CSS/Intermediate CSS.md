@@ -408,8 +408,6 @@ Buttons all use the `button` element tag but are defined by the type attribute t
 	Ex: <input type="image" alt="Click me!" src="my-img.png" width="80" height="30" />
 		
 	
-
-
 ##### Organizing Form Elements
 - when staging forms on webpages, often logical sectionining is needed to chunk longer forms such as surveys to prevent users from getting overwhelmed. 
 	- For this, you willl use Fieldset element
