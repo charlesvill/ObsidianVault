@@ -356,8 +356,16 @@ here are some of the most important ones:
 	- can be resized with the size and maxlength attribute to limit the size of the box and the number of characters allowed
 - email input
 	- one line with basic validation to make sure valid email strucuture is being entred
+	- if email form verification fails, the psuedo class `:invalid` will match and `validityState.typeMismatch` property will return true
 - password input
 - number input
+	- will render a step higher or lower ui to adjust value input. step can be adjusted with the `step` attribute `step="2"`
+	- by default only allows integer values unless `step` is set to `step="any"`.
+	- with the `min` and `max` attributes, you can constrain the floor and ceiling values
+- slider controls
+	- use the `input type = "range"` 
+	- by default will only have the slider that does not display the slider output amount
+		- for that you will need `<output for"same as id for input">` and then use javascript to get reference to that output element and place event listener to listen for input into the input control and have the text content of the output element be the output of the slider input control
 - text area
 	- technically not an input element but useful for inputting reviews or longer collections of text
 	- different from text input in that it's not a void element, it needs an opening and closing tag in contrast to some of the other input elements. 
