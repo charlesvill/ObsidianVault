@@ -323,3 +323,22 @@ color: var(--undeclared-again, var(--color-text, yellow));
 - Typically the sentiment in the community is that preprocessors help projects scale as they get more complicated with more style sheets and they are easier to maintain once it's been deployed.
 - another sentiment is that stying deeply nested html elemeents are easier to read with preprocessor syntax
 - Overall, it is important to consider who will be working on your project and what the development cycle is going to look like (who will maintain, if you might need to undo the preprocessor/framework) and debugging could be over all more difficult with preprocessors.
+
+## Form Basics
+Questions: 
+	1. what are forms?
+		1. They are umbrella element that connects essential data from user (client side) to data banks. 
+		2. They can come in the form of dropdowns, text input, buttons, checkboxes, etc.
+		3. for now, operate two functions *Post* and *Get* , which represent retrieving from and posting changes to server. *i.e google search or posting tweet.*
+		4. 
+	2. How do they interact with the back end?
+	3. What is the syntax?
+		1. ex: 
+```html
+<form action="example.com/path" method="post">
+
+</form>
+```
+- The two attributes required and seen here are the `action` and `method` attribute. 
+	- action designates the location data will be sent to and method designates whether it'll be posting or getting. 
+- 
