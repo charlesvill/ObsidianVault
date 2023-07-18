@@ -328,7 +328,7 @@ color: var(--undeclared-again, var(--color-text, yellow));
 Questions: 
 	1. what are forms?
 		1. They are umbrella element that connects essential data from user (client side) to data banks. 
-		2. They can come in the form of dropdowns, text input, buttons, checkboxes, etc.
+		2. The inputs  can come in the form of dropdowns, text input, buttons, checkboxes, etc.
 		3. for now, operate two functions *Post* and *Get* , which represent retrieving from and posting changes to server. *i.e google search or posting tweet.*
 		4. 
 	2. How do they interact with the back end?
@@ -341,4 +341,40 @@ Questions:
 ```
 - The two attributes required and seen here are the `action` and `method` attribute. 
 	- action designates the location data will be sent to and method designates whether it'll be posting or getting. 
-- 
+#### Form controls
+- are the types of input that are options to collect data.
+- each of these have available attributes that are necessary to communicating to the server how to sort the data and make meaning of it
+
+here are some of the most important ones:
+#####  Input Elements
+- Text input
+- email input
+- password input
+- number input
+- text area
+	- technically not an input element but useful for inputting reviews or longer collections of text
+##### Section Elements
+- Select Dropdown
+- Radio Buttons
+- checkboxes
+##### Buttons
+- Submit buttons
+- Reset Buttons
+- Generic button
+
+##### Organizing Form Elements
+- when staging forms on webpages, often logical sectionining is needed to chunk longer forms such as surveys to prevent users from getting overwhelmed. 
+	- For this, you willl use Fieldset element
+		ex: paired with the `legend` tag that denotes a logical section. each section will need the fieldset container and `legend` tag right below it.
+		```html
+<fieldset>
+	<legend>Contact Details</legend>
+	  <label for="first_name">First Name</label>
+	  <input type="text" id="first_name" name="first_name">
+
+	  <label for="last_name">Last Name</label>
+	  <input type="text" id="last_name" name="last_name">
+	
+</fieldset>
+```
+		
