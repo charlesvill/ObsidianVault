@@ -348,16 +348,25 @@ Questions:
 here are some of the most important ones:
 #####  Input Elements
 - Text input
+	- Best paired with `label` element to describe the data to enter in field area with a `for` attribute that matches the *id* in the input attributes.
+	- `<input type="text" id="name" name="user_name">` 
+	- Necessary to have the type attribute to define a single line text input
+	- the `name` attribute is specific to naming the variable that will store this data in server side.
+	- in order to have default text in the field, use the `value` attribute with text wrapped in "" quotes.
 - email input
+	- one line with basic validation to make sure valid email strucuture is being entred
 - password input
 - number input
 - text area
 	- technically not an input element but useful for inputting reviews or longer collections of text
+	- different from text input in that it's not a void element, it needs an opening and closing tag in contrast to some of the other input elements. 
+	- for the purposes of having default text in the field, you need to put it in between the opening and closing tags as html content. again, in contrast to text input
 ##### Section Elements
 - Select Dropdown
 - Radio Buttons
 - checkboxes
 ##### Buttons
+Buttons all use the `button` element tag but are defined by the type attribute that define it as one of the following three: 
 - Submit buttons
 - Reset Buttons
 - Generic button
