@@ -361,10 +361,13 @@ here are some of the most important ones:
 	- technically not an input element but useful for inputting reviews or longer collections of text
 	- different from text input in that it's not a void element, it needs an opening and closing tag in contrast to some of the other input elements. 
 	- for the purposes of having default text in the field, you need to put it in between the opening and closing tags as html content. again, in contrast to text input
-##### Section Elements
+##### Selection Elements
 - Select Dropdown
 - Radio Buttons
+	- should be nested inside of a fieldset element, has to do with accessability and screen readers
+	- Should be using labels bc it allows the label to be clickable as means to selecting the box the label corresponds to
 - checkboxes
+	- should use labels for the same reason above
 ##### Buttons
 Buttons all use the `button` element tag but are defined by the type attribute that define it as one of the following three: 
 - Submit buttons
@@ -386,4 +389,8 @@ Buttons all use the `button` element tag but are defined by the type attribute t
 	
 </fieldset>
 ```
-		
+	- `label` tags are good to use with checkboxes and radios but are more importantly an important description for the form control but also important for screen readers to read properly
+		- look into `aria-label` for more on better making accessibility for screen readers
+		- see this article for more on layout for accessibility: https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form
+		-   it's common practice to use common html elements to organize such as ul, li, div, p, h1-5 etc
+	- the `section` element should also be used in conjunction with the fieldset element for separating logical chunks in forms
