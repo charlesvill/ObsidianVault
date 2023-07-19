@@ -465,3 +465,32 @@ Buttons all use the `button` element tag but are defined by the type attribute t
 		- see this article for more on layout for accessibility: https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form
 		-   it's common practice to use common html elements to organize such as ul, li, div, p, h1-5 etc
 	- the `section` element should also be used in conjunction with the fieldset element for separating logical chunks in forms
+
+## Styling Forms 
+#### Fonts and texts
+- sometimes elements in fonts dont' always inherit font rules from parents and thus may need these rules applied: 
+	```css
+	button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+```
+#### Box sizing
+Sometimes there will be difficulty facing consistent sizes because of each widget having their own rules for border, padding and margin and also because of each different browers reliance on operating system default settings for things. Something that can help though is: 
+```css
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+```
+more on box sizing and styling forms in general found at: https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms
