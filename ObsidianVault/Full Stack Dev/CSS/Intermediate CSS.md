@@ -542,4 +542,12 @@ checkboxes and radio buttons along with input type search bars tend to be more d
 		- controls with built in validation like email and url that doesnt match with its requirements
 		- current value is outside range limits specified in min/max attributes, but also matched with `:out-of-range`
 		- more to see in [[#Client-side form validation]].
+- for Enabled/disabled see above psuedo classes article link 
+- Read-only and Read-write
+	- use the attribute `readonly` right before the closing tag
+	- use cases: if you have already typed in info on a previous page but wish to have it populated as read only so the user to reference inputs they made on a subsequent page
+- :default and :indeterminate
+	-  things that can be considered indeterminate include:
+		- radio/checkbox/progress
+- Come back to test your skills advanced styling if I'm having trouble with project
 - 
