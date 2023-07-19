@@ -494,3 +494,5 @@ button {
 
 ```
 more on box sizing and styling forms in general found at: https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms
+**Legend Styling**
+- by default the legend will place itself top left corner, in order to change this, you need to set the parent fieldset position as relative and the legend position to absolute. 
