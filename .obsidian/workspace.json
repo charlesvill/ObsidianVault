@@ -8,19 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "54269f92ddd799eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ec5989ab4888c007",
+            "id": "f2845bba8f3b442d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -169,12 +156,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ec5989ab4888c007",
+  "active": "f2845bba8f3b442d",
   "lastOpenFiles": [
-    "How the internet works and Networking.md",
+    "Full Stack Parking lot.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
-    "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "ObsidianVault/TOPICS TO LEARN.md",
+    "How the internet works and Networking.md",
+    "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "Untitled.canvas",
     "ObsidianVault/The 8 Most important Hotkeys.md",
     "ObsidianVault/The 6 most Important keys to Typing in Markdown.md",

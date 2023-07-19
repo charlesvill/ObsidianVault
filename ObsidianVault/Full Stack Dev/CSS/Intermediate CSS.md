@@ -511,3 +511,22 @@ checkboxes and radio buttons along with input type search bars tend to be more d
 #### Appearance property
 - the appearance property can be used to control OS-level styling that can be applied by default in forms. 
 	- the best application of appearance is to set it to none to allow css styles to built from the ground up to allow again for greater consistency and experience across browsers and devices. 
+		- useful for radio, checkboxes, search bars in removing inconsistencies
+- Selects and Datalists
+	- on a select again the dropdown arrow could look different depending on what browser you're on, again bringing the appearance property useful
+	- making a new arrow using generated content required the use of a wrapper of div around the select element because of the way the browser renders form elements specifically
+	- use the ::before/::after psuedo class to add the dropdown arrow to the wrapper div
+		- more on this : https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling
+	- More issues styling encountered when looking at the box appearing with the options, styling such as spacing and colors of the options box would require custom libraries to be imported or building your own custom form control.
+	- *worth nothing that you can use the multiple attribute to display all the optoins on the screen at  once sidestepping this issue though it may still not conform to the page's intended design aesthetic*
+- Date input types
+	- Literarlly SOL with styling the rendered date picker calendar, limited to the box that you can click on. 
+	- not even `appearance="none"` works here
+		- again, if you want something stylized, need library or build a custom one.
+- file input types
+	- the button itself is completely unstylable.
+	- what you could do is hide the button itself by putting opacity to 0 and using an attached label and style that one normally and user can just click on the label like normal.
+- Meters and Progress Bars
+	- Even worse tbh outside of changing the fill color nought is possible. appearance as none makes things worse
+		- go to progressbar.js : https://kimmobrunfeldt.github.io/progressbar.js/#examples
+			- Third party solutions for progress bars
