@@ -372,6 +372,13 @@ here are some of the most important ones:
 	- for the purposes of having default text in the field, you need to put it in between the opening and closing tags as html content. again, in contrast to text input
 - File picker
 	- allows you to select one or more files to send to server. you can control file types or constrains using the attribute `accept` and allow multiple files with `multiple` attribute
+- Date and Time picker
+	- uses the `input` element tag with type that ranges from time to datetime-local
+	- examples `input type="..."` `date`  `datetime-local` , `month` , `time` `week`
+	- you can also constrict date and time with min/max and step\
+- Color Picker Control
+	- `input type="color"` will bring up the default operating system color-picking functionality
+- more on color picker and date and time picker https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
 ##### Selection Elements
 anything involving a list that goes together should be nestedinside of a fieldset with accompanying legend providing description of the list
 *typically, the legend handles the description of the entire list and the labels are the description for individual list items* 
