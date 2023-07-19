@@ -366,10 +366,23 @@ here are some of the most important ones:
 	- use the `input type = "range"` 
 	- by default will only have the slider that does not display the slider output amount
 		- for that you will need `<output for"same as id for input">` and then use javascript to get reference to that output element and place event listener to listen for input into the input control and have the text content of the output element be the output of the slider input control
+- Meter & Progress bars
+	- in forms can be very handy visual see https://developer.mozilla.org/en-US/docs/Learn/Forms/Other_form_controls heading "other form features"
 - text area
 	- technically not an input element but useful for inputting reviews or longer collections of text
-	- different from text input in that it's not a void element, it needs an opening and closing tag in contrast to some of the other input elements. 
+	- different from text input in that it's not a void element, it needs an opening and closing tag in contrast to some of the other input elements.
+		- also another difference is that you can do line breaks (press enter)
 	- for the purposes of having default text in the field, you need to put it in between the opening and closing tags as html content. again, in contrast to text input
+	- to constrain rendering box across lines of text, `textarea` accepts three attributes
+		1. cols - limit how many columns (width) default is 20
+		2. rows - how many rows (height) default is 2
+		3. wrap - soft, hard and off which render only browser wrapping both submitted and renderd and none respectively
+	 - You can also control how much the user can rezise the text area with: 
+		 - both 
+		 - horizontal- only 
+		 - veritical - only
+		 - none - neither
+		 - block & inline - only in block/inline direction (experimental)
 - File picker
 	- allows you to select one or more files to send to server. you can control file types or constrains using the attribute `accept` and allow multiple files with `multiple` attribute
 - Date and Time picker
@@ -383,6 +396,15 @@ here are some of the most important ones:
 anything involving a list that goes together should be nestedinside of a fieldset with accompanying legend providing description of the list
 *typically, the legend handles the description of the entire list and the labels are the description for individual list items* 
 - Select Dropdown
+	- use the `select` element tag as parent container and `option` for each list item
+	- You can initiliaze a selection with the option "selected" like `<option selected>Cherry</option>` 
+	- you can use `optgroup` to parent dropdown list items that are grouped together with a label attribute `<optgroup label="fruits">`
+	- you can allow the choice for multiple choices by adding attribute of "multiple" 
+	- In many input forms, like the text type, you can use a datalist element to give suggested dropdown menu and even autocomplete suggestions 
+		- in the input `type="text"` add attribute `list=name` 
+		- right below make `<datalist id="name">` make sure it matches the list name
+		- data list is the container so populate nested options like a regular dropdown to show the suggestions
+	- for more see: https://developer.mozilla.org/en-US/docs/Learn/Forms/Other_form_controls heading "Drop-down controls"
 - Radio Buttons
 	- should be nested inside of a fieldset element, has to do with accessability and screen readers
 	- Should be using labels bc it allows the label to be clickable as means to selecting the box the label corresponds to
