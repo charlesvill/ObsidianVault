@@ -534,4 +534,12 @@ checkboxes and radio buttons along with input type search bars tend to be more d
 - `:valid`/`:invalid`, `:in-range`/`:out-of-range`
 - `:enabled`/`:disabled`, and `:read-only`/`:read-write` the latter for attribute `readonly`
 - `:checked`/`:indeterminate`, and `:default` checkboxes and radio buttons that checks if neither option was selected or neither check nor unchecked and if it was the default option when the page was loaded.
+- Using generated content with psuedo-classes
+	- using the ::before/::after, you could style cool custom radio/checkbox dials that do not clutter the html page and thus screen readers and accessibility devices. Example here: https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes Heading: using generated content with psuedo-classes
+- Valid/invalid triggers
+	- some of the things that will trigger an invalid to be selected in css are: 
+		- controls with `required` that are left empty
+		- controls with built in validation like email and url that doesnt match with its requirements
+		- current value is outside range limits specified in min/max attributes, but also matched with `:out-of-range`
+		- more to see in [[#Client-side form validation]].
 - 
