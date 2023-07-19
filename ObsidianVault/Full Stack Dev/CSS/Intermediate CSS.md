@@ -61,7 +61,8 @@ body {
 	```css
 @font-face {
   font-family: my-cool-font;
-  src: url(../fonts/the-font-file.woff);
+  src: url(../fonts/the-font-file.woff)
+  format('woff');
 }
 
 h1 {
@@ -69,7 +70,10 @@ h1 {
 }
 ```
 
-
+3. How to use online downloaded fonts
+	- after downloading ttf file, go to https://www.fontsquirrel.com/tools/webfont-generator and upload the ttf file to convert to a webfontkit
+	- extract the zip file and place extracted contents into font folder in project files *the two woff files are there for compatibility* 
+	- the files will contain example css for formatting the `@font-face` importing piece for the style sheets
 ##### Letter-spacing & Line Height
 - you can use `letter-spacing: .5em;` to bring together or space out fonts that might aesthetically benefit from tweaking. 
 - the `line-height: 1.5` does similar for adjusting relative to normal spacing\
@@ -496,3 +500,4 @@ button {
 more on box sizing and styling forms in general found at: https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms
 **Legend Styling**
 - by default the legend will place itself top left corner, in order to change this, you need to set the parent fieldset position as relative and the legend position to absolute. 
+- 
