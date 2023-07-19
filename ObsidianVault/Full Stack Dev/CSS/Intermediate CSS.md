@@ -334,7 +334,6 @@ Questions:
 		1. They are umbrella element that connects essential data from user (client side) to data banks. 
 		2. The inputs  can come in the form of dropdowns, text input, buttons, checkboxes, etc.
 		3. for now, operate two functions *Post* and *Get* , which represent retrieving from and posting changes to server. *i.e google search or posting tweet.*
-		4. 
 	2. How do they interact with the back end?
 	3. What is the syntax?
 		1. ex: 
@@ -531,3 +530,8 @@ checkboxes and radio buttons along with input type search bars tend to be more d
 		- go to progressbar.js : https://kimmobrunfeldt.github.io/progressbar.js/#examples
 			- Third party solutions for progress bars
 ### UI Psuedo-classes
+- `:required` / `optional` targets elements that can be required or optional according to html attribute of `required`.
+- `:valid`/`:invalid`, `:in-range`/`:out-of-range`
+- `:enabled`/`:disabled`, and `:read-only`/`:read-write` the latter for attribute `readonly`
+- `:checked`/`:indeterminate`, and `:default` checkboxes and radio buttons that checks if neither option was selected or neither check nor unchecked and if it was the default option when the page was loaded.
+- 
