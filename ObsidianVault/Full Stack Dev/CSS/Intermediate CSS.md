@@ -501,3 +501,13 @@ more on box sizing and styling forms in general found at: https://developer.mozi
 **Legend Styling**
 - by default the legend will place itself top left corner, in order to change this, you need to set the parent fieldset position as relative and the legend position to absolute. 
 - for more on styling and example see: https://developer.mozilla.org/en-US/docs/Learn/Forms#form_styling_guides
+- \
+## Advanced Form styling
+checkboxes and radio buttons along with input type search bars tend to be more difficult to style compared to others
+	Some elements cannot be styled solely with CSS these include: 
+		- `select` `option` , `optgroup` , `datalist`, `input type color`, 
+		- Date related controls such as date, datetime-local
+		- range, file, progress and meter
+#### Appearance property
+- the appearance property can be used to control OS-level styling that can be applied by default in forms. 
+	- the best application of appearance is to set it to none to allow css styles to built from the ground up to allow again for greater consistency and experience across browsers and devices. 
