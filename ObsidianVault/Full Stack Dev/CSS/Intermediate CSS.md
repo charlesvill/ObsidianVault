@@ -470,7 +470,7 @@ Buttons all use the `button` element tag but are defined by the type attribute t
 		-   it's common practice to use common html elements to organize such as ul, li, div, p, h1-5 etc
 	- the `section` element should also be used in conjunction with the fieldset element for separating logical chunks in forms
 
-## Styling Forms 
+### Styling Forms 
 #### Fonts and texts
 - sometimes elements in fonts dont' always inherit font rules from parents and thus may need these rules applied: 
 	```css
@@ -502,7 +502,7 @@ more on box sizing and styling forms in general found at: https://developer.mozi
 - by default the legend will place itself top left corner, in order to change this, you need to set the parent fieldset position as relative and the legend position to absolute. 
 - for more on styling and example see: https://developer.mozilla.org/en-US/docs/Learn/Forms#form_styling_guides
 - \
-## Advanced Form styling
+### Advanced Form styling
 checkboxes and radio buttons along with input type search bars tend to be more difficult to style compared to others
 	Some elements cannot be styled solely with CSS these include: 
 		- `select` `option` , `optgroup` , `datalist`, `input type color`, 
@@ -530,3 +530,4 @@ checkboxes and radio buttons along with input type search bars tend to be more d
 	- Even worse tbh outside of changing the fill color nought is possible. appearance as none makes things worse
 		- go to progressbar.js : https://kimmobrunfeldt.github.io/progressbar.js/#examples
 			- Third party solutions for progress bars
+### UI Psuedo-classes
