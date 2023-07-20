@@ -558,9 +558,14 @@ Form validation gives a precheck before user submits data to the server to prote
 		- required validation (add `required attribute to it`)
 		- text length validation (min/max) `minlength`  or the `maxlength` attribute
 		- Number range validations `min` `max` attributes to define the range for number based inputs
+			- *note: if you don't put a step attribute, it will default to 1 which will be floats will not be seen as a valid entry*.
 		- Pattern validations for things like credit card inputs or zipcodes, we want certain patterns to be met and you use `pattern attribute` 
 			- can only be used on `input` elements
 	- what are regular expressions? patterns used to match character combinations in strings. in javascript regular expressions are objects [[Intermediate Javascript]]
+		- see this article for more on expressions https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+				-quick start quide:
+					`[Bb]`anana | `[Cc]`herry this says either capital or lowercase but the rest has to match with either of the two separated by the pipe
+					*textarea does not support the use of the pattern attribute* 
 	- what are some of the errors that will be presented prebenting a form from being submitted?
 		- badInput
 		- patternMismatch
