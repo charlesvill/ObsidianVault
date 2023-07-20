@@ -561,4 +561,14 @@ Form validation gives a precheck before user submits data to the server to prote
 		- Pattern validations for things like credit card inputs or zipcodes, we want certain patterns to be met and you use `pattern attribute` 
 			- can only be used on `input` elements
 	- what are regular expressions? patterns used to match character combinations in strings. in javascript regular expressions are objects [[Intermediate Javascript]]
-	- 
+	- what are some of the errors that will be presented prebenting a form from being submitted?
+		- badInput
+		- patternMismatch
+		- rangeOverflow
+		- rangeUnderflow
+		- stepMismatch
+		- tooLong
+		- tooShort
+		- typeMismatch
+		- valueMissing
+		- customError
