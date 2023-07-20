@@ -365,6 +365,7 @@ here are some of the most important ones:
 	- will render a step higher or lower ui to adjust value input. step can be adjusted with the `step` attribute `step="2"`
 	- by default only allows integer values unless `step` is set to `step="any"`.
 	- with the `min` and `max` attributes, you can constrain the floor and ceiling values
+	- one would think that credit cards are best served with number input, but because of the incrementer it has rendered, it's best to actually use input type text with the attribute `inputmode` to `numeric` also setting `autocomplete="cc-number"` suggests pre-configured credit card numbers
 - slider controls
 	- use the `input type = "range"` 
 	- by default will only have the slider that does not display the slider output amount
@@ -551,6 +552,7 @@ checkboxes and radio buttons along with input type search bars tend to be more d
 		- radio/checkbox/progress
 - Come back to test your skills advanced styling if I'm having trouble with project
 	- see internetishard article on styling and forms https://internetingishard.netlify.app/html-and-css/forms/index.html
+- Good article on improving UX in forms https://www.silocreativo.com/en/css-rescue-improving-ux-forms/
 
 ## Form Validation 
 Form validation gives a precheck before user submits data to the server to protect servers from recieving incorrect data.
