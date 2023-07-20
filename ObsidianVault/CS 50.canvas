@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"b38e643fc5d308fb","x":-60,"y":-380,"width":400,"height":360,"type":"file","file":"CS50/C.md"},
-		{"id":"3df40ec9fe9be49b","x":-320,"y":-230,"width":250,"height":210,"color":"2","type":"text","text":"Lab 1 week 2 C\n-Problem: \n\t- "}
+		{"id":"3df40ec9fe9be49b","x":-420,"y":-230,"width":350,"height":390,"color":"2","type":"text","text":"Lab 1 week 2 C\n-Problem: \n\t- need to take a starting number and an ending number and determine how many years it would take to take the point from a to b\n- for a given year you take the starting population and divide by 4, separate operation by 3. then subtract the quotient of 4 and add the quotient of "}
 	],
 	"edges":[
 		{"id":"f9395b56e4b186e1","fromNode":"3df40ec9fe9be49b","fromSide":"bottom","toNode":"b38e643fc5d308fb","toSide":"bottom"}
