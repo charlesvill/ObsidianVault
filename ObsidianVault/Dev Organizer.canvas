@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"type":"text","text":"#### to do: \n- [x] Finish SVG Lesson\n- [ ] Dual boot linux\n- [ ] Set up google drive & Obsidian sync\n- [ ] Next TOP lesson\n- [ ] *Set up local network?*\n- [ ] *Chapter from CPP book?\n- [ ] ","id":"c3f98a0779df6b04","x":-960,"y":-560,"width":240,"height":360}
+		{"type":"text","text":"#### to do: \n- [x] Finish SVG Lesson\n- [x] Dual boot linux\n- [x] Set up google drive & Obsidian sync\n- [x] Next TOP lesson\n- [ ] *Set up local network?*\n- [ ] *Chapter from CPP book?\n- [x] Week 2 cs50 C ","id":"c3f98a0779df6b04","x":-960,"y":-560,"width":240,"height":360}
 	],
 	"edges":[]
 }
