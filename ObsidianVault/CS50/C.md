@@ -28,6 +28,10 @@ int main(void){
 - in the placeholder for printf, what does `%.2f\n` mean as seen in this code: `printf("Sale Price: %.3f\n", sale`.
 - The %f is normally for formatting printf for a float but the .x is for noting how many decimal places to use. 
 - in C when listing parameters for a function, you must also indicate the data type that should be passed through as seen in. it's essentially like declaring a variable
+- trunctations- when you dont have memory space to display a longer number and so part of it gets chopped off. 
+	- like the calendar in 1999 that code was limited to truncate in the year 2000 they thought they would break
+	- they think this is going to happen again for computers counting the number of seconds since 1970s because passing 2 billions seconds aka the limit of 32 bit computers. 
+	- 
 #### loops in C
 syntax: 
 ```c
