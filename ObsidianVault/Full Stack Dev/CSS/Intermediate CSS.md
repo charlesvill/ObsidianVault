@@ -550,4 +550,15 @@ checkboxes and radio buttons along with input type search bars tend to be more d
 	-  things that can be considered indeterminate include:
 		- radio/checkbox/progress
 - Come back to test your skills advanced styling if I'm having trouble with project
-- 
+	- see internetishard article on styling and forms https://internetingishard.netlify.app/html-and-css/forms/index.html
+
+## Form Validation 
+Form validation gives a precheck before user submits data to the server to protect servers from recieving incorrect data.
+	some examples of validation include:
+		- required validation (add `required attribute to it`)
+		- text length validation (min/max) `minlength`  or the `maxlength` attribute
+		- Number range validations `min` `max` attributes to define the range for number based inputs
+		- Pattern validations for things like credit card inputs or zipcodes, we want certain patterns to be met and you use `pattern attribute` 
+			- can only be used on `input` elements
+	- what are regular expressions? patterns used to match character combinations in strings. in javascript regular expressions are objects [[Intermediate Javascript]]
+	- 
