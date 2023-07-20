@@ -25,3 +25,13 @@ int main(void){
 - you could hold 32 bits in an integer in C, roughly 4 billlion sized number
 	- 2 billion in either the positive or negative direction
 - the solution is to use a different data type, long integer
+- in the placeholder for printf, what does `%.2f\n` mean as seen in this code: `printf("Sale Price: %.3f\n", sale`.
+- The %f is normally for formatting printf for a float but the .x is for noting how many decimal places to use. 
+- in C when listing parameters for a function, you must also indicate the data type that should be passed through as seen in. it's essentially like declaring a variable
+#### loops in C
+syntax: 
+```c
+for (int i = 0; i<3; i++){
+printf("meow\n");
+}
+```
