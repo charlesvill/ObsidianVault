@@ -207,7 +207,7 @@ the `::before` & `::after` selectors  can be used to add content into for exampl
 	1. `[attribute]` - ex `[src]{...}` this will target any element that has the src attribute
 	2. `selector[attribute]` - ex `img[src]{...}` this will target img elements with src attribute
 	3. `[attribute="value"]` - to get really specific match with a specific attribute
-- We can also use general selectors that match part of attribute values with aspecific syntax that is similar to regular expressions though not too familar with them [[Regular expressions]]
+- We can also use general selectors that match part of attribute values with aspecific syntax that is similar to regular expressions though not too familar with them [[Regular expressions]] also [[#Form Validation]] 
 	- `[attribute^="value"]` `^=` - matchs strings from the start
 	- `$=` matches strings from the end
 	- `*=` is a wildcard selector that will match any where in the string
