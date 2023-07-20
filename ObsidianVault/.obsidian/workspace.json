@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b3c61c6649e60086",
+        "id": "361a1cf51610f673",
         "type": "tabs",
         "children": [
           {
-            "id": "5f8d4c827ef0e5c7",
+            "id": "dadf69c6ef31ec2f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "CS50/C.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "55568705e03b4f2e",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "CS50/C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "CS50/C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Full Stack Dev/CSS/Intermediate CSS.md"
+                "file": "CS50/C.md"
               }
             }
           },
@@ -155,11 +156,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f8d4c827ef0e5c7",
+  "active": "dadf69c6ef31ec2f",
   "lastOpenFiles": [
     "Full Stack Dev/CSS/CSS reference Notes.md",
-    "Full Stack Dev/CSS/Intermediate CSS.md",
+    "CS50/C.md",
     "Full Stack Dev/Emmet Abbreviations.md",
+    "Full Stack Dev/CSS/Intermediate CSS.md",
+    "CS50",
     "Full Stack Dev/CSS",
     "Full Stack Dev/Intermediate HTML/Tables.md",
     "Full Stack Dev/Intermediate HTML",
