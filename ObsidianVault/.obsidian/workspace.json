@@ -11,11 +11,14 @@
             "id": "dadf69c6ef31ec2f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "CS50/C.md",
-                "mode": "source",
-                "source": false
+                "file": "CS 50.canvas",
+                "viewState": {
+                  "x": -61.61102705240205,
+                  "y": -49.90281482439674,
+                  "zoom": 0
+                }
               }
             }
           }
@@ -86,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS50/C.md",
+                "file": "CS 50.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS50/C.md",
+                "file": "CS 50.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS50/C.md"
+                "file": "CS 50.canvas"
               }
             }
           },
@@ -158,8 +161,9 @@
   },
   "active": "dadf69c6ef31ec2f",
   "lastOpenFiles": [
-    "Full Stack Dev/CSS/Intermediate CSS.md",
+    "CS 50.canvas",
     "CS50/C.md",
+    "Full Stack Dev/CSS/Intermediate CSS.md",
     "Full Stack Dev/CSS/CSS reference Notes.md",
     "Full Stack Dev/Emmet Abbreviations.md",
     "CS50",

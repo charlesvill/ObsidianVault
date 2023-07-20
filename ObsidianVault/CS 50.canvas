@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"b38e643fc5d308fb","x":-60,"y":-380,"width":400,"height":360,"type":"file","file":"CS50/C.md"},
+		{"id":"3df40ec9fe9be49b","x":-320,"y":-230,"width":250,"height":210,"color":"2","type":"text","text":"Lab 1 week 2 C\n-Problem: \n\t- "}
+	],
+	"edges":[
+		{"id":"f9395b56e4b186e1","fromNode":"3df40ec9fe9be49b","fromSide":"bottom","toNode":"b38e643fc5d308fb","toSide":"bottom"}
+	]
+}
