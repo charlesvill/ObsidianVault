@@ -40,6 +40,8 @@ for (int i = 0; i<3; i++){
 printf("meow\n");
 }
 ```
+- for loops will run the code before iterating up from 0. 
+- decrementing backwards creates some strange behavior when the value of the integer becomes negative with the integer data type
 ### Lesson 2 Arrays 
 #### On Compiling
 - what is clang?
