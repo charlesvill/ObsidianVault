@@ -11,15 +11,8 @@
             "id": "dadf69c6ef31ec2f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "CS 50.canvas",
-                "viewState": {
-                  "x": -186.78131132364229,
-                  "y": -49.90281482439674,
-                  "zoom": 0
-                }
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -89,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS 50.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS 50.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CS 50.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -162,6 +151,9 @@
   "active": "dadf69c6ef31ec2f",
   "lastOpenFiles": [
     "CS 50.canvas",
+    "Full Stack Dev/How the internet works and Networking.md",
+    "Full Stack Dev/Full Stack Parking lot.md",
+    "CS50/CS 50.canvas",
     "CS50/C.md",
     "Full Stack Dev/CSS/Intermediate CSS.md",
     "Full Stack Dev/CSS/CSS reference Notes.md",
