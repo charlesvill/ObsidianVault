@@ -32,7 +32,8 @@ int main(void){
 - trunctations- when you dont have memory space to display a longer number and so part of it gets chopped off. 
 	- like the calendar in 1999 that code was limited to truncate in the year 2000 they thought they would break
 	- they think this is going to happen again for computers counting the number of seconds since 1970s because passing 2 billions seconds aka the limit of 32 bit computers. 
-	- 
+	- working with ints, if you want to display a float, you could apply a conversion of those ints by applying an operator thats a floating point (i.e /3.0). 
+		- you could also perform what's called typecasting which is when you apply an operator with the data type (float)  in parentheses
 #### loops in C
 syntax: 
 ```c
@@ -63,3 +64,7 @@ clang -o hello hello.c -lcs50
 	4. Linking - combine the binary of the code you actually wrote, the code of the library imported, and the standard library and links it all together. 
 - This whole process shortened down to just compiling. 
 	- we are using web to connect to cs50 coding environment, but those 0s and 1s exist somewhere on a server computer that is handling it for us and streaming it for us over the internet. 
+#### Arrays
+```
+```
+- declaring an array, ` int scores[3];` in C this tells the computer to hold the bits of memory for 3 numbers in an array that you can add in later
