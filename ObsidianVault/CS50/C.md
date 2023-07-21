@@ -33,7 +33,7 @@ int main(void){
 	- like the calendar in 1999 that code was limited to truncate in the year 2000 they thought they would break
 	- they think this is going to happen again for computers counting the number of seconds since 1970s because passing 2 billions seconds aka the limit of 32 bit computers. 
 	- working with ints, if you want to display a float, you could apply a conversion of those ints by applying an operator thats a floating point (i.e /3.0). 
-		- you could also perform what's called typecasting which is when you apply an operator with the data type (float)  in parentheses
+		- you could also perform what's called typeing which is when you apply an operator with the data type (float)  in parentheses
 #### loops in C
 syntax: 
 ```c

@@ -1,0 +1,3 @@
+- how to naviagte to different workspaces
+	- super+ctrl+arrowup/down
+- 
