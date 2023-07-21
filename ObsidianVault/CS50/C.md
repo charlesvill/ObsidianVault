@@ -68,3 +68,13 @@ clang -o hello hello.c -lcs50
 ```
 ```
 - declaring an array, ` int scores[3];` in C this tells the computer to hold the bits of memory for 3 numbers in an array that you can add in later
+- strings are really just arrays of char, but they always have an additional byte of memory at the end that stamps that its the end of the string a `\0`
+- for printing out an array of chars aka a string, i could do printf `"%c %c %c",s[0],s[1],s[2] `;
+	- you could print out the 4th as `s[3]` to print out the 0 that is set at the end of strings
+- how would you count the chars in a string?
+	- you would iterate over the index numbers using a while loop and it's while the `[n] != \0` and i++; until the index number results in that terminating character that denotes the end of a string
+- What is a library for strings?
+	- string.h - has a method to tell you the sting name
+- ctype.h
+- how could you check if a char is upper case?
+	- if(`char[n] >='a' && char[n] <='z'`) this will allegedly tell if it's uppercase
