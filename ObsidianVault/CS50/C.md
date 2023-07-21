@@ -78,3 +78,12 @@ clang -o hello hello.c -lcs50
 - ctype.h
 - how could you check if a char is upper case?
 	- if(`char[n] >='a' && char[n] <='z'`) this will allegedly tell if it's uppercase
+#### command line arguments
+ - when you want to pass through arguments into your program similar to the way you would a command in bash terminal, you can change the int main (void)  status to :
+	 - `(int argc, string argv[])` this will allow you to pass through for example when your name if inside your main you printf out the `argv[1]`. 
+	 - `argv[0]` contains the name of the file, so if you want to access the arguments you passed you'll need to start the index at 1.
+	 - it seems like the first parameter argc counts the number of arguments you're passing through to tell how big the array should be
+#### Exit statuses
+- when your program ends successfully, it returns a secret number to indicate that it ran successfully and any other number means likely that something went wrong
+- the int in `int main (void)` main will always return an integer, 0 by default. again hidden
+	- the command `echo$?` will return the exit status of your program, usually one, but you can change it by changing the return to 1 or something else.
