@@ -1,3 +1,4 @@
+### Lesson 1
 - how to compile a file in cs50?
 	- in the bash terminal, run make `filename` then run `./filename` 
 - what is the print function?
@@ -39,3 +40,24 @@ for (int i = 0; i<3; i++){
 printf("meow\n");
 }
 ```
+### Lesson 2 Arrays 
+#### On Compiling
+- what is clang?
+	- a popular compiler that stands for c language
+	- cs 50 uses clang under the hood but automates alot of the process with our "make" command
+	- in reality, any third party library like `cs50.h` would need to be linked in the compiler so it finds the binary information for the contents of that third party library. 
+	- for example: this is what that command line looks like to compile a simple hello world file:
+```bash
+clang -o hello hello.c -lcs50
+```
+- this certainly has more arguments than make 
+- What does the process of compiling look like? there are for steps:
+	1. Preprocessing - things that need to be analyzed before anything else. ex. the header files that need to processed before hand. 
+		1. looks for a folder usually called usr/include that has these header files
+		2. itll go into the file and copy and paste the contents of that file, we do not see it, but that is what is happening behind closed doors.
+			1. there will alot of code in your file only if you're doing hello world because of all of the things that are imported through the standard library even if you dont use it
+	2. Compiling - when it converts the c language to assembly language. closer to machine instructions to call functions move/subtract memory
+	3. Assembling - When it converts into machine code, binary
+	4. Linking - combine the binary of the code you actually wrote, the code of the library imported, and the standard library and links it all together. 
+- This whole process shortened down to just compiling. 
+	- we are using web to connect to cs50 coding environment, but those 0s and 1s exist somewhere on a server computer that is handling it for us and streaming it for us over the internet. 

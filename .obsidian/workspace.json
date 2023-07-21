@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/CS50/C.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/CS50/C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/CS50/C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md"
+                "file": "ObsidianVault/CS50/C.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "f2845bba8f3b442d",
   "lastOpenFiles": [
+    "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/TOPICS TO LEARN.md",
     "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/Tables.md",
@@ -165,7 +166,6 @@
     "ObsidianVault/Dev Organizer.canvas",
     "ObsidianVault/CS50/C.md",
     "ObsidianVault/CS50/CS 50.canvas",
-    "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/CS50",
     "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
     "ObsidianVault/Full Stack Dev/How the internet works and Networking.md",
