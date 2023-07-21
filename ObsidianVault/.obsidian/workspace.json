@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "361a1cf51610f673",
+        "id": "a2f9cf14d2be7d13",
         "type": "tabs",
         "children": [
           {
-            "id": "dadf69c6ef31ec2f",
+            "id": "8a8ac369d3ecae6c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CS50/C.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CS50/C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CS50/C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CS50/C.md"
+              }
             }
           },
           {
@@ -148,7 +156,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dadf69c6ef31ec2f",
+  "active": "8a8ac369d3ecae6c",
   "lastOpenFiles": [
     "CS 50.canvas",
     "Full Stack Dev/How the internet works and Networking.md",
