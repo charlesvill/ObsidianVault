@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pop OS reference sheet.md",
+                "file": "CS50/C.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pop OS reference sheet.md",
+                "file": "CS50/C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pop OS reference sheet.md",
+                "file": "CS50/C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pop OS reference sheet.md"
+                "file": "CS50/C.md"
               }
             }
           },
@@ -169,8 +169,8 @@
   },
   "active": "8a8ac369d3ecae6c",
   "lastOpenFiles": [
-    "CS50/C.md",
     "Pop OS reference sheet.md",
+    "CS50/C.md",
     "CS 50.canvas",
     "Full Stack Dev/How the internet works and Networking.md",
     "Full Stack Dev/Full Stack Parking lot.md",
