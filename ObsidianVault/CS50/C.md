@@ -75,6 +75,9 @@ clang -o hello hello.c -lcs50
 	- you would iterate over the index numbers using a while loop and it's while the `[n] != \0` and i++; until the index number results in that terminating character that denotes the end of a string
 - What is a library for strings?
 	- string.h - has a method to tell you the sting name
+- how to check the length of a string using the string library?
+	- the "string.h" library includes a function to check the array length
+	- `int length = strlen(name);` this will return an integer that can be used as any other integer.
 - ctype.h
 - how could you check if a char is upper case?
 	- if(`char[n] >='a' && char[n] <='z'`) this will allegedly tell if it's uppercase
