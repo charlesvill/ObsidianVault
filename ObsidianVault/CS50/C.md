@@ -34,6 +34,9 @@ int main(void){
 	- they think this is going to happen again for computers counting the number of seconds since 1970s because passing 2 billions seconds aka the limit of 32 bit computers. 
 	- working with ints, if you want to display a float, you could apply a conversion of those ints by applying an operator thats a floating point (i.e /3.0). 
 		- you could also perform what's called typeing which is when you apply an operator with the data type (float)  in parentheses
+- In C single vs double quotes are not treated the same `''` vs `""` 
+	- single quotes meant to represent a char and double quotes meant to represent a string
+	- obviously strings can be used to represent chars but not vice versa
 #### loops in C
 syntax: 
 ```c
