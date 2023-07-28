@@ -94,4 +94,7 @@ clang -o hello hello.c -lcs50
 - the int in `int main (void)` main will always return an integer, 0 by default. again hidden
 	- the command `echo$?` will return the exit status of your program, usually one, but you can change it by changing the return to 1 or something else.
 ## Algorithms 
- 
+- some specific kind of algorithm is a searching algorith 
+- binary search: 
+	- a search algorithm that has a starting point and then goes one of two directions, left or right in the array based on stipulated rules
+- Running time
