@@ -17,7 +17,8 @@
 #### Linking VS Inline SVG
 - generally, linking is cleaner and simpler however at the cost of not being able to dynamically tweak settings in the SVG attributes. 
 - Inline can result in delays in cacheing and loading html elements but can be avioded by using web-tool like webpack or a front end library like React. 
-
+#### How to 
+	
 #### Anatomy of an SVG
 - *XMLNS* - XML NameSpace what dialect of xml beig used to avoid the conflicts of different elements sharing same tag name such as `<title>`. it usually likes like a URI #NeedMoreHelp on this concept. 
 - *Viewbox* -  the bounds of the SVG, aspect ratio and origin of svg
