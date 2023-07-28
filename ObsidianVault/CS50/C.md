@@ -93,3 +93,5 @@ clang -o hello hello.c -lcs50
 - when your program ends successfully, it returns a secret number to indicate that it ran successfully and any other number means likely that something went wrong
 - the int in `int main (void)` main will always return an integer, 0 by default. again hidden
 	- the command `echo$?` will return the exit status of your program, usually one, but you can change it by changing the return to 1 or something else.
+## Algorithms 
+ 
