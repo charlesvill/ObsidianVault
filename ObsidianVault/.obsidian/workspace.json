@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Full Stack Dev/CSS/Intermediate CSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Full Stack Dev/CSS/Intermediate CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Full Stack Dev/CSS/Intermediate CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS50/C.md"
+                "file": "Full Stack Dev/CSS/Intermediate CSS.md"
               }
             }
           },
@@ -171,12 +171,13 @@
   "active": "8a8ac369d3ecae6c",
   "lastOpenFiles": [
     "Pop OS reference sheet.md",
+    "Full Stack Dev/CSS/Intermediate CSS.md",
+    "Full Stack Dev/Intermediate HTML/SVG.md",
     "CS50/C.md",
     "CS 50.canvas",
     "Full Stack Dev/How the internet works and Networking.md",
     "Full Stack Dev/Full Stack Parking lot.md",
     "CS50/CS 50.canvas",
-    "Full Stack Dev/CSS/Intermediate CSS.md",
     "Full Stack Dev/CSS/CSS reference Notes.md",
     "Full Stack Dev/Emmet Abbreviations.md",
     "CS50",
