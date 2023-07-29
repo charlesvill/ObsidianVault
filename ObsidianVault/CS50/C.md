@@ -98,3 +98,13 @@ clang -o hello hello.c -lcs50
 - binary search: 
 	- a search algorithm that has a starting point and then goes one of two directions, left or right in the array based on stipulated rules
 - Running time
+	- the way that computer scientests describe the time it takes to solve a problem using an algogrithm
+- big O notation
+	- O(n^2)
+	- O(n log n)
+	- O(n) - linear number of steps where n is the input problem
+	- O(log n)
+	- O(1) - finite number of steps
+- Upper and lower boundary for best/worst case scenario 
+	- omega symbol $$lower bounds      \Omega$$
+	- 
