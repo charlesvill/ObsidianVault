@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b7ef3e4fbf8dd641",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md"
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md"
               }
             }
           },
@@ -156,8 +169,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4efd7a73c8c94ae",
+  "active": "b7ef3e4fbf8dd641",
   "lastOpenFiles": [
+    "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/Tables.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
@@ -165,7 +179,6 @@
     "ObsidianVault/Pop OS reference sheet.md",
     "ObsidianVault/TOPICS TO LEARN.md",
     "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
-    "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
     "ObsidianVault/Dev Organizer.canvas",
     "ObsidianVault/CS50/CS 50.canvas",
     "ObsidianVault/CS50",
