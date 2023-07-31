@@ -113,3 +113,11 @@ clang -o hello hello.c -lcs50
 		- in the best case it was omega(1) because she could have gotten lucky and opened the correct door on the right one
 	- Theta Symbol when the upper bounds and the lower bounds are actually the same
 		- for example counting every object would always take the same number of steps, it's the same you cannot get lucky or skip anyone
+#### Searching
+- comparing arrays of strings does not work with a simple "=" because each string is in itself an array. you need the `<string.h>` library called `strcomp()`. 
+	- takes two arguments one for each of the strings being compared
+	- returns a 0 if same 1 if one of them is alphabetically before the other and -1 vice versa.
+	- similar to the javascript function `localeCompare(inputstring)` see [[Intermediate Javascript]]
+- if you over iterate in an array, you will be accessing memory that you should not be accessing, you'll get an error, becareful not to do that.
+- once you have found what you're looking for in an array, besure to break out of it by breaking out or returning 0 if all went well.
+	- otherwise it will keep running
