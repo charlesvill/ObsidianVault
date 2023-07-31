@@ -150,3 +150,6 @@ people[0].number= "+1-909-908-9084";
 	- make sure to do n-2 for the iterator because you're comparing two things and if you're comparing the last one and you try to look beyond the length of the array you will get an error
 	- the upperbounds are on O(^2) 
 		- the lowerbounds are on O(n) because if they are mostly sorted, it has a break point where if it runs through and it does not sort anything any more then it will stop, unlike the selection sort
+#### Recursion
+- when you have a stop feature for the recursion you call it a base case
+- with recursion, you could increase the call stack without necessarily executing the desired code until you reach the base case. then once you return from that last function call, you still the other function calls in the stack and will execute the others 
