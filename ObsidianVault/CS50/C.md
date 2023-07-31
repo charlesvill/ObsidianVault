@@ -144,4 +144,9 @@ people[0].number= "+1-909-908-9084";
 - to add data to it, you can declare a separate array of type name of the struct and then access the data inside of it using dot notation
 #### sorting
 - selection sort - will sift through the entire list and find the smallest value, then will swap values with the current iterator value
+	- O(n^2) very slow upper bound, omega bound is still the same bc for each index value it needs to iterate over to make sure they are in the same spot.
+	- so it is theta (n^2)
 - bubble sort - focus on solving a smaller problem at a time, the bigger value will sort of bubble to the top
+	- make sure to do n-2 for the iterator because you're comparing two things and if you're comparing the last one and you try to look beyond the length of the array you will get an error
+	- the upperbounds are on O(^2) 
+		- the lowerbounds are on O(n) because if they are mostly sorted, it has a break point where if it runs through and it does not sort anything any more then it will stop, unlike the selection sort
