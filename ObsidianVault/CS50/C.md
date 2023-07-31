@@ -121,3 +121,27 @@ clang -o hello hello.c -lcs50
 - if you over iterate in an array, you will be accessing memory that you should not be accessing, you'll get an error, becareful not to do that.
 - once you have found what you're looking for in an array, besure to break out of it by breaking out or returning 0 if all went well.
 	- otherwise it will keep running
+- You can call an array a basic data sctucture where you can keep much of the same kinds of data
+#### struct
+basically a object like in javascript, a data scrutcure that stores different things
+	syntax:
+```c
+typedef struct
+{
+	string name;
+	string number;
+}
+person;
+```
+
+- the typedef and struct are declaring the data dype and the person at the end is the name of the struct the strings are the things being put into the struct
+- this goes above the main function
+```c
+person people[2];
+people[0].name= "David";
+people[0].number= "+1-909-908-9084";
+```
+- to add data to it, you can declare a separate array of type name of the struct and then access the data inside of it using dot notation
+#### sorting
+- selection sort - will sift through the entire list and find the smallest value, then will swap values with the current iterator value
+- bubble sort - focus on solving a smaller problem at a time, the bigger value will sort of bubble to the top
