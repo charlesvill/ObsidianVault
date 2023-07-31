@@ -84,6 +84,9 @@ clang -o hello hello.c -lcs50
 - ctype.h
 - how could you check if a char is upper case?
 	- if(`char[n] >='a' && char[n] <='z'`) this will allegedly tell if it's uppercase
+- creating static arrays - something that is not meant to be changed
+	- you can use curly brackets and not have to put the size of the array 
+		- `int numbers[] = {20, 10, 330, 35};` noting here the lack of initializing the size of the array and listing the exact numbers that will be in the array.  
 #### command line arguments
  - when you want to pass through arguments into your program similar to the way you would a command in bash terminal, you can change the int main (void)  status to :
 	 - `(int argc, string argv[])` this will allow you to pass through for example when your name if inside your main you printf out the `argv[1]`. 
@@ -96,7 +99,7 @@ clang -o hello hello.c -lcs50
 ## Algorithms 
 - some specific kind of algorithm is a searching algorith 
 - binary search: 
-	- a search algorithm that has a starting point and then goes one of two directions, left or right in the array based on stipulated rules
+	- a search algorithm that has a starting point and then goes one of two directions, left or right in the array based on stipulated rules example of 0(log n)
 - Running time
 	- the way that computer scientests describe the time it takes to solve a problem using an algogrithm
 - big O notation
@@ -106,5 +109,7 @@ clang -o hello hello.c -lcs50
 	- O(log n)
 	- O(1) - finite number of steps
 - Upper and lower boundary for best/worst case scenario 
-	- omega symbol $$lower bounds      \Omega$$
-	- 
+	- omega symbol  The best case scenario$$lower bounds      \Omega$$
+		- in the best case it was omega(1) because she could have gotten lucky and opened the correct door on the right one
+	- Theta Symbol when the upper bounds and the lower bounds are actually the same
+		- for example counting every object would always take the same number of steps, it's the same you cannot get lucky or skip anyone
