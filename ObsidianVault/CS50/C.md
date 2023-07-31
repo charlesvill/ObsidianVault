@@ -144,6 +144,8 @@ people[0].number= "+1-909-908-9084";
 ```
 - to add data to it, you can declare a separate array of type name of the struct and then access the data inside of it using dot notation
 #### sorting
+- when choosing a sorting algorithm to implement, there are compromises that you have to consider for any one. for example, bubble will sometimes be slower than selection even though theyre about the same big o notation however, if the list is sorted or partially sorted, bubble will be much faster. 
+- and when considering very long lists, and they are unsorted, something like a merge sort will be muct faster, but at the cost of greater memory and space because of the auxiliary arrays needed to be made in storage to merge partitions of the list
 - selection sort - will sift through the entire list and find the smallest value, then will swap values with the current iterator value
 	- O(n^2) very slow upper bound, omega bound is still the same bc for each index value it needs to iterate over to make sure they are in the same spot.
 	- so it is theta (n^2)
