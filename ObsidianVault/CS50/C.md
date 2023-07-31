@@ -100,6 +100,7 @@ clang -o hello hello.c -lcs50
 - some specific kind of algorithm is a searching algorith 
 - binary search: 
 	- a search algorithm that has a starting point and then goes one of two directions, left or right in the array based on stipulated rules example of 0(log n)
+	- binary search however needs to be sorted, and for that you'll need a sorting array...
 - Running time
 	- the way that computer scientests describe the time it takes to solve a problem using an algogrithm
 - big O notation
@@ -150,8 +151,21 @@ people[0].number= "+1-909-908-9084";
 	- make sure to do n-2 for the iterator because you're comparing two things and if you're comparing the last one and you try to look beyond the length of the array you will get an error
 	- the upperbounds are on O(^2) 
 		- the lowerbounds are on O(n) because if they are mostly sorted, it has a break point where if it runs through and it does not sort anything any more then it will stop, unlike the selection sort
-- Merge sort - divides 
+- Merge sort - divides the array into two and sorts the left and right side and then merges the list by comparing the first index of each of the sorted halves and then adds them to a new array sorted. 
+	- achieves run time of O(n log n) quicker than a bubble or selection sort 
+		- both the omega and the theta run time is O(n log n) because it has to run through the entire recursive process given the n length of numbers to be sorted regardless if they're previoulsy sorted or not, thus, hypothetically, you could have bubble sort finish quicker than merge sort
 #### Recursion
 - when you have a stop feature for the recursion you call it a base case
 - with recursion, you could increase the call stack without necessarily executing the desired code until you reach the base case. then once you return from that last function call, you still the other function calls in the stack and will execute the others 
-- Th
+- Acheiving the *merge sort* 
+	- recursively call for the function to sort the left and right half and then merge 
+	- ex 7254
+		- 72|54
+			- 7|2|54
+				- 27|5|4
+					- 27|45
+						- 2457
+	- this example shows the process of splitting the sides until you have only one (the base case) 
+##### Lab week 3: algorithms
+- you can time the speed of the programs using time ./programname . it might be a command line command provided by cs50
+- 
