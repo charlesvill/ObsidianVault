@@ -115,7 +115,7 @@ clang -o hello hello.c -lcs50
 	- Theta Symbol when the upper bounds and the lower bounds are actually the same
 		- for example counting every object would always take the same number of steps, it's the same you cannot get lucky or skip anyone
 #### Searching
-- comparing arrays of strings does not work with a simple "=" because each string is in itself an array. you need the `<string.h>` library called `strcomp()`. 
+- comparing arrays of strings does not work with a simple "=" because each string is in itself an array. you need the `<string.h>` library called `strcmp()`. 
 	- takes two arguments one for each of the strings being compared
 	- returns a 0 if same 1 if one of them is alphabetically before the other and -1 vice versa.
 	- similar to the javascript function `localeCompare(inputstring)` see [[Intermediate Javascript]]

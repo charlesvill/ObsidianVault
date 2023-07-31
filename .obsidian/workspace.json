@@ -29,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -167,7 +166,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "30f13d040e79cd21",
+  "active": "f2845bba8f3b442d",
   "lastOpenFiles": [
     "ObsidianVault/CS50/C.md",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
