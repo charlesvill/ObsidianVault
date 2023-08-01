@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "55568705e03b4f2e",
@@ -170,10 +169,11 @@
   },
   "active": "8a8ac369d3ecae6c",
   "lastOpenFiles": [
-    "Pop OS reference sheet.md",
-    "Full Stack Dev/CSS/Intermediate CSS.md",
-    "Full Stack Dev/Intermediate HTML/SVG.md",
     "CS50/C.md",
+    "Full Stack Dev/CSS/Intermediate CSS.md",
+    "Full Stack Dev/Intermediate Javascript.md",
+    "Pop OS reference sheet.md",
+    "Full Stack Dev/Intermediate HTML/SVG.md",
     "CS 50.canvas",
     "Full Stack Dev/How the internet works and Networking.md",
     "Full Stack Dev/Full Stack Parking lot.md",
