@@ -579,3 +579,7 @@ Form validation gives a precheck before user submits data to the server to prote
 		- typeMismatch
 		- valueMissing
 		- customError
+## Grid 
+- grid makes page layouts alot easier 
+#### review on flexbox
+- 
