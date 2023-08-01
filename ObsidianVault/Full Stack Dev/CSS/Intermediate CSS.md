@@ -582,4 +582,6 @@ Form validation gives a precheck before user submits data to the server to prote
 ## Grid 
 - grid makes page layouts alot easier 
 #### review on flexbox
+- flexbox was useful for aligning containers along the main and the cross axis
+- `flex-wrap` was useful for having items flow over to either the next row or the next column
 - 
