@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "293b00588873f1d8",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,7 +167,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a8ac369d3ecae6c",
+  "active": "293b00588873f1d8",
   "lastOpenFiles": [
     "Pop OS reference sheet.md",
     "Full Stack Dev/CSS/Intermediate CSS.md",
