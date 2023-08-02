@@ -580,10 +580,52 @@ Form validation gives a precheck before user submits data to the server to prote
 		- valueMissing
 		- customError
 ## Grid 
+- useful guide to review grid elements https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-area
+
 - grid makes page layouts alot easier 
 #### review on flexbox
 - flexbox was useful for aligning containers along the main and the cross axis
 - `flex-wrap` was useful for having items flow over to either the next row or the next column
 - grid layouts can make evenly sizing items much easier compared to flex
 - video resource on when to use flexbox vs grid https://www.youtube.com/watch?v=hs3piaN4b5I
-- 
+Getting started with grid:
+in a div container with 4 items, you can place this css on the container to declare it a grid:
+```css
+	.containter{
+	display: grid;
+	grid-template: 50px 50px/50px 50px 50px
+	}
+```
+- the `grid-template` part defines the rows and colums each 50px separarated by space denotes the number of rows and colums. rows go first so its two rows size 50px and three columns of 50px each
+- Grid track can be defined as a direction of grid elements either in the rows or the column direction
+#### implicit vs explicit grid
+- if you were to add an additional html element in the container without declaring it in the css grid-template, it would still be populated as an additional row as an implicit grid element. 
+	- wtih the grid-template you are explicitly defining the track sizes but it will not cover the settings of implicit track izes. if you want settings to cover the implict track sizes you will need the property `grid-auto-rows: 50px;` for the columns it will follow the same structure as the one seen here for rows. 
+- `grid-auto-flow:` this will define whether the implicit grid items will be added either inthe row or column direction. aka being populated vertically or horizontally
+	- *note: if you decide to use grid-auto-column, you'll also need to set the grid-auto-flow to column*
+#### Gap 
+- use the property: `column-gap` and `row-gap` to set the alley between each respective item. also accepts the shorthand gap prpoerty to set both of them
+	- **this is placed on the parent container div**.
+*to add a border, go on the individual grid element selector and put border: 1px solid blue;*
+#### Parent container vs children properties
+Parent properties include but are not limited to:
+- display
+- grid-template
+- grid-gap
+- gap
+- justify-items
+- align-items
+- place-items
+- grid-auto
+child properties include but are not limited to: 
+- grid-column/row-start/end
+	- determine a grid items location by referring to specifc lines
+		- options include specifying a line or using the `span` option that span across the number of lines following the span option and also a name option that will span until you hit the line with the specified name listed after the span option
+		- `auto` option indicates auto-placement an automatic span or a default span of one
+	- see the above guide for more information on placing the grid elements using the different placing properites on the children
+- grid-area
+- justify-self
+- align-self
+- place-self
+
+
