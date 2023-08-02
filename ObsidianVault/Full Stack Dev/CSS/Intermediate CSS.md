@@ -581,6 +581,8 @@ Form validation gives a precheck before user submits data to the server to prote
 		- customError
 ## Grid 
 - useful guide to review grid elements https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-area
+- see this for inspecting the grid elements https://developer.chrome.com/docs/devtools/css/grid/
+
 
 - grid makes page layouts alot easier 
 #### review on flexbox
@@ -598,6 +600,7 @@ in a div container with 4 items, you can place this css on the container to decl
 ```
 - the `grid-template` part defines the rows and colums each 50px separarated by space denotes the number of rows and colums. rows go first so its two rows size 50px and three columns of 50px each
 - Grid track can be defined as a direction of grid elements either in the rows or the column direction
+	- basically either a row or column so when you define `grid-template` you are defining the number of tracks you will have for rows and columns
 #### implicit vs explicit grid
 - if you were to add an additional html element in the container without declaring it in the css grid-template, it would still be populated as an additional row as an implicit grid element. 
 	- wtih the grid-template you are explicitly defining the track sizes but it will not cover the settings of implicit track izes. if you want settings to cover the implict track sizes you will need the property `grid-auto-rows: 50px;` for the columns it will follow the same structure as the one seen here for rows. 
@@ -620,6 +623,7 @@ Parent properties include but are not limited to:
 child properties include but are not limited to: 
 - grid-column/row-start/end
 	- determine a grid items location by referring to specifc lines
+		- shorthand: `grid-column: 4 / 6;` what this means is that the grid column start is at line 4 and the end is at 6, so it spans two lines separated by the forward slash. 
 		- options include specifying a line or using the `span` option that span across the number of lines following the span option and also a name option that will span until you hit the line with the specified name listed after the span option
 		- `auto` option indicates auto-placement an automatic span or a default span of one
 	- see the above guide for more information on placing the grid elements using the different placing properites on the children
@@ -627,5 +631,22 @@ child properties include but are not limited to:
 - justify-self
 - align-self
 - place-self
-
-
+#### positioning grid elements
+On lines: 
+- everytime that tracks are created, lines are creatd implicitly, lines cannot be created explicitly
+- the lines are numbered from the start of the track to the end of the track in both the vertical and the horizontal directions
+	- so a 3x3 grid has lines 1 through 4 on both the vertical and the horizontal directions
+	- used to position grid elements
+On Cells: 
+- you can place positioning elements on individual cells to make them span more than one cell using the `grid-column-start:1` and the `grid-column-end:6` propertys that will extend the cell that has these properties from lines 1 to 6. (on a 5x5 that would have 6 lines)
+grid-area
+- shorthand to position all four aspects (column/row&start/end) 
+```css
+#living-room {
+  grid-area: 1 / 1 / 3 / 6;
+}
+```
+- the order of the properities is as follows: 
+	`grid-row-start`/ `grid-column-start` /`grid-row-end` /`grid-column-end` 
+grid area also can refer to a few other things such as: 
+- `grid-template-areas` 
