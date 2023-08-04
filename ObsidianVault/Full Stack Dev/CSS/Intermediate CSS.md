@@ -642,6 +642,7 @@ On lines:
 On Cells: 
 - you can place positioning elements on individual cells to make them span more than one cell using the `grid-column-start:1` and the `grid-column-end:6` propertys that will extend the cell that has these properties from lines 1 to 6. (on a 5x5 that would have 6 lines)
 - shorthand for each `grid-column` and `grid-row` in the syntax `grid-column:1 / 4;` where the 1 is the start and the 4 is the end
+- alternatively, you can also use the `span` property to have it span the number of lines that you specify
 grid-area
 - shorthand to position all four aspects (column/row&start/end) 
 ```css
@@ -698,3 +699,29 @@ grid area also can refer to a few other things such as:
 ```
 
 - the periods here represent empty cells that can be changed later
+##### extra grid properties
+- justify-self: aligns the grid item along inline (row) axis within its individual cell
+	- options: start- flush with the start edge of the cell 
+	- end- flush with the end edge of the cell
+	- center- aligns in the center of the cell
+	- stretch- fills the whole width of the cell (default)
+- align-self: aligns the grid item along the block (column) axis within the individual cell. with the same options as justify-self
+- place self: sets both the align-self and the justify-self in one single declaration
+	- options: auto - default alignment for layout mode
+	- `<align-self> / <justify-self>` if one of these is omitted then the one provided is carried over to both
+		- ex: `place-self: center stretch` AS is center and JS is stretch to fill along the row axis
+##### Special units and functions
+- fr- fractional unit. they are a portion of the remaining space
+	- ex: `grid-template-columns: 1fr 3fr;` roughly translates to 25% and 75% except that they work alot nicer with additional things like padding an margin compared to say explicitly declaring a percentage.
+- sizing keywords: 
+		- min-content
+		- max-content: 
+		- auto: 
+- sizing functions: 
+	- `fit-content()` uses the space abiabilebutneer less than the min-content and never more than the max-content. 
+	- `minmax()` sets a minimum and maximum value for what the length is able to be. this is useful when paired with relative units *this is really useful for fixing awkwardly sized grid cells*
+		- ex `grid-template-columns: minman(100px, 1fr) 3fr;`
+		- see https://css-tricks.com/you-want-minmax10px-1fr-not-1fr/ for more on this
+		- 
+#### Practicing grid and web layouts
+- to see an example of how you would do a layout of a webpage with a header, nav bar, sidebar , article section and a footer , see the TOP practice problem for the css-exercises "01-grid-layout-1".
