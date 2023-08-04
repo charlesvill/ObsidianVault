@@ -609,6 +609,8 @@ in a div container with 4 items, you can place this css on the container to decl
 #### Gap 
 - use the property: `column-gap` and `row-gap` to set the alley between each respective item. also accepts the shorthand gap prpoerty to set both of them
 	- **this is placed on the parent container div**.
+	- shorthand: `gap: 1em 20px;`
+		- `row-gap` , `column-gap` 
 *to add a border, go on the individual grid element selector and put border: 1px solid blue;*
 #### Parent container vs children properties
 Parent properties include but are not limited to:
@@ -639,6 +641,7 @@ On lines:
 	- used to position grid elements
 On Cells: 
 - you can place positioning elements on individual cells to make them span more than one cell using the `grid-column-start:1` and the `grid-column-end:6` propertys that will extend the cell that has these properties from lines 1 to 6. (on a 5x5 that would have 6 lines)
+- shorthand for each `grid-column` and `grid-row` in the syntax `grid-column:1 / 4;` where the 1 is the start and the 4 is the end
 grid-area
 - shorthand to position all four aspects (column/row&start/end) 
 ```css
@@ -649,6 +652,8 @@ grid-area
 - the order of the properities is as follows: 
 	`grid-row-start`/ `grid-column-start` /`grid-row-end` /`grid-column-end` 
 grid area also can refer to a few other things such as: 
+- default spans: if no start/end grid values defined it wil default to the span of one track for both column and row.
+- counting backward: specifying a negative value will count from the back `grid-column-start:-1;` this is very useful for making grid elements span across the templates
 - `grid-template-areas` 
 	- instead of defining the grid area with lines for each element, make a template out of words as seen here: 
 ```css
