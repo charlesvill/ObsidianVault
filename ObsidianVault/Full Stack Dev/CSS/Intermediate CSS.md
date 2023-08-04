@@ -650,3 +650,46 @@ grid-area
 	`grid-row-start`/ `grid-column-start` /`grid-row-end` /`grid-column-end` 
 grid area also can refer to a few other things such as: 
 - `grid-template-areas` 
+	- instead of defining the grid area with lines for each element, make a template out of words as seen here: 
+```css
+.container {
+  display: inline-grid;
+  grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+  background-color: lightblue; 
+  grid-template-areas:
+    "living-room living-room living-room living-room living-room"
+    "living-room living-room living-room living-room living-room"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "closet closet . . ."    
+}
+
+.room {
+  border: 1px solid;
+  font-size: 50%;
+  text-align: center;
+}
+
+#living-room {
+   grid-area:  living-room;
+}
+
+#kitchen {
+  grid-area: kitchen;
+}
+
+#bedroom {
+  grid-area: bedroom;
+}
+
+#bathroom {
+  grid-area: bathroom;
+}
+
+#closet {
+  grid-area: closet;
+}
+
+```
+
+- the periods here represent empty cells that can be changed later
