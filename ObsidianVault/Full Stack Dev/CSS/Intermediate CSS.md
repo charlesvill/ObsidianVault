@@ -711,7 +711,7 @@ grid area also can refer to a few other things such as:
 	- `<align-self> / <justify-self>` if one of these is omitted then the one provided is carried over to both
 		- ex: `place-self: center stretch` AS is center and JS is stretch to fill along the row axis
 ##### Special units and functions
-- fr- fractional unit. they are a portion of the remaining space
+- fr- fractional unit. they are a portion of the remaining space of the parent container. for example if the total width for a grid is 400px and the four columns have their defined size as 1fr, then each of the four columns will be 1 fraction of the 400, 100px. 
 	- ex: `grid-template-columns: 1fr 3fr;` roughly translates to 25% and 75% except that they work alot nicer with additional things like padding an margin compared to say explicitly declaring a percentage.
 - sizing keywords: 
 		- min-content
@@ -725,3 +725,8 @@ grid area also can refer to a few other things such as:
 		- 
 #### Practicing grid and web layouts
 - to see an example of how you would do a layout of a webpage with a header, nav bar, sidebar , article section and a footer , see the TOP practice problem for the css-exercises "01-grid-layout-1".
+
+#### Advanced Grid Properties
+- when changing zoom levels you can use the property: `overflow: auto; ` to enable scrolling if the grid container is smaller than the grid could accommodate
+- user size controls on grid: `resize: both` gives the user the control to resize the grid by clicking and dragging the bottom right corner of the grid container.
+- 
