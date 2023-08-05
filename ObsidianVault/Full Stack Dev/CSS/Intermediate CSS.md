@@ -718,16 +718,25 @@ grid area also can refer to a few other things such as:
 		- max-content: 
 			- can only be used with the `grid-template-column/row` and `grid-auto-columns/rows` 
 			- it will take two arguments: the minimum size the grid track can be and the maximum size it can be
-			- it makes sense to use static values like pixels 
-			- clamp(): review from [[Intermediate CSS#clamp()]]
-				- typically want to do a static size for the min and max arguments but a relative or dynamic value for the ideal
-		- auto: 
-- sizing functions: 
+			- it makes sense to use static values like pixels. 
+		- auto-fit and auto-fill: 
+			- part of the repeat funciton 
+			- both will return the largest possible positive integer without the grid items overflowing
+				- ex `width: 1000px; grid-template-columns: repeat(auto-fit, 200px);` this would effectively return 5 because with columns of 200 px, at 1000px of width the largest possible interger would be 5 to fill the whole width.
+				- *the real beauty is when you combine this in the repeat function with the minmax() function to dynamically tell you how many columns/rows you can have given a min and max size*
+				- ex: `repeat(auto-fit,minmax(150px, 1fr));` 
+				-think of like a page with lots of items like a youtube results and with the screen size it will dynamically show the # of columns of thumbnails based on the size of your screen. 
+			- auto fill will the most time work exactly the same except when ther are less items than can fit on a row, the auto-fit will keep the grid items at their max size and auto-fill will snap back to the min size and will add another grid item once there is space permitting. 
+				- #NeedMoreHelp see TOP Lesson on advanced grid properties
+				- for the most part auto-fit will be filling the entirety of the space provided looks like while auto-fill will stay smaller size
+ - sizing functions: 
 	- `fit-content()` uses the space abiabilebutneer less than the min-content and never more than the max-content. 
 	- `minmax()` sets a minimum and maximum value for what the length is able to be. this is useful when paired with relative units *this is really useful for fixing awkwardly sized grid cells*
 		- ex `grid-template-columns: minman(100px, 1fr) 3fr;`
 		- see https://css-tricks.com/you-want-minmax10px-1fr-not-1fr/ for more on this
-		- 
+	- - clamp(): review from [[Intermediate CSS#clamp()]]
+				- typically want to do a static size for the min and max arguments but a relative or dynamic value for the ideal
+		
 #### Practicing grid and web layouts
 - to see an example of how you would do a layout of a webpage with a header, nav bar, sidebar , article section and a footer , see the TOP practice problem for the css-exercises "01-grid-layout-1".
 
