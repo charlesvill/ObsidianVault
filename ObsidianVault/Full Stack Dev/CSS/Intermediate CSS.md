@@ -629,10 +629,7 @@ child properties include but are not limited to:
 		- options include specifying a line or using the `span` option that span across the number of lines following the span option and also a name option that will span until you hit the line with the specified name listed after the span option
 		- `auto` option indicates auto-placement an automatic span or a default span of one
 	- see the above guide for more information on placing the grid elements using the different placing properites on the children
-- grid-area
-- justify-self
-- align-self
-- place-self
+
 #### positioning grid elements
 On lines: 
 - everytime that tracks are created, lines are creatd implicitly, lines cannot be created explicitly
