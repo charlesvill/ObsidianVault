@@ -714,8 +714,13 @@ grid area also can refer to a few other things such as:
 - fr- fractional unit. they are a portion of the remaining space of the parent container. for example if the total width for a grid is 400px and the four columns have their defined size as 1fr, then each of the four columns will be 1 fraction of the 400, 100px. 
 	- ex: `grid-template-columns: 1fr 3fr;` roughly translates to 25% and 75% except that they work alot nicer with additional things like padding an margin compared to say explicitly declaring a percentage.
 - sizing keywords: 
-		- min-content
+		- min-content: the smallest the grid can be before it will stop shrinking the elements inside of it and trigger the overflow and using the scroll bar to see the rest
 		- max-content: 
+			- can only be used with the `grid-template-column/row` and `grid-auto-columns/rows` 
+			- it will take two arguments: the minimum size the grid track can be and the maximum size it can be
+			- it makes sense to use static values like pixels 
+			- clamp(): review from [[Intermediate CSS#clamp()]]
+				- typically want to do a static size for the min and max arguments but a relative or dynamic value for the ideal
 		- auto: 
 - sizing functions: 
 	- `fit-content()` uses the space abiabilebutneer less than the min-content and never more than the max-content. 
