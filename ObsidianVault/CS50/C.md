@@ -168,6 +168,8 @@ people[0].number= "+1-909-908-9084";
 					- 27|45
 						- 2457
 	- this example shows the process of splitting the sides until you have only one (the base case) 
-##### Lab week 3: algorithms
+##### Lab/Problem set week 3: algorithms
 - you can time the speed of the programs using time ./programname . it might be a command line command provided by cs50
-- 
+- two dimensional arrays: 
+	- basically an array of arrays that allows for matrices to be implemented into code
+	- syntax is: `int two_dim_array[R][C]`  where the r is the number of rows and the c is the number of columns. thankfully, it's written in the same order as the grid paradigm in javascript where the declaration of the grid template comes in rows first and then the columns. atleast there is some continuity there
