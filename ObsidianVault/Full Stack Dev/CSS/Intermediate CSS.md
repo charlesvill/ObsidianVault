@@ -743,4 +743,13 @@ grid area also can refer to a few other things such as:
 #### Advanced Grid Properties
 - when changing zoom levels you can use the property: `overflow: auto; ` to enable scrolling if the grid container is smaller than the grid could accommodate
 - user size controls on grid: `resize: both` gives the user the control to resize the grid by clicking and dragging the bottom right corner of the grid container.
-
+## Grid vs Flex
+- when should you use one over the other?
+	- Content vs Layout centered desicions 
+		- if your website is centered around a particular content then flex is great to use the logical rules and proportions to center the layout around the content. 
+		- if your website is more layout centered meaning that you have a clearer idea of how you want the structure of the website to look more than the content, then you go with grid and then the content will follow the contraints of the tracks laid out by grid
+	- further, if you're trying to layout a 1 dimensional layout, flex could be more intuitive to control the items along the axis
+	- on the contrary, complex 2 dimensional layouts: grid.
+	- 
+	- They are not however, mutually exclusive. How to use them together: 
+		- 
