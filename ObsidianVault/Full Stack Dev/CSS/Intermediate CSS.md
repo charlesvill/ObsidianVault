@@ -750,6 +750,10 @@ grid area also can refer to a few other things such as:
 		- if your website is more layout centered meaning that you have a clearer idea of how you want the structure of the website to look more than the content, then you go with grid and then the content will follow the contraints of the tracks laid out by grid
 	- further, if you're trying to layout a 1 dimensional layout, flex could be more intuitive to control the items along the axis
 	- on the contrary, complex 2 dimensional layouts: grid.
-	- 
 	- They are not however, mutually exclusive. How to use them together: 
+		- one use case is to make the parent a grid container and then the children flexboxes to control their content layouts
+	- some things to consider for pros and cons of each one: 
+		- grid is not able to do row-reverse and column and row direction swaps on the fly like flexcan do as easily
+		- video on more for when to use one or the other: https://www.youtube.com/watch?v=HYji_V2aYa0
+		- article expanding on use cases for each: https://webdesign.tutsplus.com/flexbox-vs-css-grid-which-should-you-use--cms-30184a
 		- 
