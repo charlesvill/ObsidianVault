@@ -174,3 +174,9 @@ people[0].number= "+1-909-908-9084";
 	- basically an array of arrays that allows for matrices to be implemented into code
 	- syntax is: `int two_dim_array[R][C]`  where the r is the number of rows and the c is the number of columns. thankfully, it's written in the same order as the grid paradigm in javascript where the declaration of the grid template comes in rows first and then the columns. atleast there is some continuity there
 	- adjacency matrix - a way to represent a graph where a 1 indicates two points are connected and a 0 indicates that they are not
+	- in order to determine which one does not have an arrow pointing to them is to see which of the elements does not have a 1 or a truth value 
+		`001`
+		`010`
+		`011`
+		here the rows are represented by i and the columns by j with the syntax `2darr[i][j]` 
+		the column j has the 0s without any 1s.
