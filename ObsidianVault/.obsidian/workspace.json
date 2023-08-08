@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Full Stack Dev/CSS/CSS reference Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Full Stack Dev/CSS/CSS reference Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Full Stack Dev/CSS/CSS reference Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS50/C.md"
+                "file": "Full Stack Dev/CSS/CSS reference Notes.md"
               }
             }
           },
@@ -159,8 +159,8 @@
   "active": "a246e90e578757c3",
   "lastOpenFiles": [
     "Full Stack Dev/CSS/Intermediate CSS.md",
-    "Pop OS reference sheet.md",
     "CS50/C.md",
+    "Pop OS reference sheet.md",
     "Full Stack Dev/Intermediate Javascript.md",
     "Full Stack Dev/Intermediate HTML/SVG.md",
     "CS 50.canvas",
