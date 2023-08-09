@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
+                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
+                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
+                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md"
+                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md"
               }
             }
           },
@@ -159,11 +159,11 @@
   "active": "f2845bba8f3b442d",
   "lastOpenFiles": [
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+    "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "ObsidianVault/CS50/C.md",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
     "ObsidianVault/Full Stack Dev/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/Tables.md",
-    "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "ObsidianVault/Pop OS reference sheet.md",
     "ObsidianVault/TOPICS TO LEARN.md",
     "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",

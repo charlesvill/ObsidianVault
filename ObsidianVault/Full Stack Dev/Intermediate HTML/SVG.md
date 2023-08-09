@@ -17,9 +17,10 @@
 #### Linking VS Inline SVG
 - generally, linking is cleaner and simpler however at the cost of not being able to dynamically tweak settings in the SVG attributes. 
 - Inline can result in delays in cacheing and loading html elements but can be avioded by using web-tool like webpack or a front end library like React. 
+	- *one thing to note: with inline, you will have much greater control of the fill color. if you link via a img element you will not be able to manipulate the fill color.* 
 #### How to 
  - you can link an svg just like a regular picture by using an img tag and linking it to the location of the svg in your files. 
- - for linking inline refer to TOP or google it lol
+ - for linking inline the source code of the svg can be pasted inline with the html elements and be styled with css. looking down, class and ID can be added as properities of the html tag to be selected in css. can also use the `svg` type selector like you would for img 
 #### Anatomy of an SVG
 - *XMLNS* - XML NameSpace what dialect of xml beig used to avoid the conflicts of different elements sharing same tag name such as `<title>`. it usually likes like a URI #NeedMoreHelp on this concept. 
 - *Viewbox* -  the bounds of the SVG, aspect ratio and origin of svg
