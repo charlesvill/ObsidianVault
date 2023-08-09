@@ -159,6 +159,7 @@ select elements based on their position within the DOM
 - `:root` very top level of the document, no parents. generally equivalent to html element
 	- typically where the document wide css rules will go
 - `:last-child` , `:first-child` pared with a selector `p:first-child` will always select the first child that is a p. Benefit being that if you rearrange the content later it will always select the first child so not as many drastic changes have to be made
+- example of selecting deeply nested with psuedo selectors: `.welcome-sign > div > p:first-child` this selected the first p that was a child of a div that was inside of the class `.welcome-sign`
 	- *note: you can also count back or forward from last or first ex `div:last-child(3)`* 
 - `:empty` match elements with no children at all
 - There are also user-action psuedo classes such as `:hover` , and `:focus` that are when a specific state is ocurring. 
