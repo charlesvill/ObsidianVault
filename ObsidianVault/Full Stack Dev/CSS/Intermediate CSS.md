@@ -1,6 +1,8 @@
 ## Default Styles
 - Different browsers add basic CSS to elements parsed on the web. Often devlopers will reset these CSS values to have consistent results regardless of the browser. 
 - how to reset the CSS in browser
+	- refer to this Meyer's reset: https://meyerweb.com/eric/tools/css/reset/
+	- just place at the top of your style sheet
 
 ## CSS Units
 
