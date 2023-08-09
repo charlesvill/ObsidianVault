@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Full Stack Dev/CSS/CSS reference Notes.md",
+                "file": "Full Stack Dev/CSS/Intermediate CSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Full Stack Dev/CSS/CSS reference Notes.md",
+                "file": "Full Stack Dev/CSS/Intermediate CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Full Stack Dev/CSS/CSS reference Notes.md",
+                "file": "Full Stack Dev/CSS/Intermediate CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Full Stack Dev/CSS/CSS reference Notes.md"
+                "file": "Full Stack Dev/CSS/Intermediate CSS.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "a246e90e578757c3",
   "lastOpenFiles": [
-    "Full Stack Dev/CSS/Intermediate CSS.md",
     "Full Stack Dev/CSS/CSS reference Notes.md",
+    "Full Stack Dev/CSS/Intermediate CSS.md",
     "CS50/C.md",
     "Pop OS reference sheet.md",
     "Full Stack Dev/Intermediate Javascript.md",
