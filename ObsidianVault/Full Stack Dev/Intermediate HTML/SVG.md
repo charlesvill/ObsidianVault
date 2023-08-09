@@ -21,6 +21,7 @@
 #### How to 
  - you can link an svg just like a regular picture by using an img tag and linking it to the location of the svg in your files. 
  - for linking inline the source code of the svg can be pasted inline with the html elements and be styled with css. looking down, class and ID can be added as properities of the html tag to be selected in css. can also use the `svg` type selector like you would for img 
+ - *note: the sizing of an svg behaves wierdly when put next to other elements such as imgs and p. this seems to be fixed by nesting the svg in a span element. #NeedMoreHelp not sure why.*
 #### Anatomy of an SVG
 - *XMLNS* - XML NameSpace what dialect of xml beig used to avoid the conflicts of different elements sharing same tag name such as `<title>`. it usually likes like a URI #NeedMoreHelp on this concept. 
 - *Viewbox* -  the bounds of the SVG, aspect ratio and origin of svg
