@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md"
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
               }
             }
           },
@@ -158,11 +158,14 @@
   },
   "active": "f2845bba8f3b442d",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
+    "ObsidianVault/Full Stack Dev/Javascript",
+    "ObsidianVault/Full Stack Dev/How the internet works and Networking.md",
+    "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+    "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "ObsidianVault/CS50/C.md",
-    "ObsidianVault/Full Stack Dev/Intermediate Javascript.md",
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/Tables.md",
     "ObsidianVault/Pop OS reference sheet.md",
     "ObsidianVault/TOPICS TO LEARN.md",
@@ -170,8 +173,6 @@
     "ObsidianVault/Dev Organizer.canvas",
     "ObsidianVault/CS50/CS 50.canvas",
     "ObsidianVault/CS50",
-    "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
-    "ObsidianVault/Full Stack Dev/How the internet works and Networking.md",
     "Untitled.canvas",
     "ObsidianVault/The 8 Most important Hotkeys.md",
     "ObsidianVault/The 6 most Important keys to Typing in Markdown.md",
