@@ -134,3 +134,61 @@ let gorgon = new Hero("Dungarth", 9000);
 console.log(gorgon.greet);
 ```
 This here is declaring a function within the prototype of Hero{} that can now be used by any instantiation  of Hero there after as seen in fig. 1
+- Copying over properties from one constructor to another: 
+	1. use the `call()` method in the declaration of a object as seen:
+```javascript
+function Warrior(name, level, weapon){
+	//chain constructor with call
+	Hero.call(this, name, level);
+	this.weapon = weapon;
+}
+const paul = new Warrior("paul", 3 , "axe");
+paul.();
+```
+what the call method is doing here is it's copying over the methods and properties that the Hero object has
+	*when you try to access properties from futher down the chain, specifically from prototypes call will not work* for example if Hero has the greet() on its prototype and not on its declaration, it will not work. for that, you'll need `Object.setPrototypeOf()` to share the prototype properties and methods as well
+		- as seen in fig 2, the inheriting object goes first
+
+```javascript
+// Initialize constructor functions
+function Hero(name, level) {
+  this.name = name;
+  this.level = level;
+}
+
+function Warrior(name, level, weapon) {
+  Hero.call(this, name, level);
+
+  this.weapon = weapon;
+}
+
+function Healer(name, level, spell) {
+  Hero.call(this, name, level);
+
+  this.spell = spell;
+}
+
+// Link prototypes and add prototype methods
+//fig. 2syntax is (reciever, giver)
+Object.setPrototypeOf(Warrior.prototype, Hero.prototype);
+Object.setPrototypeOf(Healer.prototype, Hero.prototype);
+
+Hero.prototype.greet = function () {
+  return `${this.name} says hello.`;
+}
+
+Warrior.prototype.attack = function () {
+  return `${this.name} attacks with the ${this.weapon}.`;
+}
+
+Healer.prototype.heal = function () {
+  return `${this.name} casts ${this.spell}.`;
+}
+
+// Initialize individual character instances
+const hero1 = new Warrior('Bjorn', 1, 'axe');
+const hero2 = new Healer('Kanin', 1, 'cure');
+```
+
+**correct order of accessing prototypes**
+- to avoid issues and inefficiency, the .setPrototypeOf part needs to be done before any other methods are declared and before any instantiations of the objects
