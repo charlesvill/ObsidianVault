@@ -77,3 +77,31 @@ console.log(player.name) // 'steve'
 - you can also add functions to the object: 
 	- first declare the function like above but add a function after and have the function called sayName() print the `name` . 
 	- and you can access that function `alert(Player.sayName())` // prints out value for key `name`
+example of applyig this syntax to print out a books information: 
+```javascript
+function Book (title, author, pages, read){
+    this.title = title;
+    this.author = pages;
+    this.pages= pages;
+    this.read = read;
+    this.info = function(){
+        let readResponse; 
+        if (read === true)
+        {readResponse === "have read";}
+        else{readResponse === "not read yet";}
+    return (`${title}, by ${author}, ${pages} pages, ${readResponse}`);
+  }
+
+}
+
+const lotr = new Book("The Hobbit","J.RR Tolkien", 456, false);
+
+lotr.info();
+
+```
+//`'The Hobbit, by J.RR Tolkien, 456 pages, undefined'`
+
+##### The Prototype
+- all objects in js have a prototype. 
+	- what does that mean?
+		- 
