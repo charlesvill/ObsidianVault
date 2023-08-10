@@ -104,4 +104,33 @@ lotr.info();
 ##### The Prototype
 - all objects in js have a prototype. 
 	- what does that mean?
-		- 
+		- any object constructor or literal you create will have another copy of itself as an object that serves as a pool for methods and data that will be shared amongst the many instantiations of the object constructor that you may have. 
+		- ex: looking at the book example, if you have a thousand books, you will have 1000 instantiations of the info function. so much memory could be saved if we were to just pool that function and other repeatedly accessed data in a prototype that the instantiation of the specific `Book` object can inherit methods from
+		- this above is called prototypal inheritance
+	- Characteristics: 
+		- its mutable meaning that you can add, change the functions present in the Book.prototype. 
+		- comes with certain built in methods and properties
+		- allows for two or more objects to be linked and access each others methods even if they're not explicitly decared in their own respective object declarations (inheritance)
+		- when you try to access a property or method, JS will first check the declared object and then the property if it was not found on the original object (the one declared)
+		- at the end of the chain is Object.prototype and it's methods and properties. any efforts to look past that will return in null. the chain could look like this:
+			- Book{}, Book.prototype{}, Object.Prototype{}. <- end of the chain
+- Syntax: 
+	- to find the prototype use `getPrototypeOf()` method and a object literal or constructor goes inside there.
+
+```javascript
+function Hero(name, power){
+this.name = name;
+this.power = power;
+}
+
+Hero.prototype.greet = function () {
+	return `${this.name} says hello.`;
+}
+
+//fig.1 here we see instantiation of Hero with the name gorgon
+let gorgon = new Hero("Dungarth", 9000);
+
+//and here we see gorgon object accessing the newly created method in the prototype object despite not being in the constructor.
+console.log(gorgon.greet);
+```
+This here is declaring a function within the prototype of Hero{} that can now be used by any instantiation  of Hero there after as seen in fig. 1
