@@ -188,4 +188,4 @@ people[0].number= "+1-909-908-9084";
 	- hexadecimal uses actually 16 digits before it needs to reuse any. it uses letters once it runs out of decimals
 	- the biggest digit in hexadecimal is ff which is 255 which is why you have 255 possible 
 	- How to count to 10 using hexadecimal: 01 <- 1 , 02 , ... 0A <- 10 after 09 uses letters and 16, 10 <- the placevalue in front represents the competion of the first base 16. 
-	- 
+	- What is 0x that is seen in memory addresses? its a humna convention to let yoj know that it's hexadecimal toi not make it confusing. 
