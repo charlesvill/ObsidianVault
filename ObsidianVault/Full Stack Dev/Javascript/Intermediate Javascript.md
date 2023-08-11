@@ -197,6 +197,11 @@ const hero2 = new Healer('Kanin', 1, 'cure');
 ##### This keyword
 the mystery of `this` and its meanings across contexts article: https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/
 - in many places the use of `this` is purely contextual to the scope that its used in. in javascript however, it is used based on the context in which the function was invoked
+- another explanation is that `this` is the reference to the current running function 
 - difference between a function and a method: 
 	- a method uses accessors and create a method invocation looks like: `[1, 5].join();` the way that this uses the dot notation to access javascript methods is a tell tale sign. functions on the other hand are just executed not accessing any objects
 		- so a function is just the list of instructions in the function body and a method is the same thing but accessed through an object. perhaps technically speaking C does not have methods because it does not have objects
+- the `this` keyword will refer to different things depending on the scope that its being called in. for example, if its being called in the global scope, like `alert(this)` the this being referred to is the window, browser, the highest level. 
+- in other instances, for example if a function is declared inside of an object, and that function is called outside of it, this will still refer to the object that is being accessed. `user.fullName()` the this inside of this function will point to user object. 
+	- *an arrow function inside of an object will not operate the same way. it will inherit the closest normal function which could be window or global scope.*
+	- see the top lesson on object constructor and prototyping for more resources. 
