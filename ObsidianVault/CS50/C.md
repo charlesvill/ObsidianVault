@@ -189,3 +189,24 @@ people[0].number= "+1-909-908-9084";
 	- the biggest digit in hexadecimal is ff which is 255 which is why you have 255 possible 
 	- How to count to 10 using hexadecimal: 01 <- 1 , 02 , ... 0A <- 10 after 09 uses letters and 16, 10 <- the placevalue in front represents the competion of the first base 16. 
 	- What is 0x that is seen in memory addresses? its a humna convention to let yoj know that it's hexadecimal toi not make it confusing. 
+- Memory Addresses
+	- `&` - provides the address orf something stored in memory
+	- `*` - instructs the compiler to go somewhere in memory
+#### pointers
+- very easy to break programs with pointers. 
+	- its really just a variable that contains the address of some value. an address to something in memory
+	- just literally points to something else. 
+- `int n = 50;` -> `int *p = &n;` 
+	- the star clues the compiler that we're storing an address of something
+- Strings in memory - the array members have their place in memory but the variable s is also something, but it is stored in memory as actually pointer that points to the address of the first index number
+	- it after all has the null terminating character that tells it when the array is over.
+	- essentyially then the variable for the array s is really a pointer
+- Strings are not really strings per say as a word in memory. it's really an array of chars its a 
+- using string as a keyword in C was a training wheel. an abstraction for us, it used a struct like so: `typedef char *string;` 
+- how to print the address of a pointer? 
+	- you need to use `printf("%p", x)`  thats the new placeholder for pointers
+- new way to print out strings: `char *s = "hi"; \n printf("%s", s);`
+	- here the %s still prints out the whole string but if I change the placeholder to %p it will instead print out the address of the first char
+	- printf is smart because if you put a `*s` as the variable to print out, it will actually print out the letter at the address, but printf knows that it wants the string and just wants the address and knows to print out the subsequent chars until it hit s the null character.
+- Whiat is the power and the danger of C? 
+	- well with pointers you can poke around memory past what is allocated for your program. so hypothetically a sophisticated hacker can inject something into your C program and poke around the other areas of memory looking for credit card information or other kernel information, bad things in general. 
