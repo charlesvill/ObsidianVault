@@ -211,3 +211,22 @@ people[0].number= "+1-909-908-9084";
 - Whiat is the power and the danger of C? 
 	- well with pointers you can poke around memory past what is allocated for your program. so hypothetically a sophisticated hacker can inject something into your C program and poke around the other areas of memory looking for credit card information or other kernel information, bad things in general. 
 - in something like strcmp() the compiler knows to look at the different memory addresses to two variables that hav ethe same contents and compare the contents. the reason why just == doesnt work to compare strings on its own is because its comparing the address of the first char which is not the same because they're different variables
+#### malloc and free
+- `malloc` memory allocation 
+- `free` is when youre done with it and it frees the memory allocation for something
+	- new library `<stdlib.h>` that lets me manage my memory
+	- copying a string over involves allocating memory for the length of the string plus 1 (for the null character) and then assign each index to the index of the previous string
+	- strcpy(destination, source) is a replacement for that process luckily abstracted for us. 
+- *optimization tip: if you have a function like strlen() in a loop you are uselessly using more memory than necessary so you can define two variables in a loop separated by a comma next to the i iterator so it does not call the function over and over again.* 
+- what is the difference between `nul` and `null`? 
+- other good practices: 
+	- if you use get string but use too much memory, you could cause a crash so you should put a conditional if get string == null return 1; 
+	- then at the end of the program just to be clear return 0; 
+- Malloc memory Laws
+	- at the bottom of your program you should always free your memory when using malloc
+	- something to note is that when your program terminates it will automatically free the memory but if it is somethign that is running all the time then you need to be freeing the memory
+	- do not need for get_string because it's already programmed to rid the memory on its own
+##### valgrind 
+checks for memory leakage you can look at the end and see how many bytes went unfreed or leaked
+##### garbage values
+if you initialize an array with 1000 indexes but dont assign values you might get random numbers there that were left over from previous functions or other things in your computers memory, those are called garbage values. you should not initialize values without assigning them something because it could fuck with your shit
