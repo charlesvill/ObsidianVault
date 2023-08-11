@@ -196,6 +196,9 @@ people[0].number= "+1-909-908-9084";
 - very easy to break programs with pointers. 
 	- its really just a variable that contains the address of some value. an address to something in memory
 	- just literally points to something else. 
+- up to this point, we have been passing data by value
+	- what this means is copies of data
+	- 
 - `int n = 50;` -> `int *p = &n;` 
 	- the star clues the compiler that we're storing an address of something
 - Strings in memory - the array members have their place in memory but the variable s is also something, but it is stored in memory as actually pointer that points to the address of the first index number
