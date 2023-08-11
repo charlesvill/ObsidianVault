@@ -230,3 +230,8 @@ people[0].number= "+1-909-908-9084";
 checks for memory leakage you can look at the end and see how many bytes went unfreed or leaked
 ##### garbage values
 if you initialize an array with 1000 indexes but dont assign values you might get random numbers there that were left over from previous functions or other things in your computers memory, those are called garbage values. you should not initialize values without assigning them something because it could fuck with your shit
+
+##### swap 
+- when it comes to computer memory, there are different sections or areas of memory that are accessed for different things. for example, at the top highest priority if you will, is machine code that is quickly accessible by the cpu. then you have global, and then you have the heap. heap is essentially like a heap of memory, a chunk of memory and thats where when you call malloc, it carves out memory. it carves from top to bottom. below the heap is the stack memory. 
+	- the stack memory is for functions and temporary variables that are called within functions. and this memory works from bottom up. 
+- both heap and stack memory build up in each others colliding direction and problems will arise if too much is allocated in either one to make them collide. its our job to minimize the possibility of that happening. 
