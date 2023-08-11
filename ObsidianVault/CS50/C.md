@@ -180,3 +180,10 @@ people[0].number= "+1-909-908-9084";
 		`011`
 		here the rows are represented by i and the columns by j with the syntax `2darr[i][j]` 
 		the column j has the 0s without any 1s.
+## Memory
+- what is a bitmap?
+	- type of image that use binary to represent grid of pixels in a coordinate type of arrangment
+- hexadecminal: 
+	- our decimal uses 10 digits and then we have to reuse them to represent higher numbers (124)
+	- hexadecimal uses actually 16 digits before it needs to reuse any. it uses letters once it runs out of decimals
+	- the biggest digit in hexadecimal is ff which is 255 which is why you have 255 possible 
