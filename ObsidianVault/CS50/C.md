@@ -187,3 +187,5 @@ people[0].number= "+1-909-908-9084";
 	- our decimal uses 10 digits and then we have to reuse them to represent higher numbers (124)
 	- hexadecimal uses actually 16 digits before it needs to reuse any. it uses letters once it runs out of decimals
 	- the biggest digit in hexadecimal is ff which is 255 which is why you have 255 possible 
+	- How to count to 10 using hexadecimal: 01 <- 1 , 02 , ... 0A <- 10 after 09 uses letters and 16, 10 <- the placevalue in front represents the competion of the first base 16. 
+	- 
