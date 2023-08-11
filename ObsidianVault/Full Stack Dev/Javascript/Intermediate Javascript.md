@@ -185,10 +185,18 @@ Healer.prototype.heal = function () {
   return `${this.name} casts ${this.spell}.`;
 }
 
-// Initialize individual character instances
+// Initialize individual character instancaes
 const hero1 = new Warrior('Bjorn', 1, 'axe');
 const hero2 = new Healer('Kanin', 1, 'cure');
 ```
 
 **correct order of accessing prototypes**
 - to avoid issues and inefficiency, the .setPrototypeOf part needs to be done before any other methods are declared and before any instantiations of the objects
+- How to find the next stop in the chain of protoypes?
+	- use the command `Object.getPrototypeOf(Hero.protype)` 
+##### This keyword
+the mystery of `this` and its meanings across contexts article: https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/
+- in many places the use of `this` is purely contextual to the scope that its used in. in javascript however, it is used based on the context in which the function was invoked
+- difference between a function and a method: 
+	- a method uses accessors and create a method invocation looks like: `[1, 5].join();` the way that this uses the dot notation to access javascript methods is a tell tale sign. functions on the other hand are just executed not accessing any objects
+		- so a function is just the list of instructions in the function body and a method is the same thing but accessed through an object. perhaps technically speaking C does not have methods because it does not have objects
