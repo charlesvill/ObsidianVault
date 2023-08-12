@@ -77,7 +77,7 @@ console.log(player.name) // 'steve'
 - you can also add functions to the object: 
 	- first declare the function like above but add a function after and have the function called sayName() print the `name` . 
 	- and you can access that function `alert(Player.sayName())` // prints out value for key `name`
-example of applyig this syntax to print out a books information: 
+example of applying this syntax to print out a books information: 
 ```javascript
 function Book (title, author, pages, read){
     this.title = title;
