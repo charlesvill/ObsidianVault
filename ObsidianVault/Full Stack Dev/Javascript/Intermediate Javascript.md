@@ -1,6 +1,12 @@
 - good websites to work on practice problems: https://exercism.org/tracks/javascript/exercises/lasagna (already made a github account)
 	- Code wars(looks like it lets you skip the trivial ones): https://www.codewars.com/
 	- W3schools (has a directory of specific js disciplines and exercises for it): https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1
+### Parking lot for review in foundational JS
+#### How to store html elements and add event logic
+- use store as a variable with `document.querySelector(".className");`
+	- mind that this is for one element and use `querySelectorAll(#idname);` for multiple elements
+- for logic you can use `varName.addEventListener("click", (e)=>{...});` 
+	- notice that event listener method appended to the variable name, and notice the thing listening for in quotes and the arrow function capability, *and the presence of e* which passes through event information accessible through dot notation or bracket notation.
 ### Organizing Code
 - the language is extremely forgiving which is in part enabling for poor design choices that lead to poor maintainability.
 	- the discussion on organizing code is going to come down to 4 categories:
