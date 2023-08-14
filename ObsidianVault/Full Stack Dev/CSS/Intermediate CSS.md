@@ -435,7 +435,7 @@ anything involving a list that goes together should be nestedinside of a fieldse
     </li>
   </ul>
 </fieldset>
-
+*make sure for radios that they have the same name attribute so they can be grouped together, otherwise it will not work as intended.*
 - checkboxes
 	- should use labels for the same reason above
 - *checkboxes and radios with checked attribute will match with psuedo class :default even if they are no longer checked by user. any that are currently checked will match with the :checked psuedo-class* 
