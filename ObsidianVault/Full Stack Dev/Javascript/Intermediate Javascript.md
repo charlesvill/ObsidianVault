@@ -7,6 +7,10 @@
 	- mind that this is for one element and use `querySelectorAll(#idname);` for multiple elements
 - for logic you can use `varName.addEventListener("click", (e)=>{...});` 
 	- notice that event listener method appended to the variable name, and notice the thing listening for in quotes and the arrow function capability, *and the presence of e* which passes through event information accessible through dot notation or bracket notation.
+#### Javascript Array methods
+- Appending to an Array: 
+	- `arr.push(objectToPush);` no need to put brackets to the array name.
+- 
 #### dialog boxes as form popups
  see [[Intermediate CSS#Styling Forms]] to see it's implemenation with html. 
 	 once the html is populated, you'll need to store the button to pop up the form, the form itself, and a cancel button for the form.
@@ -38,6 +42,39 @@ cancelButton.addEventListener("click", () => {
 });
 ```
  - notice the `dialog.showModal()` method and the `dialog.close()`to open and close. *not too sure what the "animalNotChosen"* part is for though. #NeedMoreHelp 
+#### using Form data without POST / GET
+if you just want to use the form values within js, you can: 
+	1. store reference to form by class or element
+	2. add event listener `submit` and an arrow or defined function passing through `event` parameter
+	3. add `formVar.preventDefault()` to stop the form from trying to send to a server
+	4. access form data using variables and getelements by id or class: 
+ex: 
+
+```javascript
+addForm.addEventListener("submit", (event)=>{
+
+event.preventDefault();
+dialog.close();
+createBookObj();
+})
+
+  
+function createBookObj(){
+
+let author = document.getElementById("title").value;
+let title = document.getElementById("author").value;
+let pages = document.getElementById("pageNum").value;
+
+//boolean that checks the value of read and returns t/f
+
+let readStatus = document.querySelector("input[name=readStatus]:checked").value === "read" ? true : false;
+let bookToAdd = new Book (title, author, pages, readStatus);
+console.table(bookToAdd);
+appendLibArr(bookToAdd);
+}
+```
+- note the variables being initialized and storing the different form inputs. 
+- note the unique radio value being accessed by using the name and specifically accessing the one that is checked. dont really understand why you need the `:checked` #NeedMoreHelp 
 ### Organizing Code
 - the language is extremely forgiving which is in part enabling for poor design choices that lead to poor maintainability.
 	- the discussion on organizing code is going to come down to 4 categories:

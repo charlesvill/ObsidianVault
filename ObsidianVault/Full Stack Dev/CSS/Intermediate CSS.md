@@ -478,6 +478,9 @@ Buttons all use the `button` element tag but are defined by the type attribute t
 - implementation: you declare the `<dialog><form method="dialog"></form></dialog>`
 	- note that the form will be nested inside the dialog element tags and the form will have to have the `method` attribute set to dialog to have the form close the modal form with a submit button see [[Intermediate Javascript#Parking lot for review in foundational JS]] for more on its implementation with Javascript.
 
+##### using data from forms
+see the javascript lesson [[Intermediate Javascript#using Form data without POST / GET]] to see how to access form data within your js.
+
 ### Styling Forms 
 #### Fonts and texts
 - sometimes elements in fonts dont' always inherit font rules from parents and thus may need these rules applied: 
