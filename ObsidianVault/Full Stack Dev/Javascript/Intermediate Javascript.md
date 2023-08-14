@@ -10,7 +10,10 @@
 #### Javascript Array methods
 - Appending to an Array: 
 	- `arr.push(objectToPush);` no need to put brackets to the array name.
-- 
+
+#### Creating Data-attributes with JS
+- you can create a specific index number for an element that was dynamically created using javascript with data-atrributes with the following: `elementVar.dataset.index` 
+	- *note the .index is actually what you can name the data attribute and it appears as data-index* 
 #### dialog boxes as form popups
  see [[Intermediate CSS#Styling Forms]] to see it's implemenation with html. 
 	 once the html is populated, you'll need to store the button to pop up the form, the form itself, and a cancel button for the form.
