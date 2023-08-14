@@ -7,6 +7,37 @@
 	- mind that this is for one element and use `querySelectorAll(#idname);` for multiple elements
 - for logic you can use `varName.addEventListener("click", (e)=>{...});` 
 	- notice that event listener method appended to the variable name, and notice the thing listening for in quotes and the arrow function capability, *and the presence of e* which passes through event information accessible through dot notation or bracket notation.
+#### dialog boxes as form popups
+ see [[Intermediate CSS#Styling Forms]] to see it's implemenation with html. 
+	 once the html is populated, you'll need to store the button to pop up the form, the form itself, and a cancel button for the form.
+```javascript
+
+const updateButton = document.getElementById("updateDetails");
+const cancelButton = document.getElementById("cancel");
+const dialog = document.getElementById("favDialog");
+dialog.returnValue = "favAnimal";
+
+function openCheck(dialog) {
+  if (dialog.open) {
+    console.log("Dialog open");
+  } else {
+    console.log("Dialog closed");
+  }
+}
+
+// Update button opens a modal dialog
+updateButton.addEventListener("click", () => {
+  dialog.showModal();
+  openCheck(dialog);
+});
+
+// Form cancel button closes the dialog box
+cancelButton.addEventListener("click", () => {
+  dialog.close("animalNotChosen");
+  openCheck(dialog);
+});
+```
+ - notice the `dialog.showModal()` method and the `dialog.close()`to open and close. *not too sure what the "animalNotChosen"* part is for though. #NeedMoreHelp 
 ### Organizing Code
 - the language is extremely forgiving which is in part enabling for poor design choices that lead to poor maintainability.
 	- the discussion on organizing code is going to come down to 4 categories:

@@ -473,6 +473,10 @@ Buttons all use the `button` element tag but are defined by the type attribute t
 		- see this article for more on layout for accessibility: https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form
 		-   it's common practice to use common html elements to organize such as ul, li, div, p, h1-5 etc
 	- the `section` element should also be used in conjunction with the fieldset element for separating logical chunks in forms
+##### dialog element and forms
+- with the `<dialog>` element, you can make a form appear with javascript method `.showModal()` to submit information and make it disappear when its no longer needed
+- implementation: you declare the `<dialog><form method="dialog"></form></dialog>`
+	- note that the form will be nested inside the dialog element tags and the form will have to have the `method` attribute set to dialog to have the form close the modal form with a submit button see [[Intermediate Javascript#Parking lot for review in foundational JS]] for more on its implementation with Javascript.
 
 ### Styling Forms 
 #### Fonts and texts
