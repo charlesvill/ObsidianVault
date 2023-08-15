@@ -90,7 +90,7 @@ h1 {
 	1. *Background* (dont freak on the syntax) https://developer.mozilla.org/en-US/docs/Web/CSS/background
 		1. check out this other CSS tricks resource https://css-tricks.com/almanac/properties/b/background/
 	2. *Box Shadow* best used sparingly and lighter, more subtle https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
-		1. simple box shadow code: `box-shadow:0.3em 0.3em 1em rgba(0, 0, 0, 0.3);`
+		1. simple box shadow code: `box-shadow:0.3em 0.3em .3em rgba(0, 0, 0, 0.3);`
 	3. *Overflow* when your content doesnt fit on a line or space, you can use scroll bars or the like to style user access to extra lines https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
 
 
