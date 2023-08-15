@@ -309,8 +309,9 @@ taco.printString(); // this prints "----TACO----"
 - couple things here, note the return of `printString` as an object. which will give you access to that method when creating instances of the functions as variables. 
 	- note also the other methods you dont' have access to because they're not returned but you can still access them throuh the method that was returned. this pattern of closing off certain methods or emulating their privacy is called closure. 
 - inheritance with factories
-- 
+	- just like constructors with prototypes, you can copy over functions and values from other factory functions to use in another using the `const {sayName} = Person(name);` where the {sayName} is created and set equal to Person(name) which is itself another factory function that has a function by the same name, sayName which is invoked when name is passed to Person. still kinda hazy #NeedMoreHelp 
 - more on differnet patterns for inheritance in JS: https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9
+	- also talks about compositional inheritance being better than classes but didnt really look into why #NeedMoreHelp 
 
 - What is namespace?
 		- its sometimes used interchangably with the word scope, but it's specifically the highest level of scope, the global scope
@@ -354,6 +355,10 @@ var Module = (function () {
 - this is known as good code security, the less global these functions are the less likely they can access the data inside them. 
 	- one naming convention is to start private methods with an underscore
 - more on this and other patterns for organizing without cluttering: https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope
+**What is that (); at the end of the module?**
+	- this is known as wraping a function (factory function) in whats called an IIFE or immediately invoked function expression
+- Modules in general present good ways to create a factory function that doesnt need to be replicated tons of times, like if you only need one and need access to the methods in them. 
+- another useful purpose of encapsulating some of our functions is to avoid *namespace collisions*. this is when you have say `add` function in three different places throughout your code, and they're all describing what the function does but it would conflict with other declarations of that function name so it would be nice of those other instances could be nested or encapsulated where they were needed but didnt need to be scoped in the global. 
 
 another example showcasing private vs public methods in Module objects: 
 ```javascript
