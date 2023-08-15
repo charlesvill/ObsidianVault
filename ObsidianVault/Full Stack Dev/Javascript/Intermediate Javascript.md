@@ -289,7 +289,27 @@ the mystery of `this` and its meanings across contexts article: https://dmitripa
 - turns out constructors aren't that favored , they can lead to some bugs that don't really give you error messages. many people prefer factory functions.
 	- for one, you need to use the `new` keyword and if you forget it, it will behave strangely but again, no error messages.
 	- What are factory functions?
-	- What is namespace?
+		- creating objects by returning them insteading of using arguments in a function to assign key:value pairs.
+
+```javascript
+javascript
+const FactoryFunction = string => {
+  const capitalizeString = () => string.toUpperCase();
+  const printString = () => console.log(`----${capitalizeString()}----`);
+  return { printString };
+};
+
+const taco = FactoryFunction('taco');
+
+printString(); // ERROR!!
+capitalizeString(); // ERROR!!
+taco.capitalizeString(); // ERROR!!
+taco.printString(); // this prints "----TACO----"
+```
+- couple things here, note the return of `printString` as an object. which will give you access to that method when creating instances of the functions as variables. 
+	- note also the other methods you dont' have access to because they're not returned but you can still access them throuh the method that was returned. this pattern of closing off certain methods or emulating their privacy is called closure. 
+
+- What is namespace?
 		- its sometimes used interchangably with the word scope, but it's specifically the highest level of scope, the global scope
 	- what is lexical scope? 
 		- variables or statements inside anotehr function, is under lexical or static slope or closure. 
@@ -299,3 +319,51 @@ the mystery of `this` and its meanings across contexts article: https://dmitripa
 			- ex: let `hi =` <- statement and the expression is the 5 assigned to the `let hi =` 
 			- staements are the rigid structure of our programs and the expressions populate or fill in the details. strings, floats, longs, etc. as long as it can be value produced.
 			- one handy way to tell is if you try to console.log it,if it works, its an expression and if it doesnt, it's a statement unless its not actually js of course.
+	- what is .call() and .apply()? 
+		- allow you to call a function and change its scope to change the contextual invokation of `this` looks like this, `funcName().call(links[i]);` the links "i" is something in the lexical scopeinside of the function but that can be brought out with the call and putting as argument what you''re trying to have come to a further scope up. Don't fully understand this though, will need to come back to this. #NeedMoreHelp 
+	- what is .bind()?
+		- a method that prevents methods that passthrough another functions with arguments from invoking immediately. 
+ex: 
+```javascript
+nav.addEventListener('click', toggleNav, false); // will invoke the function immediately 
+nav.addEventListener('click', toggleNav(arg1, arg2), false);
+```
+- normally you would fix this by putting another function inside of the event listener but you can also sollve this by calling the fucntion togglenav with bind with the arguments passed through without having to needlessly create another scope just to be able to pass the arguments. 
+#### Private/Public scope and the Module pattern
+- while JS does not do private and public scope like something like c# does, it can emulate it by making closures like seen with the module pattern. emulates it by keeping it out of the global scope. 
+	- because its nested in a function you wont actually be able to call it because its not defined in the global scope. 
+	- in order to call it , you use the module object pattern to create an object and call the object method. 
+ex: 
+```javascript
+// define module 
+var Module = (function () { 
+	return { myMethod: function () {
+	}, someOtherMethod: function () {
+	 }
+	  }; 
+	  })(); 
+	  // call module + methods 
+	  Module.myMethod(); 
+	  Module.someOtherMethod();
+```
+- so here we have methods that are nested privately but you can stil use them outside and not polluting the global namespace
+- notice at the end it's returning the functions being delcared. 
+- this is known as good code security, the less global these functions are the less likely they can access the data inside them. 
+	- one naming convention is to start private methods with an underscore
+- more on this and other patterns for organizing without cluttering: https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope
+
+another example showcasing private vs public methods in Module objects: 
+```javascript
+var Module = (function () { 
+ var _privateMethod = function () { 
+ }; 
+ var publicMethod = function () {
+  };
+   return { publicMethod: publicMethod, 
+   anotherPublicMethod: anotherPublicMethod
+    } 
+    })();
+```
+again we see here returning the methods kinda like the factory functions pattern described above.
+- what is the difference between function scoped and block scope?
+	- function scope a variable is confined to a function specifically and block can be anywhere there are curly braces. 
