@@ -352,11 +352,18 @@ var Module = (function () {
 ```
 - so here we have methods that are nested privately but you can stil use them outside and not polluting the global namespace
 - notice at the end it's returning the functions being delcared. 
+- *essential for a module to be wrapped in the IIFE parentheis. see below for more*
 - this is known as good code security, the less global these functions are the less likely they can access the data inside them. 
 	- one naming convention is to start private methods with an underscore
 - more on this and other patterns for organizing without cluttering: https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope
 **What is that (); at the end of the module?**
 	- this is known as wraping a function (factory function) in whats called an IIFE or immediately invoked function expression
+	- difference between function declaration and function expression: 
+		- functions declared in a block are nomrmal function declaration. 
+		- if you assign function as a variable, you are initializing function expression
+			- key is that function expressions return values. either data type or another function even
+			- to turn a regular function declaration to anexpression it's a simple as wrapping it in the parenthesis and add another set at the end. 
+	- the reason why you do it is for privacy without unnecessarily taking a name in the global namespace. 
 - Modules in general present good ways to create a factory function that doesnt need to be replicated tons of times, like if you only need one and need access to the methods in them. 
 - another useful purpose of encapsulating some of our functions is to avoid *namespace collisions*. this is when you have say `add` function in three different places throughout your code, and they're all describing what the function does but it would conflict with other declarations of that function name so it would be nice of those other instances could be nested or encapsulated where they were needed but didnt need to be scoped in the global. 
 
@@ -375,3 +382,4 @@ var Module = (function () {
 again we see here returning the methods kinda like the factory functions pattern described above.
 - what is the difference between function scoped and block scope?
 	- function scope a variable is confined to a function specifically and block can be anywhere there are curly braces. 
+- great video series on using modules in JS: https://www.youtube.com/playlist?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f
