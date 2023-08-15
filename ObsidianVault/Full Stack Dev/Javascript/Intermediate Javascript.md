@@ -284,3 +284,9 @@ the mystery of `this` and its meanings across contexts article: https://dmitripa
 - in other instances, for example if a function is declared inside of an object, and that function is called outside of it, this will still refer to the object that is being accessed. `user.fullName()` the this inside of this function will point to user object. 
 	- *an arrow function inside of an object will not operate the same way. it will inherit the closest normal function which could be window or global scope.*
 	- see the top lesson on object constructor and prototyping for more resources. 
+
+#### factory functions and the module pattern
+- turns out constructors aren't that favored , they can lead to some bugs that don't really give you error messages. many people prefer factory functions.
+	- for one, you need to use the `new` keyword and if you forget it, it will behave strangely but again, no error messages.
+	- What are factory functions?
+	- 
