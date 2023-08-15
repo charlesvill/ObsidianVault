@@ -308,6 +308,7 @@ taco.printString(); // this prints "----TACO----"
 ```
 - couple things here, note the return of `printString` as an object. which will give you access to that method when creating instances of the functions as variables. 
 	- note also the other methods you dont' have access to because they're not returned but you can still access them throuh the method that was returned. this pattern of closing off certain methods or emulating their privacy is called closure. 
+- inheritance with factories
 
 - What is namespace?
 		- its sometimes used interchangably with the word scope, but it's specifically the highest level of scope, the global scope
