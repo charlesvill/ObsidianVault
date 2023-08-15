@@ -289,4 +289,13 @@ the mystery of `this` and its meanings across contexts article: https://dmitripa
 - turns out constructors aren't that favored , they can lead to some bugs that don't really give you error messages. many people prefer factory functions.
 	- for one, you need to use the `new` keyword and if you forget it, it will behave strangely but again, no error messages.
 	- What are factory functions?
-	- 
+	- What is namespace?
+		- its sometimes used interchangably with the word scope, but it's specifically the highest level of scope, the global scope
+	- what is lexical scope? 
+		- variables or statements inside anotehr function, is under lexical or static slope or closure. 
+	- What is the difference between expressions and statements?
+		- expressions are bits of code that produce something 2+2 has the expression of 2, 2 and 2+2. each of those can be separate expressions 
+		- statements are sequence of instructions for the computer to do something. statements have slots for expressions to come in 
+			- ex: let `hi =` <- statement and the expression is the 5 assigned to the `let hi =` 
+			- staements are the rigid structure of our programs and the expressions populate or fill in the details. strings, floats, longs, etc. as long as it can be value produced.
+			- one handy way to tell is if you try to console.log it,if it works, its an expression and if it doesnt, it's a statement unless its not actually js of course.
