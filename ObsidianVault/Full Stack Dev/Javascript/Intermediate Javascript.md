@@ -309,6 +309,8 @@ taco.printString(); // this prints "----TACO----"
 - couple things here, note the return of `printString` as an object. which will give you access to that method when creating instances of the functions as variables. 
 	- note also the other methods you dont' have access to because they're not returned but you can still access them throuh the method that was returned. this pattern of closing off certain methods or emulating their privacy is called closure. 
 - inheritance with factories
+- 
+- more on differnet patterns for inheritance in JS: https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9
 
 - What is namespace?
 		- its sometimes used interchangably with the word scope, but it's specifically the highest level of scope, the global scope
