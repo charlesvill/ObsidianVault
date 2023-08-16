@@ -251,4 +251,4 @@ read: ` fread(data, size, number, inptr);`
 What is bitwise arithmetic?
 	applying operations to manipulate bits of binary numbers. 
 		used in this case to check if the last byte starts with 0xe... there are 16 possibe choices after the e
-		- bitwise And (&): 
+		- bitwise And (&): #NeedMoreHelp 
