@@ -219,6 +219,7 @@ people[0].number= "+1-909-908-9084";
 - `malloc` memory allocation 
 	- `char *name = malloc(int size);`
 	- notice the pointer name. malloc returns a pointer to the first part of the memory address. 
+	- this allocates in bytes so expects an integer.
 - `free` is when youre done with it and it frees the memory allocation for something
 	- new library `<stdlib.h>` that lets me manage my memory
 	- copying a string over involves allocating memory for the length of the string plus 1 (for the null character) and then assign each index to the index of the previous string
