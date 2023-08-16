@@ -255,3 +255,10 @@ What is bitwise arithmetic?
 	applying operations to manipulate bits of binary numbers. 
 		used in this case to check if the last byte starts with 0xe... there are 16 possibe choices after the e
 		- bitwise And (&): #NeedMoreHelp 
+allocating memory to a file name
+	`char *filename = malloc(int)`
+print string to file: `sprintf(filename, "this is cs %i", i);`
+	after creatign the file memory allocation you can name it with this function notice the placement of %i to input an integer, and the 3rd argument the integer to go in there. 
+write to a file: 
+	- writes in bytes 
+	`fwrite(&filename, sizeof(`
