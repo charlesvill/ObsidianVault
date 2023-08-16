@@ -202,6 +202,7 @@ people[0].number= "+1-909-908-9084";
 	- 
 - `int n = 50;` -> `int *p = &n;` 
 	- the star clues the compiler that we're storing an address of something
+	- with pointers, whenever you want to access the value of the pointer you're pointing to, you need to use the dereferencer `*index` infront of it anytime you're trying to use it
 - Strings in memory - the array members have their place in memory but the variable s is also something, but it is stored in memory as actually pointer that points to the address of the first index number
 	- it after all has the null terminating character that tells it when the array is over.
 	- essentyially then the variable for the array s is really a pointer
