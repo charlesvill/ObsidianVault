@@ -217,6 +217,8 @@ people[0].number= "+1-909-908-9084";
 - in something like strcmp() the compiler knows to look at the different memory addresses to two variables that hav ethe same contents and compare the contents. the reason why just == doesnt work to compare strings on its own is because its comparing the address of the first char which is not the same because they're different variables
 #### malloc and free
 - `malloc` memory allocation 
+	- `char *name = malloc(int size);`
+	- notice the pointer name. malloc returns a pointer to the first part of the memory address. 
 - `free` is when youre done with it and it frees the memory allocation for something
 	- new library `<stdlib.h>` that lets me manage my memory
 	- copying a string over involves allocating memory for the length of the string plus 1 (for the null character) and then assign each index to the index of the previous string
