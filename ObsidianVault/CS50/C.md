@@ -245,4 +245,5 @@ open: `FILE *fopen(const char *pathname, const char *mode);`
 	modes: `r` , `w` , `a` <- append
 - pathname is the name of the file to open
 - will return a pointer to the file
-read: `size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);`
+read: ` fread(void *ptr, size_t size, size_t nmemb, FILE *stream);`
+	
