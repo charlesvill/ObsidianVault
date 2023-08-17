@@ -293,7 +293,7 @@ the mystery of `this` and its meanings across contexts article: https://dmitripa
 
 ```javascript
 javascript
-const FactoryFunction = string => {
+const FactoryFunction = (string) => {
   const capitalizeString = () => string.toUpperCase();
   const printString = () => console.log(`----${capitalizeString()}----`);
   return { printString };
@@ -306,7 +306,7 @@ capitalizeString(); // ERROR!!
 taco.capitalizeString(); // ERROR!!
 taco.printString(); // this prints "----TACO----"
 ```
-- couple things here, note the return of `printString` as an object. which will give you access to that method when creating instances of the functions as variables. 
+- couple things here, not passing through string for the factory. note the return of `printString` as an object. which will give you access to that method when creating instances of the functions as variables. 
 	- note also the other methods you dont' have access to because they're not returned but you can still access them throuh the method that was returned. this pattern of closing off certain methods or emulating their privacy is called closure. 
 - inheritance with factories
 	- just like constructors with prototypes, you can copy over functions and values from other factory functions to use in another using the `const {sayName} = Person(name);` where the {sayName} is created and set equal to Person(name) which is itself another factory function that has a function by the same name, sayName which is invoked when name is passed to Person. still kinda hazy #NeedMoreHelp 
