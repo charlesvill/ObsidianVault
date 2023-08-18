@@ -374,7 +374,7 @@ var Module = (function () {
  }; 
  var publicMethod = function () {
   };
-   return { publicMethod: publicMethod, 
+   return { publicMethod: publicMethod, ew
    anotherPublicMethod: anotherPublicMethod
     } 
     })();
