@@ -7,6 +7,9 @@
 	- mind that this is for one element and use `querySelectorAll(#idname);` for multiple elements
 - for logic you can use `varName.addEventListener("click", (e)=>{...});` 
 	- notice that event listener method appended to the variable name, and notice the thing listening for in quotes and the arrow function capability, *and the presence of e* which passes through event information accessible through dot notation or bracket notation.
+#### DOM manipulation methods
+- changing the inner contents of the element
+- how to find the children of a target element
 #### Javascript Array methods
 - Appending to an Array: 
 	- `arr.push(objectToPush);` no need to put brackets to the array name.
