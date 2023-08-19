@@ -263,3 +263,14 @@ print string to file: `sprintf(filename, "this is cs %i", i);`
 write to a file: 
 	- writes in bytes 
 	`fwrite(&filename, sizeof(`
+
+## Data Structures
+- abstract data types
+- qeues- a line, have the first in, first out data structure
+	- like a todo list
+	- enqueue - added to the list at the end
+	- dequeue - take off thelist
+- Stacks - one on top of each other. you usually take the top one so it's last in, first out
+	- gmail is technically an example of stacks
+	- push adding to the top of the stack
+- 
