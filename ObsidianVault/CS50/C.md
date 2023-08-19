@@ -225,6 +225,7 @@ people[0].number= "+1-909-908-9084";
 	- new library `<stdlib.h>` that lets me manage my memory
 	- copying a string over involves allocating memory for the length of the string plus 1 (for the null character) and then assign each index to the index of the previous string
 	- strcpy(destination, source) is a replacement for that process luckily abstracted for us. 
+	- 
 - *optimization tip: if you have a function like strlen() in a loop you are uselessly using more memory than necessary so you can define two variables in a loop separated by a comma next to the i iterator so it does not call the function over and over again.* 
 - what is the difference between `nul` and `null`? 
 - other good practices: 
@@ -232,6 +233,7 @@ people[0].number= "+1-909-908-9084";
 	- then at the end of the program just to be clear return 0; 
 - Malloc memory Laws
 	- at the bottom of your program you should always free your memory when using malloc
+		- even when your program is about to quite due to an error, you should free the memory before quitting. 
 	- something to note is that when your program terminates it will automatically free the memory but if it is somethign that is running all the time then you need to be freeing the memory
 	- do not need for get_string because it's already programmed to rid the memory on its own
 ##### valgrind 
