@@ -317,4 +317,5 @@ then,
 ```c
 node *n = malloc(sizeof(node));
 ```
-sizeof will figure out how many bytes you need for that struct node
+sizeof will figure out how many bytes you need for that struct node 
+
