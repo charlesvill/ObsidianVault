@@ -293,3 +293,19 @@ allow us to link values or different arrays or data strucures by just pointing f
   look at 45 minutes in lecture to see in context conversation on linked lists. \
 What is a node? 
 	- a container in code for storing some values. for example: storing the data you care about as well as some meta data that points to the next part of the list that exists elsewhere in memory. 
+how to define a node in c?
+	you will need a typedef struct
+```c
+typedef struct node
+{
+	int number; 
+	struct node *next;
+}
+node;
+```
+- notice the additional `node` at the struct declaration line, needed because you use the type as node but it's not declared yet, so its an annoying couple extra things you need but there after it shortens to just node;
+	- the good thing is I dont need to copy or realloc to save time and space overhead
+	- trade off is you use twice as much memory. technically more because linked lists need 8bytes of memory for a pointer for each 4 bytes of memory that is an integer 
+		- another trade off is that you cannot do bracket notation 
+		- another trade off is that you cannot do binary search because it's not contiguous in memory you cannot just cut in half and sear 
+```
