@@ -307,5 +307,14 @@ node;
 	- the good thing is I dont need to copy or realloc to save time and space overhead
 	- trade off is you use twice as much memory. technically more because linked lists need 8bytes of memory for a pointer for each 4 bytes of memory that is an integer 
 		- another trade off is that you cannot do bracket notation 
-		- another trade off is that you cannot do binary search because it's not contiguous in memory you cannot just cut in half and sear 
+		- another trade off is that you cannot do binary search because it's not contiguous in memory you cannot just cut in half and search that block. 
+			-thus its cut down to linear complexity
+how to start?
+```c
+node *list = NULL
 ```
+then, 
+```c
+node *n = malloc(sizeof(node));
+```
+sizeof will figure out how many bytes you need for that struct node
