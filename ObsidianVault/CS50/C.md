@@ -275,4 +275,16 @@ write to a file:
 - Stacks - one on top of each other. you usually take the top one so it's last in, first out
 	- gmail is technically an example of stacks
 	- push adding to the top of the stack
-- 
+#### resizing arrays 
+- if you need more space in an array, you can make a copy of the array with pointer like `*tmp` and copy over the variables from the old one to the new one and then free the memory of the old array and point the variable you freed memory for already the old array, have it point to the new variable `linkArr = tmp;` 
+	- need to make sure the new container tmp is pointing to the old memory allocation or else that chunk of memory will be lost in leak and valgrind will yell at you. 
+		- refer to the lecutre at 30 min to see this in context
+		- at the end of the program you still want to free link again before you exit even though you freed it earlier, you tecnnically freed the pointer to a different memory address. so you need to free the current address. you could also technically could free the memory by free tmp but by standard you are using the original variable linkArr so you should release that one
+- when could malloc return null? 
+	- if you call it and you run out of memory. it can run segmentation fault if you dont return if malloc returns NULL
+**realloc()**
+	-  function that allows you to do all the copying for you.   
+		- `int *tmp = realloc (list, 4 * size of (int));`
+		- then you point the old variable name to the new list variable address
+			- but you still need to use a return variable incase something does not workand then you run out of memory
+		- make sure you make the switch before actually assigning the new variable or reallocating the old variable because you need to 
