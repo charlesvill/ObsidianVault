@@ -319,3 +319,9 @@ node *n = malloc(sizeof(node));
 ```
 sizeof will figure out how many bytes you need for that struct node 
 
+what this does will initialize the begining of the linked list that points to another node struct that at the moment has nothing. 
+	how to access?
+```c
+(*n).number = 1;
+```
+instead of the wierdness 
