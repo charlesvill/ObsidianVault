@@ -288,3 +288,8 @@ write to a file:
 		- then you point the old variable name to the new list variable address
 			- but you still need to use a return variable incase something does not workand then you run out of memory
 		- make sure you make the switch before actually assigning the new variable or reallocating the old variable because you need to 
+#### linked lists
+allow us to link values or different arrays or data strucures by just pointing from one to another instead of having to recopy everything at many places. 
+  look at 45 minutes in lecture to see in context conversation on linked lists. \
+What is a node? 
+	- a container in code for storing some values. for example: storing the data you care about as well as some meta data that points to the next part of the list that exists elsewhere in memory. 
