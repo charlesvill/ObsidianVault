@@ -335,3 +335,10 @@ then after word, you can say
 list = n;
 ```
 what this does is remind the computer that the pointer initialized list as list is now being used to represent the node list created.
+![[Pasted image 20230820173226.png]]
+	here is a graphical representation of what is happening by saying list is equal to n. as n is a pointer to the node, making list equal to that will make it also a pointer to a node
+how to allocate another node?
+```c
+node *n = malloc(sizeof(node));
+```
+this is the same line as before when executed left to right, will create an additional 
