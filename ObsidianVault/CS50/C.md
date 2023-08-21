@@ -354,4 +354,48 @@ list = n;
 ```
 then this will connect the original variable to a pointer to the address of the most recently made node. 
 - if noticed, this would follow the the last in first out stack method, where items or nodes are added perhaps not in sequential integer order but by pushing them to the front of the list as opposed to the back or end of the list. 
-
+**how to iterate over a linked list**
+```c
+node *list = NULL;
+//initialize the first node pointer
+for(int i = 1; i<argc; i++)
+{
+	node *n = malloc(sizeof(node));
+	if(n == NULL)
+	{
+		return 1;
+	}
+	n -> number = i;
+	n -> next = NULL;
+	// this will prepend the node to the list
+	n -> next = list;
+	list = n;
+}
+```
+- to note here is the fact that the iterator starts at 1 bc argc at 0 is actually the name of the program and everything after it are the arguments. 
+- also notice: 
+	1. initialize the list variable that will always store the beginning of the list, but initailized at NULL bc we havent created another node and we want to avoid garbage values
+	2. in the loop, allocate size for a node and check to make sure you have memory
+	3. assign the number and the next in the node (next initialized to null)
+	4. then prepend the node to the list by assigning the next for that node point to the beginning variable, list (bc you adding like a stack to the top of the list so the next will point to the previous beginning of the list)
+	5. finally assign list variable to be n, pointing to the new beginning of the list.
+**how to free a linked list right before ending the program**
+for this you could make a for loop that initializes a pointer `ptr` of type node that while is not NULL, will iterate over the node.next pointers and frees each ptr but then using a temporary variable to set to the next pointer address before the next loop:
+```c
+node *ptr = list;
+while(ptr != NULL)
+{
+	node *next = ptr->next;
+	free(ptr);
+	ptr = next;
+}
+```
+**subtle bugs that cause leaks in memory**
+- with loops you have a check to make sure malloc doesnt return null and if it does, return one. however, this will not free any memory that successully allocated on different loops that were not the first one. thus, you could be leaking that memory there. the way to solve that would be to build a function that would free any memory that was successfully allocated before returning the program.
+**run time for searching this linked list**
+- O(n)
+- and addint to the list: O(1);
+**what if you want to append to the end of the list instead of prepend?**
+slower than prepend, bc you have to find the end of the list first, then add the extra node and append. so you always have to iterate over each N so o(n) 
+#### Trees
+merge the best of both worlds where you can have the speed of binary search and the flexibility and dynamism of linked lists. 
