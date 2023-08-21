@@ -386,3 +386,8 @@ again we see here returning the methods kinda like the factory functions pattern
 - what is the difference between function scoped and block scope?
 	- function scope a variable is confined to a function specifically and block can be anywhere there are curly braces. 
 - great video series on using modules in JS: https://www.youtube.com/playlist?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f
+#### Classes
+what is the difference between an object constructor and class?
+what are getters and setters?
+how to use inheritance with classes?
+why is composition usually preffered to inheritance!
