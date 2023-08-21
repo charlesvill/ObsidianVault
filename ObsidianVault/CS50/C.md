@@ -401,3 +401,16 @@ slower than prepend, bc you have to find the end of the list first, then add the
 merge the best of both worlds where you can have the speed of binary search and the flexibility and dynamism of linked lists. you have a trunk or root of the tree that grows downward, and in both directions such as if 4 is the root, 1, 2, 3 move down to the left and 5, 6, 7 to the right and create steps or forking branches at every step to allow the insertion of logic that checks which direction to go. each node holds two pointers to the left and to the right and the logic will decide which direction to move in.
 	- see lecture before 1:46 for example on BST
 #### Dictionaries
+- key value pairs just like objects in javascript [[Intermediate Javascript#objects as a design pattern]]
+
+#### Hash and hash tables 
+essentially a combination of an array where the residents of the array are nodes that are linked lists. allows you to narrow down where you need to search much much faster. theoretically constant time. 
+	if you have an array where each index letter in the alphabet, you can use it to store nodes to different names in a contact list. 
+the process of simplifying a more complicated process to boxes or categories, is called hashing or hash funtion. 
+- the array itself is called a hash table. 
+- the hash function could convert a name like Albus and convert to 0 for index of their first name. being hashed
+-   technicically it's still O(n)
+#### tries
+a fancier tree, short for retrieval. its a tree each of its nodes 
+O(1) run time because at most it will take the length of the name insteps as a constant time. there is a finite number of steps mostly it is a O(1) because the number of steps it takes is independent from the number of people that are in the library or data collection in total
+time and space is a seesaw if you improve in one, the other gets worse
