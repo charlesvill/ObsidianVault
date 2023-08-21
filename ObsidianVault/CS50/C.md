@@ -324,4 +324,9 @@ what this does will initialize the begining of the linked list that points to an
 ```c
 (*n).number = 1;
 ```
-instead of the wierdness 
+instead of the wierdness  in syntax, heres new syntax
+```c
+n->number = 1; 
+n->next = NULL;
+```
+		here we are making sure to set the next to null if last node.
