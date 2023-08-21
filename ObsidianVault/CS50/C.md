@@ -330,3 +330,8 @@ n->number = 1;
 n->next = NULL;
 ```
 		here we are making sure to set the next to null if last node.
+then after word, you can say 
+```c
+list = n;
+```
+what this does is remind the computer that the pointer initialized list as list is now being used to represent the node list created.
