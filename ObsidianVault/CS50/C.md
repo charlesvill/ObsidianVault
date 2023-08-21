@@ -123,6 +123,8 @@ clang -o hello hello.c -lcs50
 - once you have found what you're looking for in an array, besure to break out of it by breaking out or returning 0 if all went well.
 	- otherwise it will keep running
 - You can call an array a basic data sctucture where you can keep much of the same kinds of data
+- how do you convert a string to an int? use the `atoi()` function found in the `stdlib.h` library
+	- worth noting that if no valid conversion can be made, it will return 0. 
 #### struct
 basically a object like in javascript, a data scrutcure that stores different things
 	syntax:
@@ -341,4 +343,15 @@ how to allocate another node?
 ```c
 node *n = malloc(sizeof(node));
 ```
-this is the same line as before when executed left to right, will create an additional 
+this is the same line as before when executed left to right, will create an additional node , then n->next = null and n->number = 2;
+- make sure that you are not reassigning the list = n; bc that is pointing to the first node. if you were to point to that again, you would lose the connection to the original node . instead, its this:
+```c
+n-> next = list;
+```
+this will point the next to the original node so that it doesnt lose connections, then finally, 
+```c 
+list = n;
+```
+then this will connect the original variable to a pointer to the address of the most recently made node. 
+- if noticed, this would follow the the last in first out stack method, where items or nodes are added perhaps not in sequential integer order but by pushing them to the front of the list as opposed to the back or end of the list. 
+
