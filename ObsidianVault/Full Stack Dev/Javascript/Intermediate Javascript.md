@@ -389,5 +389,16 @@ again we see here returning the methods kinda like the factory functions pattern
 #### Classes
 what is the difference between an object constructor and class?
 what are getters and setters?
+	- getters are ways of accessing return values of object functions within say an object literal syntax
+	- setters are ways of updating or changing data inside of those fuctions or objects 
+```javascript
+get name(value) {
+		 ...return this._name;
+}
+set name(value) {
+	...this._name = value;
+}
+```
+- you can see the get/set keywords in action here
 how to use inheritance with classes?
 why is composition usually preffered to inheritance!
