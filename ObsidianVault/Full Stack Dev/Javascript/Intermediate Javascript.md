@@ -387,6 +387,8 @@ again we see here returning the methods kinda like the factory functions pattern
 	- function scope a variable is confined to a function specifically and block can be anywhere there are curly braces. 
 - great video series on using modules in JS: https://www.youtube.com/playlist?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f
 #### Classes
+getting started with classes: 
+- 
 what is the difference between an object constructor and class?
 what are getters and setters?
 	- getters are ways of accessing return values of object functions within say an object literal syntax
