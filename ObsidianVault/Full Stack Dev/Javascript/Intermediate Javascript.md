@@ -393,6 +393,21 @@ getting started with classes:
 		- function created by class lableed with special internal property `isClassConstructor`
 		- classes always use `strict` and everything inside of it is automatically in strict mode. 
 			- strict makes it easier to write safe code that throws errors with "bad syntax"
+```javascript
+class User {
+
+name = "John";
+age = 45;
+sayHi() {
+	alert(`Hello, ${this.name}!`);
+
+	}
+
+}
+
+new User().sayHi(); // Hello, John!
+```
+more on class basics: https://javascript.info/class
 what is the difference between an object constructor and class?
 what are getters and setters?
 	- getters are ways of accessing return values of object functions within say an object literal syntax
