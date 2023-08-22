@@ -451,6 +451,13 @@ class Rectangle {
 }
 ```
 - this time notice the hashtag which indicates private fields
+##### inheritance
+- use the keyword `class Lion extends ParentClass {...} 
+	- notice the extends and the class you want to inherit from comes afte the present class name. 
+	- if the extends class is going to employ a constructor, it needs to use the `super();` method before using `this` 
+		- `super` used in two ways:
+			- Property look up: to access properties of an object or class prototype. if you are accessing properties then you need to put that property inside super as an argument
+			- function call :  if you're acessing methods from the super class then you need `super().methodName` 
 what is the difference between an object constructor and class?
 what are getters and setters?
 	- getters are ways of accessing return values of object functions within say an object literal syntax
