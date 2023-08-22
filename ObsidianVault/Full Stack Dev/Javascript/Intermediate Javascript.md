@@ -454,11 +454,35 @@ class Rectangle {
 ##### inheritance
 - use the keyword `class Lion extends ParentClass {...} 
 	- notice the extends and the class you want to inherit from comes afte the present class name. 
+	- extends sets the prototype for both the childclas and the childclass prototype
 	- if the extends class is going to employ a constructor, it needs to use the `super();` method before using `this` 
 		- `super` used in two ways:
 			- Property look up: to access properties of an object or class prototype. if you are accessing properties then you need to put that property inside super as an argument
 			- function call :  if you're acessing methods from the super class then you need `super().methodName` 
-what is the difference between an object constructor and class?
+**Binding and unbinding**
+- binding is a method `bind()` that when called in a function instance, will bind the `this` where called to the value being passed through. 
+```javascript
+const module = {
+  x: 42,
+  getX: function () {
+    return this.x;
+  },
+};
+const unboundGetX = module.getX;
+console.log(unboundGetX()); // The function gets invoked at the global scope
+// Expected output: undefined
+
+const boundGetX = unboundGetX.bind(module);
+console.log(boundGetX());
+// Expected output: 42
+
+```
+  - you see here that unboundGetx is not able to call the method in module until it was bound with the original object declaration. 
+	  - if playing with this and get unexpected results, see this article in context: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+##### mix-ins
+- seems to be a syntax to allow the chaining of superclasses to chain inheritance, see more in context https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends#mix-ins
+
+##### getters and setters
 what are getters and setters?
 	- getters are ways of accessing return values of object functions within say an object literal syntax
 	- setters are ways of updating or changing data inside of those fuctions or objects 
@@ -471,5 +495,6 @@ set name(value) {
 }
 ```
 - you can see the get/set keywords in action here
-how to use inheritance with classes?
-why is composition usually preffered to inheritance!
+
+##### composition vs inheritance
+
