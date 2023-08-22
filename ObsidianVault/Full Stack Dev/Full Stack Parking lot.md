@@ -47,7 +47,7 @@ console.log(Point.displayName); // "Point"
 console.log(Point.distance(p1, p2)); // 7.0710678118654755
 
 ```
-  - notice the .displayName is not available on the p1 instatiated copies but it is on the Point.displayName actual reference to the class template. its useful for methods or info that doesnt need to be carried or accessed by the individual instantiations,. 
-- [ ] what does it mean by public and private features? does it just mean creating enclosures within objects to emmulate private fields?
+  - notice the .displayName is not available on the p1 instatiated copies but it is on the Point.displayName actual reference to the class template. its useful for methods or info that doesnt need to be carried or accessed by the individual instantiations,. see this in context[[Intermediate Javascript#Classes]]
+- [ ] what does it mean by public and private features? does it just mean creating enclosures within objects to emmulate private fields?[[Intermediate Javascript#field declarations]]
 - [ ] 
 

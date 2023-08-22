@@ -319,7 +319,7 @@ taco.printString(); // this prints "----TACO----"
 - What is namespace?
 		- its sometimes used interchangably with the word scope, but it's specifically the highest level of scope, the global scope
 	- what is lexical scope? 
-		- variables or statements inside anotehr function, is under lexical or static slope or closure. 
+		- variables or statements inside anotehr function, is under lexical or static scope or closure. static meaning accessible only within the scope of the function
 	- What is the difference between expressions and statements?
 		- expressions are bits of code that produce something 2+2 has the expression of 2, 2 and 2+2. each of those can be separate expressions 
 		- statements are sequence of instructions for the computer to do something. statements have slots for expressions to come in 
@@ -411,6 +411,7 @@ new User().sayHi(); // Hello, John!
 more on class basics: https://javascript.info/class
 - what is temporal dead zone? 
 	- class declarations have this along with let and const variables that will throw reference error if called befor they've been initialized. in contrast to function declarations and something like the var variable which will return 'undefined' if called before initialized. 
+- option to have `static` fields: see more[[Full Stack Parking lot]]
 ##### field declarations
 - class fields are syntax to create classes where fields are similar to object properties as opposed to variables, so no var, const or let keywords. 
 ```javascript
@@ -481,6 +482,7 @@ console.log(boundGetX());
 	  - if playing with this and get unexpected results, see this article in context: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
 ##### mix-ins
 - seems to be a syntax to allow the chaining of superclasses to chain inheritance, see more in context https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends#mix-ins
+- here is a video where fireship talks about mixins, skip to about 8:30:https://www.youtube.com/watch?v=fsVL_xrYO0w&ab_channel=Fireship
 
 ##### getters and setters
 what are getters and setters?
@@ -498,7 +500,10 @@ set name(value) {
 
 ##### composition vs inheritance
 - inheritance involves making a sublcass of a parent class and the two are strongly coupled and there are some issues with subclassing such as potential security risks
+	- inheritance is when you define your objects around what type they are
+	- it forces the developers to build a strong taxonomy of their objects early on in the development process and people cannot predict the future and if you are deep in it's hard to get out
 - composition is when you have a property that stores reference to another object of another class and use the features within it. it usually results in more code duplication but does not easily break if the other class its borrowing from changes. 
+	- inheritance is when you define your objects around what they do. 
 ```js
 class ReadOnlyMap {
   #data;
@@ -530,3 +535,4 @@ class ReadOnlyMap {
 ```
 - to note here is how private field `#data` is set equal to a new instance of other class Map
 	- don't really know what the star is though #NeedMoreHelp looks like a fucking pointer
+- good video illustrating how to use composition to allow greater flexibility in functionality of objects. 
