@@ -497,4 +497,36 @@ set name(value) {
 - you can see the get/set keywords in action here
 
 ##### composition vs inheritance
-
+- inheritance involves making a sublcass of a parent class and the two are strongly coupled and there are some issues with subclassing such as potential security risks
+- composition is when you have a property that stores reference to another object of another class and use the features within it. it usually results in more code duplication but does not easily break if the other class its borrowing from changes. 
+```js
+class ReadOnlyMap {
+  #data;
+  constructor(values) {
+    this.#data = new Map(values);
+  }
+  get(key) {
+    return this.#data.get(key);
+  }
+  has(key) {
+    return this.#data.has(key);
+  }
+  get size() {
+    return this.#data.size;
+  }
+  *keys() {
+    yield* this.#data.keys();
+  }
+  *values() {
+    yield* this.#data.values();
+  }
+  *entries() {
+    yield* this.#data.entries();
+  }
+  *[Symbol.iterator]() {
+    yield* this.#data[Symbol.iterator]();
+  }
+}
+```
+- to note here is how private field `#data` is set equal to a new instance of other class Map
+	- don't really know what the star is though #NeedMoreHelp looks like a fucking pointer
