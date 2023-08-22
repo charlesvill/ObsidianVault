@@ -15,6 +15,9 @@
 	- `arr.push(objectToPush);` no need to put brackets to the array name.
 - removing an element or replacing to array: 
 	- `arr.splice(indextoremove,howmanyindextoremove)` 
+- find in an array a specific element
+	- `arr.some((item) => item.title === newBook.title);` 
+		- this will return a true/false if it finds in the array matching 
 
 #### Creating Data-attributes with JS
 - you can create a specific index number for an element that was dynamically created using javascript with data-atrributes with the following: `elementVar.dataset.index` 
