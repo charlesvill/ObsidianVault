@@ -388,7 +388,11 @@ again we see here returning the methods kinda like the factory functions pattern
 - great video series on using modules in JS: https://www.youtube.com/playlist?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f
 #### Classes
 getting started with classes: 
-- 
+- class keyword is a syntax for making objects using functions. it has special attributes such as setting all methods in it to be non enumberable, meaning in a loop, it wont loop over the methods(which we usually dont' want, we want the properties like key:value pairs);
+	- other ways that it's different from object constructors: 
+		- function created by class lableed with special internal property `isClassConstructor`
+		- classes always use `strict` and everything inside of it is automatically in strict mode. 
+			- strict makes it easier to write safe code that throws errors with "bad syntax"
 what is the difference between an object constructor and class?
 what are getters and setters?
 	- getters are ways of accessing return values of object functions within say an object literal syntax
