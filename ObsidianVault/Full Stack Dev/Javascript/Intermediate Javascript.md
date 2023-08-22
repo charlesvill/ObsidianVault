@@ -407,9 +407,50 @@ sayHi() {
 
 new User().sayHi(); // Hello, John!
 ```
+ - notice the use of the `new` keyword that is necessary for instantiating new classes.
 more on class basics: https://javascript.info/class
 - what is temporal dead zone? 
 	- class declarations have this along with let and const variables that will throw reference error if called befor they've been initialized. in contrast to function declarations and something like the var variable which will return 'undefined' if called before initialized. 
+##### field declarations
+- class fields are syntax to create classes where fields are similar to object properties as opposed to variables, so no var, const or let keywords. 
+```javascript
+class Rectangle {
+  height = 0;
+  width;
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+```
+- there public and private class fields: 
+	- public: enumerable and configurable, writable the participate in prototype inheritance. 
+	- private: only accessible from within the class body cannot be accessed from the outside
+ex of public class fields: 
+```javascript
+class Rectangle {
+  height = 0;
+  width;
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+```
+- notice the constructor method here which is only allowed once in classes to instantiate new copies of it. 
+ex of private class fields: 
+```javascript
+class Rectangle {
+  #height = 0;
+  #width;
+  constructor(height, width) {
+    this.#height = height;
+    this.#width = width;
+  }
+}
+```
+- this time notice the hashtag which indicates private fields
 what is the difference between an object constructor and class?
 what are getters and setters?
 	- getters are ways of accessing return values of object functions within say an object literal syntax
