@@ -408,6 +408,8 @@ sayHi() {
 new User().sayHi(); // Hello, John!
 ```
 more on class basics: https://javascript.info/class
+- what is temporal dead zone? 
+	- class declarations have this along with let and const variables that will throw reference error if called befor they've been initialized. in contrast to function declarations and something like the var variable which will return 'undefined' if called before initialized. 
 what is the difference between an object constructor and class?
 what are getters and setters?
 	- getters are ways of accessing return values of object functions within say an object literal syntax
