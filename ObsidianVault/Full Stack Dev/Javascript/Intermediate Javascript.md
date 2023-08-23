@@ -279,7 +279,7 @@ const hero2 = new Healer('Kanin', 1, 'cure');
 - to avoid issues and inefficiency, the .setPrototypeOf part needs to be done before any other methods are declared and before any instantiations of the objects
 - How to find the next stop in the chain of protoypes?
 	- use the command `Object.getPrototypeOf(Hero.protype)` 
-##### This keyword
+##### "This" keyword
 the mystery of `this` and its meanings across contexts article: https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/
 - in many places the use of `this` is purely contextual to the scope that its used in. in javascript however, it is used based on the context in which the function was invoked
 - another explanation is that `this` is the reference to the current running function 
@@ -289,6 +289,8 @@ the mystery of `this` and its meanings across contexts article: https://dmitripa
 - the `this` keyword will refer to different things depending on the scope that its being called in. for example, if its being called in the global scope, like `alert(this)` the this being referred to is the window, browser, the highest level. 
 - in other instances, for example if a function is declared inside of an object, and that function is called outside of it, this will still refer to the object that is being accessed. `user.fullName()` the this inside of this function will point to user object. 
 	- *an arrow function inside of an object will not operate the same way. it will inherit the closest normal function which could be window or global scope.*
+		- useful to use arrow functions when operating within a class, because a regular function inside the class could encapsulate and deny access to the thing you're trying to access, so the arrow function will name this as the class scope instead of the function. 
+			- ex: you're trying to access an array that is declared in the class but youir calling a method to splice that array from a method inside the class but not in the same scope persay as the array. 
 	- see the top lesson on object constructor and prototyping for more resources. 
 
 #### factory functions and the module pattern
