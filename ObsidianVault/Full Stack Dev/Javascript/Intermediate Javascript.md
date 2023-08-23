@@ -543,3 +543,7 @@ class ReadOnlyMap {
 - to note here is how private field `#data` is set equal to a new instance of other class Map
 	- don't really know what the star is though #NeedMoreHelp looks like a fucking pointer
 - good video illustrating how to use composition to allow greater flexibility in functionality of objects. 
+
+#### ES6 Modules
+- different than the modules pattern
+- 
