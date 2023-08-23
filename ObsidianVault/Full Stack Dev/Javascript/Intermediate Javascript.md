@@ -547,4 +547,8 @@ class ReadOnlyMap {
 #### ES6 Modules
 - different than the modules pattern
 ##### first a history lesson on javascript and its evolution 
+why do we have npm?
+	because it was easier to manage packages and libraries when they updated or patched. the package manager did it for you and the json would automatically list the dependencies. 
+why do we have nodejs?
+	js did not originally have any sort of way of bundling files or code to import to different projects or code bases bc it was not meant to be working anywhere else except the browser. so Node Js was created to allow you to work with js offline without the use of global variables of code scripts you perhaps did not need. export code across files. 
 
