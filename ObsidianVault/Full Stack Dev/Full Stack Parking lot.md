@@ -49,5 +49,7 @@ console.log(Point.distance(p1, p2)); // 7.0710678118654755
 ```
   - notice the .displayName is not available on the p1 instatiated copies but it is on the Point.displayName actual reference to the class template. its useful for methods or info that doesnt need to be carried or accessed by the individual instantiations,. see this in context[[Intermediate Javascript#Classes]]
 - [ ] what does it mean by public and private features? does it just mean creating enclosures within objects to emmulate private fields?[[Intermediate Javascript#field declarations]]
-- [ ] 
+- [ ] conceptually what are bindings and what are important considerations of bindings that need to be taken when it comes to being a developer?
+- [ ] why are there so many templates to create objects? object constructor, classes, factory functions, module pattern? why do we have so many and what are important considerations to take in deciding which ones to employ for your project? i
+- [ ] is it good practice to avoid using global variables and declarations? things like const for event listeners and such. should they be wrapped up somewhere if at all possible? are there instances where you would want to avoid encapsulating constant variables and leave them isntead in the global scope?
 

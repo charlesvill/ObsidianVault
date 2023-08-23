@@ -551,4 +551,20 @@ why do we have npm?
 	because it was easier to manage packages and libraries when they updated or patched. the package manager did it for you and the json would automatically list the dependencies. 
 why do we have nodejs?
 	js did not originally have any sort of way of bundling files or code to import to different projects or code bases bc it was not meant to be working anywhere else except the browser. so Node Js was created to allow you to work with js offline without the use of global variables of code scripts you perhaps did not need. export code across files. 
+##### what are modules exactly?
+when you build projects, it will be useful to import libraries or resuse code that you have built in other projects. well it can get really complicated managing these files and also bloats your packages when you have all the depenencies available in your html files even if some of the js scripts dont use the libraries. 
+	solution is to use modules to bundle these dependencies. 
 
+**what is webpack?**
+- webpack is a module bundler installed with npm 
+	- getting started: see webpack docs: https://webpack.js.org/guides/getting-started/
+	- how its working:  webpack once installed reads all your import statements and bundles them in an output location usually called /dist folder that will be the code actually running on the browser for production. 
+		- it does something called transpiling code for development side libraries like typescript or SASS (development side meaning that it's not a dependency that will be for client side but more to aid devleopment) 
+			- transpiling is when it converts the similar language like typescript or SASS to its respective language. 
+**import**
+- used to import read-only live bindings. 
+	- called live bindings bc it can be updated by the exporting module but not altered by the imported module. 
+	- by definition, *binding* is association of an identifier and a value. like variable and its value, parameters passed like *e* 
+- syntax: 
+	- `import defaultExport from "./module-name.js"` defaultExport must be a real js identifier 
+	- import only belongs at the top, not in functions or anywhere else. 
