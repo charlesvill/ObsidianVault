@@ -392,6 +392,8 @@ again we see here returning the methods kinda like the factory functions pattern
 	- function scope a variable is confined to a function specifically and block can be anywhere there are curly braces. 
 - great video series on using modules in JS: https://www.youtube.com/playlist?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f
 #### Classes
+useful video on classes: https://www.youtube.com/playlist?list=PLtwj5TTsiP7uTKfTQbcmb59mWXosLP_7S
+
 getting started with classes: 
 - class keyword is a syntax for making objects using functions. it has special attributes such as setting all methods in it to be non enumberable, meaning in a loop, it wont loop over the methods(which we usually dont' want, we want the properties like key:value pairs);
 	- other ways that it's different from object constructors: 
