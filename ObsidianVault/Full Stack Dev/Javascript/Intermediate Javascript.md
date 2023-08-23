@@ -580,3 +580,5 @@ when you build projects, it will be useful to import libraries or resuse code th
 	- Named export - export out listed functions, variables declared elsewhere. useful when needding to export several values. , when imported, they need to be refferd by the exact same names as they were exported. (can rename to whatever with `as`) 
 - see more on exporting here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
 #### Webpack and loaders and plugins
+- to see more of handling .toml, .yaml, .json5 with webpack modules: https://webpack.js.org/guides/asset-management/
+- 
