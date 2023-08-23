@@ -546,4 +546,5 @@ class ReadOnlyMap {
 
 #### ES6 Modules
 - different than the modules pattern
-- 
+##### first a history lesson on javascript and its evolution 
+
