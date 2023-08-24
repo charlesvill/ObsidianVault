@@ -586,4 +586,18 @@ Working with webpack generally involves three things to bundle your assets well:
 	3. update input/output files in wepackconfig & loaders as needed
 - to see more of handling .toml, .yaml, .json5 with webpack modules: https://webpack.js.org/guides/asset-management/
 - 
-Output management - 
+Output management - what does the HTMLWebpackPlugin do?
+	- as projects ge more complicated, the names of the entry points tothe webpackconfig file could change or even add new ones, the index.html file will still reference the old ones even after you change the config file. the bundles output will reflect the change but the html file will not. 
+		- so this allows you to automatically link to the entry point names and creates new index.html files and will overwrite the one that you have even if its already there. and it will automatically bundle all your assets. 
+- cleaning the /dist folder: 
+	- after a while the dist folder will get cluttered, `clean: true,` under the output in the webpackconfig will know what outputs you're actually using and clean up the files that you are not using. 
+Source maps, what are they and what are they good for?
+- when youstart bundling different scripts, bugs will throw erros for the entire bundle as opposed to the spefic script that is giving issues. source maps fix that. 
+	- in the webpack.config file: `devtool: 'inline-source-map', ` this goes under module.exports and right above the plugins (though not too sure if the order really matters. ) *note: it has been said that this is not recommended for production environemnts and only for the development environment.* 
+- What is watch mode?
+	- it becomes tedious to run `npm run build` everytime that yo make a change so this watches for changes and compiles for you
+		- `"watch": "webpack --watch",` this goes in the package.json under scripts. under test.
+- What is webpack-dev-server?
+	- a rudimentary webserver that gives us the ability to use live reloading
+		- because there important considerations to be made when there are more than one entry point refer to the actual link for how to on this for necessary optimizations: https://webpack.js.org/guides/development/
+		- 
