@@ -408,6 +408,8 @@ merge the best of both worlds where you can have the speed of binary search and 
 #### Hash and hash tables 
 essentially a combination of an array where the residents of the array are nodes that are linked lists. allows you to narrow down where you need to search much much faster. theoretically constant time. 
 	if you have an array where each index letter in the alphabet, you can use it to store nodes to different names in a contact list. 
+		- how would you be able to connect a letter with being in a specific index?
+			- regardless if the char is upper or lower case you standardize by applying the `toupper()` function to the first char and then subtract char 'A' which corresponds to int 65. thus if the first letter is a, it will result in 0, which would be the first index in a hash array, and if its a c, it will return 2 which would again correspond to the correct index for the letter c in an alphabet array. 
 the process of simplifying a more complicated process to boxes or categories, is called hashing or hash funtion. 
 - the array itself is called a hash table. 
 - the hash function could convert a name like Albus and convert to 0 for index of their first name. being hashed

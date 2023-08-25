@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5e43fc95ff990a92",
+        "id": "4ca8475d822dd56e",
         "type": "tabs",
         "children": [
           {
-            "id": "a246e90e578757c3",
+            "id": "6a17fcf1b06b9893",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -156,13 +156,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a246e90e578757c3",
+  "active": "6a17fcf1b06b9893",
   "lastOpenFiles": [
+    "CS50/C.md",
     "Full Stack Dev/CSS/Intermediate CSS.md",
     "Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Full Stack Dev/Javascript",
     "Full Stack Dev/CSS/CSS reference Notes.md",
-    "CS50/C.md",
     "Pop OS reference sheet.md",
     "Full Stack Dev/Intermediate Javascript.md",
     "Full Stack Dev/Intermediate HTML/SVG.md",
