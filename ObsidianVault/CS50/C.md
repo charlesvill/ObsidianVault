@@ -255,7 +255,9 @@ open: `FILE *fopen(const char *pathname, const char *mode);`
 - will return a pointer to the file
 read: ` fread(data, size, number, inptr);`
 	- data is where you'll be storing the chunks of data you're reading from the file
-	- size
+	- fread will return the number of items successfuly read
+	- size is in how many bytes you want to read
+	- number is how many units of size you want at a time
 What is bitwise arithmetic?
 	applying operations to manipulate bits of binary numbers. 
 		used in this case to check if the last byte starts with 0xe... there are 16 possibe choices after the e
