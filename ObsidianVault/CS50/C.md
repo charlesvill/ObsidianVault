@@ -258,6 +258,7 @@ read: ` fread(data, size, number, inptr);`
 	- fread will return the number of items successfuly read
 	- size is in how many bytes you want to read
 	- number is how many units of size you want at a time
+		- *to iterate over an entire file to read the contents of it and do something meaningful to it, you can do a while loop and nest the read inside of the while loop. fread if number is 1, will return 1 if successfully read one block, thus, 1 would be a continuing condition for the while loop to keep going until it is no longer returning 0. checking the contents of the char or block pulled is helpful in this while loop method.*
 What is bitwise arithmetic?
 	applying operations to manipulate bits of binary numbers. 
 		used in this case to check if the last byte starts with 0xe... there are 16 possibe choices after the e
