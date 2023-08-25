@@ -249,7 +249,7 @@ if you initialize an array with 1000 indexes but dont assign values you might ge
 - both heap and stack memory build up in each others colliding direction and problems will arise if too much is allocated in either one to make them collide. its our job to minimize the possibility of that happening. 
 #### opening and reading files in C
 - will need the header `<stdio.h>` 
-open: `FILE *fopen(const char *pathname, const char *mode);` 
+open: `FILE *name =  fopen(text, "r");` 
 	modes: `r` , `w` , `a` <- append
 - pathname is the name of the file to open
 - will return a pointer to the file
