@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Pop OS reference sheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Pop OS reference sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Pop OS reference sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS50/C.md"
+                "file": "Pop OS reference sheet.md"
               }
             }
           },
@@ -158,14 +158,18 @@
   },
   "active": "d619dcc881893b4a",
   "lastOpenFiles": [
+    "TOPICS TO LEARN.md",
+    "Untitled.md",
+    "The 8 Most important Hotkeys.md",
+    "The 6 most Important keys to Typing in Markdown.md",
+    "Pop OS reference sheet.md",
+    "Dev Organizer.canvas",
     "Pasted image 20230820173226.png.md",
     "CS50/C.md",
-    "Untitled.md",
     "Full Stack Dev/CSS/Intermediate CSS.md",
     "Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Full Stack Dev/Javascript",
     "Full Stack Dev/CSS/CSS reference Notes.md",
-    "Pop OS reference sheet.md",
     "Full Stack Dev/Intermediate Javascript.md",
     "Full Stack Dev/Intermediate HTML/SVG.md",
     "CS 50.canvas",
@@ -179,10 +183,6 @@
     "Full Stack Dev/Intermediate HTML",
     "2023-06-23.md",
     "SVG.md",
-    "TOPICS TO LEARN.md",
-    "Dev Organizer.canvas",
-    "The 6 most Important keys to Typing in Markdown.md",
-    "The 8 Most important Hotkeys.md",
     "Untitled 1.md",
     "Full Stack Dev",
     "oop.md",
