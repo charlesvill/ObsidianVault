@@ -13,10 +13,16 @@ beautiful warm ghibli looking wallpaper: https://www.reddit.com/r/wallpaper/comm
 
 warm color theme for gnome: https://www.gnome-look.org/p/1283955/
 
+cozy rice inspo using the graphite gtk theme: https://www.reddit.com/r/unixporn/comments/t73gvt/gnome_cozy_first_rice/
+
+literal fnv rice: https://www.reddit.com/r/unixporn/comments/i18k0e/qtile_fallout_new_vegas_rice/
+
+
 so far the ideal set up: 
 1. zsh & oh my zsh
 2. neovim with sick config files
 3. btop for resource monitoring
 4. cava for audio visualizer
 5. gruvbox gtk theme: https://www.gnome-look.org/p/1681313/
-6. 
+6. foliate for the book reader
+7. 
