@@ -23,9 +23,11 @@
             "id": "70b319a5ec6c08ad",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.5"
+                "file": "Pop OS reference sheet.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -97,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Pop OS reference sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS50/C.md",
+                "file": "Pop OS reference sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS50/C.md"
+                "file": "Pop OS reference sheet.md"
               }
             }
           },

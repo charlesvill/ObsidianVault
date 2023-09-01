@@ -25,4 +25,4 @@ so far the ideal set up:
 4. cava for audio visualizer
 5. gruvbox gtk theme: https://www.gnome-look.org/p/1681313/
 6. foliate for the book reader
-7. 
+7. time shift to create back ups
