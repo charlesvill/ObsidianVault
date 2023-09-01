@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pop OS reference sheet.md",
+                "file": "CS50/C.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "70b319a5ec6c08ad",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pop OS reference sheet.md",
+                "file": "CS50/C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pop OS reference sheet.md",
+                "file": "CS50/C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pop OS reference sheet.md"
+                "file": "CS50/C.md"
               }
             }
           },
@@ -156,13 +167,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d619dcc881893b4a",
+  "active": "70b319a5ec6c08ad",
   "lastOpenFiles": [
+    "Pop OS reference sheet.md",
     "TOPICS TO LEARN.md",
     "Untitled.md",
     "The 8 Most important Hotkeys.md",
     "The 6 most Important keys to Typing in Markdown.md",
-    "Pop OS reference sheet.md",
     "Dev Organizer.canvas",
     "Pasted image 20230820173226.png.md",
     "CS50/C.md",
