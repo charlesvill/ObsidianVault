@@ -27,4 +27,5 @@ so far the ideal set up:
 6. foliate for the book reader
 7. time shift to create back ups
 8. power management: https://www.youtube.com/watch?v=kTFnGwW2e_Y
-9. 
+9. auto cpu-freq
+10. 
