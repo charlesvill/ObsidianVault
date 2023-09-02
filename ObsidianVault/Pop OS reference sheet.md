@@ -20,7 +20,7 @@ literal fnv rice: https://www.reddit.com/r/unixporn/comments/i18k0e/qtile_fallou
 
 so far the ideal set up: 
 1. zsh & oh my zsh
-2. pop-shell
+2. pop-shell for tiling manager: see guide https://github.com/pop-os/shell
 3. neovim with sick config files
 4. btop for resource monitoring
 5. cava for audio visualizer
