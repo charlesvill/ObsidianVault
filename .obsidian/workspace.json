@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/CS50/C.md",
+                "file": "ObsidianVault/Pop OS reference sheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/CS50/C.md",
+                "file": "ObsidianVault/Pop OS reference sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/CS50/C.md",
+                "file": "ObsidianVault/Pop OS reference sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/CS50/C.md"
+                "file": "ObsidianVault/Pop OS reference sheet.md"
               }
             }
           },
@@ -158,10 +158,10 @@
   },
   "active": "f2845bba8f3b442d",
   "lastOpenFiles": [
+    "ObsidianVault/CS50/C.md",
     "ObsidianVault/Full Stack Dev/How the internet works and Networking.md",
     "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
     "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
-    "ObsidianVault/CS50/C.md",
     "ObsidianVault/CS50/CS 50.canvas",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Pasted image 20230820173226.png",
