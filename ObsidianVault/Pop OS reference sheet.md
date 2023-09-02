@@ -20,12 +20,13 @@ literal fnv rice: https://www.reddit.com/r/unixporn/comments/i18k0e/qtile_fallou
 
 so far the ideal set up: 
 1. zsh & oh my zsh
-2. neovim with sick config files
-3. btop for resource monitoring
-4. cava for audio visualizer
-5. gruvbox gtk theme: https://www.gnome-look.org/p/1681313/
-6. foliate for the book reader
-7. time shift to create back ups
-8. power management: https://www.youtube.com/watch?v=kTFnGwW2e_Y
-9. auto cpu-freq
-10. flameshot for screenshotting
+2. pop-shell
+3. neovim with sick config files
+4. btop for resource monitoring
+5. cava for audio visualizer
+6. gruvbox gtk theme: https://www.gnome-look.org/p/1681313/
+7. foliate for the book reader
+8. time shift to create back ups
+9. power management: https://www.youtube.com/watch?v=kTFnGwW2e_Y
+10. auto cpu-freq
+11. flameshot for screenshotting
