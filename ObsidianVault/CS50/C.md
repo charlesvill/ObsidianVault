@@ -119,6 +119,7 @@ clang -o hello hello.c -lcs50
 	- takes two arguments one for each of the strings being compared
 	- returns a 0 if same 1 if one of them is alphabetically before the other and -1 vice versa.
 	- similar to the javascript function `localeCompare(inputstring)` see [[Intermediate Javascript]]
+	- another to check strings case *insensitive* would be to use strcasecomp(); from the same library
 - if you over iterate in an array, you will be accessing memory that you should not be accessing, you'll get an error, becareful not to do that.
 - once you have found what you're looking for in an array, besure to break out of it by breaking out or returning 0 if all went well.
 	- otherwise it will keep running
