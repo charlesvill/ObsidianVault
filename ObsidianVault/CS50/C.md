@@ -402,7 +402,7 @@ while(ptr != NULL)
 slower than prepend, bc you have to find the end of the list first, then add the extra node and append. so you always have to iterate over each N so o(n) 
 #### Trees
 merge the best of both worlds where you can have the speed of binary search and the flexibility and dynamism of linked lists. you have a trunk or root of the tree that grows downward, and in both directions such as if 4 is the root, 1, 2, 3 move down to the left and 5, 6, 7 to the right and create steps or forking branches at every step to allow the insertion of logic that checks which direction to go. each node holds two pointers to the left and to the right and the logic will decide which direction to move in.
-	- see lecture before 1:46 for example on BST
+	- see lecture before 1:46 for example on BSTImportant Note - Don't forget to install fonts! Font Directory will open, once you have manually installed fonts, restart VSCODE - /home/ubuntu/.vscode-remote/extensions/narasimapandiyan.jetbrainsmono-1.0.2/JetBrainsMono
 #### Dictionaries
 - key value pairs just like objects in javascript [[Intermediate Javascript#objects as a design pattern]]
 
