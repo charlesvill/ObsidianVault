@@ -607,4 +607,5 @@ Source maps, what are they and what are they good for?
 	- use `npm init -y` to initialize the npm packages
 	- use `npm install webpack webpack-cli --save -dev` to install necessary standard webpack modules
 
-
+- how to view page on live server through npm 
+- rough guideline of the things needed to set up the webpack module bundling... don't be a dick.
