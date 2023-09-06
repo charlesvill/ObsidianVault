@@ -420,4 +420,8 @@ the process of simplifying a more complicated process to boxes or categories, is
 a fancier tree, short for retrieval. its a tree each of its nodes 
 O(1) run time because at most it will take the length of the name insteps as a constant time. there is a finite number of steps mostly it is a O(1) because the number of steps it takes is independent from the number of people that are in the library or data collection in total
 time and space is a seesaw if you improve in one, the other gets worse
+##### what is a good way to tell the difference between two files?
+- use the program diff that helps to highlight the differences between two files. 
+	- if you have two text files such as "student.txt" and "staff.txt" you can use: 
+		`diff -y student.txt staff.txt` and it will present the differences. 
 
