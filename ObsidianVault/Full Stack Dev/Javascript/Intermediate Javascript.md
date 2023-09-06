@@ -603,5 +603,8 @@ Source maps, what are they and what are they good for?
 ##### how to get up and running with npm and webpack?
 - you will need to make sure the following are installed first: 
 	- npm : https://www.theodinproject.com/lessons/foundations-installing-node-js
+	- make the directory where the project will be
+	- use `npm init -y` to initialize the npm packages
+	- use `npm install webpack webpack-cli --save -dev` to install necessary standard webpack modules
 
 
