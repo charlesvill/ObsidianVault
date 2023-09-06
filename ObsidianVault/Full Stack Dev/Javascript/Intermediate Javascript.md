@@ -600,5 +600,8 @@ Source maps, what are they and what are they good for?
 - What is webpack-dev-server?
 	- a rudimentary webserver that gives us the ability to use live reloading
 		- because there important considerations to be made when there are more than one entry point refer to the actual link for how to on this for necessary optimizations: https://webpack.js.org/guides/development/
+##### how to get up and running with npm and webpack?
+- you will need to make sure the following are installed first: 
+	- npm : https://www.theodinproject.com/lessons/foundations-installing-node-js
 
 
