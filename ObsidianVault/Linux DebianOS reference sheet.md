@@ -30,3 +30,6 @@ so far the ideal set up:
 9. power management: https://www.youtube.com/watch?v=kTFnGwW2e_Y
 10. auto cpu-freq
 11. flameshot for screenshotting
+12. program to monitor intel graphics usage: intel-gpu-tools found in apt repo
+	1. command to run is `sudo intel_gpu_top`
+	2. 
