@@ -609,3 +609,5 @@ Source maps, what are they and what are they good for?
 
 - how to view page on live server through npm 
 - rough guideline of the things needed to set up the webpack module bundling... don't be a dick.
+	- when compiling, if a webpack.config.js is present, the `webpack` command will pick it by default
+ 
