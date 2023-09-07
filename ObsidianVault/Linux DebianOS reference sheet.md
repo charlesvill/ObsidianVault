@@ -40,7 +40,9 @@ so far the ideal set up:
 13. go to this github to install proton GE custom: https://github.com/GloriousEggroll/proton-ge-custom#installation
 	1. install first vulkan drivers for intel: https://github.com/lutris/docs/blob/master/InstallingDrivers.md
 	2. see this video on getting mods and such to run on fallout new vegas:  https://www.youtube.com/watch?v=AqpQC1htuic&t=35s&ab_channel=Bleeplo
-	3. see this guide on optimizing the performance of fallout new vegas: https://performance.moddinglinked.com/falloutnv.html
+	3. see this guide on optimizing the performance of fallout new vegas: 
+		1. start here: https://vivanewvegas.moddinglinked.com/ then...
+		2. https://performance.moddinglinked.com/falloutnv.html
 14. make sure for development environment you have the following: 
 	1. apt install git
 	2. ssh key set up
