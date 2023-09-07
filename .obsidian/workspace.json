@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Linux DebianOS reference sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Linux DebianOS reference sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "ObsidianVault/Linux DebianOS reference sheet.md"
               }
             }
           },
@@ -169,10 +168,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca383bfc54854cd0",
+  "active": "f2845bba8f3b442d",
   "lastOpenFiles": [
-    "ObsidianVault/Linux DebianOS reference sheet.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "ObsidianVault/Linux DebianOS reference sheet.md",
     "ObsidianVault/CS50/C.md",
     "ObsidianVault/Full Stack Dev/How the internet works and Networking.md",
     "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
