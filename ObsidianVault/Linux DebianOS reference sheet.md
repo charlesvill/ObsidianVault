@@ -1,6 +1,11 @@
 - how to naviagte to different workspaces
 	- super+ctrl+arrowup/down
 
+website for the different keybindings: https://support.system76.com/articles/pop-keyboard-shortcuts/
+
+
+
+
 good website for customizing gnome desktop environment: https://khushwant.hashnode.dev/ricing-tweaking-gnome-look-and-feel
 
 sick color scheme and config files for neovim: https://github.com/xero/dotfiles
@@ -41,4 +46,3 @@ so far the ideal set up:
 	3. visual studio code
 	4. node package manager
 	5. obsidian & obsidin git
-	6. 
