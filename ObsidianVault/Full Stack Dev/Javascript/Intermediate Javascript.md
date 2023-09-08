@@ -606,8 +606,26 @@ Source maps, what are they and what are they good for?
 	- make the directory where the project will be
 	- use `npm init -y` to initialize the npm packages
 	- use `npm install webpack webpack-cli --save -dev` to install necessary standard webpack modules
+ -  set up npm --watch so you'll auto build on changes: 
+ - set up live server by first : 
+ - bundling more than one JS script together: 
+ - bundling your css: 
+		- place your style.css in your /src folder
+		- use `npm install --save-dev style-loader css-loader`
+		- add the module to the webpack.config.js:
+```javascript
+diff
+module: {
++    rules: [
++      {
++        test: /\.css$/i,
++        use: ['style-loader', 'css-loader'],
++      },
++    ],
++  },
+ };
+```
 
 - how to view page on live server through npm 
-- rough guideline of the things needed to set up the webpack module bundling... don't be a dick.
 	- when compiling, if a webpack.config.js is present, the `webpack` command will pick it by default
  
