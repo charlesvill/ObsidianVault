@@ -612,9 +612,9 @@ Source maps, what are they and what are they good for?
  - bundling your css: 
 		- place your style.css in your /src folder
 		- use `npm install --save-dev style-loader css-loader`
-		- add the module to the webpack.config.js:
+		- add the module to the webpack.config.js:see below code snippet
+		- make sure to import the style.css file into the index.js file or wherever all the modules are being loaded to
 ```javascript
-diff
 module: {
 +    rules: [
 +      {
@@ -626,6 +626,18 @@ module: {
  };
 ```
 
+- bundling your images: 
+	- after placing your image in directory, import to the index.js file. you can attach it to the dom using js.
+	- add the module loader in the webpack.config.js: 
+```javascript
+
+{
++        test: /\.(png|svg|jpg|jpeg|gif)$/i,
++        type: 'asset/resource',
++      },
+```
+- 
+- 
 - how to view page on live server through npm 
 	- when compiling, if a webpack.config.js is present, the `webpack` command will pick it by default
  
