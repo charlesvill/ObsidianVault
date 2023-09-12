@@ -43,6 +43,13 @@ so far the ideal set up:
 	3. see this guide on optimizing the performance of fallout new vegas: 
 		1. start here: https://vivanewvegas.moddinglinked.com/ then...
 		2. https://performance.moddinglinked.com/falloutnv.html
+		3. directory path: Instance type: Global
+
+Instance location: C:\users\steamuser\AppData\Local\ModOrganizer\New Vegas - debian12
+Instance name: New Vegas - debian12
+Game location: Z:\home\general-iroh\.local\share\Steam\steamapps\common\Fallout New Vegas
+
+
 14. make sure for development environment you have the following: 
 	1. apt install git
 	2. ssh key set up
