@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "47b3fabd09ce8d4a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.11"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md"
               }
             }
           },
@@ -136,6 +147,16 @@
             "state": {
               "type": "git-view",
               "state": {}
+            }
+          },
+          {
+            "id": "cf026dc11b8b699a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ],
@@ -156,11 +177,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "558ed0010f9a5aa8",
+  "active": "47b3fabd09ce8d4a",
   "lastOpenFiles": [
-    "ObsidianVault/Linux DebianOS reference sheet.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
+    "ObsidianVault/Dev Organizer.canvas",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+    "ObsidianVault/Linux DebianOS reference sheet.md",
     "Pasted image 20230907130206.png",
     "Pasted image 20230907130203.png",
     "ObsidianVault/CS50/C.md",
@@ -169,12 +192,10 @@
     "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
     "ObsidianVault/CS50/CS 50.canvas",
     "Pasted image 20230820173226.png",
-    "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "ObsidianVault/Full Stack Dev/Javascript",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/Tables.md",
     "ObsidianVault/TOPICS TO LEARN.md",
-    "ObsidianVault/Dev Organizer.canvas",
     "ObsidianVault/CS50",
     "Untitled.canvas",
     "ObsidianVault/The 8 Most important Hotkeys.md",
