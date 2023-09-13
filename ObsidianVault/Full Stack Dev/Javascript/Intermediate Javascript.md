@@ -570,13 +570,14 @@ when you build projects, it will be useful to import libraries or resuse code th
 	- import only belongs at the top, not in functions or anywhere else. 
 	- there are four kinds of import declarations
 		- namespace import - give it a name and like objects, refer to the name and call methods from it. 
+		- non default import - you can import them but will need curly braces and call them exactly as they were exported as and seperated by comma. you can name it whatever you want is you use an 'as' next to the import statement once you've mentioned the actual name you exported it as. 
 		- default import - you can give identifier any name
 		- sideeffect import- will not import any values but will run the code and import the side effects of the code running. used often for polyfills, whatever that is. 
 		- Hoisting - something about the import delarations being put at the top and run before something else. not too sure. 
 		- see more on all four and syntax here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
 **Export**
 - there are two forms of exporting, named export and default export
-	- default export - allows for any expression , can rename the use name on import because its a default export
+	- default export - allows for any expression , can rename the use name on import because its a default export. you can only have one default export per file exported.
 	- Named export - export out listed functions, variables declared elsewhere. useful when needding to export several values. , when imported, they need to be refferd by the exact same names as they were exported. (can rename to whatever with `as`) 
 - see more on exporting here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
 #### Webpack and loaders and plugins
