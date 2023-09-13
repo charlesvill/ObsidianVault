@@ -659,7 +659,7 @@ module: {
 		- what this means is that the original constructors or classes should not be modified but should be open to expanding them to allow for other functionality by only expanding the current functionality without changing the original code and over complicating it
 		- in practice this could be something like a huge switch statement being broken up into smaller classes and where the switch statement was issued just handles passing through the questions from the question class type. see this video for more on this: https://youtu.be/-ptMtJAdj40?si=I2Xvt24AH3zyeHdx
 1. liskov substitution
-	- so if we have a class cat that inherits from class animal, then what is true for cat should be true for animal meaning there isnt a strong deviation from the parent. if there is, like with the rectangle inheriting from square example, maybe you need to change who it is inheriting from
+	- so if we have a class cat that inherits from class animal, then what is true for animal should be true for cat meaning there isnt a strong deviation from the ineriting classes. if there is, like with the rectangle inheriting from square example, maybe you need to change who it is inheriting from or use composition to get features that you need 
 2. interface segregation
 	- you should not inherit from parents that have methods that will not apply in the child instance. for example penguin class inheriting from the bird class that has a method for flying. you can instead use composition to give objects the methods they need and avoid giving to those that do not need it. 
 3. dependency inversion
