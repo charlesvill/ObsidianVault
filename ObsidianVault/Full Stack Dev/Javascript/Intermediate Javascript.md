@@ -2,6 +2,35 @@
 	- Code wars(looks like it lets you skip the trivial ones): https://www.codewars.com/
 	- W3schools (has a directory of specific js disciplines and exercises for it): https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1
 ### Parking lot for review in foundational JS
+
+#### Review on javascript fundamentals: 
+- object/array destructuring - why its useful and how to use it and using the spread operator
+	- destructuring takes a longer collection of data say a object or an array and parses it into smaller chunks
+	- `const arr = [1, 2, 3, 4, 5, 6]; const [a,,c, ...rest] = arr`
+		- what this is doing is declaring three different variables a, c, rest that destruct parts of that array. the spread operator there is pulling the rest of the elements and creates an array which prints out the remaining elements from arr.
+	- combining the spread operator with objects proves to very useful as objects dont have the same array methods. 
+		- returning more than one value from functions
+		- ` function sum&mult(a,b) {return [a+b,a*b]}`
+			- `const [sum, multiply] = sum&mult(2,3)`
+			- this allows you to declare two seperate variables using deconstructor and you can call each of those variables independent of each other
+		- combine objects and overwrite present properties and also pull from objects what we need:
+```javascript
+const personOne = {
+	name: 'Kyle', 
+	age: 24,
+	address: {
+		city: 'somewhere',
+		state: 'One of them'
+		}
+}
+
+function printUser({name, age, favoriteFood = 'watermelon'}){
+	console.log(`name is: ${age}. Food is ${favoriteFood}`)
+}
+
+printUser(personOne)
+```
+- as can be seen here, print user is taking object personOne and destructing just the parameters listed there and can even call ones that are not present there and give them a default value. 
 #### How to store html elements and add event logic
 - use store as a variable with `document.querySelector(".className");`
 	- mind that this is for one element and use `querySelectorAll(#idname);` for multiple elements
