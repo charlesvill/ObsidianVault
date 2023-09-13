@@ -640,4 +640,28 @@ module: {
 - 
 - how to view page on live server through npm 
 	- when compiling, if a webpack.config.js is present, the `webpack` command will pick it by default
- 
+### Principles of Object Oriented Programming
+#### Single responsibility Principle
+- states that a class, module, object should only fulfill a single responsibility. doesnt mean that it can only do one thing. but al lthe things it does must be for that single responsibility
+	- for example: 
+		- in a text based game, you should separate the part that manipulates the dom with the application logic that listens to when the game is over. so you should creat a module to handle all of the DOM magic
+		- it is fine if it calls other functionality, but it should not be written in there. 
+- Another way to think about it: if changing one aspect of a method/class/component affects another, you might have too many responsibilities on that component
+- the single responsibilty principle is the first of 5 principles of OOP called the SOLID principles
+- this is good article summarizing the problem: https://duncan-mcardle.medium.com/solid-principle-1-single-responsibility-javascript-5d9ce2c6f4a5
+	- the TLDR: with example of error logging on a car class object, when you implement the error logs specific to that object, when refactoring, you have to go to every class object and refactor the way that individual object handles it. 
+		- the good way is to have error logs handed by an outside object that your object calls the method on. this way, if you need to refactor how you handle error logs, you only have to refactor the error log class. 
+
+#### SOLID principles
+1. single responsibility
+2. open-close
+	- open to expansion but closed to modification
+		- what this means is that the original constructors or classes should not be modified but should be open to expanding them to allow for other functionality by only expanding the current functionality without changing the original code and over complicating it
+1. liskov substitution
+	- so if we have a class cat that inherits from class animal, then what is true for cat should be true for animal meaning there isnt a strong deviation from the parent. if there is, like with the rectangle inheriting from square example, maybe you need to change who it is inheriting from
+2. interface segregation
+	- you should not inherit from parents that have methods that will not apply in the child instance. for example penguin class inheriting from the bird class that has a method for flying. you can instead use composition to give objects the methods they need and avoid giving to those that do not need it. 
+3. dependency inversion
+	- should abstract away lower level functtionality when looking at a higher level method. for example higher level method of processing payment, if successful do this, else, do that. this should not include the writing of how the payment is actually processed, this should be abstracted away in a seperate class so if you need to change who does payments, you can focus on the class instead of the higher leven functions that depend on the lower level stuff. it may look like more code, but it means better written code that will save you time refactoring down theline. 
+#### what are tightly coupled objects?
+- they are components that are not necessarily related directly but when changing one thing, you have to refactor the other. good example is with a game where you want to change all the UI but doing so affects the game logic in some way. This should not be the case. should be able to touch UI without it affecting the game logic
