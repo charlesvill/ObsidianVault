@@ -605,7 +605,7 @@ Source maps, what are they and what are they good for?
 	- npm : https://www.theodinproject.com/lessons/foundations-installing-node-js
 	- make the directory where the project will be
 	- use `npm init -y` to initialize the npm packages
-	- use `npm install webpack webpack-cli --save -dev` to install necessary standard webpack modules
+	- use `npm install webpack webpack-cli --save-dev` to install necessary standard webpack modules
  -  set up npm --watch so you'll auto build on changes: 
  - set up live server by first : 
  - bundling more than one JS script together: 
