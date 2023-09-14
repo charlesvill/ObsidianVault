@@ -31,6 +31,7 @@ function printUser({name, age, favoriteFood = 'watermelon'}){
 printUser(personOne)
 ```
 - as can be seen here, print user is taking object personOne and destructing just the parameters listed there and can even call ones that are not present there and give them a default value. 
+	- *in context: see composition to see how this can be applied to make object constructors that dont fall to strong taxonomical restraints* [[#composition vs inheritance]]
 #### How to store html elements and add event logic
 - use store as a variable with `document.querySelector(".className");`
 	- mind that this is for one element and use `querySelectorAll(#idname);` for multiple elements
@@ -348,7 +349,7 @@ taco.printString(); // this prints "----TACO----"
 - inheritance with factories
 	- just like constructors with prototypes, you can copy over functions and values from other factory functions to use in another using the `const {sayName} = Person(name);` where the {sayName} is created and set equal to Person(name) which is itself another factory function that has a function by the same name, sayName which is invoked when name is passed to Person. still kinda hazy #NeedMoreHelp 
 - more on differnet patterns for inheritance in JS: https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9
-	- also talks about compositional inheritance being better than classes but didnt really look into why #NeedMoreHelp 
+	- also talks about compositional inheritance being better than classes because classes force you to use inheritance which can cause issues when you want to implement features into say a penguin object that doesnt exactly conform in the right way with the parent class bird, because penguins fly. 
 
 - What is namespace?
 		- its sometimes used interchangably with the word scope, but it's specifically the highest level of scope, the global scope
