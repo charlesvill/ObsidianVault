@@ -571,7 +571,30 @@ class ReadOnlyMap {
 }
 ```
 - to note here is how private field `#data` is set equal to a new instance of other class Map
-	- don't really know what the star is though #NeedMoreHelp looks like a fucking pointer
+	- don't really know what the star is though #NeedMoreHelp looks like a fucking pointer , honestly this was a poor example, here is a better one: 
+```javascript
+function flyer({ name }) {
+	return {
+	fly: () => console.log(`${name} flew`)
+	}
+}
+
+function attacker({ name }) {
+	return {
+	attack: () => console.log(`${name} attacked`)
+	}
+}
+
+function flyingMonsterCreator(name) {
+	const monster = { name: name }
+
+	return {
+		...monster,
+		...attacker(monster)
+		...flyer(monster)
+		}
+}
+```
 - good video illustrating how to use composition to allow greater flexibility in functionality of objects. 
 
 #### ES6 Modules
