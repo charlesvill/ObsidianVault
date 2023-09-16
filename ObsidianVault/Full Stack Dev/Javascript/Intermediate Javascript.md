@@ -720,3 +720,7 @@ module: {
 	- should abstract away lower level functtionality when looking at a higher level method. for example higher level method of processing payment, if successful do this, else, do that. this should not include the writing of how the payment is actually processed, this should be abstracted away in a seperate class so if you need to change who does payments, you can focus on the class instead of the higher leven functions that depend on the lower level stuff. it may look like more code, but it means better written code that will save you time refactoring down theline. 
 #### what are tightly coupled objects?
 - they are components that are not necessarily related directly but when changing one thing, you have to refactor the other. good example is with a game where you want to change all the UI but doing so affects the game logic in some way. This should not be the case. should be able to touch UI without it affecting the game logic
+#### few notes on performance
+- the various DOM selector methods: queryselector and getElementbyID
+	- getElementbyID has access to cached DOM elements while the other does not. this suggests that searching for deeply nested elements could take longer on query selector
+	- depending on the use case, could be better to use get element by ID though that is really in cases where deeply nested and it is searching many many times. over all, it's not a huge performance hit. 
