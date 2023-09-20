@@ -724,3 +724,26 @@ module: {
 - the various DOM selector methods: queryselector and getElementbyID
 	- getElementbyID has access to cached DOM elements while the other does not. this suggests that searching for deeply nested elements could take longer on query selector
 	- depending on the use case, could be better to use get element by ID though that is really in cases where deeply nested and it is searching many many times. over all, it's not a huge performance hit. 
+#### working with dates in javascript
+working with dates in javascript can be a bitch, particularly when working with the new Date() class methods. 
+- when passing through a date to new Date() you have to pass it as a string! make sure even if you're passing it a variable that is a string already, you are still using the backticks so that they are actually being passed as a string. 
+- further, the format is expected to come in the form of : 'YYYY-MM-DD' though I've tested with less issues when the traditional 'DD-MM-YYYY'. 
+	- *note: though the latter of formats works better, input forms with calendar inputs pass back the value in the former format, which sometimes comes with its issues depending on which timezone you're in*
+	- I've found that including `const inputDate = new Date(`${date}T00:00`);` the T00:00 actually helps in actually capturing the correct date when passing the date as a string. see the tasks project for more context
+- You can use the library date-fns to import lots of useful functions like `format` and `differenceInCalendarDays` 
+	- *note: the hours are taken into consideration when looking at difference in days unless you purposely omit the days like so: * 
+```javascript
+const inputDate = new Date(`${date}T00:00`);
+
+const inputDateNoTime = new Date(
+
+inputDate.getFullYear(),
+
+inputDate.getMonth(),
+
+inputDate.getDate()
+
+)
+```
+- notice here the date constructor is making the date object from the initial string with the local timezone adjustment and then making a new date object that omits the hours by getting the only the year , month and day of the former object. then you would pass this noTime object wherever you need things having to do with differences in days that don't have a regard or necessity to consider hour precision. 
+	- *note: after some testing, I found that as long as the local timezone adjustment was made above, I did not have to use the no time changes here. however, I'll leave it here incase I have issues in the future with something related.*
