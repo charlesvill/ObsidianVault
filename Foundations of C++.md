@@ -10,8 +10,7 @@ why use functional programming?
 what are arrays called in c++?
 - vectors
 - they also have arrays but there are some differences: 
-	- arrays are fixed in size and are not as flexible with changing size 
-	- arrays are indexed and each slot same size and type
+	- arrays are fixed in size need to be told their length from initialization
 	- vectors can be dynamically changed and manipulated also memory allocation works automatically for vectors 
 	- vectors know their size unlike arrays. has the method: `v.size() // return 4 if there are four indices`
 
@@ -19,3 +18,4 @@ initializing a vector:
 ```cpp
 vector<int> v = {5, 7,9, 4, 6, 8};
 ```
+- in order to grow the vector you can use the method push_back() in dot notation on the vector variable 
