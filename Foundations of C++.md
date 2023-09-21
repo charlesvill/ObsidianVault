@@ -19,3 +19,5 @@ initializing a vector:
 vector<int> v = {5, 7,9, 4, 6, 8};
 ```
 - in order to grow the vector you can use the method push_back() in dot notation on the vector variable 
+sorting a vector: 
+- you can use the method .sort() to sort lexigraphically

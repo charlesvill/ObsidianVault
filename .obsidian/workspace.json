@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7b7d43abd398fc2c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -179,7 +189,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0695073a6722abfa",
+  "active": "7b7d43abd398fc2c",
   "lastOpenFiles": [
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Foundations of C++.md",
