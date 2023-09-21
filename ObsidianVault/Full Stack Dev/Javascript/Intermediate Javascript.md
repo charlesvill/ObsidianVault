@@ -1,4 +1,4 @@
-- good websites to work on practice problems: https://exercism.org/tracks/javascript/exercises/lasagna (already made a github account)
+9- good websites to work on practice problems: https://exercism.org/tracks/javascript/exercises/lasagna (already made a github account)
 	- Code wars(looks like it lets you skip the trivial ones): https://www.codewars.com/
 	- W3schools (has a directory of specific js disciplines and exercises for it): https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1
 ### Parking lot for review in foundational JS

@@ -35,9 +35,11 @@
             "id": "7b7d43abd398fc2c",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.4.13"
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -109,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Foundations of C++.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Foundations of C++.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Foundations of C++.md"
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
               }
             }
           },
@@ -191,8 +193,8 @@
   },
   "active": "7b7d43abd398fc2c",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Foundations of C++.md",
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "C++",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
