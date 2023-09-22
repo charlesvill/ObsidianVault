@@ -772,4 +772,5 @@ With data that is meant to persist after exiting the window, there are a few sim
 	- storing: `localStorage.setItem('keyString', 'valueString');`
 	- removing: `localStorage.removeItem('keyString');`
 	- retrieving: `console.log(sessionStorage.getItem('keyString'));`
-	- 
+- storing Objects: 
+	- because the set method needs to be a string, trying to pass an object as a value will not give the desired results if it's not converted into a string. 
