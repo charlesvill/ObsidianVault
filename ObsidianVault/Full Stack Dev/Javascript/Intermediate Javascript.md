@@ -747,3 +747,29 @@ inputDate.getDate()
 ```
 - notice here the date constructor is making the date object from the initial string with the local timezone adjustment and then making a new date object that omits the hours by getting the only the year , month and day of the former object. then you would pass this noTime object wherever you need things having to do with differences in days that don't have a regard or necessity to consider hour precision. 
 	- *note: after some testing, I found that as long as the local timezone adjustment was made above, I did not have to use the no time changes here. however, I'll leave it here incase I have issues in the future with something related.*
+
+#### Storing data in JS: Local Storage vs Session Storage vs Cookies
+With data that is meant to persist after exiting the window, there are a few similarities between all of them. 
+	- they all store on the browser 
+	- for local and cookies it is meant only for a single user and no other user of that website has access to that data. 
+- clicking on the application tab on chrome dev tools allows you to see the local storage, session storage and the cookies that are being used
+- local and session storage are using the Web Storage API
+##### cookies: 
+ - much smaller than local and session storage
+	 - only 4kb
+	 - older compatibility on html5
+	 - the cookies available on all tabs on the browser
+	 - you have to set when they expire
+	 - not just stored on your browser, they get also get sent to the server with http requests, 
+		 - make sure to make the cookies as small as possible
+	- almost always want to use local or session storage, cookies is only really if you really need to send the information to the server. 
+##### session storage
+- exists only on that one session and tab, not avaible in another tab
+- expires on the end of the browsing session, closing the tab
+##### Local Storage
+- exists until you manually delete it. 
+- to acess local storage, you use the variable `localStorage.`
+	- storing: `localStorage.setItem('keyString', 'valueString');`
+	- removing: `localStorage.removeItem('keyString');`
+	- retrieving: `console.log(sessionStorage.getItem('keyString'));`
+	- 
