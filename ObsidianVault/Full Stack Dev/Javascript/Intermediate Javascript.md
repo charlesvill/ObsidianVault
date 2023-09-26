@@ -4,7 +4,7 @@
 ### Parking lot for review in foundational JS
 -[ ] what does it mean to be hoisted? 
 	- understanding roughly is that it's really easy to attempt the call of a function prematurely
-	- 
+- what are generator functions used for ?
 
 #### Review on javascript fundamentals: 
 - object/array destructuring - why its useful and how to use it and using the spread operator
@@ -799,4 +799,6 @@ style is very important to keeping code maintainable and easy to read
 		- always put default parameters last and avoid mutations to default parameters that are invoked on the function call
 		- proper spacing for function declarations: `const x = function () {};` or 
 			- `const y = function a() {};` 
-		- 
+		##### variables
+		- should not use 'var' only const and let
+		- group your let and const variables 
