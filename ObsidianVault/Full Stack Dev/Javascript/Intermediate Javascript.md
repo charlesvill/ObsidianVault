@@ -776,3 +776,6 @@ With data that is meant to persist after exiting the window, there are a few sim
 	- because the set method needs to be a string, trying to pass an object as a value will not give the desired results if it's not converted into a string. 
 
 ### Linting
+style is very important to keeping code maintainable and easy to read
+- very useful style guide for airbnb & Javascript: https://github.com/airbnb/javascript
+	- refer to this throughout to answer questions on styling
