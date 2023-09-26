@@ -2,6 +2,9 @@
 	- Code wars(looks like it lets you skip the trivial ones): https://www.codewars.com/
 	- W3schools (has a directory of specific js disciplines and exercises for it): https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1
 ### Parking lot for review in foundational JS
+-[ ] what does it mean to be hoisted? 
+	- understanding roughly is that it's really easy to attempt the call of a function prematurely
+	- 
 
 #### Review on javascript fundamentals: 
 - object/array destructuring - why its useful and how to use it and using the spread operator
@@ -790,4 +793,10 @@ style is very important to keeping code maintainable and easy to read
 				- this makes a copy of the original and adds the key c with prop 3
 		##### Styling for Arrays
 		- use the literal syntax for array creation because the array constructor only allows one argument and because Array global could be affected. *whatever that means lmao*
+		- look at 5.1 on destructuring objects for best practices
+		##### best practices for Functions see 7.1
+		- should never mutate the function arguments that are passed through see 7.12
+		- always put default parameters last and avoid mutations to default parameters that are invoked on the function call
+		- proper spacing for function declarations: `const x = function () {};` or 
+			- `const y = function a() {};` 
 		- 
