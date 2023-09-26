@@ -32,6 +32,9 @@ printUser(personOne)
 ```
 - as can be seen here, print user is taking object personOne and destructing just the parameters listed there and can even call ones that are not present there and give them a default value. 
 	- *in context: see composition to see how this can be applied to make object constructors that dont fall to strong taxonomical restraints* [[#composition vs inheritance]]
+- What is the rest parameter syntax? 
+	- this is when you want to allow a function to take more arguments `function (a, b, ...restParams)` 
+		- common convention to call it 'restParams' but saves as an array and you access the parameters by index
 #### How to store html elements and add event logic
 - use store as a variable with `document.querySelector(".className");`
 	- mind that this is for one element and use `querySelectorAll(#idname);` for multiple elements
@@ -779,3 +782,12 @@ With data that is meant to persist after exiting the window, there are a few sim
 style is very important to keeping code maintainable and easy to read
 - very useful style guide for airbnb & Javascript: https://github.com/airbnb/javascript
 	- refer to this throughout to answer questions on styling
+		##### styling for objects  see 3.1 in air bnb doc
+		- when using dynamic names, make sure to use computed property names that are not defined elsewhere outside of the object
+		- use property value shorthand: `obj = { skywalker, }` when skywalker is a variable already declared. don't give it a property name and then the value as the variable. just the value variable
+		- whats the better way to shallow copy objects?
+			- use the spread operator to make a copy `const copy = { ...original, c: 3};` 
+				- this makes a copy of the original and adds the key c with prop 3
+		##### Styling for Arrays
+		- use the literal syntax for array creation because the array constructor only allows one argument and because Array global could be affected. *whatever that means lmao*
+		- 
