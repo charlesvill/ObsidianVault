@@ -809,3 +809,6 @@ style is very important to keeping code maintainable and easy to read
 	- change settings in the eslint.rc to the rule set so that it allows console.logs
 - use Prettier for formatting to apply intelligent indentations and making your code more consistent to look at. 
 	- use this instructions to get started: https://prettier.io/docs/en/install
+	- will also need to install plugin for vscode to auto format code on a save or key press
+- Make sure to install the patch to allow prettier and es-lint to work in tandem: https://github.com/prettier/eslint-config-prettier#installation
+- 
