@@ -802,3 +802,10 @@ style is very important to keeping code maintainable and easy to read
 		##### variables
 		- should not use 'var' only const and let
 		- group your let and const variables 
+##### Linting & Formatting program
+- use eslint, the most popular of them, follow these directions: https://eslint.org/docs/latest/use/getting-started#quick-start 
+	- you can run `npx eslinter filename.js`
+	- install the vscode plugin on vscode and change the plugins found here to allow changes to happen when you save
+	- change settings in the eslint.rc to the rule set so that it allows console.logs
+- use Prettier for formatting to apply intelligent indentations and making your code more consistent to look at. 
+	- use this instructions to get started: https://prettier.io/docs/en/install
