@@ -811,4 +811,6 @@ style is very important to keeping code maintainable and easy to read
 	- use this instructions to get started: https://prettier.io/docs/en/install
 	- will also need to install plugin for vscode to auto format code on a save or key press
 - Make sure to install the patch to allow prettier and es-lint to work in tandem: https://github.com/prettier/eslint-config-prettier#installation
-- 
+- why to use linting and prettier
+	- linting catches simple mistakes such as inconsistencies in variable declarations (let/const vs var), semi colons and other things that are not obvious but might break with some minification software.
+	- 
