@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/CS50/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/CS50/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/CS50/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "ObsidianVault/CS50/Python.md"
               }
             }
           },
@@ -203,10 +203,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7b7d43abd398fc2c",
+  "active": "e4efd7a73c8c94ae",
   "lastOpenFiles": [
-    "ObsidianVault/CS50/C.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "ObsidianVault/CS50/Python.md",
+    "ObsidianVault/CS50/C.md",
     "Foundations of C++.md",
     "C++",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
