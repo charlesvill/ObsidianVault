@@ -1,4 +1,3 @@
-### Lesson 1
 - how to compile a file in cs50?
 	- in the bash terminal, run make `filename` then run `./filename` 
 - what is the print function?

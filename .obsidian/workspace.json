@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/CS50/C.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md"
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md"
               }
             }
           },
@@ -203,14 +203,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4efd7a73c8c94ae",
+  "active": "12118f0eb02991c7",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
-    "ObsidianVault/CS50/Python.md",
     "ObsidianVault/CS50/C.md",
-    "Foundations of C++.md",
-    "C++",
+    "ObsidianVault/CS50/Python.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+    "Foundations of C++.md",
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "C++",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/Tables.md",
