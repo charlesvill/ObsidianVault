@@ -54,9 +54,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3f6781029888a4bb",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.14"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -203,7 +213,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "12118f0eb02991c7",
+  "active": "3f6781029888a4bb",
   "lastOpenFiles": [
     "ObsidianVault/CS50/C.md",
     "ObsidianVault/CS50/Python.md",
