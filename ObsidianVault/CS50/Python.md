@@ -98,5 +98,25 @@ def get_height():
 	"David": "+1-099-9349",
 ```
 - *very similar to the use of objects in js* [[Intermediate Javascript#objects as a design pattern]]
-- ```
-``` 
+
+##### super cool libraries to try out from python
+- import pyttsx3 
+```python
+import pyttsx3
+
+engine = pyttsx3.init()
+name = input("Name: ")
+engine.say(f"hello, {name})
+engine.runAndWait()
+```
+- import os && qrcode
+```python
+import os
+import qrcode
+
+img = qrcode.make("https://youtu.be/ksldkfsj")
+
+img.save("qr.png", "PNG")
+
+os.system("open qr.png")
+```
