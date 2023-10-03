@@ -29,3 +29,37 @@ else: print("lmao")
 ```
 - python does not have arrays, it only has lists
 - range is used to count up list style (`ie. range(3) == 0 1 2`) 
+- python still faces the same problem of float imprecision 
+- python however does not face integer overflow if the number is too long it will just allocate more bytes of memory to make up to make the entire number 
+##### evaluating expressions
+to compare many things you no longer need || for the or: 
+```python 
+
+if s == "Y" or s == "y":
+	print("agreed.")
+elif s == "N" or s == "n":
+	print("Not agreed.")
+```
+- you can also use `and` instead of having to use &&
+- single and double quotes are virtually the same in python, no difference unlike C or C++
+
+#### loops in python
+```python
+for i in range(7):
+	print(meow)
+```
+- range prints out one at a time not all at once like C where you have to malloc the size at initialization
+- there are no do while loops so you have to do while loops that intentionally induce infitite loop and have a break statement when you're sure that you have what you wanted. 
+#### OOP in python
+- you can access the mehtods for strings using dot notation like: `s.lower()` this would access the class of str and pull the method lower() to bring to lowercase 
+- strings in python are immutable when you manipulate the string in python you really are getting a copy of the original and python will forget about the original and since you dont have to handle memory then you just forget about it too. 
+
+#### declaring funcitons
+- need to start with `def`
+```python
+def meow():
+	something cool
+```
+
+- functions need to be defined before you try to invoke them. it's convention to make a main function and all your functions below that and then call main at the very bottom of your code
+- variables declared inside of a loop in the context of a function can be used out side of the loop or conditionals so they are not bound by the same scope issues that bounds C or javascript. 
