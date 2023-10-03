@@ -14,3 +14,18 @@ other different ones:
 - tuple
 - dict
 - set
+
+#### variables
+- do not use the unary incrementor variable++
+- declaring conditionals and variables 
+```python
+varName = 0; 
+
+if varName == 2:
+	print("hi")
+elif varName == 3:
+	print("lol")
+else: print("lmao")
+```
+- python does not have arrays, it only has lists
+- range is used to count up list style (`ie. range(3) == 0 1 2`) 
