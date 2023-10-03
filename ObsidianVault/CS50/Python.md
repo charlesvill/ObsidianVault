@@ -63,3 +63,39 @@ def meow():
 
 - functions need to be defined before you try to invoke them. it's convention to make a main function and all your functions below that and then call main at the very bottom of your code
 - variables declared inside of a loop in the context of a function can be used out side of the loop or conditionals so they are not bound by the same scope issues that bounds C or javascript. 
+- the print function allows you to print out something multiple number of times `print("?" * 4)` 
+##### try and except
+you can use try to test possibly breakable things such as accepting input for a int and the user inputs a string
+``` python
+def get_height():
+	while True:
+		try:
+			n = int(input("Height: "))
+			if n > 0: 
+				return n
+		except ValueError:
+			print("not an integer")
+```
+##### useful functions
+- strings: 
+	- formatted strings: 
+		- interpolation: `print(f"Average: {average}")` similar to js
+- for lists: 
+	- length len()
+	- sum sum()
+		- passthrough the list name in the parentheses
+	- add to list: list.append(listToAppend)
+	- slicing: `argv[1:]` `argv[0:2]` the colon denotes the boundary between where to start and what value to end. if the value to the right is omitted, it will include the rest of them. I wonder if this is like the spread operator in js [[Intermediate Javascript#Parking lot for review in foundational JS]]
+- for command line arguments: 
+	- you need to import `sys` to get argv to get the # of arguments for the program
+		- you can also get the exit code with sys.exit(1) or sys.exit(0)
+#### Dictionaries
+- dict objects are the same thing as objects in js
+- `people = {}`
+
+```python
+	"carter": "+1-909-495-1000",
+	"David": "+1-099-9349",
+```
+- *very similar to the use of objects in js* [[Intermediate Javascript#objects as a design pattern]]
+- 
