@@ -66,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "Foundations of C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "Foundations of C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md"
+                "file": "Foundations of C++.md"
               }
             }
           },
@@ -213,10 +213,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7b7d43abd398fc2c",
+  "active": "0695073a6722abfa",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/CS50/Python.md",
+    "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/CS50/C.md",
     "Foundations of C++.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",

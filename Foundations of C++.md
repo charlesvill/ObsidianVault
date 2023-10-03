@@ -44,3 +44,5 @@ for(double input; cin >> input){
 ```
 - this will effectively continously read values into input and into the vector temps while values are being input
 	- to terminate input, press ctrl+D in terminal on Unix and ctrl+Z on windows.
+### ch 5 Errors
+- being proactive about errors involves using the `error()` function with the message inside of it embedded where you would anticipate things to pass the compiler but nonetheless be a logical error given the context
