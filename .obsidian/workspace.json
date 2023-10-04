@@ -20,12 +20,24 @@
             }
           },
           {
+            "id": "50bb6242f4cdd7c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C++/C++ projects.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "0695073a6722abfa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Foundations of C++.md",
+                "file": "C++/Foundations of C++.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -99,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Foundations of C++.md",
+                "file": "C++/C++ projects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Foundations of C++.md",
+                "file": "C++/C++ projects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Foundations of C++.md"
+                "file": "C++/C++ projects.md"
               }
             }
           },
@@ -179,12 +190,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0695073a6722abfa",
+  "active": "e4efd7a73c8c94ae",
   "lastOpenFiles": [
-    "ObsidianVault/CS50/C.md",
-    "Foundations of C++.md",
-    "ObsidianVault/CS50/Python.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+    "C++/C++ projects.md",
+    "C++/Foundations of C++.md",
+    "ObsidianVault/CS50/C.md",
+    "ObsidianVault/CS50/Python.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "C++",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
