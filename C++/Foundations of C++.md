@@ -30,6 +30,10 @@ vector<int> v = {5, 7,9, 4, 6, 8};
 sorting a vector: 
 - you can use the method sort() to sort lexigraphically. however this is a mutable function member of vector. 
 	- `vector<double> temps;  sort(temps);` make sure the vector goes in there. it does not attach with dot notaition to anything. 
+#### functions in C++ 
+- like C, you can declare a function after the main function however if you try to invoke it before it has been called you will need to place the function prototype or 'forward delcaration' before the main function.
+##### switch statements
+- for switch statements, if you wish to initialize a variable, you need to put it inside of a block. go figure. straight from the words of Bjarne himself. didnt give much of a reason besides the compiler said so. 
 ### Input/Output in C++
 - for outputting to the terminal you cannot concat like you would in c with a + you have to use <<. for example: 
 - `cout << "hello today's temperature is:" << double_temp << '\n'`
@@ -115,3 +119,5 @@ we can copy over the objects over to over objects as long as the initializer is 
 	- in reality these are really just class objects, not so much structs (structs can only hold data, not functions as members)
 - what is grammar and what does it have to do with parsing?
 	- grammar is in the context of programming the process of creating rules for your program to abide by using a sort of technicaly notation such as the rules of the order of operation for a calculator
+#### reflections on design patterns
+- in regards to structuring this larger function where giving the computer a grammar or rules to follow, he doesnt define the single logical purpose of this function as one to parse all off the tokens in our calculator project. but instead he makes a function for each rule and includes it in the larger program.
