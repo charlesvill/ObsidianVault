@@ -89,4 +89,27 @@ int main()
 ##### Template arguments 
 - when you see the < ... > brackets as in vectors `vector<int>` they are examples of template arguments
 	- the template argument specify to the type vector, what kind of data that type will pertain to
-- 
+
+### ch 6 creating a program
+think of developing a program as designing cars, you consider the wheels, seats engine, seats door handles and other pieces. just like manufactures dont build cars out of pure iron and wood, we should not bulid programs completely from scratch using just expressions, statements and types provided by the language
+##### steps of development
+
+- anaylsis
+- design
+- implementation
+##### tokens and implementating tokens
+- another way to describe it would be a *user-defined-type* 
+- similar to a struct in C see [[C#struct]]
+- like a struct you can put data in it and use dotnotation to access its member and assign them
+```cpp
+class Token{
+public:
+	char kind;
+	double value;
+};
+```
+we can copy over the objects over to over objects as long as the initializer is the same Token type
+	- `Token tt = t;`
+- we can also construct new tokens as such `Token t1 {'+'};` or `Token t2 {'8', 11.5}` where the first arg is the kind and the second is the value. 
+- difference between this and structs is that you can also but functions as members.
+	- in reality these are really just class objects, not so much structs (structs can only hold data, not functions as members)
