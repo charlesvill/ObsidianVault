@@ -113,3 +113,5 @@ we can copy over the objects over to over objects as long as the initializer is 
 - we can also construct new tokens as such `Token t1 {'+'};` or `Token t2 {'8', 11.5}` where the first arg is the kind and the second is the value. 
 - difference between this and structs is that you can also but functions as members.
 	- in reality these are really just class objects, not so much structs (structs can only hold data, not functions as members)
+- what is grammar and what does it have to do with parsing?
+	- grammar is in the context of programming the process of creating rules for your program to abide by using a sort of technicaly notation such as the rules of the order of operation for a calculator
