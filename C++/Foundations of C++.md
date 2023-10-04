@@ -118,7 +118,12 @@ we can copy over the objects over to over objects as long as the initializer is 
 - difference between this and structs is that you can also but functions as members.
 	- in reality these are really just class objects, not so much structs (structs can only hold data, not functions as members)
 - what is grammar and what does it have to do with parsing?
-	- grammar is in the context of programming the process of creating rules for your program to abide by using a sort of technicaly notation such as the rules of the order of operation for a calculator
+	- grammar is in the context of programming the process of creating rules for your program to abide by using a sort of technical notation such as the rules of the order of operation for a calculator
+	- you formulate functions or instructions based on forcing the computer to follow this grammar. 
+	- the process of appling your grammar implementation and putting data through it is known as *parsing*
+- what does the `cin.putback(variable);` do?
+	- if you read something from the input stream and you assign it to a variable and realize its a number or something and would like to assign it as a number, you can use the `.putback()` to literally put it back into the input stream and read it once more so you can assign it to a number type.
 #### reflections on design patterns
 - in regards to structuring this larger function where giving the computer a grammar or rules to follow, he doesnt define the single logical purpose of this function as one to parse all off the tokens in our calculator project. but instead he makes a function for each rule and includes it in the larger program.
 - further Bjarne himself is seen making long switch statements stringing many case options for one result which previously I would have thought was messy and that many did not do that. stand corrected. 
+- I'm also noticing that bjarne is mixing his declarations and expressions assignments and stuff so he's not grouping them by thing per say, atleast not at this time. will check back if he does. 
