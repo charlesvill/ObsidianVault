@@ -132,7 +132,7 @@ class_name::member_name
 -  the two sets of colons denotes the class from the member of the class. 
 - why separate the member function definitions from the class definitions? i.e why define them outside of the class?
 	- because it makes things easier to read and helps to put what the class members will do and then put the definitions or the implementation details of those things elsewhere
-	- 
+	- **look through 6.8 for reviewing pulling back and overview on your programs**
 #### reflections on design patterns
 - in regards to structuring this larger function where giving the computer a grammar or rules to follow, he doesnt define the single logical purpose of this function as one to parse all off the tokens in our calculator project. but instead he makes a function for each rule and includes it in the larger program.
 - further Bjarne himself is seen making long switch statements stringing many case options for one result which previously I would have thought was messy and that many did not do that. stand corrected. 
