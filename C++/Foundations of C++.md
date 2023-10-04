@@ -123,7 +123,19 @@ we can copy over the objects over to over objects as long as the initializer is 
 	- the process of appling your grammar implementation and putting data through it is known as *parsing*
 - what does the `cin.putback(variable);` do?
 	- if you read something from the input stream and you assign it to a variable and realize its a number or something and would like to assign it as a number, you can use the `.putback()` to literally put it back into the input stream and read it once more so you can assign it to a number type.
+- more on classes: 
+		- though not specifically introduced quite yet, classes aka objects have already budged their way in
+		- how to define member functions outside of a class definition?
+```cpp
+class_name::member_name
+```
+-  the two sets of colons denotes the class from the member of the class. 
+- why separate the member function definitions from the class definitions? i.e why define them outside of the class?
+	- because it makes things easier to read and helps to put what the class members will do and then put the definitions or the implementation details of those things elsewhere
+	- 
 #### reflections on design patterns
 - in regards to structuring this larger function where giving the computer a grammar or rules to follow, he doesnt define the single logical purpose of this function as one to parse all off the tokens in our calculator project. but instead he makes a function for each rule and includes it in the larger program.
 - further Bjarne himself is seen making long switch statements stringing many case options for one result which previously I would have thought was messy and that many did not do that. stand corrected. 
 - I'm also noticing that bjarne is mixing his declarations and expressions assignments and stuff so he's not grouping them by thing per say, atleast not at this time. will check back if he does. 
+- Bjarne very much takes us through this iterative process of multiple steps that doesnt necessarily imply that programmers have to have all implementation details figured out on the first go. he attempts a version and sees an issue with it and then iterates on it again. even the mighty Bjarne doesnt fully anticipate every problem from the get go
+- Bjarne mentions time and time again to avoid using complicated solutions and use library solutions whenever present because they have more time than you and have spent more time wokring on that than you. 
