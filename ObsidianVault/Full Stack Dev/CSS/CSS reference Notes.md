@@ -9,3 +9,5 @@ good link to free svgs for icons: https://pictogrammers.com/library/mdi/category
 
 good link to free avatar svgs: 
 
+good link for learning css animations: https://www.youtube.com/watch?v=8kK-cA99SA0&ab_channel=DevTips
+
