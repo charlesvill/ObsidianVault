@@ -63,6 +63,8 @@ printUser(personOne)
 #### Modifying classList names
 - for the purposes of toggling something on and off for styling purposes: 
 	- use the `classList.toggle("className");` and just add the event listener that triggers a function with this code in it. the language keeps track of the conditional logic for you so you dont have to make nested conditionals to handle the adding and removing of class names
+- *useful classList methods* : 
+	- classlist.contains("") T/F if the element contains said class (which would have saved so much time had I known about it earlier)
 #### dialog boxes as form popups
  see [[Intermediate CSS#Styling Forms]] to see it's implemenation with html. 
 	 once the html is populated, you'll need to store the button to pop up the form, the form itself, and a cancel button for the form.
