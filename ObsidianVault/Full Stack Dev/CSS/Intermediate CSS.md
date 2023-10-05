@@ -76,6 +76,24 @@ h1 {
 	- after downloading ttf file, go to https://www.fontsquirrel.com/tools/webfont-generator and upload the ttf file to convert to a webfontkit
 	- extract the zip file and place extracted contents into font folder in project files *the two woff files are there for compatibility* 
 	- the files will contain example css for formatting the `@font-face` importing piece for the style sheets
+##### How to include icon from online: 
+- you dont always have to download the icons from online and include them as images, you can also import themfrom a website that supports it and then link it as a style sheet. you then use class and id markers to identify the correct icons you're trying to use. see example: 
+```html
+<head>
+   <link 
+     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+     rel="stylesheet"
+    />
+ </head>
+ <body>
+	 <button>
+		Press Me
+		<i class="bx bx-chevron-down" id="arrow"></i>
+	 </button>
+ </body>
+```
+- you see this here is how the style sheet is linked from online and then using the classes and id combo to actually import it into the file right after the text 
+
 ##### Letter-spacing & Line Height
 - you can use `letter-spacing: .5em;` to bring together or space out fonts that might aesthetically benefit from tweaking. 
 - the `line-height: 1.5` does similar for adjusting relative to normal spacing\
