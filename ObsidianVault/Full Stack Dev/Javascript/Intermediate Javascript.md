@@ -815,4 +815,8 @@ style is very important to keeping code maintainable and easy to read
 - Make sure to install the patch to allow prettier and es-lint to work in tandem: https://github.com/prettier/eslint-config-prettier#installation
 - why to use linting and prettier
 	- linting catches simple mistakes such as inconsistencies in variable declarations (let/const vs var), semi colons and other things that are not obvious but might break with some minification software.
-	- 
+##### Dynamic User interfaces
+- on making Drop-down menus: 
+	- see the guide on making a drop down menu or install npm package or look in the ghub repo
+	- *notice that it does not use display: none to rid of the dropdown because it's not animatable*
+		- instead you can use the opacity and opaque as does github on their own page

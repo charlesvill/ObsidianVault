@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md"
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
               }
             }
           },
@@ -179,8 +178,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3dc195d1f146c67c",
+  "active": "e1815026202a11e3",
   "lastOpenFiles": [
+    "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "Untitled.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
@@ -191,7 +191,6 @@
     "Images/Pasted image 20230627125830.png",
     "Images/Pasted image 20230627115812.png",
     "ObsidianVault/CS50/Python.md",
-    "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/C++/C++ projects.md",
     "ObsidianVault/C++/Foundations of C++.md",
     "ObsidianVault/CS50/C.md",
