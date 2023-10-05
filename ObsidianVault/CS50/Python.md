@@ -98,7 +98,8 @@ def get_height():
 	"David": "+1-099-9349",
 ```
 - *very similar to the use of objects in js* [[Intermediate Javascript#objects as a design pattern]]
-
+#### File management
+- first need to import `import csv`
 ##### super cool libraries to try out from python
 - import pyttsx3 
 ```python
