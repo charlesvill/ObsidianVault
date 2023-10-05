@@ -60,6 +60,9 @@ printUser(personOne)
 #### Creating Data-attributes with JS
 - you can create a specific index number for an element that was dynamically created using javascript with data-atrributes with the following: `elementVar.dataset.index` 
 	- *note the .index is actually what you can name the data attribute and it appears as data-index* 
+#### Modifying classList names
+- for the purposes of toggling something on and off for styling purposes: 
+	- use the `classList.toggle("className");` and just add the event listener that triggers a function with this code in it. the language keeps track of the conditional logic for you so you dont have to make nested conditionals to handle the adding and removing of class names
 #### dialog boxes as form popups
  see [[Intermediate CSS#Styling Forms]] to see it's implemenation with html. 
 	 once the html is populated, you'll need to store the button to pop up the form, the form itself, and a cancel button for the form.
