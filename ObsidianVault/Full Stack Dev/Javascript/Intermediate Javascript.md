@@ -40,11 +40,18 @@ printUser(personOne)
 - What is the rest parameter syntax? 
 	- this is when you want to allow a function to take more arguments `function (a, b, ...restParams)` 
 		- common convention to call it 'restParams' but saves as an array and you access the parameters by index
-#### How to store html elements and add event logic
+#### How to store html elements and add event logic 
 - use store as a variable with `document.querySelector(".className");`
 	- mind that this is for one element and use `querySelectorAll(#idname);` for multiple elements
+		- you'll need a forEach loop to add event listeners for more than one: `nodeList.forEach(element => element.addEventListener("click", (e)=>{...});` where *e* is event information of the specific element that triggered the event handler
 - for logic you can use `varName.addEventListener("click", (e)=>{...});` 
 	- notice that event listener method appended to the variable name, and notice the thing listening for in quotes and the arrow function capability, *and the presence of e* which passes through event information accessible through dot notation or bracket notation.
+#### Handling User Input
+- for key input: 
+	- 
+- for click input: 
+	- see above to add event listeners to DOM elements like divs, or buttons
+
 #### DOM manipulation methods
 - changing the inner contents of the element
 - how to find the children of a target element
@@ -65,6 +72,15 @@ printUser(personOne)
 	- use the `classList.toggle("className");` and just add the event listener that triggers a function with this code in it. the language keeps track of the conditional logic for you so you dont have to make nested conditionals to handle the adding and removing of class names
 - *useful classList methods* : 
 	- classlist.contains("") T/F if the element contains said class (which would have saved so much time had I known about it earlier)
+	- changing classes: in order to dynamically add or change a class for the purposes of say adding transitions with css: 
+		- you need to get reference to the classlists (if you have more than one, you'll need to remove the one related to the class transitions)
+```javascript
+function classChange(className){
+	sliderCont.classList.remove(sliderCont.classList[1]);
+	sliderCont.classList.add(className);
+}
+```
+ - now this is not the most elegant of solutions but allows you to replace the second one dynamically without having to know what class is currently taking up that second slot. and this is on the fly to be hooked up to an event handler and get those lit transitions see [[Intermediate CSS#Transitions]]
 #### dialog boxes as form popups
  see [[Intermediate CSS#Styling Forms]] to see it's implemenation with html. 
 	 once the html is populated, you'll need to store the button to pop up the form, the form itself, and a cancel button for the form.

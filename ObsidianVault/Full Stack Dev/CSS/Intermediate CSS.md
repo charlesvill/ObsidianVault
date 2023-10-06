@@ -785,4 +785,8 @@ grid area also can refer to a few other things such as:
 		- grid is not able to do row-reverse and column and row direction swaps on the fly like flexcan do as easily
 		- video on more for when to use one or the other: https://www.youtube.com/watch?v=HYji_V2aYa0
 		- article expanding on use cases for each: https://webdesign.tutsplus.com/flexbox-vs-css-grid-which-should-you-use--cms-30184a
-		- 
+#### Transitions
+- when you want something to animate or move with css, like with an image carousel, you can use the transition property with the value of transformX()
+	- they work relative to the base position on the top right. so if you want your image to slide right: 
+		- `transition: transformX(-480px);` placed on a selector class that is dynamically placed using js see[[Intermediate Javascript#Modifying classList names]]
+		- then, on the parent, if you want smooth transitions, you'll need to add the property: `transitions: ease .5s;` where you specify how long the transition should take. 
