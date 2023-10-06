@@ -825,3 +825,14 @@ style is very important to keeping code maintainable and easy to read
 	- see the guide on making a drop down menu or install npm package or look in the ghub repo
 	- *notice that it does not use display: none to rid of the dropdown because it's not animatable*
 		- instead you can use the opacity and opaque as does github on their own page
+- making your own packages to publish on npm and pull them later for use!
+	- inside a folder that has a self contained tool or piece that can be reused, like a stylesheet and script for generating drop-down-menus, npm init (not y)
+	- specify the name with local scoping `@charlesvill/packageName`
+	- adding the repo is optional
+	- after the self contained script is done (using module exports as applicable) run `npm link` to add the package to a local repo to be cloned locally for testing. 
+		-*note: if you're going to export as module either note in the package.json that it's {type: "module"} or type="module" in the script tag*
+		then create another folder named test and make a script that imports your package
+		- run `npm link package-name` to download the package in the local folder
+		- after testing, head to the package directory and make sure you're logged into npm 
+		- then you can run npm publish --access=public 
+		- then you should be good to go!
