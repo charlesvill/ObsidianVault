@@ -869,3 +869,5 @@ contains many useful properties and methods to use such as:
 	- on the forms you can also stop the automatic html validation if you want full control using javascript (does not disable any CValidation API or css psuedo selectors as a result)
 		- `<form novalidate></form>`
 - you can also nest a span with the tag `aria-live="polite"` to control where the error gets seen if wanted in DOM
+- see the constraint validation api documentation for examples and regExp implementation  example, file size limiter example : https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation
+- here is another more concise version from w3 schools: https://www.w3schools.com/js/js_validation_api.asp
