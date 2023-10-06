@@ -852,3 +852,14 @@ style is very important to keeping code maintainable and easy to read
 		- after testing, head to the package directory and make sure you're logged into npm 
 		- then you can run npm publish --access=public 
 		- then you should be good to go!
+### Client side form validation
+- before sending off data from forms to the backedn databases, it's important to validate the information as correct using client side validation. while it has been covered in html in [[Intermediate CSS#Form Validation]] (this should really belong in a html notes not css but here we are)
+- review of some of the psuedo states that are true of elements 
+	- valid `:valid` css selector for styling or presentig certain feedback
+	- invalid `:invalid` same as above
+	- out of range `:out-of-range` specific for certain form elements as appropriate
+##### error messages that can be displayed: 
+[`badInput`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/badInput "badInput"), [`patternMismatch`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/patternMismatch "patternMismatch"), [`rangeOverflow`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/rangeOverflow "rangeOverflow") or [`rangeUnderflow`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/rangeUnderflow "rangeUnderflow"), [`stepMismatch`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/stepMismatch "stepMismatch"), [`tooLong`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/tooLong "tooLong") or [`tooShort`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/tooShort "tooShort"), [`typeMismatch`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/typeMismatch "typeMismatch"), [`valueMissing`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/valueMissing "valueMissing"), or a `customError`.
+
+- regular expressions are used for patterns and they're their own skill. see this article: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+#### The Constraint Validation API

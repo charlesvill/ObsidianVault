@@ -571,7 +571,7 @@ checkboxes and radio buttons along with input type search bars tend to be more d
 		- controls with `required` that are left empty
 		- controls with built in validation like email and url that doesnt match with its requirements
 		- current value is outside range limits specified in min/max attributes, but also matched with `:out-of-range`
-		- more to see in [[#Client-side form validation]].
+		- more to see in [[Intermediate Javascript#Client side form validation]]
 - for Enabled/disabled see above psuedo classes article link 
 - Read-only and Read-write
 	- use the attribute `readonly` right before the closing tag
