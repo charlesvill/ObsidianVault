@@ -863,3 +863,9 @@ style is very important to keeping code maintainable and easy to read
 
 - regular expressions are used for patterns and they're their own skill. see this article: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
 #### The Constraint Validation API
+contains many useful properties and methods to use such as: 
+	- `element.validity.typeMismatch` will return a true if say an element is not conforming to the format expected
+	- `element.setCustomValidity("I am expecting an email address!"` self explanatory
+	- on the forms you can also stop the automatic html validation if you want full control using javascript (does not disable any CValidation API or css psuedo selectors as a result)
+		- `<form novalidate></form>`
+- you can also nest a span with the tag `aria-live="polite"` to control where the error gets seen if wanted in DOM
