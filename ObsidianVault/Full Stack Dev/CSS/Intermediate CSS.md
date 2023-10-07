@@ -383,6 +383,7 @@ here are some of the most important ones:
 	- one line with basic validation to make sure valid email strucuture is being entred
 	- if email form verification fails, the psuedo class `:invalid` will match and `validityState.typeMismatch` property will return true
 - password input
+	- 
 - number input
 	- will render a step higher or lower ui to adjust value input. step can be adjusted with the `step` attribute `step="2"`
 	- by default only allows integer values unless `step` is set to `step="any"`.
