@@ -881,3 +881,16 @@ email.addEventListener("input", ()=> {
 	}
 })
 ```
+- for the next few examples, they will all involve turning off the validation build into html to allow the script to have full control of the validation. 
+##### email validation
+- right off the bat reg exp is not needed if using the contraint validation api. 
+- make sure the the input is of type email and that the min len is 8 and it's required
+- for the script you will need: 
+	- refernce to the input field, form & the custom error field if applicable
+	- event handler for input:
+		- `if(email.validity.valid)` -> else `showError()`\
+	- event handler for submit: 
+		- 
+##### zip validation
+##### country validation (text)
+##### pwd validation
