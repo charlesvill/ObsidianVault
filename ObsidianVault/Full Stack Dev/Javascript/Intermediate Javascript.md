@@ -359,24 +359,40 @@ the mystery of `this` and its meanings across contexts article: https://dmitripa
 		- creating objects by returning them insteading of using arguments in a function to assign key:value pairs.
 
 ```javascript
-javascript
-const FactoryFunction = (string) => {
-  const capitalizeString = () => string.toUpperCase();
-  const printString = () => console.log(`----${capitalizeString()}----`);
-  return { printString };
-};
+function createUser (name) {
+  const discordName = "@" + name;
 
-const taco = FactoryFunction('taco');
+  let reputation = 0;
+  const getReputation = () => reputation;
+  const giveReputation = () => reputation++;
 
-printString(); // ERROR!!
-capitalizeString(); // ERROR!!
-taco.capitalizeString(); // ERROR!!
-taco.printString(); // this prints "----TACO----"
+  return { name, discordName, getReputation, giveReputation };
+}
+
+const josh = createUser("josh");
+josh.giveReputation();
+josh.giveReputation();
+
+console.log({
+  name: josh.discordName,
+  reputation: josh.getReputation
+});
+// logs { name: "josh", reputation: 2 }
+
+//then extending the functionality of createUser with desctructors
+function createPlayer (name, level) {
+  const { discordName, getReputation } = createUser(name);
+
+  const increaseLevel = () => level++;
+  return { name, discordName, getReputation, increaseLevel };
+}
+
 ```
-- couple things here, not passing through string for the factory. note the return of `printString` as an object. which will give you access to that method when creating instances of the functions as variables. 
-	- note also the other methods you dont' have access to because they're not returned but you can still access them throuh the method that was returned. this pattern of closing off certain methods or emulating their privacy is called closure. 
+- notice here that things being returned are those things that you might anticipate having to access. anything that just works in the side lines are private scoped and are not returned
 - inheritance with factories
-	- just like constructors with prototypes, you can copy over functions and values from other factory functions to use in another using the `const {sayName} = Person(name);` where the {sayName} is created and set equal to Person(name) which is itself another factory function that has a function by the same name, sayName which is invoked when name is passed to Person. still kinda hazy #NeedMoreHelp 
+	- just like constructors with prototypes, you can copy over functions and values from other factory functions to use in another using the `const {sayName} = Person(name);` where the {sayName} is created and set equal to Person(name) . this is using the destructor syntax as seen here [[#Parking lot for review in foundational JS]] where its talking about the spread operator
+	- this is how you would extend the functionality of your objects again notce that createPlayer is importing the functionallity of createUser by using the destructor. also note that we still must return the functions from createUser to use them as well.
+	-
 - more on differnet patterns for inheritance in JS: https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9
 	- also talks about compositional inheritance being better than classes because classes force you to use inheritance which can cause issues when you want to implement features into say a penguin object that doesnt exactly conform in the right way with the parent class bird, because penguins fly. 
 
