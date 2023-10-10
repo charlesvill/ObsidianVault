@@ -890,7 +890,12 @@ email.addEventListener("input", ()=> {
 	- event handler for input:
 		- `if(email.validity.valid)` -> else `showError()`\
 	- event handler for submit: 
-		- 
+		- deny submission if not valid:: `(!email.validity.valid)` -> `showError()` `event.preventDefault()`
+	- function to display error message: 
+		- checks for three things: value missing, type mismatch, too short
+			- `(email.validityvalueMissing)`
+			- `(email.validity.typeMismatch)`
+			- `(email.validity.tooShort)` 
 ##### zip validation
 ##### country validation (text)
 ##### pwd validation
