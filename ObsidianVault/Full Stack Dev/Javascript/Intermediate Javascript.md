@@ -877,7 +877,8 @@ style is very important to keeping code maintainable and easy to read
 ##### error messages that can be displayed: 
 [`badInput`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/badInput "badInput"), [`patternMismatch`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/patternMismatch "patternMismatch"), [`rangeOverflow`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/rangeOverflow "rangeOverflow") or [`rangeUnderflow`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/rangeUnderflow "rangeUnderflow"), [`stepMismatch`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/stepMismatch "stepMismatch"), [`tooLong`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/tooLong "tooLong") or [`tooShort`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/tooShort "tooShort"), [`typeMismatch`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/typeMismatch "typeMismatch"), [`valueMissing`](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState/valueMissing "valueMissing"), or a `customError`.
 
-- regular expressions are used for patterns and they're their own skill. see this article: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions see[[#reu]]
+- regular expressions are used for patterns and they're their own skill. see this article: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions see[[#regular expressions]]
+	- invaluable site to test out regexpr : https://regexr.com/
 #### The Constraint Validation API
 contains many useful properties and methods to use such as: 
 	- `element.validity.typeMismatch` will return a true if say an element is not conforming to the format expected
