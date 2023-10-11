@@ -739,6 +739,10 @@ module: {
 - 
 - how to view page on live server through npm 
 	- when compiling, if a webpack.config.js is present, the `webpack` command will pick it by default
+#### how to create your own NPM package to import to your project later
+1. start with creating the github repository and cloning it locally to your project folder
+2.  run `npm init --scope=@charlesvill` to scope your packages (so you can avoid naming collisions)
+3.  make sure you're logged in to your npm account and run `npm publish --access public` 
 ### Principles of Object Oriented Programming
 #### Single responsibility Principle
 - states that a class, module, object should only fulfill a single responsibility. doesnt mean that it can only do one thing. but al lthe things it does must be for that single responsibility
