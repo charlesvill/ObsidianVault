@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "Regular expressions.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "Regular expressions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "Regular expressions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "Regular expressions.md"
               }
             }
           },
@@ -179,11 +178,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e1815026202a11e3",
+  "active": "3dc195d1f146c67c",
   "lastOpenFiles": [
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
+    "Regular expressions.md",
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Untitled.md",
     "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
     "ObsidianVault/Full Stack Dev/How the internet works and Networking.md",
