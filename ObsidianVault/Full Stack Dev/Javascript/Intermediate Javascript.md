@@ -932,4 +932,6 @@ some of the bigger reg expression patterns:
 - a potential problem with javascript updating is that browsers take a while to update to support these new features. 
 	- *solution?* Babel transpiles code into code that older browsers can use. it can easily be added to the webpack configuration to integrate it with workflow
 		- follow the guide here to integrate it to your current webpack workflow: https://github.com/babel/babel-loader
-		- 
+		- nice article on basics of how babel works and the importance of plugins: https://blog.jakoblind.no/babel-preset-env/
+	- on its own babel does nothing until you install the packages that handle the specific ES6 features that need to be transpiled. 
+		- while you could sit there and manually install each feature you used, its easier to use a preset: a collection of plugins that work all at once. ex: `@babel/preset-env` they even have ones for airbnb
