@@ -743,6 +743,7 @@ module: {
 1. start with creating the github repository and cloning it locally to your project folder
 2.  run `npm init --scope=@charlesvill` to scope your packages (so you can avoid naming collisions)
 3.  make sure you're logged in to your npm account and run `npm publish --access public` 
+4. good to go, you can install your package with `npm install @charlesvill/package-name`
 ### Principles of Object Oriented Programming
 #### Single responsibility Principle
 - states that a class, module, object should only fulfill a single responsibility. doesnt mean that it can only do one thing. but al lthe things it does must be for that single responsibility
@@ -926,3 +927,9 @@ see this video on quick start and overview: https://www.youtube.com/watch?v=rhzK
 here are the reference documentation for them: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
 some of the bigger reg expression patterns: 
 	
+#### What is ES6? 
+- alot of features being used like const, let, modules, for of loops were introduced in the ES6 which is short for ECMA script which was standardized in 2016
+- a potential problem with javascript updating is that browsers take a while to update to support these new features. 
+	- *solution?* Babel transpiles code into code that older browsers can use. it can easily be added to the webpack configuration to integrate it with workflow
+		- follow the guide here to integrate it to your current webpack workflow: https://github.com/babel/babel-loader
+		- 
