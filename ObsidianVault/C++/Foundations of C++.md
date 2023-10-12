@@ -1,4 +1,4 @@
-5#### parking lot: 
+#### parking lot: 
 - what is the difference between constexpr and const?
 	- a const initializiation can be deffered until runtime while a constexpr needs to be there compilation
 
@@ -175,4 +175,19 @@ int myresult{my_ns::foo() + my_other_ns::foo() * my_ns::my_inner_ns::baz()};
 - two ways to include libraries : `#include <cmath>` and `#include "myfile"` the difference is really in where it looks.
 	- <> are for standard libraries and does not look in the local project files within the directory. 
 	- "" are more for files you created or otherwise present in the directory that you want included. 
-- 
+##### strings
+- things like a string, need to be included in the standard library with `#include <string>` then the methods or *member functions* in those libraries can be accessed just like namespace accessors `::` i.e (`std::string message{"Hello World!"} ` ) 
+	- notice here the curly braces used to initialize this string. this way of initialization is known as value initialization while using assignment operator '='  is known as copy initialization. this might need its own section to understand more about it. 
+- note as well that when generating variables with types from the library you need to use the namespaces accessors as the data type: 
+```c++
+#include<string>
+
+std::string string_example{"Hello World!"};
+
+namespace logs(std::string message) {
+	cout << message.substr(message.find(" ") + 1); 
+}
+```
+- string methods: 
+	- `string.substr(1)` use case is with taking two arguments 1. starting index and 2. how many characters to chop. if second arg ommitted, it will slice from the starting index to the end of the string and will return your new string. exactly same to javascript string method substr
+	- `string.find("")` takes in a string and will return the index position of the beginning of named string
