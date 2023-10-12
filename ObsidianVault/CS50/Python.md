@@ -29,6 +29,7 @@ else: print("lmao")
 ```
 - python does not have arrays, it only has lists
 - range is used to count up list style (`ie. range(3) == 0 1 2`) 
+	- range arguments: range(start, # of times, step) by step meaning if you put 2, skip count 2
 - python still faces the same problem of float imprecision 
 - python however does not face integer overflow if the number is too long it will just allocate more bytes of memory to make up to make the entire number 
 ##### taking in input in python
