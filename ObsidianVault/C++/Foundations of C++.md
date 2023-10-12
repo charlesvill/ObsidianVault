@@ -140,3 +140,5 @@ class_name::member_name
 - Bjarne very much takes us through this iterative process of multiple steps that doesnt necessarily imply that programmers have to have all implementation details figured out on the first go. he attempts a version and sees an issue with it and then iterates on it again. even the mighty Bjarne doesnt fully anticipate every problem from the get go
 - Bjarne mentions time and time again to avoid using complicated solutions and use library solutions whenever present because they have more time than you and have spent more time wokring on that than you. 
 - *just thinking* rarely works, we cannot consier everything that will go wrong on the first run either, we need to try things and see what works best
+- if a main loop is handling the general scaffolding of the program i.e getting things started, handling errors; if it also handles controlling the main calculator or program function loop perhaps its best to handle that in a separate function
+	- try to emulate this in other programming languages even those that are dynamically typed and do not required things like int main () functions to get started. 
