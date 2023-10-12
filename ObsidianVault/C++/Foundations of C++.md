@@ -141,4 +141,4 @@ class_name::member_name
 - Bjarne mentions time and time again to avoid using complicated solutions and use library solutions whenever present because they have more time than you and have spent more time wokring on that than you. 
 - *just thinking* rarely works, we cannot consier everything that will go wrong on the first run either, we need to try things and see what works best
 - if a main loop is handling the general scaffolding of the program i.e getting things started, handling errors; if it also handles controlling the main calculator or program function loop perhaps its best to handle that in a separate function
-	- try to emulate this in other programming languages even those that are dynamically typed and do not required things like int main () functions to get started. 
+	- try to emulate this in other programming languages even those that are dynamically typed and do not required things like int main () functions to get started. then separate the logical parts of your program stem by step in different functions. looking at the main function should look slightly like looking at a map
