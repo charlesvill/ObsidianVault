@@ -139,3 +139,4 @@ class_name::member_name
 - I'm also noticing that bjarne is mixing his declarations and expressions assignments and stuff so he's not grouping them by thing per say, atleast not at this time. will check back if he does. 
 - Bjarne very much takes us through this iterative process of multiple steps that doesnt necessarily imply that programmers have to have all implementation details figured out on the first go. he attempts a version and sees an issue with it and then iterates on it again. even the mighty Bjarne doesnt fully anticipate every problem from the get go
 - Bjarne mentions time and time again to avoid using complicated solutions and use library solutions whenever present because they have more time than you and have spent more time wokring on that than you. 
+- *just thinking* rarely works, we cannot consier everything that will go wrong on the first run either, we need to try things and see what works best
