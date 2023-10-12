@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "ObsidianVault/C++/Foundations of C++.md"
               }
             }
           },
@@ -181,10 +181,10 @@
   },
   "active": "e1815026202a11e3",
   "lastOpenFiles": [
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Regular expressions.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Untitled.md",
     "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
     "ObsidianVault/Full Stack Dev/How the internet works and Networking.md",
