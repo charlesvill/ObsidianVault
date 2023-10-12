@@ -90,6 +90,7 @@ int main()
 		- notice use of cerr instead of cout as cerr is used for error messages
 - see chp 5 on erros 5.6.3 for more
 - you can also use the type `narrow_cast<int>(2.9)` that will throw a runtime_error if an assignmnet or initiliaization would lead ot a changed value aka truncation
+	- truncation is also known as a narrow conversion 
 ##### Template arguments 
 - when you see the < ... > brackets as in vectors `vector<int>` they are examples of template arguments
 	- the template argument specify to the type vector, what kind of data that type will pertain to
@@ -142,6 +143,7 @@ class_name::member_name
 - *just thinking* rarely works, we cannot consier everything that will go wrong on the first run either, we need to try things and see what works best
 - if a main loop is handling the general scaffolding of the program i.e getting things started, handling errors; if it also handles controlling the main calculator or program function loop perhaps its best to handle that in a separate function
 	- try to emulate this in other programming languages even those that are dynamically typed and do not required things like int main () functions to get started. then separate the logical parts of your program stem by step in different functions. looking at the main function should look slightly like looking at a map
+### Excercism notes
 #### Namespaces
 - the purpose of namespaces are to avoid collisions between  functions and programs that could share names. 
 	- I guess things in C++ are not block scoped?
@@ -166,4 +168,11 @@ namespace my_ns {
 int myresult{my_ns::foo() + my_other_ns::foo() * my_ns::my_inner_ns::baz()};
 ```
 - notice here the nesting of `my_inner-ns` and the accessor for the function inside of it, requires two sets of :: to access the correct scope. 
+	- *remember to call the name of the namespace in the global space if you're trying to call one of the functions*
 **this is actually pretty cool, because you can bring out deeply nested functions that you might need other places out the global scope and call them from there. not sure if other languages like javascrip allow you to do that without complex return systems**
+
+#### Includes
+- two ways to include libraries : `#include <cmath>` and `#include "myfile"` the difference is really in where it looks.
+	- <> are for standard libraries and does not look in the local project files within the directory. 
+	- "" are more for files you created or otherwise present in the directory that you want included. 
+- 
