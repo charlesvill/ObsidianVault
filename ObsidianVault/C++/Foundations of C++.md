@@ -142,3 +142,28 @@ class_name::member_name
 - *just thinking* rarely works, we cannot consier everything that will go wrong on the first run either, we need to try things and see what works best
 - if a main loop is handling the general scaffolding of the program i.e getting things started, handling errors; if it also handles controlling the main calculator or program function loop perhaps its best to handle that in a separate function
 	- try to emulate this in other programming languages even those that are dynamically typed and do not required things like int main () functions to get started. then separate the logical parts of your program stem by step in different functions. looking at the main function should look slightly like looking at a map
+#### Namespaces
+- the purpose of namespaces are to avoid collisions between  functions and programs that could share names. 
+	- I guess things in C++ are not block scoped?
+	- `namespace my_foo{ bool foo = false}`
+	- `namespace other_foo{bool foo = true}`
+	- you can nest name spaces and call specific functions by using the namespace *scope-resolution* operator `::` 
+- see here: 
+```cpp
+namespace my_ns { 
+	int foo() { return 44; }
+	 namespace my_inner_ns { 
+		 int baz() { 
+			 return 90; } 
+		} 
+	
+} namespace my_other_ns {
+	int foo() { 
+		return -2; 
+	} 
+} 
+
+int myresult{my_ns::foo() + my_other_ns::foo() * my_ns::my_inner_ns::baz()};
+```
+- notice here the nesting of `my_inner-ns` and the accessor for the function inside of it, requires two sets of :: to access the correct scope. 
+**this is actually pretty cool, because you can bring out deeply nested functions that you might need other places out the global scope and call them from there. not sure if other languages like javascrip allow you to do that without complex return systems**
