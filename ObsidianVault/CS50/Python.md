@@ -107,6 +107,10 @@ def get_height():
 	"David": "+1-099-9349",
 ```
 - *very similar to the use of objects in js* [[Intermediate Javascript#objects as a design pattern]]
+##### useful dictionaries methods: 
+- `dict.keys()` when accessing members, you can generate a new list object that has the keys only 
+- `dict.values()` generates object with only the values
+	- if you want either of these keys or values to be a list, you need to make sure you wrap it in a `list(dict.values)` otherwise it will be treated as a dict or obj
 #### File management
 - first need to import `import csv`
 - if youre expectig file to imported using cli, you also need `import sys`
