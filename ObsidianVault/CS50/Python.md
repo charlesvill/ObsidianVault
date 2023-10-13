@@ -3,6 +3,11 @@ an interpreted language unlike C that needs to be compiled to 0s and 1s. the pro
 #### strings
 - formatted strings: print(f"hello, {nameVar}")
 	- this will allow you to interpolate variables with printing but need to prefix the string with the 'f' that lets python know that you're trying to add the variable in there. 
+- Common string methods: 
+	- `str.split(',')` will split up the string into an array at the specific point
+	- `str.strip("!.?")` will return a string with what you put into the arguments removed. 
+		- if the argument is omitted, it will remove white spaces
+	- for either of those two, if you put something in the arguements thats not in there, it wont throw an error it will just return the string without any changes. 
 #### datatypes
 - int
 - float
