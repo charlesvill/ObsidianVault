@@ -108,6 +108,27 @@ def get_height():
 - *very similar to the use of objects in js* [[Intermediate Javascript#objects as a design pattern]]
 #### File management
 - first need to import `import csv`
+- if youre expectig file to imported using cli, you also need `import sys`
+```python
+import csv
+import sys
+
+if len(sys.argv) != 2:
+	sys.exit("needs two cli arguments FILENAME")
+csv_file = sys.argv[1]
+```
+- *note* : just like in C, you can use argv to access arguments passed through terminal *reminder* : argv[0] is the name of the program so the next ones are the arguments   
+- to open and load the file into memory: 
+```python
+	with open(f"{csv_file}", "r") as file: 
+		reader = csv.DictReader(file)
+		for line in reader: 
+			line["rating"] = int(line["rating"]) # here dictreader creates objects using headers
+			teams.append(line)
+```
+- note here the `with` `open` `as` and `file:` 
+- it reads line by line of the csv file and creates dictionaries using the first row as the fieldnames for the objects
+- optionally, if you wanted to place it into say a list, you could append each line (or now dict) into your list
 ##### super cool libraries to try out from python
 - import pyttsx3 
 ```python
