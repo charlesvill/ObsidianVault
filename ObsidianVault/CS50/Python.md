@@ -130,6 +130,7 @@ csv_file = sys.argv[1]
 - note here the `with` `open` `as` and `file:` 
 - it reads line by line of the csv file and creates dictionaries using the first row as the fieldnames for the objects
 - optionally, if you wanted to place it into say a list, you could append each line (or now dict) into your list
+- in the place of "r" it has been seen to use `newline=''`  as an optional argument to ensure consistent behavior of the way line ends are read across different computer platforms
 ##### super cool libraries to try out from python
 - import pyttsx3 
 ```python
