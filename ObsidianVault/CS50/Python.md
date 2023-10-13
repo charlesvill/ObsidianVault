@@ -19,6 +19,7 @@ other different ones:
 - tuple
 - dict
 - set
+- **You can use the type() method to see what data type something is**
 
 #### variables
 - do not use the unary incrementor variable++
