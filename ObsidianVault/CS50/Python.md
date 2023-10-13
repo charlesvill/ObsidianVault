@@ -131,6 +131,37 @@ csv_file = sys.argv[1]
 - it reads line by line of the csv file and creates dictionaries using the first row as the fieldnames for the objects
 - optionally, if you wanted to place it into say a list, you could append each line (or now dict) into your list
 - in the place of "r" it has been seen to use `newline=''`  as an optional argument to ensure consistent behavior of the way line ends are read across different computer platforms
+more complex way to create dicts inside of dicts:
+csv file: 
+```csv
+name,AGATC,AATG,TATC
+Alice,2,8,3
+Bob,4,1,5
+Charlie,3,2,5
+```
+```python
+csv_database = sys.argv[1]
+
+database = []
+
+with open(f"{csv_database}", "r") as csvfile:
+
+	reader = csv.DictReader(csvfile)
+	for line in reader:
+		dna = { key: value for key, value in line.items() if key != 'name'}
+		entry = { 'name': line['name'],
+					'dna' : dna
+				}
+			database.append(entry)
+
+print(database[0])
+```
+output: 
+	`{'name': 'Alice', 'dna': {'AGATC': '2', 'AATG': '8', 'TATC': '3'}}`
+	- notice each line in the csv file  i am first creating the dna which is its own dict with strand:count as k:v pairs
+		- uses { key: value } telling the placement of the variables that are initialized in `for` `key, value` the comma separated is important because it denotes the actual key value distinction to the computer
+		- uses line.items() to search through the items and if the key variable is not 'name' its added as a new key in the position noted on the line
+	- also notice the entry object with two objects : name & its value , dna & the dict we created right before. 
 ##### super cool libraries to try out from python
 - import pyttsx3 
 ```python
