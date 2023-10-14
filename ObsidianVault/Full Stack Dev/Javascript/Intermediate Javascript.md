@@ -935,3 +935,23 @@ some of the bigger reg expression patterns:
 		- nice article on basics of how babel works and the importance of plugins: https://blog.jakoblind.no/babel-preset-env/
 	- on its own babel does nothing until you install the packages that handle the specific ES6 features that need to be transpiled. 
 		- while you could sit there and manually install each feature you used, its easier to use a preset: a collection of plugins that work all at once. ex: `@babel/preset-env` they even have ones for airbnb
+#### JSON
+- article on it: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON 
+- short for Javascript Object Notation its universal for transmitting data across the web
+	- when you convert a json  string to a native javascript object is called deserialization and the opposite is called serialization. 
+		- also use the term 'parsing' when referring to the deserialization
+	- often seen with MIME type which is metadata, eseentially a string with information about the media file
+- json can exist in its own file `.json` that is essentially just a text file with the json strings in it
+	- Json needs to have double quotes for the properties single quotes only allowed surrounding the entire json string
+	- json can have only properties, no methods
+- Json can be validated to ensure good working and that a stray comma or other error wont throw off the whole string with JSONLint: https://jsonlint.com/
+- this website allows you to paste in json and checks for errors: https://jsonformatter.curiousconcept.com/
+- Only quoted strings can be used for the properties
+
+#### Asynchronous Code 
+- What is a callback?
+	- 
+- What is a promise?
+- In what cases would promises better than a call back?
+- what does the `.then()` function do?
+- 
