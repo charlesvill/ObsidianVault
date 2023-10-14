@@ -950,6 +950,8 @@ some of the bigger reg expression patterns:
 
 #### Asynchronous Code 
 - What is a callback?
+	- callback is a function that has another function as one of its parameters. the effect is that the function is asynchronous. meaning that the call for the asynchronous function will begin but the other functions will continue get called as the async function continues to run 
+	- this is typically done for node that uses mostly async functions and for server requests and other things that have to do with file system. this is because those operations especialy server requests and retrieving things from the file system takes alot longer than the cpu could process other tasks stored in memory (RAM)
 	- 
 - What is a promise?
 - In what cases would promises better than a call back?
