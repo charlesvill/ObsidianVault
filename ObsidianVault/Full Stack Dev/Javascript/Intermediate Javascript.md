@@ -989,6 +989,15 @@ addOne(logMyNumber)
     .finally(res => { console.log("finally") });
 ```
 	-note here the sequence of promise methods and notice the new Promise syntax 
+- What is the event loop? and what does it have to do with asynchronous functions / methods?
+	- event loop is what takes an asynchronous function that has been put off, and puts it back onto the call  stack once the async func has completed and has been put in the task queue and waiting to be added to the call stack
+- what does it mean when you say that javascript is single threaded and that it can only do one task at a time when it can load stuff and files in the background?
+	- in reality, js is trully single threaded so it can only do one task at a time. what happens is that the runtime for javascript either the v8 chrome engine or the magic node js c++ shit that's happening will give js only one thread. 
+	- when there is a task that needs to be async, it will be pushed off the runtime into other apis in the browser or other node magic stuff like c++ that has access to those extra threads so it can handle the loading of stuff while js can run the rest of the cod and hen when that background stuff is done, it gets slapped back into the runtime by the event loop and the single thread is back to business. 
+- what is a `setTimeout()` function and what is it used for ? 
+	- it is an asynchronous function that will delay the execution of that code for the time set in the argument 
+	- what does this function have to do with the event loop and async functions? 
+		- well sometimes people say to put some the time out time to 0 which would not make sense except that because of the event loop, even with time of 0, it effectively just waits until the stack is clear and then it will trigger that callback in the setTimeout()
 - In what cases would promises better than a call back?
 - what does the `.then()` function do?
 - 
