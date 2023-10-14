@@ -974,6 +974,21 @@ addOne(logMyNumber)
 	- notice here that the function to log the mynumber is passed through the function call for addOne which has the asynchronous function of reading the file. now the console.log function will get called at the end of addOne as the callback function
 - if you try to call synchronous calls right after an asynchronous call back() you'll see the output of that synced function befor the asynchronous calls 
 - What is a promise?
+	- promise is a newer way to tackle asynchronous functions you promise to do something and has one of two possibilities: 
+		- it will either get resolved, or rejected
+		- 
+		- `asyncfunc.then()` where you can run a callback after the promise has been resolved aka if its finished getting what it needs to
+		- `asyncfunc.catch()` this is run if the promise is rejected because of a time out or because a status code for a server is no bueno
+		- `asynfunc.finally()` gets triggered regardlesss of whether the promise is fulfiled or reected
+		- Promise.all method takes an array of promises and fires one callback once they have all been resolved
+		- Promise.race() will fire as soon as any promise in the array has been resolved
+```javascript
+(new Promise((resolve, reject) => { reject("Nope"); }))
+    .then(() => { console.log("success") })
+    .catch(() => { console.log("fail") })
+    .finally(res => { console.log("finally") });
+```
+	-note here the sequence of promise methods and notice the new Promise syntax 
 - In what cases would promises better than a call back?
 - what does the `.then()` function do?
 - 
