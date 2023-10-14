@@ -952,7 +952,27 @@ some of the bigger reg expression patterns:
 - What is a callback?
 	- callback is a function that has another function as one of its parameters. the effect is that the function is asynchronous. meaning that the call for the asynchronous function will begin but the other functions will continue get called as the async function continues to run 
 	- this is typically done for node that uses mostly async functions and for server requests and other things that have to do with file system. this is because those operations especialy server requests and retrieving things from the file system takes alot longer than the cpu could process other tasks stored in memory (RAM)
-	- 
+	- what does a callback function look like?
+```javascript
+var fs = require('fs')
+var myNumber = undefined
+
+function addOne(callback) {
+  fs.readFile('number.txt', function doneReading(err, fileContents) {
+    myNumber = parseInt(fileContents)
+    myNumber++
+    callback()
+  })
+}
+
+function logMyNumber() {
+  console.log(myNumber)
+}
+
+addOne(logMyNumber)
+```
+	- notice here that the function to log the mynumber is passed through the function call for addOne which has the asynchronous function of reading the file. now the console.log function will get called at the end of addOne as the callback function
+- if you try to call synchronous calls right after an asynchronous call back() you'll see the output of that synced function befor the asynchronous calls 
 - What is a promise?
 - In what cases would promises better than a call back?
 - what does the `.then()` function do?
