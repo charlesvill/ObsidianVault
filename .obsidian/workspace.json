@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ad14ccaf717c3eac",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,7 +177,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c18b2de9322a5f3f",
+  "active": "ad14ccaf717c3eac",
   "lastOpenFiles": [
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/CS50/Python.md",
