@@ -998,6 +998,8 @@ addOne(logMyNumber)
 	- it is an asynchronous function that will delay the execution of that code for the time set in the argument 
 	- what does this function have to do with the event loop and async functions? 
 		- well sometimes people say to put some the time out time to 0 which would not make sense except that because of the event loop, even with time of 0, it effectively just waits until the stack is clear and then it will trigger that callback in the setTimeout()
+- What is callback hell? 
+	- when you have functions passed as parameters as a part of async functions it is difficult to trace the execution order of functions when they are laid out sequentially but do not fire sequentially. Many think whats difficult abot it is how they often are deeply nested, but what is the problem is how when following execution order, you often have to glance and bounce around all over the code base to follow it. 
 - In what cases would promises better than a call back?
 - what does the `.then()` function do?
 - 
