@@ -1000,6 +1000,7 @@ addOne(logMyNumber)
 		- well sometimes people say to put some the time out time to 0 which would not make sense except that because of the event loop, even with time of 0, it effectively just waits until the stack is clear and then it will trigger that callback in the setTimeout()
 - What is callback hell? 
 	- when you have functions passed as parameters as a part of async functions it is difficult to trace the execution order of functions when they are laid out sequentially but do not fire sequentially. Many think whats difficult abot it is how they often are deeply nested, but what is the problem is how when following execution order, you often have to glance and bounce around all over the code base to follow it. 
+- reference for callback hell and workarounds: https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch2.md *dont really understand some of the things he's saying like how he makes the asyncify function or the timeoutify function* come back to this... 
 - In what cases would promises better than a call back?
 - what does the `.then()` function do?
 - 
