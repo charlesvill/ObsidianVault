@@ -989,6 +989,8 @@ addOne(logMyNumber)
     .finally(res => { console.log("finally") });
 ```
 	-note here the sequence of promise methods and notice the new Promise syntax 
+- conceptually what is a promise?
+	- 
 - What is the event loop? and what does it have to do with asynchronous functions / methods?
 	- event loop is what takes an asynchronous function that has been put off, and puts it back onto the call  stack once the async func has completed and has been put in the task queue and waiting to be added to the call stack
 - what does it mean when you say that javascript is single threaded and that it can only do one task at a time when it can load stuff and files in the background?
