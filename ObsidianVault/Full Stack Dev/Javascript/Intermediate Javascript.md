@@ -145,6 +145,8 @@ appendLibArr(bookToAdd);
 ```
 - note the variables being initialized and storing the different form inputs. 
 - note the unique radio value being accessed by using the name and specifically accessing the one that is checked. dont really understand why you need the `:checked` #NeedMoreHelp 
+##### Useful methods for foundations 
+- `console.dir()` - a useful way of listing out the properties of some variable or object in js
 ### Organizing Code
 - the language is extremely forgiving which is in part enabling for poor design choices that lead to poor maintainability.
 	- the discussion on organizing code is going to come down to 4 categories:
@@ -949,6 +951,8 @@ some of the bigger reg expression patterns:
 - Only quoted strings can be used for the properties
 
 #### Asynchronous Code 
+- asynchronous code is the ability of javascript to hand off the execution of something that does not happen instantaneously like server requests. you send off and execute the rest of your synchronous code and then once the async function is done you can have things trigger after its complete
+- aysnc boils down to three different kinds in js: callbacks, promises, and async/await
 - What is a callback?
 	- callback is a function that has another function as one of its parameters. the effect is that the function is asynchronous. meaning that the call for the asynchronous function will begin but the other functions will continue get called as the async function continues to run 
 	- this is typically done for node that uses mostly async functions and for server requests and other things that have to do with file system. this is because those operations especialy server requests and retrieving things from the file system takes alot longer than the cpu could process other tasks stored in memory (RAM)
