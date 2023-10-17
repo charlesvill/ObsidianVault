@@ -1043,4 +1043,5 @@ promise
 - what is an api?
 - how does access to an api work?
 - how do you fetch and extract data from an api?
+	- good page on fetch() and how it works with promises and jsonkjj
 - explain how an api request could be blocked by the browser and how to fix this?
