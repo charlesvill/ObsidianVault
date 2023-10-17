@@ -987,6 +987,33 @@ addOne(logMyNumber)
 		- Promise.all method takes an array of promises and fires one callback once they have all been resolved
 		- Promise.race() will fire as soon as any promise in the array has been resolved
 ```javascript
+const promise = new Promise((resolve, reject) => {
+  // Simulating an asynchronous operation
+  setTimeout(() => {
+    const condition = true; // Replace with your condition
+
+    if (condition) {
+      resolve('Success!');
+    } else {
+      reject('Failure!');
+    }
+  }, 2000);
+});
+
+promise
+  .then((value) => {
+    console.log(value); // Will print "Success!" if condition is true
+  })
+  .catch((error) => {
+    console.error(error); // Will print "Failure!" if condition is false
+  });
+
+```
+ - look here at the anatomy of the promise constructor: 
+	 - the arguments 'resolve' and 'reject' are passed to the constructor and handle passing the values of either the success of the promise or the failure
+		 - resolve("success") - passing through string 'success' for the resolving which gets passed to the .then() as the value variable passed through the .then(value) that is why you see console.log(value) === 'success'
+		 - same with the 'reject' it will take the argument you passthrough it and pass it as argument for the catch in this case initialized as 'error' and can print out the contents of the error message that you printed out. 
+```javascript
 (new Promise((resolve, reject) => { reject("Nope"); }))
     .then(() => { console.log("success") })
     .catch(() => { console.log("fail") })
