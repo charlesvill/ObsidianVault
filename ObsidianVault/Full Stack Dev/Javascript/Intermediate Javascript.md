@@ -1005,4 +1005,11 @@ addOne(logMyNumber)
 - reference for callback hell and workarounds: https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch2.md *dont really understand some of the things he's saying like how he makes the asyncify function or the timeoutify function* come back to this... 
 - In what cases would promises better than a call back?
 - what does the `.then()` function do?
-- 
+
+
+
+#### Working with APIs
+- what is an api?
+- how does access to an api work?
+- how do you fetch and extract data from an api?
+- explain how an api request could be blocked by the browser and how to fix this?
