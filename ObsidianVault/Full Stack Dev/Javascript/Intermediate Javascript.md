@@ -1043,5 +1043,21 @@ promise
 - what is an api?
 - how does access to an api work?
 - how do you fetch and extract data from an api?
-	- good page on fetch() and how it works with promises and jsonkjj
+```javascript
+const response = fetch(`https://pokeapi.co/api/v2/pokemon/${queryString}/`, {mode: 'cors'})
+	.then((rsp) => {
+	if (!rsp.ok) {
+
+throw new Error(`Search was not found, please try again. Status: ${rsp.status}`);
+
+}
+
+return rsp.json();
+
+})
+
+.then((data) => console.dir(data))
+.catch((error) => console.error(`Search was not found, please try again, ${error}`))
+```
+notice here the the fetch request that is checked for the status inside the first '.then()' and then if it is not okay, you throw a new error and it will be pushed to the catch. 
 - explain how an api request could be blocked by the browser and how to fix this?
