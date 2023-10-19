@@ -1,6 +1,19 @@
 #### parking lot: 
 - what is the difference between constexpr and const?
 	- a const initializiation can be deffered until runtime while a constexpr needs to be there compilation
+##### Getting started: 
+```cpp
+#include<iostream>
+#include "./std_header_files.h"
+
+int main() {
+
+	//some code here
+
+
+return 0;
+}
+```
 
 ### Bjarne Stourstroup Ch 4
 why use functional programming?
