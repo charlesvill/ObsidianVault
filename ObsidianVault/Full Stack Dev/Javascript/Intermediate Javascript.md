@@ -1113,3 +1113,5 @@ return rsp.json();
 ```
 notice here the the fetch request that is checked for the status inside the first '.then()' and then if it is not okay, you throw a new error and it will be pushed to the catch. 
 - explain how an api request could be blocked by the browser and how to fix this?
+
+#### Async and Await 
