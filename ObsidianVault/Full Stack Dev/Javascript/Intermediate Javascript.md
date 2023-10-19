@@ -1025,6 +1025,9 @@ promise
 ```
 	-note here the sequence of promise methods and notice the new Promise syntax 
 - conceptually what is a promise?
+- additional notes on promises: 
+	- if you pass a non-promise to a Promise.resolve() you get a promise back that resolves to the value that was passed through. I think what this means is that it will simply complete the then function with the first accepted parameter and pass the value as that parameters parameter. lol confusing stuff. 
+	- if you pass a promise to a Promise.resolve() you'll just get that promise back. literally will be the equality === property to them
 - what is a thenable and what relation does it have to promises?
 	- in essence, thenable is a function that behaves like a promise but perhaps is not a promise type perse maybe because it doesnt actually support promises such as older code bases or browsers that do not support es6
 - What is the event loop? and what does it have to do with asynchronous functions / methods?
