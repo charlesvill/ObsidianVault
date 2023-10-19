@@ -8,6 +8,7 @@
 	- understanding roughly is that it's really easy to attempt the call of a function prematurely
 - what are generator functions used for ?
 - what are the functions declarations that will execute immediately and which are the ones that need be called or invoked before they're actually executed? is there a specific pattern in the ones that execute immediately that one should be aware of? for example in the call back function of an eventhandler, you cannot but the function call itself because it will get called before the actual event is triggered. perhaps its because it requires a call back function that it will invoke on compilation instead of trigger event. a call backfunction initializes itself as a statement but does not invoke its contents while just putting the function name could be triggering it to actually load the contents instead of just initializing itself. 
+- on performance, see chapter 5 and 6 of you dont know javascript for how to make javascript performant: https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch3.md
 
 #### Review on javascript fundamentals: 
 - object/array destructuring - why its useful and how to use it and using the spread operator

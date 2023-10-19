@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md"
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
               }
             }
           },
@@ -167,6 +168,7 @@
   },
   "active": "c18b2de9322a5f3f",
   "lastOpenFiles": [
+    "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/CS50/Python.md",
@@ -174,7 +176,6 @@
     "ObsidianVault/C++/Foundations of C++.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "Untitled.md",
-    "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
     "ObsidianVault/Full Stack Dev/How the internet works and Networking.md",
     "Images/Pasted image 20230707124826.png",
     "Images/Pasted image 20230707124341.png",
