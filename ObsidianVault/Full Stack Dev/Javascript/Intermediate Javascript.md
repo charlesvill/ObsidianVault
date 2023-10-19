@@ -1115,7 +1115,7 @@ notice here the the fetch request that is checked for the status inside the firs
 - explain how an api request could be blocked by the browser and how to fix this?
 
 #### Async and Await 
-basically a way of handling async events that are expressed more linearly and easier to read compared to promises and then() and catch() blocks
+basically a way of handling async events that are expressed more linearly and easier to read compared to promises and then() and catch() blocks : good article to brush up on async/ await: https://javascript.info/async-await
 - what is an async ?
 	- it is syntactical sugar for promises. when you declare a async function, it returns a promise
 - how do you declare an async functoin
