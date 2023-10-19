@@ -984,7 +984,7 @@ addOne(logMyNumber)
 - What is a promise?
 	- promise is a newer way to tackle asynchronous functions you promise to do something and has one of two possibilities: 
 		- it will either get resolved, or rejected
-		- 
+		- you use functions then and catch to handle either the resolved or rejection of the promise
 		- `asyncfunc.then()` where you can run a callback after the promise has been resolved aka if its finished getting what it needs to
 		- `asyncfunc.catch()` this is run if the promise is rejected because of a time out or because a status code for a server is no bueno
 		- `asynfunc.finally()` gets triggered regardlesss of whether the promise is fulfiled or reected
@@ -1030,6 +1030,26 @@ promise
 	- if you pass a promise to a Promise.resolve() you'll just get that promise back. literally will be the equality === property to them
 - what is a thenable and what relation does it have to promises?
 	- in essence, thenable is a function that behaves like a promise but perhaps is not a promise type perse maybe because it doesnt actually support promises such as older code bases or browsers that do not support es6
+- how does chain flow in promises?
+	- you can chain .then() statements on a promise and each time it is done, it will return a new promise and with each new promise, you can then chain another .then() statement and so on and so forth if you pass a promise.resolve() with a non promise value, this value will get passed down to the last instance of a thenfor example: 
+```javascript
+var p = Promise.resolve( 21 );
+
+var p2 = p.then( function(v){
+	console.log( v );	// 21
+
+	// fulfill `p2` with value `42`
+	return v * 2;
+} );
+
+// chain off `p2`
+p2.then( function(v){
+	console.log( v );	// 42
+} );
+```
+	- notice here the the Promise.resolve(21) and how at the end 21 gets passed along and mutated but still passed to p2.then()'s callback function
+	- you also do not have to name them something different like p2 or p3 you can just call .then() as many times as you want and its essentially the same thing 
+	- also to note, the second step there return statements automatically resolve the promise. 
 - What is the event loop? and what does it have to do with asynchronous functions / methods?
 	- event loop is what takes an asynchronous function that has been put off, and puts it back onto the call  stack once the async func has completed and has been put in the task queue and waiting to be added to the call stack
 - what does it mean when you say that javascript is single threaded and that it can only do one task at a time when it can load stuff and files in the background?
