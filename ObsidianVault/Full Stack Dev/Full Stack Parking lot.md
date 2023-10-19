@@ -52,4 +52,34 @@ console.log(Point.distance(p1, p2)); // 7.0710678118654755
 - [ ] conceptually what are bindings and what are important considerations of bindings that need to be taken when it comes to being a developer?
 - [ ] why are there so many templates to create objects? object constructor, classes, factory functions, module pattern? why do we have so many and what are important considerations to take in deciding which ones to employ for your project? i
 - [ ] is it good practice to avoid using global variables and declarations? things like const for event listeners and such. should they be wrapped up somewhere if at all possible? are there instances where you would want to avoid encapsulating constant variables and leave them isntead in the global scope?
+- [ ] this shit found in chapter 3 of you dont know javascript under concurrent iterations dont make nonsense:
+```javascript
+**Note:** In this implementation of `map(..)`, you can't signal async rejection, but if a synchronous exception/error occurs inside of the mapping callback (`cb(..)`), the main `Promise.map(..)` returned promise would reject.
+
+Let's illustrate using `map(..)` with a list of Promises (instead of simple values):
+var p1 = Promise.resolve( 21 );
+var p2 = Promise.resolve( 42 );
+var p3 = Promise.reject( "Oops" );
+
+// double values in list even if they're in
+// Promises
+Promise.map( [p1,p2,p3], function(pr,done){
+	// make sure the item itself is a Promise
+	Promise.resolve( pr )
+	.then(
+		// extract value as `v`
+		function(v){
+			// map fulfillment `v` to new value
+			done( v * 2 );
+		},
+		// or, map to promise rejection message
+		done
+	);
+} )
+.then( function(vals){
+	console.log( vals );	// [42,84,"Oops"]
+} );
+
+```
+- [ ] next point here
 
