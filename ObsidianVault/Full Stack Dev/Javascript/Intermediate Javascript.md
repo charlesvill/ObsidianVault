@@ -1119,8 +1119,26 @@ basically a way of handling async events that are expressed more linearly and ea
 - what is an async ?
 	- it is syntactical sugar for promises. when you declare a async function, it returns a promise
 - how do you declare an async functoin
+	- write async infront of it
 - what does the async keyword do exactly
+	- wraps your function in a promise that will return a promise that looks to be resolved 
 - what does the await keyword do
+	- defers the execution of the next line in the async block until the await expression is done
 - what does the async *function* return?
+	- a promise
 - what happnes when an error is thrown inside an async fuction
+	- you can either nest a try .. catch blocks inside the async to catch it or you can also chain a .catch() to the await expression.
 - how cna you handle errors inside an async function?
+```javascript
+	async function f() {
+		try {
+			let response = await fetch(url);
+			let user = await.response.json();
+		} catch(err) {
+			alert(err);
+		}
+	}
+f();
+```
+	- note here how the await fetching wrapped in a try.. catch block that will on failure, send the alert to the catch block for either the user or the response awaits. 
+- good video on await and aysnc for demonstrations and eror handling : https://www.youtube.com/watch?v=9YkUCxvaLEk&ab_channel=dotconferences also talks about error with using express ******* 
