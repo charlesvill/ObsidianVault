@@ -81,5 +81,19 @@ Promise.map( [p1,p2,p3], function(pr,done){
 } );
 
 ```
-- [ ] next point here
+- [ ] in what contexts would it be appropriate to use try/catch blocks? is it just in async functions or are there also instances in synchronouse functions that you would want to use try/catch blocks?
+	- you might use try and catch blocks most likely when handling potentially unreliable inputs and code such as input from the user or server requests. commonly found with asynchronous functions. works similar to the error handling flow of promises with try{}catch(err){} and finally { } where the error in try gets passed as an object to catch
+```javascript
+try{
+	console.log('start of try runs');
+	unicycle;
+	console.log('end of try runs -- never reached ');
+} catch(err) {
+	console.log('error has occured ' + err.stack);
+} finally {
+	console.log('this always runs');
+}
+```
+	- notice here that the last expression in the try block does not run because the error takes it straight to the catch block. also notice the err.stack , stack is part of the error object that gives you information on the error from the stack. 
+		- you should know as well that 
 
