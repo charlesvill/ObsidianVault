@@ -983,6 +983,8 @@ addOne(logMyNumber)
 - if you try to call synchronous calls right after an asynchronous call back() you'll see the output of that synced function befor the asynchronous calls 
 - What is a promise?
 	- promise is a newer way to tackle asynchronous functions you promise to do something and has one of two possibilities: 
+	- *if ever need help on promises read this* : https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch3.md
+			- specifically chapter 2 and 3 or even more cruise the headings for what you need help with
 		- it will either get resolved, or rejected
 		- you use functions then and catch to handle either the resolved or rejection of the promise
 		- `asyncfunc.then()` where you can run a callback after the promise has been resolved aka if its finished getting what it needs to
@@ -1028,6 +1030,22 @@ promise
 - additional notes on promises: 
 	- if you pass a non-promise to a Promise.resolve() you get a promise back that resolves to the value that was passed through. I think what this means is that it will simply complete the then function with the first accepted parameter and pass the value as that parameters parameter. lol confusing stuff. 
 	- if you pass a promise to a Promise.resolve() you'll just get that promise back. literally will be the equality === property to them
+	- resolve is often used to mean success most of the time but the name suggests resolve could be resolution as either failing or passing. this name is accurate because a then statement while of the resolve, can find a reject pattern in its own scope and thus could return with a reject, so it really can be either a pass or a fail, but mostly its used for a pass. 
+```javascript
+function fulfilled(msg) {
+	console.log( msg );
+}
+
+function rejected(err) {
+	console.error( err );
+}
+
+p.then(
+	fulfilled,
+	rejected
+);
+```
+- note here that its named fullfilled and rejected unambigously because the first parameter for then will be always the pass unlike the resolve of the original promise parameter. 
 - what is a thenable and what relation does it have to promises?
 	- in essence, thenable is a function that behaves like a promise but perhaps is not a promise type perse maybe because it doesnt actually support promises such as older code bases or browsers that do not support es6
 - how does chain flow in promises?
