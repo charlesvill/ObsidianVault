@@ -1025,7 +1025,8 @@ promise
 ```
 	-note here the sequence of promise methods and notice the new Promise syntax 
 - conceptually what is a promise?
-	- 
+- what is a thenable and what relation does it have to promises?
+	- in essence, thenable is a function that behaves like a promise but perhaps is not a promise type perse maybe because it doesnt actually support promises such as older code bases or browsers that do not support es6
 - What is the event loop? and what does it have to do with asynchronous functions / methods?
 	- event loop is what takes an asynchronous function that has been put off, and puts it back onto the call  stack once the async func has completed and has been put in the task queue and waiting to be added to the call stack
 - what does it mean when you say that javascript is single threaded and that it can only do one task at a time when it can load stuff and files in the background?
@@ -1039,6 +1040,10 @@ promise
 	- when you have functions passed as parameters as a part of async functions it is difficult to trace the execution order of functions when they are laid out sequentially but do not fire sequentially. Many think whats difficult abot it is how they often are deeply nested, but what is the problem is how when following execution order, you often have to glance and bounce around all over the code base to follow it. 
 - reference for callback hell and workarounds: https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch2.md *dont really understand some of the things he's saying like how he makes the asyncify function or the timeoutify function* come back to this... 
 - In what cases would promises better than a call back?
+	- sometimes your callbacks might do the following that a promise would fix: 
+		- call back too early, late, or never
+		- too few or too many times
+		- fail to pass necessary parameters, or swallow any errors that may happen
 - what does the `.then()` function do?
 
 
