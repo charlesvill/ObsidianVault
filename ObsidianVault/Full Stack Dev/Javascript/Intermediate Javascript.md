@@ -1048,6 +1048,7 @@ p.then(
 - note here that its named fullfilled and rejected unambigously because the first parameter for then will be always the pass unlike the resolve of the original promise parameter. 
 - what is a thenable and what relation does it have to promises?
 	- in essence, thenable is a function that behaves like a promise but perhaps is not a promise type perse maybe because it doesnt actually support promises such as older code bases or browsers that do not support es6
+	- allegedly you can defer the error message of a rejected with the method .defer()
 - how does chain flow in promises?
 	- you can chain .then() statements on a promise and each time it is done, it will return a new promise and with each new promise, you can then chain another .then() statement and so on and so forth if you pass a promise.resolve() with a non promise value, this value will get passed down to the last instance of a thenfor example: 
 ```javascript
