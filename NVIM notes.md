@@ -25,6 +25,14 @@ Keybinds:
 - move cursor to matching bracket: % (on a bracket)
 - :#,#s/old/new/g sub out in the range of lines
 - :%s/old/new/gc: sub out in the whole file but prompting for each one
+-  Typing ":set xxx" sets the option "xxx".  Some options are:
+        'ic' 'ignorecase'       ignore upper/lower case when searching
+        'is' 'incsearch'        show partial matches for a search phrase
+        'hls' 'hlsearch'        highlight all matching phrases
+     You can either use the long or the short option name.
+
+  7. Prepend "no" to switch an option off:   :set noic
+
 - set breakpoint: leader (space) + d + b
 - start debugging
 what is a vim register?
