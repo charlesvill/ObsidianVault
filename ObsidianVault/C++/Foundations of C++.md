@@ -236,3 +236,14 @@ cout << i << " " << r << '\n' //prints 10 10
 		- perhaps this means to make expressions happen on the return line without having to make a copy of the object if can be avoided. 
 	- use pass-by-reference only when you have to.... 
 	- when to use pass-by-reference? for functions that change several objects since only one return value and manipulating containers like vectors
+##### constexpr functions
+- at times we want calculations to be done at compilation instead of runtime and a function can do just that if its a constexpr function, here is the syntax: 
+```cpp
+constexpr double xscale = 10;
+constexpr double yscale = 0.8;
+
+constexpr Point scale(Point p) {return{xscale*p.x, yscale*p.y};};
+
+```
+- where p is a struct you can see constexpr being passed and they must be constexpr inorder to be calculated at compilation when called. 
+	- things to note: it must not have side-effects aka modify values outside of it and obviously modify any of its arguments that are constexpr
