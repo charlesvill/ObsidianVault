@@ -266,4 +266,11 @@ const Date& default_date()
 - the real standard library way of using string is to name it out like this: `std::string h = "hello world"`
 	- also std::cout<< "hello world" << std::endl;
 - a shortended way of accessing member functions without being as verbose is by using a `using` declaration: 
+	- `using std::string;`
+	- now you can use string member type from std without having to write out the whole thing
+	- introduced into your current scope
+- even more global version of this is a `using` directive:
 	- `using namespace std;`
+	- this will bring all of the member functions from that namespace into the scope like cout, string, etc. 
+	- not recommned to use unless its on widely known namespaces like std bc the source of those member functions can start to get cloudly if over used. 
+- 
