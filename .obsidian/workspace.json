@@ -30,8 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "dea779a84151e9ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ObsidianVault/CS50/C.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/C++/Foundations of C++.md",
+                "file": "ObsidianVault/CS50/C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/C++/Foundations of C++.md",
+                "file": "ObsidianVault/CS50/C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/C++/Foundations of C++.md"
+                "file": "ObsidianVault/CS50/C.md"
               }
             }
           },
@@ -178,13 +191,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "932f041ab2330c8d",
+  "active": "dea779a84151e9ca",
   "lastOpenFiles": [
     "NVIM notes.md",
+    "ObsidianVault/C++/Foundations of C++.md",
+    "ObsidianVault/CS50/C.md",
     "Untitled.md",
     "Untitled 1.md",
     "Untitled 2.md",
-    "ObsidianVault/C++/Foundations of C++.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
@@ -197,7 +211,6 @@
     "Images/Pasted image 20230627125830.png",
     "Images/Pasted image 20230627115812.png",
     "ObsidianVault/C++/C++ projects.md",
-    "ObsidianVault/CS50/C.md",
     "ObsidianVault/C++",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/Tables.md",

@@ -216,3 +216,14 @@ void increase_power(int level) { ... }
 	- this will NOT change the original value
 - pass-by-const-reference: instead of copying the value you can just pass the address of the original definition so you dont have to spend extra memory if thats not the purpose
 	- the decision to not passby value comes down to whether you need to mutate the values 
+- Pass by reference: does not use const so you can actually change the value that you're referencing. 
+	- how modifying values  by reference works:
+```cpp
+int i = 7;
+int& r = i; //r references i
+r = 9; //i is modified, becomes 9
+i = 10; // i is now 10
+
+cout << i << " " << r << '\n' //prints 10 10
+```
+	- as seen here both the reference and the i can change the value of i 
