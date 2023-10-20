@@ -229,3 +229,10 @@ cout << i << " " << r << '\n' //prints 10 10
 	- as seen here both the reference and the i can change the value of i 
 - *note: this does not work the same as it does with C*
 	- the reference int& r is not valid c, that is strictly c++ sytax. would have to achieve this simliar thing using strict pointers. 
+- Bjarnes rules of thumb when passing values: 
+	- passby vlaue for very small objects
+	- pass by const larg obj that dont need changing
+	- return a result rather than modifying an object through reference argument
+		- perhaps this means to make expressions happen on the return line without having to make a copy of the object if can be avoided. 
+	- use pass-by-reference only when you have to.... 
+	- when to use pass-by-reference? for functions that change several objects since only one return value and manipulating containers like vectors
