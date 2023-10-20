@@ -273,4 +273,21 @@ const Date& default_date()
 	- `using namespace std;`
 	- this will bring all of the member functions from that namespace into the scope like cout, string, etc. 
 	- not recommned to use unless its on widely known namespaces like std bc the source of those member functions can start to get cloudly if over used. 
-- 
+### Ch 9 Classes, etc. 
+#### User-defined types
+- really the only built in types are char, int and double
+- things like strings, vectors, ostream, Tokens, are all *user-defined-types* even though strings, vectors come from the standard library, they still need a user declaration to use them which makes them user defined. 
+- What are the two kinds of user-defined types in c++?:
+	- classes 
+	- enumerations
+##### classes
+```cpp
+class X{
+public:
+	int m;
+	int mf(int v){return 2*v}
+};	
+X var; //variable var of type X
+var.m = 7; //assign values to its member values
+var.mf(9); //access and use the member functions
+```
