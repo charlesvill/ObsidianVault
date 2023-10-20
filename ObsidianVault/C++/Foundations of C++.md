@@ -298,3 +298,16 @@ var.mf(9); //access and use the member functions
 		- *important to note that members are private by default unless otherwise defined as public:*
 - what if you need something public by default?
 	- a struct is public by default
+- Class Members && constructors:
+```cpp
+struct Date{
+	int y, m, d;
+	Date(int y, int m, int d);
+	void add_day(int n);
+}
+```
+- notice here the constructor is the member function with the same name so the struct type can be initialized as:
+	- `Date today{2000, 05, 24};` 
+	- notice in the declaration the use of parentheses to delimit the initialization
+	- parenthesis are valid too but its c++ 98 (old)
+	- *note: you can also use parentheses for built in types: int x {7};* but its weird
