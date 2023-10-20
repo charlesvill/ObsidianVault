@@ -227,3 +227,5 @@ i = 10; // i is now 10
 cout << i << " " << r << '\n' //prints 10 10
 ```
 	- as seen here both the reference and the i can change the value of i 
+- *note: this does not work the same as it does with C*
+	- the reference int& r is not valid c, that is strictly c++ sytax. would have to achieve this simliar thing using strict pointers. 
