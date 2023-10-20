@@ -30,21 +30,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "3388996be242b27f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NVIM notes.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NVIM notes.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NVIM notes.md"
+                "file": "ObsidianVault/C++/Foundations of C++.md"
               }
             }
           },
@@ -190,10 +178,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "51aa7339992813b2",
+  "active": "932f041ab2330c8d",
   "lastOpenFiles": [
-    "ObsidianVault/C++/Foundations of C++.md",
     "NVIM notes.md",
+    "ObsidianVault/C++/Foundations of C++.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",

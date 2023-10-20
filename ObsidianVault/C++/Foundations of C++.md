@@ -14,7 +14,7 @@ int main() {
 return 0;
 }
 ```
-
+- the hashes there are known as preproccessor statements, it processes them before your file is processed. it basically pastes it in there. 
 ### Bjarne Stourstroup Ch 4
 why use functional programming?
 - separates computation logically
