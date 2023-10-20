@@ -10,5 +10,7 @@ Keybinds:
 - append beginning: I
 - delete word from start of the word: dw
 - delete till end of line: d$
+- bring to beginning of the word: 0
+- 
 - set breakpoint: leader (space) + d + b
 - start debugging
