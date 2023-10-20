@@ -204,3 +204,5 @@ namespace logs(std::string message) {
 - string methods: 
 	- `string.substr(1)` use case is with taking two arguments 1. starting index and 2. how many characters to chop. if second arg ommitted, it will slice from the starting index to the end of the string and will return your new string. exactly same to javascript string method substr
 	- `string.find("")` takes in a string and will return the index position of the beginning of named string
+
+### Ch 8 Technicalities functions

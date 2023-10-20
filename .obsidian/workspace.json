@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NVIM notes.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NVIM notes.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NVIM notes.md"
+                "file": "ObsidianVault/C++/Foundations of C++.md"
               }
             }
           },
@@ -179,12 +178,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "51aa7339992813b2",
+  "active": "932f041ab2330c8d",
   "lastOpenFiles": [
+    "NVIM notes.md",
     "Untitled.md",
     "Untitled 1.md",
     "Untitled 2.md",
-    "NVIM notes.md",
     "ObsidianVault/C++/Foundations of C++.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
