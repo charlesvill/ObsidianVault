@@ -257,4 +257,10 @@ const Date& default_date()
 }
 ```
 	- note here the function is of return type Date struct and returns a reference to avoid copying and the static enables it to run once to generate and that's it
+##### Namespaces
+- functions organize blocks of code into logical action or goal 
+- classes organize data and functions into a type and 
+- namespaces organize chunks of functions and classes into parts of a program 
+	- think namespace graphics_lib with classes and functions called Color, Shape, line, Text etc. 
+	- just another way to organize logical parts of your code. 
 - 
