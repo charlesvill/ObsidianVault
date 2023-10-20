@@ -10,7 +10,10 @@ Keybinds:
 - append beginning: I
 - delete word from start of the word: dw
 - delete till end of line: d$
+- delete from cursor to end of word including last : de
 - bring to beginning of the word: 0
-- 
+- fix a whole line: U
+- redo: ctrl-r
 - set breakpoint: leader (space) + d + b
 - start debugging
+what is a vim register?
