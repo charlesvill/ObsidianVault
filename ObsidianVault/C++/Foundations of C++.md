@@ -291,3 +291,10 @@ X var; //variable var of type X
 var.m = 7; //assign values to its member values
 var.mf(9); //access and use the member functions
 ```
+
+- implementation vs interface:
+	- interface the public members that you can access for use throughout code base
+	- implementation the private members that the other members might use and benefit from but have no access to on the outside of the class
+		- *important to note that members are private by default unless otherwise defined as public:*
+- what if you need something public by default?
+	- a struct is public by default
