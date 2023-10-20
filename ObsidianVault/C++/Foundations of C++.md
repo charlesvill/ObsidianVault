@@ -263,4 +263,7 @@ const Date& default_date()
 - namespaces organize chunks of functions and classes into parts of a program 
 	- think namespace graphics_lib with classes and functions called Color, Shape, line, Text etc. 
 	- just another way to organize logical parts of your code. 
-- 
+- the real standard library way of using string is to name it out like this: `std::string h = "hello world"`
+	- also std::cout<< "hello world" << std::endl;
+- a shortended way of accessing member functions without being as verbose is by using a `using` declaration: 
+	- `using namespace std;`
