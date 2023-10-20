@@ -206,3 +206,13 @@ namespace logs(std::string message) {
 	- `string.find("")` takes in a string and will return the index position of the beginning of named string
 
 ### Ch 8 Technicalities functions
+- local functions nested into functions are not legal, dont do it
+- make sure to declare non return type functoins with a void return type:
+```cpp
+void increase_power(int level) { ... }
+```
+#### passing values
+- pass-by-value: give the function a copy of the value passed each time that the function is called a new copy is made
+	- this will NOT change the original value
+- pass-by-const-reference: instead of copying the value you can just pass the address of the original definition so you dont have to spend extra memory if thats not the purpose
+	- the decision to not passby value comes down to whether you need to mutate the values 
