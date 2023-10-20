@@ -247,3 +247,14 @@ constexpr Point scale(Point p) {return{xscale*p.x, yscale*p.y};};
 ```
 - where p is a struct you can see constexpr being passed and they must be constexpr inorder to be calculated at compilation when called. 
 	- things to note: it must not have side-effects aka modify values outside of it and obviously modify any of its arguments that are constexpr
+##### static const initialization
+- if we want evaluation at runtime, meaning using const instead of constexpr, but you still dont want to rerun a function multiple times to get a value, you can use a function that itself is a reference and use the `static` keyword seen here: 
+```cpp
+const Date& default_date()
+{
+	static const Date dd (...); //initialize dd first time we get here
+	return dd;
+}
+```
+	- note here the function is of return type Date struct and returns a reference to avoid copying and the static enables it to run once to generate and that's it
+- 
