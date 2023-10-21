@@ -274,13 +274,13 @@ const Date& default_date()
 	- this will bring all of the member functions from that namespace into the scope like cout, string, etc. 
 	- not recommned to use unless its on widely known namespaces like std bc the source of those member functions can start to get cloudly if over used. 
 ### Ch 9 Classes, etc. 
-#### User-defined types
+#### User-defined types: Classes and std library types
 - really the only built in types are char, int and double
 - things like strings, vectors, ostream, Tokens, are all *user-defined-types* even though strings, vectors come from the standard library, they still need a user declaration to use them which makes them user defined. 
 - What are the two kinds of user-defined types in c++?:
 	- classes 
 	- enumerations
-##### classes
+##### classes: beginning
 ```cpp
 class X{
 public:
@@ -311,3 +311,44 @@ struct Date{
 	- notice in the declaration the use of parentheses to delimit the initialization
 	- parenthesis are valid too but its c++ 98 (old)
 	- *note: you can also use parentheses for built in types: int x {7};* but its weird
+- defining members outside of the class:
+```cpp
+Date::Date(int yy, int mm, int dd)
+	:y{yy}, m{mm}, d{dd}
+{
+...
+}
+```
+- the weird syntax there is associating the values passed through the constructor with the actual member values in the class declaration. looks weird but I guess it works 
+	- you could also manually set them in the brackets like `y==yy` but then you initialize with default values and then assign them the value. kinda like int x; x = 3; the former takes out a step
+- *rule of thumb on defining member functions inside or outside the declaration:* 
+	- if the function is only a few lines long, but it inside. it could benefits from inline compilation which makes it faster especially if its used often
+	- longer functions should be defined outside, longer functions dont benefit from inline compilation 
+- Error handling: 
+```cpp
+void f(int x, int y)
+	try{
+		Date dxy{2004,04,03};
+		cout << dxy << '\n';
+		dxy.add_day(2);
+	} catch(Date::Invalid) {
+		error("invalid date");
+	}
+```
+- note the try catch block before the scoping block and the catch with a call back function inside of it? need to come back to this. 
+##### Enumerations
+a simple user defined type that is a list of constants that will enumerate over the value of the first ex: 
+```cpp
+enum class Month {
+  jan = 1, feb, march, april ...
+};
+```
+defined a type Month and when you initialize the first entry, the enum will automatically assign 2, 3, 4 etc for each consecutive value after that at compilation. 
+	- you cant change the value of them but you can access some of its member values with a function: 
+	` int(Month::jan)` to get the int value of it
+- these class type enumerators are known as scoped enumerators, but they also have: 
+- plain enumerators: 
+	- do not use the 'class' keyword
+	- you can access int values as it does an implicit conversion to int and does not require the use of class accessors as long as youre accessing in the same scope as where the plain enumerator was declared
+		- ex: `Month m = feb;` `int n = feb` or `int n = m` it's converting the Month type to int
+		- *want to be careful with plain enums bc of potential name collisions depending on where the scope is and so with the int type conversions. not as safe as enum classses*
