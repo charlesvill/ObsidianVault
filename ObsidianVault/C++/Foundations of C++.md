@@ -352,3 +352,5 @@ defined a type Month and when you initialize the first entry, the enum will auto
 	- you can access int values as it does an implicit conversion to int and does not require the use of class accessors as long as youre accessing in the same scope as where the plain enumerator was declared
 		- ex: `Month m = feb;` `int n = feb` or `int n = m` it's converting the Month type to int
 		- *want to be careful with plain enums bc of potential name collisions depending on where the scope is and so with the int type conversions. not as safe as enum classses*
+##### class constructors & default values
+- see 8.6.1 for default values in constructors 
