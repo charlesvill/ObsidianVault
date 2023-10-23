@@ -363,5 +363,21 @@ defined a type Month and when you initialize the first entry, the enum will auto
 ifstream- an istream for reading from a file
 ofstream - an ostream for writing to a file
 fstream - iostream for both reading and writing to a file
+
+```cpp
+cout << "please enter input file name";
+string iname;
+cin >> iname;
+ifstream ist {iname};
+if(!ist)error("can't open input file ", iname);
+```
+	ifstream - the type
+	ist is like cout or cin
+##### stream states
+- good() - operation succeeded
+- eof() - end of input
+- fail() - unexpected read like expecting an int and found an x
+- bad() - disk read error and serious problem
 - what would be the purpose in using the explicit fstream fs; fs.open("foo", ios_base::in) command?
 	- when you dont have scope to implicitly close your file, you would have to pair it with the fs.close()
+	- 
