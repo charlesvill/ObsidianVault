@@ -354,3 +354,12 @@ defined a type Month and when you initialize the first entry, the enum will auto
 		- *want to be careful with plain enums bc of potential name collisions depending on where the scope is and so with the int type conversions. not as safe as enum classses*
 ##### class constructors & default values
 - see 8.6.1 for default values in constructors 
+
+### I/O Streams 
+- what is a buffer? 
+	- data structure that the ostream uses to store your data you give it while trying to comminucate with the operating system buffer is important for performance 
+	- buffer is more visible in istream when youre inputting text, each key input is stored in the buffer until you hit enter 
+#### opening a file: 
+ifstream- an istream for reading from a file
+ofstream - an ostream for writing to a file
+fstream - iostream for both reading and writing to a file
