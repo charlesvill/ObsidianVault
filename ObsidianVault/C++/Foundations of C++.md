@@ -1,6 +1,10 @@
 #### parking lot: 
 - what is the difference between constexpr and const?
 	- a const initializiation can be deffered until runtime while a constexpr needs to be there compilation
+- What are user defined operators and what are the use cases for them?
+- what is operator overloading and what is the use case for them? and what is an example of how to do it?
+	- referrenced in ch 9 of PPP2
+- 
 ##### Getting started: 
 ```cpp
 #include<iostream>
