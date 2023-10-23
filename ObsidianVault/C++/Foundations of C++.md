@@ -363,3 +363,5 @@ defined a type Month and when you initialize the first entry, the enum will auto
 ifstream- an istream for reading from a file
 ofstream - an ostream for writing to a file
 fstream - iostream for both reading and writing to a file
+- what would be the purpose in using the explicit fstream fs; fs.open("foo", ios_base::in) command?
+	- when you dont have scope to implicitly close your file, you would have to pair it with the fs.close()
