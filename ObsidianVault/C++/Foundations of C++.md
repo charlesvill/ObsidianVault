@@ -385,3 +385,20 @@ if(!ist)error("can't open input file ", iname);
 - what would be the purpose in using the explicit fstream fs; fs.open("foo", ios_base::in) command?
 	- when you dont have scope to implicitly close your file, you would have to pair it with the fs.close()
 	- 
+##### writing out to a file: 
+```cpp
+void outputDemo::fileWriter() {
+  cout << "Enter output file name" << '\n';
+  string filename;
+  cin >> filename;
+  ofstream ost{filename};
+  if (!ost) error("cannot open file ,", filename);
+
+  for (int i = 0; i < data.size(); i++) {
+    ost << '(' << i << ')' << " " << data[i].xloc << '\n';
+  }
+  cout << "this should be done writing" << '\n';
+}
+```
+- note here the ofstream ost{filename} this establishes the operand ost that a few lines below it writes out using ost << with the content
+	- also note the error check (if no ost)throw error
