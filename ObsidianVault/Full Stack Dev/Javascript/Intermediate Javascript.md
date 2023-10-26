@@ -756,7 +756,16 @@ module.exports = {
 	 - run `npm install --save-dev webpack-dev-server` 
 - betweeen the configs in the package.json and the webpack.config.js and running the install for the web server, you'll be set to running in a node js environment. 
 - the next essential packages involve getting eslint set up in your project and prettier: 
-	- es lint:
+	- es lint: 
+		- run: `npm install --save-dev eslint eslint-config-airbnb`
+		- then `npx eslint --init`, check through necessary prompts select airbnb
+		- eslint on vs code should already be installed
+	- prettier: 
+		- run: `npm install --save-dev --save-exact prettier`
+		- then: `node --eval "fs.writeFileSync('.prettierrc','{}\n')"`
+		- create a .prettierignore and include files that it should ignore
+		- run this to make it compatible with eslint: `npm install --save-dev eslint-config-prettier`
+		- then in the eslintrc.json: make sure it has this line below the "extends: [ "airbnb"]" `"prettier"` with no comma after if its the last extends you have.
 
 ##### extra webpack features: 
 
