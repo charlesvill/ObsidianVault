@@ -712,8 +712,54 @@ Source maps, what are they and what are they good for?
 	- make the directory where the project will be
 	- use `npm init -y` to initialize the npm packages
 	- use `npm install webpack webpack-cli --save-dev` to install necessary standard webpack modules
- -  set up npm --watch so you'll auto build on changes: 
- - set up live server by first : 
+- create a webpack.config.js file to handle custom configs
+	- copy this to make sure your webpack.config looks like this:
+```javascript
+const path = require('path');
+
+module.exports = {
+	mode: 'development',
+	entry: './src/index.js',
+	devtool: 'inline-source-map',
+	devServer: {
+		static: './dist',
+	},
+	output: {
+		filename: 'main.js',
+		path: path.resolve(__dirname, 'dist'),
+	},
+}
+```
+ -  open up the package.json and make sure it looks like this: 
+```json
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Demonstration of async and await api fetching with front end concepts applied",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "author": "Charles Villalpando",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
+```
+ - set up live server:
+	 - run `npm install --save-dev webpack-dev-server` 
+- betweeen the configs in the package.json and the webpack.config.js and running the install for the web server, you'll be set to running in a node js environment. 
+- the next essential packages involve getting eslint set up in your project and prettier: 
+	- es lint:
+
+##### extra webpack features: 
+
  - bundling more than one JS script together: 
  - bundling your css: 
 		- place your style.css in your /src folder
