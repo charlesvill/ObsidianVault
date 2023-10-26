@@ -1188,7 +1188,7 @@ basically a way of handling async events that are expressed more linearly and ea
 	async function f() {
 		try {
 			let response = await fetch(url);
-			let user = await.response.json();
+			let user = await response.json();
 		} catch(err) {
 			alert(err);
 		}
