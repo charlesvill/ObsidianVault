@@ -7,7 +7,7 @@
 -[ ] what does it mean to be hoisted? 
 	- understanding roughly is that it's really easy to attempt the call of a function prematurely
 - what are generator functions used for ?
-- what are the functions declarations that will execute immediately and which are the ones that need be called or invoked before they're actually executed? is there a specific pattern in the ones that execute immediately that one should be aware of? for example in the call back function of an eventhandler, you cannot but the function call itself because it will get called before the actual event is triggered. perhaps its because it requires a call back function that it will invoke on compilation instead of trigger event. a call backfunction initializes itself as a statement but does not invoke its contents while just putting the function name could be triggering it to actually load the contents instead of just initializing itself. 
+- [ ] what are the functions declarations that will execute immediately and which are the ones that need be called or invoked before they're actually executed? is there a specific pattern in the ones that execute immediately that one should be aware of? for example in the call back function of an eventhandler, you cannot but the function call itself because it will get called before the actual event is triggered. perhaps its because it requires a call back function that it will invoke on compilation instead of trigger event. a call backfunction initializes itself as a statement but does not invoke its contents while just putting the function name could be triggering it to actually load the contents instead of just initializing itself. 
 - on performance, see chapter 5 and 6 of you dont know javascript for how to make javascript performant: https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch3.md
 
 #### Review on javascript fundamentals: 
@@ -397,9 +397,8 @@ function createPlayer (name, level) {
 ```
 - notice here that things being returned are those things that you might anticipate having to access. anything that just works in the side lines are private scoped and are not returned
 - inheritance with factories
-	- just like constructors with prototypes, you can copy over functions and values from other factory functions to use in another using the `const {sayName} = Person(name);` where the {sayName} is created and set equal to Person(name) . this is using the destructor syntax as seen here [[#Parking lot for review in foundational JS]] where its talking about the spread operator
 	- this is how you would extend the functionality of your objects again notce that createPlayer is importing the functionallity of createUser by using the destructor. also note that we still must return the functions from createUser to use them as well.
-	-
+	- this method of destructoring can be seen in [[#Parking lot for review in foundational JS]]
 - more on differnet patterns for inheritance in JS: https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9
 	- also talks about compositional inheritance being better than classes because classes force you to use inheritance which can cause issues when you want to implement features into say a penguin object that doesnt exactly conform in the right way with the parent class bird, because penguins fly. 
 
