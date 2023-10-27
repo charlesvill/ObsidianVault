@@ -37,13 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/CS50/C.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md"
               }
             }
           },
@@ -190,12 +191,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "932f041ab2330c8d",
+  "active": "dea779a84151e9ca",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
-    "ObsidianVault/C++/Foundations of C++.md",
-    "NVIM notes.md",
     "ObsidianVault/CS50/C.md",
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "NVIM notes.md",
+    "ObsidianVault/C++/Foundations of C++.md",
     "Untitled.md",
     "Untitled 1.md",
     "Untitled 2.md",

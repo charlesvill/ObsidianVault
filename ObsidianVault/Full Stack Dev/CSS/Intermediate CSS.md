@@ -620,7 +620,7 @@ Form validation gives a precheck before user submits data to the server to prote
 - `flex-wrap` was useful for having items flow over to either the next row or the next column
 - grid layouts can make evenly sizing items much easier compared to flex
 - video resource on when to use flexbox vs grid https://www.youtube.com/watch?v=hs3piaN4b5I
-Getting started with grid:
+#### getting started on grid:
 in a div container with 4 items, you can place this css on the container to declare it a grid:
 ```css
 	.containter{
