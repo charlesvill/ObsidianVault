@@ -166,6 +166,8 @@ output:
 		- uses { key: value } telling the placement of the variables that are initialized in `for` `key, value` the comma separated is important because it denotes the actual key value distinction to the computer
 		- uses line.items() to search through the items and if the key variable is not 'name' its added as a new key in the position noted on the line
 	- also notice the entry object with two objects : name & its value , dna & the dict we created right before. 
+	- what is the pu4rpose of the with keyword here?
+		- this will implicate that we want the file to close automatically once we are done with it
 ##### super cool libraries to try out from python
 - import pyttsx3 
 ```python
@@ -187,3 +189,38 @@ img.save("qr.png", "PNG")
 
 os.system("open qr.png")
 ```
+
+
+#### SQL notes with file reading CSV
+```python
+import csv with open("favites.csv", "r") as file:
+	reader = csv.reader(file)
+	next(reader)
+	for row in reader:
+		favorite = row[1]
+		print(favorite)
+```
+- the  part there next(reader) skips the first header line
+	- the way around that is to use the dictionary reader where the first line, the header and figures out what the other columns are called. 
+	- it will then create dicts instead of lists 
+##### how we might count this
+- we could be creating variables and initialize them as zero and create conditional logic that counts up each of the variables if it sees one of them. but thats a bit pedantic..
+- better ways to do this: 
+```python
+for row in reader: 
+	favorite = row["language"]
+	if favorite in counts:
+		counts += 1
+	else:
+		counts[favorite] = 1
+for favorite in counts:
+	print(f"{favorite}: {count}")
+```
+- how to sort these right hand column items?
+	- `for row in sorted(counts, key=counts.get)`
+- instead of checking for each items, you could also use the counter class methods
+- what is a flat file database? all the data is stored as text files
+- what is relatioal database? not just one sheet, but can be multiple sheets that have some relations whth one another. 
+	- relational database has 4 basic functions Create, insert, select, 
+- a sheet in a rdatabase is called a table: `CREATE TABLE table`
+- we will be using sqlite3
