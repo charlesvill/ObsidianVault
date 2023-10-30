@@ -28,9 +28,11 @@ why use functional programming?
 - for the most the same except that instead of a float for a decimal, you would use a double. 
 - just like in C the different types take up specific amount of space: 
 	- int - 4 bytes
+		 - by default will truncate a double or float 
 	- char - 1 byte
 	- bool - 1 byte
 	- double - 8 bytes
+		- you can use the cmath header function `ceil()` that will let you round up for an int
 	- string - ??? bytes
 what are arrays called in c++?
 - vectors
