@@ -224,3 +224,19 @@ for favorite in counts:
 	- relational database has 4 basic functions Create, insert, select, 
 - a sheet in a rdatabase is called a table: `CREATE TABLE table`
 - we will be using sqlite3
+
+##### getting started with sql
+- create a sql database by running `sqlite3 favorites.db`
+- type .mode csv to put into csv mode and then 
+#### inserting rows into SQL
+	`INSERT INTO favorites (language, problem) VALUES('SQL', 'Fiftyville')`
+
+##### deleting data from Sql
+		`sqlite> DELETE FROM favorites WHERE Timestamp IS NULL;`
+		- NEVER DO 'sqlite> DELETE FROM favorites' 
+- the above line would delete everything
+
+##### updating the table
+`UPDATE favorites SET language = 'SQL', problem = `
+
+what is 
