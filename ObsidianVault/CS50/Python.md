@@ -239,4 +239,15 @@ for favorite in counts:
 ##### updating the table
 `UPDATE favorites SET language = 'SQL', problem = `
 
-what is 
+data types in sql: 
+blob- 
+integer- 
+numeric- 
+real-
+text- 
+keywords: 
+NOT NULL
+UNIQUE
+PRIMARY KEY - a numeric sequence  that identifies a specific table 
+FOREIGN KEY - presence of primary keys in a different table that is not the specific table it identifies like the table that connects the show id with the actor id
+- the presence of primary and foreign keys is what allows us to connect relationships between these tables. aka relational databases
