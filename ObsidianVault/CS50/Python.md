@@ -240,14 +240,26 @@ for favorite in counts:
 `UPDATE favorites SET language = 'SQL', problem = `
 
 data types in sql: 
-blob- 
-integer- 
-numeric- 
-real-
-text- 
+blob- binary large object, some file of 0s and 1s
+integer- just integers proper
+numeric- dates and times, numbers but not necessarily numbers
+real- decimal points in them 
+text- strings
+
+
 keywords: 
 NOT NULL
 UNIQUE
 PRIMARY KEY - a numeric sequence  that identifies a specific table 
 FOREIGN KEY - presence of primary keys in a different table that is not the specific table it identifies like the table that connects the show id with the actor id
 - the presence of primary and foreign keys is what allows us to connect relationships between these tables. aka relational databases
+JOIN - 
+
+- what does it look like to link two databases together?
+	- `FOREIGN KEY(show_id) REFERENCES shows(id)` 
+		- this says that in the current table the datatype show_id is a primary key in the shows id which is a different table and it connects them
+- what is a nested query?
+	- with two tables like ratings and shows, if you want the show title for the specific rating query, you can nest a query to get custom results
+- what does JOIN do and how do you use it?
+	- allows you to create a temporary table that merges at a specific point and displays all the information. 
+	- joins at the point where they are the same like show id and show_id
