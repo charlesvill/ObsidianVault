@@ -800,6 +800,10 @@ module: {
 - 
 - how to view page on live server through npm 
 	- when compiling, if a webpack.config.js is present, the `webpack` command will pick it by default
+ - Publishing your webpack page to github: 
+	 - see the link for reference: 
+		 - first publish the page the same way you normally would and then run this command: 
+			- `git subtree push --prefix dist origin gh-pages`
 #### how to create your own NPM package to import to your project later
 1. start with creating the github repository and cloning it locally to your project folder
 2.  run `npm init --scope=@charlesvill` to scope your packages (so you can avoid naming collisions)
