@@ -804,6 +804,8 @@ module: {
 	 - see the link for reference: 
 		 - first publish the page the same way you normally would and then run this command: 
 			- `git subtree push --prefix dist origin gh-pages`
+			- then in your repo, change the branch to gh-pages
+			- make sure you ran npm run build before you publish!
 #### how to create your own NPM package to import to your project later
 1. start with creating the github repository and cloning it locally to your project folder
 2.  run `npm init --scope=@charlesvill` to scope your packages (so you can avoid naming collisions)
