@@ -1202,3 +1202,25 @@ f();
 ```
 	- note here how the await fetching wrapped in a try.. catch block that will on failure, send the alert to the catch block for either the user or the response awaits. 
 - good video on await and aysnc for demonstrations and eror handling : https://www.youtube.com/watch?v=9YkUCxvaLEk&ab_channel=dotconferences also talks about error with using express ******* 
+
+### A bit of Computer Science
+
+#### Recursion
+- when is recursion best used for?
+	- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
