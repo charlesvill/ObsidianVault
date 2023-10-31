@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md"
               }
             }
           },
@@ -168,6 +168,7 @@
   },
   "active": "fa374e9709205299",
   "lastOpenFiles": [
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "Regular expressions.md",
     "ObsidianVault/CS50/SQL.md",
@@ -177,7 +178,6 @@
     "ObsidianVault/CS50/CS 50.canvas",
     "NVIM notes.md",
     "ObsidianVault/C++/Foundations of C++.md",
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Untitled 1.md",
     "Untitled 2.md",
     "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
