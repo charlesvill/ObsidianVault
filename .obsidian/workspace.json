@@ -4,36 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "5a79dacbc90b6ddf",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "51aa7339992813b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ObsidianVault/CS50/Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dea779a84151e9ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "3fc710fdc9458797",
         "type": "tabs",
         "children": [
@@ -43,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md"
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
               }
             }
           },
@@ -198,8 +168,8 @@
   },
   "active": "fa374e9709205299",
   "lastOpenFiles": [
-    "Regular expressions.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+    "Regular expressions.md",
     "ObsidianVault/CS50/SQL.md",
     "ObsidianVault/CS50/Python.md",
     "ObsidianVault/CS50/C.md",
