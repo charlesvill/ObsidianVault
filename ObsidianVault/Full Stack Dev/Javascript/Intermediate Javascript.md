@@ -1207,8 +1207,12 @@ f();
 
 #### Recursion
 - when is recursion best used for?
-	- 
-
+	- to iterate over an object with departments that need to sum all the salaries. 
+	- using for loops would be tedious and possibly error prone, try this: 
+![[Pasted image 20231031154410.png]]
+	- here we can see the object company has some complicated nested arrays and the sort and the recursive function here will apply a check for if array or if its just key value pairs
+	- notice that the recursive call is focues on traversing deeping into the recursion depth to find the base case
+	- source: https://javascript.info/recursion
 
 
 
