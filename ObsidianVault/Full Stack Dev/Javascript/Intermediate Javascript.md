@@ -11,6 +11,23 @@
 - on performance, see chapter 5 and 6 of you dont know javascript for how to make javascript performant: https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch3.md
 
 #### Review on javascript fundamentals: 
+
+##### string methods: 
+- splitting a string into array of sub strings at a character(s): `string.split(' ')` 
+
+##### array methods: 
+- length of an array: `arr.length`
+- remove the first element of array: `arr.shift()` if you set a variable equal to it, it will return the removed element.
+- removing, replacing, adding elements to array: `arr.splice()` takes a few arguments but the what it does: 
+	- `splice(start, deleteCount, item1, item2, /* …, */ itemN)` anything after second parameter are just things to add
+- Appending to an Array: 
+	- `arr.push(objectToPush);` no need to put brackets to the array name.
+- find in an array a specific element
+	- `arr.some((item) => item.title === newBook.title);` 
+		- this will return a true/false if it finds in the array matching 
+- joing elements of an array to a string: 
+	- arr = ["hello", "world"] `arr.join(", ");` this will result in Hello, world
+		- if there is only one element in the array then it will simply output the one element without the delimiter
 - object/array destructuring - why its useful and how to use it and using the spread operator
 	- destructuring takes a longer collection of data say a object or an array and parses it into smaller chunks
 	- `const arr = [1, 2, 3, 4, 5, 6]; const [a,,c, ...rest] = arr`
@@ -58,16 +75,6 @@ printUser(personOne)
 - changing the inner contents of the element
 - how to find the children of a target element
 #### Javascript Array methods
-- Appending to an Array: 
-	- `arr.push(objectToPush);` no need to put brackets to the array name.
-- removing an element or replacing to array: 
-	- `arr.splice(indextoremove,howmanyindextoremove)` 
-- find in an array a specific element
-	- `arr.some((item) => item.title === newBook.title);` 
-		- this will return a true/false if it finds in the array matching 
-- joing elements of an array to a string: 
-	- arr = ["hello", "world"] `arr.join(", ");` this will result in Hello, world
-		- if there is only one element in the array then it will simply output the one element without the delimiter
 
 #### Creating Data-attributes with JS
 - you can create a specific index number for an element that was dynamically created using javascript with data-atrributes with the following: `elementVar.dataset.index` 
