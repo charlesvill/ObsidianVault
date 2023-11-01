@@ -4,6 +4,9 @@
 	- good website for best practices on application design principles: https://12factor.net/dependencies
 	- JS design standards: AirBnb style guide: https://github.com/airbnb/javascript
 ### Parking lot for review in foundational JS
+- I fucking suck at recursion. need to come back to this assignment: https://www.codingame.com/playgrounds/5422/js-interview-prep-recursion
+	- refer to the think like programmer book section on recursion 
+	- the gap seems to be limited perspective on options I have to traverse through objects recursively devell
 -[ ] what does it mean to be hoisted? 
 	- understanding roughly is that it's really easy to attempt the call of a function prematurely
 - what are generator functions used for ?
