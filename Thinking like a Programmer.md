@@ -4,3 +4,8 @@
 	- people percieve that they didnt think about a possible operation or tool that could have been used or applied in the situation
 	- by writing out all possible actions and tools we can find solutions 
 	- restating the problem in more formal terms can aid with this
+		- what does it mean to restate the problem in more formal ways?
+			- list out possible operations in more generic terms:
+				- with the fox goose, corn ex, instead of (take goose across river) think(row across each shore) and (if boat empty, load something to take across), and (if boat full, unload something)
+				- essentially, keep the focus on thinking about the problem, not the solution. like discussing the problem with another peer, rubber ducking as coined in CS50
+			- 
