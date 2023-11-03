@@ -31,6 +31,7 @@
 - joing elements of an array to a string: 
 	- arr = ["hello", "world"] `arr.join(", ");` this will result in Hello, world
 		- if there is only one element in the array then it will simply output the one element without the delimiter
+- create a shallow copy of an array with elements that pass the test 
 - object/array destructuring - why its useful and how to use it and using the spread operator
 	- destructuring takes a longer collection of data say a object or an array and parses it into smaller chunks
 	- `const arr = [1, 2, 3, 4, 5, 6]; const [a,,c, ...rest] = arr`
