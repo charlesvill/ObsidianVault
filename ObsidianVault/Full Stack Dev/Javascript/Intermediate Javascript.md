@@ -1256,6 +1256,8 @@ function mergeSort(arr) {
 console.log(mergeSort([7,2, 1, 5, 3, 0]));
 ```
 - notice here the important compenent in merge sort is sorting one half and merging. we find what each half is by setting the half variable equal to the recursive call that will descend and divide the array completely till its only one. and the many branches it creates will all unwind and return pieces of array that will continue to the steps of merging which then returns the merged piece of array to the higher level. very much looks like branches
+- more on merge sort see [[C#Recursion]]
+- 
 
 
 
