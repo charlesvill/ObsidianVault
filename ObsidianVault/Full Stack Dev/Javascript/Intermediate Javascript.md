@@ -1224,6 +1224,38 @@ f();
 	- here we can see the object company has some complicated nested arrays and the sort and the recursive function here will apply a check for if array or if its just key value pairs
 	- notice that the recursive call is focues on traversing deeping into the recursion depth to find the base case
 	- source: https://javascript.info/recursion
+- Another take after a couple days working with recursion: 
+	- one of the main themes of recursion is 'divide and conquer' wherein you have a problem either a data set or some complexity built into the function that needs to be simplified. ex: splitting array to a single element
+	- by dividing and conquering via recurison you are essentially creating branches with each call added to the stack that descends furhter until you've reached the single indivisible element to work with. then
+	- as you reach the base case, it 'unravels' itself  up the stack chain. typically the recursive call will be assigned to a variable or a return value where the evaluation of that expression will be used for something as it continues to unravel itself
+	- ex: 
+```javascript
+function mergeSort(arr) {
+  const len = arr.length;
+  if (len < 2) {
+    return arr;
+  }
+  const mIndex = Math.floor(arr.length / 2);
+  const lArr = mergeSort(arr.slice(0, mIndex));
+  const rArr = mergeSort(arr.slice(mIndex));
+  let mArr = [];
+
+  while (lArr.length > 0 && rArr.length > 0) {
+    if (lArr[0] < rArr[0]) {
+      mArr.push(lArr[0]);
+      lArr.shift();
+    } else {
+      mArr.push(rArr[0]);
+      rArr.shift();
+    }
+  }
+  return lArr.length > 0 ? [...mArr, ...lArr] : [...mArr, ...rArr];
+
+}
+
+console.log(mergeSort([7,2, 1, 5, 3, 0]));
+```
+- notice here the important compenent in merge sort is sorting one half and merging. we find what each half is by setting the half variable equal to the recursive call that will descend and divide the array completely till its only one. and the many branches it creates will all unwind and return pieces of array that will continue to the steps of merging which then returns the merged piece of array to the higher level. very much looks like branches
 
 
 
