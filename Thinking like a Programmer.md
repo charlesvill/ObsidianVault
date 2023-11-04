@@ -8,4 +8,4 @@
 			- list out possible operations in more generic terms:
 				- with the fox goose, corn ex, instead of (take goose across river) think(row across each shore) and (if boat empty, load something to take across), and (if boat full, unload something)
 				- essentially, keep the focus on thinking about the problem, not the solution. like discussing the problem with another peer, rubber ducking as coined in CS50
-			- 
+	- lessons from tile puzzle: a larger problem made easier by breaking it up into smaller problems

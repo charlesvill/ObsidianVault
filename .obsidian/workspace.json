@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Regular expressions.md",
+                "file": "Thinking like a Programmer.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thinking like a Programmer.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,9 +177,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b2cbb7521461ed45",
+  "active": "d14da87fb4eadd80",
   "lastOpenFiles": [
     "Regular expressions.md",
+    "ObsidianVault/C++/Foundations of C++.md",
     "Thinking like a Programmer.md",
     "Pasted image 20231031154410.png",
     "Pasted image 20230907130206.png",
@@ -195,7 +195,6 @@
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/CS50/C.md",
-    "ObsidianVault/C++/Foundations of C++.md",
     "ObsidianVault/CS50/SQL.md",
     "ObsidianVault/CS50/Python.md",
     "Untitled",
