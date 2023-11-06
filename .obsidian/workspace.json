@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -179,9 +180,9 @@
   },
   "active": "d14da87fb4eadd80",
   "lastOpenFiles": [
-    "Regular expressions.md",
     "ObsidianVault/C++/Foundations of C++.md",
     "Thinking like a Programmer.md",
+    "Regular expressions.md",
     "Pasted image 20231031154410.png",
     "Pasted image 20230907130206.png",
     "Pasted image 20230907130203.png",

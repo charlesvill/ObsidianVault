@@ -19,3 +19,22 @@
 - many programmers skip this because it doesnt have to do with programming a solution
 	- this was because it wasnt part of the plan, so thus, restating the problem should be the first step of your plan
 - helps to think about the problem in your and reason about what its asking and illuminates things about it you might not have if you just jumped in
+##### divide the problem 
+- after understanding the problem boil down the problem into either steps or facets of the problem that might have to come together at some point
+- this also includes listing out what skills would be needed to solve the problem
+- chunk it into smaller pieces that require a more trivial solution
+##### start with what you know
+- if you already know how to set up the skeleton or some parts of it, start with that
+- this also includes applying what you know and how you could use it before researching a technique or looking for a solution online
+	- thinking using with whats in your head also goes with having a plan
+##### reduce the problem
+- add or remove constraints to create a micro controlled enviroment to learn more about a part of the problem that could provide insight or even the solution to the problem
+##### look for analogies
+- think of how the problem could be related to another problem that you have solved, or even how its different.. what components make this problem different and what make them similar.. illuminates a focal point perhaps
+- avoid relying on code found outside if you could not write that code yourself.. will not count towards a solution you can add to your bank of potential future analogies 
+##### experiment
+- does not involve guessing, it involves taking a small piece perhaps of the problem and hypothesizing a pattern of behavior and creating a micro environemnt where you can test that to learn more about it,
+- includes the use of debuggers
+##### dont get frustrated
+- instead of stubborningly persisting on a problem when already frustrated with, take a break by either going for a walk or working on another problem that isnt related to that one while you cool off
+- 
