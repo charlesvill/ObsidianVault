@@ -34,6 +34,9 @@ why use functional programming?
 	- double - 8 bytes
 		- you can use the cmath header function `ceil()` that will let you round up for an int
 	- string - ??? bytes
+ - type conversion: 
+	 - for char to int: `char input = cin.get()// int digit = input - '0';`
+	  - for int to char:  
 what are arrays called in c++?
 - vectors
 - they also have arrays but there are some differences: 
