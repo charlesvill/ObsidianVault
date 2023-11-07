@@ -1304,6 +1304,17 @@ big cheat sheet on time complexity: https://www.bigocheatsheet.com/
 ##### finding big O of your functions
 ![[Pasted image 20231107101642.png]]
 more on how to determine the time complexity of the function: https://www.sahinarslan.tech/posts/step-by-step-big-o-complexity-analysis-guide-using-javascript
+#### space complexity
+- similar to how time complexity is determined but have to consider to what extent variables are being reproduced for your code. for example, are you reproducing something for each input? as many are, most are space complexity of about O(n)
+- What is memoization?
+	- is an optimization technique where you would cache the results of an expensive function calls to a pure function #NeedMoreHelp and then returns the cached result when it is needed again.
+	- sometimes this code though saving memory could be difficult to read and its benefits have to be measured against the drawbacks of readability
+- How is space comlexity defined?
+	- space complexity is total space taken with respect to the input size. 
+	- includes the auxiliary space and the space used by input
+- what is Auxiliary space?
+	- extra or temporary space used by the algorithm
+	- ignores the input size but accounts for program calls inside of the function
 
 
 
