@@ -1279,6 +1279,19 @@ review:
 	- example is iterating through the whole array
 - O(n log n) - behaves like log n but an added algorithim of O(n)
 	- example of this is merge sort bc its log n for dividing array recursively but then it needs to merge by touching each element in the array at some point. 
+- O(n2) quadratic time - for each item you need n times steps
+	- when you put a loop inside of a loop essentially for each item you need to do the n steps n x n
+- O(n3) - you get it at this point
+- O(2n) really slow, i think you gotta try really hard to be this slow
+#### space and time complexity with build in js methods
+-time complexity - the runtime of the algorithm as the data set grows 
+- `arr.push()` and `arr.pop()` both constant time bc just adding element at the end and a single index. does not take longer given a larger data set
+- `arr.unshift()` however is linear time bc it needs to iterate through each element and reindex it
+##### logarithmic 
+simple example of logs: 
+	Log2(16) = x 
+		`logarithm is the x, which is the power the base, 2, needs to be raised to get to the number (16)`
+		- in this case, 4 bc 2x2x2x2. 
 
 
 
