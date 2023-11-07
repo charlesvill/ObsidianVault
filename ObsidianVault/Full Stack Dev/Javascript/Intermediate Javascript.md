@@ -1258,7 +1258,27 @@ console.log(mergeSort([7,2, 1, 5, 3, 0]));
 - notice here the important compenent in merge sort is sorting one half and merging. we find what each half is by setting the half variable equal to the recursive call that will descend and divide the array completely till its only one. and the many branches it creates will all unwind and return pieces of array that will continue to the steps of merging which then returns the merged piece of array to the higher level. very much looks like branches
 - more on merge sort see [[C#Recursion]]
 #### Time Complexity
-
+also seen in cs50[[C#Algorithms]]
+review: 
+- theta time is the average between the upper bound and the lower bound 
+- big O notation - the upper bound or the worst case scenario
+- omega notation - the best case scenario
+- in big O notation, the order from fastest to slowest:
+	- - O(1) - Constant Complexity
+	- O(log N) - Logarithmic Complexity
+	- O(N) - Linear Complexity
+	- O(N log N) - N x log N Complexity
+	- O(n²) - Quadratic Complexity
+	- O(n³) - Cubic Complexity
+	- O(2ⁿ) - Exponential Complexity
+	- O(N!) - Factorial Complexity
+- most important thing for determining the big O time is considering how the speed of the algorithm changes as the data set will change. so if the steps are the same for a data set of 5 as the set of 5000 thats constant time of O(1) which means its fixed 
+- O(log N) means that for each doubling of the data set, it will gain one other step
+	- exmaples include binary search, with data set of 1, 1 step. 2, 2 steps. 4, 3 steps. 8, 4steps, 16, 5 steps etc. 
+- O(n) linear time- means that the steps will grow proportionally with the number of elements in the data set
+	- example is iterating through the whole array
+- O(n log n) - behaves like log n but an added algorithim of O(n)
+	- example of this is merge sort bc its log n for dividing array recursively but then it needs to merge by touching each element in the array at some point. 
 
 
 
