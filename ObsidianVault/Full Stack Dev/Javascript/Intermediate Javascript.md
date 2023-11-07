@@ -1314,7 +1314,7 @@ more on how to determine the time complexity of the function: https://www.sahina
 	- includes the auxiliary space and the space used by input
 - what is Auxiliary space?
 	- extra or temporary space used by the algorithm
-	- ignores the input size but accounts for program calls inside of the function
+		- ignores the input size but accounts for program calls inside of the functio
 
 
 
