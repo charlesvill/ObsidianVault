@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/CS50/C.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/CS50/C.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/CS50/C.md",
+                "file": "ObsidianVault/C++/Foundations of C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/CS50/C.md"
+                "file": "ObsidianVault/C++/Foundations of C++.md"
               }
             }
           },
@@ -181,9 +181,9 @@
   },
   "active": "a7ad3882a4134186",
   "lastOpenFiles": [
+    "ObsidianVault/CS50/C.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Pasted image 20231107101642.png",
-    "ObsidianVault/CS50/C.md",
     "Thinking like a Programmer.md",
     "ObsidianVault/C++/Foundations of C++.md",
     "Regular expressions.md",

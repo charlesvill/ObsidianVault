@@ -52,7 +52,14 @@ vector<int> v = {5, 7,9, 4, 6, 8};
 sorting a vector: 
 - you can use the method sort() to sort lexigraphically. however this is a mutable function member of vector. 
 	- `vector<double> temps;  sort(temps);` make sure the vector goes in there. it does not attach with dot notaition to anything. 
-#### functions in C++ 
+##### loops in C++
+- you have the options of:
+	- do.. while()
+	- for ()
+	- for (variable : range)
+	 - while()
+- you can use `continue;` to skip one iterative cycle and `break` to break out of the loop entirely. 
+##### functions in C++ 
 - like C, you can declare a function after the main function however if you try to invoke it before it has been called you will need to place the function prototype or 'forward delcaration' before the main function.
 ##### switch statements
 - for switch statements, if you wish to initialize a variable, you need to put it inside of a block. go figure. straight from the words of Bjarne himself. didnt give much of a reason besides the compiler said so. 
