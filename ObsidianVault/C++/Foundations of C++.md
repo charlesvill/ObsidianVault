@@ -36,7 +36,7 @@ why use functional programming?
 	- string - ??? bytes
  - type conversion: 
 	 - for char to int: `char input = cin.get()// int digit = input - '0';`
-	  - for int to char:  
+	  - for int to char:  `char character = input + 'a';`
 what are arrays called in c++?
 - vectors
 - they also have arrays but there are some differences: 
