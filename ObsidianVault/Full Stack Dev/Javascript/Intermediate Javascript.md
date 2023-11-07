@@ -1283,17 +1283,27 @@ review:
 	- when you put a loop inside of a loop essentially for each item you need to do the n steps n x n
 - O(n3) - you get it at this point
 - O(2n) really slow, i think you gotta try really hard to be this slow
-#### space and time complexity with build in js methods
+##### space and time complexity with build in js methods
 -time complexity - the runtime of the algorithm as the data set grows 
 - `arr.push()` and `arr.pop()` both constant time bc just adding element at the end and a single index. does not take longer given a larger data set
 - `arr.unshift()` however is linear time bc it needs to iterate through each element and reindex it
 ##### logarithmic 
 simple example of logs: 
-	Log2(16) = x 
+	Log(16) = x 
 		`logarithm is the x, which is the power the base, 2, needs to be raised to get to the number (16)`
 		- in this case, 4 bc 2x2x2x2. 
+- O(log n)
+	- when looking at algorithms the O(log n) you have to double the input size in order to get the steps to increase by 1. very fast
+	- examples of O(log n ) time are balanced binary trees and binary search of sorted lists
+- linearithmic - O (n log n)
+	- behaves linearly but nested in it has a logarithmic iteration that only adds a step per doubling datasets
+- Factorial time O(n!)
+	- example is the traveling salesman problem that checks all possible cities and routes and returns the distance shortes, bruteforce method
+big cheat sheet on time complexity: https://www.bigocheatsheet.com/
 
-
+##### finding big O of your functions
+![[Pasted image 20231107101642.png]]
+more on how to determine the time complexity of the function: https://www.sahinarslan.tech/posts/step-by-step-big-o-complexity-analysis-guide-using-javascript
 
 
 
