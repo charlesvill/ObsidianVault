@@ -37,4 +37,8 @@
 - includes the use of debuggers
 ##### dont get frustrated
 - instead of stubborningly persisting on a problem when already frustrated with, take a break by either going for a walk or working on another problem that isnt related to that one while you cool off
-- 
+
+### Ch 2 pure puzzles
+
+#### the importance of code reuse: 
+- this builds on [[#look for analogies]] but always store your code solutions in a way that would be accessible in the future because it will save from having to relearn something. 
