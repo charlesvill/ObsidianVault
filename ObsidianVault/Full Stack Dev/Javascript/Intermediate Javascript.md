@@ -1321,6 +1321,8 @@ more on how to determine the time complexity of the function: https://www.sahina
 - questions to consider: 
 	- what is breadth first search and depth first search and when should you use one over the other?
 	- what are the best ways to implement stacks and queues in Js?
+- making a binary search tree from an unordered list:
+	- 
 
 
 
