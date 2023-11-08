@@ -335,6 +335,11 @@ int main() {
 
 ```
 - Constructor route: 
+	- most of the time your classes will need a constructor to have an instance of this class object. 
+		- you can have a constructor that initializes variables or you have have a blank constructor like this: 
+			- `Date(){};` if you dont need to initialize any variables and you just want to create an instance of the class and its member values and functions. 
+				- if you dont use initializers you can declare a new instance of your class by running 
+				- `Date date{};` 
 ```cpp
 struct Date{
 	int y, m, d;
