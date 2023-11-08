@@ -317,6 +317,8 @@ var.mf(9); //access and use the member functions
 - Class Members && constructors:
 - Non constructor direction: 
 	- for a class you will need a constructor to create an instance of that object in your code. however if you just want to access functions from a class you can also declare the functions static:
+		- note*you will not be able to access non-static members*
+		- the solution to this would be to 
 ```cpp
 class MyClass {
 public:
@@ -354,6 +356,9 @@ Date::Date(int yy, int mm, int dd)
 ```
 - the weird syntax there is associating the values passed through the constructor with the actual member values in the class declaration. looks weird but I guess it works 
 	- you could also manually set them in the brackets like `y==yy` but then you initialize with default values and then assign them the value. kinda like int x; x = 3; the former takes out a step
+- Accessing member values on member functions defined outside: 
+	- private values: 
+		- 
 - *rule of thumb on defining member functions inside or outside the declaration:* 
 	- if the function is only a few lines long, but it inside. it could benefits from inline compilation which makes it faster especially if its used often
 	- longer functions should be defined outside, longer functions dont benefit from inline compilation 
