@@ -1215,7 +1215,7 @@ f();
 - good video on await and aysnc for demonstrations and eror handling : https://www.youtube.com/watch?v=9YkUCxvaLEk&ab_channel=dotconferences also talks about error with using express ******* 
 
 ### A bit of Computer Science
-
+valuable course on algorithms: https://www.coursera.org/specializations/algorithms from stanford!!
 #### Recursion
 - when is recursion best used for?
 	- to iterate over an object with departments that need to sum all the salaries. 
@@ -1328,11 +1328,13 @@ more on how to determine the time complexity of the function: https://www.sahina
 		- refers to traversal through the nodes in the tree, you would first visit each node associated with a depth level before you descendd another level
 		- something would need to keep memory of the previous levels other branch so that it could go up and descend to the level analyzing but on the righ side to continue seeing all of them
 	- depth first: 
+		- video showing this in practice: https://www.youtube.com/watch?v=gm8DUJJhmY4&ab_channel=mycodeschool
 		- there is three kinds: preorder, inorder, post order
 		- preorder refers to descending recursively the left most branches all the way down and each level down reading the value before descending another level
 		- inorder descends a branch and reads the nodes value once it finishes left branch
 		- post order descends a branch and reads both the descending left and right branches and then reads the data right before it asends back up
 - Level Order / breadth first traversal: 
+	- excellent video explaining: for c++: https://www.youtube.com/watch?v=86g8jAQug04&ab_channel=mycodeschool 
 	- using the queue method:
 		- on the root node adds the current node on the stack to be read
 		- reads the first node in the stack which is the current node
