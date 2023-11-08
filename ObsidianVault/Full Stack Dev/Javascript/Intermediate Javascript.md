@@ -1316,6 +1316,11 @@ more on how to determine the time complexity of the function: https://www.sahina
 	- extra or temporary space used by the algorithm
 		- ignores the input size but accounts for program calls inside of the functio
 
+#### Common Data structures and algorithms
+- the choice of what data structure to use depends on the speed of loading data and accessing it and what is the most important for your project
+- questions to consider: 
+	- what is breadth first search and depth first search and when should you use one over the other?
+	- what are the best ways to implement stacks and queues in Js?
 
 
 
