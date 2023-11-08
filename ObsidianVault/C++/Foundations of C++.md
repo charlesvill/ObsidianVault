@@ -315,6 +315,23 @@ var.mf(9); //access and use the member functions
 - what if you need something public by default?
 	- a struct is public by default
 - Class Members && constructors:
+- Non constructor direction: 
+	- for a class you will need a constructor to create an instance of that object in your code. however if you just want to access functions from a class you can also declare the functions static:
+```cpp
+class MyClass {
+public:
+    static void myStaticFunction() {
+        // Function implementation
+    }
+};
+
+int main() {
+    MyClass::myStaticFunction(); // Access the static function without creating an object
+    return 0;
+}
+
+```
+- Constructor route: 
 ```cpp
 struct Date{
 	int y, m, d;
