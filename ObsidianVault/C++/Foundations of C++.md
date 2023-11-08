@@ -217,6 +217,7 @@ namespace logs(std::string message) {
 	cout << message.substr(message.find(" ") + 1); 
 }
 ```
+- representing special characters: use backslash escape character: `'\''`  for representing a single apostrophe
 - string methods: 
 	- `string.substr(1)` use case is with taking two arguments 1. starting index and 2. how many characters to chop. if second arg ommitted, it will slice from the starting index to the end of the string and will return your new string. exactly same to javascript string method substr
 	- `string.find("")` takes in a string and will return the index position of the beginning of named string
@@ -375,7 +376,18 @@ void f(int x, int y)
 ```
 - note the try catch block before the scoping block and the catch with a call back function inside of it? need to come back to this. 
 ##### Enumerations
-a simple user defined type that is a list of constants that will enumerate over the value of the first ex: 
+a simple user defined type that is a list of constants that can be used to store states or simple data types. 
+a simple use case for this is to store the current state of something. like `mode = UPPERCASE`. this functionally has no difference between doing something like `mode = 1` for states however for obvious reaons the former is preferred for readability. 
+- a simple implementation: 
+```cpp
+enum ModeType{UPPERCASE, LOWERCASE, PUNCTUATION}
+int main(){
+ModeType currentMode = UPPERCASE;
+if(something){
+	currentMode = LOWERCASE;
+}
+}
+``` 
 ```cpp
 enum class Month {
   jan = 1, feb, march, april ...
