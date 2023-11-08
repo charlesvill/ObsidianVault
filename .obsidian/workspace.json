@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5629008e59c0055e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thinking like a Programmer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "Thinking like a Programmer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "Thinking like a Programmer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "Thinking like a Programmer.md"
               }
             }
           },
@@ -166,8 +179,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d14da87fb4eadd80",
+  "active": "5629008e59c0055e",
   "lastOpenFiles": [
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Bash Notes.md",
     "NVIM notes.md",
     "Regular expressions.md",
@@ -175,7 +189,6 @@
     "ObsidianVault/Linux DebianOS reference sheet.md",
     "ObsidianVault/C++/Foundations of C++.md",
     "ObsidianVault/CS50/C.md",
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Pasted image 20231107101642.png",
     "Pasted image 20231031154410.png",
     "Pasted image 20230907130206.png",
