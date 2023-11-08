@@ -1322,7 +1322,25 @@ more on how to determine the time complexity of the function: https://www.sahina
 	- what is breadth first search and depth first search and when should you use one over the other?
 	- what are the best ways to implement stacks and queues in Js?
 - making a binary search tree from an unordered list:
-	- 
+	- in the order of the elements in the array you add nodes as either being greater than or less than the root element and you'll have to descend greater depths and continue this process of repeatedly finding where the next element in the array wouuld fit as it traverses through the current tree formation
+- depth first vs breadth first with binary search trees
+	- breadth first: 
+		- refers to traversal through the nodes in the tree, you would first visit each node associated with a depth level before you descendd another level
+		- something would need to keep memory of the previous levels other branch so that it could go up and descend to the level analyzing but on the righ side to continue seeing all of them
+	- depth first: 
+		- there is three kinds: preorder, inorder, post order
+		- preorder refers to descending recursively the left most branches all the way down and each level down reading the value before descending another level
+		- inorder descends a branch and reads the nodes value once it finishes left branch
+		- post order descends a branch and reads both the descending left and right branches and then reads the data right before it asends back up
+- Level Order / breadth first traversal: 
+	- using the queue method:
+		- on the root node adds the current node on the stack to be read
+		- reads the first node in the stack which is the current node
+		- it registers the children addresses
+		- adds them to the queue
+		- moves to the child node that is first added to the stack
+		- repeats
+	  - queue method means that in effect the sequence of repeated steps here will read the node values in each level before reading the next one
 
 
 
