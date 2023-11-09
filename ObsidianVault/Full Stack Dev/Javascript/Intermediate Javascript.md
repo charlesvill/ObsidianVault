@@ -721,7 +721,10 @@ Source maps, what are they and what are they good for?
 	- npm : https://www.theodinproject.com/lessons/foundations-installing-node-js
 	- make the directory where the project will be
 	- use `npm init -y` to initialize the npm packages
-	- use `npm install webpack webpack-cli --save-dev` to install necessary standard webpack modules
+	 - make sure to add a `.gitignore` file and add this: `/node_modules` lest you want to look like a fool uploading your packages to your repo
+		 - if you do accidentally, make the file and then run this in your cli : `git rm -r --cached node_modules`
+		 - then `git add ./ && git commit ".gitignore"` and finally `git push origin main`
+ 	- use `npm install webpack webpack-cli --save-dev` to install necessary standard webpack modules
 - create a webpack.config.js file to handle custom configs
 	- copy this to make sure your webpack.config looks like this:
 ```javascript
