@@ -1349,6 +1349,7 @@ more on how to determine the time complexity of the function: https://www.sahina
 ##### Making a balanced binary search tree
 - starts with having a sorted array. use either your own merge sort algorithm or use the build in array.sort() which allegedly uses a hybrid of merge sort so O(n log n). 
 - Takes the middle of the sorted array and then it makes it the root of the tree and places each half of the already divided array as children of the root and proceeds doing that until there are no elements left to place. 
+	- will do this recursively.
 
 
 
