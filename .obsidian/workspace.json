@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/CS50/C.md",
+                "file": "Thinking like a Programmer.md",
                 "mode": "source",
                 "source": false
               }
@@ -192,10 +192,10 @@
   },
   "active": "d14da87fb4eadd80",
   "lastOpenFiles": [
-    "ObsidianVault/CS50/C.md",
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Thinking like a Programmer.md",
+    "ObsidianVault/CS50/C.md",
     "NVIM notes.md",
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Bash Notes.md",
     "Regular expressions.md",
     "ObsidianVault/Linux DebianOS reference sheet.md",

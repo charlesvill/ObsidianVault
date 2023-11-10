@@ -951,14 +951,12 @@ style is very important to keeping code maintainable and easy to read
  - after initializing npm go in the package.json and add "type": "module" like this:
 	 - `"main": "index.js",`
 	 - `"type": "module",`
-	 - this is to make sure you can import your package as a module
+	 - this is to make sure you can import your package as a module *this needs to be set on the repo youre importing to as well*
 		 - if you happen to forget this step and need to update for any reason your package: 
 			 - make the changes, git add and commit and push
 			 - run npm link again
 			 - then run this: `npm version patch` and it will update the package locally and then: 
 			 - `npm publish` to update your package online
- 
- 
 	- after the self contained script is done (using module exports as applicable) run `npm link` to add the package to a local repo to be cloned locally for testing. 
 		-*note: if you're going to export as module either note in the package.json that it's {type: "module"} or type="module" in the script tag*
 		then create another folder named test and make a script that imports your package
@@ -982,7 +980,7 @@ contains many useful properties and methods to use such as:
 	- `element.validity.typeMismatch` will return a true if say an element is not conforming to the format expected
 	- `element.setCustomValidity("I am expecting an email address!"` self explanatory
 	- on the forms you can also stop the automatic html validation if you want full control using javascript (does not disable any CValidation API or css psuedo selectors as a result)
-		- `<form novalidate></form>`
+		 `<form novalidate></form>`
 - you can also nest a span with the tag `aria-live="polite"` to control where the error gets seen if wanted in DOM
 - see the constraint validation api documentation for examples and regExp implementation  example, file size limiter example : https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation
 - here is another more concise version from w3 schools: https://www.w3schools.com/js/js_validation_api.asp
