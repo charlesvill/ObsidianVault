@@ -32,6 +32,7 @@ Keybinds:
      You can either use the long or the short option name.
 
   7. Prepend "no" to switch an option off:   :set noic
+  8. how to close the current window you're in: ctrl + w + c
 
 - set breakpoint: leader (space) + d + b
 - start debugging

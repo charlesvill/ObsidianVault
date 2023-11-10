@@ -25,25 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thinking like a Programmer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "153a414f3fed8fcc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "NVIM notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "NVIM notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "NVIM notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "NVIM notes.md"
               }
             }
           },
@@ -190,12 +179,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d14da87fb4eadd80",
+  "active": "5629008e59c0055e",
   "lastOpenFiles": [
     "Thinking like a Programmer.md",
-    "ObsidianVault/CS50/C.md",
-    "NVIM notes.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "NVIM notes.md",
+    "ObsidianVault/CS50/C.md",
     "Bash Notes.md",
     "Regular expressions.md",
     "ObsidianVault/Linux DebianOS reference sheet.md",
