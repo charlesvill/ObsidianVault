@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NVIM notes.md",
+                "file": "ObsidianVault/CS50/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NVIM notes.md",
+                "file": "ObsidianVault/CS50/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NVIM notes.md",
+                "file": "ObsidianVault/CS50/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NVIM notes.md"
+                "file": "ObsidianVault/CS50/Python.md"
               }
             }
           },
@@ -181,8 +181,8 @@
   },
   "active": "5629008e59c0055e",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "NVIM notes.md",
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Thinking like a Programmer.md",
     "ObsidianVault/CS50/C.md",
     "Bash Notes.md",

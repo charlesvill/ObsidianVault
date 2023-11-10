@@ -221,7 +221,7 @@ for favorite in counts:
 - instead of checking for each items, you could also use the counter class methods
 - what is a flat file database? all the data is stored as text files
 - what is relatioal database? not just one sheet, but can be multiple sheets that have some relations whth one another. 
-	- relational database has 4 basic functions Create, insert, select, 
+	- relational database has 4 basic functions Create, read, update, delete
 - a sheet in a rdatabase is called a table: `CREATE TABLE table`
 - we will be using sqlite3
 
