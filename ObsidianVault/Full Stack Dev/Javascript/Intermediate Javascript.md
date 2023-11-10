@@ -880,6 +880,7 @@ inputDate.getDate()
 	- *note: after some testing, I found that as long as the local timezone adjustment was made above, I did not have to use the no time changes here. however, I'll leave it here incase I have issues in the future with something related.*
 
 #### Storing data in JS: Local Storage vs Session Storage vs Cookies
+
 With data that is meant to persist after exiting the window, there are a few similarities between all of them. 
 	- they all store on the browser 
 	- for local and cookies it is meant only for a single user and no other user of that website has access to that data. 
@@ -947,6 +948,17 @@ style is very important to keeping code maintainable and easy to read
 	- inside a folder that has a self contained tool or piece that can be reused, like a stylesheet and script for generating drop-down-menus, npm init (not y)
 	- specify the name with local scoping `@charlesvill/packageName`
 	- adding the repo is optional
+ - after initializing npm go in the package.json and add "type": "module" like this:
+	 - `"main": "index.js",`
+	 - `"type": "module",`
+	 - this is to make sure you can import your package as a module
+		 - if you happen to forget this step and need to update for any reason your package: 
+			 - make the changes, git add and commit and push
+			 - run npm link again
+			 - then run this: `npm version patch` and it will update the package locally and then: 
+			 - `npm publish` to update your package online
+ 
+ 
 	- after the self contained script is done (using module exports as applicable) run `npm link` to add the package to a local repo to be cloned locally for testing. 
 		-*note: if you're going to export as module either note in the package.json that it's {type: "module"} or type="module" in the script tag*
 		then create another folder named test and make a script that imports your package
