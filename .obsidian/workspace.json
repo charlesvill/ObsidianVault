@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NVIM notes.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NVIM notes.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NVIM notes.md"
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
               }
             }
           },
@@ -179,11 +178,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5629008e59c0055e",
+  "active": "d14da87fb4eadd80",
   "lastOpenFiles": [
+    "NVIM notes.md",
     "Thinking like a Programmer.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
-    "NVIM notes.md",
     "ObsidianVault/CS50/C.md",
     "Bash Notes.md",
     "Regular expressions.md",
