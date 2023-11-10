@@ -1342,7 +1342,7 @@ more on how to determine the time complexity of the function: https://www.sahina
 		- on the root node adds the current node on the stack to be read
 		- reads the first node in the stack which is the current node
 		- it registers the children addresses
-		- adds them to the queue
+		- adds them to the queue`
 		- moves to the child node that is first added to the stack
 		- repeats
 	  - queue method means that in effect the sequence of repeated steps here will read the node values in each level before reading the next one
