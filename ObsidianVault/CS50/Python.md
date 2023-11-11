@@ -227,11 +227,26 @@ for favorite in counts:
 
 ##### getting started with sql
 - create a sql database by running `sqlite3 favorites.db`
-- type .mode csv to put into csv mode and then 
-#### inserting rows into SQL
-	`INSERT INTO favorites (language, problem) VALUES('SQL', 'Fiftyville')`
-
-##### deleting data from Sql
+- type .mode csv to put into csv mode and then importing from file into the database with `.import filename.csv filename`
+- you can read items from a table with: `SELECT columns FROM table` syntax 
+- some other commands used in sql to access data include: 
+	- AVG
+	- COUNT
+	- DISTINCT
+	- LOWER
+	- MAX
+	- MIN
+	- UPPER
+ - example of accessing data from a table with column id and title: 
+	 - `SELECT (COUNT(DISTINCT(title)) FROM shows;` 
+		 - this will give you the number of distinct titles from the table shows. you can chain commands. 
+	- the idea is that you're specifiying what data you want to see by chaining these commands in ways that will net what you want. 
+- more commands include: 
+	- WHERE 
+	- LIKE
+	- ORDER BY
+	- LIMIT
+	- GROUP BY #### inserting rows into SQL `INSERT INTO favorites (language, problem) VALUES('SQL', 'Fiftyville')` ##### deleting data from Sql
 		`sqlite> DELETE FROM favorites WHERE Timestamp IS NULL;`
 		- NEVER DO 'sqlite> DELETE FROM favorites' 
 - the above line would delete everything
