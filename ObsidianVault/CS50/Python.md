@@ -227,6 +227,7 @@ for favorite in counts:
 
 ##### getting started with sql
 - create a sql database by running `sqlite3 favorites.db`
+	- once you've already created the database you can run the same line to open your file again
 - type .mode csv to put into csv mode and then importing from file into the database with `.import filename.csv filename`
 - you can read items from a table with: `SELECT columns FROM table` syntax 
 - some other commands used in sql to access data include: 
