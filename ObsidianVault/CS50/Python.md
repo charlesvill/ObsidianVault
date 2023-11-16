@@ -228,6 +228,7 @@ for favorite in counts:
 ##### getting started with sql
 - create a sql database by running `sqlite3 favorites.db`
 	- once you've already created the database you can run the same line to open your file again
+	- you exit from sqlite3 by ctrl-d or ctrl-z.
 - type .mode csv to put into csv mode and then importing from file into the database with `.import filename.csv filename`
 - you can read items from a table with: `SELECT columns FROM table` syntax 
 - some other commands used in sql to access data include: 
@@ -243,18 +244,24 @@ for favorite in counts:
 		 - this will give you the number of distinct titles from the table shows. you can chain commands. 
 	- the idea is that you're specifiying what data you want to see by chaining these commands in ways that will net what you want. 
 - more commands include: 
-	- WHERE 
-	- LIKE
-	- ORDER BY
-	- LIMIT
-	- GROUP BY #### inserting rows into SQL `INSERT INTO favorites (language, problem) VALUES('SQL', 'Fiftyville')` ##### deleting data from Sql
+	- WHERE - filter out data
+	- LIKE - accepts similarities
+	- ORDER BY - sorting 
+	- LIMIT - limit # of items displayed if you dont need to see it all
+	- GROUP BY - another way of organizing the information that comes back from query
+		- `SELECT language, COUNT(*) FROM favorites GROUP BY language;`
+			  - what this does is selects two seperate columns and displays the total count of instances of each language
+	- 
+	#### inserting rows into SQL `INSERT INTO favorites (language, problem) VALUES('SQL', 'Fiftyville')` ##### deleting data from Sql
 		`sqlite> DELETE FROM favorites WHERE Timestamp IS NULL;`
 		- NEVER DO 'sqlite> DELETE FROM favorites' 
 - the above line would delete everything
-
+##### conventions in SQL
+- you use capital letters for sql commads
+- use single quotes for string literals
 ##### updating the table
-`UPDATE favorites SET language = 'SQL', problem = `
-
+- if you need to make changes to the data because it needs to be cleaned, syntax: 
+	- `UPDATE table SET column = value WHERE condition;`
 data types in sql: 
 blob- binary large object, some file of 0s and 1s
 integer- just integers proper
