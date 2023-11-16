@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md"
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
               }
             }
           },
@@ -179,8 +178,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5629008e59c0055e",
+  "active": "d14da87fb4eadd80",
   "lastOpenFiles": [
+    "ObsidianVault/CS50/Python.md",
     "NVIM notes.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Thinking like a Programmer.md",
@@ -200,7 +200,6 @@
     "ObsidianVault/TOPICS TO LEARN.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/CS50/SQL.md",
-    "ObsidianVault/CS50/Python.md",
     "Untitled",
     "ObsidianVault/CS50/CS 50.canvas",
     "Untitled 1.md",
