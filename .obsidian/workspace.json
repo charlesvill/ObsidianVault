@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c274adcd17a4f77d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bash Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -99,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "Bash Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "Bash Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md"
+                "file": "Bash Notes.md"
               }
             }
           },
@@ -179,16 +190,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5629008e59c0055e",
+  "active": "c274adcd17a4f77d",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "ObsidianVault/Linux DebianOS reference sheet.md",
     "ObsidianVault/CS50/Python.md",
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "NVIM notes.md",
     "Thinking like a Programmer.md",
     "ObsidianVault/CS50/C.md",
     "Bash Notes.md",
     "Regular expressions.md",
-    "ObsidianVault/Linux DebianOS reference sheet.md",
     "ObsidianVault/C++/Foundations of C++.md",
     "Pasted image 20231107101642.png",
     "Pasted image 20231031154410.png",
