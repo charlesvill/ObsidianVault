@@ -247,6 +247,8 @@ for favorite in counts:
 	- WHERE - filter out data
 	- LIKE - accepts similarities
 	- ORDER BY - sorting 
+			- `SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*) ASC;`
+		 
 	- LIMIT - limit # of items displayed if you dont need to see it all
 	- GROUP BY - another way of organizing the information that comes back from query
 		- `SELECT language, COUNT(*) FROM favorites GROUP BY language;`
