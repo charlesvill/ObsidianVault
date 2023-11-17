@@ -233,6 +233,7 @@ for favorite in counts:
 - you can read items from a table with: `SELECT columns FROM table` syntax 
 - some other commands used in sql to access data include: 
 	- AVG
+		- `SELECT `
 	- COUNT
 	- DISTINCT
 	- LOWER
@@ -244,7 +245,7 @@ for favorite in counts:
 		 - this will give you the number of distinct titles from the table shows. you can chain commands. 
 	- the idea is that you're specifiying what data you want to see by chaining these commands in ways that will net what you want. 
 - more commands include: 
-	- WHERE - filter out data
+	- WHERE - filter out data can meet conditionals
 	- LIKE - accepts similarities
 	- ORDER BY - sorting 
 			- `SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*) ASC;`
@@ -271,7 +272,9 @@ numeric- dates and times, numbers but not necessarily numbers
 real- decimal points in them 
 text- strings
 
-
+##### QUERY data from more than one table
+- the relational part of the databases allows you to pull from different tables in structured ways. 
+- for example if the songs table has the id for the artist and the artists table also has the artist id, you can make queries from both tables using the id. 
 keywords: 
 NOT NULL
 UNIQUE
