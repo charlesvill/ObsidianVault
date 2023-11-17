@@ -275,6 +275,15 @@ text- strings
 ##### QUERY data from more than one table
 - the relational part of the databases allows you to pull from different tables in structured ways. 
 - for example if the songs table has the id for the artist and the artists table also has the artist id, you can make queries from both tables using the id. 
+```sql
+SELECT name FROM songs WHERE artist_id IN (
+	SELECT id
+	FROM artists
+	WHERE name = 'Post Malone'
+);
+```
+- the main part that connects them is the `IN` and the `(...)` 
+	- what this is doing is selecting the songs where the artist id of songs will match up with the id of artists table.
 keywords: 
 NOT NULL
 UNIQUE
