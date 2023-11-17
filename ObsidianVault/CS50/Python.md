@@ -283,7 +283,7 @@ SELECT name FROM songs WHERE artist_id IN (
 );
 ```
 - the main part that connects them is the `IN` and the `(...)` 
-	- what this is doing is selecting the songs where the artist id of songs will match up with the id of artists table.
+	- what this is doing is selecting the songs where the artist id of songs will match up with the id of artists table. 
 keywords: 
 NOT NULL
 UNIQUE
