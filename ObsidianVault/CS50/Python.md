@@ -249,7 +249,9 @@ for favorite in counts:
 	- LIKE - accepts similarities
 	- ORDER BY - sorting 
 			- `SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*) ASC;`
-				- with order by 
+				- with order by , you can have multiple ordering criteria that will be looked at if the first criteria results in two of the same kind. for example:
+					- `SELECT title FROM shows WHERE rating > 2 ORDER BY rating DESC, title ASC;`
+						- what this will do is if you have two titles with the same rating, it will look at instead the title column to order them. 
 		 
 	- LIMIT - limit # of items displayed if you dont need to see it all
 	- GROUP BY - organize the information by number of instances of repeating items
@@ -297,7 +299,10 @@ SELECT name FROM songs WHERE artist_id IN (
 - what does JOIN do and how do you use it?
 	- allows you to create a temporary table that merges at a specific point and displays all the information. 
 	- joins at the point where they are the same like show id and show_id
-- ex: ``
+- ex: `SELECT title, rating FROM movies JOIN ratings ON movies.id = ratings.movie_id WHERE year = '2010' ORDER BY rating DESC, title ASC;`
+	- after select you still will enumerate the columns you want from BOTH tables you're joining or however many tables you're joining. then you'll do the `JOIN othertablename ON firsttable.primaryKey = secondtable.foreignKey` 
+		- the = is what the query will look for to join the tables 
+		- then after the join statement you could add the filters and ordering, grouping commands you need.
 
 
 
