@@ -306,7 +306,15 @@ SELECT name FROM songs WHERE artist_id IN (
 		- then after the join statement you could add the filters and ordering, grouping commands you need.
 - Using the AND keyword: 
 	- the and can be used to search for criteria that are both present in order to return that data example: 
-		- ``
+```sql
+SELECT title FROM movies
+   ...> JOIN stars s1 ON movies.id = s1.movie_id
+   ...> JOIN people p1 ON s1.person_id = p1.id
+   ...> JOIN stars s2 ON movies.id = s2.movie_id
+   ...> JOIN people p2 ON s2.person_id = p2.id
+   ...> WHERE p1.name = 'Bradley Cooper' AND p2.name = 'Jennifer Lawrence';
+```
+	- here the goal is to get results back for titles that have both actors and as such need to have a table for stars and people for each of the actors due to the where statement applying to only one person. Limitation of the sql engine makes it that you have to make an instance of those tables for each person.
 
 
 keywords: 
