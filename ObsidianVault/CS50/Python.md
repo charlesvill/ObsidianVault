@@ -289,6 +289,7 @@ SELECT name FROM songs WHERE artist_id IN (
 	- what this is doing is selecting the songs where the artist id of songs will match up with the id of artists table. 
 - *The difference between IN and =* 
 	- IN is used when you have multiple results whereas = is for when you know that there will be only one result. for example if you're querying all the shows steve carrel is in, you can use = for the person_id = because there will be only one person id for the actor steve carrell
+	- you can also use the IN keyword for searching for more than one row to pull data from for example when looking for data for both bradley cooper and jennifer lawrence
 ##### Testing .sql files with sqlite3
 - you need to pipe the contents of the .sql file into the sqlite. so you can run `cat filename.sql | sqlite3 movies.db`
 - alternatively, you can also run: `cat filename.sql | sqlite3 movies.db > output.txt` 
@@ -303,7 +304,9 @@ SELECT name FROM songs WHERE artist_id IN (
 	- after select you still will enumerate the columns you want from BOTH tables you're joining or however many tables you're joining. then you'll do the `JOIN othertablename ON firsttable.primaryKey = secondtable.foreignKey` 
 		- the = is what the query will look for to join the tables 
 		- then after the join statement you could add the filters and ordering, grouping commands you need.
-
+- Using the AND keyword: 
+	- the and can be used to search for criteria that are both present in order to return that data example: 
+		- ``
 
 
 keywords: 
