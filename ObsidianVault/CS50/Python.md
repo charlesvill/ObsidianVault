@@ -284,11 +284,19 @@ SELECT name FROM songs WHERE artist_id IN (
 ```
 - the main part that connects them is the `IN` and the `(...)` 
 	- what this is doing is selecting the songs where the artist id of songs will match up with the id of artists table. 
+- *The difference between IN and =* 
+	- IN is used when you have multiple results whereas = is for when you know that there will be only one result. for example if you're querying all the shows steve carrel is in, you can use = for the person_id = because there will be only one person id for the actor steve carrell
 ##### Testing .sql files with sqlite3
 - you need to pipe the contents of the .sql file into the sqlite. so you can run `cat filename.sql | sqlite3 movies.db`
 - alternatively, you can also run: `cat filename.sql | sqlite3 movies.db > output.txt` 
 	- this will output the results in a text file so that you can see how many lines your query takes up
-- 
+
+##### Joining a Query from two different tables
+- you need the keyword JOIN (though you can achieve similar effect without join keyword)
+- what does JOIN do and how do you use it?
+	- allows you to create a temporary table that merges at a specific point and displays all the information. 
+	- joins at the point where they are the same like show id and show_id
+- ex: ``
 
 
 
@@ -305,6 +313,3 @@ JOIN -
 		- this says that in the current table the datatype show_id is a primary key in the shows id which is a different table and it connects them
 - what is a nested query?
 	- with two tables like ratings and shows, if you want the show title for the specific rating query, you can nest a query to get custom results
-- what does JOIN do and how do you use it?
-	- allows you to create a temporary table that merges at a specific point and displays all the information. 
-	- joins at the point where they are the same like show id and show_id
