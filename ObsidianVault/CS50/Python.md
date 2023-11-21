@@ -285,6 +285,9 @@ SELECT name FROM songs WHERE artist_id IN (
 - the main part that connects them is the `IN` and the `(...)` 
 	- what this is doing is selecting the songs where the artist id of songs will match up with the id of artists table. 
 ##### Testing .sql files with sqlite3
+- you need to pipe the contents of the .sql file into the sqlite. so you can run `cat filename.sql | sqlite3 movies.db`
+- alternatively, you can also run: `cat filename.sql | sqlite3 movies.db > output.txt` 
+	- this will output the results in a text file so that you can see how many lines your query takes up
 - 
 
 
