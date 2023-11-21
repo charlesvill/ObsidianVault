@@ -251,7 +251,7 @@ for favorite in counts:
 			- `SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*) ASC;`
 		 
 	- LIMIT - limit # of items displayed if you dont need to see it all
-	- GROUP BY - another way of organizing the information that comes back from query
+	- GROUP BY - organize the information by number of instances of repeating items
 		- `SELECT language, COUNT(*) FROM favorites GROUP BY language;`
 			  - what this does is selects two seperate columns and displays the total count of instances of each language
 	- 
