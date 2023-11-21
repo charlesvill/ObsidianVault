@@ -249,6 +249,7 @@ for favorite in counts:
 	- LIKE - accepts similarities
 	- ORDER BY - sorting 
 			- `SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*) ASC;`
+				- with order by 
 		 
 	- LIMIT - limit # of items displayed if you dont need to see it all
 	- GROUP BY - organize the information by number of instances of repeating items
