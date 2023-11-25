@@ -1341,7 +1341,7 @@ more on how to determine the time complexity of the function: https://www.sahina
 		- refers to traversal through the nodes in the tree, you would first visit each node associated with a depth level before you descendd another level
 		- something would need to keep memory of the previous levels other branch so that it could go up and descend to the level analyzing but on the righ side to continue seeing all of them
 	- depth first: 
-		- video showing this in practice: https://www.youtube.com/watch?v=gm8DUJJhmY4&ab_channel=mycodeschool
+		- video showing this in practice: https://www.youtube.co/m/watch?v=gm8DUJJhmY4&ab_channel=mycodeschool
 		- there is three kinds: preorder, inorder, post order
 		- preorder refers to descending recursively the left most branches all the way down and each level down reading the value before descending another level
 		- inorder descends a branch and reads the nodes value once it finishes left branch
