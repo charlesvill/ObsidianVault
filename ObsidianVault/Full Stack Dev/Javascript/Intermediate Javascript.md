@@ -1360,7 +1360,15 @@ more on how to determine the time complexity of the function: https://www.sahina
 - starts with having a sorted array. use either your own merge sort algorithm or use the build in array.sort() which allegedly uses a hybrid of merge sort so O(n log n). 
 - Takes the middle of the sorted array and then it makes it the root of the tree and places each half of the already divided array as children of the root and proceeds doing that until there are no elements left to place. 
 	- will do this recursively.
-
+##### vocabulary for graphs
+- edge - the line connecting two vertices or nodes
+- vertex - a node or piece of data
+- undirected graph - where the edge necesities a biconditional relationship with both the nodes connected to it. 
+- incident - is the relationship of two nodes connected by an undirected edge, also known as adjacent or neighbors
+- degree of a vertex - is the number of edges that are incident on a vertex
+- edge weight - is a number put on the edge between two vertices that could forexample show the distance between those two vertices or how close each of the two vertices are as friends
+- weighted graph- graph whose edges have weight. like google maps and other navigation. cities are nodes and the roads are the edges and the weights are the distances between the vertices and the navigatoin finds the minimal sum of edge weights over all paths to get to the destination. shortest path.
+- 
 
 
 
