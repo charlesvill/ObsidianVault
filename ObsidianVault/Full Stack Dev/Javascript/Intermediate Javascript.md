@@ -1368,7 +1368,8 @@ more on how to determine the time complexity of the function: https://www.sahina
 - degree of a vertex - is the number of edges that are incident on a vertex
 - edge weight - is a number put on the edge between two vertices that could forexample show the distance between those two vertices or how close each of the two vertices are as friends
 - weighted graph- graph whose edges have weight. like google maps and other navigation. cities are nodes and the roads are the edges and the weights are the distances between the vertices and the navigatoin finds the minimal sum of edge weights over all paths to get to the destination. shortest path.
-- 
+- notes on graph theory from p guide to cs: 
+	- 
 
 
 
