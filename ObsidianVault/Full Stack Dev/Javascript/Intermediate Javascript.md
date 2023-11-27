@@ -1370,6 +1370,8 @@ more on how to determine the time complexity of the function: https://www.sahina
 - weighted graph- graph whose edges have weight. like google maps and other navigation. cities are nodes and the roads are the edges and the weights are the distances between the vertices and the navigatoin finds the minimal sum of edge weights over all paths to get to the destination. shortest path.
 - notes on graph theory from p guide to cs: 
 	- what is asymptotic notation? - its just big O notation
+	- what is an edge list? for a graph, you list out all pairs of nodes that have edges
+	- what is an adjacency list? for a graph, you list out all the nodes that are essentially children of a given node https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/e/quiz--representing-graphs
 
 
 
