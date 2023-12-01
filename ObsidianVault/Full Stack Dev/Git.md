@@ -17,3 +17,14 @@
 	- `git commit --amend` 
 	- then make the changes and save. run `git log` to make sure that it got fixed. 
 ##### Squashing Commits 
+- taking two previous commmits and combining them into one commit
+- how to?
+	- Start with `git rebase -i --root` (or the commit that the other will merge into)
+	- change the commit you want to squash from `pick` to `squash` 
+	- hit `git commit --amend` where you'll be able to rename it and hit save, you're done. 
+##### splitting up a commit
+- if a commit has too much and you want to split it up into smaller commits, you can: 
+	- run `git rebase -i <commit>` 
+	- change `pick` to `edit` on the commit you want to split up
+	- run `git reset HEAD^` ( resets the commit to the one right before HEAD)
+	- then run `git add test3.md && git commit -m 'Create 3rd file'` and the same for the other commit you're splitting
