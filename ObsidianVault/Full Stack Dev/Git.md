@@ -28,3 +28,10 @@
 	- change `pick` to `edit` on the commit you want to split up
 	- run `git reset HEAD^` ( resets the commit to the one right before HEAD)
 	- then run `git add test3.md && git commit -m 'Create 3rd file'` and the same for the other commit you're splitting
+	- *important to note that reset willl overwrite the staging area with whatever was right before HEAD before you hit the reset button, so make sure you know  why you're using this command*
+	- you can also use `git reset --soft` which will point to the previous commit without changing the staging area data. 
+##### Branches are pointers 
+- in reality when we say a commit of a branch is a snapshot, what it means is its a copy of your project and all a branch is, is a pointer to one specific commit. we have access to thte other commits because that one commit also has a reference or pointer to the previous commit as well.
+**more resources on git rebasing and reset: 
+rebase: https://git-scm.com/book/en/v2/Git-Branching-Rebasing
+reset: https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified**
