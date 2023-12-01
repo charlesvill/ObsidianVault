@@ -55,3 +55,10 @@ reset: https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified**
 	- use push force when appropriate and preferably default to git push --force-with-lease
 - *when you have merge conflicts: * https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts
 - *thinking like git: * https://think-like-a-git.net/
+
+- what is a way that you could visualize your git history at the same time?
+	- run the line `git log --oneline --abbrev-commit --all`
+- good practice with rebase and merge: 
+	- create a branch. its like saving your game before you battle the boss
+	- *come back to the think like a git @ testing out merges to get more comfortable with merges*
+ 
