@@ -10,3 +10,7 @@ How to pipe the contents of a cat to something else:
 2. and a database called songs.db
 3. run `cat 7.sql | sqlite3 songs.db` 
 4. see the fun stuff
+
+How to create multiple files at once: 
+1. touch test{1..4}.md
+	- what this does is indicates four files called test that will be ending in the number 1 through 4. 
