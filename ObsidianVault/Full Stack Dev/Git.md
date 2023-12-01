@@ -8,4 +8,7 @@
 
 ##### Changing History
 - topics needed to know: changing most recent commits, changing multiple commit messges and reordering commits, squashing commits together and splitting up commits. 
-	- creating multiple fi
+- What does `git commit --amend` do? 
+	- allows you to rewrite the previous commit that has not been pushed to the repo yet!
+- what does `git rebase` do? 
+	- allows you to rewrite commits from previous that were not necessarily the most recent commits

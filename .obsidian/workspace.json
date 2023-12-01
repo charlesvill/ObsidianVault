@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bash Notes.md",
+                "file": "ObsidianVault/Full Stack Dev/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bash Notes.md",
+                "file": "ObsidianVault/Full Stack Dev/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bash Notes.md"
+                "file": "ObsidianVault/Full Stack Dev/Git.md"
               }
             }
           },
@@ -191,14 +191,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b4068591804e852e",
+  "active": "22041babd128a215",
   "lastOpenFiles": [
+    "Bash Notes.md",
     "ObsidianVault/Linux DebianOS reference sheet.md",
     "ObsidianVault/CS50/C.md",
     "ObsidianVault/Full Stack Dev/Git.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/CS50/Python.md",
-    "Bash Notes.md",
     "NVIM notes.md",
     "Thinking like a Programmer.md",
     "Regular expressions.md",
