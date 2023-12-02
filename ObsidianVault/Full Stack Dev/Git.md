@@ -61,4 +61,8 @@ reset: https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified**
 - good practice with rebase and merge: 
 	- create a branch. its like saving your game before you battle the boss
 	- *come back to the think like a git @ testing out merges to get more comfortable with merges*
- 
+
+#### Git in the real world
+- go back to the lesson git in the real world TOP when getting in trouble with git
+
+##### git workflow for open source contributions
