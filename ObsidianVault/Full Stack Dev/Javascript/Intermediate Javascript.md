@@ -1385,3 +1385,20 @@ more on how to determine the time complexity of the function: https://www.sahina
 
 ### Testing Javascript 
 #### Testing Basics
+- what are the supposed benefits of Test driven development?
+  	- keeps you out of the debugger
+  	- improves design of code
+  	- speeds up development by eliminating waste
+  	- reduces bugs in new features and in existing features
+ 
+  - the process is that you develop a test right before having code that is testable. you design the test before you actually code the project. perhaps a way of fleshing out the ideas of what your program is supposed to accomplish. like a way of thinking backwards about your program or expaining it to some one else how its supposed to work 
+
+
+
+
+
+
+
+
+
+
