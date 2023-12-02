@@ -66,3 +66,6 @@ reset: https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified**
 - go back to the lesson git in the real world TOP when getting in trouble with git
 
 ##### git workflow for open source contributions
+- the key players: 
+	- the `upstream` original gh repo
+	- the `origin` your fork of the repo
