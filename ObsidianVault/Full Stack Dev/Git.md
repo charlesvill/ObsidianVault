@@ -69,3 +69,13 @@ reset: https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified**
 - the key players: 
 	- the `upstream` original gh repo
 	- the `origin` your fork of the repo
+- The process: 
+	- (general overview)
+	 - clone the repo in your machine 
+	 - add the upstream remote to pull directly from original repo
+	 - make a new branch and make your changes
+	 - fetch possible changes from upstream
+	 - merge changes with the origin branch of your cloned repo
+	 - merge the updated main/origin branch with your feature branch and check/resolve any conflicts
+	 - submit pull request to have your conflict free code sent upstream to the main  master branch. 
+  - the bible on resolving any conflicts with git: https://www.theodinproject.com/lessons/javascript-using-git-in-the-real-world#ongoing-workflow
