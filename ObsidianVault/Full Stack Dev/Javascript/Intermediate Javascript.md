@@ -1396,6 +1396,10 @@ more on how to determine the time complexity of the function: https://www.sahina
 	  - obvious implementation
 	  - fake it till yo umake it
 	  - triangulation - sometimes you add more than one test to force to you code more to avoid passing tests but still incorrect code
+#### Testing practice
+##### getting started with JEST
+1. npm init -y
+2. npm install --save-d
 
 
 
