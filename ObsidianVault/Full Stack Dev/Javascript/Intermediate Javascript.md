@@ -1400,12 +1400,83 @@ more on how to determine the time complexity of the function: https://www.sahina
 #### Testing practice
 ##### getting started with JEST
 1. npm init -y
-2. npm install --save-d
+2. npm install --save-dev jest
+3. basic structure of a test
+
+```javascript
+function sum(a, b) {
+return a + b;
+}
+
+module.exports = sum;
+// this is using older export statements
+```
+```javascript
+// sum.test.js
+
+const sum = require('./sum');
+
+test('sum', () => {
+	expect(sum(4, 6)).toBe(10);
+});
+```
+- then you run `npm test` and your results will run in the command line
+- for ecmascript 15 import and export statements to work, you have to use babel: 
 
 
+##### More Testing
+- outcomes: what is tightly coupled code?
+- what is a pure function and how does it relate to TDD
+- what is mocking and when should you use it and when shoud you limit it?
 
+- **what is an example of something that is tightly coupled?**
+	- when your functions include to references to functions in other parts of your code
+	- code base littered with DOM methods everywhere
+ex: 
+```javascript
+function guessingGame() {
+  const magicNumber = 22;
+  const guess = prompt('guess a number between 1 and 100!');
+  if (guess > magicNumber) {
+    alert('YOUR GUESS IS TOO BIG');
+  } else if (guess < magicNumber) {
+    alert('YOUR GUESS IS TOO SMALL');
+  } else if (guess == magicNumber) {
+    alert('YOU DID IT! 🎉');
+  }
+}
+```
+- what is bad about it: there is no clear input and output for the function as a way to test. the logic is coupled together with the input from user and the communication of the result of the function. if you wanted to extend its functionality it would be messy.
+- How could it be improved?: create a seperate function that inputs the magic number and the guess of the user and the function will return the appropriate results. 
+ex: 
+```javascript
+function evaluateGuess(magicNum, guess){
+	if(guess === magicNum){
+		return "you win!"
+	} else if(guess < magicNum){
+		return "your guess too small!"
+	} else if(guess > magicNum){
+		return "your guess too big!"
+	}
+}
 
+function guessGame(){
+	const magicNum = 26;
+	const guess = prompt("guess a number between 1 and 100");
+	const result = evaluateGuess(magicNum, guess);
+	alert(result);
+}
 
+// example test
+test('correct guess', ()=> {
+	expect(evaluateGuess(26, 26)).toBe("you win!");
+});
+```
+- what makes this so much better is the seperation of logic for evaluating and handling the result to the user.
+- if you wanted to test it, you could easily test the evaluated guess because you could test for a input and expect the correct result. 
+- TDD encourages this form of programming with clear inputs and outputs that seperate logic and make it more extendable. 
+- **What are pure functions?**
+	- 
 
 
 
