@@ -1399,6 +1399,8 @@ more on how to determine the time complexity of the function: https://www.sahina
 	  - triangulation - sometimes you add more than one test to force to you code more to avoid passing tests but still incorrect code
 #### Testing practice
 ##### getting started with JEST
+*jest cheat sheet: https://github.com/sapegin/jest-cheat-sheet *
+
 1. npm init -y
 2. npm install --save-dev jest
 3. basic structure of a test
