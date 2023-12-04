@@ -1426,7 +1426,8 @@ test('sum', () => {
 
 ##### More Testing
 - outcomes: what is tightly coupled code?
-- what is a pure function and how does it relate to TDD
+- what is a pure function and how does it relate to TDD 
+	-  pure functions have consisten output per input and have no side effects. pure functions necessary for testing bc you need to have the consistent results per inputs to be able to reliably test. and TDD encourages the writing of pure functions which are easier to refactor and extend
 - what is mocking and when should you use it and when shoud you limit it?
 
 - **what is an example of something that is tightly coupled?**
@@ -1476,7 +1477,19 @@ test('correct guess', ()=> {
 - if you wanted to test it, you could easily test the evaluated guess because you could test for a input and expect the correct result. 
 - TDD encourages this form of programming with clear inputs and outputs that seperate logic and make it more extendable. 
 - **What are pure functions?**
-	- 
+	- two conditions:
+		1. always returns the same result for the same inputs. meaning that its output depends solely on the inputs and not on external data or processes that affect the output
+		2. does not produce observable side effects like network requests, input/output devices, or data mutation
+	- some examples of side effects could be: changing variable that exists outside of the function or  calling another method from insdie the function *if the pure functions calls another pure function, it still is pure.* 
+	- also includes: 
+		- printing to screen
+		- math.random()
+		- http request
+		- DOM query/manipulation
+		- getting the current time
+	- important to note that functions dont always need to be pure and often impure functions necessary for example for http requests and DOM manipulation like event handlers
+	- *pointer: keep functions with a clear input and output and make them pure if possible* 
+		- a pure function can be refactored and wont negatively impact other parts of the application
 
 
 
