@@ -1426,9 +1426,11 @@ test('sum', () => {
 
 ##### More Testing
 - outcomes: what is tightly coupled code?
+	- functions depend directly on other functions and will not work if something is changed that the other expected. ex: a function calling a new Fork() method instead of accepting a parameter food(utensil) that any utensil function can go through as argument and not just the fork. (not as tightly coupled)
 - what is a pure function and how does it relate to TDD 
 	-  pure functions have consisten output per input and have no side effects. pure functions necessary for testing bc you need to have the consistent results per inputs to be able to reliably test. and TDD encourages the writing of pure functions which are easier to refactor and extend
 - what is mocking and when should you use it and when shoud you limit it?
+	- mocking is a fake function used when testing functions that rely on asynchronous calls that could fail and inherenently impure. mocking allows you to return a fake value but simulates what a real async call would make for the purposes of testing
 
 - **what is an example of something that is tightly coupled?**
 	- when your functions include to references to functions in other parts of your code
@@ -1490,7 +1492,9 @@ test('correct guess', ()=> {
 	- important to note that functions dont always need to be pure and often impure functions necessary for example for http requests and DOM manipulation like event handlers
 	- *pointer: keep functions with a clear input and output and make them pure if possible* 
 		- a pure function can be refactored and wont negatively impact other parts of the application
-
+**What is Mocking?**
+- for the purposes of testing asynchronous calls and other functions that are not reliably pure functions, running 400 tests with them in there could hurt the reliablity of your test suite, so we use mock functions, fake functions that always return the same value that is fake but simulates a return value that you might get from the real deal for the purposes of testing.
+- 
 
 
 
