@@ -28,6 +28,7 @@
 - find in an array a specific element
 	- `arr.some((item) => item.title === newBook.title);` 
 		- this will return a true/false if it finds in the array matching 
+  - 
 - joing elements of an array to a string: 
 	- arr = ["hello", "world"] `arr.join(", ");` this will result in Hello, world
 		- if there is only one element in the array then it will simply output the one element without the delimiter
