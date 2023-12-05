@@ -852,6 +852,7 @@ module: {
 	- should abstract away lower level functtionality when looking at a higher level method. for example higher level method of processing payment, if successful do this, else, do that. this should not include the writing of how the payment is actually processed, this should be abstracted away in a seperate class so if you need to change who does payments, you can focus on the class instead of the higher leven functions that depend on the lower level stuff. it may look like more code, but it means better written code that will save you time refactoring down theline. 
 #### what are tightly coupled objects?
 - they are components that are not necessarily related directly but when changing one thing, you have to refactor the other. good example is with a game where you want to change all the UI but doing so affects the game logic in some way. This should not be the case. should be able to touch UI without it affecting the game logic
+	- also see: [[#More Testing]]
 #### few notes on performance 
 - the various DOM selector methods: queryselector and getElementbyID
 	- getElementbyID has access to cached DOM elements while the other does not. this suggests that searching for deeply nested elements could take longer on query selector
@@ -1496,7 +1497,8 @@ test('correct guess', ()=> {
 		- a pure function can be refactored and wont negatively impact other parts of the application
 **What is Mocking?**
 - for the purposes of testing asynchronous calls and other functions that are not reliably pure functions, running 400 tests with them in there could hurt the reliablity of your test suite, so we use mock functions, fake functions that always return the same value that is fake but simulates a return value that you might get from the real deal for the purposes of testing.
-- 
+- what is dependency injection? what does it have to do with mocking?
+	- dependency injection is the technique of feeding a function the data it needs (http request, disk access data) as a parameter as opposed to letting the function fetch the data itself. it as a technique is used for mocking bc in mocking you will not actually test the https response, you might writing some support code that injects a faked response into the function for unit testing. 
 
 
 
