@@ -782,6 +782,7 @@ module.exports = {
 		- create a .prettierignore and include files that it should ignore
 		- run this to make it compatible with eslint: `npm install --save-dev eslint-config-prettier`
 		- then in the eslintrc.json: make sure it has this line below the "extends: [ "airbnb"]" `"prettier"` with no comma after if its the last extends you have.
+  - Dont forget to hit `npm run build` after youre done installing to make sure everything was put together correctly. 
 
 ##### extra webpack features: 
 
@@ -1409,6 +1410,8 @@ more on how to determine the time complexity of the function: https://www.sahina
 1. npm init -y
 2. npm install --save-dev jest
 3. basic structure of a test
+**using jest with webpack**
+1. 
 
 ```javascript
 function sum(a, b) {
