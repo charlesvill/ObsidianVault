@@ -1528,6 +1528,8 @@ console.log(
 - what is dependency injection? what does it have to do with mocking?
 	- dependency injection is the technique of feeding a function the data it needs (http request, disk access data) as a parameter as opposed to letting the function fetch the data itself. it as a technique is used for mocking bc in mocking you will not actually test the https response, you might writing some support code that injects a faked response into the function for unit testing. 
 	- the fundamental philosophy of dependency injection and (inversion of control, dependency inversion) is a higher level function should not be responsible for the implementation and building of its dependencies. the higher level functions should be unaware of those dependencies implementation. the way you could achieve this is by injecting its dependencies as parameters for example. 
+	- article covering the dangers of overuse of mocking and alternatives: https://medium.com/javascript-scene/mocking-is-a-code-smell-944a70c90a6a also has a bunch of other programming paradigms to follow.
+- 
 
 
 
