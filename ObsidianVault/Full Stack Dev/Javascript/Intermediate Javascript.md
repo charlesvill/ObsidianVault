@@ -1531,7 +1531,8 @@ console.log(
 	- article covering the dangers of overuse of mocking and alternatives: https://medium.com/javascript-scene/mocking-is-a-code-smell-944a70c90a6a also has a bunch of other programming paradigms to follow.
 - **What are times that are appropiate for testing**
 	- the promise of testing has not been fullfilled by many. they feel miserable by it. 
-	- 
+	- you should only really be testing incoming query messages (whatever that means) here is the video for it. suggesting that we can do mock testing but that there are instances when it is appropriate and other times when its a waste of time and energy. https://www.youtube.com/watch?v=URSWYvyc42M&ab_channel=Confreaks
+	- *come back to this video and this lesson on mocking for support in testing*
 
 
 
