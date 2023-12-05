@@ -1497,6 +1497,32 @@ test('correct guess', ()=> {
 	- important to note that functions dont always need to be pure and often impure functions necessary for example for http requests and DOM manipulation like event handlers
 	- *pointer: keep functions with a clear input and output and make them pure if possible* 
 		- a pure function can be refactored and wont negatively impact other parts of the application
+	- example of pure functions vs impure function :
+```javascript
+// Not pure  
+const signInUser = user => user.isSignedIn = true;const foo = {  
+  name: 'Foo',  
+  isSignedIn: false  
+};// Foo was mutated  
+console.log(  
+  signInUser(foo), // true  
+  foo              // { name: "Foo", isSignedIn: true }  
+);
+```
+
+```javascript
+// Pure  
+const signInUser = user => ({...user, isSignedIn: true });const foo = {  
+  name: 'Foo',  
+  isSignedIn: false  
+};// Foo was not mutated  
+console.log(  
+  signInUser(foo), // { name: "Foo", isSignedIn: true }  
+  foo              // { name: "Foo", isSignedIn: false }  
+);
+```
+- notice here the presence of the spread operator in the pure function that creates a copy of the object for it to change instead of the original object.
+	
 **What is Mocking?**
 - for the purposes of testing asynchronous calls and other functions that are not reliably pure functions, running 400 tests with them in there could hurt the reliablity of your test suite, so we use mock functions, fake functions that always return the same value that is fake but simulates a return value that you might get from the real deal for the purposes of testing.
 - what is dependency injection? what does it have to do with mocking?
