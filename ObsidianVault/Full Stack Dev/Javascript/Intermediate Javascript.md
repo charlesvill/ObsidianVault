@@ -1501,6 +1501,7 @@ test('correct guess', ()=> {
 - for the purposes of testing asynchronous calls and other functions that are not reliably pure functions, running 400 tests with them in there could hurt the reliablity of your test suite, so we use mock functions, fake functions that always return the same value that is fake but simulates a return value that you might get from the real deal for the purposes of testing.
 - what is dependency injection? what does it have to do with mocking?
 	- dependency injection is the technique of feeding a function the data it needs (http request, disk access data) as a parameter as opposed to letting the function fetch the data itself. it as a technique is used for mocking bc in mocking you will not actually test the https response, you might writing some support code that injects a faked response into the function for unit testing. 
+	- the fundamental philosophy of dependency injection and (inversion of control, dependency inversion) is a higher level function should not be responsible for the implementation and building of its dependencies. the higher level functions should be unaware of those dependencies implementation. the way you could achieve this is by injecting its dependencies as parameters for example. 
 
 
 
