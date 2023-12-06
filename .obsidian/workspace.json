@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Git.md",
+                "file": "Thinking like a Programmer.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bash Notes.md",
+                "file": "NVIM notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -192,14 +192,14 @@
   },
   "active": "d14da87fb4eadd80",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/Git.md",
+    "NVIM notes.md",
     "Bash Notes.md",
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "Thinking like a Programmer.md",
+    "ObsidianVault/Full Stack Dev/Git.md",
     "ObsidianVault/Linux DebianOS reference sheet.md",
     "ObsidianVault/CS50/C.md",
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/CS50/Python.md",
-    "NVIM notes.md",
-    "Thinking like a Programmer.md",
     "Regular expressions.md",
     "ObsidianVault/C++/Foundations of C++.md",
     "Pasted image 20231107101642.png",
