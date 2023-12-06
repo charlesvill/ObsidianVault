@@ -783,6 +783,7 @@ module.exports = {
 		- create a .prettierignore and include files that it should ignore
 		- run this to make it compatible with eslint: `npm install --save-dev eslint-config-prettier`
 		- then in the eslintrc.json: make sure it has this line below the "extends: [ "airbnb"]" `"prettier"` with no comma after if its the last extends you have.
+		  - hit `npx eslint --fix filename.js`
   - Dont forget to hit `npm run build` after youre done installing to make sure everything was put together correctly. 
 
 ##### extra webpack features: 
