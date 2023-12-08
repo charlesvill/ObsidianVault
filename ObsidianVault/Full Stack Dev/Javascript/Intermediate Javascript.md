@@ -21,6 +21,9 @@
 - splitting a string into array of sub strings at a character(s): `string.split(' ')` 
 
 ##### array methods: 
+- *important!* : Copying over values to make a new array:
+	- if you use assignment operator `newArray = oldArray` you've just made a shallow copy and changes to new willl mutate the old!
+	- if you wish to make a true copy, you must 
 - length of an array: `arr.length`
 - remove the first element of array: `arr.shift()` if you set a variable equal to it, it will return the removed element.
 - removing, replacing, adding elements to array: `arr.splice()` takes a few arguments but the what it does: 
