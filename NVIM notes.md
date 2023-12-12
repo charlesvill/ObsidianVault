@@ -14,6 +14,7 @@ Keybinds:
 - bring to beginning of the word: 0
 - fix a whole line: U
 - redo: ctrl-r
+- indent inside curly braces: `>i}` 
 - change until end of word: ce
 - change the entire line: cc *useful!*
 - beggining of the file: gg
