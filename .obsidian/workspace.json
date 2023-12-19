@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md"
               }
             }
           },
@@ -192,9 +192,10 @@
   },
   "active": "d14da87fb4eadd80",
   "lastOpenFiles": [
+    "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Thinking like a Programmer.md",
     "NVIM notes.md",
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Bash Notes.md",
     "ObsidianVault/Full Stack Dev/Git.md",
     "ObsidianVault/Linux DebianOS reference sheet.md",
@@ -218,7 +219,6 @@
     "Untitled 1.md",
     "Untitled 2.md",
     "ObsidianVault/Full Stack Dev/Full Stack Parking lot.md",
-    "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
     "ObsidianVault/Full Stack Dev/How the internet works and Networking.md",
     "Images/Pasted image 20230707124826.png",
     "Images/Pasted image 20230707124341.png",
