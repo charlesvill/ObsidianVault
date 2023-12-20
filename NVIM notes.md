@@ -40,6 +40,9 @@ Keybinds:
 what is a vim register?
 
 #### multiline editing: 
-- see this video: https://www.youtube.com/watch?v=p4D8-brdrZo&t=125s&ab_channel=AndrewCourter
-	- get the plugin found here: https://github.com/mg979/vim-visual-multi\
-	- then w/ ctrl-n 
+- go into visual block mode
+- highlight the area
+- shift + i
+- insert what you need to insert
+- exit to normal mode
+- it will apply
