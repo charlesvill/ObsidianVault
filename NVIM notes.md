@@ -38,3 +38,8 @@ Keybinds:
 - set breakpoint: leader (space) + d + b
 - start debugging
 what is a vim register?
+
+#### multiline editing: 
+- see this video: https://www.youtube.com/watch?v=p4D8-brdrZo&t=125s&ab_channel=AndrewCourter
+	- get the plugin found here: https://github.com/mg979/vim-visual-multi\
+	- then w/ ctrl-n 

@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "NVIM notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "NVIM notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "NVIM notes.md"
               }
             }
           },
@@ -203,11 +203,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e4ebbbc5eb1afb5",
+  "active": "b4068591804e852e",
   "lastOpenFiles": [
+    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Thinking like a Programmer.md",
     "NVIM notes.md",
     "Bash Notes.md",
