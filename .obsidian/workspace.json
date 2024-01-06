@@ -32,6 +32,16 @@
             }
           },
           {
+            "id": "de4a3ec3d7c2e1c0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.3"
+              }
+            }
+          },
+          {
             "id": "9e4ebbbc5eb1afb5",
             "type": "leaf",
             "state": {
@@ -111,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "NVIM notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "NVIM notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "NVIM notes.md"
               }
             }
           },
@@ -169,7 +179,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -191,10 +203,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e4ebbbc5eb1afb5",
+  "active": "de4a3ec3d7c2e1c0",
   "lastOpenFiles": [
-    "NVIM notes.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "NVIM notes.md",
     "Thinking like a Programmer.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
