@@ -71,6 +71,8 @@ printUser(personOne)
 - What is the rest parameter syntax? 
 	- this is when you want to allow a function to take more arguments `function (a, b, ...restParams)` 
 		- common convention to call it 'restParams' but saves as an array and you access the parameters by index
+- Switch statements: 
+	- for the default statements, `default: (enter) console.log("error");` 
 #### How to store html elements and add event logic 
 - use store as a variable with `document.querySelector(".className");`
 	- mind that this is for one element and use `querySelectorAll(#idname);` for multiple elements
