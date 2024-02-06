@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thinking like a Programmer.md",
+                "file": "ObsidianVault/Thinking like a Programmer.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
+                "file": "ObsidianVault/TOPICS TO BE HIREABLE.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
+                "file": "ObsidianVault/TOPICS TO BE HIREABLE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
+                "file": "ObsidianVault/TOPICS TO BE HIREABLE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md"
+                "file": "ObsidianVault/TOPICS TO BE HIREABLE.md"
               }
             }
           },
@@ -206,29 +206,31 @@
   },
   "active": "b4068591804e852e",
   "lastOpenFiles": [
+    "ObsidianVault/Bash Notes.md",
+    "ObsidianVault/Images",
+    "ObsidianVault/Thinking like a Programmer.md",
+    "ObsidianVault/Regular expressions.md",
+    "ObsidianVault/Images/Pasted image 20231107101642.png",
+    "ObsidianVault/Images/Pasted image 20231031154410.png",
+    "ObsidianVault/Images/Pasted image 20230820173226.png",
+    "notes for sped meeting.md",
+    "ObsidianVault/TOPICS TO BE HIREABLE.md",
+    "ObsidianVault/The 8 Most important Hotkeys.md",
+    "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
     "ObsidianVault/Full Stack Dev/CSS/StylingTables.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
-    "notes for sped meeting.md",
-    "NVIM notes.md",
+    "ObsidianVault/NVIM notes.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/CS50/Python.md",
-    "Thinking like a Programmer.md",
-    "Bash Notes.md",
     "ObsidianVault/Full Stack Dev/Git.md",
     "ObsidianVault/Linux DebianOS reference sheet.md",
     "ObsidianVault/CS50/C.md",
-    "Regular expressions.md",
     "ObsidianVault/C++/Foundations of C++.md",
-    "Pasted image 20231107101642.png",
-    "Pasted image 20231031154410.png",
     "Pasted image 20230907130206.png",
     "Pasted image 20230907130203.png",
-    "Pasted image 20230820173226.png",
     "ObsidianVault/The 6 most Important keys to Typing in Markdown.md",
     "ObsidianVault/Dev Organizer.canvas",
-    "ObsidianVault/The 8 Most important Hotkeys.md",
-    "ObsidianVault/TOPICS TO LEARN.md",
     "ObsidianVault/CS50/SQL.md",
     "Untitled",
     "ObsidianVault/CS50/CS 50.canvas",
@@ -242,9 +244,7 @@
     "Images/Pasted image 20230627115812.png",
     "ObsidianVault/C++/C++ projects.md",
     "ObsidianVault/C++",
-    "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
     "ObsidianVault/Full Stack Dev/Intermediate HTML/Tables.md",
-    "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
     "ObsidianVault/Full Stack Dev/Javascript",
     "ObsidianVault/CS50",
     "Untitled.canvas",
