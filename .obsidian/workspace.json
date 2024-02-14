@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Thinking like a Programmer.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/NVIM notes.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/NVIM notes.md",
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/NVIM notes.md"
+                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
               }
             }
           },
@@ -181,9 +180,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ac9dd66adc7531c2",
+  "active": "22041babd128a215",
   "lastOpenFiles": [
     "ObsidianVault/Thinking like a Programmer.md",
+    "ObsidianVault/NVIM notes.md",
     "ObsidianVault/CS50/Python.md",
     "ObsidianVault/TOPICS TO BE HIREABLE.md",
     "ObsidianVault/Bash Notes.md",
@@ -198,7 +198,6 @@
     "ObsidianVault/Full Stack Dev/CSS/StylingTables.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
-    "ObsidianVault/NVIM notes.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/Full Stack Dev/Git.md",
     "ObsidianVault/Linux DebianOS reference sheet.md",
