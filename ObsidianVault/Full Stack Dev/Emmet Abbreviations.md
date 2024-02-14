@@ -1,6 +1,6 @@
 ##### reference links
 - Find link here for reference https://docs.emmet.io/abbreviations/syntax/
-- cheat sheet: https://docs.emmet.io/cheat-sheet/
+	- cheat sheet: https://docs.emmet.io/cheat-sheet/
 - link to good video: https://www.youtube.com/watch?v=V8vizNQKtx0
 
 ### Syntax
