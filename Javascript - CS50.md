@@ -14,4 +14,12 @@ what is TCP/IP:
 - DHCP - dynamic host protocol - 
 	- when you boot your device, it sends out a signal that asks, hey, what server should I use for the DNS requests. 
 - HTTP - really its a protocol for a specific way that servers are communicating to each other. a protocol is a two person party that knows how to interact in a client/server relationship. 
-- 
+html: 
+
+- autofocus="true" - this will autofocus on the box
+
+validator.w3.org - way to validate your own code to make sure that it is correct
+
+Javascript: 
+	- useful repeat function: `window.setInterval(fnName, 500)` where the 500 is in miliseconds
+- the notes for cs50 includes some more examples of how to use the different listeners for event listeners. 
