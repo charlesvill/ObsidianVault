@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "96693f7a3f562f2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Javascript - CS50.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ac9dd66adc7531c2",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "Javascript - CS50.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "Javascript - CS50.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "Javascript - CS50.md"
               }
             }
           },
@@ -180,10 +192,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "22041babd128a215",
+  "active": "96693f7a3f562f2a",
   "lastOpenFiles": [
-    "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "Javascript - CS50.md",
+    "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
     "ObsidianVault/Thinking like a Programmer.md",
     "ObsidianVault/NVIM notes.md",
     "ObsidianVault/CS50/Python.md",
@@ -221,7 +234,6 @@
     "Images/Pasted image 20230627115812.png",
     "ObsidianVault/C++/C++ projects.md",
     "ObsidianVault/C++",
-    "ObsidianVault/Full Stack Dev/Intermediate HTML/Tables.md",
     "ObsidianVault/Full Stack Dev/Javascript",
     "ObsidianVault/CS50",
     "Untitled.canvas",

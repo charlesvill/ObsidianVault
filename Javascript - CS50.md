@@ -1,0 +1,17 @@
+what is TCP/IP: 
+	- internet protocol - address 
+		- has a destination and delivery address like real mail
+		- ip is not enough alone to ensure things get delivered
+		- bc some servers might be overwhelmed
+		- use tcp to solve this.
+		- TCP - guarantees the delivery of something.  it sends it in pieces of packets so that if its missing one of them. it requests the missing one. 
+		- a TCP also has a port number. 
+			- port number designates the sort of message or port that it is requesting. like 
+				- http : 80
+				- https: 443
+- What is a DNS? - domain name server
+	- your device asks a local server that asks essential questions for request. kinda like a dictionary or hash table that will give the ip address of  a specific domain name. 
+- DHCP - dynamic host protocol - 
+	- when you boot your device, it sends out a signal that asks, hey, what server should I use for the DNS requests. 
+- HTTP - really its a protocol for a specific way that servers are communicating to each other. a protocol is a two person party that knows how to interact in a client/server relationship. 
+- 
