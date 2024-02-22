@@ -30,3 +30,11 @@ What is jinja?
 		- search?q=cats
 		- you can use flask fns to inject form data like a search bar for a server request. 
 	- google themselves use a form for their  seach bar with a submit button for the form. so Idk why I like to make a fuchi face at that stuff. 
+	What is one of the major benefits of having a framework?
+		- jinja templating: 
+			- when you want to have a root body whose contents will change, you can use template fillers with jinga to in herit from the root document and not have to write out duplicate html. 
+			- like google searches, you have the page layout that will remain the same on multiple pages but 
+
+#### Post and Get
+- post methods on flask allow you to not display the server request like the GET method would
+- this is important if you're entering a password or 
