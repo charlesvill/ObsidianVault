@@ -17,9 +17,13 @@ what is TCP/IP:
 html: 
 
 - autofocus="true" - this will autofocus on the box
+- essential meta tag for smaller devices: 
+	- `<meta name="viewport" content="initial-scale=1, width=device-width">`
+	- this sets the viewport of window to width of the device screen so that you dont have massive pages on a small screen.
 
 validator.w3.org - way to validate your own code to make sure that it is correct
 
 Javascript: 
 	- useful repeat function: `window.setInterval(fnName, 500)` where the 500 is in miliseconds
 - the notes for cs50 includes some more examples of how to use the different listeners for event listeners. 
+- 

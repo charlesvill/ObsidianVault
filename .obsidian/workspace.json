@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript - CS50.md",
+                "file": "ObsidianVault/CS50/Flask.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5621f120adfaa732",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ObsidianVault/CS50/Flask.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript - CS50.md",
+                "file": "ObsidianVault/CS50/Flask.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript - CS50.md",
+                "file": "ObsidianVault/CS50/Flask.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript - CS50.md"
+                "file": "ObsidianVault/CS50/Flask.md"
               }
             }
           },
@@ -194,8 +206,10 @@
   },
   "active": "96693f7a3f562f2a",
   "lastOpenFiles": [
+    "ObsidianVault/CS50/Javascript - CS50.md",
+    "ObsidianVault/CS50/Flask.md",
+    "ObsidianVault/CS50/Flask",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
-    "Javascript - CS50.md",
     "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
     "ObsidianVault/Thinking like a Programmer.md",
     "ObsidianVault/NVIM notes.md",
@@ -222,7 +236,6 @@
     "ObsidianVault/The 6 most Important keys to Typing in Markdown.md",
     "ObsidianVault/Dev Organizer.canvas",
     "ObsidianVault/CS50/SQL.md",
-    "Untitled",
     "ObsidianVault/CS50/CS 50.canvas",
     "Untitled 1.md",
     "Untitled 2.md",
@@ -232,7 +245,6 @@
     "Images/Pasted image 20230707124341.png",
     "Images/Pasted image 20230627125830.png",
     "Images/Pasted image 20230627115812.png",
-    "ObsidianVault/C++/C++ projects.md",
     "ObsidianVault/C++",
     "ObsidianVault/Full Stack Dev/Javascript",
     "ObsidianVault/CS50",
