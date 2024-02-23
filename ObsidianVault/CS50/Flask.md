@@ -52,3 +52,6 @@ how to make a almost title for a dropdown menu:
 - using sql objects in python and calling sql commands to write to the database
 	- db variable
 - Why do you need to place question marks as place holders in sql to avoid injection attacks?
+
+##### what do cookies do in the role of security and validity in websites?
+- cookies act like a stamp on a computer or device that presents that stamp through the browser everytime you go to a site.
