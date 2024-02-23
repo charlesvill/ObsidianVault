@@ -18,7 +18,9 @@ app = Flask(__name__)
 def index():
 	return "hello, world"
 ```
-
+- here we are importing three important objects from flask library that are useful for web applications
+- the `app = Flask(__name__)` is a variable that initializes the function Flask as a web application. 
+	- and you are passing the current file name`__name__` as an argument for what is the script for this web application
 What is jinja?
 	- a langauge for a framework that has conventions on these templates in python
 #### Static vs dynamic web applications

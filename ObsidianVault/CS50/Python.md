@@ -38,6 +38,8 @@ else: print("lmao")
 	- range arguments: range(start, # of times, step) by step meaning if you put 2, skip count 2
 - python still faces the same problem of float imprecision 
 - python however does not face integer overflow if the number is too long it will just allocate more bytes of memory to make up to make the entire number 
+- constants in python: 
+	- you should capitalize your constants like in C if you really do not want something to be reassignable, even though you cannot create constant variables. 
 ##### taking in input in python
 - 
 ##### evaluating expressions
