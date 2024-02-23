@@ -42,4 +42,7 @@ What is jinja?
 
 #### Syntax of templates
 - you can reduce boilerplate code with templates and jinja syntax to inject html documents into a root one. 
-- 
+
+how to make a almost title for a dropdown menu: 
+	- you have an option but you have it disabled and selected so that it cannot be selected: 
+	- `<option disabled selected></option>`
