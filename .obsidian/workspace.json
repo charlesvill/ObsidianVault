@@ -42,9 +42,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "878aa553400eefba",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -193,7 +203,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5621f120adfaa732",
+  "active": "878aa553400eefba",
   "lastOpenFiles": [
     "ObsidianVault/NVIM notes.md",
     "ObsidianVault/CS50/Flask.md",
