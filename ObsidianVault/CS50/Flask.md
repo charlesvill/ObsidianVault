@@ -46,3 +46,9 @@ What is jinja?
 how to make a almost title for a dropdown menu: 
 	- you have an option but you have it disabled and selected so that it cannot be selected: 
 	- `<option disabled selected></option>`
+
+### what i need to review for sql: 
+- importing sql database into python
+- using sql objects in python and calling sql commands to write to the database
+	- db variable
+- Why do you need to place question marks as place holders in sql to avoid injection attacks?
