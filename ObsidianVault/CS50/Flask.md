@@ -38,3 +38,8 @@ What is jinja?
 #### Post and Get
 - post methods on flask allow you to not display the server request like the GET method would
 - this is important if you're entering a password or 
+
+
+#### Syntax of templates
+- you can reduce boilerplate code with templates and jinja syntax to inject html documents into a root one. 
+- 
