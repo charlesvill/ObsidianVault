@@ -32,6 +32,8 @@ def index():
 - almost like the python equivalent to 
 What is jinja?
 	- a langauge for a framework that has conventions on these templates in python
+	- `{{ % name % }}` what it looks like in the html
+
 #### Static vs dynamic web applications
 - static meaning that the html content was explicitly laid out by someone
 - dynamic is when you have server requests and databases to fetch content for you and your html content is developed dynamically. 
@@ -45,18 +47,30 @@ What is jinja?
 		- jinja templating: 
 			- when you want to have a root body whose contents will change, you can use template fillers with jinga to in herit from the root document and not have to write out duplicate html. 
 			- like google searches, you have the page layout that will remain the same on multiple pages but 
+##### multiple routes
+- in order to have these multiple pages, you use different app routes. in the url it'll still look like `google.com/greet`
+```python
+@app.route("/greet")
+def greet():
+	name = request.args.get("name", "world")
+	return render_template("greet.html", name=name)
+```
+- here we have a different route that gets triggered by either url change or logic that paths you there. 
+#### Syntax of templates
+- you can reduce boilerplate code with templates and jinja syntax to inject html documents into a root one. 
+- you want to create a layout.html file that will have the boilerplate code that shared amongst all pages
+	- will have {% block body%}{% endblock %} where the content will get injected
+- each unique page will have to have the line `{% extends "layout.html"%}` (like inheritance) to pull the layout boilerplate
+	- then you will have same `{% block body %} content here {% endblock %}` with your unique page content in the middle. 
+how to make a almost title for a dropdown menu: 
+	- you have an option but you have it disabled and selected so that it cannot be selected: 
+	- `<option disabled selected></option>`
 
 #### Post and Get
 - post methods on flask allow you to not display the server request like the GET method would
 - this is important if you're entering a password or 
 
 
-#### Syntax of templates
-- you can reduce boilerplate code with templates and jinja syntax to inject html documents into a root one. 
-
-how to make a almost title for a dropdown menu: 
-	- you have an option but you have it disabled and selected so that it cannot be selected: 
-	- `<option disabled selected></option>`
 
 ### what i need to review for sql: 
 - importing sql database into python
