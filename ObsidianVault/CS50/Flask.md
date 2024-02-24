@@ -78,6 +78,15 @@ how to make a almost title for a dropdown menu:
 - importing sql database into python
 - using sql objects in python and calling sql commands to write to the database
 	- db variable
+```python
+from cs50 import SQL
+
+db = SQL("sqlite:///froshims.db")
+
+db.execute("INSERT INTO registrants (name, sport) VALUES(?, ?)", name, sport)
+```
+- here we have the db variable initializing the SQL object
+	- and the writing to a db with the execute fn call and accepts args including variables that presumably fill in for the name and sport strings found in the sql command arg.
 - Why do you need to place question marks as place holders in sql to avoid injection attacks?
 
 ##### what do cookies do in the role of security and validity in websites?
