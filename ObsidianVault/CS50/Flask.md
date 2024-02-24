@@ -56,6 +56,7 @@ def greet():
 	return render_template("greet.html", name=name)
 ```
 - here we have a different route that gets triggered by either url change or logic that paths you there. 
+- your route is triggered by the form action `action="/greet" method="get"`
 #### Syntax of templates
 - you can reduce boilerplate code with templates and jinja syntax to inject html documents into a root one. 
 - you want to create a layout.html file that will have the boilerplate code that shared amongst all pages
@@ -68,7 +69,8 @@ how to make a almost title for a dropdown menu:
 
 #### Post and Get
 - post methods on flask allow you to not display the server request like the GET method would
-- this is important if you're entering a password or 
+- this is important if you're entering a password that you dont want displayed in the url like a google search would in a GET method post
+- for post, you need to change the request fn from `request.args.get` to `request.form.get`
 
 
 
