@@ -21,6 +21,15 @@ def index():
 - here we are importing three important objects from flask library that are useful for web applications
 - the `app = Flask(__name__)` is a variable that initializes the function Flask as a web application. 
 	- and you are passing the current file name`__name__` as an argument for what is the script for this web application
+```python
+@app.route("/")
+def index():
+	name = request.args.get("name", "world")
+	return render_template("index.html")
+```
+- what this is doing is return the execution of the render_template() fn and pass through it the name of the file you want to present and it will go look for the file. 
+- the fn request.args has fn called .get() where looks for name key and if it doesnt have it, will default to "world"
+- almost like the python equivalent to 
 What is jinja?
 	- a langauge for a framework that has conventions on these templates in python
 #### Static vs dynamic web applications
