@@ -91,3 +91,8 @@ db.execute("INSERT INTO registrants (name, sport) VALUES(?, ?)", name, sport)
 
 ##### what do cookies do in the role of security and validity in websites?
 - cookies act like a stamp on a computer or device that presents that stamp through the browser everytime you go to a site.
+
+##### Jinja shortcuts for dymanic web content
+- for loops: if you pass through a list of dictionaries to your html page, you can use a jinja 'for book in books'
+	- `{% for book in books %}{% endfor %}`
+	- `return render_template("books.html", books=books)` <-- 
