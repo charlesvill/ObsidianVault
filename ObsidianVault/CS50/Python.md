@@ -260,7 +260,14 @@ for favorite in counts:
 		- `SELECT language, COUNT(*) FROM favorites GROUP BY language;`
 			  - what this does is selects two seperate columns and displays the total count of instances of each language
 	- 
-	#### inserting rows into SQL `INSERT INTO favorites (language, problem) VALUES('SQL', 'Fiftyville')` ##### deleting data from Sql
+##### getting overview of the database
+- you can see how the db is organized with the `.schema` command and even do `.schema tablename` for a specific table
+##### adding to the database
+
+inserting rows into SQL `INSERT INTO favorites (language, problem) VALUES('SQL', 'Fiftyville')` 
+	- where favorites is the table name, and language, problem are separate columns and VALUES are comma separated inserted per the order columns were listed prior
+	- inserting dynamically with variables: have to use strings (but not formated strings)
+#####deleting data from Sql
 		`sqlite> DELETE FROM favorites WHERE Timestamp IS NULL;`
 		- NEVER DO 'sqlite> DELETE FROM favorites' 
 - the above line would delete everything
