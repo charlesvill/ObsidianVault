@@ -55,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/CS50/Flask.md",
+                "file": "ObsidianVault/CS50/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/CS50/Flask.md",
+                "file": "ObsidianVault/CS50/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/CS50/Flask.md"
+                "file": "ObsidianVault/CS50/Python.md"
               }
             }
           },
@@ -204,11 +205,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5621f120adfaa732",
+  "active": "43b461e5f55be00e",
   "lastOpenFiles": [
+    "ObsidianVault/CS50/Flask.md",
     "ObsidianVault/CS50/Python.md",
     "ObsidianVault/NVIM notes.md",
-    "ObsidianVault/CS50/Flask.md",
     "ObsidianVault/CS50/SQL.md",
     "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "ObsidianVault/CS50/Javascript - CS50.md",
