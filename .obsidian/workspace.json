@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -118,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Switch repair.md",
+                "file": "ObsidianVault/CS50/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Switch repair.md",
+                "file": "ObsidianVault/CS50/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Switch repair.md"
+                "file": "ObsidianVault/CS50/Python.md"
               }
             }
           },
@@ -216,10 +217,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "51732249408e3d83",
+  "active": "43b461e5f55be00e",
   "lastOpenFiles": [
-    "ObsidianVault/CS50/Python.md",
     "Switch repair.md",
+    "ObsidianVault/CS50/Python.md",
     "Electronics",
     "ObsidianVault/CS50/Flask.md",
     "ObsidianVault/NVIM notes.md",
