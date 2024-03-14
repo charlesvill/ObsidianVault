@@ -99,3 +99,6 @@ db.execute("INSERT INTO registrants (name, sport) VALUES(?, ?)", name, sport)
 	- `{% for book in books %}{% endfor %}`
 	- `return render_template("books.html", books=books)` <-- this what the line look like to pass through the list to jinja, and books is the variable that jinja parses
 - 
+
+Questions to ask: 
+- what is hashing? in the context of password checking
