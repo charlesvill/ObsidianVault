@@ -101,4 +101,4 @@ db.execute("INSERT INTO registrants (name, sport) VALUES(?, ?)", name, sport)
 - 
 
 Questions to ask: 
-- what is hashing? in the context of password checking
+- what is hashing? in the context of password checking.
