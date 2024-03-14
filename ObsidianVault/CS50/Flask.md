@@ -71,6 +71,7 @@ how to make a almost title for a dropdown menu:
 
 #### Post and Get
 - post methods on flask allow you to not display the server request like the GET method would
+	- when you have an href link redirect like a url ie `/register` the method is GET. hence you will see alot of def functions have if POST then ... or else return the register.html page. because you get two options there, either you are only populating the page or you are actually for example submitting the form or something. 
 - this is important if you're entering a password that you dont want displayed in the url like a google search would in a GET method post
 - for post, you need to change the request fn from `request.args.get` to `request.form.get` to extract form values.
 	
