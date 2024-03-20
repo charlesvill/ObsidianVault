@@ -99,6 +99,7 @@ db.execute("INSERT INTO registrants (name, sport) VALUES(?, ?)", name, sport)
 ##### Jinja shortcuts for dymanic web content
 - for loops: if you pass through a list of dictionaries to your html page, you can use a jinja 'for book in books'
 	- `{% for book in books %}{% endfor %}`
+			- `{{book['title']}}`accessing variable content has double quotes and accessors for dicts use standard bracket notation
 	- `return render_template("books.html", books=books)` <-- this what the line look like to pass through the list to jinja, and books is the variable that jinja parses
 - 
 
