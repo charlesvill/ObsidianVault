@@ -339,3 +339,6 @@ JOIN -
 		- this says that in the current table the datatype show_id is a primary key in the shows id which is a different table and it connects them
 - what is a nested query?
 	- with two tables like ratings and shows, if you want the show title for the specific rating query, you can nest a query to get custom results
+
+What are decoarated functions?
+	- it is when you have a function that you want to adjust its functionality but you dont want to change the original source code. used in the context of web development for requiring a login  to access a specific route. involves something called wraps. need to know more on this. 
