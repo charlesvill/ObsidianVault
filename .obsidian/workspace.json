@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "316e8e1e14d434dc",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.11"
+              }
+            }
+          },
+          {
             "id": "7be530152c9bd9ec",
             "type": "leaf",
             "state": {
@@ -67,7 +77,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -216,7 +227,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5621f120adfaa732",
+  "active": "316e8e1e14d434dc",
   "lastOpenFiles": [
     "ObsidianVault/CS50/Python.md",
     "Switch repair.md",
