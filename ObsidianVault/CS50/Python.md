@@ -342,3 +342,15 @@ JOIN -
 
 What are decoarated functions?
 	- it is when you have a function that you want to adjust its functionality but you dont want to change the original source code. used in the context of web development for requiring a login  to access a specific route. involves something called wraps. need to know more on this. 
+
+What do the autoincrement fields do in Sqlite tables?
+	- the autoincrement field will create a separate table that will track the row ids for rows as they are added and deleted to make sure that there will always be a unique row id for each of the elements. 
+
+What does the UNIQUE keyword do?
+	- when making a table, giving something the UNIQUE keyword will ensure that the elements in that column will not have a repeating number or similar characteristic. if it does, sqlite will throw an error see app.py in finance folder in cs50 for context
+Indexing unique vs non unique:
+		- Unique:
+		- Non-Unique: this allows a column to have rows that have the same index value for more rapid queries. it will however take longer to insert and update. 
+```sql
+CREATE INDEX index_name ON table_name(column_name);
+```
