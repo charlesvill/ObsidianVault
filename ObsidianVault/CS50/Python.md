@@ -354,3 +354,5 @@ Indexing unique vs non unique:
 ```sql
 CREATE INDEX index_name ON table_name(column_name);
 ```
+
+Adding quantities in columns and grouping them by names
