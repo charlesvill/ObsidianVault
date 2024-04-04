@@ -283,7 +283,10 @@ integer- just integers proper
 numeric- dates and times, numbers but not necessarily numbers
 real- decimal points in them 
 text- strings
-
+##### how to add a column: 
+```sql
+ALTER TABLE table_name ADD COLUMN column_name column_type;
+``` 
 ##### QUERY data from more than one table
 - the relational part of the databases allows you to pull from different tables in structured ways. 
 - for example if the songs table has the id for the artist and the artists table also has the artist id, you can make queries from both tables using the id. 
