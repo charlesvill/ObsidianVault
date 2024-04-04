@@ -356,3 +356,22 @@ CREATE INDEX index_name ON table_name(column_name);
 ```
 
 Adding quantities in columns and grouping them by names
+```sql
+SELECT symbol, SUM(quantity) FROM purchases WHERE user_id IN (SELECT id FROM users WHERE username = 'charlesvill') GROUP BY symbol;
+```
+
+What does the HAVING clause do?
+- used in the context of SELECT where will specify a condition to group by for example: 
+```sql
+SELECT
+	column_1, 
+        column_2,
+	aggregate_function (column_3)
+FROM
+	table
+GROUP BY
+	column_1,
+        column_2
+HAVING
+	search_condition;
+```
