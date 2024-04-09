@@ -244,7 +244,7 @@ for favorite in counts:
 	- UPPER
  - example of accessing data from a table with column id and title: 
 	 - `SELECT (COUNT(DISTINCT(title)) FROM shows;` 
-		 - this will give you the number of distinct titles from the table shows. you can chain commands. 
+		 - this will give you the number of distinct titles from the table shows. you can chain commands. distinct meaning that if you get repeating of the title you're selecting, it will ignore the repeats
 	- the idea is that you're specifiying what data you want to see by chaining these commands in ways that will net what you want. 
 - more commands include: 
 	- WHERE - filter out data can meet conditionals
