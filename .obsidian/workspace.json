@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/CS50/Flask.md",
+                "file": "Computer Science/CS50/Flask.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Thinking like a Programmer.md",
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -110,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/Thinking like a Programmer.md",
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/Thinking like a Programmer.md",
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/Thinking like a Programmer.md"
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md"
               }
             }
           },
@@ -192,54 +193,55 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fcdc8327bf210f3a",
+  "active": "e4efd7a73c8c94ae",
   "lastOpenFiles": [
-    "ObsidianVault/CS50/Python.md",
-    "ObsidianVault/CS50/Flask.md",
-    "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
-    "ObsidianVault/CS50/SQL.md",
-    "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",
-    "ObsidianVault/Full Stack Dev/CSS/StylingTables.md",
-    "ObsidianVault/Full Stack Dev/Intermediate HTML/SVG.md",
-    "ObsidianVault/Full Stack Dev/Intermediate HTML/Tables.md",
-    "ObsidianVault/Full Stack Dev/Javascript/Intermediate Javascript.md",
-    "Switch repair.md",
+    "Electronics/Switch repair.md",
+    "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
+    "Computer Science/Algorithms and Data Structures",
+    "Computer Science/TOPICS TO BE HIREABLE.md",
+    "Computer Science/Thinking like a Programmer.md",
+    "Computer Science/CS50/Python.md",
+    "Computer Science/CS50/Flask.md",
+    "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
+    "Computer Science/CS50/SQL.md",
+    "Computer Science/Full Stack Dev/CSS/CSS reference Notes.md",
+    "Computer Science/Full Stack Dev/CSS/StylingTables.md",
+    "Computer Science/Full Stack Dev/Intermediate HTML/SVG.md",
+    "Computer Science/Full Stack Dev/Intermediate HTML/Tables.md",
+    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Electronics",
-    "ObsidianVault/NVIM notes.md",
-    "ObsidianVault/CS50/Javascript - CS50.md",
+    "Computer Science/NVIM notes.md",
+    "Computer Science/CS50/Javascript - CS50.md",
     "ObsidianVault/CS50/Flask",
-    "ObsidianVault/Full Stack Dev/Emmet Abbreviations.md",
-    "ObsidianVault/Thinking like a Programmer.md",
-    "ObsidianVault/TOPICS TO BE HIREABLE.md",
-    "ObsidianVault/Bash Notes.md",
-    "ObsidianVault/Images",
-    "ObsidianVault/Regular expressions.md",
-    "ObsidianVault/Images/Pasted image 20231107101642.png",
-    "ObsidianVault/Images/Pasted image 20231031154410.png",
-    "ObsidianVault/Images/Pasted image 20230820173226.png",
+    "Computer Science/Full Stack Dev/Emmet Abbreviations.md",
+    "Computer Science/Bash Notes.md",
+    "Computer Science/Images",
+    "Computer Science/Regular expressions.md",
+    "Computer Science/Images/Pasted image 20231107101642.png",
+    "Computer Science/Images/Pasted image 20231031154410.png",
+    "Computer Science/Images/Pasted image 20230820173226.png",
     "notes for sped meeting.md",
-    "ObsidianVault/The 8 Most important Hotkeys.md",
-    "ObsidianVault/Full Stack Dev/Git.md",
-    "ObsidianVault/Linux DebianOS reference sheet.md",
-    "ObsidianVault/CS50/C.md",
-    "ObsidianVault/C++/Foundations of C++.md",
+    "Computer Science/The 8 Most important Hotkeys.md",
+    "Computer Science/Full Stack Dev/Git.md",
+    "Computer Science/Linux DebianOS reference sheet.md",
+    "Computer Science/CS50/C.md",
+    "Computer Science/C++/Foundations of C++.md",
     "Pasted image 20230907130206.png",
     "Pasted image 20230907130203.png",
-    "ObsidianVault/The 6 most Important keys to Typing in Markdown.md",
-    "ObsidianVault/Dev Organizer.canvas",
-    "ObsidianVault/CS50/CS 50.canvas",
+    "Computer Science/The 6 most Important keys to Typing in Markdown.md",
+    "Computer Science/Dev Organizer.canvas",
+    "Computer Science/CS50/CS 50.canvas",
     "Untitled 1.md",
-    "Untitled 2.md",
     "Images/Pasted image 20230707124826.png",
     "Images/Pasted image 20230707124341.png",
     "Images/Pasted image 20230627125830.png",
     "Images/Pasted image 20230627115812.png",
-    "ObsidianVault/C++",
-    "ObsidianVault/Full Stack Dev/Javascript",
-    "ObsidianVault/CS50",
+    "Computer Science/C++",
+    "Computer Science/Full Stack Dev/Javascript",
+    "Computer Science/CS50",
     "Untitled.canvas",
     "Images",
-    "ObsidianVault/Full Stack Dev/Intermediate HTML",
-    "ObsidianVault/Full Stack Dev/CSS"
+    "Computer Science/Full Stack Dev/Intermediate HTML",
+    "Computer Science/Full Stack Dev/CSS"
   ]
 }

@@ -17,6 +17,6 @@
 		- I drove cross country in two days by myself. 
 	- the latter speaks more to your ability to drive instead of just saying that you do.
 - ex: Javascript: Efficient in DOM manipulation, Object oriented practices
-	- Rewrite: Built 27 Javascript projects from the ground up ranging from weather app with asynchronous functions to an algorithm finding shortest path on a chessboard 
+	- Rewrite: Built 27 Javascript projects from the ground up ranging from weather app with asynchronous api calls to an algorithm finding shortest path on a chessboard 
 - All of my resume needs to be centered around these projects and what I learned from them and how they showcase my skills
 - I also need to talk about what challenges I faced while making these projects and design chioces that I made and ultimately what I could have done differently looking back
