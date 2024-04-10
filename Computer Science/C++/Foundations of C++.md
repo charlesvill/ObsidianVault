@@ -52,6 +52,10 @@ vector<int> v = {5, 7,9, 4, 6, 8};
 sorting a vector: 
 - you can use the method sort() to sort lexigraphically. however this is a mutable function member of vector. 
 	- `vector<double> temps;  sort(temps);` make sure the vector goes in there. it does not attach with dot notaition to anything. 
+	insert to vector: 
+		- use `pushback()` to add to the end or `insert()` for control at which index
+- accessing members of vector: 
+	- usual index syntax
 ##### loops in C++
 - you have the options of:
 	- do.. while()

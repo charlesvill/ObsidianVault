@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0f48bd1ea94a886d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer Science/CS50/Flask.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "fcdc8327bf210f3a",
             "type": "leaf",
             "state": {
@@ -32,12 +20,12 @@
             }
           },
           {
-            "id": "43b461e5f55be00e",
+            "id": "6283fa2933410419",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
+                "file": "Computer Science/C++/Foundations of C++.md",
                 "mode": "source",
                 "source": false
               }
@@ -111,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
+                "file": "Computer Science/C++/Foundations of C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
+                "file": "Computer Science/C++/Foundations of C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md"
+                "file": "Computer Science/C++/Foundations of C++.md"
               }
             }
           },
@@ -193,10 +181,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4efd7a73c8c94ae",
+  "active": "6283fa2933410419",
   "lastOpenFiles": [
-    "Electronics/Switch repair.md",
     "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
+    "Electronics/Switch repair.md",
     "Computer Science/Algorithms and Data Structures",
     "Computer Science/TOPICS TO BE HIREABLE.md",
     "Computer Science/Thinking like a Programmer.md",
