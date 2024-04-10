@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "ObsidianVault/Thinking like a Programmer.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "python",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,8 +90,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -111,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "ObsidianVault/Thinking like a Programmer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md",
+                "file": "ObsidianVault/Thinking like a Programmer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ObsidianVault/CS50/Python.md"
+                "file": "ObsidianVault/Thinking like a Programmer.md"
               }
             }
           },
@@ -195,8 +194,8 @@
   },
   "active": "fcdc8327bf210f3a",
   "lastOpenFiles": [
-    "ObsidianVault/CS50/Flask.md",
     "ObsidianVault/CS50/Python.md",
+    "ObsidianVault/CS50/Flask.md",
     "ObsidianVault/Full Stack Dev/CSS/Intermediate CSS.md",
     "ObsidianVault/CS50/SQL.md",
     "ObsidianVault/Full Stack Dev/CSS/CSS reference Notes.md",

@@ -42,3 +42,5 @@
 
 #### the importance of code reuse: 
 - this builds on [[#look for analogies]] but always store your code solutions in a way that would be accessible in the future because it will save from having to relearn something. 
+
+### Ch 3 problems with arrays
