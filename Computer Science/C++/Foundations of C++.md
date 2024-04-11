@@ -92,7 +92,7 @@ int value = 10;
 int* ptr = &value;  // <- pointer
 int copy = *ptr;  // <- dereferencing
 //copy == 10
-int tmp = nullptr;
+int* tmp = nullptr;
 ```
 - in order to initialize a pointer, you need to get the address using the & operator infront of the value you want to store to pull the address of where it lives in memory. 
 - The process of accessing the original value once again is called dereferencing. you set a variable of the same data type to the pointer that stores the address (with * operator infront of it) and it will pull the value that is at that address. 
