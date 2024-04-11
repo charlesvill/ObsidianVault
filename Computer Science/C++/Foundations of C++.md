@@ -81,6 +81,26 @@ for(double input; cin >> input){
 ```
 - this will effectively continously read values into input and into the vector temps while values are being input
 	- to terminate input, press ctrl+D in terminal on Unix and ctrl+Z on windows.
+
+### Pointers in C++
+- Dffierence between a Pointer `int* num = 10;`
+- and reference `int& num = num;`
+- and finally dereference `int* ptr1 = &num; int value = *ptr1;`
+- pointers will store the memory of the data
+```cpp
+int value = 10;
+int* ptr = &value;  // <- pointer
+int copy = *ptr;  // <- dereferencing
+//copy == 10
+int tmp = nullptr;
+```
+- in order to initialize a pointer, you need to get the address using the & operator infront of the value you want to store to pull the address of where it lives in memory. 
+- The process of accessing the original value once again is called dereferencing. you set a variable of the same data type to the pointer that stores the address (with * operator infront of it) and it will pull the value that is at that address. 
+- you can also have a `nullptr` which points to nothing and is safe for initializing pointers like setting int to 0. 
+
+- You can have specific data type pointers `int*` or`char*` that store memory of data. You can also have void pointers
+#### void pointers
+- 
 ### ch 5 Errors
 - being proactive about errors involves using the `error()` function with the message inside of it embedded where you would anticipate things to pass the compiler but nonetheless be a logical error given the context
 	- *should be noted that this is a part of the books header file which is unclear if actually used by developers or only for the purposes of learning*
