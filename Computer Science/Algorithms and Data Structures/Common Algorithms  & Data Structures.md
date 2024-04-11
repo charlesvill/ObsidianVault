@@ -16,4 +16,23 @@ while(fastPtr !== null){
 }
 ```
 
+#### Graphs
+edges 
+vertices
+#### Stacking
+enqueue
+dequeue
+with array/linked lists
+#### Hashmap/Hashing
 
+#### Binary Tree
+##### recursion and binary tree
+##### in order
+##### preorder
+
+
+
+
+#### Heap
+##### max heap
+##### min heap
