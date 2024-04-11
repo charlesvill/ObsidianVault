@@ -104,7 +104,8 @@ int tmp = nullptr;
 ```cpp
 int num = 42;
 void* voidPtr = &num;
-
+int* intPtr = static_cast<int*>(voidPtr); <- casts to an int*
+cout << *voidPtr; // 42 <- notice the dereferencing syntax here to get the value bc voidPtr still apointer so needs to be dereferenced. 
 ```
 ### ch 5 Errors
 - being proactive about errors involves using the `error()` function with the message inside of it embedded where you would anticipate things to pass the compiler but nonetheless be a logical error given the context

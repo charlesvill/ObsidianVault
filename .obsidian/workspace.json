@@ -54,19 +54,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "1e78c2dc604712c8",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.12"
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -215,7 +205,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1e78c2dc604712c8",
+  "active": "3f915ff6bc0c97e0",
   "lastOpenFiles": [
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/CS50/C.md",
