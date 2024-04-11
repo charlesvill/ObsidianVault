@@ -25,14 +25,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/C++/Foundations of C++.md",
+                "file": "Computer Science/CS50/C.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0d7eeb733db1dfe7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/C++/Foundations of C++.md",
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/C++/Foundations of C++.md",
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/C++/Foundations of C++.md"
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md"
               }
             }
           },
@@ -181,8 +192,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6283fa2933410419",
+  "active": "fcdc8327bf210f3a",
   "lastOpenFiles": [
+    "Computer Science/CS50/C.md",
+    "Computer Science/C++/Foundations of C++.md",
+    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
     "Electronics/Switch repair.md",
     "Computer Science/Algorithms and Data Structures",
@@ -196,7 +210,6 @@
     "Computer Science/Full Stack Dev/CSS/StylingTables.md",
     "Computer Science/Full Stack Dev/Intermediate HTML/SVG.md",
     "Computer Science/Full Stack Dev/Intermediate HTML/Tables.md",
-    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Electronics",
     "Computer Science/NVIM notes.md",
     "Computer Science/CS50/Javascript - CS50.md",
@@ -212,8 +225,6 @@
     "Computer Science/The 8 Most important Hotkeys.md",
     "Computer Science/Full Stack Dev/Git.md",
     "Computer Science/Linux DebianOS reference sheet.md",
-    "Computer Science/CS50/C.md",
-    "Computer Science/C++/Foundations of C++.md",
     "Pasted image 20230907130206.png",
     "Pasted image 20230907130203.png",
     "Computer Science/The 6 most Important keys to Typing in Markdown.md",
