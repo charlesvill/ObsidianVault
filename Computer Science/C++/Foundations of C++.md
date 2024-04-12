@@ -20,6 +20,9 @@ return 0;
 ```
 - the hashes there are known as preproccessor statements, it processes them before your file is processed. it basically pastes it in there. 
 ###### how to execute a file 
+- using gnu compiler: 
+	- `g++ hello.cpp -o hello`
+	- `./hello`
 ### Bjarne Stourstroup Ch 4
 why use functional programming?
 - separates computation logically
