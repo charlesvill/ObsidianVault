@@ -47,11 +47,26 @@ what are arrays called in c++?
 	- arrays are fixed in size need to be told their length from initialization
 	- vectors can be dynamically changed and manipulated also memory allocation works automatically for vectors 
 	- vectors know their size unlike arrays. has the method: `v.size() // return 4 if there are four indices`
+ - arrays and pointers: 
+	 - because of the fluidity between the data types of arrays and pointers, an array initiated with a pointer operator and data type can nevertheless still access its member through index notation. go figure. Dont know why: 
+```cpp
+int ARRAY_SIZE;
+cin >> ARRAY_SIZE;
+int *surveyData = new int[ARRAY_SIZE;
+	for(int i = 0; i < ARRAY_SIZE; i++){
+	cin >> surveyData[i];
+	}
+```
+- notice ehere surverydata is a pointer but nevertheless can access its members with [i] as if it were a regular array of int type. 
+	- also notice the use of the new keyword to dynamically create and thus allocate memory for an array
+	- because its dynamically created you need to free the memory or else you''ll have leaks: 
+		- `delete[] surveyData;` the delete[] operator used for arrays. 
 
-initializing a vector: 
+initializing a vector: ;
 ```cpp
 vector<int> v = {5, 7,9, 4, 6, 8};
 ```
+- you can use vector_name.reserve(10) to generate a number of indexes ahead of time and while not necessary could help prevent your vector from having to resize itself as often.
 - in order to grow the vector you can use the method push_back() in dot notation on the vector variable 
 sorting a vector: 
 - you can use the method sort() to sort lexigraphically. however this is a mutable function member of vector. 
