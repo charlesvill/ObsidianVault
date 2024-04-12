@@ -86,6 +86,14 @@ sorting a vector:
 - like C, you can declare a function after the main function however if you try to invoke it before it has been called you will need to place the function prototype or 'forward delcaration' before the main function.
 ##### switch statements
 - for switch statements, if you wish to initialize a variable, you need to put it inside of a block. go figure. straight from the words of Bjarne himself. didnt give much of a reason besides the compiler said so. 
+##### sorting in C++
+- you have the option of `qsort()` and `sort()`
+	- qsort: quick sort expects: 
+		- (array, # items in array, sizeof(array data type), comparefunc)
+		- the return value of the comparefunc should be an int
+		- sorts based on returning a 0, -1 , or +1 to move pointer value
+	- sort: (array, array + number of items, comparefunc)
+		- sort actually has a built in compare function but allows you the use of a custom sorting function (example seen in qsort.cpp in repo)
 ### Input/Output in C++
 - for outputting to the terminal you cannot concat like you would in c with a + you have to use <<. for example: 
 - `cout << "hello today's temperature is:" << double_temp << '\n'`
