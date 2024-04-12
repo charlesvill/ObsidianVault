@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "873a697902aae88f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/Thinking like a Programmer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -123,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/CS50/C.md",
+                "file": "Computer Science/Thinking like a Programmer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/CS50/C.md",
+                "file": "Computer Science/Thinking like a Programmer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/CS50/C.md"
+                "file": "Computer Science/Thinking like a Programmer.md"
               }
             }
           },
@@ -205,7 +217,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6283fa2933410419",
+  "active": "873a697902aae88f",
   "lastOpenFiles": [
     "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
     "Computer Science/CS50/C.md",

@@ -44,3 +44,5 @@
 - this builds on [[#look for analogies]] but always store your code solutions in a way that would be accessible in the future because it will save from having to relearn something. 
 
 ### Ch 3 problems with arrays
+- what does it mean to refactor something so that it scales better with larger datasets? 
+	- for example you might have a working algorithm to find the mode of a dataset but its time complexity might be something like O(n^2) and on a bigger data set could slow things down considerably. then you would instead refactor to get an algorithm that has a better time complexity like linera O(n) example can be seen in mode findig example
