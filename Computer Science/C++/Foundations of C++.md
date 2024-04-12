@@ -82,6 +82,7 @@ sorting a vector:
 	- for (variable : range)
 	 - while()
 - you can use `continue;` to skip one iterative cycle and `break` to break out of the loop entirely. 
+- you can also skip the initializer if you dont need it( `for(;p!=0;++p){}`
 ##### functions in C++ 
 - like C, you can declare a function after the main function however if you try to invoke it before it has been called you will need to place the function prototype or 'forward delcaration' before the main function.
 ##### switch statements
@@ -121,9 +122,20 @@ int copy = *ptr;  // <- dereferencing
 //copy == 10
 int* tmp = nullptr;
 ```
-- in order to initialize a pointer, you need to get the address using the & operator infront of the value you want to store to pull the address of where it lives in memory. 
-- The process of accessing the original value once again is called dereferencing. you set a variable of the same data type to the pointer that stores the address (with * operator infront of it) and it will pull the value that is at that address. 
+- in order to initialize a pointer, you need to get the address using the & operator prefixed to the value whose address you want to store. &prefix means "address of" 
+- The process of accessing the original value once again is called dereferencing. you set a variable of the same data type to the pointer that stores the address (with * prefix) "contents of".  
 - you can also have a `nullptr` which points to nothing and is safe for initializing pointers like setting int to 0. 
+- if you have a pointer pointing to a char or something in an array you can use ++p to move the pointer to the next element in the array: ``
+##### specifying pointers through arguments
+- when passing arguments might be unclear how to pass by reference and dereference at the same time. use suffix& instead to "refer to" the data wanting to pass: 
+```cpp 
+int[] x = {1, 2, 3, 4, 6, 7, 8}
+for(int& x : v){
+	++x;
+}
+```
+- see without thereference you would be passing the value x by copying the value from v, but with the suffix& you are 'referring to' the value in v. memory performant
+- note that you cannot reassign x's reference to something else after initialization
 
 - You can have specific data type pointers `int*` or`char*` that store memory of data. You can also have void pointers
 #### void pointers
