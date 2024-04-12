@@ -177,6 +177,7 @@ public:
 	double value;
 };
 ```
+- it might look like: `[{'h', 45.0}, {'z', 67.4}]` in an array of that stuct or token type
 we can copy over the objects over to over objects as long as the initializer is the same Token type
 	- `Token tt = t;`
 - we can also construct new tokens as such `Token t1 {'+'};` or `Token t2 {'8', 11.5}` where the first arg is the kind and the second is the value. 
