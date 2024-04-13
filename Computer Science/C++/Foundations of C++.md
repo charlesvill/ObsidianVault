@@ -524,3 +524,11 @@ void outputDemo::fileWriter() {
 ```
 - note here the ofstream ost{filename} this establishes the operand ost that a few lines below it writes out using ost << with the content
 	- also note the error check (if no ost)throw error
+### Ch 11 Programming Graphics
+#### Getting started with graphics
+- in order to get started with graphics, its important to understand the role of llibraries needed to be imported in order to have something displayed to the screen. 
+	- libraries are needed due to the complexity and immensity needed to output graphics to the screen relative to the trivial in comparision programs you make in the terminal using neovim
+##### libraries in C++ (or similar compiled language)
+two kinds of libraries: 
+	 - .dll= dynamic link library
+	 - .lib = static link library
