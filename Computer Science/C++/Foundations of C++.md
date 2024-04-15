@@ -528,6 +528,8 @@ void outputDemo::fileWriter() {
 #### Getting started with graphics
 - in order to get started with graphics, its important to understand the role of llibraries needed to be imported in order to have something displayed to the screen. 
 	- libraries are needed due to the complexity and immensity needed to output graphics to the screen relative to the trivial in comparision programs you make in the terminal using neovim
+	- libraries needed to get first example in ch 11: fltk
+	- follow this guide on getting that problem up and running: https://groups.google.com/g/ppp-public/c/BtlzdWGuQpQ/m/KuDN4u-SPKgJ?pli=1
 ##### libraries in C++ (or similar compiled language)
 two kinds of libraries: 
 	 - .dll= dynamic link library - these are precompiled and will run after your code is compiled. makes executeables smaller but will need to be present in order for your program to run successfully
@@ -535,6 +537,7 @@ two kinds of libraries:
 - what is Cmake and what is its role in this?
 	- Cmake is a tool that will adapt for your system and ide (if applicable) and will generate the make file for your system and code. the make file tells the compiler how your code should be stitched together and where the header files and libraries are that are essential to your project. 
 		- knowledge of make files and cmake esseential in actual projects that utilize libraries.
+		- cmake tutorial: https://www.youtube.com/watch?v=mKZ-i-UfGgQ&ab_channel=kandodev
 - What is the Fast Light took kit?
-	- a library for displaying graphics from code in the terminal. it will create windows and you can create graphics representations with it
+	- a library for GUI for C++. Helps to abstract away some of the complexities in drawing a window
 - 
