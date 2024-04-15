@@ -530,5 +530,8 @@ void outputDemo::fileWriter() {
 	- libraries are needed due to the complexity and immensity needed to output graphics to the screen relative to the trivial in comparision programs you make in the terminal using neovim
 ##### libraries in C++ (or similar compiled language)
 two kinds of libraries: 
-	 - .dll= dynamic link library
-	 - .lib = static link library
+	 - .dll= dynamic link library - these are precompiled and will run after your code is compiled. makes executeables smaller but will need to be present in order for your program to run successfully
+	 - .lib = static link library - these essential include library code in with your compilation and ends with bigger executable files
+- what is Cmake and what is its role in this?
+	- Cmake is a tool that will adapt for your system and ide (if applicable) and will generate the make file for your system and code. the make file tells the compiler how your code should be stitched together and where the header files and libraries are that are essential to your project. 
+		- knowledge of make files and cmake esseential in actual projects that utilize libraries.
