@@ -540,4 +540,22 @@ two kinds of libraries:
 		- cmake tutorial: https://www.youtube.com/watch?v=mKZ-i-UfGgQ&ab_channel=kandodev
 - What is the Fast Light took kit?
 	- a library for GUI for C++. Helps to abstract away some of the complexities in drawing a window
-- 
+
+### Data structures in C++
+#### Hash maps
+- in c++ known as an unorderd map
+```cpp
+#include <unordered_map>
+
+struct CityRecord
+{
+	std::string Name;
+	uint64_t Population;
+	double Latitude, Longitude;
+}
+int main()
+{
+	std::vector<CityRecord> cities;
+
+}
+```
