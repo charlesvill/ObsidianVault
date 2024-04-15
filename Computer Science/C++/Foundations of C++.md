@@ -535,3 +535,6 @@ two kinds of libraries:
 - what is Cmake and what is its role in this?
 	- Cmake is a tool that will adapt for your system and ide (if applicable) and will generate the make file for your system and code. the make file tells the compiler how your code should be stitched together and where the header files and libraries are that are essential to your project. 
 		- knowledge of make files and cmake esseential in actual projects that utilize libraries.
+- What is the Fast Light took kit?
+	- a library for displaying graphics from code in the terminal. it will create windows and you can create graphics representations with it
+- 
