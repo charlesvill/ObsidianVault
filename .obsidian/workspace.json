@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fcdc8327bf210f3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6283fa2933410419",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer Science/CS50/C.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0d7eeb733db1dfe7",
             "type": "leaf",
             "state": {
@@ -61,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Thinking like a Programmer.md",
+                "file": "Computer Science/CS50/C.md",
                 "mode": "source",
                 "source": false
               }
@@ -135,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
+                "file": "Computer Science/CS50/C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
+                "file": "Computer Science/CS50/C.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md"
+                "file": "Computer Science/CS50/C.md"
               }
             }
           },
@@ -217,13 +193,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d7eeb733db1dfe7",
+  "active": "873a697902aae88f",
   "lastOpenFiles": [
+    "Computer Science/Thinking like a Programmer.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/C++/Foundations of C++.md",
-    "Computer Science/CS50/C.md",
-    "Computer Science/Thinking like a Programmer.md",
     "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
+    "Computer Science/CS50/C.md",
     "Electronics/Switch repair.md",
     "Computer Science/Algorithms and Data Structures",
     "Computer Science/TOPICS TO BE HIREABLE.md",

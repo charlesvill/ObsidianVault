@@ -32,7 +32,12 @@ enqueue
 dequeue
 with array/linked lists
 #### Hashmap/Hashing
-- 
+- involves the combination of an indexed array called a hash table that uses a function called hash function to return a index to store the node or value at. 
+- collision will happen if you have more than one value that will hash to the same index (i.e apple in index 0 and ant also hashes to the index 0)
+	- the solution to these collisions are two: 
+		- linear probing: when you find the next available index in the array
+			- not great becuase it starts clustering which is when too many values or keys are hashing the same index and accumulating along the index length which could devolve the speed of look up to linear o(n)
+		- Seperate chaning: 
 
 #### Binary Tree
 ##### recursion and binary tree
