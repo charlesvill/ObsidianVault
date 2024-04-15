@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/C++/Foundations of C++.md",
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/C++/Foundations of C++.md",
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/C++/Foundations of C++.md"
+                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md"
               }
             }
           },
@@ -217,13 +217,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f915ff6bc0c97e0",
+  "active": "0d7eeb733db1dfe7",
   "lastOpenFiles": [
-    "Computer Science/CS50/C.md",
+    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/C++/Foundations of C++.md",
+    "Computer Science/CS50/C.md",
     "Computer Science/Thinking like a Programmer.md",
     "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
-    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Electronics/Switch repair.md",
     "Computer Science/Algorithms and Data Structures",
     "Computer Science/TOPICS TO BE HIREABLE.md",
