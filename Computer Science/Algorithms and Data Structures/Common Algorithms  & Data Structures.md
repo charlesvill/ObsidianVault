@@ -37,7 +37,7 @@ with array/linked lists
 	- the solution to these collisions are two: 
 		- linear probing: when you find the next available index in the array
 			- not great becuase it starts clustering which is when too many values or keys are hashing the same index and accumulating along the index length which could devolve the speed of look up to linear o(n)
-		- Seperate chaning: 
+		- Seperate chaning: when you create linked lists at the key location to allow items to chan together in either a single or doubly linked list.
 
 #### Binary Tree
 ##### recursion and binary tree
