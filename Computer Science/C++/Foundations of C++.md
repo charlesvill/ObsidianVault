@@ -526,6 +526,26 @@ int main()
 // notice how much cleaner the use of the * symbol is here compared to .add(). and not as noticeable here but a longer program will have a notably cleaner and maintable look to it compared to having the mess of strung member functions being applied and nested parenthesese that need to be had. 
 ```
 - also notice the presence of the const keyword at the end of the definition of the member functions. this means that instead of mutating the original, it will make a copy 
+###### overloading functions
+- inclusive to being able to overload or change the behavior of operators, you can also overload functions and change their functionality based on the types of arguments that are passed through
+```cpp
+void print(int value)
+{
+	std::cout << "Integer value: " << value << std::endl;
+}
+void print(std::string message)
+{
+	std::cout << message << std::endl;
+}
+
+int main()
+{
+	print(65);
+	print("hello world!");
+	// both valid and will compile
+	// the compiler determines which one to use based on the data type of the argument passed
+}
+```
 
 
 ### I/O Streams 
@@ -573,7 +593,27 @@ void outputDemo::fileWriter() {
 	- also note the error check (if no ost)throw error
 ### Templates
 What are templates?
-- 
+- Templates are blueprints that look like a struct or a function or user defined data type that doesnt reall exist in the code until it is called or invoked. it is used to have the compiler generate code for us for multiple data types for a single template we generate for example: 
+```cpp
+template<typename T>
+void Print(T value)
+{
+	std::cout << value << std::endl;
+}
+
+int main()
+{
+	Print(5);
+	Print<int>(5);
+	Print("hello world");
+	Print<std::string>("hello world");
+	Print(45.64);
+}
+// code Print will not exist until its called in main
+// notice you can declare the type or not.
+// readability and good practice to do so when not 
+// obvious what the data type is
+```
 ### Ch 11 Programming Graphics
 #### Getting started with graphics
 - in order to get started with graphics, its important to understand the role of llibraries needed to be imported in order to have something displayed to the screen. 
