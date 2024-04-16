@@ -486,6 +486,47 @@ defined a type Month and when you initialize the first entry, the enum will auto
 	- logical indicators of the function to be applied in a function such as (=, + , -, `*`, &, ->, >>, new)
 - Operator overloading: giving new meaning, behavior,  to or parameters to existing operators
 - should be used very minimally and if people have to look to your initialization of your operator or your clas to know what it does, you're doing it wrong
+- Realistic use case would be to define the + or * operator in your struct or class as a function to handle userdefined datatypes
+```cpp
+// without operator overloading
+struct car
+{
+	float x, y;
+	car(float x, float y)
+		: x(x), y(y){}
+	car Add(const car& other) const
+	{
+		return Vector2(x + other.x + y + other.y);
+	}
+};
+
+int main()
+{
+	car position(4.0f, 4.0f);
+	car speed(0.5f, 1.5f);
+	car result = position.Add(speed);
+}
+
+
+// with operator overloading
+
+struct car
+{
+	//..same as above 
+	car operator*(const car& other) const
+	{
+		return car(x * other.x * y *  other.y);
+	}
+}
+
+int main()
+{
+	car product = position * speed;
+}
+// notice how much cleaner the use of the * symbol is here compared to .add(). and not as noticeable here but a longer program will have a notably cleaner and maintable look to it compared to having the mess of strung member functions being applied and nested parenthesese that need to be had. 
+```
+- also notice the presence of the const keyword at the end of the definition of the member functions. this means that instead of mutating the original, it will make a copy 
+
 
 ### I/O Streams 
 - what is a buffer? 
