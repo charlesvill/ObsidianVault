@@ -524,6 +524,9 @@ void outputDemo::fileWriter() {
 ```
 - note here the ofstream ost{filename} this establishes the operand ost that a few lines below it writes out using ost << with the content
 	- also note the error check (if no ost)throw error
+### Templates
+What are templates?
+- 
 ### Ch 11 Programming Graphics
 #### Getting started with graphics
 - in order to get started with graphics, its important to understand the role of llibraries needed to be imported in order to have something displayed to the screen. 
@@ -543,6 +546,7 @@ two kinds of libraries:
 
 ### Data structures in C++
 #### Hash maps
+you have the choice to use the standard library classes for hash maps or you could make your own hash class
 - in c++ known as an unorderd map
 ```cpp
 #include <unordered_map>
@@ -558,4 +562,13 @@ int main()
 	std::vector<CityRecord> cities;
 
 }
+```
+##### making your own hash class
+making your own implementation would consist of a vector or array of linked lists. again you could use the included standard library for lists: `#include<list>` and then initialize a list type: 
+```cpp
+list<pair<int, std::string >> people[number_nodes];
+```
+- notice here the `<pair>` datatype. the pair data type allows you to initialize a key value pair type of relationship
+```cpp 
+std::pair<int, std::string> idAndName(134, "john");
 ```
