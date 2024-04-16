@@ -481,6 +481,12 @@ defined a type Month and when you initialize the first entry, the enum will auto
 ##### class constructors & default values
 - see 8.6.1 for default values in constructors 
 
+#### Operator Overloading
+- What are operators?
+	- logical indicators of the function to be applied in a function such as (=, + , -, `*`, &, ->, >>, new)
+- Operator overloading: giving new meaning, behavior,  to or parameters to existing operators
+- should be used very minimally and if people have to look to your initialization of your operator or your clas to know what it does, you're doing it wrong
+
 ### I/O Streams 
 - what is a buffer? 
 	- data structure that the ostream uses to store your data you give it while trying to comminucate with the operating system buffer is important for performance 
