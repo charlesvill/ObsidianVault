@@ -614,6 +614,8 @@ int main()
 // readability and good practice to do so when not 
 // obvious what the data type is
 ```
+- more on templates seen in this video: https://groups.google.com/g/ppp-public/c/BtlzdWGuQpQ/m/KuDN4u-SPKgJ?pli=1
+- 
 ### Ch 11 Programming Graphics
 #### Getting started with graphics
 - in order to get started with graphics, its important to understand the role of llibraries needed to be imported in order to have something displayed to the screen. 
