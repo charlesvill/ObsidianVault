@@ -32,6 +32,7 @@ enqueue
 dequeue
 with array/linked lists
 #### Hashmap/Hashing
+has three basic functions: set, has, get
 - involves the combination of an indexed array called a hash table that uses a function called hash function to return a index to store the node or value at. 
 - collision will happen if you have more than one value that will hash to the same index (i.e apple in index 0 and ant also hashes to the index 0)
 	- the solution to these collisions are two: 
