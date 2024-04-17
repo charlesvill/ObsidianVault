@@ -38,6 +38,14 @@ with array/linked lists
 		- linear probing: when you find the next available index in the array
 			- not great becuase it starts clustering which is when too many values or keys are hashing the same index and accumulating along the index length which could devolve the speed of look up to linear o(n)
 		- Seperate chaning: when you create linked lists at the key location to allow items to chan together in either a single or doubly linked list.
+###### growth of a hash table
+- most languages start at 16 because its a power of 2 but it could depend on your use case. 
+- what happens when you hash an input into a bigger number than you have indexes?
+	- use the modulo operator by the number of indexes you have and it will return a number between 0 and the number of indexes you have minus one. 1084 % 16 = 
+- Eventually though we will have too many nodes for the amount of buckets so it will need to be doubled in size and all the nodes copied over to the new table
+	- how to know when you grow: 
+		- capacity- the number of buckets you currently have
+		- factor- determines at which point it will add more. expressed as a number between 0-1 e.g .75. usually it is between .75 and 1 accross implementatoins
 
 #### Binary Tree
 ##### recursion and binary tree
