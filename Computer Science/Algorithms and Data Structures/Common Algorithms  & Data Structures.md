@@ -46,6 +46,10 @@ with array/linked lists
 	- how to know when you grow: 
 		- capacity- the number of buckets you currently have
 		- factor- determines at which point it will add more. expressed as a number between 0-1 e.g .75. usually it is between .75 and 1 accross implementatoins
+###### choosing a good hash function
+- what do we want to consider for choosing a hash function?
+	- avoid collisions as much as possible by distributing keys as evenly across the table as possible (avoid something like taking first three digits of phone number that thousands of people are going to have in common. better the last three digits)
+	- it should be simple and easy to compute
 
 #### Binary Tree
 ##### recursion and binary tree
