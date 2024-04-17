@@ -50,6 +50,11 @@ with array/linked lists
 - what do we want to consider for choosing a hash function?
 	- avoid collisions as much as possible by distributing keys as evenly across the table as possible (avoid something like taking first three digits of phone number that thousands of people are going to have in common. better the last three digits)
 	- it should be simple and easy to compute
+	- two routes: division and multiplication method: 
+		- mod method: do the modulo of the keys by the size of the tables ( 245 % 16)
+			- problem with this one is that some table sizes are more suceptile to collisions than others
+			- many bigger numbers can modulo to the same index but be completely different size numbers
+		- multiplicatin method: `((k) = floor (m * (k * c mod 1))` see: https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/ for more
 
 #### Binary Tree
 ##### recursion and binary tree
