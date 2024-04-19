@@ -46,3 +46,30 @@
 ### Ch 3 problems with arrays
 - what does it mean to refactor something so that it scales better with larger datasets? 
 	- for example you might have a working algorithm to find the mode of a dataset but its time complexity might be something like O(n^2) and on a bigger data set could slow things down considerably. then you would instead refactor to get an algorithm that has a better time complexity like linera O(n) example can be seen in mode findig example
+
+### Ch 4 solving problems with pointers
+##### review on pointers
+you can reassigna pointer to another pointer: `int * intPointer; , variable1 = &var2; , intPointer = variable1;`
+###### allocating memory
+- you have to use the *new* keyword: `double * point = new double;` where new datatype;
+- to deallocate: `delete doublePointer;` 
+###### dereferencing
+```cpp
+*doublePointer = 35.4;
+double localDouble = *doublePointer;
+// you can directly modify the contents of it with the pointer operator in the front of the variable wihtout having to reassign it to something else first. 
+```
+
+what are some of the benefits of Pointers?
+- they allow you to determine the size of a data structure during runtime so that the footprint perhaps of your data structue can be more efficient and use only what you need
+- they allow a data structure to be resizable 
+- memory sharing- instead of passing by copying a value, you can pass by reference and share the memory blocks and thus improve the memory footprint of your application even more. 
+**note**: there is no difference between `int & x` , `int& x` , or `int &x` . they are all the same thing and mean the variable of data type int, will pass through the reference to its place in memory as opposed to making a copy of it. 
+###### Memory sharing
+- when you pass by memory, you make a copy of the 64 bit pointer instead of the larger data type. however this means that the memory is shared between those two things and can mutate the original block of memory. When you want to pass by reference but want to specify that the memory should not be rewritten, preface the variable name with the keyword 'const'
+##### When to use Pointers
+- pointers can come with potential drawbacks and only should be used when appropriate. 
+- in general pointers should be used when we require one of more of the benefits of pointers. 
+	- you have a data that needs flexibility of being resized during runtime
+	- large objects that need to be passed around to different objects and functions
+	- or if you cannot estimate the size you need until runtime. 
