@@ -480,6 +480,27 @@ defined a type Month and when you initialize the first entry, the enum will auto
 		- *want to be careful with plain enums bc of potential name collisions depending on where the scope is and so with the int type conversions. not as safe as enum classses*
 ##### class constructors & default values
 - see 8.6.1 for default values in constructors 
+##### Typedef
+- when you want to give an alias to perhaps too long or unreadable of a name of a standard data type or a user defined data type, you can use `typedef`
+```cpp
+typedef std::vector<int> intV;
+
+
+intV newVector;
+
+newVector.pushback(100);
+
+struct listNode{
+	string name;
+	float grade;
+	listNode* next;
+};
+typedef listNode* studentCollection;
+// notice here creating an alias for this custom datatype to self document the code, more readable
+// note that this would actualy point to a single node that represents the beginning as opposed to
+// this actually being an entire collection
+```
+
 
 #### Operator Overloading
 - What are operators?

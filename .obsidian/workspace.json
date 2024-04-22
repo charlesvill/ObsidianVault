@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d992eface67dec3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/C++/Foundations of C++.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Thinking like a Programmer.md",
+                "file": "Computer Science/C++/Foundations of C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Thinking like a Programmer.md",
+                "file": "Computer Science/C++/Foundations of C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Thinking like a Programmer.md"
+                "file": "Computer Science/C++/Foundations of C++.md"
               }
             }
           },
@@ -204,15 +216,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f915ff6bc0c97e0",
+  "active": "d992eface67dec3c",
   "lastOpenFiles": [
+    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/C++/Foundations of C++.md",
+    "Computer Science/Thinking like a Programmer.md",
     "Computer Science/NVIM notes.md",
     "Computer Science/Regular expressions.md",
-    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
     "Computer Science/CS50/C.md",
-    "Computer Science/Thinking like a Programmer.md",
     "Electronics/Switch repair.md",
     "Computer Science/Algorithms and Data Structures",
     "Computer Science/TOPICS TO BE HIREABLE.md",
