@@ -305,6 +305,19 @@ namespace logs(std::string message) {
 	- `string.substr(1)` use case is with taking two arguments 1. starting index and 2. how many characters to chop. if second arg ommitted, it will slice from the starting index to the end of the string and will return your new string. exactly same to javascript string method substr
 	- `string.find("")` takes in a string and will return the index position of the beginning of named string
 - *note:* the string c++ standard library is its own object with methods. it does not have null terminating characters like a c style string literal. it keeps track of its own size and length. 
+- **strings and Pointers**
+```cpp
+// typedef char* arrayString;
+int main() {
+  char string[] = "hello";
+  arrayString charArray = &string[0];
+  int i = 0;
+  while (charArray[i] != '\0') {
+    std::cout << charArray[i] << std::endl;
+    ++i;
+  }
+```
+- you can also do some stuff like this where you have a string literal declared and then you have a pointer point to the first char and then you can use array random accessing to access the elements of the char array
 
 ### Ch 8 Technicalities functions
 - local functions nested into functions are not legal, dont do it
