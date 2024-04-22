@@ -276,7 +276,19 @@ int myresult{my_ns::foo() + my_other_ns::foo() * my_ns::my_inner_ns::baz()};
 	- <> are for standard libraries and does not look in the local project files within the directory. 
 	- "" are more for files you created or otherwise present in the directory that you want included. 
 ##### strings
-- things like a string, need to be included in the standard library with `#include <string>` then the methods or *member functions* in those libraries can be accessed just like namespace accessors `::` i.e (`std::string message{"Hello World!"} ` ) 
+- *string literals* : 
+```cpp
+char myString[] = "Hello"; // Character array initialized with a string literal
+
+// Print the characters of the string until the null terminator is reached
+for (int i = 0; myString[i] != '\0'; i++) {
+  std::cout << myString[i];
+}
+// Output: Hello (prints characters until it encounters the null terminator)
+
+```
+- as seen here, strings are literally array of chars like in C however you do not have to put the size of the array and you do not have to put the null terminating character at the end of the string.
+- **Strings in standard library** - things like a string, need to be included in the standard library with `#include <string>` then the methods or *member functions* in those libraries can be accessed just like namespace accessors `::` i.e (`std::string message{"Hello World!"} ` ) 
 	- notice here the curly braces used to initialize this string. this way of initialization is known as value initialization while using assignment operator '='  is known as copy initialization. this might need its own section to understand more about it. 
 - note as well that when generating variables with types from the library you need to use the namespaces accessors as the data type: 
 ```c++
@@ -292,6 +304,7 @@ namespace logs(std::string message) {
 - string methods: 
 	- `string.substr(1)` use case is with taking two arguments 1. starting index and 2. how many characters to chop. if second arg ommitted, it will slice from the starting index to the end of the string and will return your new string. exactly same to javascript string method substr
 	- `string.find("")` takes in a string and will return the index position of the beginning of named string
+- *note:* the string c++ standard library is its own object with methods. it does not have null terminating characters like a c style string literal. it keeps track of its own size and length. 
 
 ### Ch 8 Technicalities functions
 - local functions nested into functions are not legal, dont do it
