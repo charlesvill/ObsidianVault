@@ -669,6 +669,10 @@ int main()
 	- libraries are needed due to the complexity and immensity needed to output graphics to the screen relative to the trivial in comparision programs you make in the terminal using neovim
 	- libraries needed to get first example in ch 11: fltk
 	- follow this guide on getting that problem up and running: https://groups.google.com/g/ppp-public/c/BtlzdWGuQpQ/m/KuDN4u-SPKgJ?pli=1
+#### coordinates
+- with computers and windows, coordinates start at the leftmost corner and grow down ward on the y axis and to the right on the x axis (mathematicians find this confusing) I guess its because 
+###### window syntax
+`Simple_window win {pointvariable, width, height, "name"}`
 ##### libraries in C++ (or similar compiled language)
 two kinds of libraries: 
 	 - .dll= dynamic link library - these are precompiled and will run after your code is compiled. makes executeables smaller but will need to be present in order for your program to run successfully
