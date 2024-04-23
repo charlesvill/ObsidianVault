@@ -243,6 +243,11 @@ class_name::member_name
 - *just thinking* rarely works, we cannot consier everything that will go wrong on the first run either, we need to try things and see what works best
 - if a main loop is handling the general scaffolding of the program i.e getting things started, handling errors; if it also handles controlling the main calculator or program function loop perhaps its best to handle that in a separate function
 	- try to emulate this in other programming languages even those that are dynamically typed and do not required things like int main () functions to get started. then separate the logical parts of your program stem by step in different functions. looking at the main function should look slightly like looking at a map
+###### the use of header files and cpp source files
+- header files or .h files are typically used for class and variable name declarations to let the compiler know of the interfact to be usable
+- Source files - .cpp files of usually the same header file name will have the actual definitions and implementation of those classes and functions that your main.cpp for example can then call on
+- why is it seperated in this way?
+	- while they're both helper code, this allows for better organization and readability and quicker compile time as the seperation means that you wont have to recompile everything necessarily only what is being used. 
 ### Excercism notes
 #### Namespaces
 - the purpose of namespaces are to avoid collisions between  functions and programs that could share names. 
