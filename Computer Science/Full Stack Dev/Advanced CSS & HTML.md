@@ -15,4 +15,4 @@
 - Intro: topic of accessibility is referred to as a11y because there 11 letters between the first and last letters. 
 - you should always use a label when using an input element
 ##### contrast ratios 
-you should aim to have 4.5:1 contrast ratio atleast and you can use this checker tool to measure: https://webaim.org/resources/contrastchecker/
+you should aim to have 4.5:1 contrast ratio atleast and you can use this checker tool to measure:https://webaim.org/resources/contrastchecker/

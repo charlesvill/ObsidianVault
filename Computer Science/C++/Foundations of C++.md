@@ -688,6 +688,7 @@ two kinds of libraries:
 		- cmake tutorial: https://www.youtube.com/watch?v=mKZ-i-UfGgQ&ab_channel=kandodev
 - What is the Fast Light took kit?
 	- a library for GUI for C++. Helps to abstract away some of the complexities in drawing a window
+- in the future consider dear Imgui it looks sleek and cherno has a video on it. also has demo for all features and the related code of how to implement it and has been hailed as quick to implement gui and works with Web assembly language to get things deployed in the web
 
 ### Data structures in C++
 #### Hash maps

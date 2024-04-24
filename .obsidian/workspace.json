@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Advanced CSS & HTML.md",
+                "file": "Computer Science/Full Stack Dev/REACT.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,6 +95,18 @@
             }
           },
           {
+            "id": "a86344cbff6f8941",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/Full Stack Dev/REACT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "0f30e962dd9d8f94",
             "type": "leaf",
             "state": {
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Advanced CSS & HTML.md",
+                "file": "Computer Science/Full Stack Dev/REACT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Advanced CSS & HTML.md",
+                "file": "Computer Science/Full Stack Dev/REACT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Advanced CSS & HTML.md"
+                "file": "Computer Science/Full Stack Dev/REACT.md"
               }
             }
           },
@@ -206,11 +218,13 @@
   },
   "active": "2097e8cde5128c70",
   "lastOpenFiles": [
+    "Computer Science/C++/Foundations of C++.md",
+    "Computer Science/Full Stack Dev/REACT.md",
+    "Computer Science/Full Stack Dev/Advanced CSS & HTML.md",
+    "Untitled 1.md",
     "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
-    "Advanced CSS & HTML.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/NVIM notes.md",
-    "Computer Science/C++/Foundations of C++.md",
     "Computer Science/Thinking like a Programmer.md",
     "Computer Science/Regular expressions.md",
     "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
@@ -237,10 +251,8 @@
     "notes for sped meeting.md",
     "Computer Science/The 8 Most important Hotkeys.md",
     "Computer Science/Full Stack Dev/Git.md",
-    "Computer Science/Linux DebianOS reference sheet.md",
     "Pasted image 20230907130206.png",
     "Pasted image 20230907130203.png",
-    "Computer Science/The 6 most Important keys to Typing in Markdown.md",
     "Computer Science/Dev Organizer.canvas",
     "Computer Science/CS50/CS 50.canvas",
     "Images/Pasted image 20230707124826.png",
