@@ -9,3 +9,6 @@
 - a component is a piece of the UI that has its own logic and appearance 
 	- it can be as small as a button or as large as an entire page
 - components are javascript functions that return mark up 
+- There are multiple options for deployment of a react app: 
+	- with a `<script>` tag on a CDN - content delivery network
+	- 
