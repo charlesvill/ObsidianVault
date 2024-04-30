@@ -28,8 +28,60 @@
 #### JSX
 - it looks like html in javascript which it is but its also syntatic sugar for creating a react element function. without jsx you could call this function and insert the props, states, children one by one. 
 - used because it allows the rendering logic and the content to live in the same place for a more visual approach to your UI (as a component)
-##### rules: 
+##### rules/syntax: 
 - Must return a single root element - if you need to return mulitple like many divs you need to nest it in a react fragment : `<></>` which is literally empty tags because you dont want the elements to have a container. 
 - Tags that normally self close need to be explicitly closed like: `<input> -> <input />` or `<li></li>`
 - camelCase for most things - bc it turns into javascript, html elements and their attributes turn into objects and keys of those objects. so reserved words like class cannot be used. thus, you use camelCase `class="hello" -> className="hello"` 
 - *exception:* `aria-*`, and `data-*`, are kept with the dash as in html because of historical reasons
+- passing strings and dynamic values through jsx: 
+	- because its just javascript, you can embed strings in the mark up like you would any variable that holds a string such as {name} or use "Charles" make sure not to use it for element tags because that will not work
+	- `src={avatar}` would be the correct way to dynamically create the src and not using double quotes.
+- Passing objects: `person={{name: "Hedy Lamarr", inventions: 5}}` notice double braces
+- passing inline css styles: 
+```jsx
+export default function TodoList() {
+  return (
+    <ul style={{
+      backgroundColor: 'black',
+      color: 'pink'
+    }}>
+      <li>Improve the videophone</li>
+      <li>Prepare aeronautics lectures</li>
+      <li>Work on the alcohol-fuelled engine</li>
+    </ul>
+  );
+}
+```
+- notice here the presence of the double quotes in the style attribute for the ul element
+- *note that style properties are written in camelCase such as:* `style="background-color : black" -> backgroundColor: black`
+- multiple expressions in objects: 
+```jsx
+const person = {
+  name: 'Gregorio Y. Zara',
+  theme: {
+    backgroundColor: 'black',
+    color: 'pink'
+  }
+};
+
+export default function TodoList() {
+  return (
+    <div style={person.theme}>
+      <h1>{person.name}'s Todos</h1>
+      <img
+        className="avatar"
+        src="https://i.imgur.com/7vQD0fPs.jpg"
+        alt="Gregorio Y. Zara"
+      />
+      <ul>
+        <li>Improve the videophone</li>
+        <li>Prepare aeronautics lectures</li>
+        <li>Work on the alcohol-fuelled engine</li>
+      </ul>
+    </div>
+  );
+}
+
+```
+- notice here the super unique way of building your person object with a theme that matches the person and how you can just pull the theme and name in the mark up using dot notation. it's pretty cool
+- 
