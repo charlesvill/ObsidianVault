@@ -17,7 +17,7 @@
 - while all components are essentially functions, some can be syntatic sugar for class and others pure functions:
 	- class components - use the class syntax `extends react.component` can manage internal states and complex logic that would be useful in creating dymanic UI that reacts to user interactions for more on class sytax see [[Intermediate Javascript#Classes]]
 	- functional components - more of the factory functions route (see[[Intermediate Javascript#factory functions and the module pattern]]) that typically are stateless which means it doesnt modify internal data or values
-		- while functional is typically stateless (i.e does not modify) they introduced Hooks with methods to do just this. 
+		- while functional is typically stateless (i.e does not modify) they introduced Hooks with methods to do just this.
 - States vs Props
 	- for some reason React likes to make up their own shitty names for things
 		- States - variables and data local to the function that are typically modifiable
