@@ -84,4 +84,4 @@ export default function TodoList() {
 
 ```
 - notice here the super unique way of building your person object with a theme that matches the person and how you can just pull the theme and name in the mark up using dot notation. it's pretty cool
-- 
+- **Convertting html into jsx** : use transform website tool: https://transform.tools/html-to-jsx
