@@ -108,3 +108,9 @@ export default function TodoList() {
 - ternery operators are big in react like `{cond ? <A /> : <B />}`
 - the and operator && is used as well in ways I hadnt before: 
 	- `{cond && <A />}` this means if cond true, render A or else nothing. 
+###### rendering lists
+- rather than using something like a for in loop, react users employ arr.map() or arr.filter()
+	- see [[Intermediate Javascript#array methods]] for more on iterative array methods
+- *careful with arrow functions* in those array methods because arrow without curly braces imply return but curly braces will not explicitly return without you writing return line. this is because its used for writing a block of code as opposed to one line. 
+- Each array item needs a key that can be either a string or anumber that uniquely identifies it amongs the other members in the list `<li key={person.id}>...</li>`
+- whenever you use map() each call will need to assign a key in order to avoid errors

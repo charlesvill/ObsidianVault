@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0d7eeb733db1dfe7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d5da8a348139d7c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "Computer Science/Full Stack Dev/REACT.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,19 +32,18 @@
             }
           },
           {
-            "id": "2097e8cde5128c70",
+            "id": "d5eee329dabe1748",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Full Stack Dev/REACT.md",
+                "file": "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -217,19 +204,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4efd7a73c8c94ae",
+  "active": "d5da8a348139d7c2",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/REACT.md",
+    "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
+    "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
+    "Untitled.md",
     "Computer Science/C++/Foundations of C++.md",
     "Computer Science/Full Stack Dev/Advanced CSS & HTML.md",
     "Untitled 1.md",
-    "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
-    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/NVIM notes.md",
     "Computer Science/Thinking like a Programmer.md",
     "Computer Science/Regular expressions.md",
-    "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
     "Computer Science/CS50/C.md",
     "Electronics/Switch repair.md",
     "Computer Science/Algorithms and Data Structures",

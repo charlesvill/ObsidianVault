@@ -36,6 +36,9 @@
   - filter out items from an array (creates new one)
 	  - `arr.filter((currElement, index  )=>{ return currElement > 5})`
 	   - will return an empty array if none of the elements pass the test/
+- Apply something (or nothing) to each element of an array
+	- `arr.map((current) => current * 2)`
+	- will return new array of the process after the arrow. people also use it to return a copy of the array. used in react to iterate over a list to spit out dom
 - joing elements of an array to a string: 
 	- arr = ["hello", "world"] `arr.join(", ");` this will result in Hello, world
 		- if there is only one element in the array then it will simply output the one element without the delimiter
@@ -79,6 +82,7 @@ printUser(personOne)
 		- you'll need a forEach loop to add event listeners for more than one: `nodeList.forEach(element => element.addEventListener("click", (e)=>{...});` where *e* is event information of the specific element that triggered the event handler
 - for logic you can use `varName.addEventListener("click", (e)=>{...});` 
 	- notice that event listener method appended to the variable name, and notice the thing listening for in quotes and the arrow function capability, *and the presence of e* which passes through event information accessible through dot notation or bracket notation.
+		- remember that arrow functions have implicit return values of what's after the arrow
 #### Handling User Input
 - for key input: 
 	- 
