@@ -1,3 +1,22 @@
+###### parking lot: 
+- Why do components that accept parameters or "props" need to have curly braces around the parameters? like the ones seen here: 
+```jsx
+function Item({ name, isPacked }) {
+  return (
+    <li className="item">
+      {isPacked ? (
+        <del>
+          {name + ' ✔'}
+        </del>
+      ) : (
+        name
+      )}
+    </li>
+  );
+}
+```
+- when the main entry point or app component that calls other components use the syntax `<List animals={animals}/>` what is it doing? is it initializing a parameter to pass through to the List component? and why does it have to look like that and not a more traditional parameter for vanilla js function?
+### Intro to React
  what is the difference between a framework and a library?
 	 - library is a collection of code that we import to save us time on development
 	 - library is like pulling  a book off the shelf and yuou decide when and how that informatoin is used. 
@@ -85,3 +104,7 @@ export default function TodoList() {
 ```
 - notice here the super unique way of building your person object with a theme that matches the person and how you can just pull the theme and name in the mark up using dot notation. it's pretty cool
 - **Convertting html into jsx** : use transform website tool: https://transform.tools/html-to-jsx
+###### conditionals in React
+- ternery operators are big in react like `{cond ? <A /> : <B />}`
+- the and operator && is used as well in ways I hadnt before: 
+	- `{cond && <A />}` this means if cond true, render A or else nothing. 
