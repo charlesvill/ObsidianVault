@@ -118,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -216,7 +217,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2097e8cde5128c70",
+  "active": "e4efd7a73c8c94ae",
   "lastOpenFiles": [
     "Untitled.md",
     "Computer Science/Full Stack Dev/REACT.md",

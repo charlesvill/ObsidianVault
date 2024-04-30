@@ -24,4 +24,11 @@
 		- Props - variables and data that are passed as arguments to the function that are not modifiable
 ##### Vite
 - comes packaged with eslint so you should install the prettier eslint-prettier-config see [[Intermediate Javascript#Linting]] for reference
-- 
+
+#### JSX
+- it looks like html in javascript which it is but its also syntatic sugar for creating a react element function. without jsx you could call this function and insert the props, states, children one by one. 
+- used because it allows the rendering logic and the content to live in the same place for a more visual approach to your UI (as a component)
+##### rules: 
+- Must return a single root element - if you need to return mulitple like many divs you need to nest it in a react fragment : `<></>` which is literally empty tags because you dont want the elements to have a container. 
+- Tags that normally self close need to be explicitly closed like: `<input> -> <input />` or `<li></li>`
+- camelCase for most things - bc it turns into javascript, html elements and their attributes turn into objects and keys of those objects. so reserved words like class cannot be used. thus, you use camelCase `class="hello" -> className="hello"` 
