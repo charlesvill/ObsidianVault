@@ -11,4 +11,8 @@
 - components are javascript functions that return mark up 
 - There are multiple options for deployment of a react app: 
 	- with a `<script>` tag on a CDN - content delivery network
-	- 
+	- or with a webframe work: 
+		- vite: sort of like a deployment framework to get your react app up and running quickly with all the npm packages you need to get started quicker and has a built in web server
+##### Vite
+- comes packaged with eslint so you should install the prettier eslint-prettier-config see [[Intermediate Javascript#Linting]] for reference
+- 
