@@ -32,3 +32,4 @@
 - Must return a single root element - if you need to return mulitple like many divs you need to nest it in a react fragment : `<></>` which is literally empty tags because you dont want the elements to have a container. 
 - Tags that normally self close need to be explicitly closed like: `<input> -> <input />` or `<li></li>`
 - camelCase for most things - bc it turns into javascript, html elements and their attributes turn into objects and keys of those objects. so reserved words like class cannot be used. thus, you use camelCase `class="hello" -> className="hello"` 
+- *exception:* `aria-*`, and `data-*`, are kept with the dash as in html because of historical reasons
