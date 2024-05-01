@@ -184,7 +184,7 @@ export default function App() {
 
 ```
 
-- default props: if there is some data or props that are going to be the same in multiple elements you can save yourself from repetition by making default props so you dont have to enter them each time. see: 
+- dedfsdftettault props: if there is some data or props that are going to be the same in multiple elements you can save yourself from repetition by making default props so you dont have to enter them each time. see: 
 ```jsx
 
 function Button({ text, color, fontSize }) {
