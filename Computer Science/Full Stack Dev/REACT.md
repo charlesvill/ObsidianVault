@@ -158,3 +158,58 @@ export default function RecipeList() {
 
 #### Keys
 - keys are needed by the internal workings of react to keep track of what is what incase the elements are rearranged or removed and need to be rendered in an altered way. the keys associate the particular element from its siblings
+#### Props
+- properties that are passed down from the parent to the children. 
+- it is only one direction, from parent to child 
+- Prop destructuring allows you a concise way of passing multiple props to a component to then render elements. see in this example how text, color, font params are mapped to the values in the app():
+```jsx
+function Button({ text, color, fontSize }) {
+  const buttonStyle = {
+    color: color,
+    fontSize: fontSize + "px"
+  };
+
+  return <button style={buttonStyle}>{text}</button>;
+}
+
+export default function App() {
+  return (
+    <div>
+      <Button text="Click Me!" color="blue" fontSize={12} />
+      <Button text="Don't Click Me!" color="red" fontSize={12} />
+      <Button text="Click Me!" color="blue" fontSize={20} />
+    </div>
+  );
+}
+
+```
+
+- default props: if there is some data or props that are going to be the same in multiple elements you can save yourself from repetition by making default props so you dont have to enter them each time. see: 
+```jsx
+
+function Button({ text, color, fontSize }) {
+  const buttonStyle = {
+    color: color,
+    fontSize: fontSize + "px"
+  };
+
+  return <button style={buttonStyle}>{text}</button>;
+}
+
+Button.defaultProps = {
+  text: "Click Me!",
+  color: "blue",
+  fontSize: 12
+};
+
+export default function App() {
+  return (
+    <div>
+      <Button />
+      <Button text="Don't Click Me!" color="red" />
+      <Button fontSize={20} />
+    </div>
+  );
+}
+
+```
