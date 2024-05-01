@@ -115,3 +115,43 @@ export default function TodoList() {
 - Each array item needs a key that can be either a string or anumber that uniquely identifies it amongs the other members in the list `<li key={person.id}>...</li>`
 - whenever you use map() each call will need to assign a key in order to avoid errors
 - *rendering multiple DOM nodes for each list item* you can only pass one key per `<>...</>` so need to do something else. see: https://react.dev/learn/rendering-lists LOOK FOR THE DEEP DIVE
+```jsx
+import { recipes } from './data.js';
+
+function Recipe({id, name, ingredients}){
+  return (
+    <div key={id}>
+          <h2>{name}</h2>
+          <ul>
+            {ingredients.map(ingredient =>
+              <li key={ingredient}>
+                {ingredient}
+              </li>
+            )}
+          </ul>
+        </div>
+  )
+  
+}
+
+export default function RecipeList() {
+  return (
+    <div>
+      <h1>Recipes</h1>
+      {recipes.map(recipe =>
+        <Recipe key={recipe.id} name={recipe.name} ingredients={recipe.ingredients}/>
+      )}
+    </div>
+  );
+}
+
+```
+- here is some syntax of: 
+	- a) calling other components
+	- b) passing "props" as arguments
+	- c) demonstrating reacts ability to populate an array of list markup automatically (the return of map is an array of list elements)
+- *notice the parameters defined have curly braces* in Recipe. And yes, it is necessary to have the curly braces or else it will come up undefined
+
+#### Markdown stuff
+- `<hr/>` - this is a thematic break between paragraphs like a change of scenary or something paints a line at the point can have attributes like size and whether it has shade or not
+- 
