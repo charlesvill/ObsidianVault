@@ -114,3 +114,4 @@ export default function TodoList() {
 - *careful with arrow functions* in those array methods because arrow without curly braces imply return but curly braces will not explicitly return without you writing return line. this is because its used for writing a block of code as opposed to one line. 
 - Each array item needs a key that can be either a string or anumber that uniquely identifies it amongs the other members in the list `<li key={person.id}>...</li>`
 - whenever you use map() each call will need to assign a key in order to avoid errors
+- *rendering multiple DOM nodes for each list item* you can only pass one key per `<>...</>` so need to do something else. see: https://react.dev/learn/rendering-lists LOOK FOR THE DEEP DIVE
