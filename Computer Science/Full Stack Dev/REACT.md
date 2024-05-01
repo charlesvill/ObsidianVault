@@ -154,6 +154,7 @@ export default function RecipeList() {
 
 #### Markdown stuff
 - `<hr/>` - this is a thematic break between paragraphs like a change of scenary or something paints a line at the point can have attributes like size and whether it has shade or not
+- `<article/>` - is a logical section of text that is a whole as a blurb. can exist independent of other text on the site and should be able to be separated and not detract from its purpose or meaning as a result
 
 #### Keys
 - keys are needed by the internal workings of react to keep track of what is what incase the elements are rearranged or removed and need to be rendered in an altered way. the keys associate the particular element from its siblings
