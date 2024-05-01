@@ -154,4 +154,6 @@ export default function RecipeList() {
 
 #### Markdown stuff
 - `<hr/>` - this is a thematic break between paragraphs like a change of scenary or something paints a line at the point can have attributes like size and whether it has shade or not
-- 
+
+#### Keys
+- keys are needed by the internal workings of react to keep track of what is what incase the elements are rearranged or removed and need to be rendered in an altered way. the keys associate the particular element from its siblings
