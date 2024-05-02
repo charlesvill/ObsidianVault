@@ -56,6 +56,8 @@ function Item({ name, isPacked }) {
 	- because its just javascript, you can embed strings in the mark up like you would any variable that holds a string such as {name} or use "Charles" make sure not to use it for element tags because that will not work
 	- `src={avatar}` would be the correct way to dynamically create the src and not using double quotes.
 - Passing objects: `person={{name: "Hedy Lamarr", inventions: 5}}` notice double braces
+	- the first curlies are the access to JSX allowing javascript. 
+	- second curlies are for the javascript object with key value pairs
 - passing inline css styles: 
 ```jsx
 export default function TodoList() {
@@ -151,6 +153,7 @@ export default function RecipeList() {
 	- b) passing "props" as arguments
 	- c) demonstrating reacts ability to populate an array of list markup automatically (the return of map is an array of list elements)
 - *notice the parameters defined have curly braces* in Recipe. And yes, it is necessary to have the curly braces or else it will come up undefined
+	- the curlies are an example of destructuring
 
 #### Markdown stuff
 - `<hr/>` - this is a thematic break between paragraphs like a change of scenary or something paints a line at the point can have attributes like size and whether it has shade or not
@@ -218,3 +221,12 @@ export default function App() {
 
 - you can also pass a function through as a prop for example if your child is a button the button will take the prop function and call it 
 - There is something called currying that looks like a callback function is called and then does some shit idk looks like you can call hella shit at the same time from a return statement or something here is more on it: https://javascript.info/currying-partials I just cant rn
+- you can also use the spread operator to avoid having to list out all the props that you are passing to your components: 
+```jsx
+export default function example(props){
+	return (
+		<Hello {...props} />
+	);
+}
+```
+- absolute legend I think there
