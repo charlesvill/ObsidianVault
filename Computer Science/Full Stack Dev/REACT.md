@@ -266,3 +266,9 @@ const [backgroundColor, setBackgroundColor] = useState(initialColor);
 	- because a regular local variable will not persist or be paid attention to by react between renders
 	- it also will not trigger the rerender
 	- so the useState hook both retains the information and will trigger the rerender
+- **when you should not use hooks**:
+	- if you need to store data in a single function call then just use regular variables and not hooks
+	- hooks are only meant to remember data *between renders* if your logic needs a variable only in the context of a single function scope, then a regular variable will work just fine
+#### Rendering components in React
+- What happens when react is rendering your components?
+- 
