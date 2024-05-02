@@ -164,6 +164,7 @@ export default function RecipeList() {
 #### Props
 - properties that are passed down from the parent to the children. 
 - it is only one direction, from parent to child 
+- Props are immutable and only way for them to change is to get different props from the parent component. the component itself cannot modify its own props
 - They look like html attributes but you can pass any javascript object through arrays, objects, and functions
 - Prop destructuring allows you a concise way of passing multiple props to a component to then render elements. see in this example how text, color, font params are mapped to the values in the app():
 ```jsx
@@ -237,3 +238,30 @@ export default function example(props){
 - In one moment you might have a state in your machine or program that will be different if you have processes that dynamically change the state of the data
 	- examples of this could be incrementing value on an integer during runtime.
 	- or could be user interactions with your components that dynamically cause changes in the elements being rendered
+- In order for components to behave dynamically, it needs to remember things about itsself
+##### using state in functional components
+- functional components (components made out of strict functions) have to use imported useState method from react in order to have a modifiable state
+- This useState method is known as the useState Hook
+```jsx
+const [stateValue, setStateValue] = useState(initialValue);
+
+// adapted for our use case:
+const [backgroundColor, setBackgroundColor] = useState(initialColor);
+
+```
+ - seen is the destructuring syntax to initialize backgroundcolor and a function. the useState hook returns an array with an initial value that will set the initial state value. 
+ - second thing you initialize there is a function that will be used to update the state
+###### how does it work under the hood?
+- whenever a state or prop changes, the whole component must rerender which involves destroying itself including the variables and functions and react nodes. 
+	- the useState value will return the latest state value
+- react reconcilliation algorithm - rerendering generates a virtual dom and compares with the actual dom to see what is the minimal amount of processing that it needs to do in order to update it. 
+##### Hooks
+- special functions that allow us to use react features
+- they are only available while react is rendering
+- recognizable by the `use` prefix as in `useState` 
+	- They can only be called from the top level of a functional component
+	- Hooks cannot be called from inside loops or conditions
+- Why do you need the hook?
+	- because a regular local variable will not persist or be paid attention to by react between renders
+	- it also will not trigger the rerender
+	- so the useState hook both retains the information and will trigger the rerender
