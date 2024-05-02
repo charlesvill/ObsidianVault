@@ -230,3 +230,10 @@ export default function example(props){
 }
 ```
 - absolute legend I think there
+
+- look here for more on passing jsx in a children prop: https://react.dev/learn/passing-props-to-a-component
+#### State in React
+- simple definition is that sta te is the data and the result of the data being manipulated
+- In one moment you might have a state in your machine or program that will be different if you have processes that dynamically change the state of the data
+	- examples of this could be incrementing value on an integer during runtime.
+	- or could be user interactions with your components that dynamically cause changes in the elements being rendered
