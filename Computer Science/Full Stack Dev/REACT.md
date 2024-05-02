@@ -271,4 +271,6 @@ const [backgroundColor, setBackgroundColor] = useState(initialColor);
 	- hooks are only meant to remember data *between renders* if your logic needs a variable only in the context of a single function scope, then a regular variable will work just fine
 #### Rendering components in React
 - What happens when react is rendering your components?
-- 
+	- on an initial render you would have to use react render utils to create a root element and render the target dom node
+	- subsequent renders are triggered by updates to the state by the set function hooks. 
+	- initial renders call the root component and subsequent ones call the function component whose state triggered a rerender
