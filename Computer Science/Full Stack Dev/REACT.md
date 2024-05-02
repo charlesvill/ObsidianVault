@@ -239,6 +239,7 @@ export default function example(props){
 	- examples of this could be incrementing value on an integer during runtime.
 	- or could be user interactions with your components that dynamically cause changes in the elements being rendered
 - In order for components to behave dynamically, it needs to remember things about itsself
+- State is local to each instance of the componenet on the screen so if you have three copies of the same component, changin the sate of one will not affect the state of the others
 ##### using state in functional components
 - functional components (components made out of strict functions) have to use imported useState method from react in order to have a modifiable state
 - This useState method is known as the useState Hook
