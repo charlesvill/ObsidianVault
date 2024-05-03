@@ -280,3 +280,14 @@ const [backgroundColor, setBackgroundColor] = useState(initialColor);
 	- reference types(arrays, objects) should never directly be mutated
 		- use setState: `const newPerson = {...person, age: person.age + 1};` then `setPerson(newPerson)` 
 		- as opposed to `person.age = person.age + 1; setPerson(person) `
+- Principles of structuring state: 
+	1. group related state
+	2. avoid contradictions in state
+	3. avoid redudant state - if you calculate data from props and store in state, thats redundant and unnecessary
+	4. if you same data replicated in multiple state variables, hard to sync
+	5. avoid deeply nested state - not efficient and hard to update
+##### States and the rendering cycle
+1. Initial state values are put on a "shelf"  by react
+2. user button (set)  triggers react to update a state on the shelf
+3.  React then re-render the component pulling the updated shelf value
+*important to note that everytime you have a set func it will rerender*
