@@ -279,4 +279,4 @@ const [backgroundColor, setBackgroundColor] = useState(initialColor);
 	- primitive types(passed by value: int, bools) are already immutable
 	- reference types(arrays, objects) should never directly be mutated
 		- use setState: `const newPerson = {...person, age: person.age + 1};` then `setPerson(newPerson)` 
-		- as opposed to `person.age = person.age + 1; setPerson(person)`
+		- as opposed to `person.age = person.age + 1; setPerson(person) `
