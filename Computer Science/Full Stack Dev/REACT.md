@@ -285,7 +285,7 @@ const [backgroundColor, setBackgroundColor] = useState(initialColor);
 	2. **avoid contradictions in state** - two states that communicate different states of the same thing i.e message sent, can lead to a state is sending to true and a isSent to true, aka impossible states. better to have one state that holds the "sending" , "sent" , "typing"
 	3. **avoid redudant state** - if you calculate data from props and store in state, thats redundant and unnecessary i.e fname, lname, and fullname state 
 		- same goes for mirroring a prop. state var initialized to prop. if prop changes the state will not get updated
-	4. if you same data replicated in multiple state variables, hard to sync
+	4. **avoid duplication** if you same data replicated in multiple state variables, hard to sync
 	5. **avoid deeply nested state** - not efficient and hard to update
 ##### States and the rendering cycle
 1. Initial state values are put on a "shelf"  by react
