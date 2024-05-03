@@ -269,8 +269,14 @@ const [backgroundColor, setBackgroundColor] = useState(initialColor);
 - **when you should not use hooks**:
 	- if you need to store data in a single function call then just use regular variables and not hooks
 	- hooks are only meant to remember data *between renders* if your logic needs a variable only in the context of a single function scope, then a regular variable will work just fine
-#### Rendering components in React
+##### Rendering components in React
 - What happens when react is rendering your components?
 	- on an initial render you would have to use react render utils to create a root element and render the target dom node
 	- subsequent renders are triggered by updates to the state by the set function hooks. 
 	- initial renders call the root component and subsequent ones call the function component whose state triggered a rerender
+##### Structuring state and managing it: 
+- you should never modify the state value directly: 
+	- primitive types(passed by value: int, bools) are already immutable
+	- reference types(arrays, objects) should never directly be mutated
+		- use setState: `const newPerson = {...person, age: person.age + 1};` then `setPerson(newPerson)` 
+		- as opposed to `person.age = person.age + 1; setPerson(person)`
