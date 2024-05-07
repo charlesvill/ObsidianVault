@@ -297,4 +297,14 @@ when you want a state between two components to always change together if for ex
 - what is an example of sharing state or syncing it?
 	- if you have a parent component that calls two instances of panels for food recipes, and you can click the show button to reveal the recipe
 	- not sharing state would be each recipe's canShow state exist independent of each other and neither the other panel nor the parent component could control the canShow state in any of the panels
-	- sharing state would entail removing the state from each of the components and instead managing the state in the parent in a way where it could sync both 
+	- sharing state would entail removing the state from each of the components and instead managing the state in the parent in a way where it could control which child component has what and is passed the values needed as props
+		- it needs: 
+			- state as props
+			- management variable or state in parent
+			- function as prop to update state
+- what is an uncontrolled state vs controlled state?
+	- controlled state is when you have parent managing the state for each of the children components
+	- uncontrolled state is when each component manages its own state and cannot be controlled by parent
+- what does it mean to have a single source of truth?
+	- not that all states should live in one place, but that all states live in a specific component and not shared amongst components. if multiple components need it, it should be uplift by the parent and passes as props instead
+- 
