@@ -294,4 +294,5 @@ const [backgroundColor, setBackgroundColor] = useState(initialColor);
 *important to note that everytime you have a set func it will rerender*
 ##### sharing state between two components
 when you want a state between two components to always change together if for example they will both use a state that each of them needs to have an updated version you would actually drop the state from both components and then add it as a state to the closest parent of both of them and then pass to each of them as propl its known as *lifting state up*
-- 
+- what is an example of sharing state or syncing it?
+	- if you have a child 
