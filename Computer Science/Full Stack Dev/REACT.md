@@ -295,4 +295,6 @@ const [backgroundColor, setBackgroundColor] = useState(initialColor);
 ##### sharing state between two components
 when you want a state between two components to always change together if for example they will both use a state that each of them needs to have an updated version you would actually drop the state from both components and then add it as a state to the closest parent of both of them and then pass to each of them as propl its known as *lifting state up*
 - what is an example of sharing state or syncing it?
-	- if you have a child 
+	- if you have a parent component that calls two instances of panels for food recipes, and you can click the show button to reveal the recipe
+	- not sharing state would be each recipe's canShow state exist independent of each other and neither the other panel nor the parent component could control the canShow state in any of the panels
+	- sharing state would entail removing the state from each of the components and instead managing the state in the parent in a way where it could sync both 
