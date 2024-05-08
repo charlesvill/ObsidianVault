@@ -154,6 +154,9 @@ export default function RecipeList() {
 	- c) demonstrating reacts ability to populate an array of list markup automatically (the return of map is an array of list elements)
 - *notice the parameters defined have curly braces* in Recipe. And yes, it is necessary to have the curly braces or else it will come up undefined
 	- the curlies are an example of destructuring
+#### Setting up your first react project
+- reference this lesson for using vite to get a devleopment up and running quickly 
+- 
 
 #### Markdown stuff
 - `<hr/>` - this is a thematic break between paragraphs like a change of scenary or something paints a line at the point can have attributes like size and whether it has shade or not
