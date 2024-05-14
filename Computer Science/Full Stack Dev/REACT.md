@@ -315,3 +315,7 @@ when you want a state between two components to always change together if for ex
 	- not that all states should live in one place, but that all states live in a specific component and not shared amongst components. if multiple components need it, it should be uplift by the parent and passes as props instead
 
 ### Dealing with Side Effects
+- A side effect is when your react component needs to reach out beyond the component and states and access or sync with something outside like an API server call or changing where the component is located in the DOM.
+- in order to interact with the outside world you might use another hook `useEffect()` which will help to run code outside your component. 
+- for example in a timer function that counts up every second and update the state count, you would have beserk behavior because of the fact that everytime state is updated the component re-renders and creates a new instance of this counter intervals and will not keep track. `useEffect()` along with some arguments helps to stop the code inside the hook from creating new instances. 
+- 
