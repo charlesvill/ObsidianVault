@@ -318,4 +318,15 @@ when you want a state between two components to always change together if for ex
 - A side effect is when your react component needs to reach out beyond the component and states and access or sync with something outside like an API server call or changing where the component is located in the DOM.
 - in order to interact with the outside world you might use another hook `useEffect()` which will help to run code outside your component. 
 - for example in a timer function that counts up every second and update the state count, you would have beserk behavior because of the fact that everytime state is updated the component re-renders and creates a new instance of this counter intervals and will not keep track. `useEffect()` along with some arguments helps to stop the code inside the hook from creating new instances. 
-- 
+###### Component life cycle vs Effect life cycle: 
+- component: 
+1. mounting - when the component is added to the screen, it is mounted
+2. updating - when either a state or a prop changes, usually in response to user interaction
+3. umountaing - when it's removed from the screen
+- Effect :
+1. synchronizing - your effect function will define what it looks like to synchronize
+2. stop synchronizing - the clean up function returned by the effect function will define when to stop synchronizing
+
+questions:
+- what triggers the clean up function to stop synchronization?
+	- if passing a new prop and thus rendering doesnt affect the effect function what will trigger the effect to call the clean up function?
