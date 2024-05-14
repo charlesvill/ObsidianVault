@@ -313,4 +313,5 @@ when you want a state between two components to always change together if for ex
 	- uncontrolled state is when each component manages its own state and cannot be controlled by parent
 - what does it mean to have a single source of truth?
 	- not that all states should live in one place, but that all states live in a specific component and not shared amongst components. if multiple components need it, it should be uplift by the parent and passes as props instead
-- 
+
+### Dealing with Side Effects
