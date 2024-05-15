@@ -329,4 +329,4 @@ when you want a state between two components to always change together if for ex
 
 questions:
 - what triggers the clean up function to stop synchronization?
-	- if passing a new prop and thus rendering doesnt affect the effect function what will trigger the effect to call the clean up function?
+	- if passing a new prop and thus rendering doesnt affect the effect function what will trigger the effect to call the clean up function? []
