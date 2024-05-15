@@ -329,4 +329,9 @@ when you want a state between two components to always change together if for ex
 
 questions:
 - what triggers the clean up function to stop synchronization?
-	- if passing a new prop and thus rendering doesnt affect the effect function what will trigger the effect to call the clean up function? []
+	- if passing a new prop and thus rendering doesnt affect the effect function what will trigger the effect to call the clean up function? 
+#### using UseEffect hook 
+##### syntax
+##### use dependencies 
+###### what needs to be included in dependencies
+- all variables that are inside the component body, that are rendered by props or state are *reactive*. and if they're reactive and used by the useEffect, they will need to be in the dependencies array
