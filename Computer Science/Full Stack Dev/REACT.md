@@ -335,3 +335,6 @@ questions:
 ##### use dependencies 
 ###### what needs to be included in dependencies
 - all variables that are inside the component body, that are rendered by props or state are *reactive*. and if they're reactive and used by the useEffect, they will need to be in the dependencies array
+- a linter will complain if you have variables in your useEffect that are declared inside your component and are not in your dependencies. this is because all variables declared inside the component are reactive. 
+	- if you would not want to include them as dependencies, i.e you dont want it to synchronize on those variables, then you can put the variable declarations either outside the component or inside the useEffect function call since it wont be reactive to re-renders.
+- 
