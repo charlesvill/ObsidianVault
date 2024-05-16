@@ -330,6 +330,10 @@ when you want a state between two components to always change together if for ex
 questions:
 - what triggers the clean up function to stop synchronization?
 	- if passing a new prop and thus rendering doesnt affect the effect function what will trigger the effect to call the clean up function? 
+	- what is useSelectoptions and how might it be useful in reducing code repetition?
+- not a question but you should review the lifecycle of effect: https://react.dev/learn/lifecycle-of-reactive-effects, https://react.dev/learn/you-might-not-need-an-effect, https://dmitripavlutin.com/react-useeffect-infinite-loop/ and make sure that you understand all of the nuances of the code in here
+- understand thoroughly the instances when you do need a useEffect and when you do not: 
+	- be able to accurately determine in different circumstances why you might need or not need the useEffect
 #### using UseEffect hook 
 ##### syntax
 ##### use dependencies 
@@ -337,4 +341,10 @@ questions:
 - all variables that are inside the component body, that are rendered by props or state are *reactive*. and if they're reactive and used by the useEffect, they will need to be in the dependencies array
 - a linter will complain if you have variables in your useEffect that are declared inside your component and are not in your dependencies. this is because all variables declared inside the component are reactive. 
 	- if you would not want to include them as dependencies, i.e you dont want it to synchronize on those variables, then you can put the variable declarations either outside the component or inside the useEffect function call since it wont be reactive to re-renders.
-- 
+#### avoiding using useEffect when not needed
+- if you have data you need to transform before it is rendered, you do not need to use an effect to track the change of the data and then apply the transformaiton. what will happen is react renders the screen and then applies the effect actions that will cause a state to change and thus rerender the component which is inefficient
+	- instead you should keep all your data transformation at the top of the component. that will be run quicker and before the rendering begins and it will regnerate the data transformations every time that your component renders again
+
+
+
+
