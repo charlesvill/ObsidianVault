@@ -378,3 +378,21 @@ const visibleTodos = getFilteredTodos(todos, filter);
 
 console.timeEnd('filter array');
 ```
+##### separating state from different child components
+```jsx
+export default function ProfilePage({ userId }) {  
+
+return (  
+<Profile  
+userId={userId}  
+key={userId}  
+/>  
+	);  
+}  
+
+function Profile({ userId }) {  
+// ✅ This and any other state below will reset on key change automatically  
+const [comment, setComment] = useState('');  
+}
+```
+- notice here how a key is passed to the child component that will make react treat each of instance of that as a seperate component that will not share any state betweeen them. this is a good way of preventing some state values to cross over when parent states change like userid to prevent you accidentally being able to post something under someone elses account. 
