@@ -318,6 +318,14 @@ when you want a state between two components to always change together if for ex
 - A side effect is when your react component needs to reach out beyond the component and states and access or sync with something outside like an API server call or changing where the component is located in the DOM.
 - in order to interact with the outside world you might use another hook `useEffect()` which will help to run code outside your component. 
 - for example in a timer function that counts up every second and update the state count, you would have beserk behavior because of the fact that everytime state is updated the component re-renders and creates a new instance of this counter intervals and will not keep track. `useEffect()` along with some arguments helps to stop the code inside the hook from creating new instances. 
+We've talked about this idea of having pure functions meaning that your functions a) always return the same output for the same input and b) do not modify or mutate data outiside your function. 
+	- At times however, something in your project needs to change as is what makes programming interesting, bringing about interesting changes such as dynamic user interface from interactions on your webpage. 
+	- Reacts paradigm assumes all functions are pure functions and especially during rendering, all functions must be pure functions to ensure that react applications are safe to run on servers and scale appropriately. 
+	- when a function needs to mutate something such as the dom or synchronizing with outside state or api fetches, React will handle that process separately after rendering asynchronously.
+	- UseEffect is one such example of asynchronous hooks that allow you to process or generate data outside the component. 
+
+
+
 ###### Component life cycle vs Effect life cycle: 
 - component: 
 1. mounting - when the component is added to the screen, it is mounted
@@ -335,6 +343,7 @@ questions:
 - understand thoroughly the instances when you do need a useEffect and when you do not: 
 	- be able to accurately determine in different circumstances why you might need or not need the useEffect
 #### using UseEffect hook 
+
 ##### syntax
 ##### use dependencies 
 ###### what needs to be included in dependencies
@@ -355,7 +364,17 @@ function TodoList({ todos, filter }) {
   // ...
 }
 ```
+- important to note that useMemo should ever be used with pure functions meaning that a function component that accesses a global variable and increments would result in a different answer for multiple jsx calls. creates unpredictable results. I think it also needs to be a pure function because the useMemo runs during rendering, and react does not allow impure functions during rendering your components. 
+	- instead you should pass your component the variable as a prop so that the value is controlled outside of it so that every time that function is called it will result in the same predictable behavior according to the value passed as prop. 
+	- You can however mutate locally declared variables, these are the components little secret and does not modify anything outside of it. 
+###### how to know if your calculation is expensive
+- unelss youre creating or iterating over thousands of objects, it's probably not expensive. 
+- You can test by adding `console.time() console.timeEnd()` to measure the time it takes to perform a calculation
+	- if It's adding up considerably after testing your inputs then probably memoize it
+```jsx
+console.time('filter array');  
 
+const visibleTodos = getFilteredTodos(todos, filter);  
 
-
-
+console.timeEnd('filter array');
+```
