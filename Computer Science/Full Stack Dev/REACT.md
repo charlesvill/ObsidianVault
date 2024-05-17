@@ -344,6 +344,17 @@ questions:
 #### avoiding using useEffect when not needed
 - if you have data you need to transform before it is rendered, you do not need to use an effect to track the change of the data and then apply the transformaiton. what will happen is react renders the screen and then applies the effect actions that will cause a state to change and thus rerender the component which is inefficient
 	- instead you should keep all your data transformation at the top of the component. that will be run quicker and before the rendering begins and it will regnerate the data transformations every time that your component renders again
+- There might exist some conditions where you have expensive process that you need to process not on every render but when some of the variables involved in the process change. instead of using a useEffect which is code smell (because it is processed with props or states and not somethig external) and should instead cache the expensive result in a memoization (useMemo) which will only run when one of the dependent variables has changed instead of on each render. 
+```jsx
+import { useMemo, useState } from 'react';
+
+function TodoList({ todos, filter }) {
+  const [newTodo, setNewTodo] = useState('');
+  // ✅ Does not re-run getFilteredTodos() unless todos or filter change
+  const visibleTodos = useMemo(() => getFilteredTodos(todos, filter), [todos, filter]);
+  // ...
+}
+```
 
 
 
