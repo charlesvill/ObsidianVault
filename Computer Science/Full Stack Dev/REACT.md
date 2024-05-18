@@ -403,3 +403,13 @@ const [comment, setComment] = useState('');
 - see the example from the react docs on avoiding useEffect:
 
 - essentially what you can do is store the current state that you want to change and then on a prop change , you check during rendering if the state being pulled is different than the one passed by the prop and then if it is you run the setState hook to change the state to a null or whatever you need it to be. 
+	- this is a more efficient way of changine only some states based on changning props but its actually not the best solution. the best solution involves not having to update the state at all and instead calculating and storing the state you needed to change on a prop in a regular local variable: 
+```jsx
+function List({ items }) {
+  const [isReverse, setIsReverse] = useState(false);
+  const [selectedId, setSelectedId] = useState(null);
+  // ✅ Best: Calculate everything during rendering
+  const selection = items.find(item => item.id === selectedId) ?? null;
+  // ...
+}
+```
