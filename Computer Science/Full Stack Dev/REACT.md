@@ -378,7 +378,9 @@ const visibleTodos = getFilteredTodos(todos, filter);
 
 console.timeEnd('filter array');
 ```
-##### separating state from different child components
+##### changing all state values a prop change
+- by default react will want to preserve state values when different props are passed this might not be wanted if the state pertains only to the prop that was previously passed
+	- the solution to this is to pass a key to each component related to the prop so that react treats it as a different component and thus not fetch the same state values. 
 ```jsx
 export default function ProfilePage({ userId }) {  
 
@@ -396,3 +398,8 @@ const [comment, setComment] = useState('');
 }
 ```
 - notice here how a key is passed to the child component that will make react treat each of instance of that as a seperate component that will not share any state betweeen them. this is a good way of preventing some state values to cross over when parent states change like userid to prevent you accidentally being able to post something under someone elses account. 
+##### changing some state values when a prop changes
+- sometimes you might not want to change all of the state values but some of them. 
+- see the example from the react docs on avoiding useEffect:
+
+- essentially what you can do is store the current state that you want to change and then on a prop change , you check during rendering if the state being pulled is different than the one passed by the prop and then if it is you run the setState hook to change the state to a null or whatever you need it to be. 
