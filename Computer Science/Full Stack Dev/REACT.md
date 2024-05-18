@@ -227,7 +227,7 @@ export default function App() {
 - notice here the syntax of .defaultProps
 
 - you can also pass a function through as a prop for example if your child is a button the button will take the prop function and call it 
-- There is something called currying that looks like a callback function is called and then does some shit idk looks like you can call hella shit at the same time from a return statement or something here is more on it: https://javascript.info/currying-partials I just cant rn
+- There is something called currying that looks like a callback function is called and then does some shit idk looks like you can call hella shit at the same time from a return statement or something here is more on it: https://javascript.info/currying-partials I just cant rn - revisited but dont see the point of currying at this point. practical use cases might be limited for this. 
 - you can also use the spread operator to avoid having to list out all the props that you are passing to your components: 
 ```jsx
 export default function example(props){
