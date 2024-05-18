@@ -166,7 +166,7 @@ export default function RecipeList() {
 	- in the attributes: `style={{display: 'none'}}` double braces with the value as a string
 
 #### Keys
-- keys are needed by the internal workings of react to keep track of what is what incase the elements are rearranged or removed and need to be rendered in an altered way. the keys associate the particular element from its siblings
+- keys are needed by the internal workings of react to keep track of what is what in a list incase the elements are rearranged or removed and need to be rendered in an altered way. the keys associate the particular element from its siblings
 #### Props
 - properties that are passed down from the parent to the children. 
 - it is only one direction, from parent to child 
