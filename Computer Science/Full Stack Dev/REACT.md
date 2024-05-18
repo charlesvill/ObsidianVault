@@ -413,3 +413,4 @@ function List({ items }) {
   // ...
 }
 ```
+- here instead the selectedid is stored in state and the actual list item is calculated during rendering by seeing if the id is found in the new list prop and if its not then the current listem set to null and presumably other code in the component would have logic to set the updated id and list item
