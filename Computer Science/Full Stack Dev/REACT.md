@@ -414,3 +414,10 @@ function List({ items }) {
 }
 ```
 - here instead the selectedid is stored in state and the actual list item is calculated during rendering by seeing if the id is found in the new list prop and if its not then the current listem set to null and presumably other code in the component would have logic to set the updated id and list item
+##### UseEffect and event handlers
+- you should not use useEffect hooks for user interactions such as click or other events. those should be only event handlers
+- useEffect should be used for when the purpose of the code running because the component has displayed or rendered. 
+	- the difference event handlers run code because there was a click event, not because the page was loaded or component rendered
+	- an example of appropriate use of effect would be sending an analytics report when the component mounts.
+	- direct quote from react docs: `When you choose whether to put some logic into an event handler or an Effect, the main question you need to answer is _what kind of logic_ it is from the user’s perspective. If this logic is caused by a particular interaction, keep it in the event handler. If it’s caused by the user _seeing_ the component on the screen, keep it in the Effect.`
+	
