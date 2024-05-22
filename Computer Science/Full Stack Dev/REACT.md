@@ -364,7 +364,7 @@ function TodoList({ todos, filter }) {
   // ...
 }
 ```
-- important to note that useMemo should ever be used with pure functions meaning that a function component that accesses a global variable and increments would result in a different answer for multiple jsx calls. creates unpredictable results. I think it also needs to be a pure function because the useMemo runs during rendering, and react does not allow impure functions during rendering your components. 
+- important to note that useMemo should only ever be used with pure functions meaning that a function component that accesses a global variable and increments would result in a different answer for multiple jsx calls. creates unpredictable results. I think it also needs to be a pure function because the useMemo runs during rendering, and react does not allow impure functions during rendering your components. 
 	- instead you should pass your component the variable as a prop so that the value is controlled outside of it so that every time that function is called it will result in the same predictable behavior according to the value passed as prop. 
 	- You can however mutate locally declared variables, these are the components little secret and does not modify anything outside of it. 
 ###### how to know if your calculation is expensive
@@ -420,4 +420,5 @@ function List({ items }) {
 	- the difference event handlers run code because there was a click event, not because the page was loaded or component rendered
 	- an example of appropriate use of effect would be sending an analytics report when the component mounts.
 	- direct quote from react docs: `When you choose whether to put some logic into an event handler or an Effect, the main question you need to answer is _what kind of logic_ it is from the user’s perspective. If this logic is caused by a particular interaction, keep it in the event handler. If it’s caused by the user _seeing_ the component on the screen, keep it in the Effect.`
-	
+##### Chaining useEffects
+- avoid useEffects that are triggered by other state changing
