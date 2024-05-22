@@ -420,5 +420,8 @@ function List({ items }) {
 	- the difference event handlers run code because there was a click event, not because the page was loaded or component rendered
 	- an example of appropriate use of effect would be sending an analytics report when the component mounts.
 	- direct quote from react docs: `When you choose whether to put some logic into an event handler or an Effect, the main question you need to answer is _what kind of logic_ it is from the user’s perspective. If this logic is caused by a particular interaction, keep it in the event handler. If it’s caused by the user _seeing_ the component on the screen, keep it in the Effect.`
-##### Chaining useEffects
+##### other considerations
 - avoid useEffects that are triggered by other state changing
+- on initializing the application if you need to use global variables for example if something only needs to render or run once you can accomplish this by setting a global variable and checking the variable in the component so you have more control over how many times that will get run.
+	- for this make sure that you keep this pattern to a minimum and only in the entry point of your app or where the app.js root component is
+- 
