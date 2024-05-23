@@ -426,3 +426,42 @@ function List({ items }) {
 - on initializing the application if you need to use global variables for example if something only needs to render or run once you can accomplish this by setting a global variable and checking the variable in the component so you have more control over how many times that will get run.
 	- for this make sure that you keep this pattern to a minimum and only in the entry point of your app or where the app.js root component is
 - race conditions - when two different things are racing and arrive back at different times than you expected. This happens with data fetching 
+- `useRef` this one is a reference hook that allows you to increment from the component without having to rerender the component for example on tracker a counter for each change in input form: 
+```jsx
+import { useState, useRef } from 'react';  
+
+  
+
+function CountInputChanges() {  
+
+const [value, setValue] = useState('');  
+
+const countRef = useRef(0);  
+
+  
+
+const onChange = ({ target }) => {  
+
+setValue(target.value);  
+
+countRef.current++;  
+
+};  
+
+  
+
+return (  
+
+<div>  
+
+<input type="text" value={value} onChange={onChange} />  
+
+<div>Number of changes: {countRef.current}</div>  
+
+</div>  
+
+);  
+
+}
+```
+- this is opposed to say using a useEffect and having the dependency be the value state when the value state changes. this would be more effificient because it eliminates the need to rerender another time. 
