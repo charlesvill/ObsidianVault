@@ -424,4 +424,4 @@ function List({ items }) {
 - avoid useEffects that are triggered by other state changing
 - on initializing the application if you need to use global variables for example if something only needs to render or run once you can accomplish this by setting a global variable and checking the variable in the component so you have more control over how many times that will get run.
 	- for this make sure that you keep this pattern to a minimum and only in the entry point of your app or where the app.js root component is
-- 
+- race conditions - when two different things are racing and arrive back at different times than you expected. This happens with data fetching 
