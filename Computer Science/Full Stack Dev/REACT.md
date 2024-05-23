@@ -342,6 +342,7 @@ questions:
 - not a question but you should review the lifecycle of effect: https://react.dev/learn/lifecycle-of-reactive-effects, https://react.dev/learn/you-might-not-need-an-effect, https://dmitripavlutin.com/react-useeffect-infinite-loop/ and make sure that you understand all of the nuances of the code in here
 - understand thoroughly the instances when you do need a useEffect and when you do not: 
 	- be able to accurately determine in different circumstances why you might need or not need the useEffect
+- what is the limit for too many states? is it for things that could be calculated during the render?
 #### using UseEffect hook 
 
 ##### syntax
