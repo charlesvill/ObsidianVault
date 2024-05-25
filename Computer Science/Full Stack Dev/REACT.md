@@ -465,3 +465,65 @@ return (
 }
 ```
 - this is opposed to say using a useEffect and having the dependency be the value state when the value state changes. this would be more effificient because it eliminates the need to rerender another time. 
+- avoid objects as dependencies because javascript objects do not have strict equality since they compare by reference and they will never point to the same blocks of memory
+- if you must use objects, you can use the accessors to make sure that the actual depency its checking is a primitive data type and not an object
+###### putting parameters of state for setters
+look at this code: 
+
+```jsx
+import { useEffect, useState } from "react";  
+
+  
+
+function CountSecrets() {  
+
+const [secret, setSecret] = useState({ value: "", countSecrets: 0 });  
+
+  
+
+useEffect(() => {  
+
+if (secret.value === 'secret') {  
+
+setSecret(s => ({...s, countSecrets: s.countSecrets + 1}));  
+// see the s here the s is secret state
+}  
+
+}, [secret]);  
+
+  
+
+const onChange = ({ target }) => {  
+
+setSecret(s => ({ ...s, value: target.value }));  
+
+};  
+
+  
+
+return (  
+
+<div>  
+
+<input type="text" value={secret.value} onChange={onChange} />  
+
+<div>Number of secrets: {secret.countSecrets}</div>  
+
+</div>  
+
+);  
+
+}
+```
+- notice that the useEffect callbackfn has parameter s which represents secret state variable. by why doesn't it just call for secrets instead of this new parameter declaration?
+	- In react when you use the state setter function you can pass either a new state value or a callback function. Reach will automatically call this function with the current state as its argument. 
+	- this ensures that you always working with the latest state which is really important with updates being asynchronous and all
+	- **the use of the callback function has benefits over setting value directly**
+		- has something to do with making sure that you have the most up to date state values.. not too sure what they mean by this. I think it has something to do with the code below and making sure you get the most up to date state even when they're right after one another #NeedMoreHelp 
+```jsx
+setSecret({ ...secret, value: "first" });
+setSecret({ ...secret, countSecrets: secret.countSecrets + 1 });
+// here setting directly, the second set call will use the original state value at render time instead of the updated state from the first set call
+```
+**definitely review this often because this seems like a big pattern with React that will be helpful and avoid headaches**
+- check this article if I'm having infinite loops and lop through and see if one ofhtem looks like the sin commited: https://dmitripavlutin.com/react-useeffect-infinite-loop/
