@@ -1211,7 +1211,7 @@ return rsp.json();
 
 })
 
-.then((data) => console.dir(data))
+- [ ] .then((data) => console.dir(data))
 .catch((error) => console.error(`Search was not found, please try again, ${error}`))
 ```
 notice here the the fetch request that is checked for the status inside the first '.then()' and then if it is not okay, you throw a new error and it will be pushed to the catch. 
