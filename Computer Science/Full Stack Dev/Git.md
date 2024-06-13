@@ -1,4 +1,7 @@
 #### Deeper look at git (TOP)
+topics that I want to get better at: 
+- retracting a commit and editing it
+- how commits should look like in their message length and content
 - topcis to cover: 
 	- History-changing Git commands
 	- different ways of changing history
