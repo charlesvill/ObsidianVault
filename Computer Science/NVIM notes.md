@@ -46,3 +46,7 @@ what is a vim register?
 - insert what you need to insert
 - exit to normal mode
 - it will apply
+
+
+#### Lvim notes
+- format - 'lf' - prettier like
