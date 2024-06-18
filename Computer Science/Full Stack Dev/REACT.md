@@ -16,6 +16,7 @@ function Item({ name, isPacked }) {
 }
 ```
 - when the main entry point or app component that calls other components use the syntax `<List animals={animals}/>` what is it doing? is it initializing a parameter to pass through to the List component? and why does it have to look like that and not a more traditional parameter for vanilla js function?
+- what is the error when you try to use array.map()? "array.map() is not a function"
 ### Intro to React
  what is the difference between a framework and a library?
 	 - library is a collection of code that we import to save us time on development
