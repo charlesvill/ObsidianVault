@@ -42,6 +42,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8bad6829501573ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -206,16 +218,16 @@
   },
   "active": "52d4538ca8e6cfae",
   "lastOpenFiles": [
-    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/Advanced CSS & HTML.md",
     "Computer Science/Full Stack Dev/REACT.md",
+    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/Git.md",
     "Computer Science/NVIM notes.md",
     "Computer Science/Bash Notes.md",
     "Computer Science/Full Stack Dev/Full Stack Parking lot.md",
     "Computer Science/Full Stack Dev/Emmet Abbreviations.md",
     "Computer Science/Full Stack Dev/How the internet works and Networking.md",
-    "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/CSS/CSS reference Notes.md",
     "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
     "Untitled.md",
