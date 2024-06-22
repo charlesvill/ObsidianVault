@@ -55,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Full Stack Dev/REACT.md",
+                "file": "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Full Stack Dev/REACT.md",
+                "file": "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Full Stack Dev/REACT.md"
+                "file": "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md"
               }
             }
           },
@@ -216,11 +217,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52d4538ca8e6cfae",
+  "active": "8bad6829501573ae",
   "lastOpenFiles": [
+    "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/Advanced CSS & HTML.md",
-    "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/Git.md",
     "Computer Science/NVIM notes.md",
