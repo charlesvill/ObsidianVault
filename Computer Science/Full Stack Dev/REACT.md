@@ -541,3 +541,66 @@ setSecret({ ...secret, countSecrets: secret.countSecrets + 1 });
 ```
 **definitely review this often because this seems like a big pattern with React that will be helpful and avoid headaches**
 - check this article if I'm having infinite loops and lop through and see if one ofhtem looks like the sin commited: https://dmitripavlutin.com/react-useeffect-infinite-loop/
+
+#### Class Components
+- most use functional but incase legacy code bases are encountered we should be familiar with class components: 
+```jsx
+import React, { Component } from "react";
+
+class ClassInput extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      todos: [],
+      inputVal: "",
+    };
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleInputChange(e) {
+    this.setState((state) => ({
+      ...state,
+      inputVal: e.target.value,
+    }));
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.setState((state) => ({
+      todos: state.todos.concat(state.inputVal),
+      inputVal: "",
+    }));
+  }
+
+  render() {
+    return (
+      <section>
+        <h3>{this.props.name}</h3>
+        <form onSubmit={this.handleSubmit}>
+          <label htmlFor="task-entry">Enter a task: </label>
+          <input
+            type="text"
+            name="task-entry"
+            value={this.state.inputVal}
+            onChange={this.handleInputChange}
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <h4>All the tasks!</h4>
+        <ul>
+          {this.state.todos.map((todo) => (
+            <li key={todo}>{todo}</li>
+          ))}
+        </ul>
+      </section>
+    );
+  }
+}
+
+export default ClassInput;
+
+```
+- start with the class constructor, remember that in c++ you need a class constructor as well, here you will declare the states and you have to bind the functions declared here to the 'this' keyword
