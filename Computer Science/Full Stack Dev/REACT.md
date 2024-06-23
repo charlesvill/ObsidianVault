@@ -299,6 +299,19 @@ const [backgroundColor, setBackgroundColor] = useState(initialColor);
 2. user button (set)  triggers react to update a state on the shelf
 3.  React then re-render the component pulling the updated shelf value
 *important to note that everytime you have a set func it will rerender*
+
+##### Rapid state updates
+- due to the nature of how states update, if you have an app that is frequently trying to access and update state in consequetive and rapid re-renders, you might encounter issues with state values being outdated or incorrect. you will have to use a callback function to ensure that you have the state value at the time it was enqueued: 
+```jsx
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+    setTodos((todo) => [...todo, inputVal]);
+    setInputVal("");
+  };
+```
+- notice here instead of `[...todos, inputVal]` you have the call back function
+- see here for more: https://react.dev/learn/queueing-a-series-of-state-updates
 ##### sharing state between two components
 when you want a state between two components to always change together if for example they will both use a state that each of them needs to have an updated version you would actually drop the state from both components and then add it as a state to the closest parent of both of them and then pass to each of them as propl its known as *lifting state up*
 - what is an example of sharing state or syncing it?
