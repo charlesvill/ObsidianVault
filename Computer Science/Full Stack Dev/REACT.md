@@ -156,8 +156,9 @@ export default function RecipeList() {
 - *notice the parameters defined have curly braces* in Recipe. And yes, it is necessary to have the curly braces or else it will come up undefined
 	- the curlies are an example of destructuring
 #### Setting up your first react project
-- reference this lesson for using vite to get a devleopment up and running quickly 
-- 
+- go into the folder where projects are and: 
+- `npm create vite@latest Project-Name-React -- --template react` 
+- then CD into the project folder and run `npm install` and that is literally it. super easy. 
 
 #### Markdown stuff
 - `<hr/>` - this is a thematic break between paragraphs like a change of scenary or something paints a line at the point can have attributes like size and whether it has shade or not
@@ -617,3 +618,5 @@ export default ClassInput;
 - start with the class constructor, remember that in c++ you need a class constructor as well, here you will declare the states and you have to bind the functions declared here to the 'this' keyword
 - more on the class components and constructors: https://react.dev/reference/react/Component#constructor
 for class component hooks, see: https://www.theodinproject.com/lessons/node-path-react-new-component-lifecycle-methods
+#### React Testing
+- since we're using Vite for the build environment instead of using JEST, we'll use Vitest and also tools from the react testing library
