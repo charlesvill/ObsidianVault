@@ -372,7 +372,10 @@ useEffect is a combination of the following methods from class components:
 - leaving a useEffect with an empty dependency array would be the same thing as 1. only triggering when it mounts the component
 - useEffect with dependency array ommitted is the same thing as 1 & 2 because it will re-run every time that 
 - And 3 is the clean up function that runs right before the component is being unmounted and removed from the screen
-- see here more a visual on the lifecycle of react components: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+- see here more a visual on the lifecycle of react components: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram//
+###### what is the commit phase?
+- the "commit phase" is after react has checked for difference in the components and works with the DOM to make updates and when the side effects are run. 
+- this is where the 'componentDidMount()', componentdidupdate and componentwillunmount will run. synonomous with useEffect() in functional components
 #### avoiding using useEffect when not needed
 - if you have data you need to transform before it is rendered, you do not need to use an effect to track the change of the data and then apply the transformaiton. what will happen is react renders the screen and then applies the effect actions that will cause a state to change and thus rerender the component which is inefficient
 	- instead you should keep all your data transformation at the top of the component. that will be run quicker and before the rendering begins and it will regnerate the data transformations every time that your component renders again
@@ -612,4 +615,5 @@ export default ClassInput;
 
 ```
 - start with the class constructor, remember that in c++ you need a class constructor as well, here you will declare the states and you have to bind the functions declared here to the 'this' keyword
+- more on the class components and constructors: https://react.dev/reference/react/Component#constructor
 for class component hooks, see: https://www.theodinproject.com/lessons/node-path-react-new-component-lifecycle-methods
