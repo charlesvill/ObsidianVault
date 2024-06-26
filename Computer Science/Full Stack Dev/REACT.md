@@ -620,3 +620,24 @@ export default ClassInput;
 for class component hooks, see: https://www.theodinproject.com/lessons/node-path-react-new-component-lifecycle-methods
 #### React Testing
 - since we're using Vite for the build environment instead of using JEST, we'll use Vitest and also tools from the react testing library
+##### Getting started
+- get a vite-react environment going
+- then `npm install vitest --save-dev`
+- then add `"test": "vitest",` in package.json file under "scripts" and below "build"
+- then `npm install jsdom --save-dev` so that vitest will work with html inside of 
+- then add to vite.config.js: (right below "plugins")
+```js
+  test: {
+    environment: 'jsdom',
+  },
+```
+- then install react testing library: `npm install @testing-library/react @testing-library/jest-dom --save-dev`
+- for the rest see this site: https://www.robinwieruch.de/vitest-react-testing-library/
+- at the very end, make sure to install: `npm install @testing-library/user-event --save-dev`
+*parking lot:*
+- what are assertions in testing? also known as custom matchers?
+##### conventions of Vitest: 
+- `describe()` test suite
+- `it()` test cases
+- `expect().toBe()` assertions
+- 
