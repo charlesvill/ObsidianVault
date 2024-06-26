@@ -657,5 +657,6 @@ for class component hooks, see: https://www.theodinproject.com/lessons/node-path
 	- `queryAllBy`
 	- `findAllBy`
 see here for more on specifics: https://testing-library.com/docs/queries/about/#priority
+- avoid using the container element to query for rendered elements!
 ##### simulating user events
 - provided by the react testing library is the screen object which contains all the necessary query methods. its the preferred way to accessing the query methods as opposed to trying to destruct the render object for the query methods. 
