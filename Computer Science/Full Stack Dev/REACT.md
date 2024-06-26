@@ -645,6 +645,10 @@ for class component hooks, see: https://www.theodinproject.com/lessons/node-path
 - `expect().toBe()` assertions
 
 ##### conventions of React Testing Library:
+- it starts with a describe() to define what youre testing and it() for what it should do. inside the it():
+	- render the component in order to select an element from it usiing the render() with the component inside of it
+once you render you have to query what youre going to evaluate. then you use assertions `expect().toBe()` to match the query with some expected result to compare against
+  
 on rendering in order to queue: 
 to Query are methods of selecting different elements in a rendered component. there are different ways you can query these rendered components, however there are specific guidelines on how you should do it: 
 	- if you need query a specific element like a heading, button, form etc, use `screen` object as imported by: `import {render, screen} from "@testing-library/react"` 
