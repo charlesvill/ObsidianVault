@@ -638,10 +638,16 @@ for class component hooks, see: https://www.theodinproject.com/lessons/node-path
 - what are assertions in testing? also known as custom matchers?
 - what is a container in reference to testing using the testing library
 	- why do you need to destructure render in order to get it, and sometimes you do not?
+		- you access the container by destructure if you need compare a snapshot of the whole component. in earlier examples of vitest testing, only compared the heading, container is for comparing the whole component to make sure there isnt a side effect causing the component to render differently on subsequent re-renders
 ##### conventions of Vitest: 
 - `describe()` test suite
 - `it()` test cases
 - `expect().toBe()` assertions
+
+##### conventions of React Testing Library:
+on rendering in order to queue: 
+to Query are methods of selecting different elements in a rendered component. there are different ways you can query these rendered components, however there are specific guidelines on how you should do it: 
+	- if you need query a specific element like a heading, button, form etc, use `screen` object as imported by: `import {render, screen} from "@testing-library/react"` 
 ###### queries
 - methos that testing library gives you to find elements on the page. types of queries include:
 	- get: `getBy`
