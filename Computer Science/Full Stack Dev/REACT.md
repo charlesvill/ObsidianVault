@@ -647,4 +647,11 @@ for class component hooks, see: https://www.theodinproject.com/lessons/node-path
 	- query `queryBy`
 - you should prioritize using `getByRole`  along with a `name` option because it queries most everything from mouse interactions to events triggered by assistive technology. if it doesnt work for you, then your UI might be unaccessible. 
 	- ex: `getByRole('button', {name: /submit/i})`
-- 
+- single element selectors: `getBy...`
+	- `queryBy`
+	- `findBy` return promise that resolves when elemnt is found that matches or time out after 1000ms
+		- combination of `getBy` and `waitFor` they accept waitfor options: `await screen.findByText('text', queryOptions, waitForOptions)`
+- multiple: `getAllBy`
+	- `queryAllBy`
+	- `findAllBy`
+see here for more on specifics: https://testing-library.com/docs/queries/about/#priority
