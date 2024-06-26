@@ -636,6 +636,8 @@ for class component hooks, see: https://www.theodinproject.com/lessons/node-path
 - at the very end, make sure to install: `npm install @testing-library/user-event --save-dev`
 *parking lot:*
 - what are assertions in testing? also known as custom matchers?
+- what is a container in reference to testing using the testing library
+	- why do you need to destructure render in order to get it, and sometimes you do not?
 ##### conventions of Vitest: 
 - `describe()` test suite
 - `it()` test cases
@@ -655,3 +657,5 @@ for class component hooks, see: https://www.theodinproject.com/lessons/node-path
 	- `queryAllBy`
 	- `findAllBy`
 see here for more on specifics: https://testing-library.com/docs/queries/about/#priority
+##### simulating user events
+- provided by the react testing library is the screen object which contains all the necessary query methods. its the preferred way to accessing the query methods as opposed to trying to destruct the render object for the query methods. 
