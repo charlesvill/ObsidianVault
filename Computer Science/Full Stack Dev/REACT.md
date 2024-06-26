@@ -640,4 +640,11 @@ for class component hooks, see: https://www.theodinproject.com/lessons/node-path
 - `describe()` test suite
 - `it()` test cases
 - `expect().toBe()` assertions
+###### queries
+- methos that testing library gives you to find elements on the page. types of queries include:
+	- get: `getBy`
+	- find `findBy`
+	- query `queryBy`
+- you should prioritize using `getByRole`  along with a `name` option because it queries most everything from mouse interactions to events triggered by assistive technology. if it doesnt work for you, then your UI might be unaccessible. 
+	- ex: `getByRole('button', {name: /submit/i})`
 - 
