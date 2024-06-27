@@ -637,8 +637,9 @@ for class component hooks, see: https://www.theodinproject.com/lessons/node-path
 *parking lot:*
 - what are assertions in testing? also known as custom matchers?
 - what is a container in reference to testing using the testing library
-	- why do you need to destructure render in order to get it, and sometimes you do not?
-		- you access the container by destructure if you need compare a snapshot of the whole component. in earlier examples of vitest testing, only compared the heading, container is for comparing the whole component to make sure there isnt a side effect causing the component to render differently on subsequent re-renders
+- why do you need to destructure render in order to get it, and sometimes you do not?
+	- you access the container by destructure if you need compare a snapshot of the whole component. in earlier examples of vitest testing, only compared the heading, container is for comparing the whole component to make sure there isnt a side effect causing the component to render differently on subsequent re-renders
+- What are test ids? why does it seem they are used when we cannot find an appropriate query method?
 ##### conventions of Vitest: 
 - `describe()` test suite
 - `it()` test cases
@@ -647,11 +648,13 @@ for class component hooks, see: https://www.theodinproject.com/lessons/node-path
 ##### conventions of React Testing Library:
 - it starts with a describe() to define what youre testing and it() for what it should do. inside the it():
 	- render the component in order to select an element from it usiing the render() with the component inside of it
-once you render you have to query what youre going to evaluate. then you use assertions `expect().toBe()` to match the query with some expected result to compare against
-  
-on rendering in order to queue: 
+	- once you render you have to query what youre going to evaluate. then you use assertions `expect().toBe()` to match the query with some expected result to compare against
+
+**what does it mean to query?**
 to Query are methods of selecting different elements in a rendered component. there are different ways you can query these rendered components, however there are specific guidelines on how you should do it: 
-	- if you need query a specific element like a heading, button, form etc, use `screen` object as imported by: `import {render, screen} from "@testing-library/react"` 
+- if you need query a specific element like a heading, button, form etc, use `screen` object as imported by: `import {render, screen} from "@testing-library/react"` 
+- if you need to query a whole component incase you need to do a snapshot, you need to destructure the `render` object to get the main DOM node of your component.
+	- *snapshot* - used to check for errors in your component mounting and rendering. checks to make sure that it renders the same thing in atleast two attempts incase side effects are leading to different renders. 
 ###### queries
 - methos that testing library gives you to find elements on the page. types of queries include:
 	- get: `getBy`
@@ -670,3 +673,18 @@ see here for more on specifics: https://testing-library.com/docs/queries/about/#
 - avoid using the container element to query for rendered elements!
 ##### simulating user events
 - provided by the react testing library is the screen object which contains all the necessary query methods. its the preferred way to accessing the query methods as opposed to trying to destruct the render object for the query methods. 
+- in the library `import userEvent from "@testing-library/user-event` you get the `userEvent` object that requires `user = userEvent.setup()` scoped inside your `it("test pass description", ()=>{})` call back function that will need to be an async function 
+- you will then `await user.click(button)` so you can match the result 
+```jsx
+  it("renders radical rhinos after button click", async () => {
+    const user = userEvent.setup();
+
+    render(<App />);
+    const button = screen.getByRole("button", {name: "Click Me"});
+
+    await user.click(button);
+
+    expect(screen.getByRole("heading").textContent).toMatch(/radical rhinos/i);
+  });
+});
+```
