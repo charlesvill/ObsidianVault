@@ -698,4 +698,27 @@ see here for more on specifics: https://testing-library.com/docs/queries/about/#
 - I think the point is that you should aim to test what outcomes should be visible to user based on tested userinteractions as opposed to testing an internal variable or state value 
 	- perhaps if you find yourself wanting to test a state, then ask yourself how does that state pertain to something the user would interact/see? then instead test that thing
 #### Mocking callbacks and components
-**what is mocking?** - 
+**what is mocking?** - mocking is when you have functionality in your tests that mimicks whatever it is its mocking. review from [[Intermediate Javascript#More Testing]]
+```jsx
+it("should call the onClick function when clicked", async () => {
+    const onClick = vi.fn();
+    const user = userEvent.setup()
+    render(<CustomButton onClick={onClick} />);
+
+    const button = screen.getByRole("button", { name: "Click me" });
+
+    await user.click(button);
+
+    expect(onClick).toHaveBeenCalled();
+  });
+
+  it("should not call the onClick function when it isn't clicked", async () => {
+    const onClick = vi.fn();
+    render(<CustomButton onClick={onClick} />);
+
+    expect(onClick).not.toHaveBeenCalled();
+  });
+
+```
+- here the callback  function is being mocked that either the function was called or it was not called
+	- I thought that testing should not involve details that the end users would not interact with or see( i.e the user will not interact with the callback function so why is that being tested)
