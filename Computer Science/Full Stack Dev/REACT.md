@@ -695,4 +695,5 @@ see here for more on specifics: https://testing-library.com/docs/queries/about/#
 	- if youre testing an application for result of state value being 1, but then you change the state to an array of numbers to allow for multiple at the same time. the function and behavior of the app has not changed but the implementation details have changed. your test would then break and give you a false negative. your functions and app work just fine but your tests are broken because you refactored them. 
 	- he simple definition of implementation  details are the things that the end user will not interact with, use, see, or know about. 
 	- tests should only see/interact wtih the props passed and the rendered output because the people that are going to be using are the end users interacting with buttons and developers that add content to the website
-- 
+- I think the point is that you should aim to test what outcomes should be visible to user based on tested userinteractions as opposed to testing an internal variable or state value 
+	- perhaps if you find yourself wanting to test a state, then ask yourself how does that state pertain to something the user would interact/see? then instead test that thing
