@@ -697,3 +697,5 @@ see here for more on specifics: https://testing-library.com/docs/queries/about/#
 	- tests should only see/interact wtih the props passed and the rendered output because the people that are going to be using are the end users interacting with buttons and developers that add content to the website
 - I think the point is that you should aim to test what outcomes should be visible to user based on tested userinteractions as opposed to testing an internal variable or state value 
 	- perhaps if you find yourself wanting to test a state, then ask yourself how does that state pertain to something the user would interact/see? then instead test that thing
+#### Mocking callbacks and components
+**what is mocking?** - 
