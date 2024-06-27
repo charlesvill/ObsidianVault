@@ -671,6 +671,7 @@ to Query are methods of selecting different elements in a rendered component. th
 	- `findAllBy`
 see here for more on specifics: https://testing-library.com/docs/queries/about/#priority
 - avoid using the container element to query for rendered elements!
+- see the whole list of queries: https://testing-library.com/docs/dom-testing-library/cheatsheet/
 ##### simulating user events
 - provided by the react testing library is the screen object which contains all the necessary query methods. its the preferred way to accessing the query methods as opposed to trying to destruct the render object for the query methods. 
 - in the library `import userEvent from "@testing-library/user-event` you get the `userEvent` object that requires `user = userEvent.setup()` scoped inside your `it("test pass description", ()=>{})` call back function that will need to be an async function 
@@ -688,3 +689,10 @@ see here for more on specifics: https://testing-library.com/docs/queries/about/#
   });
 });
 ```
+##### On avoiding testing for implementation
+- testing implementation details leads to either a false positive or a false negative
+- testing for implementation could mean: 
+	- if youre testing an application for result of state value being 1, but then you change the state to an array of numbers to allow for multiple at the same time. the function and behavior of the app has not changed but the implementation details have changed. your test would then break and give you a false negative. your functions and app work just fine but your tests are broken because you refactored them. 
+	- he simple definition of implementation  details are the things that the end user will not interact with, use, see, or know about. 
+	- tests should only see/interact wtih the props passed and the rendered output because the people that are going to be using are the end users interacting with buttons and developers that add content to the website
+- 
