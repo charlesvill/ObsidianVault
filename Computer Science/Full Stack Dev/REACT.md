@@ -727,3 +727,35 @@ it("should call the onClick function when clicked", async () => {
 ###### what is act() and what does it offer for those using useEffect and useState for testing?
 its wraps your tests that involve a side effect or state updates to make sure that it waits for any updates or setters to complete before it runs any of the assertions. here is a site that illustrates this: https://github.com/mrdulin/react-act-examples/blob/master/sync.md
 - look to see where in the odin project they use act and see how its used in context and then reference this guide on what it means when working on testing async functions
+
+
+## The React Ecosystem
+
+### Type checking with react PropTypes
+Why type checking?
+	- ensures that you using the correct data in built applications and helps to catch bugs with passing the wrong kind of data. making sure your components are getting the correct type of data
+##### getting started: 
+- install npm package to project directory: `npm install --save prop-types`
+- inside your file: `import propTypes from 'prop-types;`
+##### syntax
+```jsx
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const RenderName = (props) => {
+  return <div>{props.name}</div>;
+};
+
+RenderName.propTypes = {
+  name: PropTypes.string,
+};
+
+RenderName.defaultProps = {
+  name: 'Zach',
+};
+
+export default RenderName;
+
+```
+- notice here the use of 'componentName.propTypes' with an object notation declaring that RenderName component expects a prop called 'name' that is a string type
+- also notice the option of listing a defaul prop values just like you might do inline declaring props
