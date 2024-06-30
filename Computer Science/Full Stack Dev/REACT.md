@@ -640,6 +640,8 @@ for class component hooks, see: https://www.theodinproject.com/lessons/node-path
 - why do you need to destructure render in order to get it, and sometimes you do not?
 	- you access the container by destructure if you need compare a snapshot of the whole component. in earlier examples of vitest testing, only compared the heading, container is for comparing the whole component to make sure there isnt a side effect causing the component to render differently on subsequent re-renders
 - What are test ids? why does it seem they are used when we cannot find an appropriate query method?
+- what circumstances call for using mocks in tests? what role do the mocks play in those circumsstances and why are they necessary? are there alternatives?
+	- see this site to review how mocking helps with components with multiple child components you dont want to test: https://medium.com/@taylormclean15/jest-testing-mocking-child-components-to-make-your-unit-tests-more-concise-18691ef6a0c2
 ##### conventions of Vitest: 
 - `describe()` test suite
 - `it()` test cases
@@ -722,3 +724,6 @@ it("should call the onClick function when clicked", async () => {
 ```
 - here the callback  function is being mocked that either the function was called or it was not called
 	- I thought that testing should not involve details that the end users would not interact with or see( i.e the user will not interact with the callback function so why is that being tested)
+###### what is act() and what does it offer for those using useEffect and useState for testing?
+its wraps your tests that involve a side effect or state updates to make sure that it waits for any updates or setters to complete before it runs any of the assertions. here is a site that illustrates this: https://github.com/mrdulin/react-act-examples/blob/master/sync.md
+- look to see where in the odin project they use act and see how its used in context and then reference this guide on what it means when working on testing async functions
