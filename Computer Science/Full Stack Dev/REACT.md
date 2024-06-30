@@ -759,3 +759,4 @@ export default RenderName;
 ```
 - notice here the use of 'componentName.propTypes' with an object notation declaring that RenderName component expects a prop called 'name' that is a string type
 - also notice the option of listing a defaul prop values just like you might do inline declaring props
+- more details on setting prop types and defining it: https://blog.logrocket.com/validate-react-props-proptypes/
