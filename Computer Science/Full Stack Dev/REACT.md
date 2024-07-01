@@ -762,4 +762,5 @@ export default RenderName;
 - more details on setting prop types and defining it: https://blog.logrocket.com/validate-react-props-proptypes/
 ### React Router
 - what does it mean when you're talking about routing?
-	- 
+	- up this point we have been building single page applications but that changes as your application gets bigger. routing and specifically *client-side routing* is when javascript will intercept a request from clicking a link and loads/changes what is needed to be changed without having to refresh the page and having the server load a different page. 
+	- you'll still see the url change but 
