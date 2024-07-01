@@ -765,3 +765,6 @@ export default RenderName;
 	- up this point we have been building single page applications but that changes as your application gets bigger. routing and specifically *client-side routing* is when javascript will intercept a request from clicking a link and loads/changes what is needed to be changed without having to refresh the page and having the server load a different page. 
 	- you'll still see the url change but the page wont have to reload
 	- one thing to know for accessibility: refreshing the page like a multi-page application does tells screen readers when there is new content to read. since with CSR you wont get refresh, you need to use the library tools to manually tell screen readers that there is new content to read. 
+#### getting started
+##### syntax
+`npm install react-router-dom`
