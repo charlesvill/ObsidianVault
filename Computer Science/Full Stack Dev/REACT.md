@@ -762,9 +762,14 @@ export default RenderName;
 - more details on setting prop types and defining it: https://blog.logrocket.com/validate-react-props-proptypes/
 ### React Router
 - what does it mean when you're talking about routing?
-	- up this point we have been building single page applications but that changes as your application gets bigger. routing and specifically *client-side routing* is when javascript will intercept a request from clicking a link and loads/changes what is needed to be changed without having to refresh the page and having the server load a different page. 
+	- up this point we have been building single page applications but that changes as your application gets bigger. there is a difference between server based routing which means every link on a page you click is handled by the server requesting that page and clearing everything , and refreshing everything on the page with what you requested. html is quick to load but style sheets and images can get cached which drastically reduces load times and stutters when the resources are shared between links clicked. 
+	- there is another option for larger application where its still a single page application with something called client side routing. 
+	- routing and specifically *client-side routing* is when javascript will intercept a request from clicking a link and loads/changes what is needed to be changed without having to refresh the page and having the server load a different page. 
 	- you'll still see the url change but the page wont have to reload
 	- one thing to know for accessibility: refreshing the page like a multi-page application does tells screen readers when there is new content to read. since with CSR you wont get refresh, you need to use the library tools to manually tell screen readers that there is new content to read. 
+- What is the big deal with Client side routing with "SPA" or single page appications and why is it what makes reacts promise of "dynamic user interactions", "lightning fast load times" a reality? 
+	- *dynmic user interactions:*
+	- *lightning fast load-times:* 
 *parking lot:*
 -  what is an `<Outlet />` component and what is it used for? what results is it supposed to bring it about if a compent has children components that is meant to be rendered as well?
 #### getting started
