@@ -772,6 +772,43 @@ export default RenderName;
 	- *lightning fast load-times:* 
 *parking lot:*
 -  what is an `<Outlet />` component and what is it used for? what results is it supposed to bring it about if a compent has children components that is meant to be rendered as well?
+
+visual of setting up react routers and how to set up navigation and nesting routes and outlet
 #### getting started
 ##### syntax
 `npm install react-router-dom`
+
+- client side routing is enabled by creating a `Router` and linking/submitting to pages with `Link` and `<Form>` 
+```jsx
+import * as React from "react";
+import { createRoot } from "react-dom/client";
+import {
+	createBrowserRouter,
+	RouterProvider,
+	Route,
+	Link,
+} from "react-router-dom";
+
+const router = createBrowerRouter([
+	{
+		path: "/",
+		element: (
+			<div>
+				<h1>Hello world</h1>
+				<Link to="about">About Us</Link>
+			</div>
+		),
+	},
+	{
+		path: "about",
+		element: <div>About</div>,
+	},
+]);
+
+createRoot(document.getElementById("root")).render(
+	<RouterProvider router={router} />
+);
+```
+- notice here the use of `createBrowserRouter` to define the possible routes
+- notice the `<RouterProvider />` component that will actually channel the defined routes by passing through the above router object.
+- finally notice the `<Link />` component that is used instead of `<a href>` that would be used in a server router
