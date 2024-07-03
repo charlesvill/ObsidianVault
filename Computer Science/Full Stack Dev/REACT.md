@@ -892,3 +892,74 @@ const router = createBrowserRouter([
 ```
 - notice the first child, the path argument replaced with `index: true` . again this will make it so that that element will render as default along with the parent component
 ##### Dynamic Segments
+- This is when react will take the url and try to "match" during runtime with the available routes. react takes the url "parameter" and feeds it for the path specified as dynamic by the `:variableName`. for example if you have `localhost3000/profile/hello` and you have a path route: `path="/profile/:name"` then from the profile componet, you can use the `useParams` hook to get access to that parameter passed to the URL and render components dynamically based on that: 
+```jsx
+import { useParams } from "react-router-dom";
+import DefaultProfile from "./DefaultProfile";
+import Spinach from "./Spinach";
+import Popeye from "./Popeye";
+
+const Profile = () => {
+  const { name } = useParams();
+
+  return (
+    <div>
+      <h1>Hello from profile page!</h1>
+      <p>So, how are you?</p>
+      <hr />
+      <h2>The profile visited is here:</h2>
+      {name === "popeye" ? (
+        <Popeye />
+      ) : name === "spinach" ? (
+        <Spinach />
+      ) : (
+        <DefaultProfile />
+      )}
+    </div>
+  );
+};
+
+export default Profile;
+```
+- notice here the deconstrutor for the useParams(); and then you can put logic that reads its content
+- here is what the route configuration would look like to accept dynamic routes: 
+```jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./App";
+import Profile from "./Profile";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "profile/:name",
+    element: <Profile />,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
+```
+- notice the `:name` after the path name 
+###### React routers Matching algorithm
+- You can run into the problem where you might have pass a url that has the same name as a specified path and also have a path that accepts dynamic names. technically react router could match with both of the paths because the dynamic one will accept and match with any parameter.
+- for example if you have url: `localhost3000/profile/new` and you have the routes: 
+	- `path="/profile/:name"`
+	- `path="/profile/new"` 
+- luckily there is an algorithm that works off of specificity like css selectors where it will know if you have a specified path of the same name and choose that one as the matcher for the component
+##### Handling bad URLs
+- in the config for the router, you can handle unfound pages with `errorElement: <ErrorPage />` added after the element argument
+##### passing props through outlets
+- in order to pass props to children of a parent component that has the `<Outlet />` component, you need to use something called `context`. this is something that will be gone into more depth but for now, the Outlet component accepts context prop: `<Outlet context={[count, setCount]} />` then you can use the `const [count, setCount] = useOutletContext()` in the child component after importing with `import {useOutletContext} from "react-router-dom"` 
+- here is more information on that: https://reactrouter.com/en/main/hooks/use-outlet-context
+
+##### Authorization protected routes
+- when authentication is needed from a user account for a specific path, you can embed conditional rendering based on user data such as if they're logged in or not. this involves rerouting the user to a different URL programmatically using the `<Navigate />` component. 
+- see this link for more: https://reactrouter.com/en/main/components/navigate
