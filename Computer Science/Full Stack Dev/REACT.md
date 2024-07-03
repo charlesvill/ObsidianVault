@@ -812,3 +812,10 @@ createRoot(document.getElementById("root")).render(
 - notice here the use of `createBrowserRouter` to define the possible routes
 - notice the `<RouterProvider />` component that will actually channel the defined routes by passing through the above router object.
 - finally notice the `<Link />` component that is used instead of `<a href>` that would be used in a server router
+- this will render a basic page with a link to an about div
+
+#### Nested Routes
+- the general idea is component hierarchy and data is tied to segments of the url:
+	- ex: <Books /> -> <BookLayout /> -> 1
+		- `localhost3000/books/booklayout/1`
+		
