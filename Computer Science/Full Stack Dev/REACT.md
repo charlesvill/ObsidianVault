@@ -809,7 +809,8 @@ createRoot(document.getElementById("root")).render(
 	<RouterProvider router={router} />
 );
 ```
-- notice here the use of `createBrowserRouter` to define the possible routes
+- notice here the use of `createBrowserRouter` to define the possible routes by creating the configuration for a router that can be altered to needs. accepts array of routes. 
+	- you can also define as nested components but in reactrouter v6, they recommend adding routes as objects as seen here. 
 - notice the `<RouterProvider />` component that will actually channel the defined routes by passing through the above router object.
 - finally notice the `<Link />` component that is used instead of `<a href>` that would be used in a server router
 - this will render a basic page with a link to an about div
@@ -818,4 +819,76 @@ createRoot(document.getElementById("root")).render(
 - the general idea is component hierarchy and data is tied to segments of the url:
 	- ex: <Books /> -> <BookLayout /> -> 1
 		- `localhost3000/books/booklayout/1`
-		
+	- good visual on the routing and component hierarchy relationship: https://remix.run/_docs/routing
+```jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./App";
+import Profile from "./Profile";
+import Spinach from "./Spinach";
+import Popeye from "./Popeye";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "profile",
+    element: <Profile />,
+    children: [
+      { path: "spinach", element: <Spinach /> },
+      { path: "popeye", element: <Popeye /> },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
+
+```
+- notice here the use of children key with array of children with their own required path and element arguments
+- running this would not actually present those two children. if you wanted to render the children alongside with the parent object, you would need to make use of the `Outlet` object from `react-router-dom`
+```jsx
+import { Outlet } from "react-router-dom";
+
+const Profile = () => {
+  return (
+    <div>
+      <h1>Hello from profile page!</h1>
+      <p>So, how are you?</p>
+      <hr />
+      <h2>The profile visited is here:</h2>
+      <Outlet />
+    </div>
+  );
+};
+
+export default Profile;
+```
+- notice on the parent component Profile, you place the `<Outlet />` object where the children are supposed to be rendered when the route is selected. 
+	- *notice* you will need logic that naviates to the respective children with `Link` components
+- you can also make one of the children render automatically by setting one of them as `index: true` so its a default profile
+```jsx
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "profile",
+    element: <Profile />,
+    children: [
+      { index: true, element: <DefaultProfile /> },
+      { path: "spinach", element: <Spinach /> },
+      { path: "popeye", element: <Popeye /> },
+    ],
+  },
+]);
+```
+- notice the first child, the path argument replaced with `index: true` . again this will make it so that that element will render as default along with the parent component
+##### Dynamic Segments
