@@ -963,3 +963,59 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 ##### Authorization protected routes
 - when authentication is needed from a user account for a specific path, you can embed conditional rendering based on user data such as if they're logged in or not. this involves rerouting the user to a different URL programmatically using the `<Navigate />` component. 
 - see this link for more: https://reactrouter.com/en/main/components/navigate
+#### Fetching Data and Error Handling in REACT
+```jsx
+import { useEffect, useState } from "react";
+
+const Image = () => {
+  const [imageURL, setImageURL] = useState(null);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/photos", { mode: "cors" })
+      .then((response) => response.json())
+      .then((response) => setImageURL(response[0].url))
+      .catch((error) => console.error(error));
+  }, []);
+
+  return (
+    imageURL && (
+      <>
+        <h1>An image</h1>
+        <img src={imageURL} alt={"placeholder text"} />
+      </>
+    )
+  );
+};
+
+export default Image;
+```
+- notice here the use of the null in the url so that the component conditionally renders the response of the fetch if the useEffect hook was successful. this makes the conditional rendering of the image url alot more clear based on the success of the fetch. 
+- this does not however communicate anything to the end user if and when you dont get a correct response. for that look at: 
+```jsx
+useEffect(() => {
+  fetch("https://jsonplaceholder.typicode.com/photos", { mode: "cors" })
+    .then((response) => {
+      if (response.status >= 400) {
+        throw new Error("server error");
+      }
+      return response.json();
+    })
+    .then((response) => setImageURL(response[0].url))
+    .catch((error) => setError(error));
+}, []);
+```
+- notice the setError for the state error initialized to null that will relay information to user if the respose was not good: 
+```jsx
+if (error) return <p>A network error was encountered</p>
+
+return (
+  imageURL && (
+    <>
+      <h1>An image</h1>
+      <img src={imageURL} alt={"placeholder text"} />
+    </>
+  )
+);
+```
+- the check for error placed right before the return on the image component to ensure that it wont try to render an incorrect response once the side effect runs
+- 
