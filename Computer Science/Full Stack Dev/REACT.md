@@ -1061,3 +1061,7 @@ const Image = () => {
 *minimum states for data fetching*
 - in react, best practices mandate that each data fetch somes with three mandatory minimum states to have a good user experience: data, loading, error
 - good site to review async api fetching with react: https://blog.logrocket.com/modern-api-data-fetching-methods-react/
+##### multiple fetches and race conditions
+- in an event where there are multiple rapid fetches in a side effect called due to user interactions, there is a possibility that fetches requested after another could finish its reponse before hand, due to the nature of how fetches to servers can be unpredicatble and unreliable. this could lead to unexpected and undesired inconsistencies in the UI
+- the solution to this is to use an `AbortController`
+##### Data fetching and performance
