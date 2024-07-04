@@ -1058,3 +1058,5 @@ const Image = () => {
 };
 ```
 - rewriting the name of the function to have use infront of it somehow allows you to call it in other places and for testing like another react hook. not really seeing why you couldnt just callit it whatver and call it from other places regardless. 
+*minimum states for data fetching*
+- in react, best practices mandate that each data fetch somes with three mandatory minimum states to have a good user experience: data, loading, error
