@@ -1065,3 +1065,5 @@ const Image = () => {
 - in an event where there are multiple rapid fetches in a side effect called due to user interactions, there is a possibility that fetches requested after another could finish its reponse before hand, due to the nature of how fetches to servers can be unpredicatble and unreliable. this could lead to unexpected and undesired inconsistencies in the UI
 - the solution to this is to use an `AbortController`
 ##### Data fetching and performance
+good article on performance and rendering strategies with fetches in react: https://www.developerway.com/posts/how-to-fetch-data-in-react
+review this and take notes on it
