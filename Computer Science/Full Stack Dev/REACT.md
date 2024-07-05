@@ -1073,3 +1073,5 @@ review this and take notes on it
 
 ##### CSS in JS
 https://styled-components.com/
+
+due to the virtue of building strong foundations, I should be using CSS modules or css in JS as oppossed to a CSS framework or component library
