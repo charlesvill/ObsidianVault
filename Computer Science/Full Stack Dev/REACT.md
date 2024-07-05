@@ -1081,7 +1081,8 @@ another article looking over the many libraries of js in css and gives valuable 
 - there are two options for declaring styles in your componnet files, tagged template and object styles
 	- tagged template is template string literal where you can interpolate dynamic strings with variables into the css property values. uses kabob case just like regular css
 	- object styles you use came case and access the css object properties as seen in this article: https://css-tricks.com/a-thorough-analysis-of-css-in-js/ (same as right above)
-
+- The best option for js in css would be styled-components. read through their docs when getting started
+- here is an article on how to get the most out of styled-components: https://www.joshwcomeau.com/css/styled-components/
 ##### css in js vs css modules
 - modules are more performant especially when looking at much bigger applications because it has a separate css file that can be cached by the browser while css in js relies on js to inject css into the dom which cannot be cached and could cause perfomance issues with bigger applications
 - css in jss gives you the ability for truly dyanmic styling as it's javascript and conditional styling and all the power that comes with js comes with it. css modules are separate css files and you wrwite them in there so you dont have the same range of dynamic abilities. 
