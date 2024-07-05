@@ -1070,7 +1070,7 @@ review this and take notes on it
 
 #### Styling React Apps
 ##### CSS Modules
-
+useful guide on getting started with modules: https://www.makeuseof.com/react-components-css-modules-style/
 ##### CSS in JS
 https://styled-components.com/
 
