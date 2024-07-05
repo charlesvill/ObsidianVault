@@ -1075,3 +1075,13 @@ useful guide on getting started with modules: https://www.makeuseof.com/react-co
 https://styled-components.com/
 
 due to the virtue of building strong foundations, I should be using CSS modules or css in JS as oppossed to a CSS framework or component library
+
+another article looking over the many libraries of js in css and gives valuable insight into how js in css operates https://css-tricks.com/a-thorough-analysis-of-css-in-js/
+
+- there are two options for declaring styles in your componnet files, tagged template and object styles
+	- tagged template is template string literal where you can interpolate dynamic strings with variables into the css property values. uses kabob case just like regular css
+	- object styles you use came case and access the css object properties as seen in this article: https://css-tricks.com/a-thorough-analysis-of-css-in-js/ (same as right above)
+
+##### css in js vs css modules
+- modules are more performant especially when looking at much bigger applications because it has a separate css file that can be cached by the browser while css in js relies on js to inject css into the dom which cannot be cached and could cause perfomance issues with bigger applications
+- css in jss gives you the ability for truly dyanmic styling as it's javascript and conditional styling and all the power that comes with js comes with it. css modules are separate css files and you wrwite them in there so you dont have the same range of dynamic abilities. 
