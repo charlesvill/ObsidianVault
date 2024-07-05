@@ -1067,3 +1067,9 @@ const Image = () => {
 ##### Data fetching and performance
 good article on performance and rendering strategies with fetches in react: https://www.developerway.com/posts/how-to-fetch-data-in-react
 review this and take notes on it
+
+#### Styling React Apps
+##### CSS Modules
+
+##### CSS in JS
+https://styled-components.com/
