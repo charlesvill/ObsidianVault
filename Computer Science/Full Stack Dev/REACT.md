@@ -341,6 +341,12 @@ when you want a state between two components to always change together if for ex
 - A side effect is when your react component needs to reach out beyond the component and states and access or sync with something outside like an API server call or changing where the component is located in the DOM.
 - in order to interact with the outside world you might use another hook `useEffect()` which will help to run code outside your component. 
 - for example in a timer function that counts up every second and update the state count, you would have beserk behavior because of the fact that everytime state is updated the component re-renders and creates a new instance of this counter intervals and will not keep track. `useEffect()` along with some arguments helps to stop the code inside the hook from creating new instances. 
+- *note* : for api calls you'll need to hide your api key from where the code base is hosted. you'll need to create an environment variable. under vite: 
+	- create a file in your root directory called `.env`
+	- name your environment starting with `VITE_` ie: `VITE_SOMEKEY = 123`
+	- then in your react component you can access your variable like so: 
+		- `const apiKey = import.meta.env.VITE_SOME_KEY`
+	- you can now pass your key throughout your project and not worry about it leaking online. a
 We've talked about this idea of having pure functions meaning that your functions a) always return the same output for the same input and b) do not modify or mutate data outiside your function. 
 	- At times however, something in your project needs to change as is what makes programming interesting, bringing about interesting changes such as dynamic user interface from interactions on your webpage. 
 	- Reacts paradigm assumes all functions are pure functions and especially during rendering, all functions must be pure functions to ensure that react applications are safe to run on servers and scale appropriately. 
