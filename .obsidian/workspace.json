@@ -23,9 +23,11 @@
             "id": "abea1639818e6dd6",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.6.7"
+                "file": "Computer Science/Full Stack Dev/REACT.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
