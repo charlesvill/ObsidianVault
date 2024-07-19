@@ -50,3 +50,4 @@ what is a vim register?
 
 #### Lvim notes
 - format - 'lf' - prettier like
+- split the window vertically: `:vsplit`
