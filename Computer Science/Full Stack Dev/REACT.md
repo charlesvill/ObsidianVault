@@ -797,7 +797,7 @@ import {
 	Link,
 } from "react-router-dom";
 
-const router = createBrowerRouter([
+const router = createBrowserRouter([
 	{
 		path: "/",
 		element: (
