@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "abea1639818e6dd6",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
+          },
+          {
             "id": "68f10a81fee32f96",
             "type": "leaf",
             "state": {
@@ -31,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,7 +203,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52d4538ca8e6cfae",
+  "active": "abea1639818e6dd6",
   "lastOpenFiles": [
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/REACT.md",
