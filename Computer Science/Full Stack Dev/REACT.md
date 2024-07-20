@@ -1088,7 +1088,27 @@ useful guide on getting started with modules: https://www.makeuseof.com/react-co
 - what css modules do is they package the css file and scope it locally so you can avoid local name clashes for css variables. 
 ###### getting started with css modules
 - vite should have compatibility right out of the box. you'll need to organize your components into folders with the jsx component file and a .module.css file. 
-- 
+- example component: 
+```jsx
+import styles from "./button.module.css";
+
+export default function Button() {
+	return (
+		<button className={styles.btn}>Submit</button>
+	);
+}
+```
+then in the button.module.css file: 
+```jsx
+.btn {
+	witdh: 90px;
+	padding; 10px 20 px;
+	border-radius: 10px;
+}
+```
+- notice here the class name in the component is `styles.btn` which takes from the object styles object and then with a dot notation will get the selector and apply it. 
+###### Dynamic classnames
+- you can use composition to share styles accross different components in different folders or even combine classes so you can extend from classes already declared or even have a central colors.module.css file in the component root folder and pull the color from there. see the article from above for more. 
 ##### CSS in JS
 https://styled-components.com/
 
