@@ -1085,6 +1085,10 @@ review this and take notes on it
 #### Styling React Apps
 ##### CSS Modules
 useful guide on getting started with modules: https://www.makeuseof.com/react-components-css-modules-style/
+- what css modules do is they package the css file and scope it locally so you can avoid local name clashes for css variables. 
+###### getting started with css modules
+- vite should have compatibility right out of the box. you'll need to organize your components into folders with the jsx component file and a .module.css file. 
+- 
 ##### CSS in JS
 https://styled-components.com/
 
