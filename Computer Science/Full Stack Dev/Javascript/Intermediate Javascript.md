@@ -1244,7 +1244,10 @@ basically a way of handling async events that are expressed more linearly and ea
 f();
 ```
 	- note here how the await fetching wrapped in a try.. catch block that will on failure, send the alert to the catch block for either the user or the response awaits. 
+- something to note about try catch block: 
+	- you can also do a try, catch, finallly block. but the finally will not wait for a promise to resolve itself, it will run the try and if there is a error it will catch synchronously but will not wait for any promises inside of it to trigger the finally block. for that functionality, you will need to wrap the try,catch,finally block inside of an async function and have the await, before the last line of the promise to ensure it wait untils promise is resolved or fails before reaching the finally block
 - good video on await and aysnc for demonstrations and eror handling : https://www.youtube.com/watch?v=9YkUCxvaLEk&ab_channel=dotconferences also talks about error with using express ******* 
+
 
 ### A bit of Computer Science
 valuable course on algorithms: https://www.coursera.org/specializations/algorithms from stanford!!
