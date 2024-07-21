@@ -749,7 +749,7 @@ its wraps your tests that involve a side effect or state updates to make sure th
 Why type checking?
 	- ensures that you using the correct data in built applications and helps to catch bugs with passing the wrong kind of data. making sure your components are getting the correct type of data
 ##### getting started: 
-- install npm package to project directory: `npm install --save prop-types`
+- [ ] install npm package to project directory: `npm install --save prop-types`
 - inside your file: `import propTypes from 'prop-types;`
 ##### syntax
 ```jsx
