@@ -155,6 +155,34 @@ export default function RecipeList() {
 	- c) demonstrating reacts ability to populate an array of list markup automatically (the return of map is an array of list elements)
 - *notice the parameters defined have curly braces* in Recipe. And yes, it is necessary to have the curly braces or else it will come up undefined
 	- the curlies are an example of destructuring
+###### rendering array of list items
+- take a look at this elegancy: 
+```jsx
+export default function List() {
+  const listItems = people.map(person =>
+    <li key={person.id}>
+      <img
+        src={getImageUrl(person)}
+        alt={person.name}
+      />
+      <p>
+        <b>{person.name}:</b>
+        {' ' + person.profession + ' '}
+        known for {person.accomplishment}
+      </p>
+    </li>
+  );
+  return (
+    <article>
+      <h1>Scientists</h1>
+      <ul>{listItems}</ul>
+    </article>
+  );
+}
+```
+- notice that the return statement has `<ul>{array}</ul>` here the html is being automatically generated for the list items because in the `listItems` variable, the li was mapped to each array item. what this results in is a list of html li elements. react is smart enough to automatically populate the list items in the return line inside the `<ul>` element without the need to run a for-loop
+	- notice that to make this possible, the mapping needs to include the html for react to recognize it. and the array variable needs to be wrapped in the curly braces. 
+
 #### Setting up your first react project
 - go into the folder where projects are and: 
 - `npm create vite@latest Project-Name-React -- --template react` 
