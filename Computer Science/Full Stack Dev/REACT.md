@@ -181,7 +181,7 @@ export default function List() {
 }
 ```
 - notice that the return statement has `<ul>{array}</ul>` here the html is being automatically generated for the list items because in the `listItems` variable, the li was mapped to each array item. what this results in is a list of html li elements. react is smart enough to automatically populate the list items in the return line inside the `<ul>` element without the need to run a for-loop
-	- notice that to make this possible, the mapping needs to include the html for react to recognize it. and the array variable needs to be wrapped in the curly braces. 
+	- notice that to make this possible, the mapping needs to include the html for react to recognize it. and the array variable needs to be wrapped in the curly braces. /css/
 
 #### Setting up your first react project
 - go into the folder where projects are and: 
