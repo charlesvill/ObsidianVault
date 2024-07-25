@@ -39,6 +39,8 @@
 - Apply something (or nothing) to each element of an array
 	- `arr.map((current) => current * 2)`
 	- will return new array of the process after the arrow. people also use it to return a copy of the array. used in react to iterate over a list to spit out dom
+- Reduce array elements into consolidated value: `arr.reduce()`
+	- 
 - joing elements of an array to a string: 
 	- arr = ["hello", "world"] `arr.join(", ");` this will result in Hello, world
 		- if there is only one element in the array then it will simply output the one element without the delimiter
