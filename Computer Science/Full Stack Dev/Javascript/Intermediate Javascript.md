@@ -40,7 +40,17 @@
 	- `arr.map((current) => current * 2)`
 	- will return new array of the process after the arrow. people also use it to return a copy of the array. used in react to iterate over a list to spit out dom
 - Reduce array elements into consolidated value: `arr.reduce()`
-	- 
+```jsx
+const objects = [{ x: 1 }, { x: 2 }, { x: 3 }];
+const sum = objects.reduce(
+  (accumulator, currentValue) => accumulator + currentValue.x,
+  0,
+);
+
+console.log(sum); // 6
+```
+- accumulator starts at the initial value which is the second argument after the callback function.
+- if you're using objects don't forget to use the appropriate accessors for the 'currentValue'
 - joing elements of an array to a string: 
 	- arr = ["hello", "world"] `arr.join(", ");` this will result in Hello, world
 		- if there is only one element in the array then it will simply output the one element without the delimiter
