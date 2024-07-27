@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "Computer Science/Full Stack Dev/REACT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
+                "file": "Computer Science/Full Stack Dev/REACT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md"
+                "file": "Computer Science/Full Stack Dev/REACT.md"
               }
             }
           },
@@ -229,13 +229,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "68f10a81fee32f96",
+  "active": "abea1639818e6dd6",
   "lastOpenFiles": [
-    "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/CSS/Intermediate CSS.md",
+    "Computer Science/Full Stack Dev/CSS/CSS reference Notes.md",
+    "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/NVIM notes.md",
-    "Computer Science/Full Stack Dev/CSS/CSS reference Notes.md",
     "Computer Science/Full Stack Dev/Advanced CSS & HTML.md",
     "Computer Science/Full Stack Dev/Git.md",
     "Computer Science/Bash Notes.md",
