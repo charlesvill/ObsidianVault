@@ -185,7 +185,7 @@ export default function List() {
 
 #### Setting up your first react project
 - go into the folder where projects are and: 
-- `npm create vite@latest Project-Name-React -- --template react` 
+- `npm create vite@laest Project-Name-React -- --template react` 
 - then CD into the project folder and run `npm install` and that is literally it. super easy. 
 - hit `npm run dev` to launch the local site by clicking on the link in the terminal
 ##### adding your react project to your github repo
