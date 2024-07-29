@@ -124,4 +124,52 @@ syntax: `transition-property, transition-duration, transition-timing-function, t
 }
 ```
 - this means that animations will resolve immediately to their finished state
-- 
+
+### Keyframes
+- what is the difference between css animations and transitions?
+	- a transition was designed to be used from one state to another triggered by a user interaction or a specific event
+	- animations were designed to be looped, and do not rely user interactions like a hover or focus. they can run as soon as the page loads the css file
+- syntax: 
+```css
+#ball {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 50%;
+  animation-duration: 2s;
+  animation-name: change-color;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes change-color {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: green;
+  }
+}
+```
+- animation name is a developer defined that will be accessed by the @keyframes property
+- animation iteration count could be a finite number of cycles but here defined as forever loop
+- animation direction defines how it returns to the beginning state, whether abruptly or smoothly as alternate doeshere. 
+- with the `from/to` is actually an alias for 0%/100%
+	- here is only two keyframes defined, at beginnign and end. the greater flexibility of animation is in being able to define more keyframes. for example: 
+##### more keyframes
+```css
+@keyframes change-color {
+	from {
+	background-color: red;
+	}
+	50% {
+	transform: scale(2);
+	background-color: blue;
+	}
+	to {
+	background-colr: green;
+	}
+}
+```
+additional keyframes are always defined in percentages*. 
