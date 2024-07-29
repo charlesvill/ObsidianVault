@@ -57,3 +57,15 @@ transform functions include:
 - its cheaper to use than other css properties. see here to learn more about that here: https://developers.google.com/web/fundamentals/performance/rendering/#the_pixel_pipeline
 
 ### Transitions
+- Allows to define properties that will change, how long it will take and the way it changes
+```css
+button {
+	color: white;
+	transition: background-color 1s ease-out 0.25s;
+}
+button:hover {
+	background-color: black;
+	cursor: pointer;
+}
+```
+syntax: `transition-property, transition-duration, transition-timing-function, transition-delay`
