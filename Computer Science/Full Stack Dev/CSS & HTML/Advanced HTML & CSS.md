@@ -36,6 +36,7 @@ transform functions include:
 }
 ```
 - it tells to render as if it were viewed from a specific distance on the z-axis
+- more on perspective with examples how to use it: https://css-tricks.com/how-css-perspective-works/
 ```css
 .element {
   transform: rotateX();
