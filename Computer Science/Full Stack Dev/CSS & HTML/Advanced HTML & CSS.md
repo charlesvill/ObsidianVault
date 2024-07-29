@@ -4,6 +4,7 @@
 ### Transforms
 - almost all elements can have the `transform` property applied to it except for `<col>` and `<colgroup>` and those elements that are non-replaced inline elements
 	- examples include `<span>` `<b>` `<em>` whose main content is contained within the html
+	- extremely useful article on the application of transforms in projects: https://www.joshwcomeau.com/css/transforms/
 #### 2D transforms
 transform functions include: 
 - rotate - rotate element on a 2D plane
