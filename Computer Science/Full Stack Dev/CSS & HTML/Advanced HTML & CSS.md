@@ -55,3 +55,5 @@ transform functions include:
 - matrix - uncommon, dont really use it but it exists to combine all transform functions but poorly readable
 #### Benefits of transform
 - its cheaper to use than other css properties. see here to learn more about that here: https://developers.google.com/web/fundamentals/performance/rendering/#the_pixel_pipeline
+
+### Transitions
