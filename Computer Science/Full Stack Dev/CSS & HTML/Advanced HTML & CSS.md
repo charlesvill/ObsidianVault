@@ -129,6 +129,7 @@ syntax: `transition-property, transition-duration, transition-timing-function, t
 - what is the difference between css animations and transitions?
 	- a transition was designed to be used from one state to another triggered by a user interaction or a specific event
 	- animations were designed to be looped, and do not rely user interactions like a hover or focus. they can run as soon as the page loads the css file
+	- article on keyframes: https://www.joshwcomeau.com/animation/keyframe-animations/
 - syntax: 
 ```css
 #ball {
