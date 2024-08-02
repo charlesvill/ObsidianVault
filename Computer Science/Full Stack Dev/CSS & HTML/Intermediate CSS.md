@@ -301,7 +301,7 @@ the `::before` & `::after` selectors  can be used to add content into for exampl
 - in it essence, it calculates the arugments passed and determines which of the (up to three) arguments is the smallest and picks that one as the size
 - min() takes two parameters `min(150px, 100%)` where the first value is the size maximum it will take if there is enough space. the second argument says if there is not enough space, it will take up 100% of the parent width or the property that this is being used on. 
 - max() does the same but the opposite, determines which of the passed values is the biggest one and picks that one as the value. 
-- Because of the way it interacts as the parent container can dynamically change, it could appear as if the max was really setting a minimum size among values passed through. 
+- [ ] Because of the way it interacts as the parent container can dynamically change, it could appear as if the max was really setting a minimum size among values passed through. 
 #### clamp()
 - clamp uses three parameters that are a minimum , an ideal, and a maximum. 
 - what of the three is used depends on how the parent container is being sized as screen available spaced is changed. 
