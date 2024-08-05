@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
+                "file": "Computer Science/Full Stack Dev/CSS & HTML/Advanced HTML & CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
+                "file": "Computer Science/Full Stack Dev/CSS & HTML/Advanced HTML & CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md"
+                "file": "Computer Science/Full Stack Dev/CSS & HTML/Advanced HTML & CSS.md"
               }
             }
           },
@@ -241,14 +241,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52d4538ca8e6cfae",
+  "active": "7798dff990ea42b3",
   "lastOpenFiles": [
+    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Advanced HTML & CSS.md",
     "Computer Science/Full Stack Dev/REACT.md",
-    "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/CSS & HTML/CSS reference Notes.md",
     "Computer Science/NVIM notes.md",
-    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/Advanced CSS & HTML.md",
     "Computer Science/Full Stack Dev/Git.md",
     "Computer Science/Bash Notes.md",
