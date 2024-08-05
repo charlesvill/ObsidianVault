@@ -1155,3 +1155,13 @@ another article looking over the many libraries of js in css and gives valuable 
 \
 #### managing state with the context api
 outside of using `outlet` component and the usecontext hook, you can access state from other components using the context api 
+
+##### getting started: 
+- `import { createContext } from "react";` 
+```javascript
+const shopContext = createContext({
+	products: [],
+	cartItems: [],
+	addTocart: () => {},
+});
+```
