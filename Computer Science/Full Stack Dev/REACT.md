@@ -1152,3 +1152,6 @@ another article looking over the many libraries of js in css and gives valuable 
 ##### css in js vs css modules
 - modules are more performant especially when looking at much bigger applications because it has a separate css file that can be cached by the browser while css in js relies on js to inject css into the dom which cannot be cached and could cause perfomance issues with bigger applications
 - css in jss gives you the ability for truly dyanmic styling as it's javascript and conditional styling and all the power that comes with js comes with it. css modules are separate css files and you wrwite them in there so you dont have the same range of dynamic abilities. 
+\
+#### managing state with the context api
+outside of using `outlet` component and the usecontext hook, you can access state from other components using the context api 
