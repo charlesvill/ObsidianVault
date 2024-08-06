@@ -1158,10 +1158,66 @@ outside of using `outlet` component and the usecontext hook, you can access stat
 
 ##### getting started: 
 - `import { createContext } from "react";` 
-```javascript
+```jsx
+import { useState, createContext } from "react";
+
 const shopContext = createContext({
 	products: [],
 	cartItems: [],
 	addTocart: () => {},
 });
+
+export default function App() {
+  const [cartItems, setCartItems] = useState([
+    /* List of Items in Cart */
+  ]);
+  const products = /* some custom hook that fetches products and returns the fetched products */
+
+  const addToCart = () => {
+    // add to cart logic (this adds to cartItems)
+  };
+
+  return (
+    /* We are going to pass the things that we want to inject to these components using the value prop */
+    /* This value prop will overwrite the default value */
+    <ShopContext.Provider value={{ cartItems, products, addToCart }}>
+      <Header />
+      <ProductDetail />
+    </ShopContext.Provider>
+  );
+}
 ```
+core consists of three components: 
+1. createContext - takes number, string, object, as seen here, an object that contains arrays, functions etc
+2. shopContext.Provider - here we call the component from the name of the context created and wrap the componets that will have access to the things in the createContext. this is what provides the the contexts values to the components no matter how deeply nested they are
+3. useContext - in the compents that need access to the context values, you will need to import the useContext from react and deconstruct the values you need from the context as seen below
+```jsx
+import { useContext } from "react";
+// import for ShopContext
+
+export default function ProductDetail() {
+  const { products, addToCart } = useContext(ShopContext);
+  const product = products.find(/* Logic to find the specific product */);
+
+  return (
+    <div>
+      {/* Image of the product */}
+      <div>
+        {/* elements that align with the design */}
+        <button type="button" onClick={() => addToCart(product)}>
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  );
+}
+```
+- notice that you're deconstructing here
+
+##### Drawbacks of using the context api
+1. performance issues - when updating the state in a context it can cause all the components that are consuming that context to re-render as well even if the state that they are using is not changed. since the object would be updated, that would include the unchanged state that's nevertheless a part of the object that is modified. 
+2. code readbility- important to keep code base organzed and minimize nested compents as it could get easy to lose track of all the components that are using your context since there isnt a define limit on how deeply nested a component can be in order to access the context. 
+###### possible solutions: 
+- use smaller contexts instead of a large one in specific logical categories to limit how often the context object needs to be changed and limit thus the amount of times that components need to render unnecessarily
+- another alterative is the react component composition. see this article: https://www.robinwieruch.de/react-component-composition/
+- other libraries such as Zustand and Redux but recommend to stick with context api for the rest of the curriculum
