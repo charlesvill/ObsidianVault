@@ -1213,6 +1213,7 @@ export default function ProductDetail() {
 }
 ```
 - notice that you're deconstructing here
+- *something of note:* useContext() is not useful in the component where the `<context.Provider>` in the same component. The provider needs to be above the component that is calling useContext().
 
 ##### Drawbacks of using the context api
 1. performance issues - when updating the state in a context it can cause all the components that are consuming that context to re-render as well even if the state that they are using is not changed. since the object would be updated, that would include the unchanged state that's nevertheless a part of the object that is modified. 
