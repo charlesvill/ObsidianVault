@@ -1226,3 +1226,8 @@ export default function ProductDetail() {
 - also this one come back to it: https://kentcdodds.com/blog/prop-drilling
 
 ### Reducing state
+ - the `useReducer` hook from react allows you to nest more complicated state logic wherein you feed it a function called a reducer that has a switch block with different ways that a state value can be manipulated. 
+	 - you also feed it an initial value. 
+	 - it will return an array with the current state and the dispatch function. the dispatch takes a `type: value` argument that acts as the action or block in your switch statement to trigger. 
+	 - behaves very similarly to state and will not update on the next render with the calling of the dispatch function. 
+	 - uses the Object.is() in order to compare if the state has changed. and if its not different, it will not re-render.
