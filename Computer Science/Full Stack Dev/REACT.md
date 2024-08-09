@@ -1264,4 +1264,3 @@ function handleClick() {
 ##### reducers vs state
 its use is by preference, they offer the same performance however there are some considerations to make: 
 - reducers take more coding upfront at the trade off of clearer less bloated code when you have really complex state updates that are updating the same state in many different places, and it makes it easier to test and debug complex state logic with reducers
-- a
