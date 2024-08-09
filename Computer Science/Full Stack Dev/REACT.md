@@ -1326,3 +1326,76 @@ function ButtonComponent() {
 - useRefs do **not** trigger rerenders! good to know
 
 #### useMemo hook
+this is used to cache a longer computation: 
+```jsx
+import { useMemo } from "react";
+
+function Cart({ products }) {
+  const totalPrice = useMemo(() => {
+    return products.reduce(
+      (total, product) => total + product.price * product.quantity,
+      0
+    );
+  }, [products]);
+
+  return (
+    <div>
+      {/* Some other content in the cart */}
+      {/* Products to display */}
+      <p>
+        Total Price: <strong>${totalPrice}</strong>
+      </p>
+      {/* Some button to checkout */}
+    </div>
+  );
+}
+
+```
+- the syntax for useMemo is the same as the syntax for useEffect
+- *useMemo* should really only be used when it is absolutely needed. 
+- useMemo will have expensive calculations from repeating unless the dependencies change but is the useMemo is used to update a state and there is expensive calculations in the children components, that will not stop the component from re-rendering because the state update will re-render children components. to solve this there is also memo function that you can wrap an expensive component that actually will prevent the component *if the props in the component have not changed* . 
+	- this component will be prevented even if the parent is re-rendering. pretty cool. see example: 
+```jsx
+import React, { useState, memo } from "react";
+
+const ButtonComponent = memo(({ children, onClick }) => {
+  let i = 0;
+  let j = 0;
+  const ITERATION_COUNT = 10_000;
+  while (i < ITERATION_COUNT) {
+    while (j < ITERATION_COUNT) {
+      j += 1;
+    }
+    i += 1;
+    j = 0;
+  }
+
+  return (
+    <button type="button" onClick={onClick}>
+      {children}
+    </button>
+  );
+});
+
+```
+- notice here the component ButtonComponent wrapped in the `memo()`
+
+##### Difference between useMemo and useCallback
+- they are both very similar expect that useCallback is only for caching functions and useMemo is for everything. 
+- while useMemo you need an anonomous function invocation and then placing your function inside of it(if you wish to cache a function call) useCallback does not need the additional arrow function: 
+```jsx
+import { useCallback } from "react";
+
+// Inside a component
+// Without useCallback
+const handleClick = () => setCount((prevState) => prevState + 1);
+// With useCallback
+const handleClick = useCallback(
+  () => setCount((prevState) => prevState + 1),
+  []
+);
+// or
+const memoizedHandleClick = useCallback(handleClick, []);
+```
+- notice that its just a function call and the desired function to cache inside of it, and of course the dependency array after it. 
+- use between this and useMemo is largely down to preference but I should know the difference for an interview question
