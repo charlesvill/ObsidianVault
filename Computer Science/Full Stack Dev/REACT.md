@@ -1231,3 +1231,30 @@ export default function ProductDetail() {
 	 - it will return an array with the current state and the dispatch function. the dispatch takes a `type: value` argument that acts as the action or block in your switch statement to trigger. 
 	 - behaves very similarly to state and will not update on the next render with the calling of the dispatch function. 
 	 - uses the Object.is() in order to compare if the state has changed. and if its not different, it will not re-render.
+```jsx
+function reducer(state, action) {
+  switch (action.type) {
+    case "incremented_count": {
+      return { count: state.count + 1 };
+    }
+    case "decremented_count": {
+      return { count: state.count - 1 };
+    }
+    case "set_count": {
+      return { count: action.value };
+    }
+    default: {
+      throw new Error("unknown action: " + action.type);
+    }
+  }
+}
+
+const [state, dispatch] = useReducer(reducer, { count: 0 });
+
+function handleClick() {
+  dispatch({ type: "incremented_count" });
+}
+
+```
+- here the reducer function is defined and is passed as argument to the useReducer hook along with the orginal value of the count.
+- to use the reducer, you call the dispatch function 
