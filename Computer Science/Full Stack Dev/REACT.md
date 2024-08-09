@@ -1399,3 +1399,7 @@ const memoizedHandleClick = useCallback(handleClick, []);
 ```
 - notice that its just a function call and the desired function to cache inside of it, and of course the dependency array after it. 
 - use between this and useMemo is largely down to preference but I should know the difference for an interview question
+##### When to use either
+- optimizations come at a cost. only use if you need to make direct comparasions for referential comparisons of non-primitive data types such as objects and functions 
+- another use case is when you have a very computationally expensive calculation
+- see this article for more on tips of examples for the the two usecases I mentioned here: https://kentcdodds.com/blog/usememo-and-usecallback
