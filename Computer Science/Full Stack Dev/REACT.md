@@ -1260,7 +1260,48 @@ function handleClick() {
 	- notice here that the initial value comes in the form of an object. as its an object, you can place other important values inhere like an id, a text value, etc. see the react docs on reducer to see how its implemented
 - to use the reducer, you call the dispatch function 
 - *note:* reducers must be pure functions, no arguments passed can be modified in the reducers
+	- your changes occur in what is returned, you can modify an object or array in place and return that object `return {...todos, id: 0]`
 - actions should describe a single user interaction even if that single interaction involves changes in the state in multiple places. (ie. 'reset' instead of five 'setfield' actions that describe how reset is achieved)
+
 ##### reducers vs state
 its use is by preference, they offer the same performance however there are some considerations to make: 
 - reducers take more coding upfront at the trade off of clearer less bloated code when you have really complex state updates that are updating the same state in many different places, and it makes it easier to test and debug complex state logic with reducers
+###### initial state functions
+- useReducer allows you a third argument that is an initial state function incase your initial state relies on a loop or something with longer computation and relies on a function to be made, y ou do not want that as your initial state becuase it will be re computing that on ever render. that's what the third argument can fix: 
+```jsx
+function createInitialState(username) {
+  const initialTodos = [];
+  for (let i = 0; i < 50; i++) {
+    initialTodos.push({
+      id: i,
+      text: username + "'s task #" + (i + 1)
+    });
+  }
+  return {
+    draft: '',
+    todos: initialTodos,
+  };
+}
+
+export default function TodoList({ username }) {
+  const [state, dispatch] = useReducer(
+    reducer,
+    username,
+    createInitialState
+  );
+  return (
+    <>
+      <input
+        value={state.draft}
+        onChange={e => {
+          dispatch({
+            type: 'changed_draft',
+            nextDraft: e.target.value
+          })
+        }}
+      />
+// notice that i left out the rest of the function as its not pertinent
+```
+you'll see here that the third argument in the initialization of the useReducer is the function that is 
+
+### Refs and Memoization
