@@ -1320,3 +1320,9 @@ function ButtonComponent() {
   return <button ref={buttonRef}>Click Me!</button>;
 }
 ```
+- after importing from react, you use the useRef() and initialize to null
+- this is meant to focus on the button as soon as the page loads so a useEffect is handy for this 
+- attach a ref{} prop to your component which will connect to the useRef()
+- useRefs do **not** trigger rerenders! good to know
+
+#### useMemo hook
