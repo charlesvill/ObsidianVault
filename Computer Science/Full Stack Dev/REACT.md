@@ -1224,3 +1224,5 @@ export default function ProductDetail() {
 - other libraries such as Zustand and Redux but recommend to stick with context api for the rest of the curriculum
 - see the react references for the specifics on getting around the shortcomings: https://react.dev/reference/react/useContext * also complete this lesson bc I skipped it basically*
 - also this one come back to it: https://kentcdodds.com/blog/prop-drilling
+
+### Reducing state
