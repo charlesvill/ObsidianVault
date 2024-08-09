@@ -1257,4 +1257,11 @@ function handleClick() {
 
 ```
 - here the reducer function is defined and is passed as argument to the useReducer hook along with the orginal value of the count.
+	- notice here that the initial value comes in the form of an object. as its an object, you can place other important values inhere like an id, a text value, etc. see the react docs on reducer to see how its implemented
 - to use the reducer, you call the dispatch function 
+- *note:* reducers must be pure functions, no arguments passed can be modified in the reducers
+- actions should describe a single user interaction even if that single interaction involves changes in the state in multiple places. (ie. 'reset' instead of five 'setfield' actions that describe how reset is achieved)
+##### reducers vs state
+its use is by preference, they offer the same performance however there are some considerations to make: 
+- reducers take more coding upfront at the trade off of clearer less bloated code when you have really complex state updates that are updating the same state in many different places, and it makes it easier to test and debug complex state logic with reducers
+- a
