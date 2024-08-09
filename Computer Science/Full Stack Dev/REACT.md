@@ -1305,3 +1305,18 @@ export default function TodoList({ username }) {
 you'll see here that the third argument in the initialization of the useReducer is the function that is 
 
 ### Refs and Memoization
+#### useRef hook
+- this is the solution to not being able to use query selector to change class names and the likes, such as changing text content. 
+```jsx
+import { useRef, useEffect } from "react";
+
+function ButtonComponent() {
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    buttonRef.current.focus();
+  }, []);
+
+  return <button ref={buttonRef}>Click Me!</button>;
+}
+```
