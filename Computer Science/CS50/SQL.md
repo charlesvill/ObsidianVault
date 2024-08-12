@@ -1,4 +1,5 @@
-uses comma seperated values like csv
+great interactive course for the different keywords: https://www.sqlteaching.com/#!and
+great interactive course for advanced sql topics such as mathematical functions: https://www.sqlcourse.com/advanced-course/mathematical-functions/
 #### getting started with sql
 - create a sql database by running `sqlite3 favorites.db`
 	- once you've already created the database you can run the same line to open your file again
@@ -174,4 +175,12 @@ HAVING
 	search_condition;
 ```
 - difference between `WHERE` and `HAVING`:
-	- where is not able to be used when 
+	- where is not able to be used when using an aggregate such as `COUNT, SUM, MAX`
+```SQL
+  SELECT users.id, users.name, COUNT(posts.id) AS posts_written
+  FROM users
+  JOIN posts ON users.id = posts.user_id
+  GROUP BY users.id
+  HAVING posts_written >= 10;
+```
+- notice that the having is at the end
