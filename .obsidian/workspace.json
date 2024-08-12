@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "4e9c5f9727fae7c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/Full Stack Dev/Backend/Databases.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6b8a635a70861dc3",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Full Stack Dev/REACT.md",
+                "file": "Computer Science/Full Stack Dev/Backend/Databases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Full Stack Dev/REACT.md",
+                "file": "Computer Science/Full Stack Dev/Backend/Databases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Full Stack Dev/REACT.md"
+                "file": "Computer Science/Full Stack Dev/Backend/Databases.md"
               }
             }
           },
@@ -192,10 +205,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "abea1639818e6dd6",
+  "active": "4e9c5f9727fae7c2",
   "lastOpenFiles": [
-    "Computer Science/NVIM notes.md",
     "Computer Science/Full Stack Dev/REACT.md",
+    "Computer Science/Full Stack Dev/Backend/Databases.md",
+    "Computer Science/Full Stack Dev/Backend",
+    "Computer Science/NVIM notes.md",
     "Computer Science/Full Stack Dev/CSS & HTML/CSS reference Notes.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
@@ -220,7 +235,6 @@
     "Computer Science/CS50/Flask.md",
     "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/CSS & HTML/StylingTables.md",
-    "Computer Science/Full Stack Dev/Intermediate HTML/SVG.md",
     "Electronics",
     "ObsidianVault/CS50/Flask",
     "Computer Science/Images",
@@ -240,7 +254,6 @@
     "Computer Science/CS50",
     "Untitled.canvas",
     "Images",
-    "Computer Science/Full Stack Dev/Intermediate HTML",
-    "Computer Science/Full Stack Dev/CSS & HTML"
+    "Computer Science/Full Stack Dev/Intermediate HTML"
   ]
 }

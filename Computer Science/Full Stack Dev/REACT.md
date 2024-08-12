@@ -1306,7 +1306,8 @@ you'll see here that the third argument in the initialization of the useReducer 
 
 ### Refs and Memoization
 #### useRef hook
-- this is the solution to not being able to use query selector to change class names and the likes, such as changing text content. 
+- this is the solution to not being able to use query selector to change class names and the likes, such as changing text content. this is in direct opposition to using something like document.queryselector to hold reference to elements on the page. here is a good article on using useRef for the many ways that you can use web api such as queryselector and getelementbyid : https://www.meje.dev/blog/useref-not-queryselector
+- here is an article on the many use cases for useRef beside the usual of getting reference to elements inthe dom this article is essential and notes should be taken  https://overreacted.io/making-setinterval-declarative-with-react-hooks/
 ```jsx
 import { useRef, useEffect } from "react";
 
@@ -1328,6 +1329,7 @@ react docs on the useRef hook: https://react.dev/reference/react/useRef\
 - *note* do not use useRef for displaying any information because of the fact it does not cause a re-render of react components. If you need to display anything, you need to use a state variable. 
 	- another note is that you should not read a ref during rendering or write to it.
 	- you can however read or write refs in event handlers or in useeffect 
+- make sure to refer to the react docs for troubleshooting
 
 #### useMemo hook
 this is used to cache a longer computation: 
@@ -1407,3 +1409,7 @@ const memoizedHandleClick = useCallback(handleClick, []);
 - optimizations come at a cost. only use if you need to make direct comparasions for referential comparisons of non-primitive data types such as objects and functions 
 - another use case is when you have a very computationally expensive calculation
 - see this article for more on tips of examples for the the two usecases I mentioned here: https://kentcdodds.com/blog/usememo-and-usecallback
+
+### React references
+- see this lesson to see useful links to stay connected what is happening with react and where you should be going after this: https://www.theodinproject.com/lessons/node-path-react-conclusion
+- 
