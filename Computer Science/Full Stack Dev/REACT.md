@@ -1324,6 +1324,8 @@ function ButtonComponent() {
 - this is meant to focus on the button as soon as the page loads so a useEffect is handy for this 
 - attach a ref{} prop to your component which will connect to the useRef()
 - useRefs do **not** trigger rerenders! good to know
+react docs on the useRef hook: https://react.dev/reference/react/useRef\
+- *note* do not use useRef for displaying any information because of the fact it does not cause a re-render of react components. If you need to display anything, you need to use a state variable. 
 
 #### useMemo hook
 this is used to cache a longer computation: 
