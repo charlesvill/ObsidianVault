@@ -1,0 +1,2 @@
+- what are examples of unstructured data?
+	- content inside of emails or books or images
