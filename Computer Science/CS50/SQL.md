@@ -21,7 +21,12 @@ great interactive course for advanced sql topics such as mathematical functions:
 	- the idea is that you're specifiying what data you want to see by chaining these commands in ways that will net what you want. 
 - more commands include: 
 	- WHERE - filter out data can meet conditionals
-	- LIKE - accepts similarities
+	- LIKE - accepts similarities:
+```sql
+SELECT name FROM world
+  WHERE name LIKE '%land'
+```
+``
 	- ORDER BY - sorting 
 			- `SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*) ASC;`
 				- with order by , you can have multiple ordering criteria that will be looked at if the first criteria results in two of the same kind. for example:
