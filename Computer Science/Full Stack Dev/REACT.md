@@ -1326,6 +1326,8 @@ function ButtonComponent() {
 - useRefs do **not** trigger rerenders! good to know
 react docs on the useRef hook: https://react.dev/reference/react/useRef\
 - *note* do not use useRef for displaying any information because of the fact it does not cause a re-render of react components. If you need to display anything, you need to use a state variable. 
+	- another note is that you should not read a ref during rendering or write to it.
+	- you can however read or write refs in event handlers or in useeffect 
 
 #### useMemo hook
 this is used to cache a longer computation: 
