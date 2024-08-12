@@ -227,7 +227,7 @@ for favorite in counts:
 - a sheet in a rdatabase is called a table: `CREATE TABLE table`
 - we will be using sqlite3
 
-##### getting started with sql
+#### getting started with sql
 - create a sql database by running `sqlite3 favorites.db`
 	- once you've already created the database you can run the same line to open your file again
 	- you exit from sqlite3 by ctrl-d or ctrl-z.
@@ -262,7 +262,18 @@ for favorite in counts:
 	- 
 ##### getting overview of the database
 - you can see how the db is organized with the `.schema` command and even do `.schema tablename` for a specific table
-##### adding to the database
+##### Creating a table
+```sql
+
+CREATE TABLE todo_list (id INTEGER PRIMARY KEY, item TEXT, minutes INTEGER);
+```
+##### Inserting rows into a table
+```sql
+
+INSERT INTO store VALUES (0, "Kyosho inferno", 400);
+```
+
+
 
 inserting rows into SQL `INSERT INTO favorites (language, problem) VALUES('SQL', 'Fiftyville')` 
 	- where favorites is the table name, and language, problem are separate columns and VALUES are comma separated inserted per the order columns were listed prior
