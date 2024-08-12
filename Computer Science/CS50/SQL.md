@@ -161,3 +161,5 @@ GROUP BY
 HAVING
 	search_condition;
 ```
+- difference between `WHERE` and `HAVING`:
+	- 

@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -121,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/Databases.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/Databases.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/Databases.md"
+                "file": "Computer Science/CS50/SQL.md"
               }
             }
           },
@@ -203,13 +205,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "abea1639818e6dd6",
+  "active": "4e9c5f9727fae7c2",
   "lastOpenFiles": [
+    "Computer Science/Full Stack Dev/Backend/Databases.md",
+    "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/NVIM notes.md",
-    "Computer Science/CS50/SQL.md",
     "Computer Science/CS50/Python.md",
-    "Computer Science/Full Stack Dev/Backend/Databases.md",
     "Computer Science/Full Stack Dev/Backend",
     "Computer Science/Full Stack Dev/CSS & HTML/CSS reference Notes.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
