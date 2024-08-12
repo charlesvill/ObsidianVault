@@ -108,7 +108,10 @@ SELECT name FROM songs WHERE artist_id IN (
 - visual on these : https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
 - more detailed info: https://www.w3schools.com/sql/sql_join.asp
 
-- Using the AND keyword: 
+###### using the AS keyword
+used to give an alias to a column in order to add specificity to results from a query: 
+`SELECT MAX(users.age) AS highest_age FROM users` this will return a column called highest_age with the maximum age on it. 
+###### using the AND keyword
 	- the and can be used to search for criteria that are both present in order to return that data example: 
 ```sql
 SELECT title FROM movies
@@ -171,4 +174,4 @@ HAVING
 	search_condition;
 ```
 - difference between `WHERE` and `HAVING`:
-	- 
+	- where is not able to be used when 
