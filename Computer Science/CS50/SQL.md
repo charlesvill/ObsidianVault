@@ -100,10 +100,14 @@ SELECT name FROM songs WHERE artist_id IN (
 		- the = is what the query will look for to join the tables 
 		- then after the join statement you could add the filters and ordering, grouping commands you need.
 ###### different kinds of JOIN
-- `INNER JOIN`: produces only tyhe set of records that match in both or all tables
+- `INNER JOIN`: produces only tyhe set of records that match in both or all tables 
+	- aka `JOIN` if you do just join its the same as inner join
 - `FULL OUTER JOIN`: produces the set of all records in both or all tables with matching records where available. if no match, it'll show null
 - `LEFT OUTER JOIN`: produces all records from the first table with matching records where available from the second table  and if no match, null
-- `CROSS JOIN`: 
+- `CROSS JOIN`: joins everything to everything and is not recommended for large tables
+- visual on these : https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
+- more detailed info: https://www.w3schools.com/sql/sql_join.asp
+
 - Using the AND keyword: 
 	- the and can be used to search for criteria that are both present in order to return that data example: 
 ```sql
