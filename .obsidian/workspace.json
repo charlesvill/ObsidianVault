@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Full Stack Dev/REACT.md",
+                "file": "Computer Science/Full Stack Dev/Backend/Databases.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/CS50/Python.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,8 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -123,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/CS50/Python.md",
+                "file": "Computer Science/Full Stack Dev/Backend/Databases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/CS50/Python.md",
+                "file": "Computer Science/Full Stack Dev/Backend/Databases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/CS50/Python.md"
+                "file": "Computer Science/Full Stack Dev/Backend/Databases.md"
               }
             }
           },
@@ -205,13 +203,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e9c5f9727fae7c2",
+  "active": "abea1639818e6dd6",
   "lastOpenFiles": [
-    "Computer Science/CS50/SQL.md",
-    "Computer Science/Full Stack Dev/Backend/Databases.md",
     "Computer Science/Full Stack Dev/REACT.md",
-    "Computer Science/Full Stack Dev/Backend",
     "Computer Science/NVIM notes.md",
+    "Computer Science/CS50/SQL.md",
+    "Computer Science/CS50/Python.md",
+    "Computer Science/Full Stack Dev/Backend/Databases.md",
+    "Computer Science/Full Stack Dev/Backend",
     "Computer Science/Full Stack Dev/CSS & HTML/CSS reference Notes.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
@@ -232,7 +231,6 @@
     "Electronics/Switch repair.md",
     "Computer Science/Algorithms and Data Structures",
     "Computer Science/TOPICS TO BE HIREABLE.md",
-    "Computer Science/CS50/Python.md",
     "Computer Science/CS50/Flask.md",
     "Computer Science/Full Stack Dev/CSS & HTML/StylingTables.md",
     "Electronics",
