@@ -99,6 +99,11 @@ SELECT name FROM songs WHERE artist_id IN (
 	- after select you still will enumerate the columns you want from BOTH tables you're joining or however many tables you're joining. then you'll do the `JOIN othertablename ON firsttable.primaryKey = secondtable.foreignKey` 
 		- the = is what the query will look for to join the tables 
 		- then after the join statement you could add the filters and ordering, grouping commands you need.
+###### different kinds of JOIN
+- `INNER JOIN`: produces only tyhe set of records that match in both or all tables
+- `FULL OUTER JOIN`: produces the set of all records in both or all tables with matching records where available. if no match, it'll show null
+- `LEFT OUTER JOIN`: produces all records from the first table with matching records where available from the second table  and if no match, null
+- `CROSS JOIN`: 
 - Using the AND keyword: 
 	- the and can be used to search for criteria that are both present in order to return that data example: 
 ```sql
