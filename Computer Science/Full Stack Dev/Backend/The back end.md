@@ -101,5 +101,22 @@ http.createServer(function (req, res) {
 ###### Client server overview and Dyanmic requests
 - *essential question*: what happens when a server receives a dynamic request from a browser. 
 	- what operations need to be performed by server-side code?
-7
+ **What can be included in a Request?**
+- Method that defines the required action: `GET, POST, HEAD, PUT, DELETE`
+	- HEAD gets metadata from a specific resource that can be used for example to see whether the resource was updated and can then do a more costly GET request
+- URL parameters: `http://example.com?name=Fred&age=11` takes key:value pairs
+	- ? always separates the rest of the URL from the parameters
+	- = is the separater between a key and a value
+	- & is the separating anothey key:value pair in the url parameters
+		- because of the nature of being able to change the url parameters in the url bar, requests that change data on the server are not allowed through url parameters and get requests
+- POST data  that will be added as data to the server
+- Client side cookies - can include keys that is information about the client for authorization purposes on a site
+
+- webservers will then process the request and respond with 200 ok if it was found, 404 if not found or 403 which means forbidden (i.e they dont have authorization bc they're not logged in)
+- both static and dymanic websites use the same communication protocol or patterns
+
+**POST**
+- when you post you get the 302 FOUND indicating that a post was successful 
+- site to sniff website requests : https://websniffer.com/
+
 
