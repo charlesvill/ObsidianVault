@@ -92,3 +92,4 @@ http.createServer(function (req, res) {
 }).listen(8080);
 ```
 - here we have these callbacks that are meant to run in the event of a request coming through
+##### Dynamic and Static sites
