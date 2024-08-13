@@ -44,10 +44,9 @@ what a request looks like:
 ##### Frontend frameworks
 - vue
 - angular
-- react
-- ember
+- react- ember
 ##### Back end frameworks
-- spring mvc - java - ew
+- spring mvc - java  ew
 - Django - python - more opinionated, alot of features out of the box
 - Flask - python - less opinonated than django
 - ruby on rails - ew
@@ -61,3 +60,22 @@ what a request looks like:
 - it essentially an abstraction layer between a webframe work (or should I say that many webframe works provide one) that abstracts away the operations and querys of put, get, post, delete
 - benefits of ORM:
 	- it can be safer to abstract away queries to avoid malicious intrusions and hacking of queries
+
+### Introduction: what is Node.js?
+
+#### Parking lot: 
+- what is really under the hood of nodejs and how is it any different from what we can do with a web bundler like vite?
+	- what is the point of something like node js when you have something like vite, or is vite made with node and you can build your own run time? or is it like what the browser does which is run all the necessary outside scripts that allow applications to be asynchronous 
+
+##### what is node?
+- at its most basic level, node allows you to bring javascript code out of browser land. it allows code to run and accomplish anything that serverside languages such as ruby, php, c# and python can do. 
+	- some of the additional things it can do that it cannot do on a browers: 
+		- abiltiy to read and write to local files
+		- create http connections
+		- listen to network requests
+###### Event driven
+- kind of how you might have an event listener and a sequence of code that occurs from that event being triggered
+	- you might have two function bundles such as : 
+		- reading from a file and then printing out the contents of that file
+		- query database and then filter the results
+	- the first thing might still be working but node will immediately being working on the second one which is query the database
