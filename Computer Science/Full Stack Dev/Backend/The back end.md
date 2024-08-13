@@ -98,4 +98,8 @@ http.createServer(function (req, res) {
 - Dynamic sites will generate an html template with static resources that it will use. 
 	- however when there are requests for dynamic information such as account information or search engine queries, then the request is instead forwarded to a web application that will process the request and make the necessary daatabase queries to send the data to the webserver along with the static resources like the html template in order to send back the completed site. 
 	- the use of reusable code, templating, dynamic component and data generation is an example of dynamic sites, i.e using react especially with react-router
+###### Client server overview and Dyanmic requests
+- *essential question*: what happens when a server receives a dynamic request from a browser. 
+	- what operations need to be performed by server-side code?
+7
 
