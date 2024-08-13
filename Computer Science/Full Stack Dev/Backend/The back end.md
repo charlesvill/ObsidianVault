@@ -56,3 +56,8 @@ what a request looks like:
 ##### Web servers
 - apache
 - nginx
+
+##### What is an Object-Relational Mapper (ORM)?
+- it essentially an abstraction layer between a webframe work (or should I say that many webframe works provide one) that abstracts away the operations and querys of put, get, post, delete
+- benefits of ORM:
+	- it can be safer to abstract away queries to avoid malicious intrusions and hacking of queries
