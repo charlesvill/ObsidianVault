@@ -74,8 +74,21 @@ what a request looks like:
 		- create http connections
 		- listen to network requests
 ###### Event driven
+- Event driven by asynchronous events such as network requests, databasequeries, etc
 - kind of how you might have an event listener and a sequence of code that occurs from that event being triggered
 	- you might have two function bundles such as : 
 		- reading from a file and then printing out the contents of that file
 		- query database and then filter the results
 	- the first thing might still be working but node will immediately being working on the second one which is query the database
+###### nodejs and callbacks
+ - these events rely on the use of callbacks. callbacks are essential to node
+ - review on callbacks: 
+	 - functions in javascript are first class citizens and as such can be assigned to varaibles or passed as argument to antoher function
+- example:
+```js
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end('Hello World!');
+}).listen(8080);
+```
+- here we have these callbacks that are meant to run in the event of a request coming through
