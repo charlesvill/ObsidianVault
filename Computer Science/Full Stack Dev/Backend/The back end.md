@@ -93,3 +93,9 @@ http.createServer(function (req, res) {
 ```
 - here we have these callbacks that are meant to run in the event of a request coming through
 ##### Dynamic and Static sites
+ - static sites are generic information sites with css, images, html and js that wont change and the request fetches the files and the files are sent back. 
+	 - static resources are those things like js, css, and images that will not change. that is the same process for fetching as static sites
+- Dynamic sites will generate an html template with static resources that it will use. 
+	- however when there are requests for dynamic information such as account information or search engine queries, then the request is instead forwarded to a web application that will process the request and make the necessary daatabase queries to send the data to the webserver along with the static resources like the html template in order to send back the completed site. 
+	- the use of reusable code, templating, dynamic component and data generation is an example of dynamic sites, i.e using react especially with react-router
+
