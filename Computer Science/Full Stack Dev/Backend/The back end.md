@@ -52,3 +52,7 @@ what a request looks like:
 - Flask - python - less opinonated than django
 - ruby on rails - ew
 - express - JS - very lightweight, very fast, very customizable
+
+##### Web servers
+- apache
+- nginx
