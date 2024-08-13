@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/Databases.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/CS50/SQL.md"
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md"
               }
             }
           },
@@ -205,10 +204,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e9c5f9727fae7c2",
+  "active": "abea1639818e6dd6",
   "lastOpenFiles": [
-    "Computer Science/Full Stack Dev/Backend/Databases.md",
     "Computer Science/CS50/SQL.md",
+    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/NVIM notes.md",
     "Computer Science/CS50/Python.md",
