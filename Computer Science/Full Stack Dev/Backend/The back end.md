@@ -32,3 +32,23 @@ what a request looks like:
 
 ###### what is middle ware?
 - code that runs on the server between the request and the response back to the client
+### Introduction to frameworks
+- basically the main idea is in efforts of not reinventing the wheel when it comes to web development: 
+	- many sites have overlapping features such as authentication, form validation, routing, connections with databases with code that can be reused instead of having to rewrite it every single time 
+- It also gives developers standards in how to structure their code base that leads to greater uniformity and organization when working on a team. 
+##### user interface frameworks
+- bootstrap
+- materialize
+- semantic UI
+- grommet
+##### Frontend frameworks
+- vue
+- angular
+- react
+- ember
+##### Back end frameworks
+- spring mvc - java - ew
+- Django - python - more opinionated, alot of features out of the box
+- Flask - python - less opinonated than django
+- ruby on rails - ew
+- express - JS - very lightweight, very fast, very customizable
