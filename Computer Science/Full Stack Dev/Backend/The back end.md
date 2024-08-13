@@ -119,4 +119,12 @@ http.createServer(function (req, res) {
 - when you post you get the 302 FOUND indicating that a post was successful 
 - site to sniff website requests : https://websniffer.com/
 
+#### Getting started with Node.js
+##### HTTP Module
+##### File system
+- useful node documents on the file stream: https://nodejs.org/en/learn/manipulating-files/writing-files-with-nodejs
+ - one thing to note about he fs is that by default, they are asynchronous operations that will be non blocking. if you want it to be blocking i.e if you are working in a try/catch block for error handling you can append Sync to the end of the function call to block it and hence the try block will not close out until the fs has finished its process
+##### URL Class
+
+##### Events
 
