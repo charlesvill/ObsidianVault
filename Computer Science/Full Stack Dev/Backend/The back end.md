@@ -127,4 +127,5 @@ http.createServer(function (req, res) {
 ##### URL Class
 
 ##### Events
+The events module allows us to replicate on the backend a way to handle user events such as keyboard pressed, mouse movements, mouse clicks, etc. 
 
