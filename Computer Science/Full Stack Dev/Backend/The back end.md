@@ -137,6 +137,19 @@ http.createServer(function (req, res) {
 - notice that the create server method requires a callback function that accepts a request  and resolution parameter. 
 - you then use the req and res parameters to define what behaviors will happen when a request comes through
 	- again: a request is made by actually attempting to visit your page after using `node <filename>` . it will literally create a local server
+###### http and url
+- you can access parts of the url from the request and use in the code: 
+```js
+var http = require('http');  
+var url = require('url');  
+  
+http.createServer(function (req, res) {  
+  res.writeHead(200, {'Content-Type': 'text/html'});  
+  var q = url.parse(req.url, true).query;  var txt = q.year + " " + q.month;  
+  res.end(txt);  
+}).listen(8080);
+```
+- notice here the url imported and how the url object uses a method called parse that will accept the request url from the req argument parameter
 ##### File system
 - useful node documents on the file stream: https://nodejs.org/en/learn/manipulating-files/writing-files-with-nodejs
  - one thing to note about he fs is that by default, they are asynchronous operations that will be non blocking. if you want it to be blocking i.e if you are working in a try/catch block for error handling you can append Sync to the end of the function call to block it and hence the try block will not close out until the fs has finished its process
@@ -157,18 +170,8 @@ http.createServer(function (req, res) {
 - notice here the presence of the http server once again. seems that all good things happen first with the presence of the http server. 
 - notice here that inside the createServer callback function we 
 ##### URL Class
-- you can access parts of the url from the request and use in the code: 
-```js
-var http = require('http');  
-var url = require('url');  
-  
-http.createServer(function (req, res) {  
-  res.writeHead(200, {'Content-Type': 'text/html'});  
-  var q = url.parse(req.url, true).query;  var txt = q.year + " " + q.month;  
-  res.end(txt);  
-}).listen(8080);
-```
-- notice here the url imported and how the url object uses a method called parse that will accept the request url from the req argument parameter
+- over all the url module breaks up a web address into readable parts. 
+
 ##### Events
 The events module allows us to replicate on the backend a way to handle user events such as keyboard pressed, mouse movements, mouse clicks, etc. 
 
