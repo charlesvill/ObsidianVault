@@ -224,6 +224,12 @@ https://www.youtube.com/watch?v=fBNz5xF-Kx4
 	- handling css files as well
 	- dynamic filepaths
 	- getting the extensions of files
+- another video series (12 videos) on node and express: https://www.youtube.com/watch?v=fBNz5xF-Kx4
+	- includes topics on clients and servers
+	- requests and responses
+	- view engines, middleware
+	- get, post, delete,
+	- express router and mvc
 ##### file uploads and emails
  - uploads: https://www.w3schools.com/nodejs/nodejs_uploadfiles.asp
  - emails: 
