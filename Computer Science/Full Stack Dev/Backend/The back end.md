@@ -120,12 +120,26 @@ http.createServer(function (req, res) {
 - site to sniff website requests : https://websniffer.com/
 
 #### Getting started with Node.js
+##### modules
+- node comes pre packaged with modules that can be used right out of the box.  for a complete list: https://www.w3schools.com/nodejs/ref_modules.asp
 ##### HTTP Module
+- the most essential part in creating a server is the http module that handles requests. 
 ##### File system
 - useful node documents on the file stream: https://nodejs.org/en/learn/manipulating-files/writing-files-with-nodejs
  - one thing to note about he fs is that by default, they are asynchronous operations that will be non blocking. if you want it to be blocking i.e if you are working in a try/catch block for error handling you can append Sync to the end of the function call to block it and hence the try block will not close out until the fs has finished its process
 ##### URL Class
-
+- you can access parts of the url from the request and use in the code: 
+```js
+var http = require('http');  
+var url = require('url');  
+  
+http.createServer(function (req, res) {  
+  res.writeHead(200, {'Content-Type': 'text/html'});  
+  var q = url.parse(req.url, true).query;  var txt = q.year + " " + q.month;  
+  res.end(txt);  
+}).listen(8080);
+```
+- notice here the url imported and how the url object uses a method called parse that will accept the request url from the req argument parameter
 ##### Events
 The events module allows us to replicate on the backend a way to handle user events such as keyboard pressed, mouse movements, mouse clicks, etc. 
 
