@@ -171,6 +171,28 @@ http.createServer(function (req, res) {
 - notice here that inside the createServer callback function we 
 ##### URL Class
 - over all the url module breaks up a web address into readable parts. 
+- if a passed url is not recognized, then you can pass an error and present the 404 error text
+```js
+import http from 'http';
+import url from 'url'; 
+import fs from 'fs';
+
+http.createServer(function (req, res) {
+  const q = url.parse(req.url, true);
+  const filename = "." + q.pathname;
+  fs.readFile(filename, function(err, data) {
+    if(err) {
+      res.writeHead(404, {'Content-Type': 'text/html'});
+      return res.end("404 Not Found");
+    }
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  });
+}).listen(8080);
+```
+- something to note here is the presence of the `url.parse()` that takes the passed req request and extracts the pathname. 
+- then passed on a parameter passed in the path name i.e `localhost:808/summer.html` , it will read the file named 'summer.html' and serve that. 
 
 ##### Events
 The events module allows us to replicate on the backend a way to handle user events such as keyboard pressed, mouse movements, mouse clicks, etc. 
