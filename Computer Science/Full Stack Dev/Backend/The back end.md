@@ -233,3 +233,12 @@ https://www.youtube.com/watch?v=fBNz5xF-Kx4
 ##### file uploads and emails
  - uploads: https://www.w3schools.com/nodejs/nodejs_uploadfiles.asp
  - emails: 
+#### Debugging Nodejs in Chrome
+- for the time being debuggin in lvim is absolutely fucked 
+- in chrome: 
+	- visit `chrome://inspect`
+	- make sure these configurations are present: 
+		- 127.0.0.1:9229 (under discover network targets)
+	 - in your node file in the terminal, run `node --inspect-brk filename.js`
+	- click 'open dedicatd Devtools for node'
+	- it will automatically halt execution, set a breakpoint and go to town!
