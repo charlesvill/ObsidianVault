@@ -124,10 +124,38 @@ http.createServer(function (req, res) {
 - node comes pre packaged with modules that can be used right out of the box.  for a complete list: https://www.w3schools.com/nodejs/ref_modules.asp
 ##### HTTP Module
 - the most essential part in creating a server is the http module that handles requests. 
-- on a local machine you can go to your browser and put the localhost
+- on a local machine you can go to your browser and put `http://localhost:8080` or whatever number you used to listen for
+- to get set up, see: 
+```js
+import http from "http";
+
+http.createServer(function (req, res) {
+	res.write(200, {'Content-Type': 'text/html'});
+	res.end("Hello world!");
+}).listen(8080);
+```
+- notice that the create server method requires a callback function that accepts a request  and resolution parameter. 
+- you then use the req and res parameters to define what behaviors will happen when a request comes through
+	- again: a request is made by actually attempting to visit your page after using `node <filename>` . it will literally create a local server
 ##### File system
 - useful node documents on the file stream: https://nodejs.org/en/learn/manipulating-files/writing-files-with-nodejs
  - one thing to note about he fs is that by default, they are asynchronous operations that will be non blocking. if you want it to be blocking i.e if you are working in a try/catch block for error handling you can append Sync to the end of the function call to block it and hence the try block will not close out until the fs has finished its process
+- getting started: 
+```js
+import http from 'http';
+import fs from 'fs';
+
+http.createServer(function (req, res) {
+  //Open a file on the server and return its content:
+  fs.readFile('demofile1.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  });
+}).listen(8080);
+```
+- notice here the presence of the http server once again. seems that all good things happen first with the presence of the http server. 
+- notice here that inside the createServer callback function we 
 ##### URL Class
 - you can access parts of the url from the request and use in the code: 
 ```js
