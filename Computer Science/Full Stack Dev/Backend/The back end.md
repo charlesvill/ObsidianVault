@@ -214,6 +214,16 @@ eventEmitter.on('scream', myEventHandler);
 eventEmitter.emit('scream');
 ```
 - notice here that the emitter is passing a string that the .on() listens for . 
+##### Visual on node and modules: 
+https://www.youtube.com/watch?v=fBNz5xF-Kx4
+- covers modules that go over OS info
+- url
+- event and event emitter
+	- including useful logging of error information
+- http server serving json as a restful api
+	- handling css files as well
+	- dynamic filepaths
+	- getting the extensions of files
 ##### file uploads and emails
  - uploads: https://www.w3schools.com/nodejs/nodejs_uploadfiles.asp
  - emails: 
