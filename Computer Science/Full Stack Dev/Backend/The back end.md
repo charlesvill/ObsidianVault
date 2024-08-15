@@ -195,5 +195,25 @@ http.createServer(function (req, res) {
 - then passed on a parameter passed in the path name i.e `localhost:808/summer.html` , it will read the file named 'summer.html' and serve that. 
 
 ##### Events
-The events module allows us to replicate on the backend a way to handle user events such as keyboard pressed, mouse movements, mouse clicks, etc. 
+- The events module allows us to replicate on the backend a way to handle user events such as keyboard pressed, mouse movements, mouse clicks, etc. 
+- the events module along with the event emitter gives you control over what things to listen for and with the emitter, you can also control when those events get triggered
+	- some examples of events are when you open a file or when you use the emitter to emit the event, for example: 
+```js
+var events = require('events');
+var eventEmitter = new events.EventEmitter();
 
+//Create an event handler:
+var myEventHandler = function () {
+  console.log('I hear a scream!');
+}
+
+//Assign the eventhandler to an event:
+eventEmitter.on('scream', myEventHandler);
+
+//Fire the 'scream' event:
+eventEmitter.emit('scream');
+```
+- notice here that the emitter is passing a string that the .on() listens for . 
+##### file uploads and emails
+ - uploads: https://www.w3schools.com/nodejs/nodejs_uploadfiles.asp
+ - emails: 
