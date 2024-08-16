@@ -376,3 +376,4 @@ app.get("/:username/messages", (req, res) => {
 - as you can see, it returns an objec that you have to use dot notation naming the key to the value
 - you can place multiple parameters in the route and it will extract it to the same object
 ###### query parameters
+- query parameters are a part of the URL that appears at the end and is denoted by a **?** to start the beginning of the query parameter
