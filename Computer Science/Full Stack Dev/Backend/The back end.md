@@ -310,6 +310,7 @@ app.get('/', function(req, res) {
   })
 
 })
+// i struggled to get /:name to match with index, perhaps '*' would have matched with anything and could have processed the paramstring easier
 app.get('/:name', function(req, res) {
   const params = req.params.name;
   let fileName = "";
@@ -348,6 +349,30 @@ app.listen(PORT, () => console.log(`you are listening on port ${PORT}`));
 - one thing to note here is that this is actually more code than when I just used nodejs as server without the framework but I think this will be simplified as I learn more about it. 
 	- this was actually a second iteration where I was able to take dynamic parameter values from url and use switch block to dynamically send the html file to populate
 		- I was not however able to handle the index '/' with a single app.get() like Iwas able to do with just node.js. perhaps this is the cost of moving with a framework when all you have is a static website
+	- update: I could have used `"/(:name)"` that would either match with "/" or some thing else that is a dynamically accessed parameter
 
 ### Routes
 routes allow us to match a requests http verb (get or post) and URL path to the appropriate middleware functions. 
+
+##### anatomy of a route
+```js
+app.get("/", (req, res) => res.send("Hello, world!"));
+```
+- this gets us a match only with get requests that have '/' as the sole parameter in the url
+- you also have `app.post()` that has matchers same as get
+- there is also app.all() that would matcher with all http verbs (get, post, put, delete, etc)
+- order matters because if you have a app.get(`"*"`) and after app.get('/messages') the second route will never be reached even if you have /messages as exact parameter because it iwll first match with the wildcard match
+- you would need to reverse the order in which they are declared and defined in order to bring out the intended behavior 
+###### route parameters
+- as seen above, you can access route or url parameters by putting a : followed by the name of the parameter
+```javascript
+app.get("/:username/messages", (req, res) => {
+  console.log(req.params);
+  res.end();
+});
+
+//GET /odin/messages will return this {username: 'odin'}
+```
+- as you can see, it returns an objec that you have to use dot notation naming the key to the value
+- you can place multiple parameters in the route and it will extract it to the same object
+###### query parameters
