@@ -288,3 +288,66 @@ app.listen(PORT, () => console.log(`My first Express app - listening on port ${P
 	- not sure of the purpose of them outside of telling express to eventually respond to the get request
 ###### Auto-restart your server on changes
 - instead of having to run node app.js every change, you can run `node --watch app.js` and node will listen for changes and auto restart your server for you.
+
+###### Implementing basic site with dynamic html serving
+```js
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const app = express();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+app.get('/', function(req, res) {
+  const filepath = path.join(__dirname, "index.html");
+
+  res.sendFile(filepath, function(err) {
+    if(err){
+      res.status(500, "something went wrong with the server!");
+      return;
+    }
+  })
+
+})
+app.get('/:name', function(req, res) {
+  const params = req.params.name;
+  let fileName = "";
+  console.log(params);
+
+  switch (params) {
+    case "":
+      fileName = "index.html";
+      break;
+    case "about":
+      fileName = "about.html";
+      break;
+    case "contact-me":
+      fileName = "contact-me";
+      break;
+    default:
+      fileName = "404.html";
+  }
+
+  const filepath = path.join(__dirname, fileName);
+  console.log("filepath is" + filepath);
+
+  res.sendFile(filepath, function(err) {
+    if (err) {
+      res.status(500).send("There was a server error: 500");
+      return;
+    }
+    console.log("sent file");
+  });
+});
+
+const PORT = 3000;
+app.listen(PORT, () => console.log(`you are listening on port ${PORT}`));
+
+```
+- one thing to note here is that this is actually more code than when I just used nodejs as server without the framework but I think this will be simplified as I learn more about it. 
+	- this was actually a second iteration where I was able to take dynamic parameter values from url and use switch block to dynamically send the html file to populate
+		- I was not however able to handle the index '/' with a single app.get() like Iwas able to do with just node.js. perhaps this is the cost of moving with a framework when all you have is a static website
+
+### Routes
+routes allow us to match a requests http verb (get or post) and URL path to the appropriate middleware functions. 
