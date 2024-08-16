@@ -268,4 +268,4 @@ use `process.env.NODE_ENV === "prod" ? <stuff> : <other stuff>`
 ### Intro to express
 What is express?
 - express is a backend frame work for nodejs. while I have use node on its own to set up servers, it can be verbose and as the complexity of the site increases, so will the complexity and verbosity of writing everything yourself. Express is a framework that helps with handling the complexity and gives some flexibility in how things are done and is known to be unopinionated
-- 
+- q
