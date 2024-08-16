@@ -268,4 +268,23 @@ use `process.env.NODE_ENV === "prod" ? <stuff> : <other stuff>`
 ### Intro to express
 What is express?
 - express is a backend frame work for nodejs. while I have use node on its own to set up servers, it can be verbose and as the complexity of the site increases, so will the complexity and verbosity of writing everything yourself. Express is a framework that helps with handling the complexity and gives some flexibility in how things are done and is known to be unopinionated
-- q
+##### Getting started with an express server
+```js
+import express from 'express';
+// dont forget to include "type": "moduel", in package.json
+const app = express();
+
+app.get("/", (req, res) => res.send("Hello, world!"));
+
+const PORT = 3000;
+app.listen(PORT, () => console.log(`My first Express app - listening on port ${PORT}!`));
+```
+- here we have the express server being told to respond to get requests to a route "/" with the text hello world
+- then the express app is being told to listen for port name in this case 3000. which  i guess is the default address
+	- one thing to note is that normally you use env variables for the port name and then you go something like this: `const PORT = process.env.PORT_VAR || 3000;` 
+		- meaning to use the environment variable or else 3000 as the standard one. 
+###### Middleware
+- middle ware are functions that happen before express server responds to the get request. the request will get added to an object of requests by the server and then it will get passed through these middle ware functions. 
+	- not sure of the purpose of them outside of telling express to eventually respond to the get request
+###### Auto-restart your server on changes
+- instead of having to run node app.js every change, you can run `node --watch app.js` and node will listen for changes and auto restart your server for you.
