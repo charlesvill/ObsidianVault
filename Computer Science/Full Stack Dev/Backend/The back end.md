@@ -263,3 +263,9 @@ What are environment variables?:
 use `process.env.NODE_ENV === "prod" ? <stuff> : <other stuff>`
 - *note* - environment variables are always strings so you will need to convert other primitive types into a string
 - documentation on dotenv: https://www.npmjs.com/package/dotenv#-documentation
+
+## EXPRESS
+### Intro to express
+What is express?
+- express is a backend frame work for nodejs. while I have use node on its own to set up servers, it can be verbose and as the complexity of the site increases, so will the complexity and verbosity of writing everything yourself. Express is a framework that helps with handling the complexity and gives some flexibility in how things are done and is known to be unopinionated
+- 
