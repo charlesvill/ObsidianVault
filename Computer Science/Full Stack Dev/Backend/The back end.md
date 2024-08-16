@@ -377,3 +377,24 @@ app.get("/:username/messages", (req, res) => {
 - you can place multiple parameters in the route and it will extract it to the same object
 ###### query parameters
 - query parameters are a part of the URL that appears at the end and is denoted by a **?** to start the beginning of the query parameter
+	- follows the format of key=value
+	- each & denotes another key=value pair
+- unique because its actually not part of the path itself but more of arguments that can be passed
+- express will automatically process these queries into a req.query object. if there are repeat keys, it will put all those values into an array
+```js
+/**
+ * GET /odin/messages?sort=date&direction=ascending will log
+ * Params: { username: "odin" }
+ * Query: { sort: "date", direction: "ascending" }
+ *
+ * GET /odin/messages?sort=date&sort=likes&direction=ascending will log
+ * Params: { username: "odin" }
+ * Query: { sort: ["date", "likes"], direction: "ascending" }
+ */
+app.get("/:username/messages", (req, res) => {
+  console.log("Params:", req.params);
+  console.log("Query:", req.query);
+  res.end();
+});
+```
+- you can see here that 
