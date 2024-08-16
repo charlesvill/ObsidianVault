@@ -242,3 +242,24 @@ https://www.youtube.com/watch?v=fBNz5xF-Kx4
 	 - in your node file in the terminal, run `node --inspect-brk filename.js`
 	- click 'open dedicatd Devtools for node'
 	- it will automatically halt execution, set a breakpoint and go to town!
+
+### Environment Variables
+What are environment variables?:
+- variables that have environment specific values such as information on your machine that can be used to modify conditions based on the specific environment that the code base is running on. 
+	- This end is supposed to result in not having to change the code base but being able to have different conditions be meant if for example we're running on a production environment versus a devleopment environment
+- They are also used for hiding credentials, database urls, or api keys
+#### Loading environment variables
+1. pass it as an argument when you run the script with node 
+	- `NODE_ENV=prod VIDEO_URL="https://www.youtube.com/watch?v=X2CYWg9-2N0" node index.js
+	- problem with this method is if you have this command defined in an npm script in your package.json you will have important possible sensitive information visible on that repo
+2. export environment variables using the shell command export to save the variables for the current shell session only 
+	- `export NODE_ENV=prod VIDEO_URL="https://www.youtube.com/watch?v=X2CYWg9-2N0"`
+3. dotenv - one of the most common ways to load environment variables. 
+	- . you need to install the npm package and create a file called .env in the root of your project that will have all the environment variables with the `NAME="VALUE"` 
+	- create a `.gitignore` file and place the .env file so it doesnt get tracked by the repo
+	- finally import as soon as possible into your app `require("dotenv").config();`
+	- running node filename.js will work importing the enviroment variables
+#### accessing environment variables
+use `process.env.NODE_ENV === "prod" ? <stuff> : <other stuff>`
+- *note* - environment variables are always strings so you will need to convert other primitive types into a string
+- documentation on dotenv: https://www.npmjs.com/package/dotenv#-documentation
