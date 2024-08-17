@@ -397,4 +397,45 @@ app.get("/:username/messages", (req, res) => {
   res.end();
 });
 ```
-- you can see here that 
+- you can see here the difference in accessing the params or the query of the url
+
+#### Routers
+consider a longer url such as `POST /books/:bookId/reserve` and you have something different for authors and specific author pages. the main app page can start to get long, for organization we can group routers by function or destination and have their respective routes and param logic for their category
+```js
+// app.js
+const express = require("express");
+const app = express();
+const booksRouter = require("routes/booksRouter");
+const authorsRouter = require("routes/authorsRouter");
+const indexRouter = require("routes/indexRouter");
+
+app.use("/books", booksRouter);
+app.use("/authors", authorsRouter);
+app.use("/", indexRouter);
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`My first Express app - listening on port ${PORT}!`);
+});
+```
+- notice here importing routers for books and other logical router groupings
+- also notice how the main express server is specifying how the path will be directed to respective router with app.use()
+- what is app.use() for?
+	- its used to specify middleware as the callback function instead of a specific response. 
+```js
+// routes/authorsRouter.js
+const { Router } = require("express");
+
+const authorsRouter = Router();
+
+authorsRouter.get("/", (req, res) => res.send("All authors"));
+authorsRouter.get("/:authorId", (req, res) => {
+  const { authorId } = req.params;
+  res.send(`Author ID: ${authorId}`);
+});
+
+module.exports = authorsRouter;
+```
+- here is an example implementation of what one of those routers would look like
+- notice how only destructuring the Router object from express and you're using exports for the router
+- also notice how the router.get("/") is relative path to within the /author path instead of the root "/" directory. in other words, the paths in routers extend the parent path
