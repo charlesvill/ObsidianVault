@@ -439,3 +439,13 @@ module.exports = authorsRouter;
 - here is an example implementation of what one of those routers would look like
 - notice how only destructuring the Router object from express and you're using exports for the router
 - also notice how the router.get("/") is relative path to within the /author path instead of the root "/" directory. in other words, the paths in routers extend the parent path
+
+### Controllers
+- known as a middle man that is the brains of the operation that delegates to other systems what to do. 
+	- it is really a function with really well-defined responsibilities as part of the MVC pattern
+- What is the MVC pattern?
+	- Model - View - Controller : a design pattern for web applications where the model is the data logic inthe back end that handles storing and quering data as well as applying logic, algorithms etc. the View is the user interface that displays the data processed by the model and the controller is the middle man between the backend and the frontend that handles how user interactions are routed and what data gets passed to the backend Model to process or store. 
+#### Handling responses
+- example of methods you might use in controllers: 
+	- `res.send()` - this is flexible and will set the `Content-Type` header based onthe data you pass it
+	- `res.json()`- more explicit form of  
