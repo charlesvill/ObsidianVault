@@ -448,4 +448,7 @@ module.exports = authorsRouter;
 #### Handling responses
 - example of methods you might use in controllers: 
 	- `res.send()` - this is flexible and will set the `Content-Type` header based onthe data you pass it
-	- `res.json()`- more explicit form of  
+	- `res.json()`- more explicit form of  responding to request
+	- `res.redirect()` allows for redirecting client to diffferent URL
+	- `res.render()` - used with template engine it will send rendered html template
+	- `res.status()` - useful for setting the status code manually 
