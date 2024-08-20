@@ -469,3 +469,16 @@ app.use((req, res) => {
 ```
 - this is example of the above statement
 #### Middleware
+a core concept in express and play important role in handling requests and responses. 
+- they sit between the incoming request and the final intended route handler
+##### anatomy of middle ware function
+- typically has three arguements though there are some with four:
+	- `req` - the requesxt object, which represents the incoming http request
+	- `res` - the response object, which represents the http response that will be sent back
+	- `next` - the fucntion that pass the control to the next middleware function in the chain (optional)
+			- important to note that the naming is purely conventional and really could be named naything
+- the purpose of a middleware function: 
+	- modify the request for a specific package (res.render will need setting of res.locals)
+	- executing additional code (for validation of forms or authentication)
+	- calling next middle ware function in theh chain
+	- ending the request-response cycle ( no more middle ware functions even if there are some placed after the ending)
