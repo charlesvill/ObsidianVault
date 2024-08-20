@@ -471,6 +471,8 @@ app.use((req, res) => {
 #### Middleware
 a core concept in express and play important role in handling requests and responses. 
 - they sit between the incoming request and the final intended route handler
+**parking lot**:
+- in practical terms, what is the difference between req.use() and router.use()/router.get()
 ##### anatomy of middle ware function
 - typically has three arguements though there are some with four:
 	- `req` - the requesxt object, which represents the incoming http request
@@ -482,3 +484,4 @@ a core concept in express and play important role in handling requests and respo
 	- executing additional code (for validation of forms or authentication)
 	- calling next middle ware function in theh chain
 	- ending the request-response cycle ( no more middle ware functions even if there are some placed after the ending)
+-  
