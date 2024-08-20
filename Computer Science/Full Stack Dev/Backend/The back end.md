@@ -449,6 +449,23 @@ module.exports = authorsRouter;
 - example of methods you might use in controllers: 
 	- `res.send()` - this is flexible and will set the `Content-Type` header based onthe data you pass it
 	- `res.json()`- more explicit form of  responding to request
+		- The use case for this is it will automatically convert non-object values to json while res.send will not. 
 	- `res.redirect()` allows for redirecting client to diffferent URL
 	- `res.render()` - used with template engine it will send rendered html template
 	- `res.status()` - useful for setting the status code manually 
+		- note that you must do the status before the send. the status will not end the response to the request. 
+- one thing to  note is that a function that has res.send() will not exit the function only terminate the request. 
+```js
+app.use((req, res) => {
+  // This works and this ends the request-response cycle
+  res.send("Hello");
+
+  // However, it does not exit the function so this will still run
+  console.log('will still run!!');
+
+  // This will then throw an error that you cannot send again after sending to the client already
+  res.send("Bye");
+});
+```
+- this is example of the above statement
+#### Middleware
