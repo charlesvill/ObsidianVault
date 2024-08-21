@@ -474,14 +474,19 @@ a core concept in express and play important role in handling requests and respo
 **parking lot**:
 - in practical terms, what is the difference between req.use() and router.use()/router.get()
 ##### anatomy of middle ware function
-- typically has three arguements though there are some with four:
-	- `req` - the requesxt object, which represents the incoming http request
+- typically has three arguments though there are some with four:
+	- `req` - the request object, which represents the incoming http request
 	- `res` - the response object, which represents the http response that will be sent back
-	- `next` - the fucntion that pass the control to the next middleware function in the chain (optional)
+	- `next` - the function that pass the control to the next middleware function in the chain (optional)
 			- important to note that the naming is purely conventional and really could be named naything
 - the purpose of a middleware function: 
 	- modify the request for a specific package (res.render will need setting of res.locals)
 	- executing additional code (for validation of forms or authentication)
 	- calling next middle ware function in theh chain
 	- ending the request-response cycle ( no more middle ware functions even if there are some placed after the ending)
--  
+###### application-level middleware
+- bound to instance of Express using `app.use()` as opposed to a router level middleware that is bound to instance of express router usig `router.use()`
+- similar functions like app.get()/use/post/etc
+- typically they are placed at the top level to ensure that they run first.
+	- these middleware functions will not run if the req/resp cylcle is ended before the middle ware function runs.
+	- 
