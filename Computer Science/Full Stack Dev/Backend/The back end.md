@@ -723,3 +723,16 @@ app.set("view engine", "ejs");
 ##### Ejs syntax
 -  `<% %>` tags allow to use javascript
 - this allows us to write conditional statements, for loops, and use variables
+```js
+<% const animals = ["Cat", "Dog", "Lemur", "Hawk"] %>
+
+<ul>
+  <% animals.map((animal) => { %>
+    <li><%= animal %>s are cute</li>
+  <% }) %>
+</ul>
+```
+- similiar to how you might use map in react to output html, you can do that with this
+
+###### using EJS with Express
+- first create an EJS template (e.g `index.ejs`)
