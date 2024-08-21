@@ -528,4 +528,25 @@ controllers are just functions that also classify as middleware that are used by
 - once controller completes tasks, it will hand it off to the view to render the data in a suitable format for the client
 	- can be html, or even json responses like the json responses received from apis interacted with
 - naming conventions for controllers are usually based on the router they will be attached to (ie get route -> getsomething(), post -> createSomething, delete -> deleteSomething(), etc)
-- 
+###### sample controller
+```js
+// user controller file - controllers/userController.js
+
+const getUserById = async (req, res) => {
+  const userId = req.params.id;
+
+  const user = await someDBQueryToGetUser(userId);
+
+  if (!user) {
+    res.status(404).send("User not found");
+    return;
+  }
+
+  res.send(`User found: ${user.name}`);
+};
+```
+- you'd see this get used by passing request params with the id `router.get("/user/:id", getUserById)` queries the db for the user (notice that is async bc its searching file system) 
+- if the user is not found then, notice the `res.status(404).send("user not found")` and the return after it because the other lines will keep running if you dont hit the return. sending response does not stop the function execution itself. 
+- if its found then `res.send()` will by default send a 200 status 
+##### Handling Errors
+- quickest way to handle errors would be to wrap the async functionality in a try/catch block
