@@ -445,6 +445,15 @@ module.exports = authorsRouter;
 	- it is really a function with really well-defined responsibilities as part of the MVC pattern
 - What is the MVC pattern?
 	- Model - View - Controller : a design pattern for web applications where the model is the data logic inthe back end that handles storing and quering data as well as applying logic, algorithms etc. the View is the user interface that displays the data processed by the model and the controller is the middle man between the backend and the frontend that handles how user interactions are routed and what data gets passed to the backend Model to process or store. 
+- what is the difference in responsibilities in something like a router vs a controller?
+	- the Router handles what path will be accepted as well as what controller it will hand it off to
+	- the Controller is a seperate file that is the logic of what happens with the data. it will handle requesting from the model a query, reshaping the data, and sending the response to the view 
+- rough flow of responsibilites: with a query of `https://domainname/users`
+	- Request arrives at app to (/)
+	- app middleware handles any app wide processing like authentication etc.
+	- Router will match with /users and hands off to the router 
+	- Router will call any middle ware it needs for that scope/instance such as authentication, error checking and then hand off to a specific controller to handle the response logic
+	- controller applies business logic and closes response cycle with either 200 success and data or error codes
 #### Handling responses
 - example of methods you might use in controllers: 
 	- `res.send()` - this is flexible and will set the `Content-Type` header based onthe data you pass it
@@ -473,6 +482,7 @@ a core concept in express and play important role in handling requests and respo
 - they sit between the incoming request and the final intended route handler
 **parking lot**:
 - in practical terms, what is the difference between req.use() and router.use()/router.get()
+	- essentially same methods in different instances/scoping 
 ##### anatomy of middle ware function
 - typically has three arguments though there are some with four:
 	- `req` - the request object, which represents the incoming http request
@@ -697,3 +707,7 @@ app.listen(port, () => console.log(`Realworld app listening on port ${port}!`))
 	- Error handling- error handling middlware/funcs are the same stack as middlewares routers, and routes. 
 		- each handle function of any layer is called by a wrapper function either a`handle_request` or `handle_error`. it also has an internal layerError variable that is initialized to null and when something is passed as obj through the next() method, its stored in that layerError variable. 
 			- when the object passed in next() is errored state, Router will switch to calling <strong>handle_error</strong> instead and will only call the error handler 
+
+
+### Views
+- in order to render dymanic html content, we use template engines to inject dynamic data to the html files we send back. 
