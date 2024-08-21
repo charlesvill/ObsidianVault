@@ -489,4 +489,43 @@ a core concept in express and play important role in handling requests and respo
 - similar functions like app.get()/use/post/etc
 - typically they are placed at the top level to ensure that they run first.
 	- these middleware functions will not run if the req/resp cylcle is ended before the middle ware function runs.
-	- 
+- if you do not specify a path, it defaults to `/` and will match every single incoming request
+	- common middle ware functions are: 
+		- express.json, express.urlencoded - body parsers that allow to parse incoming request body to use through re.body
+		- serving static files( app.use(express.static('public))) serving static files such as html, css, js, images. you can pass arguemnt to specify which directoyr to serve the static file
+###### router-level middleware
+- simliar to app-level middleware but is bound to instance of express router using `router.use`
+	- when you use routers, you'll destructure the express obj for the router `const {router} = express();` 
+- this will match only when the request matches the specific route 
+
+###### basic middleware function
+```js
+function myMiddleware(req, res, next) {
+  // Perform some operations
+  console.log("Middleware function called");
+
+  // Modify the request object
+  req.customProperty = "Hello from myMiddleware";
+
+  // Call the next middleware/route handler
+  next();
+}
+app.use(myMiddleware);
+```
+- here by using app.use(myMiddleware)  registers this function as an application-level middleware
+- you also gave a customProperty in the request that can be accessed by middleware functions following this function, called by next();
+- notice the next() that is going to pass the control to the next middle ware function in the chain
+	- *what is this chain? I need to see an example visual of what this chain can look like*
+- important to note that middleware functions are executed int he order thaty they were defined or registered in the app, the sequence in which you define your middleware functions does infact matter. 
+	- for example, some middlware functions that change the request object and those shoudl be ithe very top of your application so you can see theri changes in all the middle ware functions that follow it below it. 
+
+##### Controllers
+controllers are just functions that also classify as middleware that are used by route handlers
+- controllers come into play when a requests hits a server and a router matches the requsted http verb and path.
+- the route will determine which router will handle the requstbased on the defined middleware chain you set up. 
+- from there, the controller takes over and takes the actgions needed to fulfill the request
+	- this could involve pulling data from the model (app logic back end), processing data, updating model with new data etc. 
+- once controller completes tasks, it will hand it off to the view to render the data in a suitable format for the client
+	- can be html, or even json responses like the json responses received from apis interacted with
+- naming conventions for controllers are usually based on the router they will be attached to (ie get route -> getsomething(), post -> createSomething, delete -> deleteSomething(), etc)
+- 
