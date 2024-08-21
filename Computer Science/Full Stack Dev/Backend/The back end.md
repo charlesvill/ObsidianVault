@@ -689,4 +689,6 @@ app.listen(port, () => console.log(`Realworld app listening on port ${port}!`))
 ##### Handling requests
 - request is actually handled by: 
 	- iterating the layer stack - loops through the layer stack and calls the handle funciton on every layer with a matching path
-	- path matching - 
+	- path matching - matching the path in `.use(path, handler)` with the request url. when one is not provided it will default to the root path of the Router. 
+		- reminder that the path in Router extends that of the parent router, so from app (app/router/id)  inside the router would be (/id)
+		- also reminder that if it defaults to root, then all requests reaching the router will all match 
