@@ -626,12 +626,13 @@ app.use(middleware3);
 - also remember that the `res.send()` will end the req/res cycle so the third middleware will not run
 ###### next arguments
 - `next()` no arg - simple, it will just pass on control to the next middleware
-- `next(new Error)` will pass control directly to the error middleware function
+- `next(new Error)` will pass control directly to the error middleware function. skips all handlers remaning unless they are handlers for errors
 - `next('route')` pass control to the next route handler with the same matchig path if present. 
 	- this only works for app.METHODS or router.METHODS
 	- could be the same as called next with no argument
 - `next('router')` - skips all middleware fns attached to the specific router and hands control out of current router instance to the parent router (`app`) (express app is just another router under the hood)
 - last two are very rare and specific use cases
+- if you do not call `next()` in your router, your reqeust can hang because you're not telling express to move on to the next thing
 
 #### Basic structure of a real world express app
 ```js
@@ -692,3 +693,7 @@ app.listen(port, () => console.log(`Realworld app listening on port ${port}!`))
 	- path matching - matching the path in `.use(path, handler)` with the request url. when one is not provided it will default to the root path of the Router. 
 		- reminder that the path in Router extends that of the parent router, so from app (app/router/id)  inside the router would be (/id)
 		- also reminder that if it defaults to root, then all requests reaching the router will all match 
+	- nested layers - app / can nest to route at /admin which can then nest again at /admin/:id (relative to app root path)
+	- Error handling- error handling middlware/funcs are the same stack as middlewares routers, and routes. 
+		- each handle function of any layer is called by a wrapper function either a`handle_request` or `handle_error`. it also has an internal layerError variable that is initialized to null and when something is passed as obj through the next() method, its stored in that layerError variable. 
+			- when the object passed in next() is errored state, Router will switch to calling <strong>handle_error</strong> instead and will only call the error handler 
