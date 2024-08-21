@@ -711,3 +711,15 @@ app.listen(port, () => console.log(`Realworld app listening on port ${port}!`))
 
 ### Views
 - in order to render dymanic html content, we use template engines to inject dynamic data to the html files we send back. 
+#### Getting started
+`npm install ejs`
+- create subfolder in root called views
+- create the skeleton express app and run `app.set`
+```js
+const path = require("node:path");
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+```
+##### Ejs syntax
+-  `<% %>` tags allow to use javascript
+- this allows us to write conditional statements, for loops, and use variables
