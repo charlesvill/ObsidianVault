@@ -550,3 +550,85 @@ const getUserById = async (req, res) => {
 - if its found then `res.send()` will by default send a 200 status 
 ##### Handling Errors
 - quickest way to handle errors would be to wrap the async functionality in a try/catch block
+- see this implementation of an express async error handler to see how spread operator and args works: https://github.com/Abazhenov/express-async-handler/blob/master/index.js
+	- wrapping our async function in this will automatically handle wrapping our promise in try/catch and call next with the error in the event of an error
+		- the name is `asyncHandler`  imported by `const asyncHandler = require("express-async-handler");`
+###### Handling errors with a special middleware
+```js
+// Every thrown error in the application or the previous middleware function calling `next` with an error as an argument will eventually go to this middleware function
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).send(err);
+});
+```
+- this is always put at the end of the chain of middleware functions to ensure that it is the very last middleware function so that it handles errors bubbling down from other middleware functions before it 
+- one important thing to note is that this error handling middleware function requires four parameters and if one is excluded, it will not be recognized as an error middleware function. so all four will be needed even if you are not using all four. the error object must be the first one in the callback
+```js
+app.use((req, res, next) => {
+  throw new Error("OH NO!");
+  // or next(new Error("OH NO!"));
+});
+
+app.use((err, req, res, next) => {
+  console.error(err);
+  // You will see an OH NO! in the page, with a status code of 500 that can be seen in the network tab of the dev tools
+  res.status(500).send(err.message);
+});
+```
+- this will get triggered by middleware functions that throw errors and by previous mw fn that use the next `next(err)`
+	- express can tell them apart by the `four parameters`
+###### custom errors
+- you can create custom errors by extending the errors class component (ew)
+```js
+class CustomNotFoundError extends Error {
+  constructor(message) {
+    super(message);
+    this.statusCode = 404;
+    // So the error is neat when stringified. NotFoundError: message instead of Error: message
+    this.name = "NotFoundError";
+  }
+}
+```
+- then you call call it `throw new CustomNotFoundError("not found")`
+```js
+app.use((err, req, res, next) => {
+  console.error(err);
+  // We can now specify the `err.statusCode` that exists in our custom error class and if it does not exist it's probably an internal server error
+  res.status(err.statusCode || 500).send(err.message);
+});
+```
+- when it eventually gets to our middleware error handler, it should give the error object status code. and if there isnt one, that means that there was some server error and that should be 500
+
+##### The next function
+```js
+const middleware1 = (req, res, next) => {
+  console.log("Middleware 1");
+  next(); // Pass control to the next middleware
+};
+
+const middleware2 = (req, res, next) => {
+  console.log("Middleware 2");
+  res.send("Response from Middleware 2");
+  // request-response cycle ends here
+};
+
+const middleware3 = (req, res, next) => {
+  console.log("Middleware 3");
+  res.send("Response from Middleware 3");
+};
+
+app.use(middleware1);
+app.use(middleware2);
+app.use(middleware3);
+// will log `Middleware 1` -> `Middleware 2` and send a response with the text "Response from Middleware 2"
+```
+- remember that the order that they are defined matters, you register them each by invoking them and the next(); allows the next one invoked to take over
+- also remember that the `res.send()` will end the req/res cycle so the third middleware will not run
+###### next arguments
+- `next()` no arg - simple, it will just pass on control to the next middleware
+- `next(new Error)` will pass control directly to the error middleware function
+- `next('route')` pass control to the next route handler with the same matchig path if present. 
+	- this only works for app.METHODS or router.METHODS
+	- could be the same as called next with no argument
+- `next('router')` - skips all middleware fns attached to the specific router and hands control out of current router instance to the parent router (`app`) (express app is just another router under the hood)
+- last two are very rare and specific use cases
