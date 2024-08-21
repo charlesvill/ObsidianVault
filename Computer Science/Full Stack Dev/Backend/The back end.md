@@ -632,3 +632,61 @@ app.use(middleware3);
 	- could be the same as called next with no argument
 - `next('router')` - skips all middleware fns attached to the specific router and hands control out of current router instance to the parent router (`app`) (express app is just another router under the hood)
 - last two are very rare and specific use cases
+
+#### Basic structure of a real world express app
+```js
+const express = require('express')
+// ...all imports & requires here
+
+const app = express()
+const PORT = 3000
+
+// add middlewares
+app.use(helmet())
+app.use(compression())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+app.use(cors())
+app.use(fileUpload())
+
+// add router middlewares
+protectedRouter.use(authMiddleware())
+adminRouter.use(adminMiddleware())
+
+// add routers
+app.use('/', publicRouter)
+app.use('/protected', protectedRouter)
+app.use('/admin', adminRouter)
+
+// register APIs
+registerApis(publicRouter, protectedRouter, adminRouter)
+
+// add error handlers
+app.use(errorHandler404)
+app.use(notifyErrorHandler)
+app.use(globalErrorHandler)
+
+app.listen(port, () => console.log(`Realworld app listening on port ${port}!`))
+```
+- remember that the order of the registers of middle ware and routers matters to avoid unexpected behaviors. also notice  that as such the error handlers are at the very bottom to ensure they are the last thing to run to catch all errors from previous middleware
+##### .use() method
+- used for registering router, middlewares, routers and error handlers. 
+- can be used with or without a path as first param
+- both `App` and `Router` has a .use() method
+- important considertations: 
+	- you can use .use() for everything but if the order of the methods is jumbled it leads to broken or unexpected behaviors
+	- App is really just another Router, its a root level Router
+##### what is in a router?
+1. handle() function - what pro esses all the requests received by the router
+2. Layer-stack - layers registerd on the router. every layer has a `path` and its own `handle` function.
+	- every time use() method used on express app or router, creating a new layer in the routers stack.
+###### Layers
+- Layer can be one of the following: 
+	- Middleware - fn with the signature `func(req, ress, next)` usually runs code, mofieis the req or res and at the end, either sends the response or calles the next layer.
+	- Route - also has the  `func(req, res, next)` but consists of the actual Request handlers for one or more http method types (get, put, post). it also typically hs the business logic to process the request and send response, it can also throw the error or call the next func with error as first param
+	- Error handler - handles errors thrown by previous layers and has the form of `func(error, req, res, next)` as reminder, it must hav ethe four params to differentiate between error handler and middleware
+	- another Router - another mini app it is both contained in a layer and has its own stack of layers. leads to nested structure of Routers that allows us to create modular mini apps created by invoking Router() on express object. 
+##### Handling requests
+- request is actually handled by: 
+	- iterating the layer stack - loops through the layer stack and calls the handle funciton on every layer with a matching path
+	- path matching - 
