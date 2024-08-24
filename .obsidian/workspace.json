@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "abea1639818e6dd6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4e9c5f9727fae7c2",
             "type": "leaf",
             "state": {
@@ -54,8 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c7293d3d831b0ae8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/The back end.md"
+                "file": "Computer Science/CS50/SQL.md"
               }
             }
           },
@@ -216,20 +217,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "abea1639818e6dd6",
+  "active": "e4efd7a73c8c94ae",
   "lastOpenFiles": [
     "Computer Science/Full Stack Dev/REACT.md",
+    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/NVIM notes.md",
     "Computer Science/CS50/SQL.md",
+    "Computer Science/Full Stack Dev/Git.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/CS50/Python.md",
     "Computer Science/Full Stack Dev/Backend",
     "Computer Science/Full Stack Dev/CSS & HTML/CSS reference Notes.md",
-    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Advanced HTML & CSS.md",
     "Computer Science/Full Stack Dev/Advanced CSS & HTML.md",
-    "Computer Science/Full Stack Dev/Git.md",
     "Computer Science/Bash Notes.md",
     "Computer Science/Full Stack Dev/Full Stack Parking lot.md",
     "Computer Science/Full Stack Dev/Emmet Abbreviations.md",
