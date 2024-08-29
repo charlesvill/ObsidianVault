@@ -736,3 +736,10 @@ app.set("view engine", "ejs");
 
 ###### using EJS with Express
 - first create an EJS template (e.g `index.ejs`)
+
+
+### Deployment
+what is the difference between hosting on github and a more robust hosting platform?
+	- github pages is fine for hosting static web pages but will not work for dynamic nodeJS app
+##### Static vs Dynamic
+ - static - prewritten html css, js pages. 
