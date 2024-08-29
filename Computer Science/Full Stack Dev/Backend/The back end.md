@@ -741,5 +741,25 @@ app.set("view engine", "ejs");
 ### Deployment
 what is the difference between hosting on github and a more robust hosting platform?
 	- github pages is fine for hosting static web pages but will not work for dynamic nodeJS app
+	- NodeJS and dynamic applications require server usage and complex server application which gh pages does not have
+	- the same can be said of netlify and vercel, they do not have options for server/database operations, not good tools for the backend
+	- people like AWS, Googlecloud Azure big complex cloud providers to 
+		- PaaS providers (heroku, railway render, fly.io)
 ##### Static vs Dynamic
  - static - prewritten html css, js pages. 
+ - dyanmic - templates are html might be prewritten but the actual content is not always the same for every user. for example (youtube will give content based on the users you follow, preferences)
+	 - dyanmic require complex server applications
+##### What is PaaS?
+platform as a service - specific kind of hosting provider that handles alto fo the low-level server infrastructure that allow developers to focus on their content and not the server configuration and implementation details
+	- its like a landlord who takes care of utilities, maintenance and security so we can focus on getting furniture, decorating, and living in the space. 
+	- allows average everyday developers to avoid having to learn specialized server management and maintenance knowledge
+- How do they work?
+	- PaaS providers give you virtual 'instances' which are virtual computers that run the app. its like having your computer run the app on local host
+		- having multiple instances is like having sevaral copies of your app running simultaneously which allows you to handle more traffic
+		- You can support a lot of traffic with a single instance so more often than not, a single instance should be more than enough. 
+			- many PaaS will give you your first instance for free
+	- PaaS also give you databases, they do all the configuration and set up for you
+		- some even do automatic backups for you
+	- Doman names - the PaaS will give you a randomly generated domain name, and if you want to create a custom domain, you'll ned to buy one from a registrar like Porkbun or namesilo
+		- you can look for new domain using domainr
+		- PaaS will have documentation on how to point your new domain name with your application
