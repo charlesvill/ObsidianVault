@@ -763,3 +763,4 @@ platform as a service - specific kind of hosting provider that handles alto fo t
 	- Doman names - the PaaS will give you a randomly generated domain name, and if you want to create a custom domain, you'll ned to buy one from a registrar like Porkbun or namesilo
 		- you can look for new domain using domainr
 		- PaaS will have documentation on how to point your new domain name with your application
+	- Error handling - this is where git skills will come in handy. `git log` and `git checkout` will help to revert to different versions of the app that were working better
