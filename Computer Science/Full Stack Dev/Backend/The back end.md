@@ -764,3 +764,5 @@ platform as a service - specific kind of hosting provider that handles alto fo t
 		- you can look for new domain using domainr
 		- PaaS will have documentation on how to point your new domain name with your application
 	- Error handling - this is where git skills will come in handy. `git log` and `git checkout` will help to revert to different versions of the app that were working better
+
+### Forms and Data Handling
