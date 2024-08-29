@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/NVIM notes.md",
+                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/CS50/SQL.md"
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md"
               }
             }
           },
@@ -217,18 +217,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4efd7a73c8c94ae",
+  "active": "c7293d3d831b0ae8",
   "lastOpenFiles": [
-    "Computer Science/Full Stack Dev/REACT.md",
+    "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "Computer Science/CS50/Javascript - CS50.md",
     "Computer Science/NVIM notes.md",
+    "Computer Science/Full Stack Dev/Backend/The back end.md",
+    "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/Git.md",
-    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/CS50/Python.md",
     "Computer Science/Full Stack Dev/Backend",
     "Computer Science/Full Stack Dev/CSS & HTML/CSS reference Notes.md",
-    "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Advanced HTML & CSS.md",
     "Computer Science/Full Stack Dev/Advanced CSS & HTML.md",
     "Computer Science/Bash Notes.md",
@@ -246,7 +247,6 @@
     "Computer Science/Algorithms and Data Structures",
     "Computer Science/TOPICS TO BE HIREABLE.md",
     "Computer Science/CS50/Flask.md",
-    "Computer Science/Full Stack Dev/CSS & HTML/StylingTables.md",
     "Electronics",
     "ObsidianVault/CS50/Flask",
     "Computer Science/Images",
