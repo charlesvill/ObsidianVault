@@ -773,4 +773,36 @@ platform as a service - specific kind of hosting provider that handles alto fo t
 - what are the two steps that should be considered before going off to our server?
 	- *validation* - checking for meeting required criteria (required fields, correct format)
 	- *sanitization* - cleaning user input for potentiallly malicious data from being processed by removing or encoding potentially malicious characters
-- 
+-  `express-validator` - the package we can use to help with sanitizing and validating
+###### getting started with express-validator
+`npm install express-validator`
+- in your app file, `const { body, validationResult } = require("express-validator");`
+- **body()** - allow you express which fields need validation, and sanitization and how t handle it (one body for each)
+```js
+[
+  body("birthdate", "Must be a valid date.")
+    .optional({ values: "falsy" })
+    .isISO8601() // Enforce a YYYY-MM-DD format.
+];
+```
+- notice that this is wrapped in an arrray. do not yet know the purpose of this. 
+- also notice that you can chain selectors and can make things optional but the falsy bit means that if its not undefined or null/ false/ 0 it iwll be validated and check for the correct date format
+```js
+[
+  body("name")
+    .trim()
+    .notEmpty()
+    .withMessage("Name can not be empty.")
+    .isAlpha()
+    .withMessage("Name must only contain alphabet letters."),  
+];
+```
+- notice here that you can a) chain multiple validators and b) have a error message for each validator that is specific to the validation field
+###### escaping user input
+- a form of sanitization is considering the possibility that a form that does not limit the characters you can enter would then hypothetically allow for javascript to be passed and would be run if the output does not feature a way of escaping certain characters that would in specific sequence be run as a script.; 
+	- this is known as cross-site scripting (xss) attack
+	- this is related to the ejs character `<%- %>` this is non escaping that will read the js as it comes, used for raw html output
+		- they're used for includes in ejs templates (`<%- include('user', {user: user}); %>`)
+		- because the html will  be injected in there and you cannot have the escaping apply with the html, 
+	- the solution to this is to escape the output using `<%= %>` this converts html characters into strings and are harmless
+ - *why is not sanitized as it comes in with the .escape() at the end of the body()?* - because its not necessary, that html is harmless in sql and viceversa, there might be contexts in which you dont want that double escaping characters 
