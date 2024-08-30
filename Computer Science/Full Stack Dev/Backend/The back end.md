@@ -824,3 +824,10 @@ const controller = (req, res, next) => {
 ```
 - what this says is that if the array of errors is not empty then return a 400 on the response, and if the arrray is empty then redirect with the /success path
 ##### forms and express routes
+- what does the `app.use(express.urlencoded({ extended: true });` do?
+	- it is a middleware method that will automatically pass the http header from forms into the req.body so we can actually access the form fields.
+		- express by default cannot parse the content-type http header that it comes in by default.
+		- when extended is false the server wil only accept a string or an array of data, 
+			- setting it to true will add some flexibilty in what it can accept
+	- Content-type must match `application/x-www-form-urlencoded` because if not, server will show the data as an empty object {}
+	
