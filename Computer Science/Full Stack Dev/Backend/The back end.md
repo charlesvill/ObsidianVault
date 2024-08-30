@@ -806,6 +806,14 @@ platform as a service - specific kind of hosting provider that handles alto fo t
 		- because the html will  be injected in there and you cannot have the escaping apply with the html, 
 	- the solution to this is to escape the output using `<%= %>` this converts html characters into strings and are harmless
  - *why is not sanitized as it comes in with the .escape() at the end of the body()?* - because its not necessary, that html is harmless in sql and viceversa, there might be contexts in which you dont want that double escaping characters which would render the supposed text all wonky
+ - in web security, when we're talking about escaping, we are actually talking about encoding
+ - *encoding* - involves replacing special characters with aa different representation
+	 - encoding html involves using html entities
+		 - character reference - a pattern of characters that represent and refer to another character (&lt;) -> (<)
+		 - another example is url encoding, / usually means path seperator in url but if you mean literally / character you have to use %2F
+		 - urls use % + hexadecimal number that equates to the ascii code for that character
+- good sanitation should be reversible!
+	- w
 
 ###### validation results
 - once the validation rules are applied, you can use validation result to handle any validation errors:
