@@ -805,4 +805,22 @@ platform as a service - specific kind of hosting provider that handles alto fo t
 		- they're used for includes in ejs templates (`<%- include('user', {user: user}); %>`)
 		- because the html will  be injected in there and you cannot have the escaping apply with the html, 
 	- the solution to this is to escape the output using `<%= %>` this converts html characters into strings and are harmless
- - *why is not sanitized as it comes in with the .escape() at the end of the body()?* - because its not necessary, that html is harmless in sql and viceversa, there might be contexts in which you dont want that double escaping characters 
+ - *why is not sanitized as it comes in with the .escape() at the end of the body()?* - because its not necessary, that html is harmless in sql and viceversa, there might be contexts in which you dont want that double escaping characters which would render the supposed text all wonky
+
+###### validation results
+- once the validation rules are applied, you can use validation result to handle any validation errors:
+```js
+const controller = (req, res, next) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).render("index", {
+      errors: errors.array(),
+    });
+  }
+
+  // do stuff if successful
+  res.redirect("/success");
+};
+```
+- what this says is that if the array of errors is not empty then return a 400 on the response, and if the arrray is empty then redirect with the /success path
+- 
