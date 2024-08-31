@@ -200,3 +200,4 @@ Once its installed on the computer, run this command to start the server
 - `sudo -i -u postgres createuser --interactive`
 	- setting up user this way as a superuser helps you leverage "peer authentication" making using local database very easy
 		- dont know why
+- one thing to note is that each role must have a database of the same name
