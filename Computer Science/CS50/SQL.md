@@ -189,3 +189,14 @@ HAVING
   HAVING posts_written >= 10;
 ```
 - notice that the having is at the end
+
+
+### Installing PostgreSql
+Once its installed on the computer, run this command to start the server
+`sudo systemctl start postgresql.service && systemctl status postgresql.service`
+- in order to connect it to our express application we have to set up a role / user that postgresql authenticates to be able to interact with the service. 
+- you can set up a role with the same name as your linux
+	- you can use `whoami` to see what the name of the linux computer is
+- `sudo -i -u postgres createuser --interactive`
+	- setting up user this way as a superuser helps you leverage "peer authentication" making using local database very easy
+		- dont know why
