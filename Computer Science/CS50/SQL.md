@@ -201,3 +201,10 @@ Once its installed on the computer, run this command to start the server
 	- setting up user this way as a superuser helps you leverage "peer authentication" making using local database very easy
 		- dont know why
 - one thing to note is that each role must have a database of the same name
+
+#### PostGreSql conventions
+- Auto incrementing ids?
+	- in Sqlite you used `id INTEGER AUTOINCREMENT UNIQE` 
+	- but in postgre you use: `id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY` 
+		- this will ensure that the id always has a unique id number that tracks the number of rows and columns ot make sure that this goal is met. 
+		- it will automatically create a 
