@@ -202,6 +202,50 @@ Once its installed on the computer, run this command to start the server
 		- dont know why
 - one thing to note is that each role must have a database of the same name
 
+### Using PostGreSQL
+- client vs pool
+	- - client is an individual connection to a DB and you manuallly manage it, you open the connection, do the query and then close it. it's fine for one-off queries but can get expensive if you have alot of queries
+	- a pool is a pool of clients. a pool holds onto connections, 
+		- if you run another query and you ahve a connection open, it will reuse that one or programmatically open a new one if needed.
+#### getting started with PostGreSQL
+- run `npm install pg`
+- create a db/ folder and a pool.js and queries.js file
+pool.js
+```js
+const { Pool } = require("pg");
+
+// All of the following properties should be read from environment variables
+// We're hardcoding them here for simplicity
+module.exports = new Pool({
+  host: "localhost", // or wherever the db is hosted
+  user: "<role_name>",
+  database: "top_users",
+  password: "<role_password>",
+  port: 5432 // The default port
+});
+```
+- Look into what this should look like as environment variables
+
+queries.js
+```js
+const pool = require("./pool");
+
+async function getAllUsernames() {
+  const { rows } = await pool.query("SELECT * FROM usernames");
+  return rows;
+}
+
+async function insertUsername(username) {
+  await pool.query("INSERT INTO usernames (username) VALUES ($1)", [username]);
+}
+
+module.exports = {
+  getAllUsernames,
+  insertUsername
+};
+```
+- notice the $1, that is known as parameterization to avoid sql injection attacks like were seen in cs50 with sqlite3 ?
+
 #### PostGreSql conventions
 - Auto incrementing ids?
 	- in Sqlite you used `id INTEGER AUTOINCREMENT UNIQE` 
