@@ -252,3 +252,11 @@ module.exports = {
 	- but in postgre you use: `id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY` 
 		- this will ensure that the id always has a unique id number that tracks the number of rows and columns ot make sure that this goal is met. 
 		- it will automatically create a 
+##### How to log in to your db
+- in your terminal, hit `psql` to start up postgres
+- `\l` to see the current dbs in your instance
+- `\c <dbname>` to connect to it
+	- you should see `<dbname>=#` on the command prompt
+- 
+
+
