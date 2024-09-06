@@ -325,3 +325,8 @@ and this will be printed:
 3: two=three
 4: four
 ```
+##### first DB project
+- creating a mini message board that should be able to Create, Read, Update, Delete
+###### what is the 'dotenv' package for?
+- in order to pass the local connection and password information to the config of the db pool, you need to import the 'dotenv' npm package to be able to read environment variables
+- `node install dotenv --save`
