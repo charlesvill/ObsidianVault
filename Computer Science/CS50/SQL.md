@@ -257,6 +257,45 @@ module.exports = {
 - `\l` to see the current dbs in your instance
 - `\c <dbname>` to connect to it
 	- you should see `<dbname>=#` on the command prompt
-- 
+##### how to dynamically create your table schema
+```js
+#! /usr/bin/env node
 
+const { Client } = require("pg");
+
+const SQL = `
+CREATE TABLE IF NOT EXISTS usernames (
+  id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  username VARCHAR ( 255 )
+);
+
+INSERT INTO usernames (username) 
+VALUES
+  ('Bryan'),
+  ('Odin'),
+  ('Damon');
+`;
+
+async function main() {
+  console.log("seeding...");
+  const client = new Client({
+    connectionString: "postgresql://<role_name>:<role_password>@localhost:5432/top_users",
+  });
+  await client.connect();
+  await client.query(SQL);
+  await client.end();
+  console.log("done");
+}
+
+main();
+```
+- the shebang at the top is some sort of operating system note to tell it how to run this program by looking for node. not sure how necessary it is if one already has node installed globally on your computer
+- but noice that it sets up a client session passing through the authentication credentials, it queries the creation of the columns and inserts some items there, and then it ends the session. 
+###### populating prodution dbs
+- in a production environment, this script would actually only populate the db of the local db because the local db connection was hardcoded. 
+- we need a way to manipulate env variables to have the production server db to run the script
+- the easiest way to do it is by providing the connection information as an argument to the script. 
+	- this way it can run the script for the local db as well as production db
+	- you can access arguments via process.argv
+	
 
