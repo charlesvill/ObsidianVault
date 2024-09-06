@@ -203,6 +203,7 @@ Once its installed on the computer, run this command to start the server
 - one thing to note is that each role must have a database of the same name
 
 ### Using PostGreSQL
+**pg node documentation** : https://node-postgres.com/
 - client vs pool
 	- - client is an individual connection to a DB and you manuallly manage it, you open the connection, do the query and then close it. it's fine for one-off queries but can get expensive if you have alot of queries
 	- a pool is a pool of clients. a pool holds onto connections, 
@@ -297,5 +298,30 @@ main();
 - the easiest way to do it is by providing the connection information as an argument to the script. 
 	- this way it can run the script for the local db as well as production db
 	- you can access arguments via process.argv
-	
+```bash
+# populating local db 
+node db/populatedb.js <local-db-url>
 
+# populating production db
+# run it from your machine once after deployment of your app & db
+node db/populatedb.js <production-db-url>
+```
+- this is how it would look like to get it populated on both local and the server db
+- make sure the script has argv imported so you can actually pass arguments to the script via:
+```js
+const { argv } = require('node:process');
+
+// print process.argv
+argv.forEach((val, index) => {
+  console.log(`${index}: ${val}`);
+});
+```
+then run `node process-args.js one two=three four`
+and this will be printed: 
+```shell
+0: /usr/local/bin/node
+1: /Users/mjr/work/node/process-args.js
+2: one
+3: two=three
+4: four
+```
