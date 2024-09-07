@@ -334,3 +334,12 @@ and this will be printed:
 - then create a `.env` file so you can feed the authentitcation details from the .env file
 - your variable follow the pattern `DB_HOST="localhost"` with no semi colon
 - then you call them with `process.env.DB_HOST`
+
+###### wildcard selectors in postgreSql
+- in the query:  "`SELECT * FROM table WHERE column LIKE $1`", `[var]`
+	- $1 indicates the number of variables passed in the array, and after that, you need to pass all the variables that will go in there
+- your variable with a wildcard selector needs to be formatted to include the wild card selector as a string. then pass the formatted string as the variable: 
+```js
+const fQuery = `%${query}%`;
+```
+- reminder that the wildcard before and after means that the search has the query inside of it
