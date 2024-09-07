@@ -330,3 +330,5 @@ and this will be printed:
 ###### what is the 'dotenv' package for?
 - in order to pass the local connection and password information to the config of the db pool, you need to import the 'dotenv' npm package to be able to read environment variables
 - `node install dotenv --save`
+- then in your file using enviroment variables: `require('dotenv').config()`
+- then create a `.env` file so you can feed the authentitcation details from the .env file
