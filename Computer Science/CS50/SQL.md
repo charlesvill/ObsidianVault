@@ -332,3 +332,5 @@ and this will be printed:
 - `node install dotenv --save`
 - then in your file using enviroment variables: `require('dotenv').config()`
 - then create a `.env` file so you can feed the authentitcation details from the .env file
+- your variable follow the pattern `DB_HOST="localhost"` with no semi colon
+- then you call them with `process.env.DB_HOST`
