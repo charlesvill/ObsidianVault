@@ -225,7 +225,16 @@ module.exports = new Pool({
   port: 5432 // The default port
 });
 ```
-- Look into what this should look like as environment variables
+- Look into what this should look like as environment variables - it should look like this: 
+```js
+module.exports = new Pool({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT
+});
+```
 
 queries.js
 ```js
