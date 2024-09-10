@@ -262,6 +262,10 @@ module.exports = {
 	- but in postgre you use: `id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY` 
 		- this will ensure that the id always has a unique id number that tracks the number of rows and columns ot make sure that this goal is met. 
 		- it will automatically create a 
+- Property types
+	- `username VARCHAR (255)` : postgresql you either fixed string or variable string. varchar is a variable string that allows for a difference in length for the string. 
+		 - the 255 means the maximum length it can be. if it goes larger than that, postgre will throw an error.
+		- its not really true that you need to choose one or the other for string types. you can also use TEXT just like sqlite and you can store up to 1gb of information but it's more of a way to govern the input data. not really a performance difference between the two that would be significant. 
 ##### How to log in to your db
 - in your terminal, hit `psql` to start up postgres
 - `\l` to see the current dbs in your instance

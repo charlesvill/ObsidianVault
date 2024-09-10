@@ -55,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/CS50/SQL.md"
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md"
               }
             }
           },
@@ -216,10 +217,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e9c5f9727fae7c2",
+  "active": "c7293d3d831b0ae8",
   "lastOpenFiles": [
-    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/CS50/SQL.md",
+    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/CS50/Javascript - CS50.md",
