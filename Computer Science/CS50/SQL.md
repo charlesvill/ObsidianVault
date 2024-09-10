@@ -352,3 +352,4 @@ and this will be printed:
 const fQuery = `%${query}%`;
 ```
 - reminder that the wildcard before and after means that the search has the query inside of it
+*dont forget that sql using single quotes for string literals like selecting a cell member. if you use double quotes, it will think you're trying to select a column of the name of the string literal you entered. *
