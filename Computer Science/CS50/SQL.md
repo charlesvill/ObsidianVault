@@ -361,3 +361,8 @@ const fQuery = `%${query}%`;
 ###### conventions with querying
 - remeber that to get a query, you need to deconstruct the row from the query method `const { rows } = db.query('SELECT...');`
 - also remember that it will return an array. so you either run a map method or if you're expecting a single object, you 
+*passing multiple values*
+- if you are inserting multiple variables, you need to make to space out every variable like this: 
+```js
+await pool.query("INSERT INTO messages (name, content, time) VALUES ($1, $2, $3)", [message.name, message.content, message.time]);
+```
