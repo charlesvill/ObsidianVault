@@ -137,8 +137,13 @@ PRIMARY KEY - a numeric sequence  that identifies a specific table
 FOREIGN KEY - presence of primary keys in a different table that is not the specific table it identifies like the table that connects the show id with the actor id
 - the presence of primary and foreign keys is what allows us to connect relationships between these tables. aka relational databases
 JOIN - 
+#### Creating tables
+##### creating tables with foreign keys referencing other tables
+-consider this example: 
+![[Pasted image 20240914163711.png]]
+- notice how stars has datatypes "show_id" and "person_id" that references the primary key id in people and id in shows respectively. how does one create that structure in your tables?
 
-- what does it look like to link two databases together?
+- you link or refer to other databases together by adding a creating a column detailed below
 	- `FOREIGN KEY(show_id) REFERENCES shows(id)` 
 		- this says that in the current table the datatype show_id is a primary key in the shows id which is a different table and it connects them
 - what is a nested query?
