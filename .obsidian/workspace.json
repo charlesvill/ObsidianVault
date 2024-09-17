@@ -54,6 +54,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6bf06538370277a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Science/Full Stack Dev/REACT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -218,14 +230,14 @@
   },
   "active": "4e9c5f9727fae7c2",
   "lastOpenFiles": [
+    "Computer Science/Full Stack Dev/REACT.md",
+    "Computer Science/CS50/SQL.md",
     "Pasted image 20240914163711.png",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
-    "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/CS50/Javascript - CS50.md",
     "Computer Science/NVIM notes.md",
-    "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/Git.md",
     "Computer Science/CS50/Python.md",
     "Computer Science/Full Stack Dev/Backend",
