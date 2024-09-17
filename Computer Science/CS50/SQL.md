@@ -41,6 +41,8 @@ SELECT name FROM world
 ##### getting overview of the database
 - you can see how the db is organized with the `.schema` command and even do `.schema tablename` for a specific table
 ##### Creating a table
+- syntax of a table: 
+- make sure to include an id for each table even if it is autoincrementing
 ```sql
 
 CREATE TABLE todo_list (id INTEGER PRIMARY KEY, item TEXT, minutes INTEGER);
@@ -139,6 +141,7 @@ FOREIGN KEY - presence of primary keys in a different table that is not the spec
 JOIN - 
 #### Creating tables
 ##### creating tables with foreign keys referencing other tables
+- for uniqueness in selecting rows, it recommended that every table has a primary key even if it is just an autoincrementing one. this prevents the possiblity of joins from matching with more than one row, leading to issues. 
 -consider this example: 
 ![[Pasted image 20240914163711.png]]
 - notice how stars has datatypes "show_id" and "person_id" that references the primary key id in people and id in shows respectively. how does one create that structure in your tables?
