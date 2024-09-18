@@ -170,7 +170,12 @@ JOIN -
 		- this says that in the current table the datatype show_id is a primary key in the shows id which is a different table and it connects them
 ![[Pasted image 20240918071044.png]]
 ###### one to one relationships vs one to many relationships
-- one to one - 
+- one to one - a row in table A relates to exactly one row in table B, and vice versa. ex: users table and social security numbers table. 
+	- to make one to one, you have a foreign key that references the other table (can be in either) 
+	- the `UNIQUE` key word ensures that it is a one-to-one relationship
+	- use case is for secuity purposes or other matters that require one to one
+- one to many - a row in table A relates to exactly one row in table B, but a row in table B can relate to many in table A. ex: cars table and manufacturers table. a car can have only one manufacturer but a manufacturer can have many cars
+	- to make one-to-many, you have to put the foreign key in the 'many' side of the relationship, which is the side that there can be 'many' of compared to the other. 
 - what is a nested query?
 	- with two tables like ratings and shows, if you want the show title for the specific rating query, you can nest a query to get custom results
 
