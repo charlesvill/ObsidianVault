@@ -97,7 +97,26 @@ SELECT name FROM songs WHERE artist_id IN (
 - you need to pipe the contents of the .sql file into the sqlite. so you can run `cat filename.sql | sqlite3 movies.db`
 - alternatively, you can also run: `cat filename.sql | sqlite3 movies.db > output.txt` 
 	- this will output the results in a text file so that you can see how many lines your query takes up
-
+##### JOIN vs inner query
+```sql
+SELECT title
+FROM shows
+WHERE id IN (
+    SELECT show_id
+    FROM ratings
+    WHERE rating >= 6.0
+    LIMIT 10
+)
+```
+- this inner join is specifying what to return from the original table by seeing what column entries will be found in the second tables select statement. the second statement runs the query and then the outer query uses the results from first query to see what the identified "where id in" column matches with the innder query. allows for efficient queries that are very specific parameters but maybe you only want a title or something found in the first table not available in the second table. 
+- here is the join query: 
+```sql
+SELECT * FROM shows
+  JOIN ratings on shows.id = ratings.show_id
+  WHERE rating >= 6.0
+  LIMIT 10;
+```
+notice here you are getting everything from both shows and ratings and specificfying critera for rows to return. you can also specify one or more specific columns to return data for instead of everything. essentially you could get very similiar results to doing somethintg like a nested query or inner query. 
 ##### Joining a Query from two different tables
 - you need the keyword JOIN (though you can achieve similar effect without join keyword)
 - what does JOIN do and how do you use it?
