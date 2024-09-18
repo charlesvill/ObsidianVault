@@ -149,6 +149,8 @@ JOIN -
 - you link or refer to other databases together by adding a creating a column detailed below
 	- `FOREIGN KEY(show_id) REFERENCES shows(id)` 
 		- this says that in the current table the datatype show_id is a primary key in the shows id which is a different table and it connects them
+###### one to one relationships vs one to many relationships
+- one to one - 
 - what is a nested query?
 	- with two tables like ratings and shows, if you want the show title for the specific rating query, you can nest a query to get custom results
 
