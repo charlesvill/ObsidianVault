@@ -443,6 +443,8 @@ module.exports = authorsRouter;
 ### Controllers
 - known as a middle man that is the brains of the operation that delegates to other systems what to do. 
 	- it is really a function with really well-defined responsibilities as part of the MVC pattern
+	- it sits between the view and the model that references both in its files and calls functions in both to either request updates or fetch data from the model or calling a function passsing the updated data to the view. 
+	- The controller also might handle the input validation that will later be seen to sanitize user input
 - What is the MVC pattern?
 	- Model - View - Controller : a design pattern for web applications where the model is the data logic inthe back end that handles storing and quering data as well as applying logic, algorithms etc. the View is the user interface that displays the data processed by the model and the controller is the middle man between the backend and the frontend that handles how user interactions are routed and what data gets passed to the backend Model to process or store. 
 - what is the difference in responsibilities in something like a router vs a controller?
@@ -463,6 +465,8 @@ module.exports = authorsRouter;
 	- Easy to scale - 
 		- because of the seperation of purposes, it is easier to think separately about your application and "chunk" a task or functionality that needs to expand without having to consider a larger context of logic that is intertwinded with the part that needs scaling. 
 		- expanding on the previous point - its easier to think of a focus component in a vacuum, or isolated and focus on its contribution or goal for scaling and not so much on other components that are interacting with it. 
+	- Easy to Understand- 
+		- because of the separation of concerns it should be easier to understand what each component does
 #### Handling responses
 - example of methods you might use in controllers: 
 	- `res.send()` - this is flexible and will set the `Content-Type` header based onthe data you pass it
@@ -490,6 +494,8 @@ app.use((req, res) => {
 a core concept in express and play important role in handling requests and responses. 
 - they sit between the incoming request and the final intended route handler
 **parking lot**:
+- how does middleware fit in context with MVC pattern? 
+	- it falls under the umbrella of controller that might call the model to request data, and eventually sends a response 
 - in practical terms, what is the difference between req.use() and router.use()/router.get()
 	- essentially same methods in different instances/scoping 
 ##### anatomy of middle ware function
@@ -550,6 +556,7 @@ controllers are just functions that also classify as middleware that are used by
 ###### sample controller
 ```js
 // user controller file - controllers/userController.js
+import someDBQueryToGetUser from "db/queries";
 
 const getUserById = async (req, res) => {
   const userId = req.params.id;
