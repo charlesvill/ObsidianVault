@@ -709,7 +709,7 @@ app.listen(port, () => console.log(`Realworld app listening on port ${port}!`))
 	- every time use() method used on express app or router, creating a new layer in the routers stack.
 ###### Layers
 - Layer can be one of the following: 
-	- Middleware - fn with the signature `func(req, ress, next)` usually runs code, mofieis the req or res and at the end, either sends the response or calles the next layer.
+	- Middleware - fn with the signature `func(req, ress, next)` usually runs code, modifies the req or res and at the end, either sends the response or calles the next layer.
 	- Route - also has the  `func(req, res, next)` but consists of the actual Request handlers for one or more http method types (get, put, post). it also typically hs the business logic to process the request and send response, it can also throw the error or call the next func with error as first param
 	- Error handler - handles errors thrown by previous layers and has the form of `func(error, req, res, next)` as reminder, it must hav ethe four params to differentiate between error handler and middleware
 	- another Router - another mini app it is both contained in a layer and has its own stack of layers. leads to nested structure of Routers that allows us to create modular mini apps created by invoking Router() on express object. 
