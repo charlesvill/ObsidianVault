@@ -448,12 +448,21 @@ module.exports = authorsRouter;
 - what is the difference in responsibilities in something like a router vs a controller?
 	- the Router handles what path will be accepted as well as what controller it will hand it off to
 	- the Controller is a seperate file that is the logic of what happens with the data. it will handle requesting from the model a query, reshaping the data, and sending the response to the view 
+	- a router more or less is a controller  but there is value in specifiying them as being different or specific tasks within the function of a controller enough to warrant its own separate directory folder path
 - rough flow of responsibilites: with a query of `https://domainname/users`
 	- Request arrives at app to (/)
 	- app middleware handles any app wide processing like authentication etc.
 	- Router will match with /users and hands off to the router 
 	- Router will call any middle ware it needs for that scope/instance such as authentication, error checking and then hand off to a specific controller to handle the response logic
 	- controller applies business logic and closes response cycle with either 200 success and data or error codes
+##### Principles of MVC
+- when thinking about if your application logic is being faithful to the MVC pattern, consider the principle values behind following an MVC pattern: 
+	- Easy to maintain - 
+		- when you need to fix something, you know based on what it is you need to fix where to look because the project file directory files are organized by their purpose in the application. 
+		- Fixing one component does not involve having to fix or refactor a bunch of other code that is not involved in the direct fix
+	- Easy to scale - 
+		- because of the seperation of purposes, it is easier to think separately about your application and "chunk" a task or functionality that needs to expand without having to consider a larger context of logic that is intertwinded with the part that needs scaling. 
+		- expanding on the previous point - its easier to think of a focus component in a vacuum, or isolated and focus on its contribution or goal for scaling and not so much on other components that are interacting with it. 
 #### Handling responses
 - example of methods you might use in controllers: 
 	- `res.send()` - this is flexible and will set the `Content-Type` header based onthe data you pass it
