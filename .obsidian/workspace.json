@@ -55,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/CS50/SQL.md"
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md"
               }
             }
           },
@@ -216,16 +217,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4efd7a73c8c94ae",
+  "active": "c7293d3d831b0ae8",
   "lastOpenFiles": [
+    "Computer Science/CS50/SQL.md",
+    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Pasted image 20240918071044.png",
     "Computer Science/CS50/Python.md",
     "Computer Science/CS50/Flask.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
-    "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/REACT.md",
     "Pasted image 20240914163711.png",
-    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/CS50/Javascript - CS50.md",
     "Computer Science/NVIM notes.md",
@@ -260,7 +261,6 @@
     "Images/Pasted image 20230707124826.png",
     "Images/Pasted image 20230707124341.png",
     "Images/Pasted image 20230627125830.png",
-    "Images/Pasted image 20230627115812.png",
     "Computer Science/C++",
     "Computer Science/Full Stack Dev/Javascript",
     "Computer Science/CS50",
