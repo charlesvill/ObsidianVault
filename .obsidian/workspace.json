@@ -117,7 +117,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -215,7 +216,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e9c5f9727fae7c2",
+  "active": "e4efd7a73c8c94ae",
   "lastOpenFiles": [
     "Pasted image 20240918071044.png",
     "Computer Science/CS50/Python.md",
