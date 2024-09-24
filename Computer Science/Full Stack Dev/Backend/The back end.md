@@ -752,7 +752,7 @@ app.set("view engine", "ejs");
 
 ###### using EJS with Express
 - first create an EJS template (e.g `index.ejs`)
-
+- to display, hit it with a `res.render("viewname")`
 
 ### Deployment
 what is the difference between hosting on github and a more robust hosting platform?
