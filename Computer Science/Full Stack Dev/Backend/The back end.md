@@ -624,6 +624,19 @@ app.use((err, req, res, next) => {
 });
 ```
 - when it eventually gets to our middleware error handler, it should give the error object status code. and if there isnt one, that means that there was some server error and that should be 500
+###### handling undefined errors
+```js
+app.use("/", indexRouter);
+// app.use("/search", searchRouter);
+
+// 404 handler for undefined routes
+app.use((req, res, next) => {
+  res.status(404).send("404: not found!");
+});
+```
+- see this example, this will catch all other paths and return the 404 not found.
+	- **MAKE SURE YOUR ROUTER IS USING ROUTER.GET AND NOT .USE OR ELSE IT WONT WORK**
+
 
 ##### The next function
 ```js
@@ -752,7 +765,7 @@ app.set("view engine", "ejs");
 
 ###### using EJS with Express
 - first create an EJS template (e.g `index.ejs`)
-- to display, hit it with a `res.render("viewname")`
+- to display, hit it with a `res.render("viewname)`
 
 ### Deployment
 what is the difference between hosting on github and a more robust hosting platform?
@@ -855,5 +868,4 @@ const controller = (req, res, next) => {
 		- express by default cannot parse the content-type http header that it comes in by default.
 		- when extended is false the server wil only accept a string or an array of data, 
 			- setting it to true will add some flexibilty in what it can accept
-	- Content-type must match `application/x-www-form-urlencoded` because if not, server will show the data as an empty object {}
-	
+	- Content-type must match `application/x-www-form-urlencoded` because if not, server will show the data as an empty object 
