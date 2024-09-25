@@ -351,6 +351,14 @@ app.listen(PORT, () => console.log(`you are listening on port ${PORT}`));
 		- I was not however able to handle the index '/' with a single app.get() like Iwas able to do with just node.js. perhaps this is the cost of moving with a framework when all you have is a static website
 	- update: I could have used `"/(:name)"` that would either match with "/" or some thing else that is a dynamically accessed parameter
 
+##### Loading assets into express app
+```js
+const path = require("path");
+
+const assetsPath = path.join(__dirname, "public");
+app.use(express.static(assetsPath));
+```
+- include this in your main app.js express app. make sure that you have the path object imported 
 ### Routes
 routes allow us to match a requests http verb (get or post) and URL path to the appropriate middleware functions. 
 
