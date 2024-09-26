@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/The back end.md"
+                "file": "Computer Science/CS50/SQL.md"
               }
             }
           },
@@ -217,10 +216,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7293d3d831b0ae8",
+  "active": "4e9c5f9727fae7c2",
   "lastOpenFiles": [
-    "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
+    "Computer Science/CS50/SQL.md",
     "Pasted image 20240918071044.png",
     "Computer Science/CS50/Python.md",
     "Computer Science/CS50/Flask.md",

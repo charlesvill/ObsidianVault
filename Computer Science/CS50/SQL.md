@@ -67,7 +67,14 @@ inserting rows into SQL `INSERT INTO favorites (language, problem) VALUES('SQL',
 - use single quotes for string literals
 ##### updating the table
 - if you need to make changes to the data because it needs to be cleaned, syntax: 
-	- `UPDATE table SET column = value WHERE condition;`
+```sql
+UPDATE table_name
+SET column_name = new_value
+WHERE condition;
+```
+- do this when you need to change a specific column to something else with a specific row value. 
+
+
 data types in sql: 
 blob- binary large object, some file of 0s and 1s
 integer- just integers proper
