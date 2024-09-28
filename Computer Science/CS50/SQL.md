@@ -85,6 +85,10 @@ text- strings
 ```sql
 ALTER TABLE table_name ADD COLUMN column_name column_type;
 ``` 
+###### updating table with foreign key postgresql
+```sql
+
+```
 ##### QUERY data from more than one table
 - the relational part of the databases allows you to pull from different tables in structured ways. 
 - for example if the songs table has the id for the artist and the artists table also has the artist id, you can make queries from both tables using the id. 
@@ -190,7 +194,7 @@ CREATE TABLE powertrains (
         ON DELETE CASCADE
 );
 ```
-- notice here how it makes the column type first and then at the end it adds the constraint 
+- notice here how it makes the column type first and then at the end it adds the constrain 
 ###### one to one relationships vs one to many relationships
 - one to one - a row in table A relates to exactly one row in table B, and vice versa. ex: users table and social security numbers table. 
 	- to make one to one, you have a foreign key that references the other table (can be in either) 
