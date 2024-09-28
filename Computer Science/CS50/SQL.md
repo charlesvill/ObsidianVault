@@ -87,8 +87,13 @@ ALTER TABLE table_name ADD COLUMN column_name column_type;
 ``` 
 ###### updating table with foreign key postgresql
 ```sql
-
+ALTER TABLE powertrains
+ADD COLUMN car_id INT,
+ADD CONSTRAINT fk_car
+FOREIGN KEY (car_id) REFERENCES cars (car_id)
+ON DELETE CASCADE;
 ```
+- this is specifically when adding a column and you also need to 'add'  constraint for the foreign key
 ##### QUERY data from more than one table
 - the relational part of the databases allows you to pull from different tables in structured ways. 
 - for example if the songs table has the id for the artist and the artists table also has the artist id, you can make queries from both tables using the id. 
