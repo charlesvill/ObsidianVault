@@ -94,6 +94,7 @@ FOREIGN KEY (car_id) REFERENCES cars (car_id)
 ON DELETE CASCADE;
 ```
 - this is specifically when adding a column and you also need to 'add'  constraint for the foreign key
+- do not forget to include the parentheses on the column values you are searching for, because it will not work without it. cl
 ##### QUERY data from more than one table
 - the relational part of the databases allows you to pull from different tables in structured ways. 
 - for example if the songs table has the id for the artist and the artists table also has the artist id, you can make queries from both tables using the id. 
