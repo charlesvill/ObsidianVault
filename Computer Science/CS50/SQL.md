@@ -174,8 +174,23 @@ JOIN -
 
 - you link or refer to other databases together by adding a creating a column detailed below
 	- `FOREIGN KEY(show_id) REFERENCES shows(id)` 
-		- this says that in the current table the datatype show_id is a primary key in the shows id which is a different table and it connects them
+		 - this says that in the current table the datatype show_id is a primary key in the shows id which is a different table and it connects them
 ![[Pasted image 20240918071044.png]]
+###### postgres creating table w/ foreign keys
+```sql
+CREATE TABLE powertrains (
+    powertrain_id SERIAL PRIMARY KEY,
+    car_id INT,
+    engine_type VARCHAR(255),
+    transmission_type VARCHAR(255),
+    -- Foreign key constraint
+    CONSTRAINT fk_car
+        FOREIGN KEY (car_id) 
+        REFERENCES cars (car_id)
+        ON DELETE CASCADE
+);
+```
+- notice here how it makes the column type first and then at the end it adds the constraint 
 ###### one to one relationships vs one to many relationships
 - one to one - a row in table A relates to exactly one row in table B, and vice versa. ex: users table and social security numbers table. 
 	- to make one to one, you have a foreign key that references the other table (can be in either) 
