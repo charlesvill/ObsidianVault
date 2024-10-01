@@ -18,7 +18,10 @@ great interactive course for advanced sql topics such as mathematical functions:
  - example of accessing data from a table with column id and title: 
 	 - `SELECT (COUNT(DISTINCT(title)) FROM shows;` 
 		 - this will give you the number of distinct titles from the table shows. you can chain commands. distinct meaning that if you get repeating of the title you're selecting, it will ignore the repeats
-	- the idea is that you're specifiying what data you want to see by chaining these commands in ways that will net what you want. 
+```sql
+SELECT DISTINCT columnname FROM tablename;
+```
+- the idea is that you're specifiying what data you want to see by chaining these commands in ways that will net what you want. 
 - more commands include: 
 	- WHERE - filter out data can meet conditionals
 	- LIKE - accepts similarities:
@@ -218,7 +221,11 @@ What do the autoincrement fields do in Sqlite tables?
 	- the autoincrement field will create a separate table that will track the row ids for rows as they are added and deleted to make sure that there will always be a unique row id for each of the elements. 
 
 What does the UNIQUE keyword do?
-	- when making a table, giving something the UNIQUE keyword will ensure that the elements in that column will not have a repeating number or similar characteristic. if it does, sqlite will throw an error see app.py in finance folder in cs50 for context
+
+
+
+
+when making a table, giving something the UNIQUE keyword will ensure that the elements in that column will not have a repeating number or similar characteristic. if it does, sqlite will throw an error see app.py in finance folder in cs50 for context
 Indexing unique vs non unique:
 		- Unique:
 		- Non-Unique: this allows a column to have rows that have the same index value for more rapid queries. it will however take longer to insert and update. 
