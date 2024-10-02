@@ -66,7 +66,7 @@ inserting rows into SQL `INSERT INTO favorites (language, problem) VALUES('SQL',
 ##### conventions in SQL
 - you use capital letters for sql commads
 - use single quotes for string literals
-##### updating the table
+##### updating the table values
 - if you need to make changes to the data because it needs to be cleaned, syntax: 
 ```sql
 UPDATE table_name
@@ -75,6 +75,10 @@ WHERE condition;
 ```
 - do this when you need to change a specific column to something else with a specific row value. 
 
+###### updating the table columns
+```sql
+
+```
 
 data types in sql: 
 blob- binary large object, some file of 0s and 1s
