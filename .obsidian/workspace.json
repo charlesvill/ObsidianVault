@@ -49,13 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Thinking like a Programmer.md",
+                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/CS50/SQL.md"
+                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md"
               }
             }
           },
@@ -216,11 +217,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e29ca8c10e6e4efc",
+  "active": "8f6a530ed81bd298",
   "lastOpenFiles": [
-    "Computer Science/Full Stack Dev/Backend/The back end.md",
-    "Computer Science/CS50/SQL.md",
     "Computer Science/Thinking like a Programmer.md",
+    "Computer Science/CS50/SQL.md",
+    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/REACT.md",
     "Pasted image 20240918071044.png",
     "Computer Science/CS50/Python.md",
