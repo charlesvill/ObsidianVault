@@ -40,7 +40,6 @@ SELECT name FROM world
 	- GROUP BY - organize the information by number of instances of repeating items
 		- `SELECT language, COUNT(*) FROM favorites GROUP BY language;`
 			  - what this does is selects two seperate columns and displays the total count of instances of each language
-	- 
 ##### getting overview of the database
 - you can see how the db is organized with the `.schema` command and even do `.schema tablename` for a specific table
 ##### Creating a table
@@ -52,7 +51,6 @@ CREATE TABLE todo_list (id INTEGER PRIMARY KEY, item TEXT, minutes INTEGER);
 ```
 ##### Inserting rows into a table
 ```sql
-
 INSERT INTO store VALUES (0, "Kyosho inferno", 400);
 ```
 

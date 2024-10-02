@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md"
+                "file": "Computer Science/CS50/SQL.md"
               }
             }
           },
@@ -217,8 +216,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f6a530ed81bd298",
+  "active": "e29ca8c10e6e4efc",
   "lastOpenFiles": [
+    "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/Thinking like a Programmer.md",
     "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
@@ -226,7 +226,6 @@
     "Pasted image 20240918071044.png",
     "Computer Science/CS50/Python.md",
     "Computer Science/CS50/Flask.md",
-    "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Pasted image 20240914163711.png",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/CS50/Javascript - CS50.md",
