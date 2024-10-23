@@ -32,7 +32,7 @@ what a request looks like:
 - clearly defined method of communication, an interface created by the back end 
 
 ###### what is middle ware?
-- code that runs on the server between the request and the response back to the client
+- code that runs on the server between the request and the re to the client
 ### Introduction to frameworks
 - basically the main idea is in efforts of not reinventing the wheel when it comes to web development: 
 	- many sites have overlapping features such as authentication, form validation, routing, connections with databases with code that can be reused instead of having to rewrite it every single time 
