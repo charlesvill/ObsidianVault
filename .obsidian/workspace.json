@@ -76,21 +76,9 @@
               "icon": "lucide-file",
               "title": "Intermediate Javascript"
             }
-          },
-          {
-            "id": "6c960b0ed49a6413",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.4"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -177,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +175,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for SQL"
+              "title": "Backlinks for The back end"
             }
           },
           {
@@ -196,12 +184,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/CS50/SQL.md",
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from SQL"
+              "title": "Outgoing links from The back end"
             }
           },
           {
@@ -223,10 +211,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/CS50/SQL.md"
+                "file": "Computer Science/Full Stack Dev/Backend/The back end.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of SQL"
+              "title": "Outline of The back end"
             }
           },
           {
@@ -271,13 +259,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6c960b0ed49a6413",
+  "active": "c7293d3d831b0ae8",
   "lastOpenFiles": [
+    "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
-    "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Thinking like a Programmer.md",
     "Pasted image 20240918071044.png",
     "Computer Science/CS50/Python.md",

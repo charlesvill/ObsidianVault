@@ -745,7 +745,69 @@ app.listen(port, () => console.log(`Realworld app listening on port ${port}!`))
 	- Error handling- error handling middlware/funcs are the same stack as middlewares routers, and routes. 
 		- each handle function of any layer is called by a wrapper function either a`handle_request` or `handle_error`. it also has an internal layerError variable that is initialized to null and when something is passed as obj through the next() method, its stored in that layerError variable. 
 			- when the object passed in next() is errored state, Router will switch to calling <strong>handle_error</strong> instead and will only call the error handler 
+##### Example Router with Middle ware and controller
 
+```javascript
+const { Router } = require("express");
+const searchController = require("../controllers/searchController.js");
+const carRouter = Router();
+
+const searchValidator = (req, res, next) => {
+  const value = Number(req.params.category.slice(1));
+  console.log('value is', value);
+  if (isNaN(value)) {
+    console.log("there should be an error triggering")
+    throw new Error("Invalid search parameter");
+  } else {
+    next();
+  }
+}
+
+const searchMethodMW = (req, res, next) => {
+  const { method } = req.query;
+
+  if (!method) {
+    next();
+  }
+
+  console.log("we have method content of: ", method);
+
+  if (method === "remove") {
+    // trigger search controller method for remove
+  }
+}
+
+const fetchResMW = (req, res, next) => {
+  searchController.getByFilters(req, res);
+}
+
+const errHandler = (err, req, res, next) => {
+  console.log(err);
+  res.status(404).render(
+    "404", {
+    err: err
+  });
+}
+
+//
+// ALL ABOVE ARE MIDDLEWARE FNS 
+//
+
+carRouter.get("/", (req, res) => {
+  searchController.getAll(req, res, "cars");
+});
+
+// route for searching
+carRouter.get(
+  "/search/:category",
+  searchValidator,
+  searchMethodMW,
+  fetchResMW,
+  errHandler
+);
+```
+- notice that this router is first defining middleware functions that it will use for a specific path '/search/:category' then notice that instead of using carRouter.use() and listing all the middle ware, I just put the middleware sequence in the .get() after the path to match. I suppose that it does not always have to be (req, res) but more so just pass through handlers. 
+- also notice that error handling both renders a custom ejs page and also sets the server status code to 404 and pass the error message to the page to display. 
 
 ### Views
 - in order to render dymanic html content, we use template engines to inject dynamic data to the html files we send back. 
