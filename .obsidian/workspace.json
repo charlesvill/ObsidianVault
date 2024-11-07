@@ -77,8 +77,7 @@
               "title": "Intermediate Javascript"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -165,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for The back end"
+              "title": "Backlinks for SQL"
             }
           },
           {
@@ -184,12 +183,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/The back end.md",
+                "file": "Computer Science/CS50/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from The back end"
+              "title": "Outgoing links from SQL"
             }
           },
           {
@@ -211,10 +210,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Full Stack Dev/Backend/The back end.md"
+                "file": "Computer Science/CS50/SQL.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of The back end"
+              "title": "Outline of SQL"
             }
           },
           {
@@ -259,13 +258,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7293d3d831b0ae8",
+  "active": "e29ca8c10e6e4efc",
   "lastOpenFiles": [
+    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
-    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/CS50/SQL.md",
-    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Thinking like a Programmer.md",
     "Pasted image 20240918071044.png",
     "Computer Science/CS50/Python.md",

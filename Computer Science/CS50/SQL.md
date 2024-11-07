@@ -76,9 +76,11 @@ WHERE condition;
 - do this when you need to change a specific column to something else with a specific row value. 
 
 ###### updating the table columns
+- how to change the name of the column
 ```sql
-
+ALTER TABLE table_name RENAME COLUMN old_column_name TO new_column_name;
 ```
+
 
 data types in sql: 
 blob- binary large object, some file of 0s and 1s
