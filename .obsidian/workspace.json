@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "e3dc71daee61fb04",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.7"
+            }
+          },
+          {
             "id": "c7293d3d831b0ae8",
             "type": "leaf",
             "state": {
@@ -77,7 +89,8 @@
               "title": "Intermediate Javascript"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -258,13 +271,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e29ca8c10e6e4efc",
+  "active": "e3dc71daee61fb04",
   "lastOpenFiles": [
-    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
+    "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/REACT.md",
-    "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Computer Science/CS50/SQL.md",
+    "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Thinking like a Programmer.md",
     "Pasted image 20240918071044.png",
     "Computer Science/CS50/Python.md",
