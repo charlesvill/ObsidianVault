@@ -63,7 +63,8 @@
               "title": "Intermediate Javascript"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -133,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6e7da0dca78fdfe3",
@@ -244,8 +244,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e29ca8c10e6e4efc",
+  "active": "df9bc3206c5d32d2",
   "lastOpenFiles": [
+    "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/How the internet works and Networking.md",
@@ -255,7 +256,6 @@
     "Computer Science/Full Stack Dev/CSS & HTML/Advanced HTML & CSS.md",
     "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
-    "Computer Science/CS50/SQL.md",
     "Computer Science/Thinking like a Programmer.md",
     "Pasted image 20240918071044.png",
     "Computer Science/CS50/Python.md",

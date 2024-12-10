@@ -54,6 +54,31 @@ console.log(sum); // 6
 - joing elements of an array to a string: 
 	- arr = ["hello", "world"] `arr.join(", ");` this will result in Hello, world
 		- if there is only one element in the array then it will simply output the one element without the delimiter
+- dynamically create objects using an array of keys: 
+```javascript
+const originalObject = {
+    name: "John Doe",
+    user_id: 123,
+    email: "john@example.com",
+    profile_id: 456,
+    age: 30,
+};
+
+// Get all keys ending with "_id"
+const keysEndingWithId = Object.keys(originalObject).filter(key => key.endsWith("_id"));
+
+// Dynamically create a new object with those keys and their values
+const newObject = keysEndingWithId.reduce((acc, key) => {
+    acc[key] = originalObject[key];
+    return acc;
+}, {});
+
+console.log(keysEndingWithId); // ["user_id", "profile_id"]
+console.log(newObject); // { user_id: 123, profile_id: 456 }
+```
+	- notice here the use of the method Object.keys and key.endsWith()
+	- also notice how the object is created dynamically. initial value is a blank object
+	- then inthe reduce method on the keys array, create a key value pair 
 - create a shallow copy of an array with elements that pass the test 
 - object/array destructuring - why its useful and how to use it and using the spread operator
 	- destructuring takes a longer collection of data say a object or an array and parses it into smaller chunks
