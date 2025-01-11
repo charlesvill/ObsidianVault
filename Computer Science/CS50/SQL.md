@@ -427,6 +427,25 @@ and this will be printed:
 - your variable follow the pattern `DB_HOST="localhost"` with no semi colon
 - then you call them with `process.env.DB_HOST`
 
+#### Getting your DB to connect and deploy on a server
+- once you have your project and your database created on a server:
+1. make sure that your pool class from pg uses connection string and get your connection string from your database server. it should look something like this:
+```
+"postgres://general-iroh:*******@ep-aged-boat-a2hc1v4w.eu-central-1.pg.koyeb.app/koyebdb?sslmode=require"
+```
+		- your pool should look somethign like this: 
+		- also notice the ?sslmode=require which is needed in some databases deployed
+```js
+const { Pool } = require("pg");
+require("dotenv").config();
+
+module.exports = new Pool({
+  connectionString: process.env.CONNECTION_STRING
+});
+// notice here that i'm using dotenv to read the connection string from my .env file
+```
+2. make sure to add env variable in your app deployment settings with the connenction string
+3.  
 ###### wildcard selectors in postgreSql
 - in the query:  "`SELECT * FROM table WHERE column LIKE $1`", `[var]`
 	- $1 indicates the number of variables passed in the array, and after that, you need to pass all the variables that will go in there
