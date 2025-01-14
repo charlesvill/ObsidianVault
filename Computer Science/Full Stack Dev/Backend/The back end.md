@@ -977,3 +977,5 @@ app.listen(3000, () => console.log("app listening on port 3000!"));
 ##### passport
 - website: http://www.passportjs.org/
 - What it is: 
+
+##### securing passwords with bcrypt
