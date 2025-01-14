@@ -417,7 +417,7 @@ and this will be printed:
 3: two=three
 4: four
 ```
-##### first DB project
+
 - creating a mini message board that should be able to Create, Read, Update, Delete
 ###### what is the 'dotenv' package for?
 - in order to pass the local connection and password information to the config of the db pool, you need to import the 'dotenv' npm package to be able to read environment variables
@@ -427,7 +427,7 @@ and this will be printed:
 - your variable follow the pattern `DB_HOST="localhost"` with no semi colon
 - then you call them with `process.env.DB_HOST`
 
-#### Getting your DB to connect and deploy on a server
+##### Getting your DB to connect and deploy on a server
 - once you have your project and your database created on a server:
 1. make sure that your pool class from pg uses connection string and get your connection string from your database server. it should look something like this:
 ```
