@@ -943,3 +943,4 @@ const controller = (req, res, next) => {
 		- when extended is false the server wil only accept a string or an array of data, 
 			- setting it to true will add some flexibilty in what it can accept
 	- Content-type must match `application/x-www-form-urlencoded` because if not, server will show the data as an empty object 
+### Authentication Basics
