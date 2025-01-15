@@ -986,6 +986,8 @@ app.listen(3000, () => console.log("app listening on port 3000!"));
 ```
 ##### passport
 - website: http://www.passportjs.org/
+- extended manual bc the main site documentation is lacking: https://github.com/jwalton/passport-api-docs
+- video series YT explaining more configuration 
 - What it is: a middleware that is injected into an express app that handles all the authentication logic. 
 	- uses 'strategies' to authenticate
 - it's really a framework where people can develop 'strategies' to authenticate that are the middleware
