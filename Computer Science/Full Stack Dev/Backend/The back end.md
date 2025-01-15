@@ -943,7 +943,17 @@ const controller = (req, res, next) => {
 		- when extended is false the server wil only accept a string or an array of data, 
 			- setting it to true will add some flexibilty in what it can accept
 	- Content-type must match `application/x-www-form-urlencoded` because if not, server will show the data as an empty object 
-### Authentication Basics
+### Authentication Basics\
+- authentication options:
+	- session
+	- json web tokens
+	- both of these above rely on confirming who the user is to authenticate
+	- Oauth and oauth protocol
+		- google authentication 
+		- separate components 
+		- this is more about authorization
+		- what does this user have authorization or access to. 
+		- more complex to implement
 ##### packages you'll need: 
 `npm install express express-session pg passport passport-local ejs`
 - setting up the session and passport required modules:
@@ -976,6 +986,14 @@ app.listen(3000, () => console.log("app listening on port 3000!"));
 ```
 ##### passport
 - website: http://www.passportjs.org/
-- What it is: 
-
-##### securing passwords with bcrypt
+- What it is: a middleware that is injected into an express app that handles all the authentication logic. 
+	- uses 'strategies' to authenticate
+- it's really a framework where people can develop 'strategies' to authenticate that are the middleware
+- On a higher level how it works is its a middleware that takes the http request object and checks what strategy you are using and then based on the strategy checks the request to determine if the user is authenticated
+###### http headers 
+- request vs response headers - request headers are put together by the browser and are instructions to the server on what kinds of data that we the client can accept. 
+	- you can have cookies and all kinds of data. you can also modify what things are in the request header
+	- theresponse header includes instructions from the server to the client such as what kind of data it responded with
+- cookies - both the request and response headers had cookie headers. this is because it allows memory on what the user is doing. this is needed because the http protocol is stateless meaning that it forgets what the user is doing. no way to permeate sessions. 
+	- the cookies can be set by the response headers and are added to the cookies tab under application and will stay there until they expire, at which point you would need to log in again. common cookie expiration is two weeks.
+ ##### securing passwords with bcrypt
