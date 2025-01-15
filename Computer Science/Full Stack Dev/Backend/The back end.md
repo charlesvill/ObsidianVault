@@ -996,4 +996,8 @@ app.listen(3000, () => console.log("app listening on port 3000!"));
 	- theresponse header includes instructions from the server to the client such as what kind of data it responded with
 - cookies - both the request and response headers had cookie headers. this is because it allows memory on what the user is doing. this is needed because the http protocol is stateless meaning that it forgets what the user is doing. no way to permeate sessions. 
 	- the cookies can be set by the response headers and are added to the cookies tab under application and will stay there until they expire, at which point you would need to log in again. common cookie expiration is two weeks.
- ##### securing passwords with bcrypt
+cookies vs sessions, what is the difference? - cookies stored on the client browser and will attach itself the http request. Sessions are stored on the server side. on the expressjs application. 
+- cookies cannot store alot of information so the session stores a bit larger data types
+- benefit of session is authentication on the server side with secret key. cookies can be exposed 
+
+##### securing passwords with bcrypt
