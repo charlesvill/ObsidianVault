@@ -935,6 +935,32 @@ inputDate.getDate()
 - notice here the date constructor is making the date object from the initial string with the local timezone adjustment and then making a new date object that omits the hours by getting the only the year , month and day of the former object. then you would pass this noTime object wherever you need things having to do with differences in days that don't have a regard or necessity to consider hour precision. 
 	- *note: after some testing, I found that as long as the local timezone adjustment was made above, I did not have to use the no time changes here. however, I'll leave it here incase I have issues in the future with something related.*
 
+##### updated use of the date object
+```js
+const nowOutput = "2025-01-16T10:45:32.123456+00";
+
+// Create a JavaScript Date object
+const date = new Date(nowOutput);
+
+// Format to exclude seconds
+const options = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true, // Optional: Set to true for 12-hour format
+};
+
+// Using Intl.DateTimeFormat for localization
+const readableDate = new Intl.DateTimeFormat("en-US", options).format(date);
+
+console.log(`Posted on ${readableDate}`);
+
+// output: Posted on January 16, 2025, 10:45 AM
+```
+- in this example we have some output from the database of a time stamp with the postgres NOW() function
+- you can use the new Date class and pass through options in the form of an obj with key value pairs of what you want included in the formatted date. look through documentation for the possible options you can pass to further customize the look of the date formatted. 
 #### Storing data in JS: Local Storage vs Session Storage vs Cookies
 
 With data that is meant to persist after exiting the window, there are a few similarities between all of them. 
