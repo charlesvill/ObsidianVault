@@ -1003,3 +1003,6 @@ cookies vs sessions, what is the difference? - cookies stored on the client brow
 - benefit of session is authentication on the server side with secret key. cookies can be exposed 
 
 ##### securing passwords with bcrypt
+
+##### getting set up with authentication
+###### the core components and sequence of authentication middleware
