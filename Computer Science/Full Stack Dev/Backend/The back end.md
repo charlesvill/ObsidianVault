@@ -944,6 +944,12 @@ const controller = (req, res, next) => {
 			- setting it to true will add some flexibilty in what it can accept
 	- Content-type must match `application/x-www-form-urlencoded` because if not, server will show the data as an empty object 
 ### Authentication Basics\
+**parking lot on authentication**
+- what are the options for in the app.use(session()) object?
+	- what does the secret do and what considerations do yo uneed to make when setting one?
+	- how does the session.serialize user actually commit an authenticated user into the session?
+	- the req.user property is added after authentication but where does that information travel in its lifespan? does it get attached to the browser in the form of a cookie? what is the difference between this and a cookie? 
+	- 
 - authentication options:
 	- session
 	- json web tokens
