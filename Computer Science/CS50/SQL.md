@@ -421,7 +421,8 @@ and this will be printed:
 - creating a mini message board that should be able to Create, Read, Update, Delete
 ###### what is the 'dotenv' package for?
 - in order to pass the local connection and password information to the config of the db pool, you need to import the 'dotenv' npm package to be able to read environment variables
-- `node install dotenv --save`
+- `npm install dotenv --save`
+
 - then in your file using enviroment variables: `require('dotenv').config()`
 - then create a `.env` file so you can feed the authentitcation details from the .env file
 - your variable follow the pattern `DB_HOST="localhost"` with no semi colon
