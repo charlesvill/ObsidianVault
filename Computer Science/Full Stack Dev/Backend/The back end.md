@@ -949,7 +949,8 @@ const controller = (req, res, next) => {
 	- what does the secret do and what considerations do yo uneed to make when setting one?
 	- how does the session.serialize user actually commit an authenticated user into the session?
 	- the req.user property is added after authentication but where does that information travel in its lifespan? does it get attached to the browser in the form of a cookie? what is the difference between this and a cookie? 
-	- 
+	- what is the difference between req.user, local.user and connect.sid?
+	- in what instances do you need to create sessions using tables in a db and what occasions do you only  need to use cookies and hashing of the password?
 - authentication options:
 	- session
 	- json web tokens
