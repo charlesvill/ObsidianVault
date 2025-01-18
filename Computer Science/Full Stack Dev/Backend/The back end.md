@@ -993,7 +993,9 @@ app.listen(3000, () => console.log("app listening on port 3000!"));
 
 ```
 ##### main components of authentication and how it works
-
+- starts with having app use the express session object and setting up options to define session behavior
+- app.use(passport.session()) to initialize the passport and session middle wares
+- passport.use() to define what strategy you are going to use for authentication
 ##### passport
 - website: http://www.passportjs.org/
 - extended manual bc the main site documentation is lacking: https://github.com/jwalton/passport-api-docs
