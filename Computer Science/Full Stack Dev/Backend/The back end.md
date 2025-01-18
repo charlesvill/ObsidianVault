@@ -996,6 +996,10 @@ app.listen(3000, () => console.log("app listening on port 3000!"));
 - starts with having app use the express session object and setting up options to define session behavior
 - app.use(passport.session()) to initialize the passport and session middle wares
 - passport.use() to define what strategy you are going to use for authentication
+- two functions (passport.serializeUser() and passport.deserializeUser()) will take the user found from searching db with your matching password and pass the id to make the cookie which is stored in the browser automatically by passport. 
+	- the second one will be run when passport wants to pull from the database the user information based on a matching session from an existing cookie. the deserializer will then attach this user information to the req.user property to be used throughout different requests in this session. 
+- on a log in post route, you run passport.authenticate() which automatically uses the strategy you defined to authenticate and the cookie will be generated automactially. 
+- once the coookie is made, on subsequent requests, you can check for req.user and if that is present you are still logged in and can handle logic throughout your application based on this state 
 ##### passport
 - website: http://www.passportjs.org/
 - extended manual bc the main site documentation is lacking: https://github.com/jwalton/passport-api-docs
