@@ -951,6 +951,7 @@ const controller = (req, res, next) => {
 	- the req.user property is added after authentication but where does that information travel in its lifespan? does it get attached to the browser in the form of a cookie? what is the difference between this and a cookie? 
 	- what is the difference between req.user, local.user and connect.sid?
 	- in what instances do you need to create sessions using tables in a db and what occasions do you only  need to use cookies and hashing of the password?
+##### concepts in authentication
 - authentication options:
 	- session
 	- json web tokens
@@ -991,6 +992,8 @@ app.get("/", (req, res) => res.render("index"));
 app.listen(3000, () => console.log("app listening on port 3000!"));
 
 ```
+##### main components of authentication and how it works
+
 ##### passport
 - website: http://www.passportjs.org/
 - extended manual bc the main site documentation is lacking: https://github.com/jwalton/passport-api-docs
