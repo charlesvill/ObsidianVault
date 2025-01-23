@@ -1008,7 +1008,10 @@ app.listen(3000, () => console.log("app listening on port 3000!"));
 	- uses 'strategies' to authenticate
 - it's really a framework where people can develop 'strategies' to authenticate that are the middleware
 - On a higher level how it works is its a middleware that takes the http request object and checks what strategy you are using and then based on the strategy checks the request to determine if the user is authenticated
+###### deep dive on passport and how it works
+- what is happening when you import passport? 
 ###### http headers 
+
 - request vs response headers - request headers are put together by the browser and are instructions to the server on what kinds of data that we the client can accept. 
 	- you can have cookies and all kinds of data. you can also modify what things are in the request header
 	- theresponse header includes instructions from the server to the client such as what kind of data it responded with
