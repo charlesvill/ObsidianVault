@@ -1010,6 +1010,10 @@ app.listen(3000, () => console.log("app listening on port 3000!"));
 - On a higher level how it works is its a middleware that takes the http request object and checks what strategy you are using and then based on the strategy checks the request to determine if the user is authenticated
 ###### deep dive on passport and how it works
 - what is happening when you import passport? 
+
+- passing messages to redirects: express-flash, will work with passport to pass error and sucess messages to ejs. first you need to hit up the app.use(flash()) somewhere in that middle ware chain. then you hit it with that `done (null, false, {message: 'password incorrect'})` this would be placed on the authentication middleware for example when authentication function is defined and checking for invalid credentials
+	- then you would follow it up in ejs with : `if(messages.error) => locals.messages.error`
+	
 ###### http headers 
 
 - request vs response headers - request headers are put together by the browser and are instructions to the server on what kinds of data that we the client can accept. 
