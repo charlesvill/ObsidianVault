@@ -1027,5 +1027,10 @@ cookies vs sessions, what is the difference? - cookies stored on the client brow
 
 ##### securing passwords with bcrypt
 
+
 ##### getting set up with authentication
 ###### the core components and sequence of authentication middleware
+
+
+### Prisma ORM
+- what is an object relational mapper?
