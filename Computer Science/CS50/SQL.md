@@ -349,7 +349,7 @@ module.exports = {
 ##### How to log in to your db
 - in your terminal, hit `psql` to start up postgres
 - `\l` to see the current dbs in your instance
-- `CREATE DATABASE <dbname>` to create one if you dont have one
+- `CREATE DATABASE <dbname>;` to create one if you dont have one
 - `\c <dbname>` to connect to it
 	- you should see `<dbname>=#` on the command prompt
 ##### how to dynamically create your table schema
