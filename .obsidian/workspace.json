@@ -49,8 +49,7 @@
               "title": "SQL"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -232,13 +231,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0dc1d84c492b460b",
+  "active": "6bf06538370277a3",
   "lastOpenFiles": [
+    "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/Emmet Abbreviations.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/REACT.md",
-    "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/Full Stack Parking lot.md",
     "Computer Science/Full Stack Dev/How the internet works and Networking.md",
     "Computer Science/Full Stack Dev/Git.md",

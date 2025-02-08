@@ -1034,3 +1034,11 @@ cookies vs sessions, what is the difference? - cookies stored on the client brow
 
 ### Prisma ORM
 - what is an object relational mapper?
+	- it is an abstraction layer that takes out the need to write raw sequel infavor of a delcarative syntax where under the hood it will convert to raw sql and interact with your database
+
+
+### File uploading with Multer
+- what is multer?
+	- middleware library that uploads files to local storage
+	- attached to form elements that have ecoding of mulit-form
+	- defaults to a folder insdie the root directory of your project but you can also store the file contents in memory or a buffer to be uploaded to a cloud
