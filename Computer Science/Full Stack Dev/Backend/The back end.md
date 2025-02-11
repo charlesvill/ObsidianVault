@@ -1033,6 +1033,7 @@ cookies vs sessions, what is the difference? - cookies stored on the client brow
 
 
 ### Prisma ORM
+get started: `npm install prisma --save-dev @prisma/client`
 - what is an object relational mapper?
 	- it is an abstraction layer that takes out the need to write raw sequel infavor of a delcarative syntax where under the hood it will convert to raw sql and interact with your database
 
