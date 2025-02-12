@@ -1033,6 +1033,8 @@ cookies vs sessions, what is the difference? - cookies stored on the client brow
 
 
 ### Prisma ORM
+*great guide on getting started:* https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-node-postgresql
+
 get started: `npm install prisma --save-dev @prisma/client`
 - what is an object relational mapper?
 	- it is an abstraction layer that takes out the need to write raw sequel infavor of a delcarative syntax where under the hood it will convert to raw sql and interact with your database
@@ -1079,6 +1081,61 @@ const messages = await prisma.message.findMany();
 - also note the way that it inserts into the db a new row and you use object notation with key value pairs for entering data into the columns
 ###### connecting to a database with prisma
 - before you can query with prisma, you have to make a special prisma schema file that contains your 'models' or the table definitions as well as point the prisma to your postgres database
+- first start with checking to make sure everything was installed correctly `npx prisma`
+- then `npx prisma init` this will create the prisma directory in your project along with the schema.prisma file that you will use to define models and point to your 
+- in your prisma.schema: 
+```js
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+```
+- in your .env file youll need to put the database url as DATABASE_URL = '...' 
+- database url format: `postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=SCHEMA`
+- `USER`: The name of your database user
+- `PASSWORD`: The password for your database user
+- `HOST`: The name of your host name (for the local environment, it is `localhost`)
+- `PORT`: The port where your database server is running (typically `5432` for PostgreSQL)
+- `DATABASE`: The name of the [database](https://www.postgresql.org/docs/12/manage-ag-overview.html)
+- `SCHEMA`: The name of the [schema](https://www.postgresql.org/docs/12/ddl-schemas.html) inside the database
+	- *you can omit the schema parameter and it will default public*
+###### creating your database schema
+```js
+model Post {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  title     String   @db.VarChar(255)
+  content   String?
+  published Boolean  @default(false)
+  author    User     @relation(fields: [authorId], references: [id])
+  authorId  Int
+}
+
+model Profile {
+  id     Int     @id @default(autoincrement())
+  bio    String?
+  user   User    @relation(fields: [userId], references: [id])
+  userId Int     @unique
+}
+
+model User {
+  id      Int      @id @default(autoincrement())
+  email   String   @unique
+  name    String?
+  posts   Post[]
+  profile Profile?
+}
+```
+- this is sample of some tables with relations, notice the presence of array type Post in User which shows two things: 
+	- you can have non primitive objects as datatypes, in this case another table
+	- user accepting many posts but posts only having one user creates a one to many relationship
+	- notice also that the relation attribute @relation is on the post
+- after you are done setting up your tables, run `npx prisma migrate dev --name init`
+	- this will create a new migration that basically has data about how prisma updated your database schema and then actually updates your database with appropriate tables 
+		- *every time you run migrate, generate will also run under the hood. *
+- in your prisma.schema file, after making changes, run `prisma format filename` in the terminal so that it applies the spacing for readability
+
 ### File uploading with Multer
 - what is multer?
 	- middleware library that uploads files to local storage
