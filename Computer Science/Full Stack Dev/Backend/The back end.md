@@ -1136,6 +1136,19 @@ model User {
 		- *every time you run migrate, generate will also run under the hood. *
 - in your prisma.schema file, after making changes, run `prisma format filename` in the terminal so that it applies the spacing for readability
 
+##### Authenticating Users with Prisma and passport
+- you'll need beside prisma passport and express-session, `npm install @quixo3/prisma-session-store` 
+- once you have your schema.prisma file define your session model:
+```js
+model Session {
+  id        String   @id
+  sid       String   @unique
+  data      String   @db.MediumText  // MediumText may be needed for MySql
+  expiresAt   DateTime
+}
+```
+
+
 ### File uploading with Multer
 - what is multer?
 	- middleware library that uploads files to local storage
