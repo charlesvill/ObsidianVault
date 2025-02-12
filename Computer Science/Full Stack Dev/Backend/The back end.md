@@ -1036,8 +1036,49 @@ cookies vs sessions, what is the difference? - cookies stored on the client brow
 get started: `npm install prisma --save-dev @prisma/client`
 - what is an object relational mapper?
 	- it is an abstraction layer that takes out the need to write raw sequel infavor of a delcarative syntax where under the hood it will convert to raw sql and interact with your database
+		- it will hook up to a postgres database and handles all the sql under the hood and generates classes that the prisma client object can interact with to query things you need. 
 
+#####  main components of Prisma
+###### prisma schema
+- new way to write the schema for your database
+```js
+model Message {
+   id        Int      @id @default(autoincrement())
+   content   String   @db.VarChar(255) 
+   createdAt DateTime @default(now())
+   author    User     @relation(fields: [authorId], references: [id])
+   authorId  Int     
+}
 
+model User {
+   // user's fields
+}
+``` 
+- notice that it has like a class 'model' which represents table
+- 'id, content', etc represent the column names after is the data type and following that are attributes that you can add to those columns that define relations with other tables or other important metadata about the column created
+- whenever you modify your prisma schema file you run `npx prisma generate` and it will automatically run the sql to update your tables as well as update the prisma client class so that you can use dot notation and even autocompletion with regular javascript to select tables and run queries
+###### prisma client
+- almost a separate library that is dynamically generated every time you run that npx prisma generate command when your prisma schema file updates. 
+```js
+// instantiate the client
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+
+// when creating a new message
+await prisma.message.create({
+   data: {
+      content: 'Hello, world!',
+      authorId: 1
+   }
+})
+
+// when fetching all messages
+const messages = await prisma.message.findMany();
+```
+- notice here the import statement and instantiating the prisma client class
+- also note the way that it inserts into the db a new row and you use object notation with key value pairs for entering data into the columns
+###### connecting to a database with prisma
+- before you can query with prisma, you have to make a special prisma schema file that contains your 'models' or the table definitions as well as point the prisma to your postgres database
 ### File uploading with Multer
 - what is multer?
 	- middleware library that uploads files to local storage
