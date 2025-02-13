@@ -1059,6 +1059,8 @@ model User {
 - notice that it has like a class 'model' which represents table
 - 'id, content', etc represent the column names after is the data type and following that are attributes that you can add to those columns that define relations with other tables or other important metadata about the column created
 - whenever you modify your prisma schema file you run `npx prisma generate` and it will automatically run the sql to update your tables as well as update the prisma client class so that you can use dot notation and even autocompletion with regular javascript to select tables and run queries
+	- actually maybe this one: `npx prisma migrate dev --name init`
+	- the other one doesnt map to your database
 ###### prisma client
 - almost a separate library that is dynamically generated every time you run that npx prisma generate command when your prisma schema file updates. 
 ```js
