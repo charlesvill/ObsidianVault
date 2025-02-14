@@ -1026,7 +1026,63 @@ cookies vs sessions, what is the difference? - cookies stored on the client brow
 - benefit of session is authentication on the server side with secret key. cookies can be exposed 
 
 ##### securing passwords with bcrypt
+- run `npm install bcryptjs`
+- in your file `const bcrypt = require("bcryptjs")`
+ - you'll have two uses for bcrypt library: 
+	 - hashing password for db storage
+	 - comparing hashes for authentication
+###### hashing passwords for db storage
+- hasing password is a long task that takes a bit of time so its best practice to treat it as psuedo async code:
+	- you'll need to pass three arguments to the `bcrypt.hash()` function: password, salt (usually 10), and callback function to handle what happens with the hashed password
+```js
+try {
 
+    bcrypt.hash(password, 10, async (err, hashedPassword) => {
+      if (err) {
+        return next(err);
+      }
+      await prisma.user.create({
+        data: {
+          name: firstname,
+          username: username,
+          hash: hashedPassword
+        }
+      });
+
+      console.log('user created successfully!')
+
+      res.redirect("/log-in");
+    });
+
+  } catch (error) {
+    console.error(error);
+
+    return res.redirect("/sign-up");
+
+  }
+```
+ - notice that the async inserting into the db we're wrapping it inside of the callback function inside the bcrypt invocation
+###### comparing hases for authentication
+```javascript
+try {
+        const user = await db.selectUserbyUsername(username);
+
+        if (!user) {
+          return done(null, false, { message: "Incorrect username" });
+        }
+        const match = await bcrypt.compare(password, user.hash);
+
+        if (!match) {
+          return done(null, false, { message: "Incorrect password" });
+        }
+
+        return done(null, user);
+
+      } catch (error) {
+        return done(error);
+      }
+```
+- notice pulling the hash from the db and then you run the hash compare method that returns bool
 
 ##### getting set up with authentication
 ###### the core components and sequence of authentication middleware
