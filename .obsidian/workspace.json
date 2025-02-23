@@ -20,8 +20,31 @@
               "icon": "lucide-file",
               "title": "The back end"
             }
+          },
+          {
+            "id": "c1b774d7b20ffdd9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.7"
+            }
+          },
+          {
+            "id": "3580dadb8926c50b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,12 +227,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5180578464714fd6",
+  "active": "c1b774d7b20ffdd9",
   "lastOpenFiles": [
+    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/Git.md",
-    "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/Emmet Abbreviations.md",
     "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/Full Stack Parking lot.md",
