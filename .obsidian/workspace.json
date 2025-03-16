@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "cfb3d5af49eccf4c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
+          },
+          {
             "id": "3580dadb8926c50b",
             "type": "leaf",
             "state": {
@@ -35,7 +47,8 @@
               "title": "Intermediate Javascript"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -218,7 +231,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5180578464714fd6",
+  "active": "cfb3d5af49eccf4c",
   "lastOpenFiles": [
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
