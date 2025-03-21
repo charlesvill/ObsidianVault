@@ -1264,3 +1264,9 @@ module.exports = uploadFromStream;
 
 ```
 - notice here that it uses promises and that the resource_type has to be changed to auto in order to accept files that are not images. 
+
+### APIs
+
+
+#### API Basics
+- 
