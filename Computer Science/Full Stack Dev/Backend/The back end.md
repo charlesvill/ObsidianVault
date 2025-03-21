@@ -1269,4 +1269,7 @@ module.exports = uploadFromStream;
 
 
 #### API Basics
-- 
+- what is REST?
+	- Representational State Transfer
+	- popular and common organizational method or apis which correspond to crud actions. 
+	- following these conventions make it easier for others to work with your api
