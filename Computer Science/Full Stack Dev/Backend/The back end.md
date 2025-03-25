@@ -1273,3 +1273,13 @@ module.exports = uploadFromStream;
 	- Representational State Transfer
 	- popular and common organizational method or apis which correspond to crud actions. 
 	- following these conventions make it easier for others to work with your api
+
+- what needs to be reinstalled: 
+	- gh cli and key authorization
+	- terminal environment
+	- postgres
+	- prisma
+	- node js
+	- express
+	- npm
+	- obsidian
