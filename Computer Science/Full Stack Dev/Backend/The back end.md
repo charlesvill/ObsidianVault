@@ -1287,7 +1287,8 @@ module.exports = uploadFromStream;
 - forms are good for sending data to json but should change their content type in the response header to application/json
 
 
-
+###### using Nouns in endpoints instead of Verbs
+- instead of using endpoint name such as '/getArticles' you want to stick with nouns of the resource you're accessing since the http verbs are standardized way of expressing the CRUD methods
 
 
 
