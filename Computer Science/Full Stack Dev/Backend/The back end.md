@@ -1273,6 +1273,32 @@ module.exports = uploadFromStream;
 	- Representational State Transfer
 	- popular and common organizational method or apis which correspond to crud actions. 
 	- following these conventions make it easier for others to work with your api
+- CORS
+	- with http convention there is one safety measure calle dthe same origin policy that sames only requests area accepted from the same ip addres or URL should beallowed access to the api. 
+	- we need to be able to acces it from different origins 
+	- in comes Cross-Origin Resource Sharing 
+- Important considerations for designing APIs
+	- Security
+	- Performance
+	- Ease of use
+##### elements of REST API
+###### accept and respond with json
+- json is the standard for transferring data rest api should accept json for request payload and sending responsed to json
+- forms are good for sending data to json but should change their content type in the response header to application/json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - what needs to be reinstalled: 
 	- gh cli and key authorization
