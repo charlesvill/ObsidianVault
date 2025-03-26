@@ -1291,7 +1291,22 @@ module.exports = uploadFromStream;
 - instead of using endpoint name such as '/getArticles' you want to stick with nouns of the resource you're accessing since the http verbs are standardized way of expressing the CRUD methods
 
 
+###### handle errors and return standard error codes
+- 400 Bad Request - This means that client-side input fails validation.
+- 401 Unauthorized - This means the user isn't not authorized to access a resource. It usually returns when the user isn't authenticated.
+- 403 Forbidden - This means the user is authenticated, but it's not allowed to access a resource.
+- 404 Not Found - This indicates that a resource is not found.
+- 500 Internal server error - This is a generic server error. It probably shouldn't be thrown explicitly.
+- 502 [Bad Gateway](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502) - This indicates an invalid response from an upstream server.
+- 503 Service Unavailable - This indicates that something unexpected happened on server side (It can be anything like server overload, some parts of the system failed, etc.).
+###### safety 
+- should use SSL/TLS for security. is a must
+- Requesters should only get access to the most minimal data they need. Should not have access to admin only data. 
+- 
 
+###### Caching data to improve performance
+- middle ware like apicache helps to cache data for predetermined amount of time that helps to minimize the amount of times that resources need to be pulled especially big ones. 
+- it should be noted to be careful that with caching data and encoutering issues that the source of the issues is outdated data or outdated data preventing from identifying root issue of bugs
 
 
 
