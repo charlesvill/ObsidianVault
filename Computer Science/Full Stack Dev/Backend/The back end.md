@@ -1282,6 +1282,7 @@ module.exports = uploadFromStream;
 	- Performance
 	- Ease of use
 ##### elements of REST API
+- review components here: https://www.robinwieruch.de/node-express-server-rest-api/
 ###### accept and respond with json
 - json is the standard for transferring data rest api should accept json for request payload and sending responsed to json
 - forms are good for sending data to json but should change their content type in the response header to application/json
