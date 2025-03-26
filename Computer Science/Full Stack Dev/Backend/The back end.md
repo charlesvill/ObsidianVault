@@ -1310,8 +1310,25 @@ module.exports = uploadFromStream;
 
 
 ###### curl for rest apis
-- curl stands for hh
+- curl is a library that allows for the transfer of data from the command line using various protocols including https
+```
+curl http://localhost:3000
 
+-> Received a GET HTTP method
+
+curl -X POST http://localhost:3000
+
+-> Received a POST HTTP method
+
+curl -X PUT http://localhost:3000
+
+-> Received a PUT HTTP method
+
+curl -X DELETE http://localhost:3000
+
+-> Received a DELETE HTTP method
+```
+notice here the use of the -X flag that is for the request to change the request type. 
 
 
 
