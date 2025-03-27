@@ -1335,7 +1335,7 @@ notice here the use of the -X flag that is for the request to change the request
 - notice here more use of the curl -h flag can set the headers and -d flag is the data payload 
 
 #### API Security
-- JWT - Json Web Token 
+- JWT - Json Web Token - great video on everything essentially that you need to know: https://www.youtube.com/watch?v=7nafaH9SddU&ab_channel=TraversyMedia
 
 
 
