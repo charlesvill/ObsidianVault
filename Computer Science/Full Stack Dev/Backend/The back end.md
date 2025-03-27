@@ -352,6 +352,7 @@ app.listen(PORT, () => console.log(`you are listening on port ${PORT}`));
 		- I was not however able to handle the index '/' with a single app.get() like Iwas able to do with just node.js. perhaps this is the cost of moving with a framework when all you have is a static website
 	- update: I could have used `"/(:name)"` that would either match with "/" or some thing else that is a dynamically accessed parameter
 
+**You can use  res.sendStatus(status code) to respond with the code and the meaning i.e 403 - forbidden**
 ##### Loading assets into express app
 ```js
 const path = require("path");
@@ -1334,7 +1335,8 @@ notice here the use of the -X flag that is for the request to change the request
 - notice here more use of the curl -h flag can set the headers and -d flag is the data payload 
 
 #### API Security
-- JWT - Json Web Token
+- JWT - Json Web Token 
+
 
 
 
