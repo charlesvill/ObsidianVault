@@ -1336,6 +1336,11 @@ notice here the use of the -X flag that is for the request to change the request
 
 #### API Security
 - JWT - Json Web Token - great video on everything essentially that you need to know: https://www.youtube.com/watch?v=7nafaH9SddU&ab_channel=TraversyMedia
+- what is one reason JWT is very useful especially when compared to sessions for authentication?
+	- for sessions, the session and user data is stored on the database. an enterprise might have multiple services or multiple servers for the purposes of load balancing. if your session is stored on one server, then you would need to sign in again when you get to the second site.
+	- jwt allows the token to be stored in the client side so that the user can be authorized on whatever server you're on as long as both servers have the same secret to hash the incoming jwt. 
+- concise article on using passport authentication with jwt: https://paulallies.medium.com/stateless-auth-with-express-passport-jwt-7a55ffae0a5c
+- 
 
 
 
