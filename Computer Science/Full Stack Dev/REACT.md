@@ -1413,3 +1413,10 @@ const memoizedHandleClick = useCallback(handleClick, []);
 ### React references
 - see this lesson to see useful links to stay connected what is happening with react and where you should be going after this: https://www.theodinproject.com/lessons/node-path-react-conclusion
 - 
+
+#### React with RESTful API
+- when you have react client, you will need to fetch from your server api that could be deployed on local host or on an actual Paas service. Your react app needs to be able to distinguish between accessing the api url depending on the environment its in. 
+	- solution: make a .env.development and .env.production file (separate) that react will pick to use depending on if you use `npm start` or `npm run build`
+		- `npm start` - .env.development 
+		- `npm run build` - .env.production  
+		
