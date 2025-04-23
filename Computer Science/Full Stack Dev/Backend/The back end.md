@@ -1342,6 +1342,8 @@ ssssssotice here the use of the -X flag that is for the request to change the re
 	- jwt allows the token to be stored in the client side so that the user can be authorized on whatever server you're on as long as both servers have the same secret to hash the incoming jwt. 
 - concise article on using passport authentication with jwt: https://paulallies.medium.com/stateless-auth-with-express-passport-jwt-7a55ffae0a5c
 - 
+	- required packages:
+		- `npm install jsonwebtoken`
 
 
 
