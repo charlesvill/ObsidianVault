@@ -1345,9 +1345,77 @@ ssssssotice here the use of the -X flag that is for the request to change the re
 	- required packages:
 		- `npm install jsonwebtoken`
 
+##### Authorization of Endpoints using passport & JWT for RESTful API
+```javascript
 
+//express stuff
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
 
+//jwt stuff
+const jwt = require("jsonwebtoken");
 
+//passport stuff
+const passport = require("passport");
+const jwtStrategry  = require("./strategies/jwt")
+passport.use(jwtStrategry);
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+app.get("/", (req, res) => {
+    res.send("hello express server")
+})
+
+app.post("/login", (req, res) => {
+    let { email, password } = req.body;
+    //This lookup would normally be done using a database
+    if (email === "paul@nanosoft.co.za") {
+        if (password === "pass") { //the password compare would normally be done using bcrypt.
+            const opts = {}
+            opts.expiresIn = 120;  //token expires in 2min
+            const secret = "SECRET_KEY" //normally stored in process.env.secret
+            const token = jwt.sign({ email }, secret, opts);
+            return res.status(200).json({
+                message: "Auth Passed",
+                token
+            })
+        }
+    }
+    return res.status(401).json({ message: "Auth Failed" })
+});
+
+app.get("/protected", passport.authenticate('jwt', { session: false }), (req, res) => {
+    return res.status(200).send("YAY! this is a protected Route")
+})
+
+app.listen(3000);
+```
+- notice here that is uses a jwt.js which is the passport strategy defined that is passed to passport with `passport.use(jwtStrategy)` as its authentication strategy
+
+**jwtStrategy file**
+```javascript
+const JwtStrategy = require('passport-jwt').Strategy;
+const ExtractJwt = require('passport-jwt').ExtractJwt;
+const opts = {}
+opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
+opts.secretOrKey = 'SECRET_KEY'; //normally store this in process.env.secret
+
+module.exports = new JwtStrategy(opts, (jwt_payload, done) => {
+    if (jwt_payload.email === "paul@nanosoft.co.za") {
+        return done(null, true)
+    }
+    return done(null, false)
+}) 
+```
+- this mirrors the example in the documentation found: https://github.com/mikenicholson/passport-jwt
+	- this pulls from the node package the jwt strategy files as well as ExtractJwt which itself contains many methods that you can use to extract the jwt token depending on how you are passing the jwt token to it. 
+	- for example, the video above and this show the extract method being passing token through header with the authorization bearer format.
+		- my assumption is that this extractor method will do the same as the video above did in a more simplified format. see below:
+```js
+
+```
 
 - what needs to be reinstalled: 
 	- gh cli and key authorization

@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "The back end"
             }
-          },
-          {
-            "id": "af4b14aaeda12c54",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -216,7 +203,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "af4b14aaeda12c54",
+  "active": "8524ad6e4fb2b790",
   "lastOpenFiles": [
     "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/CS50/SQL.md",
