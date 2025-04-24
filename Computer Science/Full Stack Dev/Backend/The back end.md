@@ -1343,7 +1343,13 @@ ssssssotice here the use of the -X flag that is for the request to change the re
 - concise article on using passport authentication with jwt: https://paulallies.medium.com/stateless-auth-with-express-passport-jwt-7a55ffae0a5c
 - 
 	- required packages:
-		- `npm install jsonwebtoken`
+		- `npm install jsonwebtoken passport passport-jwt`
+	- steps to take: 
+		- declare the passport variable
+		- define your jwtStrategy and import it
+		- pass your jwtStrategy to passport.use()
+		- define your login route that creates token with jwt.sign()
+			- return the token as response so client can stor
 
 ##### Authorization of Endpoints using passport & JWT for RESTful API
 ```javascript
