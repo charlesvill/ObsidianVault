@@ -1412,9 +1412,46 @@ module.exports = new JwtStrategy(opts, (jwt_payload, done) => {
 - this mirrors the example in the documentation found: https://github.com/mikenicholson/passport-jwt
 	- this pulls from the node package the jwt strategy files as well as ExtractJwt which itself contains many methods that you can use to extract the jwt token depending on how you are passing the jwt token to it. 
 	- for example, the video above and this show the extract method being passing token through header with the authorization bearer format.
-		- my assumption is that this extractor method will do the same as the video above did in a more simplified format. see below:
+		- my assumption is that this extractor method and passport authorization will do the same as the `jwt.verify()` method that is provided in the node jwt library. an implementation of it is shown in the video above. see below:
 ```js
 
+app.get("/posts", (req, res, next) => {
+	app.post('/api/posts', verifyToken, (req, res) => {  
+  jwt.verify(req.token, 'secretkey', (err, authData) => {
+    if(err) {
+      res.sendStatus(403);
+    } else {
+      res.json({
+        message: 'Post created...',
+        authData
+      });
+    }
+  });
+});
+})
+
+
+// Verify Token - this function will extract the token using the bearer method and add it ot
+// the request object and will fail before getting to the verify portion
+function verifyToken(req, res, next) {
+  // Get auth header value
+  const bearerHeader = req.headers['authorization'];
+  // Check if bearer is undefined
+  if(typeof bearerHeader !== 'undefined') {
+    // Split at the space
+    const bearer = bearerHeader.split(' ');
+    // Get token from array
+    const bearerToken = bearer[1];
+    // Set the token
+    req.token = bearerToken;
+    // Next middleware
+    next();
+  } else {
+    // Forbidden
+    res.sendStatus(403);
+  }
+
+}
 ```
 
 - what needs to be reinstalled: 
