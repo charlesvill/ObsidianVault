@@ -1349,7 +1349,9 @@ ssssssotice here the use of the -X flag that is for the request to change the re
 		- define your jwtStrategy and import it
 		- pass your jwtStrategy to passport.use()
 		- define your login route that creates token with jwt.sign()
-			- return the token as response so client can stor
+			- return the token as response so client can store it in local storage
+		- define passport authenticate mw on protected routes
+			- passport.authenticate({payload})
 
 ##### Authorization of Endpoints using passport & JWT for RESTful API
 ```javascript
