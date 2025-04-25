@@ -1341,8 +1341,12 @@ ssssssotice here the use of the -X flag that is for the request to change the re
 	- for sessions, the session and user data is stored on the database. an enterprise might have multiple services or multiple servers for the purposes of load balancing. if your session is stored on one server, then you would need to sign in again when you get to the second site.
 	- jwt allows the token to be stored in the client side so that the user can be authorized on whatever server you're on as long as both servers have the same secret to hash the incoming jwt. 
 - concise article on using passport authentication with jwt: https://paulallies.medium.com/stateless-auth-with-express-passport-jwt-7a55ffae0a5c
-- 
-	- required packages:
+- *On a higher level, how does the authentication process work?*
+	- You have the webjwt node package that "signs" user data after there is appropriate match in credentials
+	- this user data will be baked into a json token that contains all the authenticated user information known as "sub" or subject of the token.
+	- on subsequent requests, the token will be attached to the headers in the method of Authentication Bearer Header (something like that), passport, along with a strategy defined with help of passport-jwt will have a middle ware attached to a protected route to authenticate (passport.authenticate('jwt')). 
+		- the strategy defined will extract the sub data from the token attached in the headers and a database pull will check to find the user in the data base that is authorized. succesful locating of user runs done(null, user) that will pass auth and attach user object to the req.user if needed. 
+-  required packages:
 		- `npm install jsonwebtoken passport passport-jwt`
 	- steps to take: 
 		- declare the passport variable
