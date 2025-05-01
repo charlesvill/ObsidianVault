@@ -894,7 +894,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
 ```
 - notice here the use of children key with array of children with their own required path and element arguments
-- running this would not actually present those two children. if you wanted to render the children alongside with the parent object, you would need to make use of the `Outlet` object from `react-router-dom`
+- running this would not actually present those two children. if yollu wanted to render the children alongside with the parent object, you would need to make use of the `Outlet` object from `react-router-dom`
 ```jsx
 import { Outlet } from "react-router-dom";
 
