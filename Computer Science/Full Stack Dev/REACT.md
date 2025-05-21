@@ -1004,7 +1004,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
 ##### Authorization protected routes
 - when authentication is needed from a user account for a specific path, you can embed conditional rendering based on user data such as if they're logged in or not. this involves rerouting the user to a different URL programmatically using the `<Navigate />` component. 
-- see this link for more: https://reactrouter.com/en/main/components/navigate
+- see this link for more:https://www.geeksforgeeks.org/navigate-component-in-react-router/ 
 #### Fetching Data and Error Handling in REACT
 ```jsx
 import { useEffect, useState } from "react";

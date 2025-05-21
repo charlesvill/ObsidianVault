@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -232,7 +232,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a1ad3cb342742255",
+  "active": "2ba1169a95d999ff",
   "lastOpenFiles": [
     "Social Media presence Parking Lot.md",
     "Computer Science/Full Stack Dev/REACT.md",
