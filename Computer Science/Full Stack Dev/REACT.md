@@ -940,7 +940,7 @@ import { useParams } from "react-router-dom";
 import DefaultProfile from "./DefaultProfile";
 import Spinach from "./Spinach";
 import Popeye from "./Popeye";
-
+	
 const Profile = () => {
   const { name } = useParams();
 
