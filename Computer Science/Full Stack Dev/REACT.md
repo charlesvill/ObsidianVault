@@ -412,6 +412,8 @@ questions:
 useEffect is a combination of the following methods from class components: 
 - `componentDidMount` `componentDidUpdate` and `componentWillUnmount`
 - its 1. mounting,  2. re-render, 3. right before it unmounts
+n
+  - having a depency araray, the useeffect will trigger on intiial render and if the variable changesin dependency array changes. 
 - leaving a useEffect with an empty dependency array would be the same thing as 1. only triggering when it mounts the component
 - useEffect with dependency array ommitted is the same thing as 1 & 2 because it will re-run every time that 
 - And 3 is the clean up function that runs right before the component is being unmounted and removed from the screen
@@ -1006,6 +1008,48 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 ##### Authorization protected routes
 - when authentication is needed from a user account for a specific path, you can embed conditional rendering based on user data such as if they're logged in or not. this involves rerouting the user to a different URL programmatically using the `<Navigate />` component. 
 - see this link for more:https://www.geeksforgeeks.org/navigate-component-in-react-router/ 
+**Navigate component vs the useNavigate hook**
+- when you need to navigate programmatically for example because an event such as a form submitting, use the useNavigate hook from 'react-router-dom'
+- when you are trying to redirect in component logic flow such conditional rendering, Navigate component is the way to go. 
+###### how to achieve protected routes with react
+- this is for using a restful api as serverside authorization of users. 
+- it starts with having an Authorization component wrapper. This is essentially a wrapper component that uses useContext api as a way to manage user, token, login state and functions. This Authorization wrapper accepts component children or even an entire Router so that all your routes have the option of accessing these states and fns. 
+```js
+import { useState, createContext, useEffect } from 'react'
+
+export const Authorization = createContext();
+
+export function AuthProvider({ children }) {
+  const [token, setToken] = useState(localStorage.getItem("token" || ""));
+  const [user, setUser] = useState(null);
+  const [mode, setMode] = useState("");
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    // store token in ls
+    localStorage.setItem("token", token);
+  }, [token]);
+
+  // login function sets token and sets user
+
+  // will need to import the url from login 
+  const login = async (url, data) => {
+    
+  }
+
+  // return the context provider with the children in the middle if no loading or error
+  return (
+      <Authorization.Provider value={{ user, mode, setToken, login }}>
+        {!loading && children}
+      </Authorization.Provider>
+  )
+}
+```
+then you might have a component that wraps a route that is supposed to be protected: 
+```js
+
+```
 #### Fetching Data and Error Handling in REACT
 ```jsx
 import { useEffect, useState } from "react";
