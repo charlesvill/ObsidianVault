@@ -415,6 +415,7 @@ useEffect is a combination of the following methods from class components:
 - leaving a useEffect with an empty dependency array would be the same thing as 1. only triggering when it mounts the component
 - useEffect with dependency array ommitted is the same thing as 1 & 2 because it will re-run every time that 
 - And 3 is the clean up function that runs right before the component is being unmounted and removed from the screen
+  - having a depency array, the useeffect will trigger on intiial render and if the variable in dependency array changes. 
 - see here more a visual on the lifecycle of react components: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram//
 ###### what is the commit phase?
 - the "commit phase" is after react has checked for difference in the components and works with the DOM to make updates and when the side effects are run. 
@@ -940,7 +941,7 @@ import { useParams } from "react-router-dom";
 import DefaultProfile from "./DefaultProfile";
 import Spinach from "./Spinach";
 import Popeye from "./Popeye";
-	
+
 const Profile = () => {
   const { name } = useParams();
 
@@ -1103,6 +1104,17 @@ const Image = () => {
 *minimum states for data fetching*
 - in react, best practices mandate that each data fetch somes with three mandatory minimum states to have a good user experience: data, loading, error
 - good site to review async api fetching with react: https://blog.logrocket.com/modern-api-data-fetching-methods-react/
+###### fetching to the server
+```js
+fetch(url, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({})
+});
+```
+- when you need to make a post request from an api, you will need to modify the fetch options such as method, changing the headers, and including the payload in the body. Dont forget to stringify it with json first. 
 ##### multiple fetches and race conditions
 - in an event where there are multiple rapid fetches in a side effect called due to user interactions, there is a possibility that fetches requested after another could finish its reponse before hand, due to the nature of how fetches to servers can be unpredicatble and unreliable. this could lead to unexpected and undesired inconsistencies in the UI
 - the solution to this is to use an `AbortController`
