@@ -49,8 +49,7 @@
               "title": "Intermediate Javascript"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -232,13 +231,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2ba1169a95d999ff",
+  "active": "8524ad6e4fb2b790",
   "lastOpenFiles": [
+    "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate CSS.md",
     "Social Media presence Parking Lot.md",
-    "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/CS50/SQL.md",
     "Computer Science/Full Stack Dev/Git.md",
     "Computer Science/Full Stack Dev/Emmet Abbreviations.md",
