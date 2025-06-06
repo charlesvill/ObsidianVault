@@ -51,3 +51,107 @@ what is a vim register?
 #### Lvim notes
 - format - 'lf' - prettier like
 - split the window vertically: `:vsplit`
+
+# Vim Regex Guide: Matching from Beginning to Ending Characters
+
+This guide explains how to match strings between two characters using **Vim's regex** engine, particularly useful in Neovim or Vim editors.
+
+---
+
+## ✅ Goal
+
+Match everything **between** a starting and ending character (e.g. quotes, tags, brackets), but only **replace or highlight the text in between**, not the delimiters.
+
+---
+
+## 🔧 Regex Tools in Vim
+
+* `\zs` – Start of match (included in replacement)
+* `\ze` – End of match (excluded from replacement)
+
+These markers are **exclusive** — they let you define what part of a match is **actually substituted**.
+
+---
+
+## 🧪 Basic Example: Match Text Between Double Quotes
+
+### Original Text:
+
+```txt
+"This is text" and "Another one"
+```
+
+### Vim Command:
+
+```vim
+:%s/"\zs[^\"]*\ze"/newvalue/g
+```
+
+### Breakdown:
+
+* `"` – match opening quote
+* `\zs` – mark the **start** of the actual match
+* `[^\"]*` – match everything up to but not including the next `"`
+* `\ze"` – mark the **end** of the actual match at the next `"`
+
+### Result:
+
+```txt
+"newvalue" and "newvalue"
+```
+
+---
+
+## 🧪 Another Example: Match Text Between `>` and `>`
+
+If you have:
+
+```html
+<div>First</div><div>Second</div>
+```
+
+### Problem:
+
+```vim
+/\zs>.*\ze>
+```
+
+This will match:
+
+```
+>First</div><div>Second<
+```
+
+Because `.*` is **greedy**.
+
+### ✅ Fix:
+
+```vim
+/\zs>[^>]*\ze>
+```
+
+This will match only the content between the **first** pair of `>`s.
+
+---
+
+## 🧠 Tips
+
+* Always use **negated character classes** (e.g. `[^>]`, `[^\"]`) to avoid greediness.
+* `\zs` and `\ze` allow fine-grained control over what gets replaced.
+* Use `/` to search and `:%s/.../.../g` to substitute across the file.
+
+---
+
+## 🛠️ Example Command Patterns
+
+| Description                 | Command             |
+| --------------------------- | ------------------- |
+| Match between quotes        | `"\zs[^\"]*\ze"`    |
+| Match inside angle brackets | `>\zs[^>]*\ze>`     |
+| Match inside parentheses    | `\((\zs[^)]*\ze)\)` |
+
+---
+
+## 💬 Need More Help?
+
+Let me know what specific pattern or structure you're trying to match — HTML, JSON, code blocks, etc., and I can tailor the regex for your case.
