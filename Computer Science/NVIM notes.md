@@ -85,6 +85,9 @@ These markers are **exclusive** — they let you define what part of a match is 
 
 ```vim
 :%s/"\zs[^\"]*\ze"/newvalue/g
+
+:%s/class="[^>]*"/class="new-class"/g
+--this one matches the pattern and replaces the whole classname tag
 ```
 
 ### Breakdown:
