@@ -1469,9 +1469,15 @@ function verifyToken(req, res, next) {
 - what needs to be reinstalled: 
 	- gh cli and key authorization
 	- terminal environment
+		- terminal config: autocomplete in shell, nerd font, colors
+		- terminal tile manager?
+	- neovim
+		- all the packages and tools used in neovim
 	- postgres
 	- prisma
 	- node js
 	- express
 	- npm
 	- obsidian
+	- htop
+	- btop
