@@ -1008,9 +1008,35 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 ##### Authorization protected routes
 - when authentication is needed from a user account for a specific path, you can embed conditional rendering based on user data such as if they're logged in or not. this involves rerouting the user to a different URL programmatically using the `<Navigate />` component. 
 - see this link for more:https://www.geeksforgeeks.org/navigate-component-in-react-router/ 
+```js
+//navigate component
+import { Navigate } from 'react-router-dom';
+
+function ProtectedRoute({ user }) {
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
+
+  return <Dashboard />;
+```
 **Navigate component vs the useNavigate hook**
 - when you need to navigate programmatically for example because an event such as a form submitting, use the useNavigate hook from 'react-router-dom'
 - when you are trying to redirect in component logic flow such conditional rendering, Navigate component is the way to go. 
+```js
+//use Navigate hook
+import { useNavigate } from 'react-router-dom';
+
+function MyComponent() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/dashboard'); // navigate to /dashboard
+  };
+
+  return <button onClick={handleClick}>Go to Dashboard</button>;
+}
+
+```
 ###### how to achieve protected routes with react
 - this is for using a restful api as serverside authorization of users. 
 - it starts with having an Authorization component wrapper. This is essentially a wrapper component that uses useContext api as a way to manage user, token, login state and functions. This Authorization wrapper accepts component children or even an entire Router so that all your routes have the option of accessing these states and fns. 
