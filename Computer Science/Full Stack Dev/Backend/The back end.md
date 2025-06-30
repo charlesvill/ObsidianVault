@@ -1481,3 +1481,14 @@ function verifyToken(req, res, next) {
 	- obsidian
 	- htop
 	- btop
+
+arch linux install sequence:
+ - [ ] arch install from live usb
+ - [ ] install dependencies
+ - [ ] install desktop environment (kde?)
+ - [ ] install window manager (hyprland)
+ - [ ] install hyprland modules (lock screen, terminal emulator)
+ - [ ] set up config for hyuperland for status bar, etc
+ - [ ] set up kitty (nerd font starship etc)
+ - [ ] install and set up neovim and plugins
+ - [ ] gaming on linux?
