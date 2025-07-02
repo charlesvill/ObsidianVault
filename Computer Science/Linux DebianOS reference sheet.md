@@ -56,3 +56,16 @@ Game location: Z:\home\general-iroh\.local\share\Steam\steamapps\common\Fallout 
 	3. visual studio code
 	4. node package manager
 	5. obsidian & obsidin git
+
+grub> command line commands
+
+```
+set prefix=(hd0,gpt1)/grub
+
+insmod linux
+set root=(hd0,gpt3)
+linux (hd0,gpt1)/vmlinuz-linux root=/dev/sda3
+initrd (hd0,gpt1)/initramfs-linux.img
+boot
+
+```
