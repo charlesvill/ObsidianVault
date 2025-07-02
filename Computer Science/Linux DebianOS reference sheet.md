@@ -59,6 +59,7 @@ Game location: Z:\home\general-iroh\.local\share\Steam\steamapps\common\Fallout 
 
 grub> command line commands
 
+arch user: iroh-arch
 ```
 set prefix=(hd0,gpt1)/grub
 
