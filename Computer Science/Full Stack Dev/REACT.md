@@ -1076,6 +1076,10 @@ then you might have a component that wraps a route that is supposed to be protec
 ```js
 
 ```
+
+##### Loaders
+- loaders in react router is a function that is run and completed *prior* to your component rendering. inside the component that expects it, you can import `useLoaderData` from react-router-dom and `const data = useLoaderData()` to access it. 
+- 
 #### Fetching Data and Error Handling in REACT
 ```jsx
 import { useEffect, useState } from "react";

@@ -77,7 +77,8 @@
               "title": "Intermediate CSS"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -260,8 +261,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8524ad6e4fb2b790",
+  "active": "2ba1169a95d999ff",
   "lastOpenFiles": [
+    "Computer Science/Linux DebianOS reference sheet.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/NVIM notes.md",
     "Computer Science/Full Stack Dev/REACT.md",
@@ -290,7 +292,6 @@
     "Computer Science/Algorithms and Data Structures/Common Algorithms  & Data Structures.md",
     "Untitled.md",
     "Computer Science/C++/Foundations of C++.md",
-    "Untitled 1.md",
     "Computer Science/Algorithms and Data Structures",
     "Electronics",
     "ObsidianVault/CS50/Flask",
