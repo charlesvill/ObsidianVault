@@ -1505,4 +1505,15 @@ const memoizedHandleClick = useCallback(handleClick, []);
 	- solution: make a .env.development and .env.production file (separate) that react will pick to use depending on if you use `npm start` or `npm run build`
 		- `npm start` - .env.development 
 		- `npm run build` - .env.production  
+
+#### modularization
+- in effort to speed up production I will be adding to npm or git a collection of frequent reused components that can be imported and used in other projects: 
+###### components
+- form  
+- input made up of a label and input element just pass props
+- navigation button - made up of use navigation and button 
+- not found router component - meant to catch all paths not specified in the router definition, with `"*"` 
+- error boundary - takes error object and handles all excpetions during run time (not for user validation)
+###### utility functions
 		
+- fetch utlity function - abstracts all the header processes 
