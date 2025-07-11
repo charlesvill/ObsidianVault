@@ -773,6 +773,11 @@ it("should call the onClick function when clicked", async () => {
 its wraps your tests that involve a side effect or state updates to make sure that it waits for any updates or setters to complete before it runs any of the assertions. here is a site that illustrates this: https://github.com/mrdulin/react-act-examples/blob/master/sync.md
 - look to see where in the odin project they use act and see how its used in context and then reference this guide on what it means when working on testing async functions
 
+##### Vi
+- vi imported from vitest is what is primarily used for mocking complex components that import modules, have side effects, async callbacks etc. 
+- must be in EMS and not common js imports
+###### vi.mock
+- substitutes alll imported modules from provided path
 
 ## The React Ecosystem
 
