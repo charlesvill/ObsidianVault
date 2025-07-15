@@ -1,4 +1,4 @@
-###### parking lot: 
+##### parking lot: 
 - Why do components that accept parameters or "props" need to have curly braces around the parameters? like the ones seen here: 
 ```jsx
 function Item({ name, isPacked }) {
