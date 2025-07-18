@@ -287,6 +287,7 @@ app.listen(PORT, () => console.log(`My first Express app - listening on port ${P
 ###### Middleware
 - middle ware are functions that happen before express server responds to the get request. the request will get added to an object of requests by the server and then it will get passed through these middle ware functions. 
 	- not sure of the purpose of them outside of telling express to eventually respond to the get request
+- middleware funcitons look like : `app.use(), app.get()` important to note that middle ware specifically run only on http requests. they do not run on server init
 ###### Auto-restart your server on changes
 - instead of having to run node app.js every change, you can run `node --watch app.js` and node will listen for changes and auto restart your server for you.
 
