@@ -279,3 +279,139 @@ On reboot, you should see the GRUB menu with an "Arch Linux" entry.
 └── (possibly other EFI apps)
 
 ```
+
+
+### how to repair arch linux when windows overrides the boot manager
+- you have to make sure the bios has fast boot off and secure boot is on "other os"
+then: 
+
+### 🔁 Step 1: Mount Your Arch Installation
+
+bash
+
+CopyEdit
+
+`mount /dev/sda3 /mnt mount --mkdir /dev/sda1 /mnt/efi swapon /dev/sda2`
+
+---
+
+### 🧩 Step 2: Chroot Into the Arch System
+
+bash
+
+CopyEdit
+
+`arch-chroot /mnt`
+
+---
+
+### ⚙️ Step 3: Ensure Required Packages Are Installed
+
+bash
+
+CopyEdit
+
+`pacman -S grub efibootmgr os-prober`
+
+> Optional but helpful:  
+> Install `dosfstools` and `ntfs-3g` if you're dealing with EFI/Windows partitions:
+
+bash
+
+CopyEdit
+
+`pacman -S dosfstools ntfs-3g`
+
+---
+
+### 📄 Step 4: Enable os-prober
+
+Edit your GRUB defaults:
+
+bash
+
+CopyEdit
+
+`nano /etc/default/grub`
+
+Make sure this line exists and is **not** commented:
+
+bash
+
+CopyEdit
+
+`GRUB_DISABLE_OS_PROBER=false`
+
+---
+
+### 🛠️ Step 5: Install GRUB to the EFI Partition
+
+Make sure you’re installing to the mounted EFI at `/efi` (your mount path inside chroot):
+
+bash
+
+CopyEdit
+
+`grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB`
+
+---
+
+### 🧠 Step 6: Generate the GRUB Configuration File
+
+bash
+
+CopyEdit
+
+`grub-mkconfig -o /boot/grub/grub.cfg`
+
+You should see output that includes something like:
+
+nginx
+
+CopyEdit
+
+`Found Windows Boot Manager on /dev/sdX1`
+
+If it doesn’t show, we can troubleshoot further.
+
+---
+
+### 🚪 Step 7: Exit and Reboot
+
+bash
+
+CopyEdit
+
+`exit umount -R /mnt swapoff -a reboot`
+
+Make sure to remove the installation media so it boots from disk.
+
+---
+
+## 🛡️ Bonus: Set GRUB as the Primary Boot Option
+
+Sometimes Windows will reset UEFI boot order. To fix that:
+
+### From inside the chroot:
+
+bash
+
+CopyEdit
+
+`efibootmgr`
+
+You’ll see something like:
+
+CopyEdit
+
+`Boot0000* Windows Boot Manager Boot0001* GRUB`
+
+Set GRUB to the top:
+
+bash
+
+CopyEdit
+
+`efibootmgr -o 0001,0000`
+
+Replace with the actual numbers you see.
