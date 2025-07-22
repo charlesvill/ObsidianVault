@@ -1527,3 +1527,5 @@ const memoizedHandleClick = useCallback(handleClick, []);
 
 ### test 
 this is a test to make sure obsidian is syncing with github
+
+this is a test form thinkpad
