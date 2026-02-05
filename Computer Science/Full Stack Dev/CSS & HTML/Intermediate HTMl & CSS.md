@@ -4,7 +4,6 @@
 - how to reset the CSS in browser
 	- refer to this Meyer's reset: https://meyerweb.com/eric/tools/css/reset/
 	- just place at the top of your style sheet
-
 ## CSS Units
 
 ##### Absolute units vs relative units
@@ -19,7 +18,17 @@
 - rem is the same except that it uses the root elemtent so it doesn't get changed if parents change or contexts change. better consistency. 
 - refer to this article on when to use each one https://codyloyd.com/2021/css-units/ [[CSS reference Notes]]
 - refer to this article on all available units https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units [[CSS reference Notes]]
-
+##### ch
+- you can chose to measure something by number of characters
+```css
+.layout {
+  display: grid;       /* or flex */
+  max-width: 70ch;     /* good for text-heavy layouts */
+  margin-inline: auto; /* modern shorthand for centering */
+  padding-inline: 1rem;
+}
+```
+- for example looking here its limiting the width to 70 characters which is supposed to be for portfolios, blogs, resumes, etc. 
 ##### percentages
 - when a percentage is used it  will be relative to some other property, like the parent value. *ex using 30% as width will take 30% of the parent container and font size will be 30% of the parent font.* 
 
@@ -529,10 +538,12 @@ button {
 
 ```
 more on box sizing and styling forms in general found at: https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms
+###### border box
+- setting a container to this makes it so that the width of any component is comprised of the content, padding, and borders. so padding and border widths will actually take away from the content size. 
+	- note that margin is not included in this calculation as margin is always outside of the box
 **Legend Styling**
 - by default the legend will place itself top left corner, in order to change this, you need to set the parent fieldset position as relative and the legend position to absolute. 
 - for more on styling and example see: https://developer.mozilla.org/en-US/docs/Learn/Forms#form_styling_guides
-- \
 ### Advanced Form styling
 checkboxes and radio buttons along with input type search bars tend to be more difficult to style compared to others
 	Some elements cannot be styled solely with CSS these include: 
@@ -763,13 +774,15 @@ grid area also can refer to a few other things such as:
  - sizing functions: 
 	- `fit-content()` uses the space abiabilebutneer less than the min-content and never more than the max-content. 
 	- `minmax()` sets a minimum and maximum value for what the length is able to be. this is useful when paired with relative units *this is really useful for fixing awkwardly sized grid cells*
+		- 1fr as the max ensures that all elements take up all available space and distribute it equally
 		- ex `grid-template-columns: minman(100px, 1fr) 3fr;`
 		- see https://css-tricks.com/you-want-minmax10px-1fr-not-1fr/ for more on this
-	- - clamp(): review from [[Intermediate CSS#clamp()]]
+	- - clamp(): review from [[Intermediate HTMl & CSS#clamp()]]
 				- typically want to do a static size for the min and max arguments but a relative or dynamic value for the ideal
 		
 #### Practicing grid and web layouts
 - to see an example of how you would do a layout of a webpage with a header, nav bar, sidebar , article section and a footer , see the TOP practice problem for the css-exercises "01-grid-layout-1".
+
 
 #### Advanced Grid Properties
 - when changing zoom levels you can use the property: `overflow: auto; ` to enable scrolling if the grid container is smaller than the grid could accommodate

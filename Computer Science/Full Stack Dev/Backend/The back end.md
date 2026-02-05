@@ -1,4 +1,4 @@
-- what are examples of unstructured data?
+		- what are examples of unstructured data?
 
 	- content inside of emails or books or images
 - for review on SQL see [[SQL]]
@@ -1158,6 +1158,24 @@ datasource db {
 - `DATABASE`: The name of the [database](https://www.postgresql.org/docs/12/manage-ag-overview.html)
 - `SCHEMA`: The name of the [schema](https://www.postgresql.org/docs/12/ddl-schemas.html) inside the database
 	- *you can omit the schema parameter and it will default public*
+###### disconnecting your prisma  session
+- for servers using prisma on a continuous server, you do **not** have to terminate the prisma session. when the server is terminated, the prisma session will also terminate. 
+- for short scripts that use prisma, you should disconnect the session. (example would be a seed script for your db when you deploy)
+```js
+async function main(){
+...
+}
+
+main()
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });
+```
+- here main is the seed script that relies on the prisma object but has a defined end point when no longer need it. 
 ###### creating your database schema
 ```js
 model Post {
@@ -1407,6 +1425,17 @@ app.listen(3000);
 ```
 - notice here that is uses a jwt.js which is the passport strategy defined that is passed to passport with `passport.use(jwtStrategy)` as its authentication strategy
 
+###### what a protected route expects
+- once you have logged in and have the token you will need to pass that token to access a protected route
+- you'll need to add and authorization header:
+```
+curl -H "Authorization: Bearer <token_string>" \
+     http://localhost:3000/protected-route
+
+```
+- it might look something like this if you were using curl. the A does have to be capital and notice there there is a space after the Bearer
+
+
 **jwtStrategy file**
 ```javascript
 const JwtStrategy = require('passport-jwt').Strategy;
@@ -1467,29 +1496,76 @@ function verifyToken(req, res, next) {
 }
 ```
 
-- what needs to be reinstalled: 
-	- gh cli and key authorization
-	- terminal environment
-		- terminal config: autocomplete in shell, nerd font, colors
-		- terminal tile manager?
-	- neovim
-		- all the packages and tools used in neovim
-	- postgres
-	- prisma
-	- node js
-	- express
-	- npm
-	- obsidian
-	- htop
-	- btop
+#### Unit testing for Routes and Controllers
+ 
+- what is it?
+	- using the library supertest that abstracts away some of the superagent library
+	- takes a request object and you pass it an express app object and your route to test expected behavior using test framework agnostic syntax. (should work with all major frameworks)
+	- supertest allows you to call your express app in memory instead of listening on a port.
+	- you can import your routers and create an alternative testing db in order to run integration tests to make sure your routes, controllers and models are working as they should
+###### getting started
+`npm install supertest jest --save-dev`
+- uses very similar syntax to jest with describe( 'test unit', it('individual test'))
 
-arch linux install sequence:
- - [ ] arch install from live usb
- - [ ] install dependencies
- - [ ] install desktop environment (kde?)
- - [ ] install window manager (hyprland)
- - [ ] install hyprland modules (lock screen, terminal emulator)
- - [ ] set up config for hyuperland for status bar, etc
- - [ ] set up kitty (nerd font starship etc)
- - [ ] install and set up neovim and plugins
- - [ ] gaming on linux?
+
+##### Testing database 
+- because you dont want to skew the production database that your app interacts with, you want to make a separate datbase for the purposes of testing. 
+```js
+
+// notice that the express app is contained inside the describe along with any requisites it might need to run
+describe('auth works', function () {
+  const app = express();
+  const user = { username: 'fbaz123', password: '1234' };
+
+  app.use(express.urlencoded({ extended: false }));
+  app.use(express.json());
+  app.use('/auth', authRouter);
+  app.use('/user', userRouter);
+  // use an error route to report errors to the console when your tests fail
+  app.use((err, req, res, next) => {
+    console.error(err);
+    res
+      .status(err.statusCode || 500)
+      .send(err.name + ' ' + err.statusCode + ': ' + err.message);
+  });
+
+  it('returns success response on sign in', async () => {
+    return request(app)
+      .post('/auth')
+      .send(user)
+      .set('accept', 'application/json')
+      .expect(200)
+      .then((response) => {
+        return request(app)
+          .get('/user')
+          .set('Authorization', `Bearer ${response.body.token}`)
+          .set('accept', 'application/json')
+          .expect(200)
+          .then((response) => {
+            expect(response.body.test).toEqual('You are on protected route!');
+            expect(response.body.user.username).toEqual('fbaz123');
+          });
+      });
+  });
+
+//here I am using promises instead of async await. make sure to return the request method call to wait for its resolution for jest.
+  afterAll(async () => {
+    await prisma.$disconnect();
+  });
+});
+
+```
+
+###### alternate database
+- create the db `test_dbname` in psql and create a `TEST_DATABASE_URL` in .env
+	- another .env file: `NODE_ENV=development` will be used to help determine url to pull
+- in the prisma js script, make sure to have conditional logic that will use a db url based on the node environment you're in
+	- then run `NODE_ENV=test npx prisma jest` to have the prisma calls query the correct db
+		- best to create npm script in package.json
+- **migrating & seeding test db** - you still have to initialize and seed the db using prisma migrate and whatever seed script to populate data that tests expect
+	- for migrating: 
+`DATABASE_URL=testurl npx prisma migrate dev --name init`
+		- since prisma.schema pulls exclusively from .env you cannot use the node env to conditionally select url. you have to manually override the env variable it expects
+	- for Seeding: 
+`NODE_ENV=test node prisma/pathSeedScript.js` 
+		- this will tell prisma.js to use database url and seed the data to the correct place

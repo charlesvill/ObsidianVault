@@ -147,9 +147,9 @@ function classChange(className){
 	sliderCont.classList.add(className);
 }
 ```
- - now this is not the most elegant of solutions but allows you to replace the second one dynamically without having to know what class is currently taking up that second slot. and this is on the fly to be hooked up to an event handler and get those lit transitions see [[Intermediate CSS#Transitions]]
+ - now this is not the most elegant of solutions but allows you to replace the second one dynamically without having to know what class is currently taking up that second slot. and this is on the fly to be hooked up to an event handler and get those lit transitions see [[Intermediate HTMl & CSS#Transitions]]
 #### dialog boxes as form popups
- see [[Intermediate CSS#Styling Forms]] to see it's implemenation with html. 
+ see [[Intermediate HTMl & CSS#Styling Forms]] to see it's implemenation with html. 
 	 once the html is populated, you'll need to store the button to pop up the form, the form itself, and a cancel button for the form.
 ```javascript
 
@@ -484,6 +484,56 @@ nav.addEventListener('click', toggleNav, false); // will invoke the function imm
 nav.addEventListener('click', toggleNav(arg1, arg2), false);
 ```
 - normally you would fix this by putting another function inside of the event listener but you can also sollve this by calling the fucntion togglenav with bind with the arguments passed through without having to needlessly create another scope just to be able to pass the arguments. 
+#### Builder pattern
+- the purpose of this design pattern is when you want to separate complex functionality from its representation
+- useful when you have an object with: 
+	- many optional parts
+	- complex or nested structure
+	- want to construct the same structure in multiple ways
+	- if you want to separate the construction logic from the final produced object
+- example: I have complex nested json data that needs to be packaged by functions of events that contain pages which contain modules
+```js
+export const createModule = (type, order, html) => ({
+  type,
+  order,
+  data: { html },
+});
+
+export const createPage = (title, type, slug, order, modules = []) => ({
+  title,
+  type,
+  slug,
+  order,
+  modules,
+});
+
+export function eventBuilder(fields, hostName) {
+  const pages = [];
+
+  const addPage = (page) => {
+    pages.push(page);
+    return builder; // enable chaining
+  };
+// notice here how the addPage returns builder. that means you can 
+// const event = eventBuilder().addPage().build();
+  const builder = {
+    fields,
+    hostName,
+    pages,
+    addPage,
+    build: () => ({
+      pages,
+      meta: {
+        createdAt: new Date().toISOString(),
+      },
+    }),
+  };
+
+  return builder;
+}
+
+
+```
 #### Private/Public scope and the Module pattern
 - while JS does not do private and public scope like something like c# does, it can emulate it by making closures like seen with the module pattern. emulates it by keeping it out of the global scope. 
 	- because its nested in a function you wont actually be able to call it because its not defined in the global scope. 
@@ -1047,7 +1097,7 @@ style is very important to keeping code maintainable and easy to read
 		- then you can run npm publish --access=public 
 		- then you should be good to go!
 ### Client side form validation
-- before sending off data from forms to the backedn databases, it's important to validate the information as correct using client side validation. while it has been covered in html in [[Intermediate CSS#Form Validation]] (this should really belong in a html notes not css but here we are)
+- before sending off data from forms to the backedn databases, it's important to validate the information as correct using client side validation. while it has been covered in html in [[Intermediate HTMl & CSS#Form Validation]] (this should really belong in a html notes not css but here we are)
 - review of some of the psuedo states that are true of elements 
 	- valid `:valid` css selector for styling or presentig certain feedback
 	- invalid `:invalid` same as above
@@ -1279,6 +1329,32 @@ return rsp.json();
 ```
 notice here the the fetch request that is checked for the status inside the first '.then()' and then if it is not okay, you throw a new error and it will be pushed to the catch. 
 - explain how an api request could be blocked by the browser and how to fix this?
+#####  How fetch treats errors
+
+1. **Network-level failures** → fetch **throws a native error**
+    
+    - No internet, DNS failure, CORS blocked, request aborted, etc.
+        
+2. **HTTP error responses** (`404`, `500`, `403`, etc.) → fetch **does NOT throw**
+    
+    - Instead, it returns a `Response` object with `ok === false` and `status`/`statusText`.
+        
+    - The response body can be anything: JSON, HTML, plain text, XML… the browser doesn’t assume anything.
+        
+
+So there’s **no automatic `json.message`**, or any standardized structure. The server could send:
+
+`{ "error": "Invalid token" }`
+
+or
+
+`{ "message": "Not Found" }`
+
+or even just plain text:
+
+`Page not found`
+
+
 
 #### Async and Await 
 basically a way of handling async events that are expressed more linearly and easier to read compared to promises and then() and catch() blocks : good article to brush up on async/ await: https://javascript.info/async-await

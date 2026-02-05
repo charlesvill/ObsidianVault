@@ -1,4 +1,4 @@
-##### parking lot: 
+	##### parking lot: 
 - Why do components that accept parameters or "props" need to have curly braces around the parameters? like the ones seen here: 
 ```jsx
 function Item({ name, isPacked }) {
@@ -183,11 +183,91 @@ export default function List() {
 - notice that the return statement has `<ul>{array}</ul>` here the html is being automatically generated for the list items because in the `listItems` variable, the li was mapped to each array item. what this results in is a list of html li elements. react is smart enough to automatically populate the list items in the return line inside the `<ul>` element without the need to run a for-loop
 	- notice that to make this possible, the mapping needs to include the html for react to recognize it. and the array variable needs to be wrapped in the curly braces. /css/
 
-#### Setting up your first react project
+#### Getting started with your react project
 - go into the folder where projects are and: 
 - `npm create vite@laest Project-Name-React -- --template react` 
 - then CD into the project folder and run `npm install` and that is literally it. super easy. 
 - hit `npm run dev` to launch the local site by clicking on the link in the terminal
+##### linting and formatting
+`npm install --save-dev eslint eslint_d prettier`
+- eslint_d used by nvim faster for none_ls
+- `npm install --save-dev eslint-plugin-react eslint-plugin-prettier eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-prettier`
+- then do `npx eslint --init` 
+- then put this as your eslint.config.js: 
+```js
+import js from '@eslint/js';
+import globals from 'globals';
+import pluginReact from 'eslint-plugin-react';
+import pluginReactHooks from 'eslint-plugin-react-hooks';
+import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
+import pluginImport from 'eslint-plugin-import';
+import pluginPrettier from 'eslint-plugin-prettier/recommended';
+import { defineConfig } from 'eslint/config';
+
+// flat-compatible configs from Airbnb
+// import airbnb from "eslint-config-airbnb";
+// import airbnbHooks from "eslint-config-airbnb/hooks";
+
+export default defineConfig([
+  {
+    files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'],
+
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
+
+    plugins: {
+      react: pluginReact,
+      'react-hooks': pluginReactHooks,
+      'jsx-a11y': pluginJsxA11y,
+      import: pluginImport,
+    },
+
+    // apply Airbnb + Prettier + React
+    extends: [
+      js.configs.recommended,
+      // airbnb,
+      // airbnbHooks,
+      pluginReact.configs.flat.recommended,
+      pluginPrettier,
+    ],
+
+    rules: {
+      'prettier/prettier': 'error',
+      'react/react-in-jsx-scope': 'off', // no need in React 17+
+      'import/no-extraneous-dependencies': 'off', // often noisy in Vite
+    },
+
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+  },
+]);
+```
+and this as your prettier.config.js: 
+```js
+export default {
+  singleQuote: true,
+  jsxSingleQuote: false,
+  trailingComma: 'es5',
+  semi: true,
+  tabWidth: 2,
+  printWidth: 80,
+};
+```
+- then you should be good to go. refer to nvim settings to make sure formatting with none_ls and prettier are working properly.
 ##### adding your react project to your github repo
 if you follow the above instructions will create a local repo but will not actually be tracked by either a local or remote git repo. complete the following steps to get your new vite react project up and running with git and github: 
 - in your project directory hit: `git init -b main`
@@ -598,7 +678,30 @@ setSecret({ ...secret, countSecrets: secret.countSecrets + 1 });
 ```
 **definitely review this often because this seems like a big pattern with React that will be helpful and avoid headaches**
 - check this article if I'm having infinite loops and lop through and see if one ofhtem looks like the sin commited: https://dmitripavlutin.com/react-useeffect-infinite-loop/
+##### setting state for user inputs
+- Do not ignore the above advice! I tried doing this on projects in a input handler, the fieldData is an object with multiple fields and updating state relies on the old state and updating in a way that risks stale state by leaving opening possibility of race conditions
+```js
+function handleInput(e) {
+  const fieldName = e.target.id;
+  const value = e.target.value;
 
+  setData({ ...fieldData, [fieldName]: value });
+}
+
+```
+###### correct way
+```js
+function handleInput(e) {
+  const fieldName = e.target.id;
+  const value = e.target.value;
+
+  setData(prev => ({
+    ...prev,
+    [fieldName]: value,
+  }));
+}
+```
+- the setter automatically passes the previous state as argument so you can name it anything and if your update relies on the old data, you spread the old data (again passed as argument and overwrite by selecting the property you want changed dynamically at runtime and inputting the value)
 #### Class Components
 - most use functional but incase legacy code bases are encountered we should be familiar with class components: 
 ```jsx
@@ -778,6 +881,80 @@ its wraps your tests that involve a side effect or state updates to make sure th
 - must be in EMS and not common js imports
 ###### vi.mock
 - substitutes alll imported modules from provided path
+###### mocking hooks with critical data
+```jsx
+import { describe, it, expect, vi } from 'vitest';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import Heading from '../../../components/module';
+
+vi.mock('../../../utils/hooks/useModuleContext', () => ({
+  useModuleContext: vi.fn(),
+}));
+
+vi.mock('../../../utils/hooks/useModuleFns', () => ({
+  useModuleFns: vi.fn(),
+}));
+
+// Here the two hooks the Heading component relies on are established as mock 
+// to import whenever it imports from that location
+
+import { useModuleContext } from '../../../utils/hooks/useModuleContext';
+import { useModuleFns } from '../../../utils/hooks/useModuleFns';
+
+// then it imports said mocked hooks to be usable in tests
+
+describe('Heading', () => {
+  const exData = { size: 2, text: 'this is test' };
+
+  it('renders inputs when editMode is true', () => {
+    useModuleContext.mockReturnValue({
+      pageId: 1,
+      moduleId: 1,
+      localData: exData,
+      editMode: true,
+    });
+// set the return value to what you need for test
+    useModuleFns.mockReturnValue({
+      setStageData: vi.fn(),
+      updateObj: vi.fn(),
+    });
+
+    render(<Heading size={exData.size} text={exData.text} />);
+
+    expect(screen.getByRole('textbox')).toHaveValue(exData.text);
+    expect(screen.getByRole('spinbutton')).toBeInTheDocument();
+    
+    // checks if a. renders a form b. textbox has value passed from exData and render
+  });
+
+  it('calls cycleEdit when heading is clicked', async () => {
+    const cycleEdit = vi.fn();
+
+    useModuleContext.mockReturnValue({
+      pageId: 1,
+      moduleId: 1,
+      localData: exData,
+      editMode: false,
+    });
+
+    useModuleFns.mockReturnValue({
+      setStageData: vi.fn(),
+      updateObj: vi.fn(),
+      cycleEdit,
+    });
+
+    render(<Heading size={exData.size} text={exData.text} />);
+
+    const user = userEvent.setup();
+    await user.click(screen.getByRole('heading'));
+
+    expect(cycleEdit).toHaveBeenCalledTimes(1);
+  });
+  // see how userevent is set up and notice how cycleEdit is mocked but declared in scope so it has its reference to know it has been called
+});
+
+```
 
 ## The React Ecosystem
 
@@ -1421,7 +1598,10 @@ react docs on the useRef hook: https://react.dev/reference/react/useRef\
 	- another note is that you should not read a ref during rendering or write to it.
 	- you can however read or write refs in event handlers or in useeffect 
 - make sure to refer to the react docs for troubleshooting
-
+##### good uses for useRef
+- Accessing DOM nodes (`input`, `div`, `canvas`, etc.)
+    
+- Calling DOM methods (`focus()`, `scrollIntoView()`)
 #### useMemo hook
 this is used to cache a longer computation: 
 ```jsx
@@ -1529,3 +1709,123 @@ const memoizedHandleClick = useCallback(handleClick, []);
 this is a test to make sure obsidian is syncing with github
 
 this is a test form thinkpad
+
+
+### File manipulation in React
+- to parse data in markdown files to use in your components: 
+	- you can use libraries such as `react-markdown`
+- its simple as `<Markdown>{content}</Markdown>`
+	- however if you need to import md files, you have a couple options: 
+##### fetching files during runtime asyncronously
+- you can use a useeffect and fetch the file from the relative path and run:
+```jsx
+useEffect(() => {
+    async function parseFile() {
+      const response = await fetch(filepath);
+      if (!response.ok) {
+        throw new Error('file path fetch failed');
+      }
+
+      const raw = await response.text();
+
+      const { data, content } = matter(raw);
+      setProjData({ frontmatter: data, content });
+    }
+
+    parseFile();
+  }, [filepath]);
+// then
+<Markdown>{content}</Markdown>
+```
+##### importing files using vite during buildtime
+- if instead you need multiple files imported, it could be better to import them using vites glob feature where you essentially tell it to look for files based on wildcards you pass it and it creates an object where the keys are the paths for matched files and properties are the contents of the files.
+	- you'll need to convert to an array using `Object.entries(files)` and then map over it.
+		- it will create each entry into an array of the key and property as index 0 & 1 respectively. 
+			- also known as a tuple (kind of)
+- Starts with: 
+	1. placing your files images and markdown files in src/  commonly "src/content/projectName/project.md & image.png"
+	2. update vite config to view your md files as assets and import plain text: 
+```js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import svgr from 'vite-plugin-svgr';
+
+export default defineConfig({
+  plugins: [react(), svgr()],
+  assetsInclude: ['**/*.md'],
+});
+
+```
+3.  following import syntax: 
+```js
+const markdownFiles = import.meta.glob('./content/projects/**/*.md', { eager: true });
+const images = import.meta.glob('./content/projects/**/*.{png,jpg,jpeg,svg}', { eager: true });
+```
+		- the **/ recursively searches in subfolders for... *.md anything with that file extension. the {} groups to get all with that extension
+
+ 4. next you need to create array from the object entries and map over them using the `gray-matter` library to extract the frontmatter and content 
+	 1. front matter is YAML metadata YAML is just convention for data thats more human readable compared to json. denoted by 
+```md
+---
+date: '21-05-12'
+title: 'ProjectName'
+image: './project.png'
+---
+
+##this is the project description that you can learn more about at [learn more](https://learn.org)
+```
+
+	3a. the image data needs to be extracted too so you can make your react components with the data. see below: 
+```js
+// assume both markdown and images are imported with glob
+const projects = Object.entries(markdownFiles).map(([path, file]) => {
+  const { data, content } = matter(file.default);
+
+  // resolve image path
+  let imageUrl = null;
+  if (data.image) {
+    const imgKey = path.replace(/\.md$/, data.image.replace('./', '')); 
+    imageUrl = images[imgKey]?.default;
+  }
+// since youre mapping over the markdown collection, you use the path name
+// of the markdown, take away the file extension, and replace with the .image
+// file name for the image source name. also notice that it removes the './' from
+// the relative path name from the markdown file because the path already
+// provides the path all the way to the directory you need. 
+  return {
+    frontmatter: { ...data, image: imageUrl },
+    content,
+  };
+});
+
+```
+
+**make sure to refer to portfolio repo because I ended up doing it a little different to make it work**
+
+
+
+
+
+
+
+<details>
+<summary>If you get the 'mdPlugin is not a function' error</summary>
+
+In your `vite.config.js`, make sure to import the plugin like this:
+
+```js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import svgr from 'vite-plugin-svgr';
+import { plugin as mdPlugin, Mode } from 'vite-plugin-markdown';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    svgr(),
+    mdPlugin({
+      mode: [Mode.HTML, Mode.REACT, Mode.MARKDOWN],
+    }),
+  ],
+});
+</details>
