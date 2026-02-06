@@ -26,7 +26,8 @@ return 0;
 ### Bjarne Stourstroup Ch 4
 why use functional programming?
 - separates computation logically
-testing t
+testing testing
+
 - makes it possible to use the functions in other places and 
 - clearer/ease of testing
 #### Types in C++
