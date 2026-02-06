@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/C++/Foundations of C++.md",
+                "file": "Computer Science/Regular expressions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Foundations of C++"
+              "title": "Regular expressions"
             }
           }
         ]
@@ -205,6 +205,11 @@
   },
   "active": "2bf179b154545fb3",
   "lastOpenFiles": [
+    "Computer Science/CS50/Python.md",
+    "Computer Science/CS50/Flask.md",
+    "Computer Science/CS50/CS 50.canvas",
+    "Computer Science/CS50/C.md",
+    "Computer Science/C++/Foundations of C++.md",
     "Computer Science/C++/C++ projects.md",
     "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
@@ -216,25 +221,19 @@
     "Computer Science/Full Stack Dev/CSS & HTML/CSS reference Notes.md",
     "Computer Science/Full Stack Dev/Git.md",
     "Computer Science/CS50/SQL.md",
-    "Computer Science/CS50/Python.md",
     "Computer Science/CS50/Javascript - CS50.md",
-    "Computer Science/CS50/Flask.md",
-    "Computer Science/CS50/CS 50.canvas",
     "Untitled 2.md",
     "Computer Science/NVIM notes.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Linux DebianOS reference sheet.md",
-    "Computer Science/CS50/C.md",
     "Computer Science/Regular expressions.md",
     "Social Media presence Parking Lot.md",
     "Computer Science/Full Stack Dev/Emmet Abbreviations.md",
     "Computer Science/Full Stack Dev/Full Stack Parking lot.md",
     "Computer Science/Full Stack Dev/How the internet works and Networking.md",
-    "Computer Science/Thinking like a Programmer.md",
     "Pasted image 20240918071044.png",
     "Pasted image 20240914163711.png",
     "Computer Science/Full Stack Dev/Backend",
-    "Computer Science/Bash Notes.md",
     "Computer Science/Algorithms and Data Structures",
     "Electronics",
     "ObsidianVault/CS50/Flask",
