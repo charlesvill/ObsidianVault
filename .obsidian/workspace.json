@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/Regular expressions.md",
+                "file": "Computer Science/Thinking like a Programmer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regular expressions"
+              "title": "Thinking like a Programmer"
             }
           }
         ]
@@ -205,12 +205,13 @@
   },
   "active": "2bf179b154545fb3",
   "lastOpenFiles": [
+    "Computer Science/C++/Foundations of C++.md",
+    "Computer Science/C++/C++ projects.md",
+    "Computer Science/CS50/C.md",
+    "Computer Science/Regular expressions.md",
     "Computer Science/CS50/Python.md",
     "Computer Science/CS50/Flask.md",
     "Computer Science/CS50/CS 50.canvas",
-    "Computer Science/CS50/C.md",
-    "Computer Science/C++/Foundations of C++.md",
-    "Computer Science/C++/C++ projects.md",
     "Computer Science/Full Stack Dev/REACT.md",
     "Computer Science/Full Stack Dev/Backend/The back end.md",
     "Computer Science/Full Stack Dev/Intermediate HTML/Tables.md",
@@ -226,7 +227,6 @@
     "Computer Science/NVIM notes.md",
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Linux DebianOS reference sheet.md",
-    "Computer Science/Regular expressions.md",
     "Social Media presence Parking Lot.md",
     "Computer Science/Full Stack Dev/Emmet Abbreviations.md",
     "Computer Science/Full Stack Dev/Full Stack Parking lot.md",
