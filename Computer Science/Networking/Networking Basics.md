@@ -58,4 +58,9 @@
 	- this behavior described is exactly behavior that happens in the internet
 
 #### The Transport Layer: TCP, UDP
-- networks need to be able to handle multiple streams of packets accross
+- networks need to be able to handle multiple streams of packets across host and application needs as user space often have multiple web clients running at once(email checking, spotify, etc). This is handled by the aforementioned transport protols. 
+- these transport protocols are the layer between the raw internet packets and specific applicaiton needs. 
+- TCP (the most common) handle multiple netowrk applicaitons on one machine by means of network **ports**.
+	- if IP address is the postal address, port # is the apartment number or mailbox number
+###### local vs remote port
+- an applications own port is the local and the port its connecting to is the remote port. 
