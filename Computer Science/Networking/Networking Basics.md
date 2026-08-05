@@ -75,3 +75,6 @@
 - this also allows for both subnets to have internet access. 
 	- however, some ipv4 addresses are not visible to internet
 	- you need *NAT* Network Address Translation. 
+- Routers are essentially linux embedded devices that perform DHCP (basically ip address swapping to avoid clashes and makes IP address not static) and NAT services. openWRT is a distribution for routers you can install to unlock their potential.
+##### firewalls
+- *firewall* is a software/hardware config ontop of a router that separates in
