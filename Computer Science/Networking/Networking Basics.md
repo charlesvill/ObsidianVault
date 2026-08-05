@@ -64,3 +64,8 @@
 	- if IP address is the postal address, port # is the apartment number or mailbox number
 ###### local vs remote port
 - an applications own port is the local and the port its connecting to is the remote port. 
+##### Establishing TCP connections
+- the client/server relationship is a TCP connection. first a client typically dynamically opens an available port (normally not well known port) and looks for a remote host with a sometimes well known port (like 5000) and the host has to be listening on that port. 
+- you can do `netstat -ntl` to list out the ports your machine is currently listening out for. 
+- you can look for well known ports in `/etc/services` that has names of conventions along with their port numbers
+	- ssh is included in here! ssh is a tcp connection (port 22)
