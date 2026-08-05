@@ -41,3 +41,6 @@
 	- inet is ipv4 and the `/24` is the subnet mask that all the hosts in the subnet will have in common. the 24 comes from the sequence of bits (translates to 255.255.255.0) which is 3 sets of 8bits, equaling 24. 24 is the shorthand
 		- in binary looks like: 1111111 1111111 11111111 0000000 (24 1 bit sequence)
 	- /24 is the most common subnet mask for local end-user networks
+
+##### Routes and kernel routing table
+- to put all together, for example, host A ( a linux mahine ) with ip address of 10.23.2.4 is connected at lo
