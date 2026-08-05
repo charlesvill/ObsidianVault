@@ -23,3 +23,6 @@
 
 
 #### The Internet Layer
+- topology of the internet is decentralized. It's made of bunch of interconnected subnets
+- a router is able to connect one subnet, to another one (the internet to LAN)
+- each machine (host) has atleast one ip address. for IPV4 it follows the 
