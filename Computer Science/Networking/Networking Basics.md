@@ -47,4 +47,5 @@
 - The kernel will choose a route based on the longest destination prefix that matches. 
 	- a default gateway is 0.0.0.0/0 which matches anything but its prefix length is 0 bits, vs something else that has more bit length match, that will be preferred. 
 #### Basic ICMP and DNS tools
-- 
+- *ICMP* - Internet Control Message Protocol : helps root out connectivity problems and routing
+- *DNS* - Domain Name Service : maps domain names to an IP address to abstract number addresses away
