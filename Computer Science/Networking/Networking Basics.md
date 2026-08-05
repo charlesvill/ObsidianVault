@@ -43,4 +43,4 @@
 	- /24 is the most common subnet mask for local end-user networks
 
 ##### Routes and kernel routing table
-- to put all together, for example, host A ( a linux mahine ) with ip address of 10.23.2.4 is connected at lo
+- to put all together, for example, host A ( a linux mahine ) with ip address of 10.23.2.4 is connected at local network at address 10.23.2.0/24. it can access the internet by communicating with router host at 10.23.2.1
