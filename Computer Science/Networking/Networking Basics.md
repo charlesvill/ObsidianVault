@@ -77,4 +77,6 @@
 	- you need *NAT* Network Address Translation. 
 - Routers are essentially linux embedded devices that perform DHCP (basically ip address swapping to avoid clashes and makes IP address not static) and NAT services. openWRT is a distribution for routers you can install to unlock their potential.
 ##### firewalls
-- *firewall* is a software/hardware config ontop of a router that separates in
+- *firewall* is a software/hardware config ontop of a router that separates internet from a local network
+- creating rules for packet access or firewall rules in a series known as a chain and a set of chains make up a table. 
+- iptables is the system maintained by the kernel that oversees these firewall chainsand rules
