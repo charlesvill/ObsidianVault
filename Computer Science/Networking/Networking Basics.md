@@ -69,3 +69,6 @@
 - you can do `netstat -ntl` to list out the ports your machine is currently listening out for. 
 - you can look for well known ports in `/etc/services` that has names of conventions along with their port numbers
 	- ssh is included in here! ssh is a tcp connection (port 22)
+
+#### Routing Subnets and uplinks
+- if you have a linux computer configured to act as a router for two different subnets ( say in the case you have three network inter)
