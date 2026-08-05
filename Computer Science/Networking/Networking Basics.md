@@ -47,8 +47,11 @@
 - The kernel will choose a route based on the longest destination prefix that matches. 
 	- a default gateway is 0.0.0.0/0 which matches anything but its prefix length is 0 bits, vs something else that has more bit length match, that will be preferred. 
 #### Basic ICMP and DNS tools
-- *ICMP* - Internet Control Message Protocol : helps root out connectivity problems and routing
+- *ICMP* - Internet Control Message Protocol : helps root out connectivity problems and routing	- /24 is the most common subnet mask for local end-user networks 
 - *DNS* - Domain Name Service : maps domain names to an IP address to abstract number addresses away
 #### Physical layer and ethernet
 - most common type of phsycial layer is a ethernet network, which can be a wired or wireless one.
-- every device on an ethernet network have a *MAC address* or Med
+- every device on an ethernet network have a *MAC address* or Media Access Control Address
+	- separate from a host's IP address and unique to the ethernet network. 
+- by convention, a ethenet network is usually an internet subnet. meaning its connected in some way to the broader interweb. 
+- Additionally, if you for example have two different ethernet networks with a host attached to both, you cannot directly transfer a frame (data with wrappers for origin and destination MAC addresses) from one ethernet network to another. you need a ehternet bridge or router to bring it out of the current network and interface with the other ethernet network. 
