@@ -80,3 +80,4 @@
 - *firewall* is a software/hardware config ontop of a router that separates internet from a local network
 - creating rules for packet access or firewall rules in a series known as a chain and a set of chains make up a table. 
 - iptables is the system maintained by the kernel that oversees these firewall chainsand rules
+- page 289 has info on blocking ip address transmissions
