@@ -46,3 +46,5 @@
 - to put all together, for example, host A ( a linux mahine ) with ip address of 10.23.2.4 is connected at local network at address 10.23.2.0/24. it can access the internet by communicating with router host at 10.23.2.1
 - The kernel will choose a route based on the longest destination prefix that matches. 
 	- a default gateway is 0.0.0.0/0 which matches anything but its prefix length is 0 bits, vs something else that has more bit length match, that will be preferred. 
+#### Basic ICMP and DNS tools
+- 
