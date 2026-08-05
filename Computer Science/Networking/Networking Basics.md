@@ -71,4 +71,7 @@
 	- ssh is included in here! ssh is a tcp connection (port 22)
 
 #### Routing Subnets and uplinks
-- if you have a linux computer configured to act as a router for two different subnets ( say in the case you have three network inter)
+- if you have a linux computer configured to act as a router for two different subnets ( say in the case you have three network interfaces, a. for subnet 1, b for uplink , c for subnet 2) you can have data packets go from one subnet to another. 
+- this also allows for both subnets to have internet access. 
+	- however, some ipv4 addresses are not visible to internet
+	- you need *NAT* Network Address Translation. 
