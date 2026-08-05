@@ -14,3 +14,9 @@
 - defines the data transmission characteristics, data integrity checking, source & destination ports, specification for breaking and assembling to and from packets. 
 	- examples: *TCP* Transmission Control Protocol and *UDP* User Datagram Protocol
 	- sometimes called the protocol layer
+##### Network or Internet Layer
+- defines how to move packets from a source host to a destination host. the protocol for this is the *IP* (internet Protocol). 
+	- IPV4, IPV6, IPX
+##### Physical Layer
+- how raw data is sent, ethernet or modem
+- sometimes called the link layer or host-to-network layer. 
