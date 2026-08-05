@@ -33,5 +33,8 @@
 - network prefix (aka routing prefix);
 - subnet mask (aka nework or routing mask)
 ###### network prefix
-- the quad sequence numbers ie (10.23.2.37)
-- 
+- within the quad sequence (10.23.2.37) the network prefix are those numbers that all hosts in the subnet have in common
+	- for example if you have the above and 10.23.2.50, they both share the network prefix of 10.23.2
+###### subnet mask
+- if you run `ip address show` you'll see something like: `inet 10.23.2.10/24` 
+	- inet is ipv4 and the `/24` is the subnet mask that all the hosts in the subnet will have in common. the 24 comes from the sequence of bits (translates to 255.255.255.0) which is 3 sets of 8bits, equaling 24. 24 is the shorthand
