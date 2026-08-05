@@ -27,3 +27,8 @@
 - a router is able to connect one subnet, to another one (the internet to LAN).
 	- routers will have an ip address for each subnet its connected to
 - each machine (host) has atleast one ip address. for IPV4 it follows the *dotted quat sequence* a.b.c.d (i.e 10.23.2.37)
+
+##### subnets
+-subnets are defined with two pieces: 
+- network prefix (aka routing prefix);
+- subnet mask (aka nework or routing mask)
