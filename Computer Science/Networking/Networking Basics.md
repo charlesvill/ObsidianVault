@@ -49,3 +49,6 @@
 #### Basic ICMP and DNS tools
 - *ICMP* - Internet Control Message Protocol : helps root out connectivity problems and routing
 - *DNS* - Domain Name Service : maps domain names to an IP address to abstract number addresses away
+#### Physical layer and ethernet
+- most common type of phsycial layer is a ethernet network, which can be a wired or wireless one.
+- every device on an ethernet network have a *MAC address* or Med
