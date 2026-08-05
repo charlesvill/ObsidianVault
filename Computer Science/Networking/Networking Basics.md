@@ -20,3 +20,6 @@
 ##### Physical Layer
 - how raw data is sent, ethernet or modem
 - sometimes called the link layer or host-to-network layer. 
+
+
+#### The Internet Layer
