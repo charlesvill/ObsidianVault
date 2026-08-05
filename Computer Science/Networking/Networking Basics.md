@@ -11,3 +11,5 @@
 	- i.e. https
 	- multiple layers can be combined such as with http and TLS to make https
 ##### Transport Layer
+- defines the data transmission characteristics, data integrity checking, source & destination ports, specification for breaking and assembling to and from packets. 
+	- examples: TCP *Transmission Control Protocol* and
