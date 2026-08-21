@@ -17,4 +17,9 @@
 	- improved SEO: cached results are easier for search engine crawlers to index. leads to higher search engine rankings
 #### dynamic rendering
 - don'r really need to go into this right
+
+### streaming data
+- data fetches are done in parallel as opposed to sequentially
+- data fetches come in chunks and you can stream chunks while others arrive, allowing end user to interact with the site as the rest comes, the traditional model might wait for everything to load first
+- you can do this with the streaming.tsx or the <streaming> component in an individual file
 - 
