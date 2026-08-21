@@ -21,5 +21,12 @@
 ### streaming data
 - data fetches are done in parallel as opposed to sequentially
 - data fetches come in chunks and you can stream chunks while others arrive, allowing end user to interact with the site as the rest comes, the traditional model might wait for everything to load first
-- you can do this with the streaming.tsx or the <streaming> component in an individual file
-- 
+- you can do this with the loading.tsx or the `<Suspense>` component in an individual file
+
+#### loading.tsx
+- a special next js file that offers fallback ui
+- since nextjs default rendering is static, whatever static elements you have like sideNav (from example dashboard) it will load that immediately and dynamic content will stream in
+
+#### routing groups
+- sometimes you'll have components that are children of a main dashboard component and you have a skeleton component for the dashbaord, but you wont want that skeleton to apply to the children. you can create routing groups with a folder (overview)/ that will allow rendering compoents with certain groups whlie not affecting the url. 
+
