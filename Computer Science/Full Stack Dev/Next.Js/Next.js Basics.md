@@ -30,3 +30,5 @@
 #### routing groups
 - sometimes you'll have components that are children of a main dashboard component and you have a skeleton component for the dashbaord, but you wont want that skeleton to apply to the children. you can create routing groups with a folder (overview)/ that will allow rendering compoents with certain groups whlie not affecting the url. 
 
+#### Suspense component
+- you can stream a whole page but you can also be more granular and stream a component with React Suspense
