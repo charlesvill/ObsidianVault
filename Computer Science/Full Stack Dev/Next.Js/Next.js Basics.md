@@ -32,3 +32,8 @@
 
 #### Suspense component
 - you can stream a whole page but you can also be more granular and stream a component with React Suspense
+
+#### streaming content options: 
+- You could stream the **whole page** like we did with `loading.tsx`... but that may lead to a longer loading time if one of the components has a slow data fetch.
+- You could stream **every component** individually... but that may lead to UI _popping_ into the screen as it becomes ready.
+- You could also create a _staggered_ effect by streaming **page sections**. But you'll need to create wrapper components.
