@@ -6,3 +6,15 @@
 #### partial rendering
 - a result of flow between layout and its pages. after initial render, the layout components wont re-render, only the new pages will.
 - partial rendering allows state preservation in the layout during different page navigation
+
+### rendering methods
+#### static rendering
+- datafetching and rendering happens at build time (and when revalidating data)
+	- the result is cached and that is what is served
+- this leads to : 
+	- much faster load times
+	- less compute costs because it doesnt have to dynamically recompute on each request
+	- improved SEO: cached results are easier for search engine crawlers to index. leads to higher search engine rankings
+#### dynamic rendering
+- don'r really need to go into this right
+- 
