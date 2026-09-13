@@ -1,3 +1,7 @@
+**Parking Lot**
+- what is bind() do in the context of `const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);` 
+	- https://nextjs.org/learn/dashboard-app/mutating-data
+- 
 #### layout.tsx
 - say you have some ui to be shared between two or more components (for example a nav) you use layout to define what that looks like. place it in the same level as your page.tsx. you can pass children aswell and treat it like a react outlet component.
 #### page.tsx

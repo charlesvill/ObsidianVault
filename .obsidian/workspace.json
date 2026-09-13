@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer Science/C++/Foundations of C++.md",
+                "file": "Computer Science/Full Stack Dev/Next.Js/Next.js Basics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Foundations of C++"
+              "title": "Next.js Basics"
             }
           }
         ]
@@ -207,6 +207,7 @@
   },
   "active": "2bf179b154545fb3",
   "lastOpenFiles": [
+    "Computer Science/C++/Foundations of C++.md",
     "Computer Science/Full Stack Dev/Next.Js/Next.js Basics.md",
     "Computer Science/Full Stack Dev/Typescript/Type Script Crash Course.md",
     "Computer Science/CS50/SQL.md",
@@ -217,7 +218,6 @@
     "Computer Science/Full Stack Dev/Javascript/Intermediate Javascript.md",
     "Computer Science/Full Stack Dev/CSS & HTML/Intermediate HTMl & CSS.md",
     "Computer Science/Thinking like a Programmer.md",
-    "Computer Science/C++/Foundations of C++.md",
     "Computer Science/C++/C++ projects.md",
     "Computer Science/CS50/C.md",
     "Computer Science/Regular expressions.md",
