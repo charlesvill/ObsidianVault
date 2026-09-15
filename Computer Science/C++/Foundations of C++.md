@@ -50,6 +50,8 @@ what are arrays called in c++?
 	- vectors can be dynamically changed and manipulated also memory allocation works automatically for vectors 
 	- vectors know their size unlike arrays. has the method: `v.size() // return 4 if there are four indices`
  - arrays and pointers: 
+
+#### pointers
  
 	 - because of the fluidity between the data types of arrays and pointers, an array initiated with a pointer operator and data type can nevertheless still access its member through index notation. go figure. Dont know why: 
 ```cpp
@@ -74,6 +76,9 @@ ptr = &p;
 
 cout << *ptr; // 42
 ```
+- the same : `a[2]  | *(ptr + 2)`
+
+
 initializing a vector: ;
 ```cpp
 vector<int> v = {5, 7,9, 4, 6, 8};
