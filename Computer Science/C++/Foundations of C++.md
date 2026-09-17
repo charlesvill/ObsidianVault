@@ -164,6 +164,18 @@ int* intPtr = static_cast<int*>(voidPtr); <- casts to an int*
 cout << *voidPtr; // 42 <- notice the dereferencing syntax here to get the value bc voidPtr still apointer so needs to be dereferenced. 
 ```
 - to see type casting and void pointers in action, see the qsort example in samples folder in repo local files
+
+
+#### Dynamic memory allocation
+- memory you allocate within the scope of anothe function still exists after the function scope closes. 
+- dynamically allocated variables will be stored in another space other than the function stack, the heap
+- dynamic allocation syntax: 
+```cpp
+int* ptr = new int[100];
+
+// free
+delete[] ptr;
+```
 ### ch 5 Errors
 - being proactive about errors involves using the `error()` function with the message inside of it embedded where you would anticipate things to pass the compiler but nonetheless be a logical error given the context
 	- *should be noted that this is a part of the books header file which is unclear if actually used by developers or only for the purposes of learning*
