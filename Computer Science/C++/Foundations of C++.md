@@ -176,6 +176,13 @@ int* ptr = new int[100];
 // free
 delete[] ptr;
 ```
+
+### Templates
+- templates allow you to make functions that accept any kind of type if you declare them with a template
+```cpp
+template <typename T>
+void _array_init(T a[], int size, T x=T());
+```
 ### ch 5 Errors
 - being proactive about errors involves using the `error()` function with the message inside of it embedded where you would anticipate things to pass the compiler but nonetheless be a logical error given the context
 	- *should be noted that this is a part of the books header file which is unclear if actually used by developers or only for the purposes of learning*
