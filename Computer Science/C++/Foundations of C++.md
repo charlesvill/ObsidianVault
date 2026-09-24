@@ -78,7 +78,11 @@ cout << *ptr; // 42
 ```
 - the same : `a[2]  | *(ptr + 2)`
 
-
+- Double pointer
+```cpp
+T**
+```
+- double pointer are tnot hte same thing as regular pointers
 initializing a vector: ;
 ```cpp
 vector<int> v = {5, 7,9, 4, 6, 8};
@@ -402,6 +406,10 @@ constexpr Point scale(Point p) {return{xscale*p.x, yscale*p.y};};
 ```
 - where p is a struct you can see constexpr being passed and they must be constexpr inorder to be calculated at compilation when called. 
 	- things to note: it must not have side-effects aka modify values outside of it and obviously modify any of its arguments that are constexpr
+
+##### static vs dynamic
+- static is fixed compiled allocation during compile time. 
+- dynamic is allocation of something that happens during runtime
 ##### static const initialization
 - if we want evaluation at runtime, meaning using const instead of constexpr, but you still dont want to rerun a function multiple times to get a value, you can use a function that itself is a reference and use the `static` keyword seen here: 
 ```cpp
