@@ -80,9 +80,10 @@ cout << *ptr; // 42
 
 - Double pointer
 ```cpp
-T**
+T** two_d_array[4];z
 ```
-- double pointer are tnot hte same thing as regular pointers
+- double pointer are not hte same thing as regular pointers. a double pointer points to another pointer.
+	- use case: 2dimensional array a T** points to first element 
 initializing a vector: ;
 ```cpp
 vector<int> v = {5, 7,9, 4, 6, 8};
