@@ -78,12 +78,19 @@ cout << *ptr; // 42
 ```
 - the same : `a[2]  | *(ptr + 2)`
 
+#### 2d arrays with pointers
 - Double pointer
 ```cpp
 T** two_d_array[4];z
 ```
 - double pointer are not hte same thing as regular pointers. a double pointer points to another pointer.
 	- use case: 2dimensional array a T** points to first element 
+- with two dimensional arrays initialized with pointers, you will be able to use bracket syntax just like other arrays
+- You will have an array with the sizes of each row
+
+
+
+
 initializing a vector: ;
 ```cpp
 vector<int> v = {5, 7,9, 4, 6, 8};
