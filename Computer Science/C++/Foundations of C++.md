@@ -87,6 +87,18 @@ T** two_d_array[4];z
 	- use case: 2dimensional array a T** points to first element 
 - with two dimensional arrays initialized with pointers, you will be able to use bracket syntax just like other arrays
 - You will have an array with the sizes of each row
+Initializing a 2d Array: 
+
+```cpp
+int rows = 4;
+int cols = 10;
+
+T** 2d_array[rows];
+
+for(T** w = 2d_array; w < 2d_array + a; w++){
+	
+}
+```
 
 
 
