@@ -88,7 +88,7 @@ T** two_d_array[4];z
 - with two dimensional arrays initialized with pointers, you will be able to use bracket syntax just like other arrays
 - You will have an array with the sizes of each row
 Initializing a 2d Array: 
-
+ 
 ```cpp
 int rows = 4;
 int cols = 10;
