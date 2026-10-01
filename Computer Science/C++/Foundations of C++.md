@@ -566,7 +566,7 @@ enum class Month {
 ```
 defined a type Month and when you initialize the first entry, the enum will automatically assign 2, 3, 4 etc for each consecutive value after that at compilation. 
 	- you cant change the value of them but you can access some of its member values with a function: 
-	` int(Month::jan)` to get the int value of it
+	` int(Month::jan)` to get the int value of it :: scope resolution operator
 - these class type enumerators are known as scoped enumerators, but they also have: 
 - plain enumerators: 
 	- do not use the 'class' keyword
