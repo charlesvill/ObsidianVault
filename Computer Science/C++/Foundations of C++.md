@@ -57,7 +57,7 @@ what are arrays called in c++?
 ```cpp
 int ARRAY_SIZE;
 cin >> ARRAY_SIZE;
-int *surveyData = new int[ARRAY_SIZE;
+int *surveyData = new int[ARRAY_SIZE];
 	for(int i = 0; i < ARRAY_SIZE; i++){
 	cin >> surveyData[i];
 	}
