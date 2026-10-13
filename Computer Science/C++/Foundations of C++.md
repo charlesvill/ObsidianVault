@@ -546,6 +546,23 @@ void f(int x, int y)
 	}
 ```
 - note the try catch block before the scoping block and the catch with a call back function inside of it? need to come back to this. 
+###### classes & dynamic memory
+- Whenever working with classes that dynamically allocate memory such as with arrays, you must have three critical functoins: 
+	- Copy constructor 
+	- Assignment overloading
+	- Destructor
+- *Destructor* - when your class leaves scope its a clean up function that details what happens after class leaves scope, a fall back for memory clean up
+- *Assignment operator* - for avoiding default behavior of cpp to copy all variables including those references to memory or pointers that could lead to disastrous results 
+	- check for self reference
+		- to avoid v1=v1 where you destroy and attempt to copy a destroyed object
+		- `if(this== rhs.this) return *this;`
+	- clear existing space
+	- allocate space, deep copy
+	- must return \*this
+- *copy constructor* - Similar to the reason for assignment operator, you define how to perform a deep copy of one object to a new instance
+	- copy all static variables
+	- allocate space
+	- copy all the data
 ##### Enumerations
 a simple user defined type that is a list of constants that can be used to store states or simple data types. 
 a simple use case for this is to store the current state of something. like `mode = UPPERCASE`. this functionally has no difference between doing something like `mode = 1` for states however for obvious reaons the former is preferred for readability. 
