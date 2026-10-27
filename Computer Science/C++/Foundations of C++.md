@@ -207,6 +207,7 @@ delete[] ptr;
 template <typename T>
 void _array_init(T a[], int size, T x=T());
 ```
+###### Templating with overloading operators
 ### ch 5 Errors
 - being proactive about errors involves using the `error()` function with the message inside of it embedded where you would anticipate things to pass the compiler but nonetheless be a logical error given the context
 	- *should be noted that this is a part of the books header file which is unclear if actually used by developers or only for the purposes of learning*
