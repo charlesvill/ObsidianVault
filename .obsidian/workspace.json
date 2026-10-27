@@ -35,7 +35,8 @@
               "title": "Notes CS3"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -219,10 +220,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2bf179b154545fb3",
+  "active": "7d3db26b344f124c",
   "lastOpenFiles": [
-    "Computer Science/C++/Notes CS3.md",
     "Computer Science/C++/Foundations of C++.md",
+    "Computer Science/C++/Notes CS3.md",
     "Computer Science/Full Stack Dev/Next.Js/Next.js Basics.md",
     "Computer Science/Full Stack Dev/Typescript/Type Script Crash Course.md",
     "Computer Science/CS50/SQL.md",
