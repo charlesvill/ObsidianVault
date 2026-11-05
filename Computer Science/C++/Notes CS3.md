@@ -21,3 +21,7 @@ stack<inst>::ITerator it;
 
 ```
 - `friend class List` - inside the public section of the class 
+
+
+##### inheritance
+- a pointer of the parent class can be assigned to the parent class or any of the children that inherit from parent class. 
