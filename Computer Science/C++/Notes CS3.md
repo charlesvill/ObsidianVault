@@ -25,7 +25,8 @@ stack<inst>::ITerator it;
 
 ##### inheritance
 - a pointer of the parent class can be assigned to the parent class or any of the children that inherit from parent class. 
+- for sfml bouncing shapes we will have vector of multple classes of shapes
 
 
 ##### SFML Notes
-- 
+
