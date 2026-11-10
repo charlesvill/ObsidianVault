@@ -25,3 +25,7 @@ stack<inst>::ITerator it;
 
 ##### inheritance
 - a pointer of the parent class can be assigned to the parent class or any of the children that inherit from parent class. 
+
+
+##### SFML Notes
+- 
