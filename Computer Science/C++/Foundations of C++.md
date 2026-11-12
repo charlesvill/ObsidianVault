@@ -614,6 +614,19 @@ typedef listNode* studentCollection;
 // this actually being an entire collection
 ```
 
+#### Classes and Inheritance
+```c++
+class HourlyEmployee : public Employee
+{
+	public:
+		HourlyEmployee();
+		HourlyEmployee(string theName, string theSSN, double The WeeklySalary);
+		void setSalary(double newSalary);
+		...
+}
+```
+- the `: public Employee` is what pulls the member functions and variables from parent class Employee
+- if you have Base class employee wth private variable netpay, and a derived child class named HourlyEmployee, the child class will not have access to netpay without the use of a publically available member function to interface with private members
 
 #### Operator Overloading
 - What are operators?
