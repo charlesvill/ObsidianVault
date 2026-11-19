@@ -32,7 +32,9 @@ stack<inst>::ITerator it;
 graphinc calculator
 - challenges: sdrawing -5 in sfml 
 - post fix your expression from the tree to get token order
-- youre going to use a stack to handle tokens "strings" to handle operators and operands. if you see operand push to stack, if you see operator, you pop to get the two oerands and handle the operation on them
+- youre going to use a stack to handle tokens objects to handle operators and operands. if you see
+	- each token is an object, struct of somekind
+- operand push to stack, if you see operator, you pop to get the two oerands and handle the operation on them
 	- i. e `(3+5)*8 3 5 + 8 * `
 	- use iterator for popping queue and other structure traversal
 	- evaluation method is called rpn revers polish notaiton evaluation method
