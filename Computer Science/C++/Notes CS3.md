@@ -42,3 +42,10 @@ graphinc calculator
 	- it uses a stack and a queue
 	- number in the queue
 	- operator goes in the stack
+- final project we have a vector containe that contains tokens, string objects that have algebraic meaning
+	- that will get passed around for the processing
+		- maybe look for tokensting from the standard library
+- where to start final project
+	- token class
+		- numbers and operators
+		- these shoud be able to do shunting yard and rpn with these two classes
